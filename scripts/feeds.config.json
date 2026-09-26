@@ -1,0 +1,14 @@
+{
+  "maxPerRegion": 40,
+  "maxAgeDays": 30,
+  "feeds": [
+    { "region": "cn", "label": "化工事故", "url": "https://news.google.com/rss/search?q=%E5%8C%96%E5%B7%A5+(%E7%88%86%E7%82%B8+OR+%E7%88%86%E7%87%83+OR+%E7%81%AB%E7%81%BE+OR+%E6%B3%84%E6%BC%8F)+when:14d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans" },
+    { "region": "cn", "label": "危化品监管", "url": "https://news.google.com/rss/search?q=%E5%8D%B1%E9%99%A9%E5%8C%96%E5%AD%A6%E5%93%81+%E5%BA%94%E6%80%A5%E7%AE%A1%E7%90%86%E9%83%A8+when:30d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans" },
+    { "region": "cn", "label": "石化产能", "url": "https://news.google.com/rss/search?q=%E7%9F%B3%E5%8C%96+(%E4%B9%99%E7%83%AF+OR+%E7%82%BC%E5%8C%96+OR+%E8%A3%85%E7%BD%AE)+(%E6%8A%95%E4%BA%A7+OR+%E5%85%B3%E5%81%9C+OR+%E6%89%A9%E4%BA%A7)+when:14d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans" },
+    { "region": "asia", "label": "Incidents", "url": "https://news.google.com/rss/search?q=(chemical+OR+petrochemical+OR+refinery+OR+pharma)+(explosion+OR+fire+OR+blast+OR+leak)+(India+OR+Korea+OR+Japan+OR+Taiwan+OR+Singapore+OR+Thailand+OR+Indonesia+OR+Malaysia+OR+Vietnam)+when:14d&hl=en-US&gl=US&ceid=US:en" },
+    { "region": "asia", "label": "Market", "url": "https://news.google.com/rss/search?q=Asia+petrochemical+(cracker+OR+naphtha+OR+capacity+OR+%22force+majeure%22)+when:14d&hl=en-US&gl=US&ceid=US:en" },
+    { "region": "intl", "label": "Incidents", "url": "https://news.google.com/rss/search?q=(%22chemical+plant%22+OR+refinery+OR+petrochemical)+(explosion+OR+fire+OR+release)+-India+-China+when:14d&hl=en-US&gl=US&ceid=US:en" },
+    { "region": "intl", "label": "CSB", "url": "https://news.google.com/rss/search?q=%22Chemical+Safety+Board%22+when:30d&hl=en-US&gl=US&ceid=US:en" },
+    { "region": "intl", "label": "Industry", "url": "https://news.google.com/rss/search?q=chemical+industry+(closure+OR+investment+OR+restructuring)+(Europe+OR+%22United+States%22+OR+%22Middle+East%22)+when:14d&hl=en-US&gl=US&ceid=US:en" }
+  ]
+}
