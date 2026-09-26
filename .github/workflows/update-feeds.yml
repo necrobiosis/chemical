@@ -2,11 +2,15 @@ name: 更新自动新闻源
 
 on:
   schedule:
-    - cron: "17 22 * * *" # 每天北京时间 06:17
+    - cron: "17 */4 * * *" # 每 4 小时（UTC 00/04/08/12/16/20 点 = 北京时间 08/12/16/20/00/04 点）
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-feeds
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -16,11 +20,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/fetch-feeds.mjs
+      - name: 抓取信息源
+        env:
+          # 可选：带 X(推特) 认证的 RSSHub 实例地址，例如 https://rsshub.example.com
+          RSSHUB_BASE: ${{ secrets.RSSHUB_BASE }}
+          # 可选：公众号 RSS 服务地址（如自建 WeWe RSS），在 data/sources.js 中以 ${WECHAT_RSS_BASE} 引用
+          WECHAT_RSS_BASE: ${{ secrets.WECHAT_RSS_BASE }}
+        run: node scripts/fetch-feeds.mjs
       - name: 提交更新
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
           git add data/feeds.js
-          git diff --cached --quiet || git commit -m "chore: 更新自动新闻源"
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: 更新自动新闻源"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

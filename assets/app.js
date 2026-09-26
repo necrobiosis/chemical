@@ -4,6 +4,11 @@
   const NEWS = (window.CURATED_NEWS || []).slice().sort((a, b) => b.date.localeCompare(a.date));
   const FEEDS = window.AUTO_FEEDS || { updated: null, items: {} };
   const T = window.TRAINING || {};
+  const SRC = window.SOURCES || { sources: [] };
+  const SRC_BY_ID = {};
+  SRC.sources.forEach((s) => (SRC_BY_ID[s.id] = s));
+  const TYPES = { wechat: "公众号", x: "X 博主", site: "网站", rss: "网站", query: "关键词检索" };
+  const TIERS = { A: "官方/权威", B: "专业媒体", C: "博主/社区" };
 
   const REGIONS = {
     cn: { name: "国内", desc: "中国大陆化工与石化：事故、监管政策、产能结构调整。" },
@@ -20,7 +25,8 @@
 
   const app = document.getElementById("app");
   const searchInput = document.getElementById("search");
-  const filters = { cn: "all", asia: "all", intl: "all", cases: "all" };
+  const filters = { cn: "all", asia: "all", intl: "all", cases: "all", sources: "all" };
+  let majorOnly = false;
 
   /* ---------- helpers ---------- */
   const esc = (s) =>
@@ -62,19 +68,36 @@
       </details>`;
   }
 
+  const updatedText = () =>
+    FEEDS.updated ? `更新于 ${new Date(FEEDS.updated).toLocaleString("zh-CN", { hour12: false })}` : "尚未抓取";
+
+  function feedItem(i, showRegion) {
+    const src = SRC_BY_ID[i.sid];
+    const type = i.type ? `<span class="badge">${TYPES[i.type] || ""}</span> ` : "";
+    return `<li class="${i.major ? "is-major" : ""}">${i.major ? `<span class="badge major">重大</span> ` : ""}${
+      showRegion && REGIONS[i.region] ? regionBadge(i.region) + " " : ""
+    }<a href="${safeUrl(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a><div class="meta">${type}${esc(i.source || (src && src.name))}${
+      i.date ? " · " + fmtIso(i.date) : ""
+    }</div></li>`;
+  }
+
   function feedPanel(region) {
-    const items = (FEEDS.items && FEEDS.items[region]) || [];
-    const upd = FEEDS.updated ? `更新于 ${new Date(FEEDS.updated).toLocaleString("zh-CN", { hour12: false })}` : "尚未抓取";
+    const all = (FEEDS.items && FEEDS.items[region]) || [];
+    const majors = all.filter((i) => i.major).length;
+    const items = majorOnly ? all.filter((i) => i.major) : all;
+    const toggle = all.length
+      ? `<div class="toolbar"><button class="chip ${majorOnly ? "" : "active"}" data-major="0">全部<span class="n">${all.length}</span></button><button class="chip ${
+          majorOnly ? "active" : ""
+        }" data-major="1">只看重大<span class="n">${majors}</span></button></div>`
+      : "";
     const list = items.length
-      ? `<ul class="feed">${items
-          .slice(0, 25)
-          .map(
-            (i) =>
-              `<li><a href="${safeUrl(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a><div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}${i.label ? " · " + esc(i.label) : ""}</div></li>`
-          )
-          .join("")}</ul>`
+      ? `<ul class="feed">${items.slice(0, 40).map((i) => feedItem(i)).join("")}</ul>`
+      : all.length
+      ? `<p class="hint">暂无重大动态。</p>`
       : `<p class="hint">暂无自动抓取的新闻。在 GitHub Actions 中运行“更新自动新闻源”工作流后将显示最新动态。</p>`;
-    return `<aside class="panel"><h3>实时动态</h3><p class="hint">自动聚合新闻源，未经人工审核 · ${upd}</p>${list}</aside>`;
+    return `<aside class="panel"><h3>实时动态</h3><p class="hint">来自 <a href="#/sources">${SRC.sources.length} 个信息源</a>，未经人工审核 · ${esc(
+      SRC.schedule || ""
+    )} · ${updatedText()}</p>${toggle}${list}</aside>`;
   }
 
   function chips(key, list) {
@@ -120,6 +143,18 @@
 
     const latestIncident = NEWS.find((n) => n.category === "incident" && n.discuss);
 
+    const weekAgo = Date.now() - 7 * 86400000;
+    const majors = Object.keys(REGIONS)
+      .flatMap((r) => ((FEEDS.items && FEEDS.items[r]) || []).map((i) => Object.assign({ region: r }, i)))
+      .filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo))
+      .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.date || "").localeCompare(a.date || ""))
+      .slice(0, 10);
+    const majorSection = `<div class="section"><h2>近 7 天重大动态 <small>自动识别 · ${esc(SRC.schedule || "")} · ${updatedText()}</small></h2>${
+      majors.length
+        ? `<div class="panel"><ul class="feed">${majors.map((i) => feedItem(i, true)).join("")}</ul></div>`
+        : `<div class="empty">暂无自动抓取数据。信息源每 4 小时由 GitHub Actions 自动抓取，首次运行后这里会显示来自官方、专业媒体、公众号与 X 博主的重大动态。</div>`
+    }</div>`;
+
     return `
       <div class="page-head">
         <h1>行业实况总览</h1>
@@ -129,7 +164,8 @@
         ${stats}
         <a class="stat" href="#/cases"><div class="label">案例库</div><div class="num">${incidents}</div><div class="sub">事故案例 · ${withDiscuss} 个讨论题</div></a>
       </div>
-      <div class="section"><h2>三大板块 <small>按日期倒序</small></h2><div class="columns">${cols}</div></div>
+      ${majorSection}
+      <div class="section"><h2>三大板块 <small>精选 · 按日期倒序</small></h2><div class="columns">${cols}</div></div>
       ${
         latestIncident
           ? `<div class="section"><h2>本期案例研讨 <small>从最新事故中学习</small></h2>${card(latestIncident, true)}</div>`
@@ -232,6 +268,63 @@
       </div>`;
   }
 
+  function viewSources() {
+    const st = FEEDS.status || {};
+    const typeOrder = ["wechat", "x", "site", "query"];
+    const counts = {};
+    SRC.sources.forEach((s) => (counts[s.type] = (counts[s.type] || 0) + 1));
+    const f = filters.sources;
+    const chipsHtml =
+      `<button class="chip ${f === "all" ? "active" : ""}" data-filter="sources" data-value="all">全部<span class="n">${SRC.sources.length}</span></button>` +
+      typeOrder
+        .filter((t) => counts[t])
+        .map((t) => `<button class="chip ${f === t ? "active" : ""}" data-filter="sources" data-value="${t}">${TYPES[t]}<span class="n">${counts[t]}</span></button>`)
+        .join("");
+    const stateOf = (s) => {
+      const x = st[s.id];
+      if (x && x.state === "ok") return `<span class="badge ok">已接入 · ${x.count} 条</span>`;
+      if (x && x.state === "error") return `<span class="badge c-incident" title="${esc(x.error)}">抓取失败</span>`;
+      if ((s.type === "wechat" && !s.rss) || (x && x.state === "unconfigured")) return `<span class="badge">待配置</span>`;
+      return `<span class="badge">待首次抓取</span>`;
+    };
+    const linkOf = (s) => {
+      if (s.type === "wechat") return `<a href="https://weixin.sogou.com/weixin?type=1&query=${encodeURIComponent(s.name)}" target="_blank" rel="noopener">搜狗微信搜索 ↗</a>`;
+      if (s.type === "x") return `<a href="https://x.com/${esc(s.handle)}" target="_blank" rel="noopener">@${esc(s.handle)} ↗</a>`;
+      if (s.home) return `<a href="${safeUrl(s.home)}" target="_blank" rel="noopener">${esc(s.site || "访问")} ↗</a>`;
+      return "—";
+    };
+    const groups = typeOrder
+      .filter((t) => (f === "all" || f === t) && counts[t])
+      .map((t) => {
+        const rows = SRC.sources
+          .filter((s) => s.type === t)
+          .sort((a, b) => a.tier.localeCompare(b.tier))
+          .map(
+            (s) =>
+              `<tr><td><strong>${esc(s.name)}</strong></td><td>${s.type === "query" ? `<span class="badge">补充检索</span>` : `<span class="badge tier-${s.tier}">${s.tier} · ${TIERS[s.tier]}</span>`}</td><td>${
+                REGIONS[s.region] ? regionBadge(s.region) : `<span class="badge">自动归类</span>`
+              }</td><td>${esc(s.focus || s.query || "")}</td><td>${linkOf(s)}</td><td>${stateOf(s)}</td></tr>`
+          )
+          .join("");
+        return `<div class="section"><h2>${TYPES[t]} <small>${counts[t]} 个</small></h2><div class="table-wrap"><table><thead><tr><th>名称</th><th>级别</th><th>板块</th><th>关注点</th><th>链接</th><th>状态</th></tr></thead><tbody>${rows}</tbody></table></div></div>`;
+      })
+      .join("");
+    return `
+      <div class="page-head"><h1>信息源</h1>
+        <p>实时动态${esc(SRC.schedule || "")}自动抓取（${updatedText()}）。标题命中“死亡、爆炸、不可抗力、调查报告”等关键词，并结合来源级别（官方 &gt; 专业媒体 &gt; 博主）打分，达到阈值即标记为<span class="badge major">重大</span>。精选新闻与 FM 风险视角由人工整理。</p>
+      </div>
+      <div class="panel note">
+        <h3>公众号与 X 博主如何接入</h3>
+        <ul>
+          <li><strong>公众号</strong>：微信没有公开 RSS。可自建 <a href="https://github.com/cooderl/wewe-rss" target="_blank" rel="noopener">WeWe RSS</a>（或 RSSHub 等），在 <code>data/sources.js</code> 中为对应公众号填写 <code>rss</code> 地址，服务地址可写成 <code>\${WECHAT_RSS_BASE}</code> 并在 GitHub Secrets 中配置。未配置前仅在此列出，可点击“搜狗微信搜索”手动查看。</li>
+          <li><strong>X 博主</strong>：X 已关闭免费 API。部署带 X 账号认证的 <a href="https://docs.rsshub.app/" target="_blank" rel="noopener">RSSHub</a> 实例后，在 GitHub Secrets 中设置 <code>RSSHUB_BASE</code> 即自动接入。</li>
+          <li><strong>网站</strong>：通过 Google News 按站点检索，无需额外配置。</li>
+        </ul>
+      </div>
+      <div class="toolbar" style="margin-top:16px">${chipsHtml}</div>
+      ${groups}`;
+  }
+
   function viewSearch(q) {
     const k = q.toLowerCase();
     const hit = (s) => String(s || "").toLowerCase().includes(k);
@@ -248,10 +341,7 @@
       ${
         auto.length
           ? `<div class="section"><h2>实时动态</h2><div class="panel"><ul class="feed">${auto
-              .map(
-                (i) =>
-                  `<li>${regionBadge(i.region)} <a href="${safeUrl(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a><div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div></li>`
-              )
+              .map((i) => feedItem(i, true))
               .join("")}</ul></div></div>`
           : ""
       }`;
@@ -278,6 +368,8 @@
       }
     } else if (REGIONS[view]) {
       html = viewRegion(view);
+    } else if (view === "sources") {
+      html = viewSources();
     } else if (view === "cases") {
       html = viewCases();
     } else if (view === "training") {
@@ -310,6 +402,14 @@
 
   /* ---------- events ---------- */
   app.addEventListener("click", (e) => {
+    const mj = e.target.closest(".chip[data-major]");
+    if (mj) {
+      majorOnly = mj.dataset.major === "1";
+      const y = window.scrollY;
+      route();
+      window.scrollTo(0, y);
+      return;
+    }
     const chip = e.target.closest(".chip[data-filter]");
     if (chip) {
       filters[chip.dataset.filter] = chip.dataset.value;

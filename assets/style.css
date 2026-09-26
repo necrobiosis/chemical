@@ -208,3 +208,13 @@ td.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   .header-tools { min-width: 0; flex-basis: 100%; }
   #search { max-width: none; }
 }
+
+/* Major / source badges */
+.badge.major { background: var(--cn); color: var(--surface); font-weight: 600; }
+.badge.ok { background: var(--accent-soft); color: var(--accent); }
+.badge.tier-A { background: var(--accent-soft); color: var(--accent); }
+.badge.tier-B { background: var(--intl-soft); color: var(--intl); }
+.feed li.is-major a { font-weight: 600; }
+.panel .toolbar { margin: 4px 0 4px; }
+.panel.note ul { margin: 0; padding-left: 18px; font-size: 14px; }
+.panel.note li { margin-bottom: 4px; }
