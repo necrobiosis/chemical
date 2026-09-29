@@ -1,126 +1,126 @@
 // 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑
 window.AUTO_FEEDS = {
- "updated": "2026-09-29T18:05:01.415Z",
+ "updated": "2026-09-29T23:43:44.184Z",
  "status": {
-  "cpcif": {
-   "state": "ok",
-   "count": 0,
-   "at": "2026-09-29T18:04:59.454Z"
-  },
   "chemsafety-cn": {
    "state": "ok",
    "count": 0,
-   "at": "2026-09-29T18:04:59.460Z"
+   "at": "2026-09-29T23:43:42.364Z"
+  },
+  "cpcif": {
+   "state": "ok",
+   "count": 0,
+   "at": "2026-09-29T23:43:42.366Z"
   },
   "miit": {
    "state": "ok",
    "count": 0,
-   "at": "2026-09-29T18:04:59.487Z"
-  },
-  "mem": {
-   "state": "ok",
-   "count": 67,
-   "at": "2026-09-29T18:04:59.633Z"
+   "at": "2026-09-29T23:43:42.393Z"
   },
   "ccin": {
    "state": "ok",
    "count": 0,
-   "at": "2026-09-29T18:04:59.634Z"
+   "at": "2026-09-29T23:43:42.467Z"
+  },
+  "mem": {
+   "state": "ok",
+   "count": 67,
+   "at": "2026-09-29T23:43:42.480Z"
   },
   "oilchem": {
    "state": "ok",
-   "count": 4,
-   "at": "2026-09-29T18:04:59.839Z"
+   "count": 5,
+   "at": "2026-09-29T23:43:42.591Z"
+  },
+  "sci99": {
+   "state": "ok",
+   "count": 66,
+   "at": "2026-09-29T23:43:42.791Z"
   },
   "chemnet": {
    "state": "ok",
    "count": 100,
-   "at": "2026-09-29T18:04:59.907Z"
-  },
-  "sci99": {
-   "state": "ok",
-   "count": 42,
-   "at": "2026-09-29T18:04:59.958Z"
-  },
-  "safehoo": {
-   "state": "ok",
-   "count": 69,
-   "at": "2026-09-29T18:04:59.984Z"
-  },
-  "osha": {
-   "state": "ok",
-   "count": 1,
-   "at": "2026-09-29T18:05:00.098Z"
-  },
-  "icis": {
-   "state": "ok",
-   "count": 24,
-   "at": "2026-09-29T18:05:00.200Z"
-  },
-  "cen": {
-   "state": "ok",
-   "count": 35,
-   "at": "2026-09-29T18:05:00.237Z"
+   "at": "2026-09-29T23:43:42.838Z"
   },
   "csb": {
    "state": "ok",
    "count": 100,
-   "at": "2026-09-29T18:05:00.265Z"
+   "at": "2026-09-29T23:43:42.892Z"
+  },
+  "safehoo": {
+   "state": "ok",
+   "count": 83,
+   "at": "2026-09-29T23:43:42.923Z"
+  },
+  "osha": {
+   "state": "ok",
+   "count": 2,
+   "at": "2026-09-29T23:43:42.951Z"
+  },
+  "icis": {
+   "state": "ok",
+   "count": 23,
+   "at": "2026-09-29T23:43:42.981Z"
+  },
+  "cen": {
+   "state": "ok",
+   "count": 36,
+   "at": "2026-09-29T23:43:43.100Z"
   },
   "chemweek": {
    "state": "ok",
    "count": 1,
-   "at": "2026-09-29T18:05:00.363Z"
+   "at": "2026-09-29T23:43:43.147Z"
   },
   "hp": {
    "state": "ok",
-   "count": 46,
-   "at": "2026-09-29T18:05:00.407Z"
+   "count": 51,
+   "at": "2026-09-29T23:43:43.225Z"
   },
   "chemworld": {
    "state": "ok",
    "count": 22,
-   "at": "2026-09-29T18:05:00.442Z"
-  },
-  "spglobal": {
-   "state": "ok",
-   "count": 100,
-   "at": "2026-09-29T18:05:00.556Z"
+   "at": "2026-09-29T23:43:43.228Z"
   },
   "argus": {
    "state": "ok",
-   "count": 38,
-   "at": "2026-09-29T18:05:00.577Z"
+   "count": 39,
+   "at": "2026-09-29T23:43:43.347Z"
   },
   "nikkei": {
    "state": "ok",
    "count": 4,
-   "at": "2026-09-29T18:05:00.632Z"
+   "at": "2026-09-29T23:43:43.390Z"
   },
-  "reuters": {
+  "spglobal": {
    "state": "ok",
    "count": 100,
-   "at": "2026-09-29T18:05:00.849Z"
+   "at": "2026-09-29T23:43:43.406Z"
   },
   "hazardex": {
    "state": "ok",
    "count": 8,
-   "at": "2026-09-29T18:05:00.877Z"
+   "at": "2026-09-29T23:43:43.547Z"
+  },
+  "reuters": {
+   "state": "ok",
+   "count": 100,
+   "at": "2026-09-29T23:43:43.637Z"
   },
   "koreaherald": {
    "state": "ok",
    "count": 100,
-   "at": "2026-09-29T18:05:00.907Z"
+   "at": "2026-09-29T23:43:43.641Z"
+  },
+  "pbs-incidents": {
+   "state": "ok",
+   "count": 75,
+   "at": "2026-09-29T23:43:43.812Z"
   },
   "et": {
    "state": "ok",
    "count": 100,
-   "at": "2026-09-29T18:05:00.992Z"
-  },
-  "pbs-incidents": {
-   "state": "ok",
-   "count": 73,
-   "at": "2026-09-29T18:05:01.138Z"
+   "at": "2026-09-29T23:43:43.818Z"
   },
   "wx-mem": {
    "state": "unconfigured"
@@ -208,22 +208,466 @@ window.AUTO_FEEDS = {
   },
   "q-cn-incident": {
    "state": "ok",
-   "count": 10,
-   "at": "2026-09-29T18:05:01.151Z"
-  },
-  "q-intl-incident": {
-   "state": "ok",
-   "count": 58,
-   "at": "2026-09-29T18:05:01.357Z"
+   "count": 11,
+   "at": "2026-09-29T23:43:43.866Z"
   },
   "q-asia-incident": {
    "state": "ok",
-   "count": 43,
-   "at": "2026-09-29T18:05:01.395Z"
+   "count": 45,
+   "at": "2026-09-29T23:43:44.099Z"
+  },
+  "q-intl-incident": {
+   "state": "ok",
+   "count": 57,
+   "at": "2026-09-29T23:43:44.160Z"
   }
  },
  "items": {
   "cn": [
+   {
+    "title": "山东环氧丙烷市场价格上涨（20260928）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZmRJNjFBbWRQZkZXNGJjYm01SUpnZlFrSGpFc0xnVFN4SDdvbDRoaGxUMkJiRjROQlNxaUl6WE5GYVl1SkhfQUc3cVVaT3hnTFZKX1lWbjY0M25QN0tTcEsyOHJpZmxZQ2FheWJBZVhaZGFEeFJ0NGdqRWNxWExhVzZZd1A?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "广东双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQm9uMk43UURzQ09BQUhYbFc2dXkzRXVBbXg4SHhKU2k2UmxYUEpvRkpyX2tWcU1Ga3dJSGxEVzVhOUMzRllEWUVkT3k5cHFFbDU5SXM0MWpTckN0NTVCOVlzQ3NvVEVuZEJsQWdVOGdHRXVPNWZrenV2ekhsSHFmZHdFVDk?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "双氧水市场早间提示（20260928）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaGI0WEVGemlKUVpCd2VBQzNGdklvdFRSeEJiSWhET2NfTWE2SHZjNEFManFPS2czakdwMGpYYXlEY0pUZjRYNnVUaXJPSzF1NGxrbktfUmNPRloybGc3cXR0QTdpdnVQWkdydmxRVllaZThBZ1J4c0VWdnhPSzhNbUxpM3k?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "华东己内酰胺液体市场动态（20260928）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMExhRk1RMXJVakNXVkQ0Nm9ld3RRMXIyTUxjSi1QMEh1clFfS0FhMG9RY0xqZUxVaGVOM3NQc21SamtSZEs0VFNSTWtJcGVqNDBUMlR1OUZfZHdxSVlZYkNQUVUwLUtGSHdmRlNmS01lTnNUMFNfclZoRkFWekVMTy1ZYi0?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "湖南双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcGxEZVk4UllVY2ZVeHB3MWJiUXJtdTEzTXdIM25ualliS3R3djZ4NU1YdXhVelNjbGdraE04bFZEV292TVJjTGluWExXOXpuVDRjcXZXbUg0NlZDWVh6SGxCWFdjaWpHbmRZNGlPQkRlTFRjVEUyWGZMTjJNaFp4aktJZ1k?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "双氧水：金九产业链量、价齐增",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPaXo5V2N3UVd0UHkybENFbDNHejB5WTFacW1qUGdiVVFVYmtWcE5aaGlzN2ZKS0xsTXBJWml5UEZOaWtVMTVaeEVndGdjMWZGb0k2VGRSX0Z1MjFfWGdQeUxJZ21OQmJMSDQ5bmhpRHhOMnM4alMyMmJlZEhVdDVaWnVjYnk?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "山东环氧丙烷市场价格上涨（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcUlHY2F4bWVscVF6OUw4NzAzeU1BSFlsaFFKUHVlbHUzS3BYdnprdm5CZnVwSTNhRHd2SU8xVnotc2lBQllMYzhYZmRIdFpiTjVPcFVKYm9sWlRiLWx3Q1E2LVN3bEY2MmVqQUl1dFNxZWcwRXR1bXUzYW50YzluNXJuWEw?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "苏南双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWxua2FEVWZSZ3RJNzVKTEhibFFwMGp4T0xWNlMxd3dvSkhIQ0s2Zk13cVhFaUdZY2x2UWYwc0dQY1VLZjBvTkVfNU9oTGxEUFFRbF84STl6MW1DVjU2V1hXellNaF9YQkFDdUYtclRPZS1yTzJoaFYxRE9VekpDWnVyY0Q?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "双氧水市场早间提示（20260922）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNemhaQlhnU1JTRW1IejVlWTA2T0ZObjNRc0hIX19hckM5RGRQczJnckJCeXlna2xhYk9uWm9iUjk3c2hkNVlUbXl0WkN0VElvT3pTWi1ETUVnQy02aExoaTcxVjRwd1R2eG55WDFONDU3U1NBOTd5c3lPanpaVVV6QkNrV3M?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "山东双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZEtXakFZSDVZd2JBYnFGMDZOWGRReGFLY01tYnFIeGFFQmsyZWhUdVBsUWdHbTZURHZBM3FQcGFqNFJSUDVTSGtvbm1OYVY4VU8tbS1Mdjh2OHNXVzN3Zll4blF2SkQ1dmI3TlQ3cl95QzBqT0FndXhoU1VzdWg0UXJWSVk?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "川渝双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQkNRdnRRa2ZNTzVkcGVWVWFicVNOZE1jVkFQQWdIcnZiRWJHNGdWYzd3MW1UVTdEdmMwMHJDV2xiTzlXSVFZRjJ0V0kyWFRwd0R4T1NYRzhreS16MndwdWdCRkhoRDBfVWRjUEItbmY0MXNMM1c3SDB5TGdmcFRsZG9SdHk?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "湖北双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWVo4cUtRc3dkQ3R0YkNLX0piZk1PSks3MjdjeWZaZmMwWFBwRDR5eTNudXlTQy1BQ0M0aVFzSlBXQkJ5aTNPNlVUNTc1UVp2dnFwZzM3TnM1MHV4bGVlRllMWFRMMWUyVlJYVGYxbHQwdzY5TkNIVkZ6RUlhMkphZFZJdFY?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "华东己内酰胺液体市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZUppbzB0T0tCY2w3S3FYSnYxQlMtQTlxY1g5MjAzWTR4bE1RMGRMQzE5UlpJNUtfWUdIb3VPMWxqNWtVUVMtLThfUGYwc0lCUmdXS2NvQTMxcTZsSFJSVUMtZnpnOGw2Q1FtWklyem9YTWhncHFBcHhNVGpKT0VPMmVEZkk?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:25.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "江西双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUFlKOXZjMGg2UDVEY2phX1B5YlZHZjlXTnRSdzBnMV9qTHVvUGxfZFpIb2daWHg1Z2xRSnBtV2dFNmJmZWs3anB6ZlFoVlpObW5TQ194MWEySjZlWHhGc3R4R3lETzVTRHNQVTVOcnlSZXVFZkVTUVlqWElfeVpXSjdWTm4?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:24.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "云贵双氧水市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbzRKQ2JGMkZjTGpDNmE2aUhLUUxMRlphbHZnQUtmdk4xZVJLcXAxZmFITVJVakVDMFdKMVZJdnNjNExRZ255cEVpeENHdWNIblB5NEliYkxiMVpraUcxczBnM3M5YnA0bzRPdXlJWS15ZjZNVzRNWEtMMW5Na0Mxb2lZYzA?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T21:06:24.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "合成橡胶日度市场分析（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1WN09uY01lT2VaaTkyN0hHUTJmS1lieURwWHVqMVJ6M1l6MFZ4Y0xDSHlzWHNSNS1VZE1tNzhUQ0w0d09KOExiREdJREN3MkpsMVAwZWdxU3lHUlVZMS1XQklZZw?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T20:04:02.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "人工智能 模型即服务（MaaS）性能规范",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE92TmJnYnl1OWZ5UmF6d19sVU1NRmltVHdmbWRJQ3EtN0R1cEdoMzNWTzZGUHRKdGhldTdhTURBOVktdUdKb3RoN2laOXl5SzY1bWJzR2dNeGNUeVlMb0dnbS1UcmFWNE1YR1RzVDlkU2JybkFJOUYw?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:52.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "关于2026年精准开展安责险事故预防服务助力重点高危行业领域企业提升安全生产管理水平的通知",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE90RV9mZFV5Mml5TUNlMGRVd0ZBQkdFeldWV1lmRldOUDdOdzFIeUpROUMwQ3MzTDZmMGZfb2lOZUtfaVpWNDNjOV9Ya0dRZVJqWDZWVFBTV0dfWDd6ZmVMNjVENlZETW8?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:51.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "关于进一步健全完善生产安全事故警示教育工作机制的意见",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaYnJReG05QmlSMVRlcFVtZHp1X3J6bU9ycFJaUWZOdlI3RUFRVUx2Qml2Ui05Z0dLX0lSYS1xeXdQOWZLS0d0VGU2QjUzM3BBVUc5RWVFTER0SDJsQk0wSktZbVJOUUE?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:51.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "人工智能 钢铁大模型数据集技术要求",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5SYm5xUUJ5TU5NTDU1TktrVW5zOXJ3dDhudC1BMmZzbUR2V1Z5aG56aVFiRGRKZEFDTm1uakZzaWUyWFdCaEZxOEhDYXFaTVNsbGJwLURjQlFnSXI4ZWNmdVRIaWlwS2ZXUnBQOS11dHV6Znc5bm13?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:51.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "人工智能 客服大模型系统技术要求",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00ZEhNUzd6bmpJU2NRRS1ZWmwtOG53RVBTLTI3X1ZkWkQ1TzFxNzJJYk5scmlJaWNSdFZfeEpaYnVfZFg3ZjN5YS0zMVJVTWJoM2FxTE5wcWNLeFp6dmZ0MHRTUlJNMzhBVTlpMFFPQnhYS0REWDVz?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:51.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "关于做好2026年国际减灾日有关工作的通知",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4VTFPOFRMSVM1UU1RbUhYT2g2R01QaTlYNWUtdkIzb0t1c1BVQWR1anBkb2FyN1dxb1BKNV9ncFdZZW5iSzM3Nk1XOU1GTTlPZV9iSFExbldzSkhQdFF0WFQ0Yl92T0U?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:50.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "矿山隐蔽致灾因素普查规范 第2部分：煤矿",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81VWlUMGlPVU16TUFkdkRqOGVVOHNaVVRsa0ZLelpCR0lyN2ZuSVMwTDN0cklsVkNXenczQlpnRGhXVGhSbnpaTWRPYTJxRUlqc1N0elA1dnlrR1kyUnZ6SzdtYjZmSnFTdWNyX09nbWRlZw?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:50.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "人工智能 电力大模型系统技术要求",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9HekJXSnFSWTV4VUNoMFNPdGhhOW9aVklqQXdVYmloNm43Q1pSOTVzZWczZ3BLeGRqd3Z5Rm5GZUFLWHNDT2RXWXN6X3gxQU16VjlkWTViQ3M2dzhZYkRvZXF2bUlPNm5kSHJzQzFqa2NIY0hqU2NJ?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T18:37:49.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "thyssenkrupp nucera secures new chlor-alkali order from Hongniu Lanzhou in China",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPakVNZ3dMOEJtcjdicXVOOFkyUlVZYU93M2Q1c2xGLU43QlM5QXdxbWc4T0p5b0ZZZ0pycklfQmkxNjhqMVpHeE1wUXk3NTBIUUNyX1RXMUdXSENpaTRJdGU5NExOMkkzR0NSdXlJd2JVanhwTjRBZzJxSnRZNVZlTWtnYkpMWE5BTmF5b1FOT3o4aWtFQko1bk4xSTUtX3NqQWdWcGpPSURhQWtrcktORFBkc29GNTdYSzhRbFA3cjVzVXpGYmpHVlREQWM?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T17:49:34.000Z",
+    "region": "cn",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "国务院安委办、应急管理部调度抽查5省市中秋假期安全防范暗访检查工作",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5hc201N3I2X1ZnYUJGM2piaFp6Y3JhczF2N3Zkb21BUTFESjNMRlU1TnBKMTY1X1AyWGU4emY1YWEzdDV0SHlNV3h4TnFrbm1DalRCZHNyVGFVWk9vUTVPckdWVnhJeWF6dmc?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T17:17:07.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "应急管理部与中国工程院签署战略合作协议",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBtcUk5RFJ0NkN5Q0wzanhIcXNyRXljOUFZQVFkTDNnbGlqdUZfOTB1MTYxaGZXNUh6YTkwemdwRnJRWmFFM1VNVkphNktMN1dqUHY2S3JPSV9CMWFUYXBjTzc1dkJVSmtzMWc?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T17:17:07.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "应急管理部针对重庆、陕西启动国家地质灾害四级应急响应",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CV0dJbTZKQzlmei01VzM2TmJFLVFsdzk1OFdDTXlqWWExdlRpVTZWOTZORGQ0cGRVcFc3S3FaUTJGSnRGQ1dTOVJFUzVaSUR1VWhaa25qZWU3Sld6NHVUV1dLVWR0OTJ4MXc?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T17:17:07.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "应急管理部公布3起化工非法生产典型案例",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1BZjFXdTlkN0pmTFA0SEVNSnRLa2JYMk1EWmNjUy1jbkdkVHNOLTBJVjNESUZnOFoxY1dGOGlpaWxEazhibUNGRGszdHpSME1aQndqMjdoU081QVQwWjRMbXUydDJLMm5sVmc?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T17:17:06.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "国务院安委会办公室召开全国烟花爆竹安全生产工作视频会议",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQNUtsTGRnblAwT08yVnZlNjFzQzVsN2VnMUJRRFdIeE1iNFc2Z216cjR0Mnc5eVdTbmQ5NjZvU1g2X1diMmpDZndKaGpMZmc2bjdPMTNPbGhMeTdxTTB0NG9jWkFPRmxIZVE?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T17:17:06.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "应急管理部召开党委会议、部务会议",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE05akZnRkx4N3NwQUdsS1I3alBLLVZQcXNHUGplRzUyQTRnemhTNnh3emxCbTh1LWg5WFFXeU44QldyTzRxU0JOR3FEYXpnRUNxTkY3VDNnRF9Yc3FHX0pLSXhibU5wY1g4TkE?oc=5",
+    "source": "安全管理网",
+    "date": "2026-09-29T17:17:06.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "聚合MDI中东市场价格评估日度报告（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9QTXlUVzVPWGhUUDhwYU9vU2kyUXVJd290WEI5em5GSlpaWHJydVhSZkhwV3Z3VkNfRGZsZVVpVXU3ZFY3ZnR5NHAzSjA0bjJpVXdFTHB4RXFBOC1Tcmc?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T16:27:34.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "TDI市场早间提示（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE53S1pYZ2RfQmo2ajhTQWhiYWsxWE1hWlZNaGRLZTdlZnNYT0x5aUNXaFhKaDc4VUw2LUpWV0xiZDc0Ny1pZFZRQVVjb2I4cHFXdDdFdGFyZ2s0aHdPUFE?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T16:27:33.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "硝酸市场价格评估日度报告（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA3cEg2MjZCZ1lwSDlKNjVoZkR1bnlzemV4UEotMEVUVTlIbnRWaHBPeE55a1l2cUNOYnBNeUU5cjdnNHNfbk1GaS1Cb3Q3YXZhMGJzRUdRSDczNEdzSHc?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T16:27:33.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "华东地区TDI市场价格稳定（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4weDB3R0NUaUhHZWxHQUhFa3JSMTdTc1FQYjhSbkt6LVo2UHhnWTlIX2lZdDRtdnQ1YjZJVUR4bWNKbHFkMFRUUlI3YXFNVHcwZm1xY28xVlZWMVFWc2c?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T16:27:32.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "华北及山东地区TDI市场价格稳定（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fVXF4bVE2U0RHazdNMDZFcFlNYWNnTkplU2xYOXNpOHVLNzNBUS12OHp4M3hpalBlUjVxQnNha09ySDhnXzdGNFB0c1VPa3EtcS14Y0VFTlFVZVFIbEE?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T16:27:32.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "北方TDI大厂分销渠道停止接单复报",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1QVdXUXR1SnUzTG51OUN6bmtCTVVYOW5rOVhxYWxaRnV4VDNCdDQ0Y1E1UzlBWWVTRGdfMGJ3czF1QTdhRDBlMlFnYjllakVCSlBtY2hPZWtGZ0p4S3c?oc=5",
+    "source": "卓创",
+    "date": "2026-09-29T16:27:32.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
    {
     "title": "Insight: China's AI agents can lie and scheme - just like their US rivals",
     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcV91dFhINlctVXNLUDJtUDE4SFRwdTBUVUJLYW9Ed09WSXlhZzB0RWFqRldma2FjVGd5NXBFWkMyQldUMGVPcTd5MjM0VjJ1TERaY0dfZkF5VklnbTZ6VzNBcmJkTmROUTJWVWkzRGhMbkZ1RktfX1BfNVBTUzFGMEljaElSUHU5Vnd6S25NZGVCUXpYYnJocnBPTG9Na0VxSnpLbGlWclk2TmlMRjcyelFhT0pIc0NpRFE?oc=5",
@@ -273,36 +717,12 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "双氧水：金九产业链量、价齐增",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE83Z2hhZTVTQmVHenllMEptb2V1N09qdjFjSVIzaGZSOFhZeTZQSVFPN0VHWHlsbkpkNmxXTDFIOG5EcGpjSHVRTGE2dE9qNWYzYkxlM0R1WG5rcE5xcHg1c3cxSHUtT29ZamVmSmNTR2pXVFJFZlhKejVVRUE4dDA?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T13:06:06.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
     "title": "双氧水产业链及相关产品收盘汇总（20260929）",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9PVUpfNVNfcTk0UmJYR1RPWTVUZC00ZEpPaXFIV1hrdm54UUd6cnJaNk8zYmdXbEc5cUJfdkZEVEpRbEdFNXBoa2lEX2c3bUFGOFFmTWhDbU01QVJYa0NsVC1IWm9QTTNtT2lLRlJXRkJTeDBob1pqbTlab1FnRUU?oc=5",
     "source": "卓创资讯",
     "date": "2026-09-29T13:06:06.000Z",
     "region": "cn",
     "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "thyssenkrupp nucera secures new chlor-alkali order from Hongniu Lanzhou in China",
-    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPakVNZ3dMOEJtcjdicXVOOFkyUlVZYU93M2Q1c2xGLU43QlM5QXdxbWc4T0p5b0ZZZ0pycklfQmkxNjhqMVpHeE1wUXk3NTBIUUNyX1RXMUdXSENpaTRJdGU5NExOMkkzR0NSdXlJd2JVanhwTjRBZzJxSnRZNVZlTWtnYkpMWE5BTmF5b1FOT3o4aWtFQko1bk4xSTUtX3NqQWdWcGpPSURhQWtrcktORFBkc29GNTdYSzhRbFA3cjVzVXpGYmpHVlREQWM?oc=5",
-    "source": "Hydrocarbon Processing",
-    "date": "2026-09-29T12:33:47.000Z",
-    "region": "cn",
-    "sid": "hp",
     "type": "site",
     "tier": "B",
     "score": 1,
@@ -465,18 +885,6 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "国务院安委会办公室召开全国烟花爆竹安全生产工作视频会议",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB5SFZrcHBXNlZ4SUdfT3lCb21na2hSSy1YaEY5Qm4tdUozZ3ZmMWV6MzZzM0NjWnBpbzl5TXZRYTNVSkhEUld3UHJfQ015eWZLeEZSTVZWSXI1cHJhN2FBcmZoT0VyeENGNTFaSA?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T10:18:00.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
     "title": "India plans five-year ADDs on melamine imports from China",
     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNekR6MkxMdkVtN3FTVXJSdHVkeEZLb3pmWkhMeWgxUnQ4OHB3MFlPVFBHUy1ESWY5MkV4YVVDbXptTjBFTEp4MWV6ZmEtdmNWaVkxSnBhbm5rZHJxQ1FCTUphWFd3UVVFNVZnb2ppZkJFbmY5UWZUa0lqU0hrblZqS05waWtiWTk2Z21SYjYyZEZFSF8ya1pabVRialI3TnJONDBTZmNkaC1CbmJGWEpSZTNtbmFOWjZfMndFaUd3?oc=5",
     "source": "ICIS",
@@ -525,6 +933,18 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "河南晋开集团浓硝酸价格快报",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IcnBXak14bHlWVEg3VlRReWVRUFJmcHFBTzFqMzRYS1Z1SHoxX0FuTHFDdnlxSDhlYzRnSVlEVURnOVBsMzlhR05TZHhQbENnQ05ZRFQ3YUU4STVLWjBB?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T08:31:13.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "四川泸天化稀硝酸价格快报",
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAzOFhGcmU4VEJ3NXNHQkZPbzUxTExFTWlSSGdqbjRVc2RlajBObENBeEdWVURwUHgxWndJSWZYcy1oZ3BVZVFJTEdXeDVDdmlWUW9HdEctQWtvZHM4MUk4?oc=5",
     "source": "卓创资讯",
@@ -549,9 +969,33 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "东北硝酸市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE95MEJiMDFtZWt5YzNmNDFpcnA4WjBsSXRtbmFBaUpRNm4wVy02SGJ3N1Bua1RVQ21qUmRkWTZha3hMWW5SVzV1NnZJNnRHcm5wQkdsQzZLZVJaaExxSlgw?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T08:31:11.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "河南硝酸市场动态（20260929）",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE52cFRFWVZveTVueFZaTGJDdUVHN3pLYVNuTU1rRTBYOU9NbVRxRnF2U093a3NjQmhjQm40c1NoSEMwNENXVXFTekt2R0lIMGFsT1FNSUJqTE0wVzcwdndB?oc=5",
+    "source": "卓创资讯",
+    "date": "2026-09-29T08:31:11.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "最新：韩国OCI宣布终止TDI业务",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE51R3FydVp5WFlDSVFBaUhhLU4zZ3N1YUR5bnZyOGRaNnNOa0tGb09jS1Z1dnlvaUtiSjZ0R29BUFRJc3J3VFdya1g2dVNDTkN5NTBKeHB6WVI3a0w3MHc?oc=5",
-    "source": "pu.sci99.com",
+    "source": "卓创",
     "date": "2026-09-29T08:28:27.000Z",
     "region": "cn",
     "sid": "sci99",
@@ -563,7 +1007,7 @@ window.AUTO_FEEDS = {
    {
     "title": "江苏甲苯市场收盘价格表",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50RWpVcDVNLWdsNGdiRjNXUWQ0SFRRVm5ZeWw2SzZuVjBXWEZLNFByenVtZ0JXQ3FUUHN2TEV5VGNPZ3ZaR3A2WVFWUTdsdzFnMFFzZ1BtbjNtMUtNTEE?oc=5",
-    "source": "pu.sci99.com",
+    "source": "卓创",
     "date": "2026-09-29T08:28:26.000Z",
     "region": "cn",
     "sid": "sci99",
@@ -575,7 +1019,7 @@ window.AUTO_FEEDS = {
    {
     "title": "万华匈牙利博苏化学上调10月份MDI、TDI及多元醇价格",
     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBaUlltb09NOGRjQm0temowMUpEOTlBRFlXMWdld3NaYy1MQUFIU3MweWUxcDVfZXFzcGUyZkNsTUpQZmxCT2hXT1hKUlkxbWNSeGhmTFJqeUR6S1AyR1E?oc=5",
-    "source": "pu.sci99.com",
+    "source": "卓创",
     "date": "2026-09-29T08:28:26.000Z",
     "region": "cn",
     "sid": "sci99",
@@ -597,10 +1041,46 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "生意社：9月29日山东地区甲苯市场交易情况",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1nd0VoTDJTQmk5ZDFfN3JFMHNhTGdlMjhzRnFsQldhX3ZmT2d3VGhVdWhBTVNPbzlybjc1M2ktaV9MQ1VXTHh3LW9wYzFncTZ1MUxTU0UzdGNONWlQSEFR?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-09-29T08:10:27.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "生意社：9月29日国内市场DBP行情上涨",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5YUGl1ZENCcUxPOEJtOS14b1hlcmNNSlZxVVRKdjN2eTlaUEpaaW1DNjFyYXc4SEQ4TnIzajNCR3FVR1ZsUUl2SGI3TzF6QVdwUEgyZ3lzM3hRZENWODJZ?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-09-29T07:54:28.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "东悦新材料：以创新催化国产高端材料",
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBLd3hOcWpmSENxR2g2aTRrV3RKZW9XY2V1S2NWVGFqd1Izci1lcVY5U0djMExCVkNqU3drNEQzVW0tT1hhT3lSNXJTRkNGRmM1QjhBUENGUWt6aDZuRGJv?oc=5",
     "source": "ChemNet News",
     "date": "2026-09-29T07:33:05.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "PriceSeek提醒：罗马尼亚315MW光伏项目并网采用隆基组件",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBNX1VsdTRieXJqRE11NGd5RDN2ZDhiUVJJRWJESGVYbDBaQ2NuYTBwUFF2cGFIQ29vN1BHendMOVBrc1piZXJEUGdFdkx0bV8wNmo0U295UDVGTHJ0Z3Jn?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-09-29T07:31:24.000Z",
     "region": "cn",
     "sid": "chemnet",
     "type": "site",
@@ -621,15 +1101,27 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "应急管理部召开党委会议、部务会议",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rTXp0M2xzVTdVU0dyeFJZcy14MWYwcjFDenVObWRWS0hfYWFnRDBkTUNsQ2hJOWRfWUJOczRWN2kyWHRsY3pHWmxIMTBvc3RVZVpyck9Td0otbVZUczk3bGlqUmF2YjYyQXFLUQ?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T07:23:00.000Z",
+    "title": "PriceSeek提醒：海阳科技PA6切片报价下调",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5kUTVrSU5KdWpzNzFPVXpzbkZWLVM3cW1FdksyTzF4ZUFMS3dQd24xckNDbzI2ZThEVzFibDQzUG12aF9LajVobVlhZWNYMlhiTFFxWE1iRlJDQlBwZTlR?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-09-29T07:17:05.000Z",
     "region": "cn",
-    "sid": "mem",
+    "sid": "chemnet",
     "type": "site",
-    "tier": "A",
-    "score": 2,
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "PriceSeek提醒：巴陵石化PA6切片报价下调分析",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51czJyLW1YQ0Z6SDNzaFJkdVJSRmxtQ25NYXlOT3dvTzRfU2RpX2FvMW56NjRnYmkyUHd4MktiN1NpS0xrLTY1Y1ZKcmY1OWtQbURrSFpPUlBFZ0VWYUJr?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-09-29T07:16:46.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
     "major": false
    },
    {
@@ -671,7 +1163,7 @@ window.AUTO_FEEDS = {
    {
     "title": "隆众视频",
     "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAyWUVpeVU0dUxlV3AzS3ZJT3RuenZlU1FxUERNUnExQndxLVhXQ1c2RGxvdDNCbGs1UTFvT0M2TmY3RFZpWjlKOXJlLVd4UQ?oc=5",
-    "source": "video.oilchem.net",
+    "source": "隆众资讯",
     "date": "2026-09-29T07:07:00.000Z",
     "region": "cn",
     "sid": "oilchem",
@@ -691,501 +1183,177 @@ window.AUTO_FEEDS = {
     "tier": "B",
     "score": 1,
     "major": false
-   },
-   {
-    "title": "湖北消防救援机动总队郑州支队依托黄河训练基地深化党建联建纪实",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0xNFdYR09vd1N6QW1hWHU0ak5yTTZFbGFJQjJYSVU4dks3YUxXUEI3UnBCcHo3WU9sZnowZU5nWnV2MG1SNFZyaTY0bV9NbVVKa3dtTGFMa2FQRUx0TVlkeS1pSTVaUHFXcHl4Ug?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T06:31:00.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "安徽省扎实深入开展2026年省安全生产督察督导工作",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5WbWRQbTRYYkwtQVhQWlZOX29uY0Vfd21vVW1HODAwN25OVXZhSHFDZHNOd1BKeDNJQmpWZE1CckxnNkVabTZqU2R2MWtRWjI3SzNqNTN3TThUUFpXYnE4MDVLbjdPbXExZGJlXw?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T06:29:00.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "中秋假期青海省安全形势总体平稳",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9lbUJlNjAzRTNvRGp3c3lZbUo3MG9VYjk3R0ZTMnZVbGgzRk9UR2VKTFNPSXExRTBDaWRldWswMEpramVwVlJqeDkyN1VMNU80cTZuT2czWVh2R0dUNlNQQTljVDdraGU4UmYwcg?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T06:28:00.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "应急管理部公布3起化工非法生产典型案例",
-    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1oMFVnTXp5a3hpTmlCYWZ5Vll2akpFVmNKcGRsVE0tbjAtXzE4aXVmY3BGb1pqNXZTR1ByejJPMkRXWllFUXJQVDBnSldSNkZRR0wtbWtzTFYxY2pNTzBHZUZTU210SUF4d3dBeXhmYjBFNTA?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T06:26:00.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "26.06 亿项目竣工！利华益 8 万吨聚甲醛装置即将试生产",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBiclFyOHVJamZ6bHUtSXFEdGVFbEE1eHNTT3RqVHdtcjZMWHVEVHdZUTcxUmtSQWwtcmphSHgzaF9jMkd0MGJCdVF6WlNMSWRZMl9FOXo5T0ZoeFpScHBv?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T06:24:58.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "胶管出口：8月中国胶管出口量环比下滑",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxRndaU0E0VlcwM3c5VHgtc2dUR2Z2SElyU25IZ0piNUw3eDExa0FTWDdXNl90bjRPMnB6X1pHVEYtWlJ3bzI1dHVPRk9kVU1oUU1rQ0FMdGFWck5IUFFDSnNyVQ?oc=5",
-    "source": "卓创",
-    "date": "2026-09-29T06:16:24.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "China factories seen rebounding in September as Beijing signals more aid",
-    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPcnZPTU5PYm9wSTRnTm1kb2dVSmhDc2dDQURfX09DYkx6LVZ5a3lPU29OU1kzem9iTTNIUGJLRGh6RmN6XzJCUEZMY0pzSzJ3T2dkckNJb1BLZlVPMWdKbUZNVGJuYVhMWmx1aDc0UUNIcUdobjM1b1VHXzJqNUE5cG9XQ09TVVVSNXlybi1ZM2Z4ZXljR2lMcktPMHhKVXhIUk1qWHh0b1dZVVhaZDJYYw?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T05:23:00.000Z",
-    "region": "cn",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "河北双氧水市场动态（20260929）",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBDVkkyeGNmMkpEQlduRk1PUlVPS2lkVklQT1VsM2lZNVBDSndIV2tYbHgxRC1Gal95V1JiNTNxNFFZRjl2ZzdSaEhGUGpVZWEzVDFCQlpMYUdKd05MOFV0aGQ0SUFyelJZNUN4bEt5M29RYl9hYzhib2hvM3h3dXc?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T05:06:50.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "全国磷酸铁市场价格动态（20260929）",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4cThDY1ZzalY3M1JCbUhRVnRCNjhIUkVETkUwQUlaQVJ6Q3NQcS1LNnhXTjNTS3BBSmZlR2lIekgzaG44TmhGemlZT2JfTkZnZTN2U1BFUS1YQmFMWGdfWkVrU2JWUkx0M1ZyRWstMnRGTFBUd0pGREpMVE5zMlk?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T05:06:49.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "湖南双氧水市场动态（20260929）",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96RVp1Ym5FR2ZGaUlLUWRoNzVTeDFBTFY0alBtaU1kWkF0TEJQSldldjJnRTBCc1NQM1A3ODhNVzNYM3FxZW5EempuMDhoVFVYS09yZUNZQVR4a21Ka2hZQWJidEVZUFNQWjNpUWdLcENYMTFSMTFjRVB1V2JBcFU?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T05:06:49.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "双氧水市场早间提示（20260928）",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByTVRaa3U5LWNHNlhyeldkc013OWNJNDBTTWR4dEg0Y3l1MHlqeVQ1dWVnVm5xQTMwRjA0c1FEUVlUSUgwc2NLNG1BejlJd25OeUluM3d5T2dNSUJaNnZYZGhCb0ZaY2NySnk2LVNMZXFLT1dxajY5WDVFdHp4UzA?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T05:06:49.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "白卡纸市场早间提示（20260929）",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ReW4zOGN3NnRFd0l4TjdnZlVLaS1hcGFUMXYyQXU5OXBLTHBlendTdFZpZFltVFVEdkc2MGtuWTdsc1JMNkVONFpZQzBud3ViVTdsM0UybnRZdGdGMk1IT2NfX1VEanY0QWF3LW51TnVQdFd2NnA3OWpreVBlNkE?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T05:06:49.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "COMMENTARY: China's metal-heavy commodity imports map a messy energy transition",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNW1fS1c5RmstV3VOaDMya3NQSjlTTE5NNGdteVU4b0JJdGM2aUpVaHk4LVRJRjdBeE9BejE3YjZoQ08yenNKNlBveXNIUXVhd0g5ajRtSlA2alQ0YkViZWx5WmRqbXQzandfS2VGWEszMFhKeHJkcWV6RGVpZnc4NTFXLWJ1Sk1UTkZHT1hHV2tfRlFnQ1Q4NGczUTVRLTRpSGxWRUlLckY2SHJCZFpFQzh5TFVGYlRKTWRlcWVhdzlkLUU1WVNzV1NVcmxqUQ?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T05:00:00.000Z",
-    "region": "cn",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "应急管理部办公厅 金融监管总局办公厅",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9iMFlnZ0NtTEdrRkdSX29xYVhReUJRbVNuQ0dHbjhlRktzNGNneGlOYnRRb2NhZXMweHJCQUFkMC1EQUNrQ3VNano1RGVUbk5GaGRQS2d2ZHo4cnJpRGZkczhGcWJmY0trMlo3bGc4LWhnWDJ1alBFMXZhcjc1Zw?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T04:06:54.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "国家防灾减灾救灾委员会办公室关于做好2026年国际减灾日有关工作的通知",
-    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBqaGZDZF9pZjd1TUk2Sm84eWpwZmktZC1RaU5rcm1HTmlmU3FYTnZqZ0dMZTRBdVR6MzZuQVByS284TnU2aVFOQmNFbWFlUXVnTEhqdGRtWmlqVENyRTRpa1Zhdk1XenM2di1TMWlQblhNdV9uR0JaTm9UakxQdw?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T04:06:54.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "[隆众聚焦]：国庆节后，丙酮行情面临高位回调压力_数据-丙酮_溶剂",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9qQ2JlNHFzMndzUjZSS0VxYXpsQjhTVVlWZktwaWFoUkRVUS1vVDdyRkh6cW9Dd3hPYU9UMkxvNGxBN3Y5T1ZKZzJfUWtuSlFONDZVdXU1VnREWTN2ZVZ2a3QyUzJXLTQ?oc=5",
-    "source": "隆众资讯",
-    "date": "2026-09-29T03:37:00.000Z",
-    "region": "cn",
-    "sid": "oilchem",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Avantium 全球首套呋喃二甲酸商业化装置产出首批产品",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9qSldYYVNTbm1kTVJsNnRyWm9SYjhKZmNaTW5HSEF0VzJBX3JTUGxielRTcnczQ2NpVFhQcU1RUkFsaXhobkxKSVFGakRmRDVvZWJhdXhJZXJrUGxhSlpj?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T03:02:20.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "中石油溶液法 POE 工业化落地！大庆石化3万吨/年示范装置产出合格颗粒",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBSUkdtb0NheW9rMHEtallFc1dJbkZHeTcxZnVtbklKdE9Tb19ZU21Wc2xqSk5iTTNMNTdiNkZDRkVXS0FMWkRjemtvcmRqQXp2WVZuRDN6R25vaWc0SzMw?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:56:55.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "欧盟甲烷减排政策落地延期，进口燃料规则或延后一年实施",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBNRHl6U2FaTE9xOHlwYzB6MmxHR0tsV3VvQmhiMUM3RUQweXNrcHVacmh6V19wT2RYNEpQNWFqbGpoeUxpTndOeXRrUEFrcXFPalA3dV9vVDVuU0RWeV9F?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:51:49.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "由 9000 吨扩至 17280 吨！印度 Balaji Amines 乙腈新装置投产",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE51Ml9FaW1qa1hzeG5PRGlHYVlULUJmclpzc2xjSjF4ZVVrdFVLbHR1V2NnSTc5SWlTRFFjWlVvWVN4ZzhhelotZWY2R29vaUI3YkVkcFU4UDdZUEIzbzcw?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:44:00.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "3012 吨钾肥首发！平陆运河打通老挝钾肥对华江海联运通道",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBzZW1NS2xjWDBsV1prTWREZk8tLUlsZ196RzZNYktUMDdyWTkwN3VLMDFYc2U0VUhXYlJNYzlUckx6UGdMTjA2QzBMNmJWU1ItekR2QkxBTDVmaEVUSlZv?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:40:14.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "冶金装备网络化协同制造 通用技术要求",
-    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9qVkpZaGhqRjQ4eXl1SGpfRER1Mk1wdmxTZDdDTlFmZ3dxbUdmbTN2aTZQM2tMME1SMnFTTTU5cnFRRWV1T3dFSXI1ZmJHdVR6MVdnZTBpYUIxWU1FNGFtOGVrcGsxS1ZDQTJoeHpOQ1lkc05JSjY0clhn?oc=5",
-    "source": "安全管理网",
-    "date": "2026-09-29T02:39:19.000Z",
-    "region": "cn",
-    "sid": "safehoo",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "应急管理部与中国工程院签署战略合作协议",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xN3d4N0FkQ2MteE40dGdUdmppMUM3dW83b1dWUXEtOUxGMEFMY0E2dUg2dl9kcHBlUlBLRDRvRC1HWkVfTWpyVmFhVzRQd1Ffb0hFZ2ZHY1U4TDYyQUJkbWM1a2VuY1gwcW1RTg?oc=5",
-    "source": "mem.gov.cn",
-    "date": "2026-09-29T02:35:00.000Z",
-    "region": "cn",
-    "sid": "mem",
-    "type": "site",
-    "tier": "A",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "机车柴油机 通用技术条件",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE05TnJUY2xLbjR3cTk4aGl6UXpoYlRmYlRDaEZCM3FXR01Ld0l5al9pSjU3NFNOeDd0dWFpcnZKV21UekZLUHpVeFNSYmRuRWtjeUU1WEpTdmstdkcyT3NEcnB0SjZOcnlQRTBLUGdSaEU1VnNSVFE?oc=5",
-    "source": "安全管理网",
-    "date": "2026-09-29T02:17:09.000Z",
-    "region": "cn",
-    "sid": "safehoo",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "亿纬锂能拟转让湖北恩捷新材料45%股权，交易对价11.5亿元",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBDVmM0OWtQOUhENDY5Y2U3RWk2UUxyeVEzSWtsMW5QTmdFcVJ0eXk3X0k4M2JTVGpuT0hvRGU4NGtndWhfblBaSzlsUnQ1bGttYW02b21lazA1WUFrbnFF?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:15:12.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "打破进口依赖！云天化石化攻克高端茂金属聚丙烯技术难题",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFByWnYwUGhOVUNORjYyemdwNlZrSFI2RzVLZC04RzJPRlVPMU1FS3BaZ0ZNbzFTWGVmUGdienQ2RzJWT0o4Umc3dVZPMklZYklaVTMxejEwQm9sQUpYRnRB?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:12:32.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "高端转型再落子！卫星化学精细助剂项目进入环评拟审批",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9EZXN6Nmk3aFpqWjZaZjR3U1R4Y3l6ZkZiZXp3OFZ5eUxLMmxQVXRYcVF1VDZDdzdiVGw5eUlvTkNLZ2FxaVNSa1U0cjdfRmZTNHMyWXlzTExIZ1lEMUY0?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:10:08.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "主动磁悬浮轴承定子检测方法",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UanhZWWJtQWtkNnBTb054OEJObmtXdjZCd2FCdkJVbm8zaTZLSU01WERvRWxoekR6ZFpNZndyNUlPS2Z2cjhaTE9aUElLVGw2b1BNSnhPeExEeWs0NG05Y3JSWk9VbndLVGE5RVNPOEJRYmE2dHc?oc=5",
-    "source": "安全管理网",
-    "date": "2026-09-29T02:06:56.000Z",
-    "region": "cn",
-    "sid": "safehoo",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "重磅公告！紫金矿业赤峰黄金交易延期至11月30日",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1QV01jSWU0aUxzckpzV3pzb2RwY3lmVkhkdlEybmJOOUlaM05WUHJXVjJud1dwSERZR2s5NDRuNHp0VkoxR2FDS2dWVHQxaTZ4NkFvRlNDcmpOYUJ6UEFZ?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T02:01:31.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "颗粒 粒度切割器切割性能测试 第3部分：静态箱法",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1YNS1zN19uLTBUQ3pzZUthbWRna1k3a3RISWFJclREc2xMMzZoWE1HSkV1UGVsc3I4UV8yTy1Yd2poTDhSRzFKTnpPamx1V3Jmal9HUTI4TTl6WWljcTB1WVdsa1huWW5DSWMxemdWQTJoTjZILWc?oc=5",
-    "source": "安全管理网",
-    "date": "2026-09-29T01:56:44.000Z",
-    "region": "cn",
-    "sid": "safehoo",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "火灾整改完成，印度卡拉卡尔EDC装置复产",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxbzhudUdZbE9ZWkx4NUdUaVNFUG11ck9RZi1ncG5Dam44OWJpVVlqOGFEa2JzUDQ0eDJ6RXI1amV2MzBtaEUwMldWX1FvWWl2ZGFSbzNtMzZIZVRTaktN?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T01:47:24.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "沙特东西输油管道修复重启，海湾原油出口反弹",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1xNXZsNEdMM0xJbG1Kc1FLRy1zeDJEbVJNTVRfX0ZGT2NqVHJfenBFdVhlbHZqcmt0d3VrV19wVDk1UW51UTUxYmJ6clJDdjVnSlREeEtQd3cwdzRqZFJj?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T01:38:39.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "报价103亿欧元！巴斯夫收购赢创遇阻",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBRNHhrUkY0Z3hYaFF2MlRMYUNEcWc4MExFa1hHbXF5YmtSaFFfc1M4akQ1TmJPRUl1OFRKbXdFNE1sX0tjbURkVExTdFFtYzVwNWJVUjJXOTQxaWJXQTBF?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T01:30:33.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "日产4000吨尿素！东洋工程尼日利亚化肥新线完工",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE52VVpxWTdaOUFDNWMwdWhCdDJuMVZ2c0RPT1ptVkZQRHNvZm9wRVR4TXFoVDZMenNYbjdUSXJ6eXlQb0lMdm1td250ellORmR3U0Q0aWpraEdQQzh5N2NZ?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T01:23:34.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "大中矿业公告加达锂矿增储，两大锂矿LCE超577万吨",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ER2lfOTNFOENrX1dZandTWmNBRmEtOTk4UmJPSHp2Sk4tWjJLYTk5WVUyVGI5Zi1pY0ZHUUNEUFBWQy1KTjhOSkcyTUtMTExKVENVM1poT0ZBWEFGRVg0?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T01:12:32.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "能化 橡塑期现货行情速递（20260929）",
-    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBubEZ6UDEyeGs2azdBSHRWemFEQlU2SllGUUdHZS1fbnBDRXhMTEhpeUtiR25IQ3FWSkNHZFlROXpaU016OFlBdFZPOG9NMm42dDI1ckNoNkpHdFNQQ3UzVE9tUQ?oc=5",
-    "source": "卓创",
-    "date": "2026-09-29T01:11:43.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "齐翔华利发布MMA装置大修谈判公告，最高限价60万元",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1vNHhBa0NyaHdRemdLQWU5MzM1QXpkWkVNaHZUbk41ZXVSdHB3MzB4Y0RSZ2c2c2ZuU1I3aVQyUEtKSkhzVGxZQ3psSm05eUlwcy1lMThNQUQ0RktCc1Bv?oc=5",
-    "source": "ChemNet News",
-    "date": "2026-09-29T00:47:43.000Z",
-    "region": "cn",
-    "sid": "chemnet",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "TDI市场价格评估日度报告（20260928）",
-    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBudVM3VFZ3OERrZDA2VmhHTDJ4X1lObDJ1aVZyWmxhQko0X1VBZXRwOVRBa0N2allvbnRJbGZXR3NhVEc5RUZHaTEycE1qRkdtWlJqMEhZY0N5SU5idmtR?oc=5",
-    "source": "卓创资讯",
-    "date": "2026-09-29T00:30:54.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "最新:华北TDI工厂结算价快报",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5VMTU1bE95VHhzbTZOQi1TOURkZUNGTlNnOXhVUEdWYzVrMlNuc1RHenZBMlJpVUt1UGFNdmpMMjk1dW9PQU96YnFIanJyLWF2ZkxEWnhLdFVUaUpmbXc?oc=5",
-    "source": "pu.sci99.com",
-    "date": "2026-09-29T00:27:28.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "甲苯市场价格评估日度报告（20260928）",
-    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9VOXVvM01vTmZqU0tpZmRfSnlXLW5DR3FEUWd3NnFxN1JyTWpLQ2VBNWxTbzhUcVBJSE5SN05LSW9JX25idGp1ZERTcnNvR2c5TDZyR21UdFlXN05DSGc?oc=5",
-    "source": "pu.sci99.com",
-    "date": "2026-09-29T00:27:28.000Z",
-    "region": "cn",
-    "sid": "sci99",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "[隆众聚焦]：液氧行业利润逼近成本线短期行情承压运行_热点聚焦_加氢站",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nbmJHcmJ6N0hCUEJ6TGtaUkVQSmNheVo1eVJXbWQzTHpqemlzUUUxRkpJVkh1cTVFeWRVVEVEeXZRY1pWWm1NQWxSXzlFQklYbTlOSW1EeHRqZV9CNFMwRXZfTk5KdE0?oc=5",
-    "source": "隆众资讯",
-    "date": "2026-09-29T00:25:00.000Z",
-    "region": "cn",
-    "sid": "oilchem",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
    }
   ],
   "asia": [
+   {
+    "title": "AI could pose existential risk to humans: Anthropic",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZElyemFjRXVsYkRveGNyRGl6eXVSd1Y1U0R6TWc5S1Q0dHNNR1NtQU91SmZqR3RONnpLSXYtNG9MOExkX2lrMy1RbnQwWnNZc0hRQ0ZHM0NZWGIyLWEwWFVYQTBDSDF1TXVNc056NVAzVjRzS01WVThmOUo2ODZXaVo0ZE9kTm9NZ3ljS0hsdHBhNGdfeXpfM1lKNTNkcWh2VWZpVHExY2FOMlRqZzRoQ2lHaWN4N0JHY21SWkhR?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T21:35:37.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "What To Expect From India's Biggest Market Listing To Date",
+    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOU0xkU0hUM3ZxbjhJY1pDMGtoZzBfRTBLX211Mi1aRmRzdE5WaEV4aUVscFpnaXZ5ZU94VjUwRUZSNzdHSjEzcGpEeTZ4NmlUUnlXRmN0a0lvLXgxbko0Z1dCQ2h6NEFqaldlVUVPYmFtcFBDUW1OR1F0TThmSWhpU3NncS1Sdw?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T21:11:57.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Goldman Sachs' John Waldron edges closer to succeeding David Solomon as CEO",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPSHM3NjhaS0pjRVVxS1BjVXlxQlpINDJXRGhlSmJGRFlnVnB3dnV4dWFRaTliMERad3g0V1VaQ3BPRmN1Tkk2Z0h4NDRUVlBEZzJrZ0UtbE95bWQ5NjE1VWptRUw0NjkyQmRldlBPdlVJMy1HOTdhaXpaZTl4aHZzcmo0SE5yU05RSlRDTGhXOGV5Z1huWWtHMWdkVEwtUEhuNHJuQ1hkdmdaZjJqV2VmUko1aUpSWVB5VF9oUnBXLWdKOVFQSG1LNHhnMklNNWxDQkxXVGxSTjBJV2FqRjUxSUYzelFJeUNXMVRzZUhpdF9LX3Nxb2pOTQ?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T20:20:48.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "NCLAT issues notices to lenders on Subhash Chandra’s plea against NCLT order",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVW9HU0lfWXQ2cXZkeWhzWjhxamVQSVhWOGx1eUw0NHpMX1dvZk9hUDRGcHJnS1AxbG9VcEgtQ2N4Um5JNFlsVVFfMHo0clJkYjZtaXNRUUZXalh2bmVuelRBazI3SHYwZUxCRmtaS1V3ZTNqQ01vYWFGaF9NZm9GRDJKSXpTcjk3eEJ2YzJlNTlNUTRvN1N4ZTJwTGR4Sy14TWwwd1JXRExDUmo0VzhRLWpGdWE1dWJ5bXVuRU1oOHlvby1zaHM2cUUycnl0UkdGbnRpV2RRWlQ4MlBzMWwweVhjUdIB3AFBVV95cUxPM0lvSTFfRG1jY3ZXRTQ2c2FGbzJtdGhjS0dlQ2dnbHdITVV1WEVheGRxRjhFOFBPeWRSdUh1a1JVRWx2NnF4bFppcm1PUTZoTElwbVB3U0JsbFFKTnhLX2Q5R1U4bFFnRl9PTE9ncTdDQy1SY2xKNENENTY2XzNfV3VuWmdtY3VBN0ZCX00tcVJVbzVIbjlOekl4ZzhscDZ5TWY3UWFlWXFXbFFmN2hHd1YzQzQzc0RKLUhFdXhiZU5Ec1VOUkhnQmJ6eFJ2ZnktZ2ZxaGYyUEZaT1px?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T20:19:23.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "SC seeks 16% MRP cap on medicines, flags huge cancer drug markups",
+    "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQcm9HbXFtcWZMVFFCLUFaTF9xcE5sRGVqUG9rVnRrQTBNTVIxTzZ5QzZIbWNtOHdhWllLQjA5Um03TTlnMVROaW4wQTF5SWgxazBCZzRCWkp2Z0hWWjNoeDJJdGJ5MGFHaWxTTV95eFR6ZUIzRlVzLVZKYTUyRGtRWHIwLVVRLTR5Qk9mTW12NVZwM2MyZ2xMaU9iTmIwaTBwalJQMDNhUEpWYkJjQlF3UnhoTWhhak9LVWswMzlfQ05OMmZVQnBTS1lMSzRlR2hlakoza0Y3REMyQ1FJMllNUDlFeHEzM0t4Mk1tVEdyUGNaOW9Od0JnUtIB8gFBVV95cUxQaTNua0F2VW4wd2pqOVdjaVVMRG5hVzIwQXZRQjVxUE5CU09aMTlBNFZYN0QzVHcwWk9OT0RwVnU5TWNVbjJHNlp0eGVfOF9ZWG83cWVlMmRsUUdoYnJDQ0NWMGVRdklGOHd5Nk9rNHpoUTVzUEotNlBwZUpmQzhkYUx6dFl5Z2hoYk53VUc0aHEtaHdOZGhYVTFpQ2tlX3B4VmQxYlVFTEFzR2U5M0EtRnBGRkxibmI1UDVoM0Yzck1GaTJyMjh6N0tnYzVWSGVpMERCR0l0RWppZGZ6SWxYazFzczZxWXJMdWJDcG9LcGtEQQ?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T20:15:20.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Happy Hours! UK trade pact brings scotch prices down in India",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQMXZEMFNEVG0wRFFQeWQ3R2FhVkNGX0Jza3RtMmV4c3F3a1dYRlgxRW0yTHBWVEVFR3FUTmMtZk4yOThtQ0dndHM1Y2tINTFYb1hXRTVrcEZrSDA5Z2tGa2hBV3gwSC1aejN4LXpDU0RlLVg4bVZiUTNlR1FDdTdaWXlpbWtiS3czdzhfQjR1aC1hSjAxci1LSlY3TDlRWmZfak1INW5tNjNsblBVQzdvTXFEb1R5b3g0RWoyZlkxZ3MyZmlFVDR4OHBrWTA0TWszOEU1VVNiaEF6N0FsNWJiNU1xR0EwaEFZ0gHiAUFVX3lxTFBkNXhVTWpJVU9vbnJabFFpY2p3Nmg1S3YyNkRBQ0l4WlJ0bVhEZVhzTmdCOHlBSHVsY1BKTXhHVkxFRERfREprX3Ewb1dPX3RGenBPTUZIdWQ5MGJzU1RfQTdmaXY1UjNhcGYyZ1Y0WlB4TTdGaWs2a2dZU1UyaG9NSEV5SEtSLVF4R09Uek5rWEhqVk13RENJOXJZT1FpTG9yT3dnQ1Etb0xnS0Fub2RDUVFkU0c2cTBZY3JJM1JlbUU1d1phelFMMVBmRXkzcHlaOGVfWWUycy1qdG1UajdsMEE?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T20:02:14.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "OpenAI scraps debut of latest Astra model over safety risks",
+    "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNVmI4Tl90UHAzY1BiTDlPY0tzcmU3WUZjYllYZTRtd3F4Tk5zR29TSFRLemlfRlFNNVhUa2Vqd2dUYUtyUU5ZbkJkbms0cGVabzhUMExMa05QN2pPYUItTTFGT1VnZElLeWVaZGJfc2VyQl9QVGhKM2VJeExJVVgxclhvU1R4ZkJnRWhvUDRJTEtMWU1NMkhaeU1UVkdVUE5ZTVNqMXpYTWZpZnBiR3MwVTJWZjdKNUQ4b1phekRpZE1nVmVraDltSExOX29YNGlhbjQyd0ZtSnloRkJtQ2xEcjNZM0Y1dnQ2OUwtdy1feTE0ZnVEaUQ2YmJzbFExWlQzbVFScmpwcC1IazhEb1A3bzVwRlNKMmNJOGl6UzMxS2ppcGw3T0pvVEFxc3JYd9IBygFBVV95cUxQS2VtOXBpcW5VZXpZX1p3cmZaR0hkeUZxQlhaSUFkUGJZcmRIajlBV0pRb3cwS3NSRHJheWFlZ0VVOUJrb0tsVm9lTDRpOFNVTEZtaWp5Y1M1b010VDdEZGRXMGhTSlBRcWU1Vnd1aFJLc0hsdmdVY09aaFRLOEdhb0E2OEMyaE5vRUlDLW5tNVJmd01FRFE5SzNKamxSZDRYYlFWMnBQaU1nR1NoX2FkLW5XdlFqck5INmpoaEdHa0lUX0ZERWpya0JB?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T19:49:46.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "SC upholds HC order, clarifies scope of Fortis forensic audit",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOS3g5THhwNWp5N2MwY05FOGh5RWhNdldLSFBhc0NkczVEUHVwRzVCU0h1NWNUeUVDWi13WUVicjhIV1ZSOTRpUmJoaDNvY2U1NmpJdG50eHdGNmtBYzM1VUhFa2tYSGFvd0FiU0xKVWh6a0QzTEpwN2c2cVg5clV0RngteVM3UUdJREFIOTF2SWJnclNvSDNJa1htRHVlNFR0b0ZBVnQyZEp0SFB2andOQ3FHSmhDTmJQZjU5Y1JIendLTGdKanVIMmY3TmdoYmJjMU5fN2RjdFpDcjhsREx2RVlOX25rcXFBTF9VX25rajY5aHFL?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T19:48:15.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Top court quashes arrest of Sambhal violence accused, fines UP government 10 lakh",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQRkFHZEhnbFcyNU0yMm9MNkhGRTBUbmdCR2E1c1RmckwwZHYyUHo3a1lYR1NFQ012d3dhZXBfSDY4R3hjQ3BYNTlnVnpZbTZGdTMxd3BHSUx0cE5wd0xiaFR3Y2ZOUTAtR1h6TDRjY20yVzJBQU1qS0tnTjFXOHFHakhGMUhCcTBHMy00SjZKR2RzRTdld0VzNE9nT2d2TC1QMWxZZjdWdE1JT3dCZ3NQdU5ZMWp5dldQMVYzcF9nMW1melR2NDB1MHUzMUM4TzlFcUpHT0ViYkh2WWp4QTNXdWJvcDgxWXRtTGc?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T19:22:26.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Child rights panel NCPCR faces SC heat over 25% EWS school quota",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNS2tLZExHYlRZaDBXbjNGc1pLVVgta3lTbWh0QWc5WmM2THdXcUhtd1RucXJjQnU4SXQ2RmVid2dnUFVzVzhNdUJUcXN1bWNKVnpaQ1lvZ08tdmctbjI0cWRqcnRmWVV3dnRzMVY0cVUtWnZuX0s3WjBmc1h2MXJTVUNab2diMDg3cDNqUG5MZUxQWnZnTXZMNDI5TjMtOXUzT080Y2pJMmNiZ3lPMGNsREZIZS1aLWV6Y01nRldVaU9JX01JODJ0clNJVWJXYWMyd3NB0gHMAUFVX3lxTE0zcVhiWFZBb2dHUldQQkUwbEhZVThTTURnb1NMRFNtdGRTd2phRnpVRjJBaE9lN3IzT1F5NmxaYlNFWFFSNFVFclFiU3ZTbmM3ZDg2QUhyc3NjNW0yYVJOSUhPZEdodWhsQlBQM3d6bzBBdWZFQllkM0pUMFZ2WUNIWU5sQ0ZuamM0TGJnVnhDTC1vLXc0TzBRQ2xIaFRRTlpOQmZKcGN1RGJTRWRzZG85NGZabjh0aHUzQXg4cGR4VmJBVHo4bEJTbWhuVA?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T19:19:54.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Foodgrain output target cut over El Nino impact",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZjZPRVFCR3FmbjZwbUhZMFdSaVg1NWJLNEplcUZrZ0tpNC1qSHZ5dlgydkE0Z2lWbmhnTG9POEdXTVRJQUdMUlpacGpSRWhHQ1A5Q2c1ZXE4emxKaDhxazBJT3NHQjNjazBnekNINk9jUU5wSTJQNmlNblFiRWU1U3lHMExwdVFoUTNCYjRoMUFxOHB6OHlaTlJwVDBEaTBuTDhZcnYwTkMxRW5uMWFqcmhmRE4yRVcwYWZpeVBsX1l5ZV9NSkEwU0ttQXItNWVR0gHKAUFVX3lxTE5wYnFJYmRQNk53bjVLZ2dCUFNwVVdGVGpoZVdNNDJfZDY3ZHRubHpMSlVQeFl4WVg3N1RlVmFIZ2ZZTGJNbGNGTXJybjc0a20tdy1lTjdUWkdDVWYzUmdiQ19mWVAwZXV6andiYmhfY2hXTXZTa0FGdUZSZXhDaUNYSXJ5N3dEOW1zTzRwaVdIYm90cndKLXpoNjhFX0tRNWwyd3MyV0R1VjJGcUtXRWlPS3pnSWxCSF9vQl9RQUFwZVRZMUxYWUQxVGc?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-09-29T19:17:39.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Explosion at Indonesian lightweight brick plant kills five workers",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLXZLZXJncTRobDRZc21haGE0aFNEbmtXZGIybTNxblplcTgwR19JZS00cWJET09DNURiamZ0TzF6aE5yZXVSb2lFeHd3blZ6cUIwR3c3LXRQRFBzWk1QMktDVzRUeUh6dVJsNUtvTVBBWlgydFpqcDZ5WnV6NHRqV0gyY01aWWExVjJ1aTlvN3I3UDhkelMxV1g2dUpsTGg4ZUU2XzBxNl94NVltal9XN0NjRTRKLWlHYVFj?oc=5",
+    "source": "HazardEx",
+    "date": "2026-09-29T18:21:04.000Z",
+    "region": "asia",
+    "sid": "hazardex",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "Pidilite ties up with Hwaseung Chemical to chase India’s footwear upgrade",
+    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPOXdlc0VfZGE4OVBVMUxqdG9Xbjd5a2w5TGQ4RzZNeEE4SGhWM0NrbFBWdDExYUxGb01NeVlrNVhURUt0dWdzX2xOX240MkVFWjJ4Wmlmb0ttTlFxZGxvZWlUcHdabFRxTU9YUW5hRWprRUM3Sk5OS2QybG03blEwVnFmM2RvTk9vTjlXc1JYbjN2bjhsMU51elBTWFlZMDFHLTh2bElrMlZFYUJHOEJGOEp0cFo1QUZYYk03clZzOHhrYmViRkp5Mmt6bFVhYldXNnZnSTllblBxTHJMUHNGNDRWaTdpdHBCekHSAe4BQVVfeXFMUHpPY0pUNzhpaHpleERwa3A1bHZ3MjJ0dVpyby1zUU1ZOGRpVkhmNWtHeXVBUFlPb1lLWnZ3OEZWMGFlVkg0RDhjYW5GcWh6SVZKTmtwUWR4bklWX2owZ0lDSTRrV3Zrb01CaFQ3aE0wQjJmd256bHlpOFN4UkRpZ0tNZ01GV0l3VjZ1UzdPcnFsTXd6TzV6Vkp1QUE5UXNxTlQwSndHd0FXZHphYUp6VF9Vd0kxNVplR0ZfRnpUU0wwbUFaY2EzNWd6YnRfcjZVSHpTRmZ5TnhPTzFENUlSZWhOaWFKQm0xbUc3ZGNGUQ?oc=5",
+    "source": "Indiatimes",
+    "date": "2026-09-29T18:16:38.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "India and UAE deepen push for rupee-dirham trade rails",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxON2RfdGc3bHY3RnFDVFJKdkZLRkVMLXhrWmhXVVNjTWFXeTM4OWx1QnVEWW81Y0dLRmJ2WHFfejNKOEExbFNaeExSRldOdkpvaXgyamJDdFRGbFJkQ3lBZ2o3NmoyM2hVemJBSkZuN3NpYnd2UzlmNmFOb3hkeXhKOFlZa1QycWhzZkszbFo5NVJhN2NjTXN1eEtCRi0wSTFCblBKbHZIUzhjLUZlUl9ab1hBYVFMSzktc3hCcVJaTFI3dVNnSy1tVkRKRjhSY2Y40gHUAUFVX3lxTE5SZHhQMk1QeFFJT2tzbXZ5M1lzSGlrRG5xT19saFQ3MjUxclV3VUxwTHduaGNzZWJRSjBITnMwTmhDOG5Pb0hCWS03LU9uaF93dmhhNnBpY0plS2sxalNpZS0xcE44OVVWaUtORmlnOTA3dS1CYUtXY0ZMNXVkdjRaRXlZdFlJZU03WEt3YkxhQkZrZVJ6ME5sUGZmSldkbjdLWUI4eG9JdnU2aEptSUZ2cllkN3BaUGtYSkl0NHc3MHZ1NWxkLS1xSjFHczVVV2U3eXRO?oc=5",
+    "source": "supplychain.economictimes.indiatimes.com",
+    "date": "2026-09-29T17:05:33.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
    {
     "title": "DGMA extends validity of seafarer competency certificates amidst continuing Gulf crisis",
     "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPMGxxMW1oS2tWQ0VDY3VOZlV2TlB2eXVNVG9TOG5RNDRjTXJ5dllUdENmNmQ2enpkM0NNUUszS2Zacmp4V0xjUTFsSVZVZXQwYzlrdngyNS11cUtIOEVZWkRUUjJaSXdUMk1JN1JiMGZETFBXLWdjcS1Yb080Yk5MNkxLTklEV1NjNC1VUm5ZajhYOWdUTTVDZ1EzMVVXb3pDRWtiSmVNS09KZUQydVdZQlRwMUt4UmExZFJDWWotLXZ5b0phb2d3ckFxOEdUSTJCdGl3WjZtOExhLVNpU3dNZ19SQ2VQbkJNZlh0Mk1CWTdkY1NObnd2aGFDSXo3RC1OUk1hODdkM2Vrc1pmRmdyUWVOUGdRV2NyVHpSeUNDMUM?oc=5",
@@ -1235,22 +1403,10 @@ window.AUTO_FEEDS = {
     "major": true
    },
    {
-    "title": "Explosion at Indonesian lightweight brick plant kills five workers",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQLXZLZXJncTRobDRZc21haGE0aFNEbmtXZGIybTNxblplcTgwR19JZS00cWJET09DNURiamZ0TzF6aE5yZXVSb2lFeHd3blZ6cUIwR3c3LXRQRFBzWk1QMktDVzRUeUh6dVJsNUtvTVBBWlgydFpqcDZ5WnV6NHRqV0gyY01aWWExVjJ1aTlvN3I3UDhkelMxV1g2dUpsTGg4ZUU2XzBxNl94NVltal9XN0NjRTRKLWlHYVFj?oc=5",
-    "source": "HazardEx",
-    "date": "2026-09-29T12:33:13.000Z",
-    "region": "asia",
-    "sid": "hazardex",
-    "type": "site",
-    "tier": "B",
-    "score": 3,
-    "major": true
-   },
-   {
-    "title": "Pidilite ties up with Hwaseung Chemical to chase India’s footwear upgrade",
-    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPOXdlc0VfZGE4OVBVMUxqdG9Xbjd5a2w5TGQ4RzZNeEE4SGhWM0NrbFBWdDExYUxGb01NeVlrNVhURUt0dWdzX2xOX240MkVFWjJ4Wmlmb0ttTlFxZGxvZWlUcHdabFRxTU9YUW5hRWprRUM3Sk5OS2QybG03blEwVnFmM2RvTk9vTjlXc1JYbjN2bjhsMU51elBTWFlZMDFHLTh2bElrMlZFYUJHOEJGOEp0cFo1QUZYYk03clZzOHhrYmViRkp5Mmt6bFVhYldXNnZnSTllblBxTHJMUHNGNDRWaTdpdHBCekHSAe4BQVVfeXFMUHpPY0pUNzhpaHpleERwa3A1bHZ3MjJ0dVpyby1zUU1ZOGRpVkhmNWtHeXVBUFlPb1lLWnZ3OEZWMGFlVkg0RDhjYW5GcWh6SVZKTmtwUWR4bklWX2owZ0lDSTRrV3Zrb01CaFQ3aE0wQjJmd256bHlpOFN4UkRpZ0tNZ01GV0l3VjZ1UzdPcnFsTXd6TzV6Vkp1QUE5UXNxTlQwSndHd0FXZHphYUp6VF9Vd0kxNVplR0ZfRnpUU0wwbUFaY2EzNWd6YnRfcjZVSHpTRmZ5TnhPTzFENUlSZWhOaWFKQm0xbUc3ZGNGUQ?oc=5",
-    "source": "Indiatimes",
-    "date": "2026-09-29T12:16:33.000Z",
+    "title": "India races to blunt Europe’s carbon border tax before exporters pay more",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcVZOX1FMSVlMb1lxblA3T1ZFZENqNzFUQmZ0S1V0UEw1UFFmU21uakNNY05KV0VPQ3ByaTFuRUNtb2RmOTE4dzJYT3IyNmFxM25wSUcwUEppTWlEYmlWNEw1RkJza2E5TThfNWxyaF9OcTZEM0hOODhrTWdvTEpzX2djS2tDeEp4VVQ4c0FJM2s0QmZqZmF0THVEaTFIbHJUQVBBcUZZOTlqQloydElONVd0dndxamdHbkxWSEgwRHQwU2R2ZDMxS0NzellZaDR1MFlCWl80V3djZGZvaWRGQ0NReU9jLXNuZWpFVNIB7AFBVV95cUxNcVZOX1FMSVlMb1lxblA3T1ZFZENqNzFUQmZ0S1V0UEw1UFFmU21uakNNY05KV0VPQ3ByaTFuRUNtb2RmOTE4dzJYT3IyNmFxM25wSUcwUEppTWlEYmlWNEw1RkJza2E5TThfNWxyaF9OcTZEM0hOODhrTWdvTEpzX2djS2tDeEp4VVQ4c0FJM2s0QmZqZmF0THVEaTFIbHJUQVBBcUZZOTlqQloydElONVd0dndxamdHbkxWSEgwRHQwU2R2ZDMxS0NzellZaDR1MFlCWl80V3djZGZvaWRGQ0NReU9jLXNuZWpFVA?oc=5",
+    "source": "supplychain.economictimes.indiatimes.com",
+    "date": "2026-09-29T12:08:20.000Z",
     "region": "asia",
     "sid": "et",
     "type": "site",
@@ -1261,7 +1417,7 @@ window.AUTO_FEEDS = {
    {
     "title": "18-year-old girl runs into street to put out fire",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1iY2JfNWNvMVNDc2F0SVlhdUxXRzVTdmMyUTFGcC1Fd2FDQS1Na0FidmthNjE5WjVpV3FxLVRzSU5GR3IwMUVqSmFOOFVSdGNqalpTdjhMQQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T11:24:12.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1333,10 +1489,22 @@ window.AUTO_FEEDS = {
    {
     "title": "Shark remains in Busan canal after rescue bid fails",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBsc3AxVmdCVktLRWNWcFl3eXRWcGFkY0NQdk80X3N0NFByN05LWVVXMjkxVGNHUW9oTDJFbFZVMHVCdnRJOVRkSG5aek9HcHhnaUVsWk40UQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T07:45:09.000Z",
     "region": "asia",
     "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "India central bank's FX blitz drains nearly $20 billion from surplus liquidity, bankers say",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOendrSklRRFZheU4yanhoYXdMV2ZfaThOcy1oMlRRNDFZLTB1NVgycVNlQXF3bmYzZlkwZ1k0NEJTZXlhOGpTcWlyR3VGd2s0Sjg5N3VCR3FMWXJUMG02eEZFZmNibXhDcUNFOXZxOVhKWTV4YU9scWlZaFRkU0ZOZHZiTEFEY3BuLVcwSDJHWEVZczJ5Zlh0N0k2OExiMF9tdl8xUEw5dHFwY05BWmtEQXlCbEN4T2RNR1VKWktBVndub3Y1Qmc?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T07:16:09.000Z",
+    "region": "asia",
+    "sid": "reuters",
     "type": "site",
     "tier": "B",
     "score": 1,
@@ -1381,8 +1549,20 @@ window.AUTO_FEEDS = {
    {
     "title": "Why Mexico is K-beauty’s next big bet",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAzc01CeUlKaXB0eVJVZU9kZFVlS0dnMTJVaGo1ejVTZ3I1Snk5SlFXRHJlZVlrZF8ybEZqYUR3Qmxhc0JVTURtM3Y5anFHUnpqMXUxTTJkdw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:58:59.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Who you know, not what you have, gets you into Seoul Club",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9BUTVBNE1iZVJUNHBkTGdBRzNBRUZHZHRMa19ETXVFQnJwR0JyaWVOVlQ1S0xQaVBtUjlsVXhuUTlVa0M3bG14NzgyR2dndEkzY2oxMjFkRQ?oc=5",
+    "source": "koreaherald.com",
+    "date": "2026-09-29T05:56:38.000Z",
     "region": "asia",
     "sid": "koreaherald",
     "type": "site",
@@ -1393,7 +1573,7 @@ window.AUTO_FEEDS = {
    {
     "title": "The Joseon rules you need to understand 'The Scandal'",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5YRXh1dmlydDY4M081ZmFWN05takRUMGp6LVkzTkFRX01RWWs0eWRRTlhVc2VwYXlaYUNKLWJBMHhXRm1jTEdKUW5tLW1OLUprYm9OMnVYTQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:46:20.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1417,8 +1597,32 @@ window.AUTO_FEEDS = {
    {
     "title": "Share of foreign students in Korea less than half OECD average",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1EUE1LWEpSLXFndTBsUHpiOXlOWVg4emh4SWJzYS1xSC1VeFJYU1gyVFZsdnc1b2k3UmFPdTZsRUViUHRleC03WXR0ZDAtZ1lUUkJtTC1CSQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:41:00.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Lee warns against abuses of power day before police take over prosecution probe powers",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1KWjZfY0YwRG12N2pFNFRnbWtuRFdhRDJfME00ZXk0OWZ6TGtwNnFROWYzX0luXzhCU29ud1lwbDFmT1l4QXZfaVpnWkMtaDQ0QUlNRjZybw?oc=5",
+    "source": "koreaherald.com",
+    "date": "2026-09-29T05:38:47.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Uzbek national on trial in Korea over alleged funding of Syria-based terrorist group",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XeXNjUWR3WkRxVFI3OVVQU0x4T1JPSkxyUS1GRmlmcW9lMTI4R3NzOEV5Sk1zZ3NRZjlvcXlEWnVUcFNpV0VEdXp3d2E1Tm14YmtqZlZYZw?oc=5",
+    "source": "koreaherald.com",
+    "date": "2026-09-29T05:32:33.000Z",
     "region": "asia",
     "sid": "koreaherald",
     "type": "site",
@@ -1429,7 +1633,7 @@ window.AUTO_FEEDS = {
    {
     "title": "A walk above Gwanghwamun, 120 meters in the air",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1zczlEUy1xeXBxQWRJeDl1d2hmcWpIaGlnMWR1RnU4VmYxemFuV1duZGVEa3lma1h3WGczOV90ckxvU1FKWlR0NEhhNkdUbDRlYzNkdEF0bw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:32:26.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1439,9 +1643,21 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "S. Korean Embassy to US woos Trump allies to expedite skilled visa talks",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4wdEphQzBjU01mRUdfRkhrNEVCb19CWDZTODZ1RUxleWU0Nmd2U3RwVDlST3JaalZOQi1QVVZkWUxzOTVPcU52WUhlWkV4ZEtlTnpyOGdTZw?oc=5",
+    "source": "koreaherald.com",
+    "date": "2026-09-29T05:30:00.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
     "title": "Celltrion seeks new partners, clients at CPHI",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5KQkEtTHVwWWZWRGMyUXZrZkc3LXdaakQxU0xLWldua2ZCTG1EMzlzNUowUVBhTmszWmlzaDU1bEdnVUp0STN5T18zVXVPLTdQQWp5RGFobw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:27:25.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1453,7 +1669,7 @@ window.AUTO_FEEDS = {
    {
     "title": "KB Kookmin, Kakao explore future of digital assets",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0xT3dqV1hCMGtoT2NfQnkyQXZXZTdEa1dsa1o2US1IcGQ3dmFUQjRJdG9sOUFqSVlhVWZ1VDNWSWp2NzBHZUZwcGF1RktfTi1iTGlYQmlWVQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:27:24.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1465,7 +1681,7 @@ window.AUTO_FEEDS = {
    {
     "title": "TOPIK to adopt AI-based testing system by 2029",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9uYTJGclhQMDlENDBDN0NHTXJFLWFabDFzSnBydjdyY1RZRk9wdktxcU4zS3hkcnBhWkZ5ZU1JQXB0a1BlMEFuSVczYVQxbWVqcUg5aW95aw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:26:36.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1477,7 +1693,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Hyundai CEO pitches physical AI vision to Silicon Valley talent",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFByMzN5dXpXeUVzMHE5UkpudGxtME5UNUtNMlUyelVQVWxQVXZJU2cybi1PMDUtVm8tZE90YWw1SjR4LVd4aXZackJNNGJqMHZCMHZWWFdaRQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:26:19.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1501,7 +1717,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Samsung SDI unveils cylindrical LFP battery for AI data centers",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5EQzVxd21VcGlSMTR3Z0NiaEs3SUVyRFhKTFRoVGtLM1czWWYxSnBxQm5EMnN5bHhDZFZ1WFNwYzFWRHNsMmhmOGZBTFczX25OS3ZpM2JJNA?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:25:44.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1513,7 +1729,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Korea offers a way out of hydrogen’s supply-demand deadlock",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9nZGl5WmRNX01QZGRQeGhUZEhKV2VWUHl0dVlnaW9jZ2xDdWlwR3NUMWtUakRVNmZXVHlFUnl1NVZEZ3h0Sk1zNG1hWmlmZTdaTFJMNm1PVQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:21:44.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1525,7 +1741,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Shinhan eyes Korea-Japan ties in climate, digital finance",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5uanhicTJaaGNKc05SNmEtdUlXaDZOUVdvbmtXcUZZUTlfdXprOU5vMURiUVpwV2FWczRham9NN0JTZWhhZG9vSjJHa0dRbjNXbUNxWnNlRQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:19:26.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1549,10 +1765,22 @@ window.AUTO_FEEDS = {
    {
     "title": "N. Korea operates secret detention facility beneath Beijing embassy: report",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTa0ZzY3RtTUZ4SWZFN1k5TFZxZEtxdXhDMXZxSHRKVlh0NkNjZzM4U2J5OUJDRVJfWk02VWlyaDdWZXlHU1dleGU1TzNZbGlzYVpiQnhybw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T05:03:22.000Z",
     "region": "asia",
     "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "India's UltraTech meets power needs at Chhattisgarh plant entirely from green energy",
+    "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQeDhReGZxY3NJM05kdDc3dVpkZlkza2luUlpnYnRvN0hKSEo5N21jUlRfdDNTU2xUelVXUkJzVjlGUW9oN3VaQnkyZWdNbkFrNmQwd1c2b3hab2RXY3FYVC0zT25wNVhTdHlNOEtMWU1zQ0Y4THV1VS1kdVFYZktTeDlGOS1POV80bG9FVDlYTmY3UFBkQ3Q1cFh0aFlrWkQwQzhaeHV1N2tvbVMxTjhyTUtBVDhHc19rYVhmaDN5QkxXMFNwTXlXYTRuN0dhUkNxV19hVHV6dHp5bzI2dVhFY3BQMGR5UDNQZUUtNDE3Zw?oc=5",
+    "source": "S&P Global",
+    "date": "2026-09-29T04:40:42.000Z",
+    "region": "asia",
+    "sid": "spglobal",
     "type": "site",
     "tier": "B",
     "score": 1,
@@ -1585,7 +1813,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Samsung commits $1b to KKR-led AI infrastructure push",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBmVXZPWFVYVURGVldjdnZlUGVXM2lVLWxBWmRzYkw1UjAxT0Fhalk0M21iakJQNzl4Q3JDV0YzV2FHUzJJbjVpVEoyT0tvU2ZNSVV2bzE3WQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T04:28:02.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1693,7 +1921,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Russia pummels Kyiv in latest deadly attack",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBHQkloNC1RaGlPT29RaGg3cWxuUzZKMW9qN1NPNXlvLXB3Wld3Sjd5N0JOT3FXMVJ2akdNTlVKeDE2VTdac2hvTEpoclQyd1hjRUQ1TlpFOA?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T02:30:58.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1705,7 +1933,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Lee calls for thorough probe of mine blast, vows necessary measures",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1GazIxOXRvaG80Sl8ySkkzaGl3Wmtyd19zSHRxaU1OSllnQ21KWGJWb20tdkE5dkRBdVc5MDhDeW5LN1hxNU41NmhNT2FURjlNWlVRVzhPZw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-29T02:08:04.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1777,7 +2005,7 @@ window.AUTO_FEEDS = {
    {
     "title": "N. Korea prepares to deploy another 10,000 troops to Russia: Zelenskyy",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5zVFlEckZSTGFZX2x2aFV4QTZRSjQ5T0tjU1dmcXJxTXhjdlRHR3dkbmo1MFI3cW5GNmlaWGRjYkR3QzNzcWEwSk1UenlrdEtnZTFqdG5rQQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-28T23:41:20.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1789,7 +2017,7 @@ window.AUTO_FEEDS = {
    {
     "title": "S. Korea fall to Uruguay for 1st loss under Moreno",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9nVnVHNnkwTVptcHczVl9nMUlFeV9ZcllYUDNMUHQ5TzFjNUNCZXgyVFN3U3F2NERQc1pzWlBSOEl5V2NBdTdlQm93Q2lQTUdyMjM2U0ZyVQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-28T23:36:04.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1801,7 +2029,7 @@ window.AUTO_FEEDS = {
    {
     "title": "Nvidia CEO Huang receives this year's Van Fleet Award for contribution to S. Korea-US relations",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mNUlxWUdZckVhcHUydGVMN0MzNkxyQ0FiUnRUVE5jN1RhZWxvbVJGWHQ3bUhPMk9vTnFEampKWVJDcTltUHZRbENzT2NIYmlRX0ZoNGh2Yw?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-28T23:34:44.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1813,7 +2041,7 @@ window.AUTO_FEEDS = {
    {
     "title": "US to restrict visa issuance to those impeding resolution of int'l parental child abduction: Rubio",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBWa0N5cEFaM2JyYVZrVEllRUU2T0dJZDlfQnpOX2gzdmExZndfVzV6Ukt4MDRudEZOUjVKazFyTENYcnh3ZVhTelBRTFN0RjkyX3E3M1lWWQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-28T23:31:09.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1873,7 +2101,7 @@ window.AUTO_FEEDS = {
    {
     "title": "[Chris McKinney & Henry Haggard] Why AI needs more time",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFAwSndrdVVVQzRLOWx5Y0pMdG9mMlRya3YyYXBCZHVjX2wzZ0J5SDJNWGhEWWlBcDhxWUVGZjZFR3BpQ1dqV1hxUTNwVG1MbzZVcGdwbGVTQQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-28T20:30:04.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1885,7 +2113,7 @@ window.AUTO_FEEDS = {
    {
     "title": "[Lim Woong] Old habits linger on in high places",
     "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1XZ1dGeV9paWMtTzhiWHJvY2h3cGUxaGM0ODAzY0R4cGZWQy12T193ZTBTSmwzYXA0Q05CN3dReFNtUUE3TjZIQVNIV2ttQU4wd19oTHRKTQ?oc=5",
-    "source": "The Korea Herald",
+    "source": "koreaherald.com",
     "date": "2026-09-28T20:30:03.000Z",
     "region": "asia",
     "sid": "koreaherald",
@@ -1917,97 +2145,39 @@ window.AUTO_FEEDS = {
     "tier": "B",
     "score": 1,
     "major": false
-   },
+   }
+  ],
+  "intl": [
    {
-    "title": "Pulses prices surge up to 11% in a month as festive demand, crop concerns bite",
-    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOaDR2TlZpMUtCUkNBYUdpdnNkaHZVcWl3dVRkYXprcy1kcHlBMDJWalVVeUxEMHRVYWh0S2tpSFNJZVBZYzd6OS1hMUlPYjhjMGxRN2ZRa3JpVmhHRDdtanR0eEJrNlE5OXdUczM1cnVRZnNacm9DTmxnak1sOGRNZ0Z2RHkteU5lQUp2SElDdFFYbkk0QkdfbE15TXNobi1XS0NsZTB0LTE0YXN1dEFxa0t4ZTRzVXBQcGhLVTNtcE5HYzRUZW5nRl9xZ09zSXJkMGllNDlZU3dYS3Z1T2k5UUJvR29UYzVaS0ZOVFdJMzJwZTlVMWw00gHwAUFVX3lxTFBKT080YklBZEdQLTdPLUJHVmluZl9kblZKS2VnRFEycjA3eVJ3TDBuT0pXYjZTakh0M3BSYnR5bXlZSDFsZTBOX1lBOGpmbUp3TVBRS2gtSE12YVpxc2dBRmhVanFWS0xVc0JCcEVJOExVajZuMGREamktcC1ZWHhEcXNyam5uZnBUSEZrSU1ING1ycjMtQW1sTmVsVGlncGJhU3R6NERhZFYybks2b1ZTRTNtNlBTUkVwYkVSSm9BQzhEZFNnTnFZTXhoTjFjalRZSkM2N3hpZEtFZ3o2RlVmY1A4OU9fYWNKNk9qVU5RNg?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T19:19:59.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "BP proposes six-year labor contract at Whiting refinery",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTGtVd1JkUU5KbFVSbXI4R2puZjBrZG5kVTBENGtpVFNwb1VFcnpHaWNLRHJvZjJmalhRSDYyVThGdUJpRndiUC1xWm1fOGtqbS1IODJDTFF1YXFJVGg1bVlFRE8wVHNLWkFZNnI2UDQtQjBTQUdlRE1CWVNLX0U2NU96cGUyV3JLR1pqTEZmLVJvVFRBbEwycXpWMGk3bi04ZEQ2WHdCWnNKUGd4Q1hzTw?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T21:57:31.000Z",
+    "region": "intl",
+    "sid": "reuters",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "Refiners feel heat physical crude trades higher than futures prices",
-    "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOR29nY0RJenkyV1Y1VTBqdThLSWxxYVZYS29VYTBvdkR4cjVjRl9KcFF6WWU4M3ZHa01UV21heW4xdXY0d3kta0FsMjNsbzZncmd6M0lnYzI5b3g1UHk5aTdFMno0a0Y4aWxONjBldVBrLVJzeEtXM18xdExlZW53c3ozbUpPUW82SmJJTXVpUnZ0RVNTTlE0ZDlZUUY0aldOTDVXdmZyampndWNmRXI1LUx2amJXRmNwbjdFZDNpUXUwaUE3eDlLcXc1Mmw0Y0ppdk1yRWs0cG8zUGdkTlNZMWJXSTBYNnhlNWfSAeMBQVVfeXFMT1dhaC1QVldaVlM3UGF1dnBfeWVpQkhvc3kzczdnVi1uZmMwQW41RERnS0dIUmdOd0ZJRDhlbE5VUmM1dkFELUNLYWh0ZWhXVExzb0ZGMU5vbXM2V25LUXZzMmZRdHFwTlJkVjJTVDd3djBDRC0xYnprUFR2YlRZblQ4RUhkSGswcXNFVFZvQy1EN0llQU9rNEs0VDVUVHlfeUNnWkdSQkwyaDcxNGhFSW9QcHpaemRCSEZrVFc3aGlPRXVOS3pDWjBRdDcyTUltV2lGZUpmRXh4MUtIM2lZY21LZ1U?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T19:14:25.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "Mars Petcare Selects Startups for Pet Food Program",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX3FoZWZyeWNINVFHTzJWeUFudktaRWp6Q1V0SnEwN002eEYwSDFrMTNfenljWVRsZVQ3RWlCWnRhb1ZBdDRSbEFWSmdyVmFvaXV3OGVsT2s2OWF4MW1JX3NNWllobWtFd3FlS0kwMk1KVG14Z0Y0aE9ZVTRkaE5vRGRrbEl4MDFXSVRIUERCVFNUNThSYUxWV29ndE5ZUE1XY1VnWi1xT3UzdC1tVC0wVnpEQl93QQ?oc=5",
+    "source": "Powder & Bulk Solids",
+    "date": "2026-09-29T21:45:35.000Z",
+    "region": "intl",
+    "sid": "pbs-incidents",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "Gems, jewellery exporters rush to beat new US tariff deadline",
-    "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNSW9aUXE4eVlDQ1JfYkYwb29zMWRhdGxGUEJxUDdjOEFoRmk5WU9aaHAzdjZJZ1RGZkQ2Rm5jY2JwMkttaDIzbHltRmFqQUtNamVKaGRaOWJ1QVk5U1A3aGpSRkdaR2M1Rlc4c2RUeXp3Y0dBYW42Vzc3bXlXeEg1MW5kVjE1ZDRGNkxiR2JlSFJ4bmN5RVg4VlBQajdGWldFbklHd0tLVkdSNWJRbndWaUxOQlJ0cW9tTWdSbjRCaWJETmV5NDBSYWpPWEZ0d1VYNll4a0JmX2tfQVFrQUlBRXlQbWNjYVluSVZFaWRFd2VPcUJGZjVEX2pHc0dTdUlUMzlkc1JHbERFUdIBgwJBVV95cUxOaTUzLXhYQ1lIeUdUTzNSaUZWdWFtamlUQzZldDlTVEdfdEMzUUlSc29OZHRNUTQ5cTM3TGNQXzkxa0gtMlUzc2tocUZUeUpuVmFoNzFPSVNwWG9kN1NHZGlPSkZtdGloUXYwOUJtYVJ2akRia1o2YlQtQmhUdllsUWxnVHlvQzdadFhTRUVmU25ZcnYtVlBGS0thT0trQnVWbGNNLVpHbHNhc0NNMk9YXzdOZU9tV2NYTkctSUNhMXBZa3FNZUxPWlpuSzY1UmZIRHRFTW9FdUZfWUFtb3N1RFVpRS1aaVJpOUpMYWJVRXJmRmhIR1NGU3JzTVJPT0VEZmNF?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T19:05:27.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 3,
-    "major": true
-   },
-   {
-    "title": "‘I have the choice to leave’: Gurgaon founder says no other Indian city offers him the same mix of lifesty",
-    "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNY1R5WEE0VmtENC1JbXRzYUdQTjR2T3FnYjNhSW1YRGVnQkNjSVJMWW9UeV95amo5eHJmRGppU0ExRjBuYk9ockdzMzB5c0dfanI0aFZHYlprcUtoYi16bUNTUDJiWm53QnVwdzZoMkZTLUpuaDhUWWJVcDdvcmZwUVpFLXREUTZ6c0g1eUdvdmoxNTlsR05zaUw3S3VPTDRSMnRnTm9JM1JpNFRwdXNxcTB3eTBvYVlKRXZHYUhRRjBwZDEzVUlNSGdIbFF4aXNyUFFJbnFURmxsVHNENmx6ME1lcG5OTEQ5UjlBa0kwMi11c0RsdGduTjV3anluZ1FZTklsSTRmNkJmckl4ZFA0UEFjWWRZcUNPMXVVTDdfVllsRHdVUEhlV25yWHgtYll3Znh2eGJGeUJ2UnVwMEpha2g2S1h4ZTNZ0gHCAkFVX3lxTE05SVd2b0w3ci1uZmEwdVFGTW9SWHpEajRXTExwMXRtaFNtdEZGbDUxQVE5VjBzakdXbkpFSUtCQjJZN2VNTXRtM3EtUmU2VkFwMW9lTUJWbzlBTGthODlSQ1BmVE82NmNuMlNYemhlUzE2M0xGeFc1ZDg1WURLQnRBRjZDcGc5WVF3UmhEajFOaVF4dDBZY1o5MjJfZGhidEFaTXRoeE8yYUJGQTlWNnZfTHBjV09Ud1lfV3FaSWNMN3NORjdCRnU1TFhSTUVxc0JpV0ZhUzdtTnJabEU1d2EyVU5ITTRKazNSc2xCaWtKRkE1ejB4eUV6WXBKVFd2NDhoWDloZ0VyQW8ycWRTcVU1cnZSeEk0QlliamVISGJVc2ZQTzdsNVI2V1ZYYUtwSnRRdmh2X2RaWXl6NkZQRElIakE?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T18:57:50.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Jio leads India’s August mobile subscriber additions, Airtel close behind: TRAI",
-    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQN0JOeFNMandWek1IaFhkc0J2TVdKNGZsd3R0aHY2ZVdTTWtpNlFFT1ZrWlIyRzRLUS1Yd21DMjBSakUwNS1fTVRPaUJtQUdiTG9DZ0xvWlk1Y1doVWt0WmhMazVvUkdCNHVTQ1F2cVloMjBLWmdXMFR3dW52T3c5R1NmdTFmS1BrOExCcGpZWUxFeVY1akl6LVNIZVRGYU1iTzNYZnR5dnVkVGxmRXJSRmQzUGRHeHUzU0JTUmhkT3lILTJPVXpPNlJPZ1FMWW83M1FXd2xoTC1DWVhfTFlidU9NbDBKVHc5NUZfbVZmSTBQSWJtZVVGVS1zMVNwd9IB9wFBVV95cUxPMVluNElHdWROcl9KZi1tZ09TaGVRNlgxdWtWbm5LZkw1WVd1bnEyZDRrckpaWmJsQWZvalAzbkU0Q1JkSXJrU3VpeHc2Z3B5YnZfZm1pX2Jndk1nYW1TbGJLV3hXd0h2aEVIZ3VQLWVkXzJOUWRNNW8zZ1Z2cFg2Y0Rxbjk1cTI5OWhqYmRFMDJKenp2Yk9XaTNfS1lqWFZxRWtrd2RTRm52bnktVTdvRDRqTk5jdGdWMkN3WFBHd3dCajBoU0ctdEtMd2U5NUU1QzlJQXpvVkRGQmZ0a2VwSGlQVFI2R2xDVzJBSUlBUWVaX1RYRDFN?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T18:51:55.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "'Painful parallels to Nirbhaya': SC takes suo motu note of Delhi-NCR rape cases",
-    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOcDYxTmNURXUzcUNRTzhnX3E2eVl6VlFlejVocV8zWGFJZkFzVi1CSmxrUXhjcl9qLVFwQ1RIUWxEQmd3eUE0Sk1iYlo0NVQwaVUwUlMzQkpGMUtONVg3aG9QNld6LUI4N2thZm5EOTVOOGdvYl9IWjdHQXo5cnp3alU2cWh5b0RZbWppNHdkX2NhTjY5bXlzNHZVRXQ3bGdBY2YzdUJVaUl5SmRHaUN2MnAwd18weXlLUDZuZjR5V3JjZER0UzZ0Rm9yd2VxaFBEalRaT1FpSW5vdnp6b0lzVElyMXLSAd4BQVVfeXFMTXNzeFktVDJLaFQzU1RGWG0tSXU5WTh2NGdsZmdSeFdnOFRvUVVCYlVlNW9WNFpLZUlyMWgzSDBZRURsbndtT2t1QV9jRnVIa2F5ZzdacjhDSFdvQk03Q3dxbXpkLTRvNVRiRHJENlE2cW43RFNpanlHYm9YSFZqVDlHeUJ2X0hxUEMzd3gtMmJZRVBmZFhwS3kyR3d3dWppRDVXOTVkQUNYa0hrSHhMZW9FQjM2TnA0dnpDOExITTlDU3p5dHJETm1vb2tzUjJPTVk2RTBGSnNveVVFcU1B?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T18:13:58.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Lakshadweep seaplane launch in limbo after last-minute Skyhop permission withdrawal",
-    "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNRGJTUnFpdjlIeUVkUUctX2xBWlVRY0RxcXlYU3k5MWFpXzJuRFl1cUFLTVlYOW5WbzNhZDVCeFJrYjJISDNxRnpuVDk3OHl6Z05YWGZqN0NLbXhSYlVMRzJLb0RFakQ5MmxrZHlfbDNXWFFPbzFqNnpQYkczNzVZd0RuMXhEbk9vRC1SMENXMXF2dlZrdDlPX3lFS3M1WTlaUDI2WTNicUo0RHJNUkZtRHNSVGQzUU9XV0E3cDRsSU5NcTRtOWh2U19yLVNnQW15VHNxb3o1alZpanJUTnA5SjA0ZjF6Q2l5ejFCcXdETzk5dXU4aXpidUpodjg5M2QyTlZreVpfM0VyNmNFUVA1b1kzX1RKLWE5Q0HSAZMCQVVfeXFMUHE1X3B3cjdqUjlSTnVlSll2VlNHbmRrcHdMYmNSV2RieUpOZGFycGRwWmdmekpHSzNFQWFRRlkzam1NNVh3YmFxV0xSLXJybTNzd3NySjItRzcwN3p2QzlOUldTU0lZX0NESWg5LVV6TG9ObktwMWNseFllUTdSWFpmai1MeFRqOUJ6c3B3WVBMN0pGVi1KcmJkZWlUN2JNa2tJWGpuV0ZET1Rpd2w0MDlIaEt2aHE3Y2Z0bXlKOTdWeU1qSVN6YXgxelV4U2NyeWkwd0VsQ3d0UjB2ZlRzQXFfUUV6bGpxNTctZmdZajNjVW5HaW9XUk8xaG02ZWplM3dnUjlpWmdnX01SQ3k2ZGhIbTg?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T18:11:16.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "South Korea fully secures August crude needs with US, Mediterranean, Oceania supplies",
-    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQQ083alMtVmExVElyeHllWFpRcUFuMmxQSklueXpZZlBOQS1NTXpaU2NpYzRkSFEydVNhWURkTlB2RTFMQVFuVmpfdUVNSUU2aUYzM2l6T25HakpjT1hrNlk1ZFJaQWlwTzBVSlBjNDFQaHB6MGt5ckU2TkRCUElfYndBRkRWVHlUZ1poWEIzc1VpTmF3SjlyZEUzeTFPck5pOTR0TFdRcWlYZnhqczhkYkk0NGlwemEzUm9ySjBwSUJpd1poSnBxdm9fQnVwUDFMNWxRSFB3aTc4SXpBMnEwVlVITHFnamNUNjVQY3FoWmp2VkE?oc=5",
+    "title": "Lady of Aparecida holiday publishing schedule for Brazilian I-RECs",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNTDZpMFBRU1RWMGxTd0MzTy1ucFhHb0F1MFVkTmthVDlEMTRGQ0tHM1JEU2paYXZ0MXpsRVdQelhlZHB0SVJtYW9FTnA4MV9oSVpaSXFWMEJERVVyMC1aV3owVVZJNWY0bjdEQXVEZS04eGZaTzhJUXppeG4zUzZua2k4czFxSUR2ci1rRTFDdzlZTkNGZ1JmcWhfeHh5Q2g2N1F6OV9Yb1dWeGpLR2Zmanhnc0kyeWNNMHJsUktOd1JseUdzMDV5T2k2V3Nhb281VGg0WmN5bTdwRkVuZlNjTDJ6Z01iSzhNN3RrU2tBTC10Zw?oc=5",
     "source": "S&P Global",
-    "date": "2026-09-28T18:11:15.000Z",
-    "region": "asia",
+    "date": "2026-09-29T21:17:57.000Z",
+    "region": "intl",
     "sid": "spglobal",
     "type": "site",
     "tier": "B",
@@ -2015,59 +2185,131 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "Rains ease peak power demand in September",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTkdsYnFEaUZZcURzc1N5M2RUMVdQdlFGZmdpal9tbGZsbzVQR2RHTEN0b29WY09LVHNxRi1vSEFnN1l6Q19UWHJQQlZGWUZfWU0xZjB2WVNKVTVGYm1tVllFNEx0OUZrd2JGQ2diXzdOMHhmbGxHRFBxOVhYYXVFUXFmUmZTbHpvOGd1SGZfSEtRNExxVGNja2FZVUIxTzV6czc0WEZVZ2FPT1pRQ282dnY2alFvd2VfNGphZGhYR2lMaFEx?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T18:02:24.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "Platts to amend clean tanker basket flat rates for Suape related routes Oct. 1",
+    "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQbXNTVmxUZDVPSDNacUE0YUZUdE8xZlZhUzJXa2VyUU5iRTJySFM0ZnJXZ2ltbUxwSnFnWmRfZVUxZklxY0VXNGQxeGplZTFrVUp2eXZERDZ2azNHWHVqa0lWSFdGUnUzTWpfeV9WLXZxTTdiSGNENkprUW5KZzF4UWlDVWh4MTN6enk5aWFFb3dYTnFvYy1XdUxoT0pkbk5RTHdFSWRJSFJyTmhGYURNSkRNMS1pNGhHaXhmX2lNeW8xdmRCTG5ab1kyWTM2U1dCMXNQU2lzalNkVEVRb05rMVZadVRHa3A4RE91MEFLX21vd1RnbzhCbFdicEpNd1hq?oc=5",
+    "source": "S&P Global",
+    "date": "2026-09-29T21:17:57.000Z",
+    "region": "intl",
+    "sid": "spglobal",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "Air today, widen plan for tomorrow",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQdGVSTWNSZE9ocnJzTXY1U2pOdXQ3WUxib1RhUVgwLXZ0RGxlM2lUbVNaRlNSNU1TRkJLV0JfZTNScUowSXRtYndSdl9KOWpEWFlXeVlBVmEwcDVMelRFcmJRRGpBa2h0NE9mZ25JQUFoaVBvU0dUb3FJakU4RjlQWW40d0pJVFl3UWVFWVpLOGotOWxyU1VwRTFTYXh0R21RZ0djOFdJN2dmemdnMllNSm50LVF5dzlT0gGyAUFVX3lxTE9SdTJZYmJqQVpNTTU2bUdaNnNjY1ZwdXNvY09jR2tudFRYdlE0VmdzemRMRHdNRVg0eWhHdE5HVkRxaUxyWEVNelZ0WGVsU3FfZktJQjYtdFF1blFkdHdpUmx6YkZ1dUxVVldHcUV5TzJNQ0pJcklrbmZTT3F6dVo5Zl8wSVM0MjcxcHhqOGdTYnBnVXBGUndNQVFkeDI5NjRyRTd0T3hZM0JvcnlDbDZTZXc?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T17:44:43.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "Platts proposes to discontinue daily 70kt Ventspils-to-Rotterdam coal freight assessment",
+    "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQb0xGZTBic01MSTVKY2FRWk94M3NaUjVjRUpHRlpqdE1MRVNGampoQ1ZObHdpcnlWT0ROaXFFUV9BakNIeGZrUnpNTmdCYUlEQzd5cU4zc3RTMzJGaE51M19zaHVnUWNLeWNmbW5PblFJd0RSVDN6QzN0akN5ZC1jYTNlU21ja2ZZWUYwMDJmYmhzMGRrc1NYM2ZvOXhPcVFvSzR4a0tObjN3RTFWYUg0YWtESDJIZ1ZGaGFwSWUxUWlQbmE5d0JSVXJDU014dEJhS2RBQ2ZJSWdqNXFpZnhpTjM3LVZGRkIyRUZuXzJFamVjeUZZUlZsT2FsdFlmODVEWnYtdnpfZ1VHN1FnZ1pz?oc=5",
+    "source": "S&P Global",
+    "date": "2026-09-29T21:17:57.000Z",
+    "region": "intl",
+    "sid": "spglobal",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "IRDAI insurance commission curbs: Why the industry is facing a reckoning",
-    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZmt4aGxzU1BPRmdlRDJOeng0anRuaFVUeEQzbFR5Y085QXJOX0dndXdjazEzQm9HWW1fMkJrWUd4ZzVDYmFzcjd0ZVJabzk5M3ZsamdheUYyU1FPN0g0MXVDOE1vZTdMWENxOWJyNGs0SnBNcTc5M2xkTmdWUXZBVUthaGl5c3hfMVJKbzF3NllDN2RXaHc3LWJQLWdkN09UMk5OQWR6OTFEeF9jVm10bTRmeWc0emtFTUEyMm9FVkZNZjNBUUY4ZDQ1eUl2MzJ0dkVaS3VySkJ0eGdQaVRTNkc2WEZndHp6TUJGMQ?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T17:37:51.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "Platts proposes to change publishing schedule for GCM, WIM LNG pricing month derivative assessments",
+    "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNTnpjUUUtRE9zUDlYWEFlOVd6SmlBOGI1TmxOZkRqaTY3V3dUX1ZEQmkyRjk3VnJoVGV1blhYMzY4TF96WXI1dGw2b1gzZUdjUUIzOU1YSDc1SVRnM2lwQjd6ZDFyeDJ0dXZ4cW5BSC1zQ2dHVGZHOW1HWmN6a0V1Z0tNODhyQVQ3VndyV0dMWU1za1AtakdwckJXWUZ0S1JvbG5PY0ZqX0VzZ1p6ZzRzT01IRWNTMExndGl2VW9qYWtlM2RrQTlPYjN0enFMOXZGUElDaFBBNE1NTXBKOF9DQWI1SDR1eERPVGdJUVljQjJ5QzZkWWl4clFPYk82VUs1QmQwZ3B2WnhfZHk2UHBNRjNVQjM3eUoyN21qUw?oc=5",
+    "source": "S&P Global",
+    "date": "2026-09-29T21:17:57.000Z",
+    "region": "intl",
+    "sid": "spglobal",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "In healthcare, the patient is the least informed consumer",
-    "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNbExjaFc4Uk5CTlVCQjJyTENwTm50TWNhVV9CU2xDRENZRE9GN05XaWk3TWN1bzFsZzVnUjV0OTR0dmxSeWFkQkdSbkI0Q1FDVl9GdUZQYURHb0JjcXRQZnQyNjVPeVNNR29GeldNeDFZcjJOQjU5LWFRT2VnUnFmanFyNEh3RUtJMFFLRGNpTGUtT3dUWmZYWTZuOEtoeEFYZzl5bUx5S2pIS0t1UnJCSEh1REF1c2JyMmtYUm45MXo0RlpEVWgwTzZJb19BZG1EX1ZnTmZQZmJHZjJZa0RQOWhvaElrZ3pHZTBoeDVxeEVROV9tM2FtWTRMX2hjU3NwVWlzN3VxQ19icmlzNGhTQm53Uk83YkRubnlqeQ?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T17:35:47.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "Platts proposes to change CFR North Africa polystyrene timing specifications",
+    "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOUk9BTW1LT2NQczRqMXh0Nll3bUN0MFc3WEM3SUJ1a1J6Wmdwd2x0LUZRQkhWUHJPQzhRX3o0bzlhQ2lXUFhzRUl1dlNadk8xdC1VdjZPVkpoaTEtaF9jUXN5WHlWTmZIaU95d0VuZTRCYlpOOHcxVGl3V2NpZS03STRUcGI3V0J5dFYzSWQ4d1JoVU1nQThSN2NpOGJYRjFyMkZ0Y1R2ekh3UlprQ2Z2UXpubmR0aU91cnFuMWJxQWZSX1N4Q1dJQXFxMFdtQ0tkMGhNZnRKTmFQbFlVMkUySldOczRUemVCa2JfdDBoT0JwWFBLVTRlNFF5c2xNLW8?oc=5",
+    "source": "S&P Global",
+    "date": "2026-09-29T21:17:56.000Z",
+    "region": "intl",
+    "sid": "spglobal",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "Tata Trusts proposes Tata Sons revamp to prevent listing driven by India's central bank",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPU2J1RGNiQmdHR2pPanFPMVpib05ocUVWR1RNLTlMUHEwNkxkczhNR3d0Nm9DdEdNZE1yTnQ0UVlIS3VoZWlsNjhhOTFXczYtNTZiQUw1WUtvSFUzZDVYNFNOMERqSmowQTlwR1JJS3huTU02akF6bjNGbC1HSmFfdndlcXN3M0RRSkdYOFN0VlU2YjlSV3JHMHVkbzY1TC1tdF9jU3dIUWtoaG5mb1ZuLUg5VXpnMUJaaFZRag?oc=5",
+    "title": "TEHA Group and Eni complete study on biofuels from renewable feedstocks: An opportunity for Europe",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeU5xa0dYT0hYaWZ3ZlVqakg4VFJUenRkM1ZkdkNPckRWRmtTZjFXT0I4ZzNlc0QtaklsOTB5Y21OcDRTM0l5RFRKcU1XVVhJbFdaMHJON1g5WFhmYXlLcm5uVVBmQ3Fyb29Xb0lNR3VvQnlGZnRhMldySGpnZlFOdDBJcU5IeGxzSGs1akk1eXlYanV0dW0tX0dMNm52Wm9yV284RUVaVDJvTVZQZ0lndGV0ZEh2ZEJLRmFObEI1SXlZMUl0enZyUS1XN1dEUThpZ3JRVnhCRlVSWmE0ZXFoN2FyWQ?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T19:48:16.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "PIC and ABCK-AmCham Kuwait sign MoU to boost petrochemical initiatives",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxON0F0bDJGV0k1NVZheTVxVlBHYjViYXZwSHJHZ2lYcE84TzhSUWNRRnVKTHFzeThsZDY0RHFjdlNxQkt3dTJlclRJQVVGRUU0RE1jVDh3UDVZWUlYTWdyRXZSWW5lR21Qb1lta0dvN3pHblNzNHViblQwNmZiY2k4aUZsTk92Z181ZXdZNUh4eE9vOFcycXQ4YUlJOUthN05wN194Q29sNE5BZmFkUEtxMTJ6QjJJa2lFZmM1MjVIVQ?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T19:48:14.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "KBR's ammonia technology selected for one of the largest fertilizer complexes in Saudi Arabia",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcVhrdGFMTEJNNElvdm8zd20tR2lmVmlZOEhSNFVkeURhMWZrdGhkZ2U2LS15THNRcktLT21CUVJLWkNsQ1EyZHZBaTMxV3FFbXJsTWR5NGxYVWZkUlMzeC00bEpMdXJhNXM5azVuem5QNnNfTFgxRDZiRHJMdjF6OEtYLWkwUDc2a01hZFdVMVd0bEJpekY1akQ5R2Z5Yy1aQXZmY2YzUXpDZi04LU5zLWk1YmZrbzNjODlTaWtzbjlPZWw0NkhJbm91bGFQX1g4MVhoTE9BcTlrckc5?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T19:48:14.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Plug Power signs 280-MW electrolyzer supply agreement for Danish e-SAF project",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcVZIN2c1bmptbmd0ektCY1NPVGlJT2ozZ21fWjRiZ0pCd1dWeU53T05DdVBDcHRSalc0b2x2MWRXQTRBOERnWVk4MWhtQW9ESFdEQUpKb2RCaTFfOUphSzROU0p1Y1RIYnBRcnI5eEsxbzBPUTdxWlBhOU9haHFhdFB5WDVVM3VlUGxwSFVhZHdCSmRua3lELXpKYmY2eENQbnpxNG5rbVhFWUxXb1NzWVpjRUtsSklObkxvVC0xRHFURUxkMy14M2NB?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T19:48:13.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "ABB integrates AI-assisted diagnostics into Remote Condition Monitoring for emissions analyzers",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNS2Rkd0lhMUV1ZGZZUklRakdVX2xBZWFlbkk2YzI5SHlBSWYyMmRiSlpsZVlkeFRwSDhfR2NDMmdWbkNWOVBsOEJNQzFoSEplVGl6Mm9nM3hKTWpmN3R2ZGNjbF8wQ2xONkFwWm1aUEhuVVZ3eld4MDU1ZmVYTTNKQ19hMEJvWnc4X1NGLXl0OVYxOVVhcDFyTXFwRlVXdE5fdFBlb2FJSUdaaFBYNGpVZXRTb3d0TE41UVZuUzBPSDRjUDJISWxMWHBFckFsTmhGX0VfSktkS3dPVTlkS1NKTg?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T19:48:12.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Commander Hammermill Delivers Precision Particle Reduction",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbEUycW1GcU9CclIta2MyMXJDLUtyaTRVWkZGcHRRSUhFejJEM3JIUU9oR0wwQ3dqRlFtQkRIMDFZOWp5MmZRd0dqN25Db1dtek5zbEpSVTFqZjJYYU41ekhWdEN3c2dHRWNUM09wVzdTMVJ5RVRUZmczekwtTmUwZURJYlBjSUlSQUpSNA?oc=5",
+    "source": "Powder & Bulk Solids",
+    "date": "2026-09-29T19:17:46.000Z",
+    "region": "intl",
+    "sid": "pbs-incidents",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Nigeria's Dangote says refinery IPO demand 'enormous' as Kenya project advances",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdjJSWDBxT0xfS1B2cGVZU0tOMnM2ZnI4T21ZbExxZkp5U0JhSFlNMXBDTkdLZkhXajNVZnQ4cm1zWXVuNW5qTi1nUjQ3TEdjYm9xalF3RmNXVWprQ3hOYzJYN3ZGWTUxR2p2SU5GdVNjcUl6dUxKS1A2Q1hob1hnZ1Q3MEZYS2gwdW1CMmpJVTZmdmNpa08zbjZhdk1zZDJQLUFpbWVSdUF1Z183ck5NTnJMc3RCNWFqYXdBenFSUDVEWm5E?oc=5",
     "source": "Reuters",
-    "date": "2026-09-28T16:47:43.000Z",
-    "region": "asia",
+    "date": "2026-09-29T19:03:45.000Z",
+    "region": "intl",
     "sid": "reuters",
     "type": "site",
     "tier": "B",
@@ -2075,79 +2317,65 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "HCLTech software unit acquires European firm Robotiq AI for 9 million euros",
-    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOZjhvVS1uSUhxQm5vMWxPU0R6TDQ5VFdLd3pIMzNIY2RsTW52cW9SNXZMcVp4OGdRTGNGaU9oNURjQVJBVllaTHEwS3N6cy1BVjd2OFp4Q1VzSnBvVzNmV3NBQWpKaDE3NWhkMU9DWklkeGdUT3hfU2pMZlRRbXdfeEp6MTZ5a0k2dEpXZDNxWWVCYWE1Njgxb3lhOG00T2hMaTIwMGo3MHZhOVVmS2g2bFVIeDN4QVJKcF8zY1ZaZGVtTGZGY1F3S0hHY3B4U1JhaWFCQ3owU0VlcXlvUlBZUlkta3NaSFRWMlhFbWNUaVd6Zw?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T16:44:27.000Z",
-    "region": "asia",
-    "sid": "et",
+    "title": "Business Watch: Westlake to close PVC plant in Cologne, and more",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVE5vRERCdXZsLXlEM1lUM0o5QTFaZDR6ZFhkNUNjbkdyVGZPTHJYWVdDbTFrWkY1cTRXblhIdXZKMHF1MzM3QkU1RHhsVklIcHpIM0Z0aU1yRVdKX21zWThhRVVsV1B4YmotZS1yY3FaTUhkMEhJZVNRTEozWmQtdWpXUHVFREVObzFhZTgxcVh0Q0NCemtfU3J3ekdUalBNVndrbjBn?oc=5",
+    "source": "Chemical & Engineering News",
+    "date": "2026-09-29T18:49:23.000Z",
+    "region": "intl",
+    "sid": "cen",
     "type": "site",
     "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Drunk man arrested for flashing passersby, blocking road with car, threatening cops",
-    "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOUzl3dFpjNDFHUGJjYWtyM3BRckQzWFJvX1V1OTA4NFc5UlFPNzFVWk14T3RUSVd0LWEzdlpHSHREeHlBRDdNbktVNzEwWWs5bGlkVDVYLUVWYWNwV3ZBNlloUWlCS2thVFp6N3B2MDN3UXJ0bXh0TXJBT1JQdkNPX0RKcFhaeDlTWjREekVvMWdRTDBXS1BqOFgtV3RmX3VqazNiN2NDd290U3FwOWpfX1IxUWV3Qkl5XzVENko3TzNCTDUtazFpVmxzTHUzMmxkVFc2M2FOLV93eUhBbzg0aVFjMGlBREdKdGQ00gHwAUFVX3lxTE5wc1plMEdTQTNUZ2p2Q0RPZVJMMG9NYnQyTl81X3ZKNjV0cGt5RXdrU09Ha2JONnh2cDNQc0Y2UFR5YUNka1ZxcFVibk14OWllMFlSMzJSbUlnZWEta0xxQ2ZFNHVFVzAweTBrYzV1QkU3V3ZJNzNFbkU3MU1pZV9NbWdZY05vMEplVzV6VlZCWWlKUGQyZFE1aEVqTzh4VnRsWHlNQkZEdlM5azM0LXhWTWE3Y2J3UlZhc3dtdWZteW1sMGJTdkI3X3NjdFM4dEwtekJ2WmctbEFId2oxdEJWTEVpUEJCN2lFTE9MQ2Zacg?oc=5",
-    "source": "The Times of India",
-    "date": "2026-09-28T16:29:00.000Z",
-    "region": "asia",
-    "sid": "q-asia-incident",
-    "type": "query",
-    "tier": "C",
-    "score": 0,
-    "major": false
-   },
-   {
-    "title": "7 grievously injured in chemical plant reactor blast in Mahad MIDC",
-    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSzR5b19mYW5maDFDbHBaZnp4OUxneUtTQ2hRZlh3dlp5cG5KLVlWajlaS3FLNmZibjBSTFJoUlJKZW45N19WSWtvOTJzX3otSlF0VVluekNRX3pGbFk4NkxYNk5KOWJFbF9BVHZIX2VVRU1CUFFvR0FCTllaQ09YQXF5NVk2WC16TUpvS2s0NHJkbGFSM2RqV3g0Y3g1QUY4ZTRrdXZXVFgteExZUmVUUzF1NlY2c09oYkhVRTdYTFlOYTlXNHRSWnU2UGhtcW13czRRa1VYONIB3AFBVV95cUxPNG1Bc09kbjg4WDR0V3VWOE1kNXl0S1FFeWh4NzE2ZDhuZmVKR09VSm9BOEE3aFBETXhpVjBfTmI3U09ZSHpiRDlaWEhIU0xHM093Si1RVXBpc3M3bUoxbW9TUFd4WGxKcGM2UFZMM3VseTJmWFB0eDVaLVRtTDBTOFdnVVJadi01SXZFNmFJa2ZaNTM0c1kxRHM5c1dXOVllVzNMUmVzTnIteXViYzRxdFdfSUVyN2g2ZXVVVVlEcTJXVno5Snc0b3Ztd0ZTZmphSGE4MC1lNXlqZUtm?oc=5",
-    "source": "The Times of India",
-    "date": "2026-09-28T16:04:00.000Z",
-    "region": "asia",
-    "sid": "q-asia-incident",
-    "type": "query",
-    "tier": "C",
     "score": 2,
     "major": false
    },
    {
-    "title": "Horoscope Today, September 29, 2026: Angarki Sankashti Chaturthi Sparks Fresh Momentum as Aries Takes Charge, Taurus Handles Details and Gemini Seizes Opportunities",
-    "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxPR3hIcllQWVpSOTNXM2xlZU9aX2JXSGtYbkQzV05YdWFGX2xUWnNPTW1QQXBYZE5LZzFGWm9aV1NVcV9ENGVoLXpTR2l2VDlISHM4cGZVQlNHUmVGRWtoQXRVekc2aGZsRVgyUHB6cmhOcUpObmd6SVhXb2VEbHF2ejdLdEZkaDExZUduR2pqMUtPdHpqLTRmMzd4VHMyM3FvNlU1WldRTDA3WmxrelN2bi1ySE5NS2ZlMXhLU1ZIT3dkdUdiX2pzU3d1alFkT3VZNzlwbnk1MjNRYWRHZFZxdi1BcHI0T1p1SVo4ZXF1bXlHMTZJSTB6UFZwZHlQZ2JCdTNEQ1BIcGRDa1A0cDF5V2g0cXRuTXpHQk1ldFd2bWZIODdjbVZzUU9oMkJrMWVjcjhmbngtX2dqb3NsVld3bk5RQjRSZklsZzNGbHV3MW1jREdfZFg0cDk5Vm1IWlI1dFB0akMzbklReHYtQXphUWpUV0lxQQ?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T15:26:00.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "SiMa AI raises $150 million in funding to advance physical AI technology and robotics",
-    "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNRFBkWG5nS29VSHhWbzRCRzAtNV9UR1lyMFVPVlJDUmttWE9vSE40QkpHVDRzcDktNW01NzF5VXhBZEhRM2YtYXI3cnA3YUtVTXBfMU5LVEhIV1h1aFVMbWJIZ1NjOHNDRVZTSnh3bVVUM1hGcDhNSmJpN2F0X2szTm9Db3ZYWnN6cV9tT2FlVmhOLU10TVpmRDUyZUNSZDJURHJHdHRWNHhXTTlhR2txQ0x4dERtbE01eWFYVnBPTngyWWVZSUFZOGlJQXVaUDZwanpfYmNNTm1HSkpBOUZRdy1RdlI4QzJWVHI1dmYyS2UwWFZORjA5ZHV1T0I5UdIB9wFBVV95cUxQT1NZRHM0eUVweVF5ell1WlBBWk5NQjMwcEdreTRmcU8xQkEyS0RxWUV2ZlJrWVZPMVBaVkhlVWEwaWg0dDE0QnNGd1UySEhPWlhQY0hOaDZaRDRFZkZ0Qzk3T1EySDNEdnNqajVjR3RRMFBiWnZPQ0pZLWtBSnptRm1kYXNaOG9UV1p5Q3ZiUDZBVHdMMy1KTmt6MFdnOVNkQ3ktUjlzS3VybGROdXBMYXBFUUp4QzFEaDJPN0hfMlhaQzBEOXVLbUNwZk5ONkdUVjZvb09QTURNN2VPNUU5cXNpYW0ydG9qbWt0djFZNEZUMDNMdFg4?oc=5",
-    "source": "The Economic Times",
-    "date": "2026-09-28T14:55:08.000Z",
-    "region": "asia",
-    "sid": "et",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Red Bull sues Indian regulator over 'energy drink' label ban",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNT3ktcm05TTdiMTNLbXdycmcxQURvWnp4X1dVc09vLUVkUG1ua0NlQVNlbzdKOFdwZ0doekFpUWp0OUpJTkFYQmNBOW5Ic0c0MDRteHZYeUROOE9qS1RnV2hqdFY3U21nck1YRk5YdHpKTHNsaENTWDNMWnZxdTljMEdkaHhZWDYzMHMxcnV4Qi1BRGFMSHVYZ1F0elNDZGFmQU9jQ2xyWlVTUlZ2ZU5XMi05djBmS0ZhUUNBX0QteEVCQ1Y2M0E?oc=5",
+    "title": "At UN, developing nations call for bigger say in shaping AI future",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOUF5NFMzNHNURmY4ZlZ2T3QzWkN6M2FVTGp0U2JDX0JIdlFxaGFTRkZ5aUFIRjJONWh0TmJxellzd2FhYTh2a2c3aXMxNmFnMFFHVE9XQ2NVa2FtTi1NM0d1UVVXOEZGUEZUYlMxT0ZTZjRuWHFWYmxqM3dGRUhfNzQtNzE2amFtSk5lQ0ZQbUV2OTFXUlludmR4NXpoLWdwcmZVNzRZcE9hT0RjVXZj?oc=5",
     "source": "Reuters",
-    "date": "2026-09-28T14:25:43.000Z",
-    "region": "asia",
+    "date": "2026-09-29T18:40:43.000Z",
+    "region": "intl",
     "sid": "reuters",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
-   }
-  ],
-  "intl": [
+   },
+   {
+    "title": "Shell-led LNG Canada greenlights Phase 2 expansion, doubling export capacity",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxON1lWTTdxaVZMaDlmeS1TNERQbGRyNENwTzhUZGt5d2pMSFMwSFZpQUtHWks4UklrU2lKU2EyMWVuUnU3U1Y1Vk9icjlYR1F4M0pCNjdUWDZIVVpIeC1SMVVnT05ySmRSaGZYdEZnVXFaR01ISHlqdEttMVJoWXdGbTB0RlBUdVEwWDFnd3J5S2Q5TjExN0FFVkMwcHRES0k4R1luZDNJMUNmaVMydXBRX3g4RERlZHc4emUxN2xiMllTQlpWbUE?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T18:34:50.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "UK INEOS suspends production at three Hull acetyls plants",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOW44UE1kRjE4VWVGZXNLa3E2S01GMENHSDJ2YU8yUG5sQ0ZpUXFRSW1YRVY5cHBlVjcwQWl3eGEyY21mYWNuUEFSUVFMdWFsZjVRU2s4bFB4aWFxQ2c0djg2VDk2NmdvLUI2cS0xNzZSN1BmQXA2WkxRdi0wWm1ha0JsOHF4aVhiLUpPR2kyb1hMYU1zUmJtZ0VUeThkWGhnNnFiLWJfb0Y2UERBc3Aw?oc=5",
+    "source": "HazardEx",
+    "date": "2026-09-29T18:21:04.000Z",
+    "region": "intl",
+    "sid": "hazardex",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "White House urges EU to draw down diesel inventories, sources say",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNSGFuSHhGcV83YnRvQ0R5YWJhcHBHMHp3RVlKMXd4Z2dWQURJUXJsenl2elFYRjU2YlV0WmNDanhTV2swT1Q0X3phR2ZQVEZIT0xCR09HM2ZjcF9OMVVLME43blJHUVQzWGtsNkNxM3NPWHlSX2UzZURZS0VkbGRwN0NGRmdIX19wbkl6bTZ2b3dNSlZBYlpXYjUyZFFxVUlKTHVoWGpNT08xWHBibmNqcjNJNXg?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T18:10:05.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
    {
     "title": "FDA Orders Warehouse Closure After Pest Violations",
     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQ01MMVBvdjZzQnVUalRWSXhqaUN1Z011ejZfUTMzVjJCUC11WFFXQU5pUWtGQ2RpOTB1QmtEamZTV1pEdlhneDdaOTIwYUV4cWdzMVZsVkpFNHBuaWcwZmpxS0FfNzZHRXhjVmZYNjlhV1FPZzFnQ250NG1YUzI3MlFWeWFWV2otN0pYN24xbllyM3RtNDFzTGNRcDB1ek9PVWFoN3ZMbnhaWllxcmxubDU4TUsyTFItekp1Ug?oc=5",
@@ -2173,6 +2401,30 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "Overview | Argus Global Base Oils & Lubricants Summit",
+    "url": "https://news.google.com/rss/articles/CBMipANBVV95cUxNaGF5aGtTQlc5bm1heDFxd3RnWGZxemRJejRYSnh2ZHc4WjA5QWY3bnZ2NGNiVXp0LTh6N3VORTdrUW5peEJacDA2WVlvUkZDNEpZVkMtTGM4ZHo0RnFHa2gzZEp6V1BpUGFFc2NyMmZoZVJ3eFlXTlhocHI3Z2p6Q0pjMzRlT1hwU2xRQXdtQU12aWRVNndUTC12OUNydW4xZzBhSjZ6blQ4WTY2NUN0V0V0dzlyMk5MSWp1TVkwNG5mMTFfdDRRTTJweWJHazU2OXhzMXBXSkQxYktVTVh6cVFEQjBuRUZ5OEJtSGFlU2k3QmFPZDhnbllJRjFiZkhqZHBSLUVENVpTY1d4XzdMWEtjQU9aZ0oxX2REN3ZNUXIxV3BqWndGZFB1VG1QVUJfZ1BpeVh1V2pVV2pGV1RWMjBkV1VkX0FhZW53ZHdhSUZiNWJZaFdsR2ZKRmlrQ2FWLUJLc3JYcDFyaFZRUzBzVVJBZGMtVVVRZzZmTUZqYjBCWGUxZXJnUnpqbkRYenAzVjZ2WUpYZzAxVFpkRlF0YVBTZm8?oc=5",
+    "source": "Argus Media",
+    "date": "2026-09-29T16:59:55.000Z",
+    "region": "intl",
+    "sid": "argus",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "- Chemical & Engineering News",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQkNBTkNSSW4xVVk5QW9GUGoyMjZGVTZ2aDFhemEtOWd2a1FqMDlkR25rYmhtR01jNkh1UUh1VHdWdHBtOFdxVV9McmNVRGpIRWtUTE5pb2FhVmhMbERVLTBLQ3NkQTFleEc5RDZsTWFSUzBVbFVuc3VBcjJrSjFEOU5ONm1zU3V2X193TEZoLXZ2UHExQzE5dUFvTTZaQkowSmNPbDBWY2l0MjVuYWR1b0p0LWZjcExn?oc=5",
+    "source": "Chemical & Engineering News",
+    "date": "2026-09-29T16:57:30.000Z",
+    "region": "intl",
+    "sid": "cen",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "PODCAST: BASF merger with Evonik could create integrated regional leader",
     "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVzdvMC1IcFBLY0xPaHljV0MwNkVnVEV5dklUdk9tcDRfUlQ1Z1JRTFJJVXlZRC1TZ2NIYnRzSEQ1WmNNek0xNWs1cjRHZC1Id3huSmhjdXJHWmdSX0tSU3QwTU54SlFMZ2tUVEp1WWV1X0E0ajNyNGFWZ3RkNzJsRmd0VmFnaGFJU2Z3NG9GR0RhYm9RNVJ0bEdLNk1yNldDTVB6QVF2a1dfd2pKV2I0ZmlCYTJyamlGUHNGTkVrNkJmZ3JHNWc5OXJtNzhDS1RE?oc=5",
     "source": "ICIS",
@@ -2185,21 +2437,9 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "- Chemical & Engineering News",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM3Y4MktwODM4N09BYkdFUUlaYzk5ZUU4WGVFa2U3OG10SWU0V2RnVnZ6dlhKcUtTeE41RTVYQVNEdkh6bFc4RENtWmFMSVpwNWNBX0xvXzRIei1NZHIzX01rUU9LOVRRUXZTR2RfNFhhbzRjdzNEYk5TRXM3c19lYmJGaDB4OWJHTS1peVR2aHR5eDcxN2FDMU9hWFhWQ080MTd5a0JhMzJZTUZncDhr?oc=5",
-    "source": "Chemical & Engineering News",
-    "date": "2026-09-29T16:33:36.000Z",
-    "region": "intl",
-    "sid": "cen",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
     "title": "Pet Food M&A Activity Slows But Deal Values Rise",
     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQcEd0OEQzYUlSOFRvT213Y1pEaWcwOHlZY3VMeUNUYzM3Vm0wUjlieE9kdERBb1REbENhTTR1NnNaQU92UlVVSzJzbHRkMXVVSHNLTG82TXZuUHV1b3FPVnJzVnl0Skk4OXZaNzVacF9YWWU3UDUybXBuN29YWHR0MlZzbWVRWG9SSnB2d28tMldpUy1K?oc=5",
-    "source": "powderbulksolids.com",
+    "source": "Powder & Bulk Solids",
     "date": "2026-09-29T16:24:11.000Z",
     "region": "intl",
     "sid": "pbs-incidents",
@@ -2221,10 +2461,34 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "BP appoints Ben Monaghan as M&A chief from early 2027",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNXhqT0FKd1hnNEVIWHB1NHJPdkQ0Z1UwejVWSzFVV0pKa21vTUtoZ3FWaEJTNWVWWElXOEtpNlA1NklWRFlwSnc2QW4zakpkZDNvRE1zYUJUWTBoUVlZNHBTX0xPblE3V2NfSFZFempVdkcxbFhXUGItc0lKNFdCcDU2MGdNSk43UzE3WU1YeEEwWUx3bnhkb1QzYkFtSVBEempWcHhfVDM?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T16:11:25.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "EXCLUSIVE: Exus acquires large US solar projects from ibV Energy in data center hot spots Louisiana and Wisconsin",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZHo4X2x3c29EUXIwRHdnNTZvWk51ZHVVcGJid3VCbW9pX2Fncks1clpOVDAtczNiNDd0WEJpRjJqcDZyS2h1Qk14aFdLcjlLZEhXX2RkZjJjTTI5RTZIZXhWSVZma3kxWnlrMUVIQlpoMU4zSmI2Q19yLWdFeGUyOU5mVUlfMDZIdzNwbnl5WHduODFTdUp2TGtiMDJKcENQT1ZqcHE5MGhyNDdyRkt2RlNJYS1qY0h2N3NvLTFWZGJod0ZPaGdr?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T16:06:54.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "US ethane cracking margins fall on ethylene release",
-    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTUlMT1g4Z0RwaWhQMFVVYTVHSzlOekh4NW14MXNSOVBzSXo4b0VTbGdYbm80ZWZld2xrT0xXanZib1JNRWs1ZEs0RGdLaFk3TXIyVE9Ick0xb2dmMzd5NkFnSEdodnNsRk1fVjdBNDFXY3VpMTlzLWxUemdIUVU1ZVUtMGw5V2hyMkxLbk1zc0dkUUU2SjQ5TkhlZ2hRa1pYUERpSzM3YW9TWXFQeW5Cdk1vZ1lwX1MzNlZwb2lrcXA?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUTh1TEF6QXFMRTNKZm95ejk2c0tvQWFYT3JTZFJ1WUNkNlJxMWNnNzRDN1k5dHdWckNtNFpWWmFPczk5YlJPdjdFWjBaQWdGYmU0b3B2VTk0TWdkMGMzYS02TkQtWmtBMkl2RDBXYmtCOV9YX09rb25XQXRvQjJITjdzNzJ2NnJ0dC1MdjhWZzlvOXZrTXEtYzlLMmJnTlJqWUtaa2pBWHdrRnZhU0J6VnNDVld6VDc1ZjZWcWFLYlNQWlF1?oc=5",
     "source": "Argus Media",
-    "date": "2026-09-29T15:30:56.000Z",
+    "date": "2026-09-29T15:56:37.000Z",
     "region": "intl",
     "sid": "argus",
     "type": "site",
@@ -2239,6 +2503,18 @@ window.AUTO_FEEDS = {
     "date": "2026-09-29T15:30:25.000Z",
     "region": "intl",
     "sid": "argus",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Exxon veteran Liam Mallon joins TMC board ahead of seabed mining push",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPb0cxSUFycjRrZ3l3TFJORGJaTUdFTWcteGlYVjBsYU1CSXhnZXlXWVlZeTVmeS1pbUNFNHZJUENGSFk2Mng3NE1OX1hZcVU2T1dBc243OVB3dDR5ZklSdVNqV00xUjR0dERCN2didjVqYzJGSHdVNnRUMHJEYjJCQXY5U0ZPZWxYYzBVUV80Vl9qWHFYaW42eDVtX2xNMTZNUWpZRXZ3RDBKb2hHNTJiNktRal8xeEEyUV9r?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T15:24:10.000Z",
+    "region": "intl",
+    "sid": "reuters",
     "type": "site",
     "tier": "B",
     "score": 1,
@@ -2269,16 +2545,28 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "Nigeria's Dangote says refinery IPO demand 'enormous' as Kenya project advances",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdjJSWDBxT0xfS1B2cGVZU0tOMnM2ZnI4T21ZbExxZkp5U0JhSFlNMXBDTkdLZkhXajNVZnQ4cm1zWXVuNW5qTi1nUjQ3TEdjYm9xalF3RmNXVWprQ3hOYzJYN3ZGWTUxR2p2SU5GdVNjcUl6dUxKS1A2Q1hob1hnZ1Q3MEZYS2gwdW1CMmpJVTZmdmNpa08zbjZhdk1zZDJQLUFpbWVSdUF1Z183ck5NTnJMc3RCNWFqYXdBenFSUDVEWm5E?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T14:58:07.000Z",
+    "title": "Aether Fuels becomes first U.S. company to produce ASTM certified SAF from waste-derived feedstocks",
+    "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNcUtLQlUwVTN4QlhGVDNpWFRhY2tVWERKblZjN1RxRDh4MzRGcHZTWkZZNHFfckE4dlV0ZnlJbnFGMk9KcGVweWhDQWpRSFFZd0N3TkZ5WU11aDdaZUszbkxib2xpT3NCV2c3LXhycmcxRGVlSFkyU1RCSFB4VHk0cTRIUWI3V01aU0E2blEzYzgyV2RMUXNjd3lOVGZsenVKQnhyLUlkd2FZQmNFZktGaTlnTlpwVzZlbmZMTWUwb2pYZDNZVXJVM2tQTXF4MDhQNGlqOEdqNjk3OWtEcXBKMDdRaw?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-09-29T15:10:09.000Z",
     "region": "intl",
-    "sid": "reuters",
+    "sid": "hp",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
+   },
+   {
+    "title": "- U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
+    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQZkVSaWlkeHZTWnE4dWlEbHVrQ2RTeWZOMWpyUklJUENiQ2prZ2NvRFhBN00xNC1FYlZTQWNLc3U2NTVCVGVXbnI2aDNWMDhvMlhZQ1JIb01XZ0duNFR3MWt1Zkt5aDVfOHF6cFhOcEpvZnF4YXlxWUJmZWZfbXpDTUl3ZG5TaFJjaWR0MmFnbHVKYXpMQ2haQkVtN0xQbGZpMGhMVW42QVd3Znoyay1yUm9pcnZnYlQ2UlMyXzVreEJzNjNEWVdkbE1rV1cxdTVubllZbFlNYTdSNkhlZy1OT0hMNmUxZw?oc=5",
+    "source": "U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
+    "date": "2026-09-29T15:01:28.000Z",
+    "region": "intl",
+    "sid": "csb",
+    "type": "site",
+    "tier": "A",
+    "score": 4,
+    "major": true
    },
    {
     "title": "Update: Fluor JV selected for LNG Canada Phase 2 expansion following FID",
@@ -2353,8 +2641,8 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "Looming social media ban for under-16s in UK sparks debate on accessing science online",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTGt6MVNDWDI1cUFLYWdnT1pjUjFLcnpCWGZPdUVfRGU5eXNNc254M1RkRlVpaVhOeEtMdzFUOTBVRkVSZ1FIWDhBYlkwblp4OE1tdkNOc0hiMGN3bTBkZWtaSXZJOFI5bmJidTVpVDkxbklKUXk0U3BzdTF6WkIwVnY5QU9tOV9RTlQ2SnIyemJxcXJBcVFleFdITHB5c2dIYWpvR24ybVp3dUtXb3RPYy1WWURkenl3dDRubjZwYXFWc2x6eHRuZ2ZORjlmY3dZc0U1cQ?oc=5",
+    "title": "From preservative to poison",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ1Q4MlBCRWU4SUtLcEtjRnJ6V0N4RzRjVHVmb3JyUklJN0ZvMmxsX08yVXZwYTNmWFFOVk40NC1MTVdwenRER1lVTVZodG1nZnMtckt0QjlraUxBVG1OMWYwZDUxaG1nanE0UGxXS1FfelNHZUJCS0xCTGdDT2FpU1ljdjVXN1FNZXc?oc=5",
     "source": "Chemistry World",
     "date": "2026-09-29T13:35:59.000Z",
     "region": "intl",
@@ -2365,8 +2653,8 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "From preservative to poison",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNQ1Q4MlBCRWU4SUtLcEtjRnJ6V0N4RzRjVHVmb3JyUklJN0ZvMmxsX08yVXZwYTNmWFFOVk40NC1MTVdwenRER1lVTVZodG1nZnMtckt0QjlraUxBVG1OMWYwZDUxaG1nanE0UGxXS1FfelNHZUJCS0xCTGdDT2FpU1ljdjVXN1FNZXc?oc=5",
+    "title": "Looming social media ban for under-16s in UK sparks debate on accessing science online",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTGt6MVNDWDI1cUFLYWdnT1pjUjFLcnpCWGZPdUVfRGU5eXNNc254M1RkRlVpaVhOeEtMdzFUOTBVRkVSZ1FIWDhBYlkwblp4OE1tdkNOc0hiMGN3bTBkZWtaSXZJOFI5bmJidTVpVDkxbklKUXk0U3BzdTF6WkIwVnY5QU9tOV9RTlQ2SnIyemJxcXJBcVFleFdITHB5c2dIYWpvR24ybVp3dUtXb3RPYy1WWURkenl3dDRubjZwYXFWc2x6eHRuZ2ZORjlmY3dZc0U1cQ?oc=5",
     "source": "Chemistry World",
     "date": "2026-09-29T13:35:59.000Z",
     "region": "intl",
@@ -2380,19 +2668,7 @@ window.AUTO_FEEDS = {
     "title": "Saudi Arabia Jafurah gas processing project reaches Phase 1 completion",
     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOREdWa0t4bGctbFlSRXRmc2ZtaEFxU0R2R0VwQnF6SHFzbEtYd1h3bDdoUTBJTGNYVkd0ZzFmLW91Z1VnR1FYeU1NRXVGYVdBRTlOVENBdm5sUHZaSmN6VFRUMkhNSFJPVFM4WEtCcVRac1BvMGNhSC1mNXkxV2tOeXQ3RHI4NW1peHRoWjdhWVh3NnBJVzltMjNFVHAzdHN1VUpoTlJuQk4way0tbDVUcFNWVmZYWW5pTzVIYU13dms?oc=5",
     "source": "HazardEx",
-    "date": "2026-09-29T13:00:16.000Z",
-    "region": "intl",
-    "sid": "hazardex",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "UK INEOS suspends production at three Hull acetyls plants",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQOW44UE1kRjE4VWVGZXNLa3E2S01GMENHSDJ2YU8yUG5sQ0ZpUXFRSW1YRVY5cHBlVjcwQWl3eGEyY21mYWNuUEFSUVFMdWFsZjVRU2s4bFB4aWFxQ2c0djg2VDk2NmdvLUI2cS0xNzZSN1BmQXA2WkxRdi0wWm1ha0JsOHF4aVhiLUpPR2kyb1hMYU1zUmJtZ0VUeThkWGhnNnFiLWJfb0Y2UERBc3Aw?oc=5",
-    "source": "HazardEx",
-    "date": "2026-09-29T12:43:10.000Z",
+    "date": "2026-09-29T13:02:59.000Z",
     "region": "intl",
     "sid": "hazardex",
     "type": "site",
@@ -2557,24 +2833,36 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "Hats off for new, lower temperature route to unzip plexiglass for recycling",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORlNKMXo3YWZoVTRjSVpNU1Fob19ITVhmR29aVTlsWHFKaGNQV0QteHZfd196eWFlMml6SDdfdWxWb3FxOWZUWGkzWmtaMVpic2hiZGFMektKTU1nOVZxWVdvS25HbFRBcTRJRVBldlVFNlpSREl1UUdzUm1ZSEU1dC1NRVR4MldKLU1KZmNCRFJqUE5SVWd5QzEybGNkZEYyajRiVWtEc2ZUOFk3SWw4bjBhbklRc0cyM2QxbEViOGZ0VnpS?oc=5",
-    "source": "Chemistry World",
-    "date": "2026-09-29T08:35:54.000Z",
+    "title": "Fire At Refinery Near Billings Under Investigation",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT2k1QTFqcmx5cHZURU1UcUt6OVBMWGdVckNEeTQxN0E2a2M2RGJ4M1NsVTJmNHpSQVYya2txdFJ0djdWUFpjSkNoV3Q3NnNJMEROak5rUUllWlVVd2RKSG95N0pja1NIcFNFcHBMZlI1TXFqckpjSC1RUThTYWVSUF9VREVfM2lja3dVUnQwSlFVV00?oc=5",
+    "source": "Sheridan Media",
+    "date": "2026-09-29T09:08:36.000Z",
     "region": "intl",
-    "sid": "chemworld",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "US rolls back strict fuel-economy standards",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTVc0Q0E4bmo0bUE5NEg4TTFfVWM5U3hfWVg3ZVhqOEs1MXZPWkcweUlVSGtkcDY3Wkd4NV96QmNNOXNTZHNPQWdkTzF6ZXZXRU9yck4xaHJUTWJCWVNmdkxNbm1PMGRqcjdKZjNTOS1NVWE4WGtMNmF2NGJXVlFfa0N3dWdTVF9QZXZnQm1jbjFvV1E5bmktS08xLUFWX3U0Q09oZEEwWjlOY2t5TmtYZ2JJTnVWdG13eWc?oc=5",
+    "source": "Argus Media",
+    "date": "2026-09-29T08:39:30.000Z",
+    "region": "intl",
+    "sid": "argus",
     "type": "site",
     "tier": "B",
     "score": 1,
     "major": false
    },
    {
-    "title": "Shell-led LNG Canada greenlights Phase 2 expansion, doubling export capacity",
-    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxON1lWTTdxaVZMaDlmeS1TNERQbGRyNENwTzhUZGt5d2pMSFMwSFZpQUtHWks4UklrU2lKU2EyMWVuUnU3U1Y1Vk9icjlYR1F4M0pCNjdUWDZIVVpIeC1SMVVnT05ySmRSaGZYdEZnVXFaR01ISHlqdEttMVJoWXdGbTB0RlBUdVEwWDFnd3J5S2Q5TjExN0FFVkMwcHRES0k4R1luZDNJMUNmaVMydXBRX3g4RERlZHc4emUxN2xiMllTQlpWbUE?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T07:54:53.000Z",
+    "title": "Hats off for new, lower temperature route to unzip plexiglass for recycling",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORlNKMXo3YWZoVTRjSVpNU1Fob19ITVhmR29aVTlsWHFKaGNQV0QteHZfd196eWFlMml6SDdfdWxWb3FxOWZUWGkzWmtaMVpic2hiZGFMektKTU1nOVZxWVdvS25HbFRBcTRJRVBldlVFNlpSREl1UUdzUm1ZSEU1dC1NRVR4MldKLU1KZmNCRFJqUE5SVWd5QzEybGNkZEYyajRiVWtEc2ZUOFk3SWw4bjBhbklRc0cyM2QxbEViOGZ0VnpS?oc=5",
+    "source": "Chemistry World",
+    "date": "2026-09-29T08:35:54.000Z",
     "region": "intl",
-    "sid": "reuters",
+    "sid": "chemworld",
     "type": "site",
     "tier": "B",
     "score": 1,
@@ -2629,9 +2917,21 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "Saudi Arabia resumes Yanbu oil loading after pipeline restart",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNE80QTVVd2tvbHZWR1VLTzh5enAxOUZGMUVGNnQxcXhHeVJiYzU2S2NaZWVReFdmaF83cjJ1dGFVRGREalh4aWFtaWxuR1hLUFdtSTRmb0dsM0ZDQkVOX1RxdG1FNDItMlN0Y0lPN1JlSTAxdXRncndISmxYc3hnaWZKekpVVDZ5RlJOLTNQS3RJSXFhY29RV2psazdPOTlpajFJVVVUc09hZw?oc=5",
+    "source": "Reuters",
+    "date": "2026-09-29T06:35:00.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "Fire near Yaroslavl, army growth, and refinery secrecy: news",
     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaUVRZjI5cHU2UTlLLTBjZENqcFVoUDNteFhjTEFHSy1zTWtyU3VkQ0lmeHZaQ2hRa2hQZHRST3BESG00MS1nV1NQa2hlQzJaaEYweDRDVEJuRG1IV3EyQVJPTFY5dlpQbzZhakFBRGRGcE5JOXNfczRudk1VUFdVWFN2dVJPUmF6VmJDLXVxZjFmYzA3cDJmN3kwc0J0ZU1CUHRCTDZ5UGZPR2NpaWxCNFF4YnloUjRKdGpoZjdCRlJSMmxJNU1BUURTcEhRaXpiU2VUY05ydGd0dnpVQ2dtdjlScG8?oc=5",
-    "source": "Говорит НеМосква",
+    "source": "nemoskva.net",
     "date": "2026-09-29T06:22:53.000Z",
     "region": "intl",
     "sid": "q-intl-incident",
@@ -2797,312 +3097,12 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "Saudi Arabia resumes Yanbu oil loading after pipeline restart",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNE80QTVVd2tvbHZWR1VLTzh5enAxOUZGMUVGNnQxcXhHeVJiYzU2S2NaZWVReFdmaF83cjJ1dGFVRGREalh4aWFtaWxuR1hLUFdtSTRmb0dsM0ZDQkVOX1RxdG1FNDItMlN0Y0lPN1JlSTAxdXRncndISmxYc3hnaWZKekpVVDZ5RlJOLTNQS3RJSXFhY29RV2psazdPOTlpajFJVVVUc09hZw?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T01:17:12.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Australia's CSL taps Amazon's cloud unit to boost research pipeline",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQU2tZOEgwejRFNHUwQ2Mxb2Z3MUUxRFNGSGJTMnFUMXNVZG41c1JpSEMxOERUb2tLTzVPTXRqQXUxSnh0eUFTV1hpWVRya0RXX21LdTdUUGx3RHVvNDZKQmtYbmFwemdSbGZXWU9XeXB3TEtJM2ZUVUh0bDlGZlpJR0NGYVFrTnp0WXFUSXZrMjR0cm1aWmZ5Qm5xNEdhNW1kTUdWS3M4d2RwRjdXSUxuX21IbEhLRzU4UHZ1X3k5Q2NmdnlCWUU2b0hDWFBCaVk?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T00:47:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Oil falls as investors focus on Middle East supply",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalFIekNtR2pWcEdaNDNsUElsMTRodXZvOVBPbFJnSFlhbDlqbldRbE1TTGVUeTJGN2NRTk4zUGFlWG1NTl9PUkVjNHVzbnZ4YVJxbXg5aVZfZXJzYWhDa3FfZl92OG5Ic3ZNWEluX0N5ZV9aRlRYYXVYeUNUR3lXVGo1dHp4dmdzaF9pZDVGMjVCUGptMU5YcmlzcEhBa2t1NTZMMmsyeFVBWnNPLVJxS2NoM0FIUEQ0Q2ZF?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T00:33:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Oil prices rise on continued Middle East supply concerns",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPalFIekNtR2pWcEdaNDNsUElsMTRodXZvOVBPbFJnSFlhbDlqbldRbE1TTGVUeTJGN2NRTk4zUGFlWG1NTl9PUkVjNHVzbnZ4YVJxbXg5aVZfZXJzYWhDa3FfZl92OG5Ic3ZNWEluX0N5ZV9aRlRYYXVYeUNUR3lXVGo1dHp4dmdzaF9pZDVGMjVCUGptMU5YcmlzcEhBa2t1NTZMMmsyeFVBWnNPLVJxS2NoM0FIUEQ0Q2ZF?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T00:33:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "EXCLUSIVE: Anthropic warns AI may pose 'existential risks to humanity' in IPO filing",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVndoU28yRmZKcU1nd1MtOThsNXYtejlvampCQXFwRXIxcUJWdWZ5R0twWnM2czMyMmt3cERxQmhEYk5pWVh0UExTMVEzU3k0Tk5wa3Zkdkxkc0E3aTIzbEhOVmZrWmZPajJJaFRBb2JxUElza0puQW56MGpXM21lMDBSR1BDTkY3Ullja3pTQW1mQ20wWVhDTnMxRHB1MkFyUFQySkoxQldxNmFkNmp1dG95dndFUmZOb2c?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-29T00:17:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Platts to launch new ICE HPL-New Minden Hub location and discontinue ICE HPL, East Texas Pool",
-    "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNMFpyMUhNSTVhS1lsMnRQbWRrekh2bFRWaGQxbmVOWGpTZ3lwcHVPQUpYMnVxTlFYY0VLWUJLcGhISmFueE02TFNHN05lTW5MZjBVTEtHdU93SFhXZHI5SXUwLURwWS1jVjdBQXYtcDdYMjRpRUd5amIzR1hDaUtGNTNDZ1lJM1VGVld6U0JrYVhWOEtUa1dneGpMTEV3a1RFUjVPaTNSYkNDZnBkVk1wN0JQVVMwN2JRV1Uyc1V4dDVoUXRTLVN2d3gyMHFaeFVGQUJiQXZadi1hN0pyWmpGbHdTRERMN3dtWDNlNmJnLVllZ2pmS2NTeVA2aFdtYTZQaXd2Nm02N0sxS1gyd0VtanFGZkM?oc=5",
+    "title": "US diesel export ban would cut US prices but raise them in Europe: Goldman Sachs",
+    "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSmIzU3JYenNzTUVSNnhYdlBsY1J6b2JPRkgxY2lReDJjTnljYjgyUU9JeWp0ckVuYmNkc2xJaG8yek5PNTJhRXhpMG5uS2I5d0hKMHhFQVVpcjljbFBDd19hZVdnXzZ5VTd6dzdMbDhiM2tQb1NKeVBEMXJQRkFFOVh1b200YTRMLVhEakluMHRLTG1DQW1ZOGJUd00xNkhjMS1ETnV2T0pBa0dtTE0zU0Vkc2g3UUdmMnVBS2diYzFyOFdielptdFViUHltN1RlWTh0S201WTd4TlVYc1p3eTczUUpjc2NtX3I3MGd3?oc=5",
     "source": "S&P Global",
-    "date": "2026-09-29T00:11:45.000Z",
+    "date": "2026-09-29T01:40:00.000Z",
     "region": "intl",
     "sid": "spglobal",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "- S&P Global",
-    "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNbU5TeVF1Uzh6dm9QTnhJQmpTNmxmWVA4ZG1SMnpfTU5xNnFWZWs3VmhLQ1JLTDJab2tkNGRkdGM0NE1vQXRCWlBOOWo0NFR2YWNhN0c3dmw1U0l3Y0Q5N3p5MXFWNHV6UFhmaEZ6ZlFjaFI2dmcyWk5pZ2hTOWJTOHlnZnhmdUpKclI3NnkybmhhX1BJMTdOZHVlTk56X0F6MmZGM001V1hWR1hPZ0FRSG9BdHdwT25xcFZZb1JMV0J2ekhqM3AybDBnUDR1SVU0UVhHNnViMHBLd2ZFbEdzalA2YUFsWTlTVHNHenZHcTkyUXptR09fUkp0dw?oc=5",
-    "source": "S&P Global",
-    "date": "2026-09-28T23:35:25.000Z",
-    "region": "intl",
-    "sid": "spglobal",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Australia's Cochlear hit with shareholder lawsuit over 2026 earnings forecast",
-    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQakxqRG8ya2VhM090bTJ1d19iSjBDS3R1Qkt1MU45V192bTh4YmhMZFdtRW9tSEE0VGhqT3dtNGw5VkI3cUk3eTZrTFVlQmlRRWQ4U2lTRFFrdjFUUWc0WjUyZ3A5bmhJcW1MS1g2ci1yV2FnQlMwV1JadFAtNEZ0dXhKcEh0R1N2bWtnTmhVcEwtRXhKcTlGMlk1Z0QzM21oS0RlMExES1ZXSmYxcXhwY3dJUS1iMlFaaGJSOUhtUHZSTGxVUzNSVURXaW5PYzVzU0lZaw?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T23:17:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "EXCLUSIVE: Anthropic's IPO prospectus shows sweeping AI vision, surging costs",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbVlPeVROc0FBWTl6a0ZCZXdPVF93WjdPT1BFV2xkQmlyRE9oYS1wRF9yWk0zV1EwSlJ5Vmt0UkpucHdQWUpSbGdzUmdVeC1EWm5sMzBkTUNQMkg3ekVYMkMtemVySUxhWnRCTWRNLTA1Vl8tZVZkRU80ZVk4TjdZbE5LdjJ5VzJXbUlmM1FvMnJqTFE4TkZVeEJFVndEMmpIbGN5WDRxclhHX0JZdHp6LWlad3JTakZr?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T23:17:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Stocks fall as higher oil prices, Treasury yields weigh",
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMG5ieTU4M0RYMC1lQi0wbDVONnJJbW5NS3pya2xkLXUxSFF3ajh5ZWlER3B5ZW1IR0J3ZjRxZFFCTDd2ajh4ZnVHZ2xqY1U2c0pIamh2MGhzWVlIMVVieHpOXzg0bnJwRFlTaEg4dVdycUc1X25ZQlZkUUsxUGZ3TGc1RDlNWjg2U1RFQ3JEUWx2NGIxb0ZvZXJJb0F6MjcxOER2WHFIdmtSei1fZHdBS29YcGhvUFk?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T23:16:32.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Americas top stories: weekly summary",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcWt6VUstbEQ4SHh0b3JJY0hLR2ZkeE0ySWJTLTVKQmc3OUg5bEx5bzRjdm0xdXdpV18yaWkzanFsNWJNOTlKYlh5bGFBcW1SN08tbW5uZ21ZcTdid1FFbnRlLTZhS1otOHNmNDJCSEJBd0lNclJST2k3b1FTbVRiSGVLVks1cmZkYUFuS1pIR3J2U05rTnFhOEY0VVJzS0Fl?oc=5",
-    "source": "ICIS",
-    "date": "2026-09-28T23:13:35.000Z",
-    "region": "intl",
-    "sid": "icis",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "INTERVIEW: Australian beef supply to hold steady in 2027, pressure to maintain exports",
-    "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOeDJfZmJCYnZQVjZfTGwyNWtabmFRZUNDaUtZbGRBeTJGUWVMRlRONnFIa1ltblhyYkJoS2dYMTRLQUd6NEpGWlNZb1RreWJKRWZZSHFNZ2ZCN210SEtYWm1HcGdpUlZTM1h3TjBZODR4eXBuYzB4ZTJXR2dkVTI3MkdTejNiM1pQUU5rVkstN1RONFpEZVh6YTZIV2I4ZjNqRlkzV2ZwbVg4MlYtQmNUWGx6b0NRZHNTQXVFOU04UnN5OV92OHNaZlNINEktc3M0cnQtaVBVNEx1cDF0RGg1YkEwcFdPTFJsaTlVVW9oNng3TmZyZDlr?oc=5",
-    "source": "S&P Global",
-    "date": "2026-09-28T23:01:54.000Z",
-    "region": "intl",
-    "sid": "spglobal",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Trump government ads draw scrutiny weeks before midterm elections",
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQdldtRjU5d2d6OXFFQ09WUWlmNzNNQk9IdDV2bndEdGdkX2huallpOFVTQkhFRXBpQlhlTTU0NDRBa0laODdXVEl3eGt0ODVDNUJKTXhiSFBZZDZvNVNTU0laSUtES0c2VE14S3Z2cFRUVE1uX0pOSzBHMHVsWVE0REJpNW9QUi13Tk1qZTNLYXF5WXBQNW1VR2oza29jTmdHQ01mXzlwVnhqR0c5R21qaXYyM2UxdFc0dlZJdDlsUWRJQQ?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T22:36:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "OpenAI shelves new AI model release over safety concerns",
-    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMXc5dDQ0V0FSdEZfMWN3YjNGcG1jZmdHaG1mTDRwMExSZ2pLcjFzRzN1aU0tZFNJa0ZBZXVDdzJJQWxqN01WTmxUbXcyOFEyU1hIUjVpLXlJMW5SVUpiTWRkOHFQd1lyYmVCRHM1UzRtc3lPQXdoRHVvQmQ2ZGp2dGFjLXA1YWNhRjhDc0Z0MmVfejhYdk1IOFEzdUVTYl9Rc0hOWWVKY0RzeENVaks0eFZR?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T22:34:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Jefferies' record equities haul offsets asset management slump",
-    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOeFU2cjV2OHMwcE01bmJmMTFrYWRYRWFJZVctRkRaOFlkWXQ0V3NBQnFrbWdBbU82ZkNsMl84NFEtanVYWkVGb2dIYnh2N3VIekZpQWRzSUQxMUJlUUNfV2tPU0E2OTBBXzlfWG5ubFp2UlpTWEh0blNPRWRqN1ZhWWVPWmkydGlzYWdMQTVsZzJDVmlyV1JSTjhYOFN3bXlVNF82c3hkVG5XSGM5cXUyWmtCSlpDc241OUJfUUFkTQ?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T22:14:58.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "AAR to buy majority stake in aircraft maintenance firm MRO Holdings for $1.8 billion",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcXlSQ19xUEE0cHM0ZXBSY1AzNE5VWExwc2lBVjRvSTd6ZEFTeEc2U1UzQndhaU92cGlXNmk4YVhKcm1CSHk2T21NZ2RBZGpWS3VFS0hLRGFUbTJ1dy1fbG9GcE5OUDNDT0ZwaXJ6WXVTMnhwTXloSTNIZm54aklNRFV3dXBVaXd6anNTb3VSX0xwTTdkdGVkNEVjWXQtNDF4dGRvWTBGRG9zeHJXbVpiTTZVNjVOWnM3?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T22:13:46.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Pentagon awards RTX's Raytheon $20.7 billion contract for AMRAAM missiles amid stockpile concerns",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQWhncjVKaW5MaDJ6TU1ROVduLTZyS1JqVVJSM0pMXzhFQzY4REgxdGg5WnZHUC1MbXhjSjVZQUNxTEZmYzJna1J6QXRVQ2kwRUJmZmREM2pJcDZ5SzFzSmZGU1Q0WVVCLWF2STlsc3pUaW9tYXhMRmR3b2VWQzNrTDBsazZ2OG5jaTlHOHdVanlCMVhUR1RfVjctTDFrS2g5dkVLYldpdE5oRFNXdTc4RG5aYVI5MmV6Q3JJd1M2ZlN5TjBheXVNdDFQOUtpUEE?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T22:03:59.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Syria says gas pipeline fire between AL-shola and Deir Al-zour caused by \"act of sabotage\"",
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOX0IybV9ucTZIR2wzMFNjXzhqaWVHdzZmY0ljTHVBLWFmNG5jTVRxZk5EeGZCbDRFUmVWazFocHM0T1RqQTlNc1FoSm1uT2k1Q1VhR1BKVU1UdHZmSlh0QWRFT05WM3U3NDUycDgwSnFkZlI4N3kxeEUySWlzMnhXdVBKM3VZM0l2dEVmN0E0eDgxcDV6NS1uZGhyR01HMUdZRGJDLWVaTU1mWkZES2s2X0pmd0lFb09WVHlQb0hRdm9iUQ?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T21:51:49.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 2,
-    "major": false
-   },
-   {
-    "title": "Robert Hunter to be new UnitedHealthcare president",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNUGxlUmdxNk4wSHBPbVp4WHFnUEwxdkhuUTk0YUg5MTFEQlRJY2QtQnZ0QXlwWlEzQUF2Z01pZFYxYmhld193eXdxZlpMQnpBMlI2YjM2VFBXdHNMaURxcjNEUUhpSnBIanotU1N5dkF4TW5MVVg4X1o2ZXR0NDdCTDBRZlRnRXR3cU9ZRzRudXktMUd1aDQ0RmJST3cyRUdvRmtxd09ObERwNmUwYWZiUFZ0T1R4MkttNEtz?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T21:51:11.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "ECB eyes new currency safety nets to boost euro's global role",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTXV0ZlVtOXNhdnBPeENoRFpyTk5kX3ZzaTM5ZG5aSHl3VTFRbGhYdTdmOW54REc2b2ZSNHhzcS02ZzhPUExlT3ZJdUdTaW13aUJIVXdycFNZRkZvNkNYU2FHLVNfSjE1UjZnTl9iS05SM0VCYllEbTI3Z1dxeHdYU3ZTZWUxcm15SURQaDltMjdFWlpYTjZJMnBhaDZBZXhVbTlsbVlvN3hDWWZFSE5F?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T21:50:33.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Platts proposes new weekly DAP Mexico aluminum alloy and wheels scrap assessments",
-    "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPcUF0dXU0Tm85UGF6b3doWEt2ZEVLM21BaGhEN0hNVWNmbzdGSExxdDB2eVF4dk42dExRTFhLU2k2dTFnN3daeXR1YVdwWllKUUZXNXphR2JZb081VXRDMWZxM3k3RmJvYlBaWllxcHNmMnUza0NYT1hVWWNuQW1Gc3RjejRoN3ZKWFhZV1pHcWt2dWtiNTNjNzkwZkpuZjFIT3lhcWwxVThTX1BLZ2dwZFBIS1dlNkJpcUtpTFhmVXN1YTNUMGRrRFNRYU5IcXB2UjRoNzhzRzNiNFhOc3k1NWhvdFJaR0hScDNGUVRuSmg0TDJwMFQ3ak0zSFFZNFYwejdRRkZB?oc=5",
-    "source": "S&P Global",
-    "date": "2026-09-28T21:28:22.000Z",
-    "region": "intl",
-    "sid": "spglobal",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "UAE president discussed bilateral relations with Israel's Netanyahu, state news agency says",
-    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOazRQYzVlZmhxU1lnQU1XNnlzN1BnYkhvZnNFUDh0QXk0Skg2OWZJRUhCWjlqYWFwWno2ZDFlWThPZVZzay1OeHM0YlNZMGJFVXJvMlk3RUpXVkFzQklhcE5Qalp6anpyX2tOVUVlQ21NSjFlWC1hSzBVdDR3U1pYNXBSVFdnV1NrOW4yMUZkTVpOSGZnV3BYTnNudUZ1cVFyVm5WZ0pacG5hZXZFc3ZNWkdabzZuelplNWEyY1FlMmR2QkdhZjJTVFFMZw?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T21:04:09.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Trump unveils $15 billion planned Iowa steel project",
-    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSzlRa1o0d2xQUGs4MFBWWmNOVUlwYUUtbjBLTFE4Si10R0dodU1fY2QtVGxBaDRhVkx3d1RLMGhhbm9VbDM1VmhzdFU4cDFPclM3QjZKSlNUUDZpODNTTWZLRWVjeXhqZXR6SlFfQWFLTmlEbTVOWkd4REJYazhXTFFVOXlwTW5jYXV0c3dUVTFmUFdFRWVva2ZNNA?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T20:41:50.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "EXCLUSIVE: Russia raises 2027 military spending by 27%, budget documents show",
-    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbHg0MGZvUkU3a2FULXNNc1pDUkE5VTZaZFptZ0R0dHhoc29SbmotRkg5SndfWk1rcy1hbzAxY2VKbDhzUVIxUlpoaVZCU0MwYmRub0FGR1VOaHpjaXBxTmhPcnJ5MDJUOExCTE56X3h6aDVRR2FRN1V1VWRJMmNnYTNBOXhxVjlJd1hHbnZfVWo1Rk55d04xM1FGOTdfbU1BVmZHYVgyb0tYUQ?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T20:29:36.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "US says GM tech costs to drop by $20 billion through 2031 due to new emissions rules",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTVNGMnNGZVI2RG1rMVlsaUhacllsSFBtN0hvNnEyREViTjBaRjE4TUVrNnUyQkliWGRWSXlMdWQzSnNVSE1pR0cyQ1JqN0FtNW1pTzNoa2JpblJndkpzeVNYQUFURXNWanlzdi1seTRpTWoxUERxZHhOdW40a29uNDJpYXVmaFhfd2x5OTNWOWxQejc4bWR4cGhmcWhmNzN0REtZLTN3b3Y0VlZ2bVMtaTdoTVlLNTVseFFiQ3NSZ3lGWEpNTURtSUNRRlg1ckhTdGp5NFV0RjRVQQ?oc=5",
-    "source": "Reuters",
-    "date": "2026-09-28T20:19:00.000Z",
-    "region": "intl",
-    "sid": "reuters",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
-    "title": "Log In - C&EN - American Chemical Society",
-    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFAxY25CQnhFQXNkNGtDSzVpcEZrWjRZOGFMOHQ5UFVhME84YnZ5OXdqMnlWWnczTnRycUZTSHo2LXdOR3pOb28wZDhB?oc=5",
-    "source": "Chemical & Engineering News",
-    "date": "2026-09-28T20:12:56.000Z",
-    "region": "intl",
-    "sid": "cen",
     "type": "site",
     "tier": "B",
     "score": 1,
