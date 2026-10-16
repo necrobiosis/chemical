@@ -47,6 +47,24 @@
   const dsList = (refs) =>
     (refs || []).map((n) => `<a class="ds" href="#/training?ds=${esc(n)}" title="在 Data Sheet 速查中查看">DS ${esc(n)}</a>`).join("");
 
+  const IMAGES = window.NEWS_IMAGES || {};
+  const imgOf = (n) => {
+    const im = IMAGES[n.id];
+    return im && im.file ? im : null;
+  };
+  const thumb = (n, cls) => {
+    const im = imgOf(n);
+    return im ? `<img class="${cls}" src="${esc(im.file)}" alt="${esc(n.title)}（${esc(im.credit)}报道图片）" loading="lazy" onerror="this.remove()">` : "";
+  };
+  function figure(n) {
+    const im = IMAGES[n.id];
+    if (!im) return "";
+    if (!im.file) return `<p class="no-photo">原报道未附现场图片。</p>`;
+    return `<figure class="photo"><img src="${esc(im.file)}" alt="${esc(n.title)}" loading="lazy" onerror="this.parentNode.remove()"><figcaption>图片来源：<a href="${safeUrl(
+      im.page
+    )}" target="_blank" rel="noopener">${esc(im.credit)} 报道 ↗</a>，版权归原媒体所有</figcaption></figure>`;
+  }
+
   function card(n, open) {
     const refs = n.refs && n.refs.length ? `<div class="row"><span class="k">参考 Data Sheet：</span>${dsList(n.refs)}</div>` : "";
     const tags = n.tags && n.tags.length ? `<div class="row"><span class="k">标签：</span>${n.tags.map((t) => `<span class="badge">${esc(t)}</span>`).join("")}</div>` : "";
@@ -54,12 +72,16 @@
     const sources = (n.sources || []).map((s) => `<a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ↗</a>`).join("");
     return `
       <details class="card" id="n-${esc(n.id)}" ${open ? "open" : ""}>
-        <summary>
-          <div class="top">${regionBadge(n.region)}${catBadge(n.category)}<span>${esc(n.country)}</span><span>·</span><time>${fmtDate(n.date)}</time></div>
-          <h3>${esc(n.title)}</h3>
-          <p class="lead">${esc(n.summary)}</p>
+        <summary class="${imgOf(n) ? "has-thumb" : ""}">
+          <div class="sum-text">
+            <div class="top">${regionBadge(n.region)}${catBadge(n.category)}<span>${esc(n.country)}</span><span>·</span><time>${fmtDate(n.date)}</time></div>
+            <h3>${esc(n.title)}</h3>
+            <p class="lead">${esc(n.summary)}</p>
+          </div>
+          ${thumb(n, "thumb")}
         </summary>
         <div class="body">
+          ${figure(n)}
           <p>${esc(n.summary)}</p>
           <div class="fm-box"><h4>FM 风险视角</h4><p>${esc(n.fm)}</p></div>
           ${discuss}${refs}${tags}
@@ -135,7 +157,7 @@
         return `<div class="col"><h3>${REGIONS[r].name}<a href="#/${r}">查看全部 →</a></h3><ul class="mini">${list
           .map(
             (n) =>
-              `<li><a href="#/news/${esc(n.id)}">${esc(n.title)}</a><div class="meta">${catBadge(n.category)} ${esc(n.country)} · ${fmtDate(n.date)}</div></li>`
+              `<li class="${imgOf(n) ? "has-thumb" : ""}">${thumb(n, "mini-thumb")}<div><a href="#/news/${esc(n.id)}">${esc(n.title)}</a><div class="meta">${catBadge(n.category)} ${esc(n.country)} · ${fmtDate(n.date)}</div></div></li>`
           )
           .join("")}</ul></div>`;
       })
@@ -201,7 +223,7 @@
     const rows = byRegion
       .map(
         (n) =>
-          `<tr><td>${fmtDate(n.date)}</td><td>${regionBadge(n.region)} ${esc(n.country)}</td><td><a href="#/news/${esc(n.id)}">${esc(n.title)}</a></td><td>${(n.tags || []).slice(0, 3).map((t) => `<span class="badge">${esc(t)}</span>`).join(" ")}</td><td>${dsList(n.refs)}</td></tr>`
+          `<tr><td>${fmtDate(n.date)}</td><td>${regionBadge(n.region)} ${esc(n.country)}</td><td><div class="case-title">${thumb(n, "mini-thumb")}<a href="#/news/${esc(n.id)}">${esc(n.title)}</a></div></td><td>${(n.tags || []).slice(0, 3).map((t) => `<span class="badge">${esc(t)}</span>`).join(" ")}</td><td>${dsList(n.refs)}</td></tr>`
       )
       .join("");
     return `

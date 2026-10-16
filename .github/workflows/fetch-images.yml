@@ -1,0 +1,40 @@
+name: 提取事故新闻配图
+
+on:
+  push:
+    paths:
+      - data/news.js
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "脚本参数，例如 --force --candidates 或 --only <id>"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feeds
+  cancel-in-progress: false
+
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm i --no-save sharp@0.33.5
+      - name: 从新闻报道提取配图
+        run: node scripts/fetch-images.mjs ${{ github.event.inputs.args }}
+      - name: 提交更新
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/news-img data/images.js
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: 更新事故新闻配图"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
