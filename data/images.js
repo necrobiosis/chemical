@@ -240,95 +240,35 @@ window.NEWS_IMAGES = {
  },
  "asia-india-vj-sai-2026-02": {
   "file": "assets/news-img/asia-india-vj-sai-2026-02.jpg",
-  "src": "https://cdn.siasat.com/wp-content/uploads/2026/02/Yadadri-fire-accident.jpg",
+  "src": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
   "page": "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
   "credit": "Siasat",
-  "alt": "Man charred to death in Telangana chemical company lab explosion",
+  "alt": "",
   "pick": null,
-  "override": null,
+  "override": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
   "candidates": [
    {
-    "src": "https://cdn.siasat.com/wp-content/uploads/2026/02/Yadadri-fire-accident.jpg",
-    "page": "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
-    "alt": "Man charred to death in Telangana chemical company lab explosion",
-    "size": "1600x900"
-   },
-   {
-    "src": "https://www.siasat.com/wp-content/uploads/2026/02/Yadadri-fire-accident-780x470.jpg",
-    "page": "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
-    "alt": "Dhara Pawan, a chemist working in VJ Sai Chemical Labs charred to death while at work in the company laboratory in Bhudan Pochampally of Yadadri Bhuvanagiri district on Friday, February 20, 2026.  Dha",
-    "size": "780x470"
-   },
-   {
-    "src": "https://medicaldialogues.in/h-upload/2024/02/01/231349-blast-50.jpg",
-    "page": "https://medicaldialogues.in/news/industry/pharma/chemist-killed-in-reactor-explosion-at-telangana-pharma-unit-probe-underway-165397",
-    "alt": "Chemist Killed in Reactor Explosion at Telangana Pharma Unit, Probe Underway",
-    "size": "1500x900"
-   },
-   {
-    "src": "https://medicaldialogues.in/h-upload/2024/02/01/231349-blast-50.webp",
-    "page": "https://medicaldialogues.in/news/industry/pharma/chemist-killed-in-reactor-explosion-at-telangana-pharma-unit-probe-underway-165397",
-    "alt": "Chemist Killed in Reactor Explosion at Telangana Pharma Unit, Probe Underway",
-    "size": "1500x900"
-   },
-   {
     "src": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
-    "page": "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
-    "alt": "Chemist Killed in Reactor Blast at Yadadri-Bhongir Pharma Unit",
-    "size": "1599x1066"
-   },
-   {
-    "src": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.webp",
-    "page": "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
-    "alt": "Chemist Killed in Reactor Blast at Yadadri-Bhongir Pharma Unit",
+    "page": "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
+    "alt": "",
     "size": "1599x1066"
    }
   ]
  },
  "intl-mexico-jaltipan-2026-09": {
   "file": "assets/news-img/intl-mexico-jaltipan-2026-09.jpg",
-  "src": "https://cdn.amxinfra.com/unotv/images/2026/09/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz-205018.jpg",
-  "page": "https://www.unotv.com/estados/veracruz/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz/",
-  "credit": "unotv.com",
-  "alt": "Explosión de pozo de salmuera deja 3 muertos en Jáltipan, Veracruz - UnoTV",
+  "src": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
+  "page": "https://www.proceso.com.mx/nacional/estados/2026/9/15/explosion-en-jaltipan-veracruz-suman-tres-muertos-tras-incendio-en-planta-de-pmv-minera-379967.html",
+  "credit": "Proceso",
+  "alt": "",
   "pick": null,
-  "override": null,
+  "override": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
   "candidates": [
    {
-    "src": "https://cdn.amxinfra.com/unotv/images/2026/09/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz-205018.jpg",
-    "page": "https://www.unotv.com/estados/veracruz/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz/",
-    "alt": "Explosión de pozo de salmuera deja 3 muertos en Jáltipan, Veracruz - UnoTV",
-    "size": "1200x675"
-   },
-   {
     "src": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
-    "page": "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",
-    "alt": "Tragedia en Veracruz: 3 muertos por explosión en pozo de sal en Jáltipan",
+    "page": "https://www.proceso.com.mx/nacional/estados/2026/9/15/explosion-en-jaltipan-veracruz-suman-tres-muertos-tras-incendio-en-planta-de-pmv-minera-379967.html",
+    "alt": "",
     "size": "1200x675"
-   },
-   {
-    "src": "https://cdn.amxinfra.com/unotv/images/2026/09/incendio-142942-480x270.webp",
-    "page": "https://www.unotv.com/estados/veracruz/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz/",
-    "alt": "Controlan incendio en planta de sal en Veracruz, pero sigue el fuego",
-    "size": "480x270"
-   },
-   {
-    "src": "https://cdn.amxinfra.com/unotv/images/2026/09/explosion-sal-pozo-veracruz-jaltipan-080307-480x270.webp",
-    "page": "https://www.unotv.com/estados/veracruz/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz/",
-    "alt": "Explosión en planta de sal de Jáltipan, Veracruz, deja al menos tres muertos",
-    "size": "480x270"
-   },
-   {
-    "src": "https://eu-images.contentstack.com/v3/assets/bltf2605c1a31475f8b/bltbe169d1be216653e/6ab13b3d9668a52b805c2bb2/Explosion_at_salt_plant_kills_2.png?disable=upscale&width=1200&height=630&fit=crop",
-    "page": "https://www.powderbulksolids.com/industrial-fires-explosions/explosion-at-salt-plant-kills-2",
-    "alt": "Mexico Salt Plant Explosion Kills Two",
-    "size": "1200x630"
-   },
-   {
-    "src": "https://cdn.amxinfra.com/unotv/images/2026/09/whatsapp-image-2026-09-14-at-12.01.07-pm-1-144125-480x270.webp",
-    "page": "https://www.unotv.com/estados/veracruz/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz/",
-    "alt": "Desde Veracruz llega la concha mazorca patria y la concha patria",
-    "size": "480x270"
    }
   ]
  },
@@ -376,6 +316,53 @@ window.NEWS_IMAGES = {
     "page": "https://mountainstatespotlight.org/2026/08/13/chemical-deadly-kanawha-wv-csb/",
     "alt": "Another view of an incident tank inside the Ames Goldsmith facility. Photo courtesy of the CSB.",
     "size": "702x526"
+   }
+  ]
+ },
+ "cn-gansu-jinte-hydrogenation-2026-04": {
+  "file": "assets/news-img/cn-gansu-jinte-hydrogenation-2026-04.jpg",
+  "src": "https://inews.gtimg.com/om_ls/OhEElMHAHcl1jJHbJq0Li90lZSQU1LyW-8NboeU4i0engAA_640330/0",
+  "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+  "credit": "qq.com",
+  "alt": "已致3死2伤！一化工企业发生火灾_腾讯新闻",
+  "pick": null,
+  "override": null,
+  "candidates": [
+   {
+    "src": "https://inews.gtimg.com/om_ls/OhEElMHAHcl1jJHbJq0Li90lZSQU1LyW-8NboeU4i0engAA_640330/0",
+    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+    "alt": "已致3死2伤！一化工企业发生火灾_腾讯新闻",
+    "size": "640x330"
+   },
+   {
+    "src": "https://inews.gtimg.com/om_bt/OyASiP8cCp7MTTefe4uKPFbdVyqhtutq82OB1Xs4XKqGcAA/641",
+    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+    "alt": "图片",
+    "size": "960x1707"
+   },
+   {
+    "src": "https://inews.gtimg.com/om_bt/OGGGFp0qPQ1WOFjMmqlcEOjfiYhUje9TONVx7OKPLMrhIAA/641",
+    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+    "alt": "图片",
+    "size": "960x1707"
+   },
+   {
+    "src": "https://inews.gtimg.com/om_bt/OPGfcZQ6oPo_g7j-85BSDH3LA_mpLjmpAPqCrbhvJbUAAAA/641",
+    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+    "alt": "图片",
+    "size": "960x1707"
+   },
+   {
+    "src": "https://inews.gtimg.com/om_bt/OnCTDD60II6curoEHQPmwOGJrrrcVeWyiB_MNjv9LEsmUAA/641",
+    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+    "alt": "图片",
+    "size": "960x1707"
+   },
+   {
+    "src": "https://inews.gtimg.com/om_bt/Og-Yx8KptBluDqblkLwBikzbGaS3Qla4BibS8-hgN1fLEAA/641",
+    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
+    "alt": "图片",
+    "size": "960x1707"
    }
   ]
  }
