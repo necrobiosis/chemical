@@ -195,7 +195,7 @@ window.NEWS_IMAGES = {
   "file": "assets/news-img/asia-daejeon-fire-2026-03.jpg",
   "src": "https://img.khan.co.kr/news/2026/03/28/news-p.v1.20260327.381e0a1bfd4a4e79a0f5c58c7433b044_P1.jpeg",
   "page": "https://www.khan.co.kr/article/202603280730001",
-  "credit": "khan.co.kr",
+  "credit": "京乡新闻",
   "alt": "“못 나갈 거 같아, 사랑한다고 전해줘”···14명 숨진 대전 안전공업 화재참사 [신문 1면 사진들] - 경향신문",
   "pick": null,
   "override": null,
@@ -241,15 +241,15 @@ window.NEWS_IMAGES = {
  "asia-india-vj-sai-2026-02": {
   "file": "assets/news-img/asia-india-vj-sai-2026-02.jpg",
   "src": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
-  "page": "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
-  "credit": "Siasat",
+  "page": "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
+  "credit": "Deccan Chronicle",
   "alt": "",
   "pick": null,
   "override": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
   "candidates": [
    {
     "src": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
-    "page": "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
+    "page": "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
     "alt": "",
     "size": "1599x1066"
    }
@@ -258,15 +258,15 @@ window.NEWS_IMAGES = {
  "intl-mexico-jaltipan-2026-09": {
   "file": "assets/news-img/intl-mexico-jaltipan-2026-09.jpg",
   "src": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
-  "page": "https://www.proceso.com.mx/nacional/estados/2026/9/15/explosion-en-jaltipan-veracruz-suman-tres-muertos-tras-incendio-en-planta-de-pmv-minera-379967.html",
-  "credit": "Proceso",
+  "page": "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",
+  "credit": "Excélsior",
   "alt": "",
   "pick": null,
   "override": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
   "candidates": [
    {
     "src": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
-    "page": "https://www.proceso.com.mx/nacional/estados/2026/9/15/explosion-en-jaltipan-veracruz-suman-tres-muertos-tras-incendio-en-planta-de-pmv-minera-379967.html",
+    "page": "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",
     "alt": "",
     "size": "1200x675"
    }
@@ -320,50 +320,6 @@ window.NEWS_IMAGES = {
   ]
  },
  "cn-gansu-jinte-hydrogenation-2026-04": {
-  "file": "assets/news-img/cn-gansu-jinte-hydrogenation-2026-04.jpg",
-  "src": "https://inews.gtimg.com/om_ls/OhEElMHAHcl1jJHbJq0Li90lZSQU1LyW-8NboeU4i0engAA_640330/0",
-  "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-  "credit": "qq.com",
-  "alt": "已致3死2伤！一化工企业发生火灾_腾讯新闻",
-  "pick": null,
-  "override": null,
-  "candidates": [
-   {
-    "src": "https://inews.gtimg.com/om_ls/OhEElMHAHcl1jJHbJq0Li90lZSQU1LyW-8NboeU4i0engAA_640330/0",
-    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-    "alt": "已致3死2伤！一化工企业发生火灾_腾讯新闻",
-    "size": "640x330"
-   },
-   {
-    "src": "https://inews.gtimg.com/om_bt/OyASiP8cCp7MTTefe4uKPFbdVyqhtutq82OB1Xs4XKqGcAA/641",
-    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-    "alt": "图片",
-    "size": "960x1707"
-   },
-   {
-    "src": "https://inews.gtimg.com/om_bt/OGGGFp0qPQ1WOFjMmqlcEOjfiYhUje9TONVx7OKPLMrhIAA/641",
-    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-    "alt": "图片",
-    "size": "960x1707"
-   },
-   {
-    "src": "https://inews.gtimg.com/om_bt/OPGfcZQ6oPo_g7j-85BSDH3LA_mpLjmpAPqCrbhvJbUAAAA/641",
-    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-    "alt": "图片",
-    "size": "960x1707"
-   },
-   {
-    "src": "https://inews.gtimg.com/om_bt/OnCTDD60II6curoEHQPmwOGJrrrcVeWyiB_MNjv9LEsmUAA/641",
-    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-    "alt": "图片",
-    "size": "960x1707"
-   },
-   {
-    "src": "https://inews.gtimg.com/om_bt/Og-Yx8KptBluDqblkLwBikzbGaS3Qla4BibS8-hgN1fLEAA/641",
-    "page": "https://news.qq.com/rain/a/20260407A05QJR00",
-    "alt": "图片",
-    "size": "960x1707"
-   }
-  ]
+  "none": true
  }
 };

@@ -90,6 +90,9 @@ function classify(src, title) {
   if (ASIA.test(title)) return "asia";
   return "intl";
 }
+// 相关性过滤：综合性网站（路透、经济时报等）的检索结果需命中行业关键词，官方来源（A 级）不过滤
+const REL = new RegExp(config.relevant.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "i");
+const relevant = (item) => item.tier === "A" || REL.test(item.title);
 const M = config.major;
 function score(src, title) {
   const t = title.toLowerCase();
@@ -147,7 +150,7 @@ const items = { cn: [], asia: [], intl: [] };
 const seen = new Set();
 const prevItems = Object.values(previous.items || {}).flat();
 [...fresh, ...prevItems]
-  .filter((i) => items[i.region] && (!i.date || Date.parse(i.date) >= cutoff))
+  .filter((i) => items[i.region] && relevant(i) && (!i.date || Date.parse(i.date) >= cutoff))
   .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
   .forEach((i) => {
     const k = norm(i.title);

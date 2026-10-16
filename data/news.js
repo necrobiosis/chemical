@@ -54,6 +54,7 @@ window.CURATED_NEWS = [
     refs: ["7-43", "7-45", "7-46", "7-91", "7-17"],
     discuss: "该车间若为单层钢结构厂房，泄爆设计缺失时建筑与相邻设备的损失会如何放大？",
     tags: ["加氢", "氢气", "闪爆", "重点监管工艺", "染料中间体"],
+    imageNone: true, // 新华社、澎湃、腾讯、人民网等报道均未刊发现场照片
     imagePages: [
       "https://www.thepaper.cn/newsDetail_forward_32916543",
       "https://news.qq.com/rain/a/20260407A05QJR00",
@@ -327,6 +328,7 @@ window.CURATED_NEWS = [
     refs: ["7-36", "7-46", "7-32"],
     tags: ["制药", "溶剂", "静电", "印度"],
     image: "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg", // Deccan Chronicle：烧毁的反应釜车间
+    imagePage: "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
     imagePages: [
       "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
       "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
@@ -419,6 +421,7 @@ window.CURATED_NEWS = [
     refs: ["7-43"],
     tags: ["墨西哥", "卤水", "氯碱链", "维修作业", "CBI"],
     image: "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg", // Excélsior：厂区上空浓烟与火焰
+    imagePage: "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",
     imagePages: [
       "https://www.proceso.com.mx/nacional/estados/2026/9/15/explosion-en-jaltipan-veracruz-suman-tres-muertos-tras-incendio-en-planta-de-pmv-minera-379967.html",
       "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",

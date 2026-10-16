@@ -52,6 +52,13 @@ python3 -m http.server 8000
 
 未配置的公众号和博主仍会在“信息源”页列出，并提供搜狗微信搜索 / X 主页链接，方便手动查看。
 
+## 事故配图
+
+每起事故标题旁配一张**原始新闻报道中的现场照片**（不使用 AI 生成图片），展开后显示大图及来源署名，图片版权归原媒体所有。
+
+- 工作流“提取事故新闻配图”在 `data/news.js` 变更时自动运行：抓取每条事故的 `imagePages` 与 `sources` 报道页，收集 og:image 与正文图片，过滤 logo/图标/小图，按图注与标题中的“爆炸、现场、浓烟、fire、blast”等关键词打分，选出最能看出损失的照片，压缩后保存到 `assets/news-img/`（国内访问无需连外网）。
+- 人工把关：在 Actions 中手动运行并填参数 `--candidates`，会把每起事故的前 6 张候选存到 `assets/news-img/candidates/` 供挑选；在 `data/news.js` 中用 `image`（指定报道图片地址）+ `imagePage`（所在报道页）固定选择，或用 `imageNone: true` 标记“报道无现场图”。挑选完删除 candidates 目录。
+
 ## 维护
 
 - **新增精选新闻**：在 `data/news.js` 中复制一条记录并修改，`region` 取 `cn` / `asia` / `intl`。只写已公开报道的事实，并附来源链接。

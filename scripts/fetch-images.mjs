@@ -8,7 +8,7 @@
 //   --force       重新选图（忽略已有结果）
 //   --candidates  额外保存前几名候选缩略图到 assets/news-img/candidates/，供人工挑选
 // news.js 中可用的人工控制字段：
-//   image: "https://..."   直接指定图片地址（须来自新闻报道）
+//   image: "https://..."   直接指定图片地址（须来自新闻报道），可配 imagePage 指明所在报道页
 //   imagePick: 2           选用候选列表中的第 N 张（从 0 开始）
 //   imageNone: true        原报道无现场图，不配图
 // 依赖：sharp（npm i --no-save sharp）
@@ -104,8 +104,10 @@ async function download(c) {
 const save = (buf, file, width) =>
   sharp(buf).rotate().resize({ width, withoutEnlargement: true }).jpeg({ quality: 78, mozjpeg: true }).toFile(file);
 
+const OUTLETS = { "khan.co.kr": "京乡新闻", "newsis.com": "纽西斯通讯社", "excelsior.com.mx": "Excélsior", "unotv.com": "UnoTV", "proceso.com.mx": "Proceso", "ifeng.com": "凤凰网", "jiemian.com": "界面新闻", "deccanchronicle.com": "Deccan Chronicle", "siasat.com": "Siasat", "udn.com": "联合新闻网", "qq.com": "腾讯新闻", "inews.qq.com": "腾讯新闻", "thepaper.cn": "澎湃新闻", "wchsnetwork.com": "WCHS" };
 const creditOf = (n, page) => {
   const host = new URL(page).hostname.replace(/^(www|m|amp|news|view)\./, "");
+  if (OUTLETS[host]) return OUTLETS[host];
   const s = (n.sources || []).find((x) => {
     try {
       return new URL(x.url).hostname.replace(/^(www|m|amp|news|view)\./, "") === host;
@@ -139,7 +141,10 @@ for (const n of targets) {
 
   let cands = [];
   if (n.image) {
-    cands = [{ src: n.image, alt: "", page: (n.imagePages || [])[0] || n.sources[0].url, score: 99 }];
+    // 指定图片时，从上次的候选中找回它所在的报道页，以便正确署名
+    const known = prev && (prev.candidates || []).find((c) => c.src === n.image);
+    const page = n.imagePage || (known && known.page) || (n.imagePages || [])[0] || n.sources[0].url;
+    cands = [{ src: n.image, alt: (known && known.alt) || "", page, score: 99 }];
   } else {
     const pages = [...new Set([...(n.imagePages || []), ...n.sources.map((s) => s.url)])];
     for (const [i, page] of pages.entries()) {
