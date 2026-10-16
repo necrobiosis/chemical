@@ -1,126 +1,126 @@
 // 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑
 window.AUTO_FEEDS = {
- "updated": "2026-10-16T04:31:50.351Z",
+ "updated": "2026-10-16T13:15:32.583Z",
  "status": {
-  "miit": {
+  "chemsafety-cn": {
    "state": "ok",
-   "count": 1,
-   "at": "2026-10-16T04:31:48.300Z"
+   "count": 0,
+   "at": "2026-10-16T13:15:30.713Z"
   },
   "cpcif": {
    "state": "ok",
    "count": 0,
-   "at": "2026-10-16T04:31:48.302Z"
+   "at": "2026-10-16T13:15:30.715Z"
   },
-  "chemsafety-cn": {
+  "miit": {
    "state": "ok",
-   "count": 0,
-   "at": "2026-10-16T04:31:48.310Z"
+   "count": 1,
+   "at": "2026-10-16T13:15:30.740Z"
   },
   "mem": {
    "state": "ok",
-   "count": 56,
-   "at": "2026-10-16T04:31:48.406Z"
+   "count": 61,
+   "at": "2026-10-16T13:15:30.803Z"
   },
   "ccin": {
    "state": "ok",
    "count": 0,
-   "at": "2026-10-16T04:31:48.474Z"
+   "at": "2026-10-16T13:15:30.876Z"
   },
   "oilchem": {
    "state": "ok",
-   "count": 1,
-   "at": "2026-10-16T04:31:48.582Z"
+   "count": 0,
+   "at": "2026-10-16T13:15:30.891Z"
   },
   "sci99": {
    "state": "ok",
-   "count": 8,
-   "at": "2026-10-16T04:31:48.765Z"
-  },
-  "safehoo": {
-   "state": "ok",
-   "count": 12,
-   "at": "2026-10-16T04:31:48.825Z"
-  },
-  "csb": {
-   "state": "ok",
-   "count": 100,
-   "at": "2026-10-16T04:31:48.908Z"
+   "count": 11,
+   "at": "2026-10-16T13:15:31.098Z"
   },
   "chemnet": {
    "state": "ok",
    "count": 100,
-   "at": "2026-10-16T04:31:48.911Z"
+   "at": "2026-10-16T13:15:31.106Z"
+  },
+  "safehoo": {
+   "state": "ok",
+   "count": 10,
+   "at": "2026-10-16T13:15:31.145Z"
+  },
+  "csb": {
+   "state": "ok",
+   "count": 100,
+   "at": "2026-10-16T13:15:31.183Z"
   },
   "osha": {
    "state": "ok",
    "count": 0,
-   "at": "2026-10-16T04:31:48.920Z"
+   "at": "2026-10-16T13:15:31.277Z"
   },
   "icis": {
    "state": "ok",
-   "count": 29,
-   "at": "2026-10-16T04:31:49.086Z"
+   "count": 32,
+   "at": "2026-10-16T13:15:31.323Z"
   },
   "cen": {
    "state": "ok",
-   "count": 63,
-   "at": "2026-10-16T04:31:49.133Z"
+   "count": 66,
+   "at": "2026-10-16T13:15:31.353Z"
   },
   "chemweek": {
    "state": "ok",
-   "count": 35,
-   "at": "2026-10-16T04:31:49.208Z"
+   "count": 38,
+   "at": "2026-10-16T13:15:31.452Z"
   },
   "hp": {
    "state": "ok",
-   "count": 64,
-   "at": "2026-10-16T04:31:49.216Z"
+   "count": 56,
+   "at": "2026-10-16T13:15:31.497Z"
   },
   "chemworld": {
    "state": "ok",
-   "count": 26,
-   "at": "2026-10-16T04:31:49.289Z"
+   "count": 27,
+   "at": "2026-10-16T13:15:31.506Z"
   },
   "spglobal": {
    "state": "ok",
    "count": 100,
-   "at": "2026-10-16T04:31:49.425Z"
-  },
-  "argus": {
-   "state": "ok",
-   "count": 29,
-   "at": "2026-10-16T04:31:49.446Z"
+   "at": "2026-10-16T13:15:31.669Z"
   },
   "nikkei": {
    "state": "ok",
    "count": 8,
-   "at": "2026-10-16T04:31:49.480Z"
+   "at": "2026-10-16T13:15:31.695Z"
+  },
+  "argus": {
+   "state": "ok",
+   "count": 26,
+   "at": "2026-10-16T13:15:31.706Z"
   },
   "hazardex": {
    "state": "ok",
    "count": 12,
-   "at": "2026-10-16T04:31:49.644Z"
+   "at": "2026-10-16T13:15:31.866Z"
   },
   "koreaherald": {
    "state": "ok",
-   "count": 34,
-   "at": "2026-10-16T04:31:49.648Z"
+   "count": 67,
+   "at": "2026-10-16T13:15:31.960Z"
   },
   "reuters": {
    "state": "ok",
    "count": 100,
-   "at": "2026-10-16T04:31:49.692Z"
+   "at": "2026-10-16T13:15:31.986Z"
+  },
+  "pbs-incidents": {
+   "state": "ok",
+   "count": 62,
+   "at": "2026-10-16T13:15:32.107Z"
   },
   "et": {
    "state": "ok",
    "count": 100,
-   "at": "2026-10-16T04:31:49.894Z"
-  },
-  "q-cn-incident": {
-   "state": "ok",
-   "count": 33,
-   "at": "2026-10-16T04:31:49.929Z"
+   "at": "2026-10-16T13:15:32.167Z"
   },
   "wx-mem": {
    "state": "unconfigured"
@@ -206,24 +206,120 @@ window.AUTO_FEEDS = {
   "x-kemp": {
    "state": "unconfigured"
   },
-  "pbs-incidents": {
+  "q-cn-incident": {
    "state": "ok",
-   "count": 100,
-   "at": "2026-10-16T04:31:50.017Z"
+   "count": 35,
+   "at": "2026-10-16T13:15:32.237Z"
   },
   "q-asia-incident": {
    "state": "ok",
-   "count": 37,
-   "at": "2026-10-16T04:31:50.114Z"
+   "count": 24,
+   "at": "2026-10-16T13:15:32.310Z"
   },
   "q-intl-incident": {
    "state": "ok",
-   "count": 61,
-   "at": "2026-10-16T04:31:50.282Z"
+   "count": 63,
+   "at": "2026-10-16T13:15:32.558Z"
   }
  },
  "items": {
   "cn": [
+   {
+    "title": "油气管道应急救援为何纳入全国危化救援竞赛？专访中国特检院杨绪运",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWl80aW1UZU9YWTY5NUtxYmhNaFpmTUo3R0pxNVFRV1FUdHBQUHVrTUVTMUh2OVd1eHNsV3lHLTI5TkVhWG9KaXI1akZSVWxPeDJMRmVDU1pETHlpZ1JCUHZMV2E0SkhVTmEwSDlMaTNoM0lDV2F6WFZnczcxSW0zbnlMZHdLTXV6YjhIRA?oc=5",
+    "source": "搜狐",
+    "date": "2026-10-16T12:55:58.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "第四届全国危险化学品救援技能竞赛圆满落幕",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE14d29jRm0xZFR4RTJtNkNHZjk3TzRya1NpeWNLcjBJQ2JDVEdKcWhhTHV6dG1lcndPZHJRVUpNZlhkQzJjWmhUMGdodU5MdzRtSDJINGxrcUNiRG94MHJ0RFljXzVuSmpSakdjR0MzTWIxNEE?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-16T11:18:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "关于公开征求《陆上石油天然气开采建设项目安全验收评价导则（征求意见稿）》等7项标准意见的通知",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1PUW9FOEozbldZalNzSVRSOTZzQWNEamlDc2UzNmYybF9Ndlo0T19UVDVoSGZFcW5qWlRFVllIVS1TaEFkNEpPSENZZ2x6aVdXcFoxSF9wbml6WFZtc1BjYVhlZjg3a0c5ZVhCVFpHTUZBRGZOS093WmoyNGdDUQ?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-16T07:13:51.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "PriceSeek提醒：10月16日内蒙古液化天然气价格上行",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBZYm8wbGZfUjZ0N29PWVhtNzdLckdvdUN5WWFUTTRFRlA5bEFHZmJFMnlwdWhjMWhoWGhrMUdYQjEtYzFGNFhqbDFxNGU4ZDhjRGRlOEZ2dmZpNWQ1WXh3?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-16T06:02:47.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "聚焦含硫杂环，润宇新材扬帆起航",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1sQUNpeDhEUFNUd3RBUHFHbkFrS0pWckVjeFJZd0FUa1N2UHJoWlVNZF9mVjM5NnNHMUdzWHhVVFc2cWkydDQta3UwQ3dEOU9tVGFpTE1aMFJXTUJpcU1Z?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-16T05:22:06.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "应急管理部召开党委会议",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZOXBtRVZqM1RuZjNaSTVweGJqZFgwa1NjMkNOcEIzTGxYemhZaTBkMVJ3YXBFTU1GOHI4OHdUX0x3c3ZOLXNNVVc0RUdkZ3ZNY0M1VkdGX3IyRkh0cEtSWFdFNURDWjdyb0tWcQ?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-16T05:09:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "金湾区梅州市建筑工程有限公司“8.18”一般物体打击事故评估报告",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5yWEY3LS0wZktmWXFkUUJMSXRESTBwQUtnTjl0S3lUekQySjB5aTlyTTcwZVpMRWhhNkRLTmt2SHFMaVluZVdhM3BoUkp6VEF6SDJfUzVncnR6SVNVa1ZsMW1SVUM4bS1SYmc?oc=5",
+    "source": "安全管理网",
+    "date": "2026-10-16T03:27:09.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "金湾区平沙镇三一蓝海花园园林景观工程“7·13”一般高处坠落事故调查报告",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HTHEyOHRXTEFORTlfOWZpcUZzTVV1N0tieEpiT3FtY2hRRGpSQTlkV2RvWHE0OXRqcVFQZnJmbHRBWUNsSVZNUy1sS3dvNlY4QmJyTjQzcHUyNVdRbURBRnNwSzVYSmFxSzBn?oc=5",
+    "source": "安全管理网",
+    "date": "2026-10-16T03:27:09.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 4,
+    "major": true
+   },
    {
     "title": "金湾区中山金枪鱼帆船制造有限公司“4·25”一般其他爆炸事故评估报告",
     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1KSXd1WWY0bExVdkFSNUs1Z2h6WnZKdExHQVpGQ0liNmNyYzBnWGZjNk1obGpIYWFNaklldl9aN1NMb1hxdlFpTDNWZWF6R0NmVnhKSlJWR2NvNTBVakJlNkIxXzNvRXRQNFNYcXVUS0JUZjNGMzRGTS01YXU?oc=5",
@@ -237,15 +333,87 @@ window.AUTO_FEEDS = {
     "major": true
    },
    {
+    "title": "云南省昭通市开展重大民生工程消防安全检查",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZbzduUFAzRkhueFFzRHQwWkFuSGdJdHR5eXc0bGJqalkzdExCaGk1NVNQSGl4dkxseFhxbkxXNFRWQkhWQ3BrcUVWUmdyaGYxTnlaRWpGdXBxc1ZyQUdiaDlmV2NtNk1MNGJDaw?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-16T03:18:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "湖北省随州市消防救援支队全力筑牢养老机构消防安全防线",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwb3k2Tk9hRWJyYnJzbk1PY1BUa285TDZURW95WjJ4UmN6ckNQUFpKa0UwZHhsQ0ZTd1hkVHcxVU1PWGNBZ0xSV3QtZ0VtSHdiZjk4TmFLUFk0RkVNamREbl9BZ2wwbTl3SWdpLQ?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-16T03:14:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "山东省济南市以“智管码”为抓手 探索无感化触发式监管模式",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1zRG9sRnFIaHZjbW1ZTUxmOGVOanNyMUpJcHdRNWVhbGZzZXRkOTdvTHZVX0k1RmhuRzZiYlZSaDRENm1PZlZhbnpHOUcwME5Za2RraExMUnJNQ2taejU2dHRycmpVa05tZXgydQ?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-16T03:12:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "阿科力潜江二期完成备案公示 聚醚胺产能将扩至 2 万吨 / 年",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fc0xFVm5EVV9xSThMWnlDZk02bU45dldRNU1HejlXbGhWcVJyVEcxc2gxSDJCSVRkZ3htcEhZb1d1YzVxNlZVZlpLdk5LZ3NzLURRaHRPWGJWcnhER0Nj?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-16T01:37:45.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "印度酚酮产能迎来重大增量，哈尔迪亚 34.5 万吨苯酚装置正式投产",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE85c05GY1p1MENhRzVsUGVtQVFtM3VxVHJVb0Vob1dGaE5WWDhuek54dmtUV29vaHplb1h5VlpmbGlCc2tmNlZ1aFQ1WlZmQzMxeS1nTDBWTTNQLWYxajhv?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-16T01:32:19.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
     "title": "英特尔工厂发生爆炸事故 危化品三氟化氮泄漏",
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9IOGZNamJHN3lfTGdqd0RTaEtqZ0l4c20tWDZycmZ0X1RsTFBfOEQzT2dQeldJa3htT0RvcEhIczh0STJ2elV2WVpwYVpFWmJyaUl2eEZFQ192ejVYZGJn?oc=5",
     "source": "ChemNet News",
     "date": "2026-10-16T01:21:49.000Z",
     "region": "cn",
-    "sid": "q-cn-incident",
-    "type": "query",
-    "tier": "C",
-    "score": 4,
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 5,
+    "major": true
+   },
+   {
+    "title": "科思创拟关停安特卫普 3 条 PC 产线，配套 BPA 装置停产",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9jdENBcFNZYk9CeWNiNGZJWi1kbGlVek8wMElrbUxZeWFNdmdKbENTU3hQZERjYUk0Y0JoYlU0RGNoVThxTzBTNEQ4SVVUSjNHOTdydXBTM2FfbnZ4dEh3?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-16T01:19:20.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
     "major": true
    },
    {
@@ -258,6 +426,30 @@ window.AUTO_FEEDS = {
     "type": "site",
     "tier": "B",
     "score": 2,
+    "major": false
+   },
+   {
+    "title": "业绩爆增！恒逸石化前三季度预增最高超 34 倍",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBGU3cxLWxTVWZ5bW9nYTdERmVycjEtUG4ya3B4S0R1WktXRC1HVzdhTzdqX0lDY3ZNT25qVkNMM1luamJqOExhdzhhcTI5Z0JfWVpuRFBQdkpWOEpybk9Z?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-16T01:03:34.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "国内甲醇装置有效开工率统计（20261008）",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1TdUhIVER0aWZsVlpVaWZfTWxJOF96OEpXbEQxZVRlZklDUkU3djBHek9iTU5Lbi1yb3NGMTI2djJmNVlPLXpkd0gyMENpNV84X1RrUXVTUUZzRDhrQnI2cE1R?oc=5",
+    "source": "卓创",
+    "date": "2026-10-15T21:06:02.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
     "major": false
    },
    {
@@ -309,6 +501,18 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "视频丨不靠口令不靠通信，消防员默契配合处置“化工火情”",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZR1hibi1wbWlwOV9xSkx1elQ3T3RxWE5mdTF2blN5VklWcElKSUpXSU5tUFJvYjNZX015aXBOTGlGUDZPNXN3cVlKRDF2R0VuTFRBZlM5M2QxSFRoSXFtOFJB?oc=5",
+    "source": "新京报",
+    "date": "2026-10-15T09:00:00.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
     "title": "韩国一化工厂爆炸！",
     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2NGYtdGt3X0J4VnlhTFcyNWRvSUZEb2IzSjk0endXZUhkdVk3VU54N3l2d09vNUJTS1hibl9Sbnh2RkdNT1VoelowUXdnOThialk1eFhNd3R0d18zMkNOWWtJY2VtbTFNeG9xbmN0UW1rbHd3azhOOWN3RWtJbmM?oc=5",
     "source": "新浪网",
@@ -349,6 +553,18 @@ window.AUTO_FEEDS = {
     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBpV2lXM3F3elpUeFRYQno5cjdIUWx3LXNDWTdGeF8yV1RVcWpXajg3UkMtXzJ5NUJDUjZxSzhfSjB3SXpHdjdDSXJ5LW1XMjJJNEZLX1JKbVJ5ZE5LOXUw?oc=5",
     "source": "ChemNet News",
     "date": "2026-10-15T06:09:13.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "中石油推出数字人民币科创债，最高发行规模50亿元",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB5U0VlUmdGX3gwcUV5TTltTkZ5RHEwdWdnMWcwNlBFSzlrVV9nVGRuWDB1cTJrelpWNExDLU5XUmVRSGNPcVYzdVdQeE5yVVhWemRvV3VwZEh2YVlDZHRB?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-15T06:07:05.000Z",
     "region": "cn",
     "sid": "chemnet",
     "type": "site",
@@ -402,6 +618,18 @@ window.AUTO_FEEDS = {
     "type": "site",
     "tier": "A",
     "score": 2,
+    "major": false
+   },
+   {
+    "title": "石油化工行业热点（20261015）",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9RQnVXSVBhQkhNWEgwdUthMHlRWVdPNl91UTItVVp3bkd2MklfNEt3UUNISUIwblFWUDNTQno0WlZQSVE2Vm9iOUFpTkVOYWx2eTEwVnpLVHJORWQ2SXFkb2R3?oc=5",
+    "source": "卓创",
+    "date": "2026-10-15T03:23:32.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
     "major": false
    },
    {
@@ -655,9 +883,369 @@ window.AUTO_FEEDS = {
     "tier": "B",
     "score": 2,
     "major": false
+   },
+   {
+    "title": "#生活# 现场画面！韩国一化工厂发生火灾，火光冲天，冒出大量浓烟",
+    "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOUU5ldGNsYUFEWGFrWFhJWWZMMmN5MnVTQ2k1TW9fS0tWUzRrd3N2SllPNy0ybS03Mld4UG1jSXM0TldZNzdKSjNCdzRmN24yVVZrZ2s1Mjk2aVF4NzhCcXJxLTF0NWJMV0poT2FIaENnNUhNRF9DdXdyM1picWI3cHJKVS1PQUd4NTBaR1IzMXlGTEY1ekpoNXlNTkNuei14dXFUVHhDZ3Z5YkpUUUNpYThUa1lPREZWbmtrV3ZoOFFReTVBQTRyMHFFcXd4M2ZabjQ2NHNaRFRYcUV6VlFQZ1JCN3poR3U1TkJ5ZFFNOVl4SlVSLTVlWXVHV2NxeUt0WkhrQmQ4SmRvUUlCNndzUFZ2MkhVNm5qbHNXU25iZ1RVUDNVQ2d0MmdfYzE5N3Zab0pfUFZhLU1pbHlaQ3hlMQ?oc=5",
+    "source": "搜狐",
+    "date": "2026-10-14T06:40:52.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "中科安创智能巡检机器人护航危化行业安全生产",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQS3FmbjJ3LURuMjctVWxDVlNWYmVabjZBcW94dzhFUlpSTEZYX1JzUC1BbXYxTzY2LU9PdHhzd2RudEZNdlYxZldVTFJ1S3RBaFdRTGlyMEJ2Z01CRVUzMmZaUFJGMFV2cVlhdUtwZG1qSWdDcjlRMWdEejc3QkVhaUNGSEE0SGhTYmhj?oc=5",
+    "source": "搜狐网",
+    "date": "2026-10-14T06:40:14.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "生意社：10月14日陕西龙华三聚氰胺价格下调",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01UkcxVlVXdHF0ekFVd0JUNXdzQlNFdWw5RWFfNHN6SlktT1JZZXJjRFRRRTJyTlhfaXQ2RHQzS3JmS2xLMV8yN29FdWVNTXpmZGkwZG1PenZrTFp1QWlj?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-14T06:15:40.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "PriceSeek提醒：10月14日河北辛集三聚氰胺报价下调",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8tUGJ5aU0zLS1hUjJyanpySHFwM3N5eUtUcmpVS3NNZmdfRGZFQWM4VnpSS0ItVDQtbFRwQ2V0X0tWendaR2h4dDJKV0lzVmZaSDZCdS1XLWFEdXFIdTBj?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-14T06:15:35.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "李尔公司关闭原M&N Plastics注塑工厂",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5femdPWlB4WEpWZTBKVGlZTmVHYXk5NnZDbzJkS0paYTlKekRIRWdnbUNxdzhYeWlCV0pZVXFHSmE5RlVKeVRBNUFUWW5aQ2RhQVNpVGFBRjFKU2lJMnAw?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-14T06:02:08.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "#韩媒：韩国蔚山一化工厂发生火灾#",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNUZoUTRnbzRCeDg0UnVwd3NmNjcwNTdfRUJBYUYtZ0hKSVVra19iZTVURlFoWXdtTDA5UUJtdW1pUmlyR3BQMGlaRFlHUXpxMjh1T0wyX3V4Rnh2V3h6NFB3cVZRUzB3TUpNNlFNNWx3cks4Tloxem5rSnZPQmk1cWQwc1FDNlNWNzZaekFwOVRVX01YU1V2ZUgyTWpkSmxIdk04YWppQ3J2cktDSHBxWDVzZjByeUNiQUFiME5Zbw?oc=5",
+    "source": "搜狐网",
+    "date": "2026-10-14T05:56:01.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "韩国蔚山一化工厂发生火灾，现场冒出大量浓烟",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9IdU9aSU41dGdSaUdIbVNWLUJBMVVORWwzdS1BQ1dGY2k2TmRwVzRmQ2pDblhRXzc1R2M1dGhPVjJ0bHpGT09OMDdVbkY?oc=5",
+    "source": "凤凰网",
+    "date": "2026-10-14T05:45:27.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "乌尔山化工企业火灾，火势蔓延至7个危险物储存罐",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE16dmtKUDZfUEhYTWt1cURLZFVxSUhOVWR2aDd2VEJnRHlQRHhoVEt5anJFcmpBSERPZi05ZDNacFRVVndIR3dMQTdCZmtIQ0Fjc0x0N3NhU3BaRHc?oc=5",
+    "source": "亚洲日报",
+    "date": "2026-10-14T04:44:00.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "蔚山化工厂发生火灾……消防厅发布国家消防力量动员令全力应对- 阿视亚经济",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wMzMxUm9WZnlPMGE2alp5b3J3TDZDV3hkdm44U0FybGhib1k3eGt1WTNOTEdUSEZmU1lmRE9mNnNISjlycmdsWUQ1V3FtakVidTNWMlVYcV85WjhFY3lveXZKMTg?oc=5",
+    "source": "아시아경제",
+    "date": "2026-10-14T04:15:46.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "蔚山富承化工厂储罐起火十余名工人安全撤离: 社会 : 财经日报",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0wdlY5Yk14R0ZxZEJ3ZG91YlVoWjJRR2JCbV83S1BLTTlhYnpBcVdNNF84NE5ieWkwVllvMDhEWGoyeHRkb2JzYloxOHZRcnAwSk8yalFBLXp4Q2lZR0p4Y2J3?oc=5",
+    "source": "재경일보",
+    "date": "2026-10-14T04:15:00.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "有机化工价格动态",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Wblg5YUhsaXVfd0tEUDBUVXYtT0JTaTNYVVRRMWdBRnhHWHpvbDBkaWxNMXhlWEJQQmdGa1NsYTdySWszeEQ1ekl4M0xJRnA1N1BoMXZ2ZmtjVm9JeXM3V1RXdw?oc=5",
+    "source": "卓创",
+    "date": "2026-10-14T04:03:21.000Z",
+    "region": "cn",
+    "sid": "sci99",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "中化学南方建设投资（广东）有限公司所属深汕高端电子化学品产业园开展施工现场火灾事故应急演练",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9zaXRGV2ZGZ01QY3ROUzVqcmJwUkFuLURlSVV1d0kxV2c3RU5Zd05ob0RMM1lDZ1VJaXlhZVdFNGZIV21vWEkzX1lCb2ZOOUxCVm54MmQ5WnJKRjJHN292ZG1uMjBUV2ZD?oc=5",
+    "source": "人民政协网",
+    "date": "2026-10-14T03:07:00.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "China factory-gate inflation heats up as commodity costs rise, CPI lags forecasts",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM3BORVdqSzA0ekdnTDNtVWhTUFZKd0d2eW5meFgtdkd2MHhHRG5KUWRZSGpJZ2FKemlrSzlxME5hUVBjcE5JVHZYWnBSVk5TTDBWR3o5MnFUS3JSUmRxczEyVEQtam1maTk1T0VFZHJWeko1TkZjUk1zLWpCNnBqNVRNODhna3RKdFBna1c0XzVwckt3ZnQ1Wk5Nc2JnS1VaZEp5QVlnT0pTdw?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-14T01:42:00.000Z",
+    "region": "cn",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "动用冷战《国防生产法》！美国扩建德州Delek炼油厂",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE12d1c5V3Z5aWZOQVoyd3NsZTl4aU1iVmFZME1udC1jbG9EcHNZN0pWWjZUNlpZcjM0Y1lYSDZxYUF2N3NfTkM2X0l4Snh6aUJMRUVPUUVhSzF1Nk4wZmEw?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-14T01:34:02.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "硫磺价格暴涨近10倍：矿企抢货，化肥企业被迫减产",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wenFMejFxRXdqWER4ZnFRTXh3cTFnbENlNUZKeUY5RUpUakZOSmFIQml3c0xGVVZQcDRscDFCQkNRVFR4UzdQUk5VWVd4UjFNNVdPcm9tU0xPZ1llWnI0?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-14T01:31:48.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "英国伦敦金融城发生天然气泄漏，约4700人被疏散",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE50eExEUzl3U3d1S1hZNE5rZDlFbF9ZY2RDd1dhRE1kcWhkWDJwU3JsT0pRclZNdlNCOG5GS0JYa2gxbjlJVy1HcUJiOHR3MGhMZ01IVEUtWDlmXzlnY3YyWV9DeWI5VXBFTDRZR08zRGZrUQ?oc=5",
+    "source": "京报网",
+    "date": "2026-10-13T13:49:11.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "珠海斗门珠海华盈硅制品有限公司“5·22”一般火灾事故评估报告",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0RUMxMWJwQ1BHVVpBaHdiRnptcm1NZUJmYmM2MzJlRXIybXhYdElOZl81czNTZUdHejhaT3QxY0x5REhMQkktakN5bGZuUDhZSFFhdWVJZWplR2JvMDJ5ekJWOGstbkxMTEZncw?oc=5",
+    "source": "安全管理网",
+    "date": "2026-10-13T12:45:52.000Z",
+    "region": "cn",
+    "sid": "safehoo",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "第四届全国危险化学品救援技能竞赛在河南濮阳举行",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYlBjN2JzeUs4TjNheUpPUzJMby0ybEgwRENxM2lkbTNMbWRoMDR5NWdockhHU2xmbWN3MjJQZ0J4d1BRb21GTUUtR2J4YTBkYWxjUDB5OWhrOHRzOHd4SzVoMlJNOWFDMlE4Q3l3djVEdkNYQW0wV0RKY0NjZlF6YVVCdmw3Y3Jk?oc=5",
+    "source": "搜狐",
+    "date": "2026-10-13T11:53:49.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "第四届全国危险化学品救援技能竞赛在河南濮阳举行(11)",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Rd2xiUlhBRjNtb1hsaVYzYjZqYlItaUFnY3FLOFBJakFwNC1GVGhZTFAyeHFodUt1OEd5NVM2YU80Tm5RcXp5cXJ5R0Q?oc=5",
+    "source": "凤凰网",
+    "date": "2026-10-13T11:53:49.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "第四届全国危险化学品救援技能竞赛在河南濮阳举行(6)",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1nTlNFSTNQcHJUOUtSNnVFV2JCX3g5bFB6WGEtMEJQTm0yNW10aGNmeV9yWjlTZlFsZnF5OWRRc2dzY201a01pamVZRlo?oc=5",
+    "source": "凤凰网",
+    "date": "2026-10-13T11:53:49.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "规模最大 第四届全国危险化学品救援技能竞赛开幕",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBHTVlGbVVjMW9Vemc4S3FDTTJSNXhRekRURW14Ylp3a2VnYVpta0dmd2tqS040SGVNRl8xWmJ3eXZ0TDNrYTNuRG9LODc0UnFaeWpvYTBKdGdVMU90ajJrNkhHNG55U0hhM2dkRHBqZWhhd1R0dkd1QXVjMGpxYm8?oc=5",
+    "source": "新华网",
+    "date": "2026-10-13T10:33:35.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "俄罗斯莫斯科州化工厂起火爆炸，4人失踪！",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mWG9fNkRGUVIxdG5HOFhNVzNEbm9UZV9hdXluelN3Y2Rpbl84Qkd0SnluNzltYTFrY0JlT01hMXdpMFVMaGxEV2p1ZmU0cWlZdlAxZHl3?oc=5",
+    "source": "QQ News",
+    "date": "2026-10-13T09:54:00.000Z",
+    "region": "cn",
+    "sid": "q-cn-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "第四届全国危险化学品救援技能竞赛先进技术装备展览活动",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5wNU14N3Itb0Z1Zk83cmVHbFR5T0JTNHJxYWxGYUxvWXA4MHplUWE1dWVaX2p5aTU0a1ZJRTNTV2hUMzZLV19Xc2phWmI1MXdUeWxMMjNNWXc2UzFFTHpaa3hJRDYwbHBSM1N4SmJITG93YUE?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-13T09:07:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "PriceSeek提醒：10月13日丙烯腈挂牌价格上调",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE45NkxVWlZ1anVaNHpCZTFyNTlPLXBsNVR3UGhOaFNibjd1dVhJNEdFcFpsdnVyZlRYZDdLUWhpeWsyOERDRDZQQnVneFBGSVI4X3djakdwdi1sLXJVOWgw?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-13T03:15:42.000Z",
+    "region": "cn",
+    "sid": "chemnet",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "云南省消防救援总队印发消防救援专业资质认证办法等文件",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVc0Y5NVpyUy1nR09FN0wzVGtKTlVEcm1IQTBRV05NMlN0cFpmOXh1dU9QT3JfeDViVjM0M21JOE9SVnF1ZUZvX0d6SDdoMlRON2NmLVUxWUc2elVBTzdwMFZfVWVXXzUxYUY1SQ?oc=5",
+    "source": "中华人民共和国应急管理部",
+    "date": "2026-10-13T01:27:00.000Z",
+    "region": "cn",
+    "sid": "mem",
+    "type": "site",
+    "tier": "A",
+    "score": 2,
+    "major": false
    }
   ],
   "asia": [
+   {
+    "title": "A tough day on the golf course: Choi maintains lead after two rounds of LPGA Shanghai",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9kWWZHY213SzlNM0FvNFc3LTVyd3JXWDV3NHh3SFVWRjVZYjF2eTNvODVhMnRNX19GVG5KNUEzeVNlMWQ1V011SG54NTQyRXlTNHJHdHQ2VQ?oc=5",
+    "source": "The Korea Herald",
+    "date": "2026-10-16T10:23:57.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire-hit Bucheon factory stored flammables without sprinklers on-site",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE40VXh2SE16MnBJT2ZheHNwaF9UcXRndVNXUXdpOEhUakw1U1JYOEhVRjRrc2YzZ3IyNGg2emRNOFdlNkptZGNuaGlwUGxCZlNNYWFTMnpYZw?oc=5",
+    "source": "The Korea Herald",
+    "date": "2026-10-16T09:02:42.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Russia’s Ryazan Oil Refinery Catches Fire After Reported Attack As Zelensky Says Restrictions Are Over",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VVUh3M2g3dzBpYTcxTFVOd2dJRURQRGJPQVVyVllDS2dmZWUyOThvT0E3OGtzY2xyckVVYk96YU5aR1oyb1dJX3E5bnk5U1RBZlZaY050MFc3cWNZcGFTYkNR?oc=5",
+    "source": "Wake Up Singapore",
+    "date": "2026-10-16T07:30:29.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Gujarat chemical unit blast kills four workers as probe looks at safety lapses",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOSFpZLVpJSlZ4U09HVXhBTDNBZGFCZERxN0Vzai1vZ0Z3VGUxSmZaU2NvdkVOaDB4TUhyYzlZTXExRGt6S3B2cy1sOEhDa1NGN2pSend2Ml9wNDZZUXVVX3lSb25CTUtJMmY0T0Vwc091LWk1aWtMUkY2bFB4Sy1iTXJBU2ZzN0Y3SE1EREpsS2JJNUNJNV82SzZ0eHlocEpuOUZyTU12VzRaVTFiSnA4RGE3Q0VaTXlnbkxuUmxvc3BEUUt5THBoMWV1U0FpeWJCcHAtRlVTSUFSaVhkLUpscHZWX2U2OUlYSzZINDVmaEZzS3hseXfSAfYBQVVfeXFMTkhaWS1aSUpWeFNPR1V4QUwzQWRhQmREcTdFc2otb2dGd1RlMUpmWlNjb3ZFTmgweE1IcmM5WU1xMURrektwdnMtbDhIQ2tTRjdqUnp3djJfcDQ2WVF1VV95Um9uQk1LSTJmNE9FcHNPdS1pNWlrTFJGNmxQeEstYk1yQVNmczdGN0hNRERKbEtiSTVDSTVfNks2dHh5aHBKbjlGck1Ndlc0WlUxYkpwOERhN0NFWk15Z25MblJsb3NwRFFLeUxwaDFldVNBaXliQnBwLUZVU0lBUmlYZC1KbHB2Vl9lNjlJWEs2SDQ1ZmhGc0t4bHl3?oc=5",
+    "source": "Indiatimes",
+    "date": "2026-10-16T06:41:21.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "Four Workers Killed in Blast at Chemical Unit in Gandhinagar",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbXdFcjY2ZXRUR0VtSkpNZHNsMVhseEM1MU1TVnZVWU9pcGIwR19WaWw2Ym14MF9HbkFCUExhYlZKaXhDb2Z6d3VDRHRBQWhqLWJDd2QzRjRTd1VuQ2RtS1lWbG5HeHV5R1NRMUdWc0JSSXhzWDdBWjlxcldtZlk2c0RGWE11UXpmQnpkSzlJZUN4dHFXVVJldWFKSzk?oc=5",
+    "source": "DeshGujarat",
+    "date": "2026-10-16T06:22:20.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 4,
+    "major": true
+   },
    {
     "title": "Singapore Sept petrochemical exports fall anew; feedstock risks weigh on outlook",
     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdy1vVmVpNlQ1MEV5TW9pUFVlX3poQXZlcGc3VmxGejN0X0dlcHlQT2gxN25mNWY0ZDJmdzdPV1BKY2NpM0psdHc4anBKcDR6dUMwbjFvR2UyZnhPWHJIY1FFcDZ3LXc5dkVaVnFxWlFtSWJyc1BESWxQbDBzWUh2MlAyVHZxRU9SRWZYeEFoeGlTNFBKTXB4TWVWUFc0NWZYbEVQdjlpUjlkclVJb28yMEIxTTJMMnVuS2ZsMERTMVpBMnZ3OWE1dXhpODRkT2ZPSjNLT2dLekZqVGs?oc=5",
@@ -665,6 +1253,18 @@ window.AUTO_FEEDS = {
     "date": "2026-10-16T04:26:57.000Z",
     "region": "asia",
     "sid": "icis",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "India's Yes Bank expects AT1 reinstatement to cut core capital ratio by 250 bps",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT2llclZtRUZMVlo3UkZqcnlOLV9nN2pqdW93aDF0RHlBMGJxTkNWZ2NUd3RxUXFES0xLT184a2xjOGMxRXUwc0FSaDEwdzRZckRwZGRQV3N3Z0sxbmhoZUpaMjFvQVJ5dkF4UVVlaFhVNWtHZllKRFRCVmQ4Mkdhdkd5WURaTEtBNzZEU2liT2NhTkZFTTloSlhGckhSelM4VmlvcFAwSUswZlh1bmo2MFJFMGh5cEMyYzVpTDIxZ1Qxdw?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-16T03:55:00.000Z",
+    "region": "asia",
+    "sid": "reuters",
     "type": "site",
     "tier": "B",
     "score": 1,
@@ -695,6 +1295,18 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
+    "title": "Zelenskyy, Trump on collision course as Ukraine resumes oil refinery hits in Russia",
+    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPZGxNVFdWcHd1QWlhYlBzdXpzRktINjllaHo0ZDVCSTZFZnZzR19NX1I4NHcxN2s3bHFmeHBPR3h4OUVIMjd0SFZ3dTF2QmRlNGtQZGFCS2cwVmVJRHRVNVJqR2R4Q2E0UkFzZlE1ZEtpNWd1cnRONWJ6RFM2czlNb0RHdXpfcjZIajg1Umg3MFJ5YjNEbGFOT3VPdXl1Q2pvWlhTX2JiQWltcG5MVDJEZF94NXBqdFBGU0dlazlqWXd2R3FFLWQ2YWVmNHFoelNCbk40ano3ZWROUmQwLTRnOFg1cjJFUTdR0gHuAUFVX3lxTFBPM0ZqMVowZnd2SFpVajFEZDJGb2ZzblNxd01jLW1UeFQ0eV9ab0s2eUV5cUVpSGVmZlhmanBUcFB1Nkl4T3RrRWVtNWk1SkFBNGYzbG1wd05YZUdfQ3ZQQUcwa0RyOVB3YWdreVFxVzIzbTRNMUtuaWwzN1V6Y3dhajNoUVNJZ3RhUlh3R29ZcXkyTGM1dXVCdGNxM2NSTVYzUVI5VUd6bGFya2FXeXhQd2lBYUo3YUJVZnh1QWdyUTFSMUtaZEVqc0Zab3NWWmN0MHFKMENEN2Nfc1lxOXgyQ0o4YVJoUjYxYlA5WXc?oc=5",
+    "source": "The Times of India",
+    "date": "2026-10-16T01:38:00.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
     "title": "Ukraine Strikes Major Russian Oil Refinery",
     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUnFNOWt4UlU4LUw2ZzNBU3NSeXJkU3kxYkF6MWFEZlZOTWFmcGUtMmp4UlB2RlpoVGJ4YnVfb3FCZ296Qy1oMFlyRHRkSEJlYnF2MHZnSFBha3JIU09BZ3RFTXZTRWFaeU5PRWU4ak1tS1BfUmZHb3BVYWJ4N2VfYkM2cEVnT0ZSQW0yTHJRNW9DeThNSUR2ZVJpLTRBNjR6NVZIQ9IBpAFBVV95cUxOUnFNOWt4UlU4LUw2ZzNBU3NSeXJkU3kxYkF6MWFEZlZOTWFmcGUtMmp4UlB2RlpoVGJ4YnVfb3FCZ296Qy1oMFlyRHRkSEJlYnF2MHZnSFBha3JIU09BZ3RFTXZTRWFaeU5PRWU4ak1tS1BfUmZHb3BVYWJ4N2VfYkM2cEVnT0ZSQW0yTHJRNW9DeThNSUR2ZVJpLTRBNjR6NVZIQw?oc=5",
     "source": "Crude Oil Prices Today | OilPrice.com",
@@ -708,7 +1320,7 @@ window.AUTO_FEEDS = {
    },
    {
     "title": "Ahmedabad: Four workers killed in blast at Chhatral chemical unit",
-    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNMmYyTUpfU3lwZmdPUEo2VGpua2NETDdfV3NxTFI2cFdjMWxOal92M2R3enFERmJ6eHRmdDlzajRLeG00QTB1dTdIUkhQQzY4NXNXYmoyVHIxWU80elZnaEV2anpuS1NNYzJ4RGVwdXpQRFpGVnR0TjE1dkhpdzVCclQ3R2V6SUk3WDMwc2xFazczSFZzWDBSMVRTYW5DYVdmTUQ1eXhCcWFiaWtYU0ZmZk5MLU5xVlZDOVRKMHA1el9DaldXMTV2R0VZZFczeDJwakY0cEJLWUfSAd4BQVVfeXFMTk1zUnYtd0s4dXRwcDdpVXhRUFZHMVpxUmpWcV9QRkdZVktTZmkzVW5mOWVoODEtMUlic3l4bXhfU3hHTHJnUnlmSEE2RGVSWFdfOEhlMWFKd2tyMmlhR2hiUmhFdnQzQl8zZkg2MTBqUDdyYmlWSE9xbC1sczIzc19kdTRTSWtZanN1YWdVdDd2SFhxZ3RsWTItLWhwZm82UW1wRFFMSFBCcUUtQW9JNXVXRGF4eTdkdUZ1eURDZGxwbVRja3dvbUoxR1Y4RnMzM2hNckxPeTRiTXNaclJR?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOTXNSdi13Szh1dHBwN2lVeFFQVkcxWnFSalZxX1BGR1lWS1NmaTNVbmY5ZWg4MS0xSWJzeXhteF9TeEdMcmdSeWZIQTZEZVJYV184SGUxYUp3a3IyaWFHaGJSaEV2dDNCXzNmSDYxMGpQN3JiaVZIT3FsLWxzMjNzX2R1NFNJa1lqc3VhZ1V0N3ZIWHFndGxZMi0taHBmbzZRbXBEUUxIUEJxRS1Bb0k1dVdEYXh5N2R1RnV5RENkbHBtVGNrd29tSjFHVjhGczMzaE1yTE95NGJNc1pyUlHSAd4BQVVfeXFMTk1zUnYtd0s4dXRwcDdpVXhRUFZHMVpxUmpWcV9QRkdZVktTZmkzVW5mOWVoODEtMUlic3l4bXhfU3hHTHJnUnlmSEE2RGVSWFdfOEhlMWFKd2tyMmlhR2hiUmhFdnQzQl8zZkg2MTBqUDdyYmlWSE9xbC1sczIzc19kdTRTSWtZanN1YWdVdDd2SFhxZ3RsWTItLWhwZm82UW1wRFFMSFBCcUUtQW9JNXVXRGF4eTdkdUZ1eURDZGxwbVRja3dvbUoxR1Y4RnMzM2hNckxPeTRiTXNaclJR?oc=5",
     "source": "The Times of India",
     "date": "2026-10-15T18:24:00.000Z",
     "region": "asia",
@@ -969,9 +1581,501 @@ window.AUTO_FEEDS = {
     "tier": "B",
     "score": 1,
     "major": false
+   },
+   {
+    "title": "A toluene storage tank at a chemical plant in Ulsan, South Korea caught fire, and 33 helicopters were deployed to fight the blaze.",
+    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uYWRSbk5WVFY2TnNyeWhjQ0Q0MGxmc2pndk5WYVFWcVY0eDRJdmU4dEw2UHZNQU9rdW9lY0EyLVB6Um90eXZOeGVVWVh6V0pQclE?oc=5",
+    "source": "ChemNet News",
+    "date": "2026-10-15T01:29:03.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire at Ulsan chemical plant causes major evacuation",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaGxMVS1BSWljMjF4cDVXQ192dUM5NnAxaVJWUGJfNDRwQlRSbmN0Y1UwYS1HUGFoVkpDbGJHSExWdVdZSUM1MzRyNTlyeXJ1d1A3dHNZTmhIa1hva1k3X2dqVUJ0SExXOXRsbnFCbXVZVWdxLXlWeW5kUEdOU3owRkZyTUxpLVpMWWJndlpsRkN4eXpaWnVRY0lFT0xJaHpSbFlQYXZtSQ?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-10-14T20:52:51.000Z",
+    "region": "asia",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "Everllence secures first PARSYN® order for green ammonia project in India",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPR1Z5eElIQkR6MDBYdXFndWw1ekdYN3JtMGRHd3dsMEJlN1B3SGlKczNka2NtNl9zY3JTRm1HQ08xUURmbXllLTBnM3V5XzZ3QnlGMGtTX2EwZ1Y2dlNleVo4bWx6aGY1UUF0V0JaTW1XY1M0aEFPb3E4alpFWS1tc3E4TWRDWThnd0FONTczZmI4X1JrWjBGdXNVSElySHg5b1pVdk1yc1BlZV92MTNVVk9iVVJYXzNKbkp6V0tQOElSZw?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-10-14T16:57:13.000Z",
+    "region": "asia",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Oil Refinery Blast Kills Worker and Leaves Several Injured, Raising Human Rights Concerns",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQVGZnb2xMWlZ6dmRkT1lRbWtiMDBFa3RFbVFJSHJ1WVl5ZXdDYkhzQk9qdEpWaEJYUW0zcmp3TTVOTXRjRXNQZTh2SDQycllZY2lab09UZWY5MEVmclZhVGc2cFRhWVVOb0g0cGxnN2QzdDc3N1BLYlRicl91UU1Db3pWbmJMRUdES3FhTjREckl5VE9hT0xNU1lkSmRUTlB0ZlVzVXpuS3hoanltT0NMY1Vyby1PRDVZalhkd2lwR09TQXlodGJkcw?oc=5",
+    "source": "Human Rights Research Center | HRRC",
+    "date": "2026-10-14T16:00:08.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "What happens when AI agents go off track without warning? Goodfire's inside-out approach aims to spot rogu",
+    "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxQWFRMVndueFM2RmREekhiUnVBNmFpWXpNZ09OWm5FVDVGaVBxckoyNDZUUGpidXJOV2Q4eGM4TFphcUQ2NDRnVm1LYVJVNWFFeTRXX0RYbWlzMHUtYk5FeHBLOXl4azBiUE15aGl3MUxPZ3hMVEZTQlN6dW1kdVpmc1N4cmtUWDZrSVFPRWJMcV9kSWs1RU5vcmdPSGthQjZSZExmdWtQajJVdVZZYUtCMU5rMHA0UUhQQVJ1YVpjTnhFXzF0ZnotbnJPNFRVNERUY0ctXzNQOE8xSVZkcTJiY0dtZldacTRZMUlRd1I0QWtobHJ0MU1NM3JpTWZNci1OWUV5aDFkYThUSm5FRnJ1SjlNb1NzX2pHandBc0xWRExjSDJGRk9zMEtOVjhNNEVmLTFmWEZCM3A3a3dqZmVxNDF0eUlWX21tbXpJ0gHEAkFVX3lxTE9zYnNIZUo2enZoczFXbEJQX2szTUpCR3diNElOMFc4OUR0NWtrTVp0ajBISmg2NVFxLVhzdUhZRGZXdnNNUEJyUlFTTm1ZYVJMZHk3aGNZcnAwc0dZcm5WQmFPaGFIY1dkY0tqXzZTdG02U1ZlLXNtLTlqS0c5c1JHb3VnMnI5OGFXSzNRaEV6VlJzN2NqLWtJampjN19wSmNpNE8wb0tyZWpHSlN4NVQyTHlDMWhDNV9LaXVPTjJpdGxQQjBXUUtjWGNkRUdTYVNYN2RlSmkyb01tUUhPMGpadHhJWl85aURldmZOa3hyUWZoQ1lDeS1wSTlRMnJFajlqOEhpb1QtTzNDdDNmYXMzTjk2czJnYzQ3NldiSUF0bXRjY21zYU1YbmdxNGlrWllmVXY3Rmc4NWhiMEJURG5RYzlRVw?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-10-14T14:38:17.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Platts proposes to launch new India domestic toluene ex-tank assessment Dec. 7, 2026",
+    "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxObUxZRmNGS3J2eVNpQ1pYeW5XVjVkSTNVU1lNdVdVaTItb080Ty1UVzdyX2J2WUJCb2Mzbm51dHhKVzJ5OTF3YkxiUzFNVWhnR1BtM0dUemtnNnJqN0lfVVNZTWFiSjdhckdyWHZtdVh1dExKYWo2ZGx0UUlJTXJsQjVXZWRqNlg0OGItNGhzaHVVeXpUdkhlWnBpYUdNenpSZWJuNzBENjZkSU5YdmZpQ0xSOWZuTlB0TGdqb1BpUXdKQ1Myd0xYc1BLVEV4WmU3RDZ3N0QzRXVxNXVrdjFTQzNCaktldGR1XzBvRUJRTlJENXpXYTk2dVpTd0Z4alg0Q0t3SDVDYw?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-14T11:10:12.000Z",
+    "region": "asia",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "South Korea chemical plant fire prompts evacuation of 7,000 workers",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE92RTM5S3AwRmlWTjQtX1JfYW5oN2poaWhpRlkyUEVPOEVRSmZCOWx6bWZsQ1NjSUZ1bVFMZjBIWTdnZEFQSUhYRUZ3cw?oc=5",
+    "source": "Today.Az",
+    "date": "2026-10-14T10:48:03.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "South Korea urgently evacuates 7,000 people due to chemical plant fire",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPeDh0WC00YUYwTnNMZi16OEdubGxTS0MwNjN4TUhsWFh5RmUyLWV3MVZaMU1KQnJIeWRzSzdHSXJSb18tSEc1OXFEemtKYjVKRUlRTWZ6OWJOTDI0eVlQY1hlb0JBeXNSNHNsQ3g5VDI4aVo5ejRpdGkyRzdWMTd4eXF2NEN4NDRwOEtUV2NVbG1QOWNKVXdxbHJ0OFZrSzR4aThONXY1OGZkcTE4VFQzRGxn?oc=5",
+    "source": "Laodong.vn",
+    "date": "2026-10-14T09:10:18.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "India seeks to address hydrogen standards gaps",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUlBpTXFjMmJCSEtFbVA1aWdNVk1EY0RpbUtxVEVrMS1TbFlGSGdjYk5QTF9OUWE2cmkyMGVzcTdVRmN4UUd0ZDNJbU9oaklXYkpwQjdnQXUzV2hhOGZiLWxMNXFrbzhqYUhIQjZFSWRTWG55M3hfenRXbWZTS1RIX3JwblRwemFNTGJWM0htYW0zd2JUZ2dpWHktUmdOTkpQTmoyQmQyVThFZTFPUkU0bXpsbnZmZThaQ0E?oc=5",
+    "source": "Argus Media",
+    "date": "2026-10-14T08:08:23.000Z",
+    "region": "asia",
+    "sid": "argus",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire at S. Korea’s chemical plant extinguished, 7,000 evacuated",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLTZVQ1JpVjJEWC1iejVKblliSlhkNm1qUzdrTUNWc0gyWFNJNHdISlA2UGJyUGFfXzVRWHV5MlplOU9ERHF6eXl5QUJJNG40Z2daV2RHWWNIYVg0SkwxaEFGUjhhZS1KdklwT3AwOGZyU01aREluUVdzNG95dXEzdnNOejc4UEtmY1lTaXRCNmMzdmprZ2JzetIBmAFBVV95cUxPLUhCaV9LLXRZbHFub21kTWowRVpLNEhJTmppcFJBc1dhcXFVOVNkNlVnZW90Wk1pS3l5ZC1sbjFFaWZfWWdUeEk3UlhHc2NzbVBUQUtncEE3Q1JlTFptRUpiVkpVSmRJQmFha3hXQnBndEpPX09JVld5TUdIVWVuM0tfWXV2azAzNU9uek9kcEJzVDc1WjVCZg?oc=5",
+    "source": "Qazinform",
+    "date": "2026-10-14T07:53:07.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "7,000 evacuated after S. Korea's massive chemical plant fire",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRUFXeEp1cHJKX2FYN2k2RFd2UEpRWFlXOFBmSGltVG5tZmxDT1VXREltdFVUZFVvcjdKSUhUZXhDN21XX3Y1SEJVTXhUN1dOT1FlLVV0d29PbnY1aFlwOWdhdGVKY1JMWGM4R2kwTG0zSUdRWmpGWU12bHdiRG5YNWNzUnR3Mnh3Q19pTW94YnNFVU13QUNCa3ZaemVlUQ?oc=5",
+    "source": "AZƏRTAC",
+    "date": "2026-10-14T07:00:00.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "INTERVIEW: India seeks to attract upstream capital with offshore reforms, deepwater drilling support",
+    "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQT0hJRFp1TlJXb3ZFRHhKQ3BpbkVWeldfdzVKMjdfUmZJb0M4aEFjenF0M3hvTUNHQnRmaTQ0UUFXUC1wMEZwUm10NzJzTHF3TXVlZ3RwTGJISlFlOG9teWc5ekNreW5pV1FBSXZRb2tsMlRJZTRjRkpaRVlpcXoza2IycDlPTXpfQ2VBWGtsRTJGYW1IaXVPdDRGdUpZNS1NaVZZZDIzOER1RlNPNE5sY0FSdFVkcWd2NGJ5a254R0hKWkdObTBIQlJlN052b3NZS3pkMDBPSXRlUkNLZEZaaVRsN3l1aVhEUFBHVVdOYWJvZ0VFUFpDZENzVFhJY0g0S2VFZ0tR?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-14T05:56:02.000Z",
+    "region": "asia",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ulsan chemical plant fire ends in 4 hours as Korea mobilizes nationwide aid - CHOSUNBIZ",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdXZwcGw4b0N0a1N0aXlCRzRrdUJxcnRkaUlOOFpWakQxaHdiTU9WMDFKRzZiMF9xRUI3S0RRU2FOZ0pqWVNQX0ZzVjFoNEpGVHFxUmo3T3YzTTZlZ1loN1pMYk5ZNmxIZ2piNmVzdE51aWZ0cW11NVcxYV9VOF9lV2YtTDhrZ0c5VUNpbl9lREY0OTZn0gGUAUFVX3lxTE51dnBwbDhvQ3RrU3RpeUJHNGt1QnFydGRpSU44WlZqRDFod2JNT1YwMUpHNmIwX3FFQjdLRFFTYU5nSmpZU1BfRnNWMWg0SkZUcXFSajdPdjNNNmVnWWg3WkxiTlk2bEhnamI2ZXN0TnVpZnRxbXU1VzFhX1U4X2VXZi1MOGtnRzlVQ2luX2VERjQ5Nmc?oc=5",
+    "source": "Chosunbiz",
+    "date": "2026-10-14T05:23:00.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire at Ulsan chemical plant prompts evacuation of 7,000 nearby workers",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB3YllWOEZnd2ItUFZVNUJFQ3lUaDhsZzZwRkoyTjduemp2RzZ3d2lTWHNOZTJ2dkVGS1h4SnN5M2s3S0lNUGh1MDVZd0xfOXJUMzNCWTVmYw?oc=5",
+    "source": "The Korea Herald",
+    "date": "2026-10-14T04:00:31.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "Fire breaks out at chemical company in Ulsan, forcing 7,000 workers nearby to evacuate",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPb01YWUItbWlXazVSNWJTbVlxUzlPXzhpMXFiY0NrdTVTY094OG42amlRM1lqOHZKaHdiaTU1cm5EOEs0NlNkbDBDR1AwcEtoeXZibEx6TERlWmRqN3Q3Q0dEM1J4T1RFclUzNDh2YmZvZm9zNkFDb3hWZ1l6VUkzcjlLeEJ5bHM2X1RDeHdSWDZUdzNUcVlIRC1FM2dpU0VQRDRGM0hfRWttR2sxdHEtR05CdlNoUGdveUxMblFtZHVCVENldGc2bjk0clNXUdIB0wFBVV95cUxOb3RDdW5idzh2MEdrdnJLZ21fbFc0WHdsbUNIU25GN3NEWGVqUl9tcko2RHZmUXNxQURkSk9reWFSVXFEQkJUMXpvWkZXeC01VHZGbUJ2dllmRXE2ekVxemNuMGZUeG91RDdvejQ0cTBsYWptQ3I5cXVzTnB4S3N1MWZpU2JVUzJzNUcyMjlqZVpoTHN4U3VLYktKYUFnWURCeHBsQVFKYmNrRU5UNGY2QmZyZ3cyWi1oVnRGclJjMVZ6cGxvU21FcmY0QUdrQXAzR2xR?oc=5",
+    "source": "The Korea Times",
+    "date": "2026-10-14T03:23:03.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Fire at chemical company in Ulsan extinguished after thousands evacuate; no casualties reported",
+    "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPblRwazFCWXpUbi1pNVluOGN2NVpKblBSOXE1VS1IcE1iUWJ3ajhuM2RmQUswOXlweXRSOVJySUNDTjctejBNSlZrazdxbU1VblRkNEYwSTA2d0V6Q2NGSW5WVDVqdVhETTB4MXRDaU42c3RJaWYxMXo1UW5IbzdXWlVJX2RMWTYxUkNkMDg0UXhRRXhBV2ZJNHN4enpEYU04eDVJTUpLOHRHYnJnX2ZfcEFkSm5NVHNhbjI4aVd0RXJOTGdQZVhqb3U5cWctYUJYejZ0a29VRGpoTFFVaXdkYdIB4AFBVV95cUxPblRwazFCWXpUbi1pNVluOGN2NVpKblBSOXE1VS1IcE1iUWJ3ajhuM2RmQUswOXlweXRSOVJySUNDTjctejBNSlZrazdxbU1VblRkNEYwSTA2d0V6Q2NGSW5WVDVqdVhETTB4MXRDaU42c3RJaWYxMXo1UW5IbzdXWlVJX2RMWTYxUkNkMDg0UXhRRXhBV2ZJNHN4enpEYU04eDVJTUpLOHRHYnJnX2ZfcEFkSm5NVHNhbjI4aVd0RXJOTGdQZVhqb3U5cWctYUJYejZ0a29VRGpoTFFVaXdkYQ?oc=5",
+    "source": "The Korea Times",
+    "date": "2026-10-14T03:23:03.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Spill Games raises $10.5 million led by Elevation Capital",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPLTBUZ0xtR2l5ZmF4cXEwdElHNi1wWWxfWGUyXzZaSERxcFZxbDk2amcyM21hYVZZRmNXOWhqek95VXk3ejZWVUt0SWVBOUxzYU9YaUo5Y3hUdy13WU9TYllIcTA2MTRHc1lwc09wVUdiSUN0QzVjbWJoczd5VjI2dWp2SmNWdnRxZzU4bF9fSTdEaVA2c2EzYVBDUmdkemplaDVzQUROVmlvNmpZa2c0a0VwY0ZjU0Vzb3ZHMndWZnMxY2VweWU3Ti1QdlJJUdIBxwFBVV95cUxNSjN2VmJ2b291U3paSWhMVk83SmhseFZQakNtYjdnaUxsalNhOV8zMXhydjZ1Z3FzNi1ucUtub2w4cENzUy1rMEoxTlNlQ1NUOGVaMDQ0UXNYdEpFQ1pzUlU3STgwaWhIdEFkVmZHY2l1M254MmQtekZQNFVSSkdLWkpfZ2pmT09WN0tGdmZzdUtIRjBDZ2ZLbDJBcG1DLTVoWUVDMzFYZDNhWW0yYk1fQjdjVjQwaVRCNDZLZ3E3VnJFa3ppNzhB?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-10-14T00:30:00.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Loadman sustains 70% burns in fireworks unit chemical blast",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPXzd2TGhUekl4UGd2cnVfWnJxZERmNlJQcTc0ZWFiVmZDTzViUDBUTlM4R2lKU204MEc0ZURYUXA3clZGU0hEeXRHOS14dEY0aExTRDZxdWdoVVpOWG1Va3BOOWRJelF0SUFwd1d4azBHVVd2NVNQVU1sZ1pwU0F3cmlTbEtRQ0F6TFUzbHRfOVptNV93TmNQVVAxOU0tMHNhdGp2a01kRjJSN2ttZUhQZUFsYzZ1RE92Z2Q4WExQWWx4TUhiUFNTS1dXVzQ5QdIB0wFBVV95cUxQampsQmxReDJYY0taY0lHMVVKR1E1ZjQwZk9YWmNpdmd3bHlwaUlnSG52cnY3T0twal93VXRfUmZTaUhzZk5xdlI2ZUhxODlzNkJ1SlFPZFZNQ0YxT3RJbmVHTGloYWtxdTVMNHFlakRxZXhhY0lMel9JYjYyc3ZWcHFvZmRnOTRkRUZRdXoyYS1OZ3FiakhWU2ltcnh4eGltdUhtdVlVMzJRckJtazg4QVBKMzBlaFpaSm5aYUNZaDhTd056NUF0WUZWWUxMNVRuQXdF?oc=5",
+    "source": "The Times of India",
+    "date": "2026-10-13T18:00:00.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "Japan cabinet backs plan to help oil importers pay for higher transport costs",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRVJoMEJwSWNBeFNJc3d4UnBoUzFQZ2hySUtCdHRpU2JhN19oSVRJUmRMODZ1eVAtTEZVUC1VRjBWeFdud2p2d0c5VkhCYkxubjdrWVZFcF9nT3AtaTM0ZlVvMVpFZ3pSMTFrOXpCQmdJZjBod3NjdGhNaG4xemV4OXc4ZTZ0cVNmMlZlZXFNRmYtQ3Ryd2NjZDRFbEpQQlpMbDRxSnplSDFuY01EZF9YOE03N0M3c0ctVzJtbmxZR2I1OEd4Sl95RA?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-10-13T16:40:11.000Z",
+    "region": "asia",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "CERC allows DVC to recover supplementary tariff for Bokaro thermal plant emission control systems",
+    "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPTU03b3AzRXlmdEU3Q1IxTjdFS0dvZnZKVzlnSUFZZjZVN3hhTVVQWnp2YTVuakZ6TDFxamwyMzdJRUltUzkwNTZNLUxKU0dXZGNDTkkyUzQ0RXJ5c0ltdkUxTmZ6UHBXRmhsM0VGSXFoSXpCZnBqOWgzREdHVjZGb0dXR0ZITVdjeXpqNzRaVFl3WHp5MThTQnFOM3NDNF9wenJoZXVNWkRPbHZXX3FnVkdxWlBpYm93QjBtaGk0YmV6cU1uNVgydzhBT2NTaUItdXk4TGNLdnFqUlc3dW40MTNRTlV2V2ZjeHNPN1o5TVVpdk1hR1h1d1p30gH_AUFVX3lxTE5tdFc3aDZseDBkZzg3NUpxU21GRk9TWHFxWXZHcW9uekxwdW11ZkJQR1NhdjhWTlEyX1dhaDVLRnZYR2RFNDEyc296Wl9fRTVWWlVaY1d2bUxLVVZjN180ZTdrdjhLem0wNF9XN3VIb3RhcHVHR0NNcUJZVDhxYjhDX2VSRDcwU21oaGpUMmNUajlDVmxyd0pxMzU3bjZCbDRTRzluVW9wM0FmRkZDUVNlblM1TW4yakhDTjg4Zm1yVUkxUFp6Ni1BeW1xY2RESmNaR0pRV285dXU5NmdRZXJQenNkNGN4TEZJcXJ2ZXNXQzFDaHhSaENRc3VfVkVNOA?oc=5",
+    "source": "ETLegalWorld.com",
+    "date": "2026-10-13T11:18:23.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Prachin Buri chemical leak puts two firms’ ownership under scrutiny",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1QeTk0WHdIMVp6aTZBM2xYUnl5aHNMeWVWelpCX2tSbEZ3cDlldjJ0U0dnTGZtbnV5MjlJODFmeFlFcnh3MVFMNXNwdU40VE8tV1JPYnJZMEhMMHB2YTFYUzR3?oc=5",
+    "source": "Nation Thailand",
+    "date": "2026-10-13T04:20:00.000Z",
+    "region": "asia",
+    "sid": "q-asia-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire survivor reunites with firefighter 12yrs after rescue",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE03SDVMU0NrTE8wSEk4c19sQTM1RnRDd09GX0VBelVHTUVKSERQNXZ1bXRHUnRaVDBxdGFBbUo0Skc2VFhCZ0xMamNPaV9ScklWRWt3T19CNA?oc=5",
+    "source": "The Korea Herald",
+    "date": "2026-10-13T02:56:49.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "North Korea fires missiles days after South Korea's hypersonic test",
+    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPRVAzSFJsZ3psZ1lpSjd3ZjVvcjB3eVRIajV0ZV9wWmt0S0c4R1NKQjN4TGM3VFMxTno4WVJuVnY5WU15QlRhSmMtTFRYUkw1LWNMY2hpcXJaaEQzR20zOGRVejVLUWlZMkJRSUJNZmRwRjJoNExBdFZVM3JwaVBFM3YxWlNVQnI0em1nSmsyRVJZU2t6Z2dHVnRIUXQ4TWRzam9Hd0lZdmpRRDhPN0EwTGVBNkJlQWwzYjZZcks0S3I0NnhfRHJpaDh5a1A?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-12T22:05:37.000Z",
+    "region": "asia",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "The year the blast radius grew: defending an interconnected, AI-accelerated enterprise",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdDVWZGhFWnpqRUNsQmFETEtFcGJ0NnJSYTdPRVlxZUZKVFhCeEhwaFZPTEM5U0w5OXNveVZaaW9RQXo0R3V1amdXOEt5UWYzLVVfUVEtbHpucDJNRmkxTHlSenhLeE1mYnBpSVlkQmhPUGZQZnQ4RUp5S01DTGlsZGM2Slc5cnh5WmVqOGRnTFM2Mzh3bzJmX3ZVYnpfUjFVTnBUbzE2UjJic290bDN1UE02TE1qSElfaGhPdENGQ1BvLVFRcVd2SXQwZ0FscnF0MlNkOEZuSWo2QTF2b1U3cnotQlctajY0YVdSWdIB8gFBVV95cUxNMFF4T1pXaXoxc2QtYWVFdFFEX3F2ZXFCUV8zdlBDaTljS0Z5SkJNUHZzZ2lDa1lLb2tUTWZKZDlEUWxHRFlfWno1NFNvMC1TQTBpUnVzbjR2MWtPU25KWE94aC1qNWtFSldZYjRYY0lmVHM2WmVtVWlSNDZ2RUZMLTRxWjV6QVNvajN0Wkdud0JLVEtPUi1mVHJsLUxUMzZ4UHE4OHVlSzhKUF9LTFFUTU96UmRBUmZKN1dMeTNBMjBoR21EUUV3QzhyQ2tpZDhHdXh3Rm5TVGgtRXJmVlJJWnlSQmxHU0JaSk9EREtDNlFXdw?oc=5",
+    "source": "ET CISO",
+    "date": "2026-10-12T10:11:03.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 3,
+    "major": true
+   },
+   {
+    "title": "Massive Cartoon Network breach leads to decades of classic animation files leaking days after Skydance mer",
+    "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxOaXJfU2hMU1g0VnRjM05hYzVNVFJnZHRPWDhieG1SaXlaY05iYW5fVFdua0t0bVlwOWtBUld0YUE2ZXRXakZzTDc2XzA4WWxhYXJ4M3Z3Ui1yaUR0a2lwM2tFMmtBZzg5MmxXcVE5Z1BlWHV0c0ZBSTJrYS03SWxBWFcwa2xXMV8yZ3hQdXBUMGFkRlhXdmM1NGtQZWZGb2M2RklKSlJaMmxITG5vZk12V0ZxcHZrNzZkRU1aTm9ldE04V3h0RjlSNlJmOVU2QnQ2NXRjMlYyNm5lWEg5R3MteGlpQ3ZDSnpSVFJmZ1Rab29laVpmSzlYRGM2Ui0xWHRVeXo1djFTT1RMRzNveU83SWd6Q2tjNXpoUDA5TzluZTBnQncxS2ZabUV30gGjAkFVX3lxTE9vUGdsU3NselVnTVdUY3M3aVJlSmwwaVdzcjlyeVkzSllQR0Q0SWlFOVNiOGEtNS1BYzhCSTFwd09wd1c4bk9OMkJ6MGF6V3NpaHVNTVh2aU9CTWhVMzl1R0RxdTdhejZQc3Mzc2hMbXdheXYtM0twVllBVEtkakJQaGYtX19CLXg5SFpxNlZKYkh1Mm5zUjFvd2ZTdFZodjcxUDg3MmRXcVN4bERKNjNEbWhWN3IxMmtrLWVCMEJfQXY2eVBjS0kxSlE0TWVUOE5xQmFSWWQyd0cwekU3NUVFb0pOT2xreWxDUU9iQS0wNUUwSTBuSjRmS01FR05FUER4d1pidzFyQXdCTGM1cHBCb1NCYnZFLTBxeGZ2eF9KcWtxcw?oc=5",
+    "source": "The Economic Times",
+    "date": "2026-10-12T09:42:46.000Z",
+    "region": "asia",
+    "sid": "et",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Starbucks regains coffee chain lead five months after 'Tank Day' controversy",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XNndGeTRsdnQySk9YWnNUVXQxTDIyRTBKWVh6R2JlN1NLNER1TEhyNVd1ZFFJa2owMmdfWE44YmZRbGcyZkczOWJOMWllOVgtVnUwRzhtaw?oc=5",
+    "source": "The Korea Herald",
+    "date": "2026-10-11T02:53:28.000Z",
+    "region": "asia",
+    "sid": "koreaherald",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
    }
   ],
   "intl": [
+   {
+    "title": "Ryazan refinery attacked again: fire burns through the night",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOX29uYjlkQkJPd3h1YzVkSlFrQ3VxUVhIeWVHUTBxTUZPcHl6ZXpFNUJFNjRGeDg0cjM0bXFXQ2s1TWlDVWY3MDBsMFV6UllyRzdvRExNTXNhcHRCa2I3UHNseTViWU5wNm1aZlFJVDkxdVladjh5RnNQc1JKMkF2SWtYdC0xMzFIdHI2dURXSDc1REdoS0RmdHpFdjhMRVZnc3NZZkt6TDZXdFdKM2NuVnBIa1NFTUU?oc=5",
+    "source": "Around Prague",
+    "date": "2026-10-16T10:55:22.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "The Ryazan Oil Refinery was attacked by drones again: Ukrainian public channels report a fire that lasted until morning",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQaDh0UjZ4d3dRWERtOU9UMlVfd0IybjBCM1RmaTQ3QjgwWEFZdnA3NlNVRDR2NVEwN0h6VHFPaWxXQjJJU0tMRTZFR29uWVJaS2k4T0xXZ2hhX1JsUG94SWtZeEVCSW04M3ctck5YQ0pad1JkM19jSUE4NU1zekt6QWpWNU5jdnlGZ1FSQkxmOF9kLU5GN2NfSXRuLTFCQVA3Yk1OaHNqU0haQ0o4cDlZYi1GaFJZMjFfVU93R3hTemlKY0ZKM2pwenlLa09Kb1dHbDl1aTlvWE4?oc=5",
+    "source": "АНТИКОР",
+    "date": "2026-10-16T10:54:57.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Estuary Biotherapeutics launches to treat kidney disease with gene therapies",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOajhobnJRSnBucVI4RUxSbVM4R2xIM0xqMDhhUDdjS1JvTVRKWDA2alE5YTlYT1hrSXFlRmNYUnJHbVdsM1FSWTh0LTV6V1U2a2VzRFRlNG9uQWdEVlVibGtKWDBhLWtLLVdmN1pacjNJLW1HLU15R05YZVlzaGVqOEN6OE1lZzE1U1dVWktxbFZxemhxSkFkb3RvUDVpdw?oc=5",
+    "source": "Chemical & Engineering News",
+    "date": "2026-10-16T10:43:54.000Z",
+    "region": "intl",
+    "sid": "cen",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Platts to discontinue FOB Baltic Ammonia assessments, effective Jan. 4",
+    "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQbE1EMF9MVkFYRmZNUmg5dWZaSHQxVHR0bFpnMVpwYUlMTmJWcWYxVUZoWnh6cWNYWDNubHNpRnZaeUxPZzBFTnB1UXB0bFFPQTJJUmxlU2xTOTFTcG91cmJqOTZlWGdmRHV0dmxfTlVEVnhPQlVDWE1zVHlaRWlMYzR5S1dXTkxpQWpCZVJ3azRCR3FrU2J1UGk2QTJtbnFSejRHMFFSMEhBU3R0cHk5aUwxZ0NBSFNsNkNhQUUwQnRlQWhHRUd5cGpFdmpWTF9iaXp2eWpqWVhHZW9ucWx5N3lQUE1ZbkpJYTQxN01GelBGYVN2?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-16T08:44:35.000Z",
+    "region": "intl",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Platts increases standard ship size range for Asia-Pacific LNG cargo assessments",
+    "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQaTl2Uno0UWNpLU5MMFZtNUVPMjZGemFtdFVicDVDNGRLd0syb25KMmlmWDNqelJvVmdhSVo3UTBCRlR1aE51OFZPYmtLZjY0dGFlS1VlajJQcEt5UnRCQ3lpcktFQmlhOGh3UmswcmFNdENLSTV6NHpuMTlkZ0h1QVFsOG9EUmZvWjFEN056dlBnMEFUVWNzVUxVaTFoWEVxNE5QMy11bktYUDNGQ2VGQUYzRDA4dmRUTkpaV0x2aFdwVlhWSHF6MUNSUnFyR2dYVTk2XzY4ZVhQY1ROMnA4RnlKdHJxaFhVbklLZHdQLXJHeDRZa3pjaXRTMzNYSWtkRXEzRA?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-16T08:44:35.000Z",
+    "region": "intl",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Platts proposes to refine thermal coal FOB Kalimantan ash, sulfur differentials",
+    "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQR0hOTmlIRVJRTkJoWS1EY3JIU1lxUUs4V2t6WjdEeWFjNXZFLWI2UHRnT2F2czUzLTM0Rm9MQ3dITHVOcWZ6Tm1MUkQwSWR4Y3dNejlRcW1IZGdYakNyZThKNHRmaHFTY0xYZGhtR09MRHg2Skh1SzlUWks3aXpmLWpYS3V5SXNvVTBheHh0ampxX1RFU3A4OEppdDhsa1Q2Z2lCekdtRDFSMlZtYWdjbnhjcV9lY09KYkZkdW5wTnR2TWpDYzVzbG5hQ2wyTDM1VUctQUdqS3JXTGdvTFYxdEZxX2t1VnhXUVRmY3hNWVVaWjkzTzRabElTbGlhMVRFUHc?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-16T08:44:35.000Z",
+    "region": "intl",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Drones have been attacking the Ryazan Oil Refinery for the second day in a row: the fire has been burning since last night",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOZ0xhNUk0ekJtRzZZMjRQQUhPQTBEYVgxR2RGU3hiQi1GeVpXZXgzaTBad3o4TmZoNFM0d0NUT0I0TEtaMUxjT3FEdGdwb0Z1UXAtZ2hiVF9pcFM4MTdVUFJUVEJwamFydDFNaXBfb0pBS2xrcmFwb2p4TnFOSWw2NU51eE00N0h6S0dJVkt5QnNTT3gxWGRVNmViZG1wTHJ0WHc?oc=5",
+    "source": "shelter.in.ua",
+    "date": "2026-10-16T07:26:35.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "A huge fire broke out at Fiddlers Ferry power station in Warrington this afternoon. Emergency services were alerted shortly before 1pm, with crews from across Cheshire attending the scene at the decommissioned coal-fired power station. Footage shared on so",
+    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNkhheEw3dGowU0pwWHk0UFdWOG41MVZaTU9HeUFTUDFqUGZNOVlWdFplaUt6RTE3emduajdhcENNUExkUm1GdXRGVkNOeWRmQWlXSUhFZ2hLVkhIaC1RUVI4STB2UUYzNUNZS25qVVAwU2M2Q1JaSUJZdGd2VzNhU2Etbk5id25UTEtmZVByUFFJb05scjUxdmVlRGpTaEJaSUZlUHZrNklZUXJyU1M0OHBaUGNlQklHV0hiejQ5NTlTRG9paWtac1YyYmNoQ0JRcmRiaVk2MzRxX2hSQ2Zn?oc=5",
+    "source": "Facebook",
+    "date": "2026-10-16T06:26:39.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Trump calls Ukraine’s renewed strikes on Russian oil refineries ‘a disgrace’",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOT2hmbUgxV3ZHTlhUYk52eFhKVWhfV29MWDFzTzRXX2VxUWhZaF9qSXhtUUp5dlNpVTVlX2ZWY3RWWXNjUWYxT0lFU3JXYWNweWRCNlYxNTVVczZWZ2lNbFlGeGhLWklFMk9rUmNUcHVGMWMtX2JkdWtSODZrcktraDRzVkllclQ2c3hmaDZVWW0xUFhvdW5CM24tcUVPTlI5cTBTVXdPZ1lWSG1hQkpnRnEzcTZILU12cjZMdloxS0E0SFk?oc=5",
+    "source": "The Guardian",
+    "date": "2026-10-16T06:02:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "- Chemical & Engineering News",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeGhRSjJhd3RneFNmdEVTWHBad3dkbmE0aHdGdVl4aWJnLVFab2dWWUlXd3hKMXNkYUhJVTAtc0MwMFFEN3BXMGtTbFVZb2JxdXNMVkNGT1ctSGRfLWdDdXZqZUYtbDJJZHFSREJhSjEtNDI1RFc3VTV0SmtydWc3SzA4WnpCcXRoU1dfYUM5RmZWcmdnRks4bmV2clZOTk5VQzg1ajd0Z0JPN2JzZl8zVi1LX2hFNm9TbmNzYWJiVXRFSXZ2?oc=5",
+    "source": "Chemical & Engineering News",
+    "date": "2026-10-16T05:36:12.000Z",
+    "region": "intl",
+    "sid": "cen",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Queensland LNG holds key to Australia’s East Coast gas gap",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObV9DYWdTM0E4ZDdfYU5RZkItdndBYTJVLVlXaUJ4dEZLcVlxR05rMkdlcGozZzdVM3hzR1FwcDYtT2xWRUF0RUdXbWxrQy1iOWd6UnFQUEpEOWc3SUdkS2hwSHVmaU1zM3ZDSERiR0k4QmhqcWhGSTFQTjVIOHpINXJBY1dnaXozMlBFOXlORURjeF96QVlaUm1aa2REY1BYQUltNjEtYVJsSFM5TDJ6Zk1Wb0owRDk4LWk4eDB6VQ?oc=5",
+    "source": "ICIS",
+    "date": "2026-10-16T05:22:07.000Z",
+    "region": "intl",
+    "sid": "icis",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire Breaks Out at Ryazan Refinery During Ukrainian Drone Attack",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MYlNERWNmdjdUR1JYM2tZdV9INi1iSkFXa01vUnhzdjdNcGRmdjVULXlRNDBlRVJyOE1xbk52ME9LU0FPTUZVVk1IaC1SYWJSdXZxYV9vX0xYZw?oc=5",
+    "source": "TOKENPOST",
+    "date": "2026-10-16T04:30:10.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "emcure pharmaceuticals - C&EN - American Chemical Society",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUUVEYmU5OTMyVF9XTEZaalZpQVZHakY4bXh6RjVaZnhrdDRJS003cEdqZGxmMXhuWnd0OXpJb1hPak5mZFFLTlRLR1V4SkhjNmFUbEVWVXBFSXVESVQ4OVQ2MnBiTGQ4ZEpKVDhtZTN6N3dISl9JRVJ3bTRDZWUwZ2hrWEQyUFZvVFV4QUM0ZW9ZTmktQ2RGMnVUaFItVUdveXJiUkltWDNZdUY1cm5WT0lJci1BVWY1VDY5UXhYVGRPQQ?oc=5",
+    "source": "Chemical & Engineering News",
+    "date": "2026-10-16T04:20:16.000Z",
+    "region": "intl",
+    "sid": "cen",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ukraine's resumption of strikes on Russian refineries is 'disgrace', Trump says",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQWZJUEM4emlGRGhaUVlYZFdNclZ3YmVXU0drNUN3Y3pSRUlnMXFHSVpSQjNzdllrZEdsejZ2NldIWHphNERHcFdfaURVVHpqQ2pleVQ5TjBKYnVlNmdpczIya2E3VGlKaDdPXzdEa3dCT3I1VW15WXpUeUl2NjlJZWZpLXpYY2VGM2pqM0ZGT3ZpMGpiWG9oeU5aTldnb3VHWHNlLTI4dTJkQlNrbGNnYVlfaUNNbldKVWZsS21B?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-16T04:01:00.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Global fuel oil market stays tight as conflicts hit Mideast, Russia supplies, Vitol says",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQdjV1SVlVZE9yUElzNHR6OGdPbjI2UW1CT3NNMjNINkgyV2N6aEZwcUZqNWRXcWoySHNKVGZNcUdMVWs3WEcyeXVBOFdxRjFpVVQtNDJMU05LTEdERlgtckVhQlk0Y3htcHlKQzR4VGxseXRyVG9QTHM4Qlk2YmpjWGtGaWRqTWtxNWplWEM1Ny1WSDNvMVJkUlE1Y0pXakNxMFBNUjJwUGpXMEMwb21GaHU0SEkzYWtRSlVneEdEN3hqSjBMbDM2TzB3?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-16T03:22:00.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
    {
     "title": "IEA accelerates oil stock release, plans over 20 mil barrels of diesel",
     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOLWRJRG9SZ1VJLUk3TlQyVVlmUXlUaUVGWnV1WkZSRlJMUkdtemVvdzltb0ozd2hmdUtGTVFEckZoZ1lvcWs5YmtFT2ozMEI4V2Y4dUJybUlwbkwxT1M0cnI3LU9SdVJ4UnpYc2pPLTRNbFU3dVZicFdKdTJyMGRBeG5Sd2UwaFdfU3ZBcUh6UUdLcVZybVBJSnlJaGVoLWFWRmYxOVRlLXBIcGNlN0VweE1WaUlBdi1kRDBtQ0ZuMDNwMGp3VURhdWJya2MwU1V4cGwzRWFySG9kNlR2bktFMg?oc=5",
@@ -994,6 +2098,18 @@ window.AUTO_FEEDS = {
     "type": "site",
     "tier": "B",
     "score": 1,
+    "major": false
+   },
+   {
+    "title": "Valero Shuts Texas Refinery After Explosion Rocks Diesel Unit, Sources Say",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcXV6VTJNdEs5VjRYSXFQalFFM21jYjZ1VWdINDJiV080NF83UWs5eVB0X2RjWm1DNjVha0ZVZXoxRlFHMTkyZnVPYkc4OFNxMTdQcUVqTjJWLTBJSWI5VUlHMUFtS1NLMmlKa2o0RDhRMTV4RlNhcVIzbVJuR3dLVGQ3ZkZXejdVVkoxLTFmTFk0Ry0xTk5mbGNiQ0Y0UlA1Wlp0UnMtbw?oc=5",
+    "source": "EnergyNow.com",
+    "date": "2026-10-15T23:22:36.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
     "major": false
    },
    {
@@ -1045,39 +2161,15 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "- Chemical & Engineering News",
-    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNLW12NVdLVElEN3pfOFIxWUs0N3ZwZmM2eWRSdGFscVlUcm94R1hjdUFGOG1RUHRaajVnOTJndXo3MERyNlpnaEg3NlYtUC0teG1VcmlPeEJLam93UVFHOHFSdWtwY3RsaWNOZEZLLWxnM0J2MGRydWFIajNKd2RRcnJ3RUVUNG1rMER4LU1TaWJ5T3huV002d213amJnR2dIZDRNS0tDRzNCQWs?oc=5",
-    "source": "Chemical & Engineering News",
-    "date": "2026-10-15T20:27:06.000Z",
-    "region": "intl",
-    "sid": "cen",
-    "type": "site",
-    "tier": "B",
-    "score": 1,
-    "major": false
-   },
-   {
     "title": "Zelenskyy Defies Trump and Restarts Refinery Strikes: 'The Block Is Out, We're Done'",
     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVmQ2VkRyNXpTNXJQOWhQRUVmRkoyYi1yWDJVVFlEOU9SdEVaYWVGTHhrUFFJTWlFNktvVGZjYm1zVkZPbzg0dGZfSzM3a1BTZm1uWDQycmtZYTQtLU1RRHhPYk1EZXp2V29LM0tTUDlTcnRzTkM4bnVDM2lBMFRtUHdDX0Nxc0hmLVd6OFFiWUtUUDJFUmNkc3MxaGhRVkdla0tIRWFhLXlkVXB3Mk9meXVuaHM?oc=5",
     "source": "BBN Times",
-    "date": "2026-10-15T18:50:47.000Z",
+    "date": "2026-10-15T18:50:48.000Z",
     "region": "intl",
     "sid": "q-intl-incident",
     "type": "query",
     "tier": "C",
     "score": 0,
-    "major": false
-   },
-   {
-    "title": "A huge fire broke out at Fiddlers Ferry power station in Warrington this afternoon. Emergency services were alerted shortly before 1pm, with crews from across Cheshire attending the scene at the decommissioned coal-fired power station. Footage shared on so",
-    "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPNkhheEw3dGowU0pwWHk0UFdWOG41MVZaTU9HeUFTUDFqUGZNOVlWdFplaUt6RTE3emduajdhcENNUExkUm1GdXRGVkNOeWRmQWlXSUhFZ2hLVkhIaC1RUVI4STB2UUYzNUNZS25qVVAwU2M2Q1JaSUJZdGd2VzNhU2Etbk5id25UTEtmZVByUFFJb05scjUxdmVlRGpTaEJaSUZlUHZrNklZUXJyU1M0OHBaUGNlQklHV0hiejQ5NTlTRG9paWtac1YyYmNoQ0JRcmRiaVk2MzRxX2hSQ2Zn?oc=5",
-    "source": "Facebook",
-    "date": "2026-10-15T18:42:43.000Z",
-    "region": "intl",
-    "sid": "q-intl-incident",
-    "type": "query",
-    "tier": "C",
-    "score": 1,
     "major": false
    },
    {
@@ -1102,6 +2194,18 @@ window.AUTO_FEEDS = {
     "type": "site",
     "tier": "B",
     "score": 2,
+    "major": false
+   },
+   {
+    "title": "Russian oil refinery halts operations after drone attack, governor says - The Jordan News Agency",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRnBkbGtaRk1xQS16d1ZlNHlkZjctY3VBS1BFNlMyRDdLU3ZLVmtNY09ZWEk4VjA4alhZNzdyMHVGTFZzbjd0ZjFwRmE2V1NZdm5idDRzU0tHLTB4YlM4Y2tKdmxDY24zRHBNNUotYkZGZFpyQ3k0X1IwbGtRdXEwZ1VFbFU4S2VsbmNSN1o5RS02c0lRSGFuM2syNzR5Q05l?oc=5",
+    "source": "وكالة الانباء الاردنية",
+    "date": "2026-10-15T17:42:51.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
     "major": false
    },
    {
@@ -1297,18 +2401,6 @@ window.AUTO_FEEDS = {
     "major": false
    },
    {
-    "title": "Valero Shuts Texas Refinery After Explosion Rocks Diesel Unit, Sources Say",
-    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcXV6VTJNdEs5VjRYSXFQalFFM21jYjZ1VWdINDJiV080NF83UWs5eVB0X2RjWm1DNjVha0ZVZXoxRlFHMTkyZnVPYkc4OFNxMTdQcUVqTjJWLTBJSWI5VUlHMUFtS1NLMmlKa2o0RDhRMTV4RlNhcVIzbVJuR3dLVGQ3ZkZXejdVVkoxLTFmTFk0Ry0xTk5mbGNiQ0Y0UlA1Wlp0UnMtbw?oc=5",
-    "source": "EnergyNow.com",
-    "date": "2026-10-15T13:13:39.000Z",
-    "region": "intl",
-    "sid": "q-intl-incident",
-    "type": "query",
-    "tier": "C",
-    "score": 2,
-    "major": false
-   },
-   {
     "title": "Four Workers Killed In Explosion At Chemical Plant In Gujarat's Gandhinagar",
     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxON01VWmc4UXplUGhQemRtaGJNSmxtLVNGaWhpRUozaFd2T3pBYWJwVTBMZXBjMFhrQ29iajRFa0pYb0VWa2ZXbFhfaG1vUUdRUVhNcEVHclJmS0ZaWlhDSmpPdHlhb0RrOW5GQ0hidWR3TW5XMndGZmk0UmNRb1R3QkVBUmhyVXVEdktiS1RUdnJmMHhJeWtaQWtJVlp4LXlFdktrTVZ0N19pTjB0YkFFQnVNR2RPbUtRYk5XYjdfbFFHNThQVUo00gHHAUFVX3lxTE43TVVaZzhRemVQaFB6ZG1oYk1KbG0tU0ZpaGlFSjNoV3ZPekFhYnBVMExlcGMwWGtDb2JqNEVrSlhvRVZrZldsWF9obW9RR1FRWE1wRUdyUmZLRlpaWENKak90eWFvRGs5bkZDSGJ1ZHdNblcyd0ZmaTRSY1FvVHdCRUFSaHJVdUR2S2JLVFR2cmYweEl5a1pBa0lWWngteUV2S2tNVnQ3X2lOMHRiQUVCdU1HZE9tS1FiTldiN19sUUc1OFBVSjQ?oc=5",
     "source": "ETV Bharat",
@@ -1390,6 +2482,378 @@ window.AUTO_FEEDS = {
     "type": "query",
     "tier": "C",
     "score": 0,
+    "major": false
+   },
+   {
+    "title": "Ukraine resumes refinery strikes in Russia as Zelenskiy criticises US intelligence withdrawal",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUy1UM1hCb0hoSGxLbHFsRWdoOWltR3ZYek93MTR3N2ZpczlsQ2ZNekRLNi1MY1BnbThYTktIREFzV0ZTNWNYM3Fra2FQc3E3TkZUa3c4R2poNG1KQzJPLUItaUN4ZTM1Q2ppUW5kVWlJVlFWODRxLWdBWUNNUjBDY0hQWGVheFd5czlQbXBqRHdOZmZDWTg4eHBMbUpZN2pZRWl6OWNXY3NVVE52YnpfYjJ1S3otUDRCRzQ2NFFpRnVnQmZ3RXVKRA?oc=5",
+    "source": "Cyprus Inform",
+    "date": "2026-10-15T11:06:04.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "Ukrainian Drone Attack Sparks Fire at Russia's Oil Refinery",
+    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOV0tzYksxamVaR19xZGcwWVNaSUVWMkZLb05lS1V1ZmxOOU05dnlyVTl4NWdmTjJSREUwRWVRY2thaGxkMUJvaVhzMkVHRGpNUkZ1dlVUZXV0RWhfSEVJQmQ2MUdCQ1BtT0JpbVFGYzRaTzcxNGRDTk45M0Y5RFlyUFp2VGtpcXNfaFFkY213RmlxdE9JWm0yT0tKbUs1dFFf?oc=5",
+    "source": "News of Bahrain",
+    "date": "2026-10-15T11:03:40.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Kremlin accuses Ukraine of flouting spirit of US peace efforts with strikes on Russian oil refineries",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUXZJMEpQX3pPelZEVGFyTUxnUEhocFk0bUFWMElPOEhFOGhuQVpkLXppLWl1Skk4OC1BQUtpM0hiRm5ZRzBqdzJ0Q3VwaktvSU0xclJvZUl5WHlqZUFsakVSSElMalgySVp3QTBHRWJEZjVERkh1V0JQOFBoSVlSakMwcHMwTmFfcEJ3cGpNSTcyZHAyZDJKckVJYmNnN21QMFY2clpxSW9Hcl83clJ5dlJrSlhwWjY4QXlzbDdhSVhrV2FTUlNmeQ?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-15T10:43:36.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ryazan oil refinery on fire as Ukraine restarts strikes on Russian energy facilities",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUDVUb2VUb0FUdzA1TlNmTkdPQmdvMGZqZS1lREZldEZNUF9OOTBJeW05MjZra2hDZ2Z0Zm90cTlMQ21WSFlkM3ZnR21kUG82Ui16T0dVbW5yWTlVWEZQaE1aLTA0NnBvMGpyUmphTXg4Wmt0bnpSX1BFVm50OW1qblYtRWRjalhGT21aMEw0RHlGbVhwUWZQTE9RLXlFUnJXOEx3Z0IwVGtlX2FNSHNRNDBQd2ctVDB0QVk1ZEFQQ0RaekJ2SlhSS2VPVnY0NFlqRy01amRR0gHbAUFVX3lxTFB5cEFucTBCbDBvWTdhdU1QUUt6UlVJb3g1VV9RWEZOTVFWS1JPaEltZnpFU0FXVjdwUXE3R2dxdDhMME9TaFl2OUxBaTJWdGZHVG9ucnpoc05wNHFxNGgyU2VabUZoVE9Xbm81QVRDdW1oX3NSQXZnOEVYMDVuN2lwN3VxSm9BUEdPRWxoVlFQb3hUTWZ6VEZIeEx3VWJNLXlVblBrSUEyWE9jQXYzY1NoVWpWeUhRZzNqM3MtMkF6OVdTX05VMnpVWFZoZmJCM3VQM2w3ZzRVNTEyNA?oc=5",
+    "source": "Новая газета Европа",
+    "date": "2026-10-15T10:24:41.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ukrainian drones struck the Rosneft refinery in Ryazan, causing a fire",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOEJWTUtsUTNJeHZTTEJJUTBBMmNjdllKZDJYdG41MElDT2tnZXhKS1RQeF8wZHg0UHhUTHRyMm50VUFUZlE4Z3R0ZmY0UXJPT1hDT0hCV0FQT0JpWThHcmVWSmlsdWgyRC1FM2dNbXhZMW9aaW5taFZLN0JRR0NfQU53alN6b3ZmZ1VaMTRpM3l2SkxPeUE?oc=5",
+    "source": "Informat.ro",
+    "date": "2026-10-15T08:47:35.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ukrainian Drones Spark Fire at Ryazan Refinery as Zelensky Vows to Resume Attacks",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObzJ3Y0tOVWhqZWNEc1FqMGFuYlA3bTNTSFM3UTI2c1NCenNXeWxDUUtDRUFwaFhPSWN6UEM2Umd0SVRaa1J5N2Y4TVBhbEs1YzdjZGF3ejZhaFJqUmp6QjQ0RjdqZGI0TDlrcm4yTkZrR3lQUnJ6UG1hSzBGSjhEYk1udWw5R1RZbWg5cUVlVzFvampXcHZhMTNiZklUbmR0aTRPUE1OQUxOOVNEbWwtZ05fQjBxRmdscDdVOG54WXBQSktGVms4LVlR?oc=5",
+    "source": "The Moscow Times",
+    "date": "2026-10-15T08:37:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Oil refinery in Russia engulfed in flames after Zelenskyy announces resumption of strikes",
+    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSWl2UkkzbWs5WFpXZ2lXbEc5UDZYdkg1VjZZUHdRWUJSTUUxU3E1ZVBfWDdaNnZNOTZhSVhGN2hlVHl6czVTOTlSeFJ0QzJtVVNkMWR0VlpTRVJLY0h0UVRvRDNaLW8yWmNaOERDMzBERGVrbTRnM1h6RlNNVkNocUo3UDNVRnM1V0dRUDdKNllhbzA?oc=5",
+    "source": "RBC-Ukraine",
+    "date": "2026-10-15T08:15:43.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "An oil refinery is on fire in Ryazan, and classes have been cancelled at some schools and kindergartens.",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBFUjdqSU5MaXREekstSy1ZUER1T2VEQmM4NFp6S0NVMklhbDVZaTBhbTVuZDhPV01vSDdvU1RlNE1OblZTSGZjZ3BtVm9zUVJ0TlRJUzdNQncwT3NDRjFkX2lpUGZEZXBNYlE4?oc=5",
+    "source": "Говорит НеМосква",
+    "date": "2026-10-15T08:14:44.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "COMMENTARY: Oil's long view darkens as Iran war refuses to end",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOS2VycDJiM2tHUVV0LUZHMjgtcmdqOHQ2QWZkakF6eGlnY2ZmaHduOE80Ul95NjVTTVFtVFR5d3l4Q09QdU15YWI5MzVxYzdnUWlKRXgtR0lGakUyV243MlJPamhMRFIxTF85SWRJclNQLTlJTW9KUHR6OFdFMUpxaURpYkdISHJPRk5ZMDNIZ2h5Zm9rVVVzQTk0Uk56VXdYY1d5ZGduNDJUcVA0MjNBaDNB?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-15T07:56:34.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ukrainian drones set fire to oil refinery in Ryazan region ᐉ News from Fakti.bg - World",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOckdCNjEyRmhHV3VQbS1rOHV2eENYUE9ZUWIxQlhjdTlYNE5KeGpzbkVVMkJGQWdORDhiV25UQ1Bhd2xNZ1BfcGhKZ1llMm5UU1BZTExXRkQ3bkE3Z1JheXBjeHdCTE5EV3dxR3lCTGl6VGk1TDEyUUFoSTVtSDdJcVJiT3Y5dkdiTTR6Wkc5T1k2RUJfd3ZF?oc=5",
+    "source": "Fakti.bg",
+    "date": "2026-10-15T07:55:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ryazan Oil Refinery Attacked by Drones: Russia Reports Fire at Plant",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN0ZJQW1RU0I0OVZrWDN4WjFJTW5sTGtHMFota1R2Q2FwbXdLQVVxSmRiSXkxek5vUlNIcUN3eDRiR2ppUGltYTk0Nl9KXzdQS3gtV3ZFajFHN3lPTDdRU1g0TVBaakJCRElKQmdiLVVZNkw0NkRYY2tpdGV4b05WcUpNRWZfTTZsUHN4YWx3?oc=5",
+    "source": "Прямий",
+    "date": "2026-10-15T07:51:23.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ukrainian drones strike Ryazan oil refinery, prompting school and kindergarten closures across the city",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOR3hiWS1EQjZ3VWMyQ2hYZG9nOE1PYmNTYUxBTE9TdzZFQ2pNVG9Mbm95M3N0NmFtM0hudXMxbG9NMUN2dW54N2Y1Q0gzUmo3eHRaaTNGZHFGS2lEeHF3NXpCMTU4MVByQ0psZGJWRFo1QjZHMURoRHNTcjh0RFVndlNlQlVhWWRvb0dKSGNOZmkweV9pRG5OZE12UUtWYV9GSHMwcU96eXNKQ0tJRUhNczJwNEpZdzlkRkhTZzFsNFA4b1FfNXl6ajNWLTJPdDlNeFl6TktR0gHbAUFVX3lxTFBfekw3aVZkMHdldV9zRDNRVUk5a1BLNExqdXFrbEhZOURUTVh1WDNqbVdiRC1TTWlvckRhMmFJbVZxejRUcmZpbU1iSUNpWTNnMXlJby1iU20xQXIzbTY2MEdlRU5MckhMYUhiMkJTMEd3b29qSzEwUHZiVUd3cU9CS19PYVQtMHpBYTFaR2pEQmpZQXJuXzRSRFk5V3N0ZHhadjdBeWVJeWY0SmZFVG9BYldGb2hxTDkzY0FaSTh1X1ZOd2VNSi1vdTllMEVCOGRweDlxckh1Y2tpaw?oc=5",
+    "source": "Meduza",
+    "date": "2026-10-15T07:37:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "jnana therapeutics - C&EN - American Chemical Society",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZjQ1blE3NXRaTXkxdUZuVDd2MThJSWtrMVJmVTlvSTJIaEVORk9fTTlHcWJvWlFtR1Q4SFAwdTQ5Rnd6T3N4dUluSERid1BuejhTeDdPelF6Q3N0TmVYc0o4MjBZcmh2elplUF83eWxCZ0kxLXNFT2RSa1AzRnFVN3JyVl9iOERDVTBGV2ZGc2R6SUZTbnRMOXBNdTFsOHE1MmlXQVVINGFhaThmTlF6cmtEcTFQRkQ3TjBVQg?oc=5",
+    "source": "Chemical & Engineering News",
+    "date": "2026-10-15T07:18:32.000Z",
+    "region": "intl",
+    "sid": "cen",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Drone attack causes fire at Russia's Ryazan refinery, regional governor says",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa0pBZjduSzRvUXQtRkNsY2RuSldmSVlKSThDLVhvbFYwOHlFclo3Ymt1VFptaERXV3h6Xy1ROHVMWWthTDluc1JzQTFHYk40MlNqSjBfSHBYSnVLbWhUWXAxbjJUTHdFZEhxdkRZdnhjbjBld2tSMXN2WDY4YVdxWmZVVkpuZF9IWERVQktOS0JkVkJDQl9XU1RNSDZ3WW0yZEJpNlQySXJtUG1NTGR1WGpQMA?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-15T07:07:42.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Russia accuses Ukraine of attack on Ryazan oil refinery; fire has broken out",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOY3RtLUNSQ3B4cG00V2lTZXV5VlpPUFI3RnFBWDA5VlJSazZ1eU0wZ1BoaGVVN0E5bS1Db3Z5ZVBRc0U0YS1ZNFNWdlVvdTZRZl83RlBfR1FkTXcxS3RycTdpaHIzQVBZelgxQ3hhY0JyNHZ4aGVrVUUwUzk0R0FFRmp4dXhZMXpOMEdNeUs2a1k1ZWJ3THc?oc=5",
+    "source": "Цензор.НЕТ",
+    "date": "2026-10-15T06:37:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ukraine hits Russian refinery as Zelenskiy says 'we're done' with Trump's energy truce",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSmt3MmNHZWJGNkVUMEV6MS00VmdnZ3U4LXpGVE5PUk1ZYXA2TjhQWm9lMUtObEVyZTlqejdpeDhKZlV5QVI0dWV6VUE3cXFtSmd3WUQyTldneXBQZjB0dU5lRTItQTc3YWZJRXB6NjRfOGZaVzhYUjExQmhYQ2lWUFlkXzc0TkdNWUl6S0xrMkZBZmNCYWpLUldwVDdsTGh5ZnkxSlFPWEdKWXhzZ2FLRVI3LWk?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-15T06:03:00.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "US Gulf Coast gas infrastructure may struggle to keep pace with LNG, power growth",
+    "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNZzgtcnp5MlZpdFpTNTJfYVpWMDVCTm0zNUI3NklTdjVGSHV1ODFBUkVheW9lbGVka3pIaVY3TWktNFBFeWlyanpjdS1WU3RVNG9RYmM5aWNEbFVBc2pTckJSSnNPQlk3YWFuZVkwRW1JeXhDU3ptQzctTllLbkJBcllTVG1INTdKS1NGTGdWMlljWDBpRUx3M3NweG1NT1RjR3k3SnRTUF9rb2J5SHptS0U1TG82NWYxdE5aYm5jTXpBWlNKN0gxRU5DQUwxdjlzbnd2cVRSZ3NqQ2JEbzJwZWZ4N0dJamtOQ1o3RXlxSmNvZw?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-15T05:53:18.000Z",
+    "region": "intl",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Russia claims Ukraine attacked two refineries; Ukraine denies involvement",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMzYxYm9oZWJraDNvMWIzcm95TWhYMU5rZmdTTkg3SE85UFZrYkVjOGU4dGpBMDVsUm9sTEZFcllrblBSaVdUc0FsLWl5MEkxUW1fVDlacUh3R2ZTZGdLc09PZHNnc3BENGxDb0M5ak9rYVR0TWhPdzhQWUg0ZnZWdThSX0VQLUJCODVSZHgwZnVudV9GWUYxaDhFUlM1elpDdFNKeFltRU5aQ1pWLXpUSHlUYTMwc1AyVkMzVmFrMllabTZjcWlWMktEN1RxWVFEVVVOOXNYVUFvb2hsVjJybFItekU?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-15T05:48:45.000Z",
+    "region": "intl",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Opinion: Potential Alaska LNG buyers still want the math to add up",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNbDlRcHpzTDZkQ0xZNDc2eHAzdjZmdEZycnlLNW9DMGhDRFoyc0NOM2hucUNlMUxRUWxpeHNYY2dMSEl6VGlpQ3U3dm9SbjA1VndOZTEtVkM2N1k5cDg4blFrQm9FVjBMZkdVN1FBajJHMHlkd1JLNGdSd3ZyU0NoQzg0cXdGM0ZMbkF0Q2FHbEZhYm0tUEJTd3lLRkNIMDVoeGRsUWlwa2xPUUpxYldqb1lRRWY5SjRWeWt2NHBGeUxhU0Q3TGFDWQ?oc=5",
+    "source": "ICIS",
+    "date": "2026-10-15T05:11:36.000Z",
+    "region": "intl",
+    "sid": "icis",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "166 Ukrainian Drones Downed; Fire at Ryazan Refinery",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQVd4SVZ6SUlQSE1jRXN2eUM4Z1hSY25NYTQ5cUdtLUZFekJPdFBrdXV0XzJzaWU1d096X0R2cFdWSjhtVklvY1NGaTE2bDkyOWlPYWg3X3hXS3puTjNYZ2FBTC0yNlptV2VkNV9aLVk4Uk5kS3dyNTFPUkZfVjNIME5JUHZZcTNqLS1zUlJrd0stQlhnczRv?oc=5",
+    "source": "Военное дело",
+    "date": "2026-10-15T05:00:02.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Oil refinery on fire in Ryazan after drone attack",
+    "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1vQXgxQ2lvNGFTd1cxV2J2MzV1MXZOSUt3UU1USXhtdDZ5ODhubTJNakZ3bFpRYWhMNk1jNUtCRDlpNUI0cEHSAUtBVV95cUxPaG1Ja0kzV0lZejAtSzJuWVlSc053cmxZWWJxbU9tdWpyNHRWY2hVTU5TVjV2a1U1Vy1mODRFdjhUT1RSenpIUHRFcXc?oc=5",
+    "source": "Наша Ніва",
+    "date": "2026-10-15T04:17:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Fire Breaks Out at Ryazan Oil Refinery After Drone Attack",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcWNyalUtXzZxdlpvSUlIeVk3TkhSbjdMb3NxRW4zak05LUF5dFZJMVlZQzhuMjFCZWN0bVdiY0JKOE9kMVhZaG16S1BpdU52MzJVTC1DZFVnUHlJaVRWdV9ldTdLcXNiel9PTlpQal9NYmdJajVLV05qU0xjaVlJNzRfWDRNNk5yS3dsR29B0gGOAUFVX3lxTE5xY3JqVS1fNnF2Wm9JSUh5WTdOSFJuN0xvc3FFbjNqTTktQXl0VkkxWVlDOG4yMUJlY3RtV2JjQko4T2QxWFlobXpLUGl1TnYzMlVMLUNkVWdQeUlpVFZ1X2V1N0txc2J6X09OWlBqX01iZ0lqNUtXTmpTTGNpWUk3NF9YNE02TnJLd2xHb0E?oc=5",
+    "source": "REFORM.news",
+    "date": "2026-10-15T03:46:35.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "September Sees Fewer Life Sciences Capital Projects",
+    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZ3d2aG85TS1lZjU2WUYwQUhJeXZBdExsRkwtYzk4dXk1RWxNa1lsbERTc1JwdEM1YWxLeGd1UkVadTd4akt5QmJqR2RSMmRUWG54UXdZMG12ZzRNbmJYNmJTWnhpQlppNGNFU2JmYlBXVTlUUDBKcjNyX0ZRVVFuLVFLUGFGMEExMW4xdjlEVUxVNENxZEczbnBBaTVPbWNQcEIzUVhUU3VSYTBsLU94SEtrRDd3YVZjMVhYcw?oc=5",
+    "source": "Powder & Bulk Solids",
+    "date": "2026-10-14T20:35:39.000Z",
+    "region": "intl",
+    "sid": "pbs-incidents",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Ulsan Chemical Plant Fire Evacuates 7,000",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeWtOREdDOU9BdlphUUJSRXhqTC0zdWk0dmRtUHk0Zm4xZk9xaW1fSnNySzJLY05QbUFlYVdTcjM1dXNTS3BHcHREYnZKUTlCMlpKYWk4ckJQZDExVkxIMng0SGs1QWdqZ1N2U0hnTUNaRWt5bzBFVndNanYwYmdJajlESDNMRlJi?oc=5",
+    "source": "조선일보",
+    "date": "2026-10-14T19:48:24.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "Kazakhstan-linked hackers targeted Russian refinery, spied on city government, researchers say",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdUNRWFJPaDl3UTE2R0JYd3lfd0dIUGRsVFBFcHpnNlFxdnZjUnZwMnRUYUFZbTlHcDA1NWRPeUU2VEpBTDFaNko0TURDNXdwQ21fOXBpSm9NaFBmVFhKZDVMd2dxOFJTMjRjdExiU1NCazB0RTZnZHc3MmQ1VVFfWXFFZkthVlpyWTZkQ0YwYnkzOW4tbG9LMkV2Z183MmhtZXFhU0FxVUJVa25oaVU2ZkZteEx6ZlIyR2o1N3lVYTA0a3po?oc=5",
+    "source": "Reuters",
+    "date": "2026-10-14T17:51:43.000Z",
+    "region": "intl",
+    "sid": "reuters",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Honeywell Technologies helps Hengyi Industries’ Brunei facility improve efficiency and reliability with higher-value petrochemicals production",
+    "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOYk9CV3NoLVo2OUZKLW9rcWlIVVhjS0ZDTlZvTmpqNWhzTC1BU2gzYnNEU2lXZmhCOUpDYUYtdk95aFhKX3FWV2NLRzRUYnF2NmJUY3ZsT2pNYzIxbjZKYzhvQzlWYm84Zy0zckdMazY4RlJ3cmhMaFVOOVhrcmt0dXBvamJ0T0NWREQtQ2ZRTi1jWjFxTm5fM1EzWUl2MlRXOVdqcmQwT25VbFVzVE9XellTcGl3RXk1NWk3c3FPaThUYnVWYU0wT2ptMlVZc0taNXNLMDdhX241clBHY19qZk5Td2l1YlFhZzdsNUtOVWtsSHFfV2pOMGhxMHJ4YWR6VkpGVDNkenQxY0RpdG1UOFR3ZjYyRzFNODRRNzZR?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-10-14T17:24:16.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "CBOT soybean oil futures plunge as EPA biofuel proposal weighs on the market",
+    "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYVl2SjlHWHhlaVpiQUU0ZmlHM256VW5mdktXbUNqMmdpeUVWMjdSTmlIaGtGY1ZOVkpYU1RQLUpNQ0NVR3dfNlBnOXkzdkVCS1hlQ3RMUEN0VkNVbGVBZzlyTHdzWHc0TmdmYl83RWk3RmlQbklScUd1Zm45UFdJdXpJc0h1cFRvNU41anBzdDMyeUk0Z0lkbnpqeGtXZHdmS1BLMlFneXVkNEhab292RGFMMS02RlZMNTQ3bmYxS2V4VXJHa2JGS1BzQzZfTmhuanlaVzdFQXZ5R1N0aFB5MzJKRVJMTGM3c3dkaw?oc=5",
+    "source": "S&P Global",
+    "date": "2026-10-14T17:22:21.000Z",
+    "region": "intl",
+    "sid": "spglobal",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Press Release: Lauren Boebert Welcomes EPA Proposal to Reallocate 2025 Refinery Exemptions",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNTliQUVER1VWT0JsQk5zcThsTDR0d3JtVUh1N3ZVcTRWdDAxNk02SzZWcUpCTGZEWU1yZ2Jkdml6VHNoc1NqaGhOWThKTmVhcUlxbXN6cHl3OXFJM0RfcTlxZEp1b0hvQlpCejlJY0hHYVBrS2lxc3cyTktmNjN4LW44RGtubk9TYnhkOTFSR01ON1NSS0FGMUw0TlFSVk52SFNaaktYNk81UEVEcTlmZ2ZtUEFXTm5lSjlldXZyaHZWU1E?oc=5",
+    "source": "Quiver Quantitative",
+    "date": "2026-10-14T16:21:00.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 0,
+    "major": false
+   },
+   {
+    "title": "Large Fire Breaks Out at Ulsan Chemical Plant... 7,000 People Evacuated Nearby",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1NNUpNRnBhdVJjZWRwYUlQRlRPaDdxWU5rb2plTTN3NVZ1YU1ZZ3Y0UHNXWDNVNkJCUTFGMEg1MTdudVVpR1Bjc3FOUU1tZzdwT3pocDBuTlhoRmIyVjFFcmNiOG5DbkpOMkFrRExR0gFmQVVfeXFMT3dIZ0cwOEpWZ1VjeDJaZnZiUnhTd09oUEw5MkdZeUkxTlVlWWZTSWFqLXZXMkllNFF4M2lmamdMQlJyeG1VOFRmZGM4WFRZRXYzWTdQWDhYSk4yck5LcWRpdFl3N1JB?oc=5",
+    "source": "SBS 뉴스",
+    "date": "2026-10-14T15:40:14.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 2,
+    "major": false
+   },
+   {
+    "title": "PDVSA restarts 300kbpd Cardon refinery after fire",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaFBxWmtSblctd25PaXJCUl95cTJjTHpRdDhxUjE5VFcyOXhIdU1UcnhZRXk4VTg5YjQ0amFsZEpBcjNuZEJXSUwwMXN2QUdhVXV5YlNpX2lRX1BNMkpxNldrNi04ZzlESDBZMVlPS0xjMjR1Z2tacG9oV1E3WFpTWHh1Ti1BaHAzdlA3b0VWek9UTVNJUGJv?oc=5",
+    "source": "Quantum Commodity Intelligence",
+    "date": "2026-10-14T15:37:43.000Z",
+    "region": "intl",
+    "sid": "q-intl-incident",
+    "type": "query",
+    "tier": "C",
+    "score": 1,
+    "major": false
+   },
+   {
+    "title": "Carbon Neutral Fuels boosts UK green hydrogen SAF project to 42,000 tpy with hybrid eFuel design",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQS2tsbEozSUdwVVpiVlhQaUxReTF2cnQ0dENEODVHbXJwR1ZZX2x3aGhVOXVac3pxaFR0RkI4cFlqMlBhRm0zZDIxT3gtTTA5dDZveHliRnNuTWVfV25LeWVlcm8xMFhtQldWT3NOalNZRE9fdFlJOHkxUGJvNG5QMGlUV2thLUhnODhoX0hqd3FxQ3ZWM1hUTkpXNnNFTzctMjl6akRpOExpM0NZZ2dvS2hLRlhpVHlPYVJsRkxjUnEyYkk4aFl0TEtUdTZHc281UFp3ZUFKS05jcVEwbUd5S0hn?oc=5",
+    "source": "Hydrocarbon Processing",
+    "date": "2026-10-14T15:30:34.000Z",
+    "region": "intl",
+    "sid": "hp",
+    "type": "site",
+    "tier": "B",
+    "score": 1,
     "major": false
    }
   ]
