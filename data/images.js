@@ -327,57 +327,13 @@ window.NEWS_IMAGES = {
   "reason": "未找到可用的报道图片"
  },
  "cn-chuzhou-lightning-2026-04": {
-  "file": "assets/news-img/cn-chuzhou-lightning-2026-04.jpg",
-  "src": "https://n.sinaimg.cn/spider20260602/290/w1080h810/20260602/967c-11d3894e1ab01903a897665ccdc492eb.jpg",
-  "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-  "credit": "新浪财经：一场雨，烧了车间！汛期企业警惕这些风险",
-  "alt": "一场雨，烧了车间！汛期，企业警惕这些风险|火灾_新浪财经_新浪网",
-  "pick": null,
-  "override": null,
-  "candidates": [
-   {
-    "src": "https://n.sinaimg.cn/spider20260602/290/w1080h810/20260602/967c-11d3894e1ab01903a897665ccdc492eb.jpg",
-    "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-    "alt": "一场雨，烧了车间！汛期，企业警惕这些风险|火灾_新浪财经_新浪网",
-    "size": "1080x810"
-   },
-   {
-    "src": "https://n.sinaimg.cn/spider20260602/290/w1080h810/20260602/9d75-8fc09b492ab0d8b9952b8cada573a885.jpg",
-    "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-    "alt": "",
-    "size": "1080x810"
-   },
-   {
-    "src": "https://n.sinaimg.cn/spider20260602/508/w837h471/20260602/348b-ebe80e241214fdbac092311d831547b8.jpg",
-    "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-    "alt": "",
-    "size": "837x471"
-   },
-   {
-    "src": "https://n.sinaimg.cn/spider20260602/444/w1024h1820/20260602/ee3e-9815790d91d273cebee513b32d37fa3c.jpg",
-    "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-    "alt": "制作：中国应急管理报社融媒体工作部",
-    "size": "1024x1820"
-   },
-   {
-    "src": "https://n.sinaimg.cn/spider20260602/444/w1024h1820/20260602/c6f3-f1cc4d52b8f1cf9684f614d697a70163.jpg",
-    "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-    "alt": "制作：中国应急管理报社融媒体工作部",
-    "size": "1024x1820"
-   },
-   {
-    "src": "https://n.sinaimg.cn/spider20260602/444/w1024h1820/20260602/670c-85c6b8f6abc80a5ce6b6f783815d15a7.jpg",
-    "page": "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
-    "alt": "制作：中国应急管理报社融媒体工作部",
-    "size": "1024x1820"
-   }
-  ]
+  "none": true
  },
  "asia-india-mrpl-2026-09": {
   "file": "assets/news-img/asia-india-mrpl-2026-09.jpg",
   "src": "https://cf-images.assettype.com/thenewsminute%2F2026-09-30%2Fvc9oqybx%2Fb9de4d12-5a4a-4cce-8bb2-36d1254f6d52.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
   "page": "https://www.thenewsminute.com/amp/story/karnataka/explosion-reported-at-mrpl-refinery-in-mangaluru-rescue-ops-underway",
-  "credit": "thenewsminute.com",
+  "credit": "The News Minute",
   "alt": "Explosion reported at MRPL refinery in Mangaluru, rescue ops underway",
   "pick": null,
   "override": null,
@@ -500,7 +456,7 @@ window.NEWS_IMAGES = {
   "file": "assets/news-img/intl-geelong-refinery-2026-04.jpg",
   "src": "https://live-production.wcms.abc-cdn.net.au/b3438e06f68eb25df55389c6867ad213?impolicy=wcms_watermark_news&cropH=949&cropW=1688&xPos=77&yPos=145&width=862&height=485&imformat=generic",
   "page": "https://www.abc.net.au/news/2026-04-17/geelong-refinery-fire-visual-explainer/106571216",
-  "credit": "ABC News：事故经过图解",
+  "credit": "ABC News",
   "alt": "What we know about the &#x27;unprecedented&#x27; Geelong refinery fire - ABC News",
   "pick": null,
   "override": null,

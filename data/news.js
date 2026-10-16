@@ -210,6 +210,7 @@ window.CURATED_NEWS = [
     refs: ["7-32", "7-36"],
     discuss: "客户新增的屋顶 RTO 或活性炭箱，你会检查哪些防雷、防火和隔离措施？",
     tags: ["雷击", "环保设施", "甲苯", "制药", "Natech"],
+    imageNone: true, // 报道为多起事故合集，配图无法确认为本次事故现场
     imagePages: [
       "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
     ],
@@ -480,6 +481,8 @@ window.CURATED_NEWS = [
     refs: ["1-40"],
     discuss: "园区围堤溃决、水深50厘米时，你客户厂内哪些设备会首先失效？恢复生产需要多长时间？",
     tags: ["洪水", "工业园区", "泰国", "营业中断"],
+    image: "https://media.nationthailand.com/uploads/images/md/2026/10/SVLa2ubkwKHPnxZS2nK6.webp",
+    imagePage: "https://www.nationthailand.com/business/economy/40071775",
     imagePages: [
       "https://www.nationthailand.com/business/economy/40071775",
       "https://www.bangkokpost.com/business/general/3332355/floods-have-damaged-4500-factories",
@@ -505,6 +508,8 @@ window.CURATED_NEWS = [
     refs: ["1-2", "7-43"],
     discuss: "地震后恢复生产前，你会要求客户检查哪些设备和系统？列出优先顺序。",
     tags: ["地震", "烟囱倒塌", "Natech", "半导体", "营业中断"],
+    image: "https://assets1.cbsnewsstatic.com/hub/i/r/2026/07/28/d8f1c30c-5af0-408b-9e54-05283cc91c5b/thumbnail/1200x630/2d07f20b4e7883345d710f74c4f96225/japan-mall-earthquake-kumamoto.jpg",
+    imagePage: "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
     imagePages: [
       "https://www.japantimes.co.jp/news/2026/09/04/japan/society/nippon-paper-fire/",
       "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
