@@ -23,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }} # 排队结束后取分支最新提交，避免与上一次运行的提交冲突
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -32,6 +32,7 @@ window.CURATED_NEWS = [
     refs: ["7-49", "7-59", "7-88"],
     discuss: "若该罐为共用废气收集系统的一部分，上下游哪些装置可能被迫停车？如何估算营业中断影响？",
     tags: ["储罐", "泄压", "化工园区", "舆情"],
+    imageNone: true, // 仅有警方通报与辟谣信息，报道中无现场照片
     imagePages: [
       "https://www.piyao.org.cn/20260924/5a2a31f01e7545d3adba924b1f2f1277/c.html",
       "https://news.ifeng.com/c/8wflbVcylx9",
