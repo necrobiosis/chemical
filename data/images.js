@@ -360,95 +360,35 @@ window.NEWS_IMAGES = {
  },
  "asia-thailand-floods-2026-09": {
   "file": "assets/news-img/asia-thailand-floods-2026-09.jpg",
-  "src": "https://static.bangkokpost.com/media/content/20261006/c1_3332355_700.jpg",
-  "page": "https://www.bangkokpost.com/business/general/3332355/floods-have-damaged-4500-factories",
-  "credit": "Bangkok Post",
-  "alt": "Bangkok Post - Floods have damaged 4,500 factories",
+  "src": "https://media.nationthailand.com/uploads/images/md/2026/10/SVLa2ubkwKHPnxZS2nK6.webp",
+  "page": "https://www.nationthailand.com/business/economy/40071775",
+  "credit": "The Nation",
+  "alt": "Severe Floods Inundate Thai Factories, Causing Over $30m in Direct Losses",
   "pick": null,
-  "override": null,
+  "override": "https://media.nationthailand.com/uploads/images/md/2026/10/SVLa2ubkwKHPnxZS2nK6.webp",
   "candidates": [
-   {
-    "src": "https://static.bangkokpost.com/media/content/20261006/c1_3332355_700.jpg",
-    "page": "https://www.bangkokpost.com/business/general/3332355/floods-have-damaged-4500-factories",
-    "alt": "Bangkok Post - Floods have damaged 4,500 factories",
-    "size": "700x467"
-   },
    {
     "src": "https://media.nationthailand.com/uploads/images/md/2026/10/SVLa2ubkwKHPnxZS2nK6.webp",
     "page": "https://www.nationthailand.com/business/economy/40071775",
     "alt": "Severe Floods Inundate Thai Factories, Causing Over $30m in Direct Losses",
     "size": "1300x731"
-   },
-   {
-    "src": "https://media.nationthailand.com/uploads/images/contents/w1024/2026/10/d5XDPlraj418k6mLUk6X.webp?x-image-process=style/lg-webp",
-    "page": "https://www.nationthailand.com/business/economy/40071775",
-    "alt": "Severe Floods Inundate Thai Factories, Causing Over $30m in Direct Losses",
-    "size": "2000x1125"
-   },
-   {
-    "src": "https://media.nationthailand.com/uploads/images/contents/w1024/2026/10/8toMPo9dFq66doFqLIzf.webp?x-image-process=style/lg-webp",
-    "page": "https://www.nationthailand.com/business/economy/40071775",
-    "alt": "Severe Floods Inundate Thai Factories, Causing Over $30m in Direct Losses",
-    "size": "2000x1125"
-   },
-   {
-    "src": "https://apicms.thestar.com.my/uploads/images/2026/09/30/4138006.JPG",
-    "page": "https://www.thestar.com.my/business/business-news/2026/09/30/thai-floods-disrupt-factories-capital-still-at-risk-pm-says",
-    "alt": "Thai floods disrupt factories, capital still at risk, PM says | The Star",
-    "size": "1240x826"
-   },
-   {
-    "src": "https://static.bangkokpost.com/media/content/20261006/c1_3332355_800.jpg",
-    "page": "https://www.bangkokpost.com/business/general/3332355/floods-have-damaged-4500-factories",
-    "alt": "Industry Minister Varawut Silpa-archa speaks to reporters at Government House on Tuesday. (Photo: Ministry of Industry)  Industry Minister Varawut Silpa-archa speaks to reporters at Government House o",
-    "size": "800x533"
    }
   ]
  },
  "asia-kumamoto-quake-2026-07": {
   "file": "assets/news-img/asia-kumamoto-quake-2026-07.jpg",
-  "src": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/09/04/561241.jpg?v=3.1",
-  "page": "https://www.japantimes.co.jp/news/2026/09/04/japan/society/nippon-paper-fire/",
-  "credit": "The Japan Times：Nippon Paper 工厂起火",
-  "alt": "Fire breaks out at earthquake-damaged Nippon Paper plant in Kumamoto - The Japan Times",
+  "src": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/07/28/d8f1c30c-5af0-408b-9e54-05283cc91c5b/thumbnail/1200x630/2d07f20b4e7883345d710f74c4f96225/japan-mall-earthquake-kumamoto.jpg",
+  "page": "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
+  "credit": "CBS News",
+  "alt": "Japan earthquake kills at least 13 as rescuers search for people trapped in damaged mall and factory - CBS News",
   "pick": null,
-  "override": null,
+  "override": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/07/28/d8f1c30c-5af0-408b-9e54-05283cc91c5b/thumbnail/1200x630/2d07f20b4e7883345d710f74c4f96225/japan-mall-earthquake-kumamoto.jpg",
   "candidates": [
-   {
-    "src": "https://www.japantimes.co.jp/japantimes/uploads/images/2026/09/04/561241.jpg?v=3.1",
-    "page": "https://www.japantimes.co.jp/news/2026/09/04/japan/society/nippon-paper-fire/",
-    "alt": "Fire breaks out at earthquake-damaged Nippon Paper plant in Kumamoto - The Japan Times",
-    "size": "1500x999"
-   },
    {
     "src": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/07/28/d8f1c30c-5af0-408b-9e54-05283cc91c5b/thumbnail/1200x630/2d07f20b4e7883345d710f74c4f96225/japan-mall-earthquake-kumamoto.jpg",
     "page": "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
     "alt": "Japan earthquake kills at least 13 as rescuers search for people trapped in damaged mall and factory - CBS News",
     "size": "1200x630"
-   },
-   {
-    "src": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/07/28/cb951296-4ee3-400a-9b47-c0cbe9e76f58/thumbnail/620x381/b6c48155595ee18a97b336579d570243/japan-earthquake-fire.jpg#",
-    "page": "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
-    "alt": "japan-earthquake-fire.jpg  An aerial view shows fire crews spraying water into a building on fire in Kumamoto, Japan, after a powerful earthquake struck the area on July 28, 2026. Reuters/Nippon TV",
-    "size": "620x381"
-   },
-   {
-    "src": "https://cdnx.premiumread.com/?url=https://www.japantimes.co.jp/japantimes/uploads/images/2026/09/04/561241.jpg&q=100&f=webp&t=1.53",
-    "page": "https://www.japantimes.co.jp/news/2026/09/04/japan/society/nippon-paper-fire/",
-    "alt": "The chimney at Nippon Paper Industries’ Yatsushiro mill collapsed in the earthquake in the city of Yatsushiro, Kumamoto Prefecture, on Aug. 9. The chimney at Nippon Paper Industries’ Yatsushiro mill c",
-    "size": "1500x999"
-   },
-   {
-    "src": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/07/28/f1225464-02d9-4dde-a643-71c8a4871401/thumbnail/620x413/57b5016a32349d66185b1a721d01a079/japan-earthquake.jpg#",
-    "page": "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
-    "alt": "Major earthquake hits Japan's Kyushu region  An aerial view shows damage to the Aeon Mall in Kashima City, after an earthquake with a preliminary magnitude of 7.1 struck Japan's southern Kumamoto pref",
-    "size": "620x413"
-   },
-   {
-    "src": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/07/28/d8f1c30c-5af0-408b-9e54-05283cc91c5b/thumbnail/620x413/437d6ec9e1fec13dc93d569c3991b64b/japan-mall-earthquake-kumamoto.jpg#",
-    "page": "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
-    "alt": "Major earthquake hits Japan's Kyushu region  Workers conduct search and rescue operations at Aeon Mall, which was seriously damaged by an earthquake on July 28, 2026, in Kashima, in Japan's southern K",
-    "size": "620x413"
    }
   ]
  },
