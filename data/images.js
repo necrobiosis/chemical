@@ -3,53 +3,6 @@ window.NEWS_IMAGES = {
  "cn-shanghai-waste-gas-tank-2026-09": {
   "none": true
  },
- "cn-gansu-jinte-hydrogenation-2026-04": {
-  "file": "assets/news-img/cn-gansu-jinte-hydrogenation-2026-04.jpg",
-  "src": "https://imgpai.thepaper.cn/pphimage/20260408/bb849c9a-aecd-42f5-8059-3242c0e2d11a.jpg",
-  "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-  "credit": "澎湃新闻",
-  "alt": "",
-  "pick": null,
-  "override": null,
-  "candidates": [
-   {
-    "src": "https://imgpai.thepaper.cn/pphimage/20260408/bb849c9a-aecd-42f5-8059-3242c0e2d11a.jpg",
-    "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-    "alt": "",
-    "size": "1080x973"
-   },
-   {
-    "src": "https://imgpai.thepaper.cn/pphimage/20260408/e370bc97-7c6b-43b8-9113-81e9cd4bccb6.jpg",
-    "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-    "alt": "",
-    "size": "1080x523"
-   },
-   {
-    "src": "https://imgpai.thepaper.cn/pphimage/20260408/732ba8d4-4773-418d-8861-a0af6ca2cb5e.jpg",
-    "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-    "alt": "",
-    "size": "1080x1920"
-   },
-   {
-    "src": "https://imgpai.thepaper.cn/pphimage/20260408/96f72f50-7a3f-444d-b17f-13310cb89d07.jpg",
-    "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-    "alt": "",
-    "size": "1080x1920"
-   },
-   {
-    "src": "https://imgpai.thepaper.cn/pphimage/20260408/903d5f0d-cc1e-40f6-be71-6d2b970441f4.jpg",
-    "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-    "alt": "",
-    "size": "1080x1920"
-   },
-   {
-    "src": "https://imgpai.thepaper.cn/pphimage/20260408/08a5ffaa-c642-4be4-b9e1-03da3b96a90b.jpg",
-    "page": "https://m.thepaper.cn/newsDetail_forward_32921983",
-    "alt": "",
-    "size": "1080x1920"
-   }
-  ]
- },
  "cn-inner-mongolia-nitration-2026-03": {
   "file": "assets/news-img/cn-inner-mongolia-nitration-2026-03.jpg",
   "src": "https://n.sinaimg.cn/front20260319ac/740/w1080h460/20260319/17cd-877ad57dea375a8ee27d4e1c82e9c0d7.jpg",

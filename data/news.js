@@ -49,16 +49,18 @@ window.CURATED_NEWS = [
     date: "2026-04-06",
     category: "incident",
     title: "甘肃玉门金特化学加氢装置闪爆，3死2伤",
-    summary: "4月6日10时40分许，甘肃玉门化工园区内的甘肃金特化学有限公司发生事故，造成3人遇难、2人轻伤，企业相关责任人已被公安机关控制。新华社等媒体报道为“火灾”；应急管理部将其列为“4·6”较大闪爆事故，初步分析直接原因为1,8-二氨基萘生产车间加氢反应釜超压，具体原因仍在调查。",
+    summary: "4月6日10时40分许，甘肃玉门化工园区内的甘肃金特化学有限公司发生事故，造成3人遇难、2人轻伤。起火车间为3层钢筋混凝土结构，12时14分明火被扑灭，企业相关责任人已被公安机关控制。新华社等媒体报道为“火灾”；应急管理部将其列为“4·6”较大闪爆事故，初步分析直接原因为1,8-二氨基萘生产车间加氢反应釜超压，具体原因仍在调查。",
     fm: "加氢属于国家重点监管的18种危险化工工艺之一。氢气点火能极低、爆炸极限宽（约4%–75%），釜式加氢车间通常为封闭厂房，泄漏后易形成受限空间爆炸。评估要点：反应釜超压保护（安全阀/爆破片）排放是否引至安全位置；压力、温度、氢气流量与紧急切断的SIS联锁；厂房泄爆面积与可燃气体探测布置；电气防爆等级。该企业2019年成立，主营染料及中间体，属于典型的中小型精细化工企业。",
     refs: ["7-43", "7-45", "7-46", "7-91", "7-17"],
     discuss: "该车间若为单层钢结构厂房，泄爆设计缺失时建筑与相邻设备的损失会如何放大？",
     tags: ["加氢", "氢气", "闪爆", "重点监管工艺", "染料中间体"],
     imagePages: [
-      "https://m.thepaper.cn/newsDetail_forward_32921983",
-      "https://m.thepaper.cn/newsDetail_forward_32923225",
-      "https://news.qq.com/rain/a/20260408A05K4K00",
-      "https://news.hubeidaily.net/pc/c_5354590.html",
+      "https://www.thepaper.cn/newsDetail_forward_32916543",
+      "https://news.qq.com/rain/a/20260407A05QJR00",
+      "https://www.news.cn/local/20260407/e9efb80032084592bad52d4a502eb364/c.html",
+      "http://gs.people.com.cn/n2/2026/0407/c183348-41545620.html",
+      "https://news.chemnet.com/toutiao/detail-59264.html",
+      "https://m.thepaper.cn/newsDetail_forward_32915690",
     ],
     sources: [
       { name: "澎湃新闻", url: "https://m.thepaper.cn/newsDetail_forward_32921983" },
@@ -324,6 +326,7 @@ window.CURATED_NEWS = [
     fm: "与8月 Hazelo Lab 事故同在 Dothigudem。“向反应釜加注溶剂时起火”是制药厂最常见的场景之一：静电积聚、敞口加料、桶装溶剂就近存放。检查要点：溶剂转移是否密闭并接地跨接、加料口惰化、车间内溶剂存量控制。印度制药集群自2024年 Atchutapuram（17死）、2025年 Sigachi（46死）后事故仍然频发，可作为“区域风险画像”课程案例。",
     refs: ["7-36", "7-46", "7-32"],
     tags: ["制药", "溶剂", "静电", "印度"],
+    image: "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg", // Deccan Chronicle：烧毁的反应釜车间
     imagePages: [
       "https://www.siasat.com/man-charred-to-death-in-telangana-chemical-company-lab-explosion-3372730/",
       "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
@@ -415,6 +418,7 @@ window.CURATED_NEWS = [
     fm: "上游原料设施（盐井、卤水）往往不在主装置的风险评估范围内，却可能成为氯碱—VCM—PVC 链条的单点故障。“维修作业中爆炸”再次指向作业许可与隔离管理。开展营业中断评估时，应把关键原料供应设施纳入依赖关系图。",
     refs: ["7-43"],
     tags: ["墨西哥", "卤水", "氯碱链", "维修作业", "CBI"],
+    image: "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg", // Excélsior：厂区上空浓烟与火焰
     imagePages: [
       "https://www.proceso.com.mx/nacional/estados/2026/9/15/explosion-en-jaltipan-veracruz-suman-tres-muertos-tras-incendio-en-planta-de-pmv-minera-379967.html",
       "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",
