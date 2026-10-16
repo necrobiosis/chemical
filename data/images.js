@@ -113,34 +113,34 @@ window.NEWS_IMAGES = {
     "size": "700x398"
    },
    {
-    "src": "http://dingyue.ws.126.net/2026/1016/d513c1b2j00tmzneq000rd000hs00cmm.jpg",
+    "src": "http://dingyue.ws.126.net/2026/1016/f36cc477j00tmzlhc003qd000lv00tgm.jpg",
     "page": "https://m.163.com/dy/article_cambrian/KLBIC67R05357HBN.html",
-    "alt": "8场造3球！32岁坎塞洛开启巴萨幸福时光 坦然接受与年轻球员竞争",
-    "size": "640x454"
+    "alt": "拉不出屎别害怕，常喝这3种，堪称“通便大王”！拉屎超顺畅",
+    "size": "787x1060"
    },
    {
-    "src": "http://dingyue.ws.126.net/2026/1016/36ef34baj00tmzn15006hd000go009bg.jpg",
+    "src": "http://dingyue.ws.126.net/2026/1016/a1e4bacej00tmzl4q00nbd000wa00h0m.jpg",
     "page": "https://m.163.com/dy/article_cambrian/KLBIC67R05357HBN.html",
-    "alt": "40万级SUV卖疯了！博主爆料蔚来全新ES8订单数据：单月新增1.2万-1.3万台",
-    "size": "600x335"
+    "alt": "理想第二款MPV曝光，第一次见这样的理想汽车！",
+    "size": "1162x612"
    },
    {
-    "src": "http://dingyue.ws.126.net/2026/1016/510cf938j00tmzm6e004ld002720140m.jpg",
+    "src": "http://dingyue.ws.126.net/2026/1016/e07acf72j00tmzkog000gd000ox00amg.jpg",
     "page": "https://m.163.com/dy/article_cambrian/KLBIC67R05357HBN.html",
-    "alt": "16分钟15分！博格丹又又又准疯了，火箭三分问题得到解决",
-    "size": "2846x1440"
+    "alt": "沈阳这所90余年老牌小学停办，原址将改造！",
+    "size": "897x382"
    },
    {
-    "src": "http://dingyue.ws.126.net/2026/1016/abf27c51j00tmzl080015d000s400cnm.jpg",
+    "src": "http://dingyue.ws.126.net/2026/1016/294dc876j00tmzjvq001ld000ku00fmp.jpg",
     "page": "https://m.163.com/dy/article_cambrian/KLBIC67R05357HBN.html",
-    "alt": "海港VS成都蓉城：双外援后腰坐镇 梅伦多刘祝润领衔 武磊安佩姆冲锋",
-    "size": "1012x455"
+    "alt": "王思聪女友懒懒气质高，国外自拍身材惊艳，连路人老外都给她点赞",
+    "size": "750x562"
    },
    {
-    "src": "http://dingyue.ws.126.net/2026/1016/4f5e53abj00tmzkac004kd000wr00oxp.jpg",
+    "src": "http://dingyue.ws.126.net/2026/1016/b854994fj00tmzjpj003nd000u000u1g.jpg",
     "page": "https://m.163.com/dy/article_cambrian/KLBIC67R05357HBN.html",
-    "alt": "黄晓明新疆录节目，合影里还有张家齐！这丫头事业越走越宽了",
-    "size": "1179x897"
+    "alt": "郑秀文三位姐姐到场力挺许志安！饼印家姐罕见出镜，网友赞满分好太太",
+    "size": "1080x1081"
    }
   ]
  },
@@ -372,10 +372,10 @@ window.NEWS_IMAGES = {
     "size": "1200x630"
    },
    {
-    "src": "https://cdn.milenio.com/uploads/media/2026/09/15/las-autoridades-del-estado-siguen.jpg",
-    "page": "https://amp.milenio.com/estados/que-paso-planta-de-sal-jaltipan-veracruz-esto-sabemos-de-explosion",
-    "alt": "Qué pasó planta de sal Jáltipan Veracruz esto-sabemos-de explosiónGrupo Milenio",
-    "size": "1200x678"
+    "src": "https://cdn.amxinfra.com/unotv/images/2026/09/whatsapp-image-2026-09-14-at-12.01.07-pm-1-144125-480x270.webp",
+    "page": "https://www.unotv.com/estados/veracruz/explosion-de-pozo-de-salmuera-deja-3-muertos-en-jaltipan-veracruz/",
+    "alt": "Desde Veracruz llega la concha mazorca patria y la concha patria",
+    "size": "480x270"
    }
   ]
  },
