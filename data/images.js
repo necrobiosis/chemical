@@ -1,51 +1,7 @@
 // 由 scripts/fetch-images.mjs 自动生成：事故配图均取自原始新闻报道，版权归原媒体所有
 window.NEWS_IMAGES = {
  "cn-shanghai-waste-gas-tank-2026-09": {
-  "file": "assets/news-img/cn-shanghai-waste-gas-tank-2026-09.jpg",
-  "src": "https://x0.ifengimg.com/ucms/2026_39/F2B74E3488551223C6906CD3828DDCA811AD24F6_size40_w624_h351.jpg",
-  "page": "https://news.ifeng.com/c/8wflbVcylx9",
-  "credit": "ifeng.com",
-  "alt": "上海警方：一男子因发布“化工园区发生大爆炸”不实信息被行政处罚_凤凰网",
-  "pick": null,
-  "override": null,
-  "candidates": [
-   {
-    "src": "https://x0.ifengimg.com/ucms/2026_39/F2B74E3488551223C6906CD3828DDCA811AD24F6_size40_w624_h351.jpg",
-    "page": "https://news.ifeng.com/c/8wflbVcylx9",
-    "alt": "上海警方：一男子因发布“化工园区发生大爆炸”不实信息被行政处罚_凤凰网",
-    "size": "624x351"
-   },
-   {
-    "src": "https://imgm.gmw.cn/attachement/jpg/site215/20260924/6376032475410025536.jpg",
-    "page": "https://m.gmw.cn/2026-09/24/content_1304567619.htm",
-    "alt": "上海警方：一男子编造“上海化工园区发生大爆炸”的不实信息，被依法行政处罚 上海警方：一男子编造“上海化工园区发生大爆炸”的不实信息，被依法行政处罚",
-    "size": "687x358"
-   },
-   {
-    "src": "https://www.piyao.org.cn/20260924/5a2a31f01e7545d3adba924b1f2f1277/202609245a2a31f01e7545d3adba924b1f2f1277_202609246bcd2608967249f1ba99c5ad789f1a06.jpeg",
-    "page": "https://www.piyao.org.cn/20260924/5a2a31f01e7545d3adba924b1f2f1277/c.html",
-    "alt": "",
-    "size": "676x260"
-   },
-   {
-    "src": "https://imgm.gmw.cn/attachement/jpg/site2/20261015/88e90df6874842898327e6d82160ddef.jpg",
-    "page": "https://m.gmw.cn/2026-09/24/content_1304567619.htm",
-    "alt": "",
-    "size": "751x418"
-   },
-   {
-    "src": "https://imgm.gmw.cn/attachement/jpg/site2/20261015/f7ee9b9b077e426d82a2a8409e465144.jpg",
-    "page": "https://m.gmw.cn/2026-09/24/content_1304567619.htm",
-    "alt": "",
-    "size": "788x443"
-   },
-   {
-    "src": "https://imgm.gmw.cn/attachement/jpg/site2/20261015/a448139224104c49aa74cf32b8f099d2.jpg",
-    "page": "https://m.gmw.cn/2026-09/24/content_1304567619.htm",
-    "alt": "",
-    "size": "806x442"
-   }
-  ]
+  "none": true
  },
  "cn-gansu-jinte-hydrogenation-2026-04": {
   "file": "assets/news-img/cn-gansu-jinte-hydrogenation-2026-04.jpg",
