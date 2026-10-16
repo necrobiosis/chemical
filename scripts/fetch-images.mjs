@@ -104,7 +104,7 @@ async function download(c) {
 const save = (buf, file, width) =>
   sharp(buf).rotate().resize({ width, withoutEnlargement: true }).jpeg({ quality: 78, mozjpeg: true }).toFile(file);
 
-const OUTLETS = { "khan.co.kr": "京乡新闻", "newsis.com": "纽西斯通讯社", "excelsior.com.mx": "Excélsior", "unotv.com": "UnoTV", "proceso.com.mx": "Proceso", "ifeng.com": "凤凰网", "jiemian.com": "界面新闻", "deccanchronicle.com": "Deccan Chronicle", "siasat.com": "Siasat", "udn.com": "联合新闻网", "qq.com": "腾讯新闻", "inews.qq.com": "腾讯新闻", "thepaper.cn": "澎湃新闻", "wchsnetwork.com": "WCHS" };
+const OUTLETS = { "khan.co.kr": "京乡新闻", "newsis.com": "纽西斯通讯社", "excelsior.com.mx": "Excélsior", "unotv.com": "UnoTV", "proceso.com.mx": "Proceso", "ifeng.com": "凤凰网", "jiemian.com": "界面新闻", "deccanchronicle.com": "Deccan Chronicle", "siasat.com": "Siasat", "udn.com": "联合新闻网", "qq.com": "腾讯新闻", "inews.qq.com": "腾讯新闻", "thepaper.cn": "澎湃新闻", "wchsnetwork.com": "WCHS", "thenewsminute.com": "The News Minute", "abc.net.au": "ABC News", "japantimes.co.jp": "The Japan Times", "bangkokpost.com": "Bangkok Post", "nationthailand.com": "The Nation", "sina.com.cn": "新浪财经" };
 const creditOf = (n, page) => {
   const host = new URL(page).hostname.replace(/^(www|m|amp|news|view)\./, "");
   if (OUTLETS[host]) return OUTLETS[host];
@@ -115,7 +115,7 @@ const creditOf = (n, page) => {
       return false;
     }
   });
-  return s ? s.name.replace(/[（(].*$/, "").trim() : host;
+  return s ? s.name.replace(/[（(：:].*$/, "").trim() : host;
 };
 
 /* ---------- 主流程 ---------- */
