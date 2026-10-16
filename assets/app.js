@@ -44,6 +44,42 @@
   };
   const regionBadge = (r) => `<span class="badge r-${r}">${REGIONS[r].name}</span>`;
   const catBadge = (c) => `<span class="badge c-${c}">${CATS[c] || c}</span>`;
+
+  /* ---------- 起因分类（FM 风险划分） ---------- */
+  const PERILS = window.PERILS || [];
+  const PERIL = {};
+  PERILS.forEach((p) => {
+    PERIL[p.id] = p;
+    p.causeMap = {};
+    p.causes.forEach((c) => {
+      p.causeMap[c.id] = c;
+      c.re = new RegExp(c.keywords, "i");
+    });
+    p.genericRe = p.generic ? new RegExp(p.generic, "i") : null;
+    p.impactRe = p.impact ? new RegExp(p.impact, "i") : null;
+  });
+  const causeName = (c) => (PERIL[c.peril] && PERIL[c.peril].causeMap[c.cause] ? PERIL[c.peril].causeMap[c.cause].name : "");
+  const perilBadge = (c, primary) =>
+    PERIL[c.peril]
+      ? `<a class="peril p-${c.peril}${primary ? " primary" : ""}" href="#/peril/${c.peril}?c=${c.cause}" title="${primary ? "主因" : "次因"}：${esc(PERIL[c.peril].name)}">${esc(
+          causeName(c) || PERIL[c.peril].name
+        )}</a>`
+      : "";
+  const causeBadges = (n) => (n.causes || []).map((c, i) => perilBadge(c, i === 0)).join("");
+  // 实时动态按标题关键词归类：火灾爆炸看通用词或细分词；设备与自然灾害还需同时出现“影响”类词，减少误判
+  function classifyFeed(title) {
+    const out = [];
+    PERILS.forEach((p) => {
+      const hits = p.causes.filter((c) => c.re.test(title));
+      if (p.genericRe) {
+        if (p.genericRe.test(title)) out.push(...(hits.length ? hits : [{ id: "" }]).map((c) => ({ peril: p.id, cause: c.id })));
+      } else if (hits.length && p.impactRe.test(title)) {
+        out.push(...hits.map((c) => ({ peril: p.id, cause: c.id })));
+      }
+    });
+    return out;
+  }
+  const FEED_ALL = Object.keys(FEEDS.items || {}).flatMap((r) => (FEEDS.items[r] || []).map((i) => Object.assign({ region: r, causes: classifyFeed(i.title) }, i)));
   const dsList = (refs) =>
     (refs || []).map((n) => `<a class="ds" href="#/training?ds=${esc(n)}" title="在 Data Sheet 速查中查看">DS ${esc(n)}</a>`).join("");
 
@@ -75,6 +111,7 @@
         <summary class="${imgOf(n) ? "has-thumb" : ""}">
           <div class="sum-text">
             <div class="top">${regionBadge(n.region)}${catBadge(n.category)}<span>${esc(n.country)}</span><span>·</span><time>${fmtDate(n.date)}</time></div>
+            ${n.causes ? `<div class="causes">${causeBadges(n)}</div>` : ""}
             <h3>${esc(n.title)}</h3>
             <p class="lead">${esc(n.summary)}</p>
           </div>
@@ -186,6 +223,7 @@
         ${stats}
         <a class="stat" href="#/cases"><div class="label">案例库</div><div class="num">${incidents}</div><div class="sub">事故案例 · ${withDiscuss} 个讨论题</div></a>
       </div>
+      ${perilSection()}
       ${majorSection}
       <div class="section"><h2>三大板块 <small>精选 · 按日期倒序</small></h2><div class="columns">${cols}</div></div>
       ${
@@ -193,6 +231,81 @@
           ? `<div class="section"><h2>本期案例研讨 <small>从最新事故中学习</small></h2>${card(latestIncident, true)}</div>`
           : ""
       }`;
+  }
+
+  const INCIDENTS = NEWS.filter((n) => n.causes);
+  const matches = (causes, peril, cause) => (causes || []).some((c) => c.peril === peril && (!cause || c.cause === cause));
+
+  function perilSection() {
+    const tiles = PERILS.map((p) => {
+      const rel = INCIDENTS.filter((n) => matches(n.causes, p.id));
+      const prim = rel.filter((n) => n.causes[0].peril === p.id).length;
+      const auto = FEED_ALL.filter((i) => matches(i.causes, p.id)).length;
+      const subs = p.causes
+        .map((c) => {
+          const k = INCIDENTS.filter((n) => matches(n.causes, p.id, c.id)).length;
+          return `<a class="sub${k ? "" : " zero"}" href="#/peril/${p.id}?c=${c.id}">${esc(c.name)}<span class="n">${k}</span></a>`;
+        })
+        .join("");
+      return `<div class="peril-tile p-${p.id}">
+          <a class="peril-head" href="#/peril/${p.id}">
+            <span class="peril-en">${esc(p.en)}</span>
+            <span class="peril-name">${esc(p.name)}</span>
+            <span class="peril-count"><b>${rel.length}</b> 起精选事故（主因 ${prim}）${auto ? ` · 实时动态 ${auto} 条` : ""}</span>
+          </a>
+          <div class="subs">${subs}</div>
+        </div>`;
+    }).join("");
+    return `<div class="section"><h2>按起因浏览 <small>参照 FM 风险分类 · 点击进入相关事故</small></h2><div class="peril-grid">${tiles}</div></div>`;
+  }
+
+  function viewPeril(id, cause) {
+    const p = PERIL[id];
+    if (!p) return null;
+    if (cause && !p.causeMap[cause]) cause = null;
+    const rel = INCIDENTS.filter((n) => matches(n.causes, id, cause)).sort(
+      (a, b) => (b.causes[0].peril === id) - (a.causes[0].peril === id) || b.date.localeCompare(a.date)
+    );
+    const autos = FEED_ALL.filter((i) => matches(i.causes, id, cause));
+    const allRel = INCIDENTS.filter((n) => matches(n.causes, id));
+    const chipsHtml =
+      `<a class="chip ${!cause ? "active" : ""}" href="#/peril/${id}">全部<span class="n">${allRel.length}</span></a>` +
+      p.causes
+        .map((c) => {
+          const k = INCIDENTS.filter((n) => matches(n.causes, id, c.id)).length;
+          return `<a class="chip ${cause === c.id ? "active" : ""}" href="#/peril/${id}?c=${c.id}">${esc(c.name)}<span class="n">${k}</span></a>`;
+        })
+        .join("");
+    const other = PERILS.filter((x) => x.id !== id)
+      .map((x) => `<a class="peril p-${x.id}" href="#/peril/${x.id}">${esc(x.name)} →</a>`)
+      .join("");
+    const ds = cause ? p.causeMap[cause].ds : p.ds;
+    const cards = rel.length
+      ? rel
+          .map((n) => {
+            const primary = n.causes[0].peril === id;
+            return `<div class="peril-role">${primary ? "主因" : "次因（诱发或后果）"}</div>${card(n)}`;
+          })
+          .join("")
+      : `<div class="empty">该起因下暂无精选事故。</div>`;
+    const autoList = autos.length
+      ? `<ul class="feed">${autos.slice(0, 40).map((i) => feedItem(i, true)).join("")}</ul>`
+      : `<p class="hint">实时动态中暂无匹配的条目。</p>`;
+    return `
+      <div class="page-head peril-page p-${id}">
+        <p class="peril-en">${esc(p.en)} · FM 风险分类</p>
+        <h1>${esc(p.name)}${cause ? ` · ${esc(p.causeMap[cause].name)}` : ""}</h1>
+        <p>${esc(p.desc)}</p>
+        <div class="row"><span class="k">参考：</span>${esc(p.series)}${ds && ds.length ? " · " + dsList(ds) : ""}</div>
+        <div class="row"><span class="k">其他起因：</span>${other}</div>
+      </div>
+      <div class="split">
+        <div>
+          <div class="toolbar">${chipsHtml}</div>
+          <div class="cards">${cards}</div>
+        </div>
+        <aside class="panel"><h3>实时动态中的相关条目</h3><p class="hint">按标题关键词自动归类，未经人工审核 · ${autos.length} 条</p>${autoList}</aside>
+      </div>`;
   }
 
   function viewRegion(r) {
@@ -223,14 +336,14 @@
     const rows = byRegion
       .map(
         (n) =>
-          `<tr><td>${fmtDate(n.date)}</td><td>${regionBadge(n.region)} ${esc(n.country)}</td><td><div class="case-title">${thumb(n, "mini-thumb")}<a href="#/news/${esc(n.id)}">${esc(n.title)}</a></div></td><td>${(n.tags || []).slice(0, 3).map((t) => `<span class="badge">${esc(t)}</span>`).join(" ")}</td><td>${dsList(n.refs)}</td></tr>`
+          `<tr><td>${fmtDate(n.date)}</td><td>${regionBadge(n.region)} ${esc(n.country)}</td><td><div class="case-title">${thumb(n, "mini-thumb")}<a href="#/news/${esc(n.id)}">${esc(n.title)}</a></div></td><td><div class="causes">${causeBadges(n) || "—"}</div></td><td>${dsList(n.refs)}</td></tr>`
       )
       .join("");
     return `
       <div class="page-head"><h1>案例库</h1><p>事故与调查报告汇总。建议用法：晨会“15 分钟案例”——直接原因 → 深层原因 → 对应的 Data Sheet 建议 → 我的客户有没有同样的问题？</p></div>
       <div class="toolbar">${regionChips}</div>
       <div class="table-wrap"><table>
-        <thead><tr><th>日期</th><th>地区</th><th>事件</th><th>主题</th><th>Data Sheet</th></tr></thead>
+        <thead><tr><th>日期</th><th>地区</th><th>事件</th><th>起因（首项为主因）</th><th>Data Sheet</th></tr></thead>
         <tbody>${rows || `<tr><td colspan="5">暂无</td></tr>`}</tbody>
       </table></div>
       <div class="section"><h2>案例详情</h2><div class="cards">${byRegion.map((n) => card(n)).join("")}</div></div>`;
@@ -392,6 +505,9 @@
       html = viewRegion(view);
     } else if (view === "sources") {
       html = viewSources();
+    } else if (view === "peril" && parts[1]) {
+      html = viewPeril(parts[1], params.get("c"));
+      view = "cases";
     } else if (view === "cases") {
       html = viewCases();
     } else if (view === "training") {

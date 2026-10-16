@@ -14,6 +14,7 @@
  *   discuss   培训讨论题（可选）
  *   tags      标签
  *   sources   [{ name, url }] 原始报道链接
+ *   causes    事故起因 [{ peril, cause }]，第一项为主因；分类见 data/perils.js
  *
  * 新增新闻：复制一条记录，修改字段即可；页面按日期自动排序。
  */
@@ -25,6 +26,7 @@ window.CURATED_NEWS = [
     country: "中国·上海",
     date: "2026-09-23",
     category: "incident",
+    causes: [{ peril: "equipment", cause: "pressure" }],
     title: "上海化学工业区一企业废气罐泄压时罐体受损，少量残余气体泄漏",
     summary: "9月23日7时许，上海化学工业区楚华路某厂区内一废气罐在泄压过程中罐体破损，部分残留气体泄漏。现场无明火、无人员伤亡，经处置和检测，未对周边环境造成影响。一名55岁男子路过后编造“上海化工园区发生大爆炸”的不实信息，被警方依法行政处罚。",
     fm:
@@ -48,6 +50,7 @@ window.CURATED_NEWS = [
     country: "中国·甘肃",
     date: "2026-04-06",
     category: "incident",
+    causes: [{ peril: "fire", cause: "gas" }, { peril: "equipment", cause: "pressure" }],
     title: "甘肃玉门金特化学加氢装置闪爆，3死2伤",
     summary: "4月6日10时40分许，甘肃玉门化工园区内的甘肃金特化学有限公司发生事故，造成3人遇难、2人轻伤。起火车间为3层钢筋混凝土结构，12时14分明火被扑灭，企业相关责任人已被公安机关控制。新华社等媒体报道为“火灾”；应急管理部将其列为“4·6”较大闪爆事故，初步分析直接原因为1,8-二氨基萘生产车间加氢反应釜超压，具体原因仍在调查。",
     fm: "加氢属于国家重点监管的18种危险化工工艺之一。氢气点火能极低、爆炸极限宽（约4%–75%），釜式加氢车间通常为封闭厂房，泄漏后易形成受限空间爆炸。评估要点：反应釜超压保护（安全阀/爆破片）排放是否引至安全位置；压力、温度、氢气流量与紧急切断的SIS联锁；厂房泄爆面积与可燃气体探测布置；电气防爆等级。该企业2019年成立，主营染料及中间体，属于典型的中小型精细化工企业。",
@@ -75,6 +78,7 @@ window.CURATED_NEWS = [
     country: "中国·内蒙古",
     date: "2026-03-19",
     category: "incident",
+    causes: [{ peril: "fire", cause: "runaway" }],
     title: "内蒙古利元科技硝化车间爆炸，2人死亡3人受伤，现场冒黄色浓烟",
     summary: "3月19日11时50分许，内蒙古阿拉善盟腾格里经济技术开发区利元科技有限公司硝化车间发生爆炸，初报2人失联、3人轻伤，当地应急部门其后称已致2人死亡。视频显示现场冒出明显黄色烟雾，附近商铺墙体和玻璃被震碎，环保部门已介入。有专家推测黄烟为硝化产生的二氧化氮。事故原因仍在调查。",
     fm: "硝化反应强放热、产物多为热敏性含能物质，是精细化工中损失最严重的工艺类别之一。冲击波震碎周边商铺玻璃，说明爆炸当量足以造成厂外财产损失。巡检关注：釜壁、釜盖、尾气管线的积料清理制度，反应量热数据（ΔTad、TMRad）是否完整，冷却与搅拌失效的联锁及紧急泄放/骤冷设施，以及硝化车间与其他建筑、厂界的间距。",
@@ -99,6 +103,7 @@ window.CURATED_NEWS = [
     country: "中国·山西",
     date: "2026-02-07",
     category: "incident",
+    causes: [{ peril: "fire", cause: "runaway" }],
     title: "山西朔州佳鹏生物非法生产窝点爆炸，8死3伤，国务院安委办挂牌督办",
     summary: "2月7日凌晨，山西朔州山阴县佳鹏生物科技有限公司一车间发生爆炸，造成8人死亡、3人受伤。应急管理部通报，该公司名义上备案为饲料生产，实际为非法生产窝点，在非法生产2-硝基-3-甲基苯甲酸过程中发生爆炸。企业成立于2025年6月，位于距县城40余公里的山洼中。国务院安委办对事故挂牌督办，并在全国开展非法危化品生产窝点清查整治。",
     fm: "“名实不符”是承保与检查中最危险的盲区：登记为饲料、实际进行硝化类危险工艺。识别要点：申报的占用性质与实际原料、设备（反应釜、冷凝器、尾气吸收）是否一致；原料采购与危化品许可是否匹配；偏远选址、频繁变更法人、成立时间短等信号。对邻近被保险财产，这类窝点是不可见的外部暴露。",
@@ -172,6 +177,48 @@ window.CURATED_NEWS = [
     ],
   },
 
+  {
+    id: "cn-ningxia-huayu-2026-04",
+    region: "cn",
+    country: "中国·宁夏",
+    date: "2026-04-23",
+    category: "incident",
+    causes: [{ peril: "equipment", cause: "controls" }, { peril: "equipment", cause: "pressure" }, { peril: "fire", cause: "runaway" }],
+    title: "宁夏中卫华御化工脱焦釜爆炸，1死9伤：真空泵跳停后处置不当致超压",
+    summary: "4月23日13时55分许，宁夏中卫工业园区宁夏华御化工有限公司甲醚厂醚化装置蒸馏脱焦工序发生爆炸，造成1人死亡、9人受伤，直接经济损失584.78万元。中卫市应急管理局调查报告认定：脱焦釜真空泵跳停且无法及时恢复，釜内压力波动；现场人员用低压饱和蒸汽处置，蒸汽进入脱焦釜导致釜体超压泄漏，又使釜内焦油残液加速分解放热，物理超压叠加分解反应引发爆炸。事故定性为“一般容器爆炸”生产安全责任事故。",
+    fm: "典型的“设备异常 → 处置不当 → 失控”链条：起点是辅助设备（真空泵）跳停，而非主反应。检查要点：真空系统失效时的联锁与安全停车逻辑、异常工况处置程序是否经过 HAZOP 分析、焦油等残液的热稳定性数据、脱焦釜的泄放能力是否覆盖“蒸汽误入+分解”工况。直接经济损失584.78万元可作为同类装置损失估算的参照。",
+    refs: ["7-45", "7-49", "7-46", "7-43"],
+    discuss: "列出你的客户装置中三种“辅助设备跳停”场景（真空泵、冷却水泵、氮气），各自的最坏后果和现有保护是什么？",
+    tags: ["真空泵跳停", "异常工况", "焦油分解", "调查报告"],
+    imagePages: [
+      "https://m.thepaper.cn/newsDetail_forward_33805603",
+    ],
+    sources: [
+      { name: "澎湃新闻：事故调查报告公布", url: "https://m.thepaper.cn/newsDetail_forward_33805603" },
+    ],
+  },
+  {
+    id: "cn-chuzhou-lightning-2026-04",
+    region: "cn",
+    country: "中国·安徽",
+    date: "2026-04-08",
+    category: "incident",
+    causes: [{ peril: "natural", cause: "lightning" }, { peril: "fire", cause: "liquid" }],
+    title: "安徽滁州一药企车间屋顶环保设施遭雷击起火，火势蔓延至甲苯储存区",
+    summary: "据行业事故盘点报道，4月8日，安徽滁州某药业有限公司三号车间屋顶的环保设施遭雷击起火，火势蔓延至车间内存放的甲苯，导致灾情扩大。官方尚未公布企业全称、伤亡与损失情况。",
+    fm: "屋顶环保设施（活性炭吸附、RTO/RCO、废气管道）往往是全厂最高点，且常为后加装、未纳入原防雷设计。检查要点：环保设施的防雷与接地是否检测合格、废气管道与车间之间的防火分隔、车间内易燃溶剂存量是否超出当班用量。雷击属自然灾害，但损失大小取决于火灾防护。",
+    refs: ["7-32", "7-36"],
+    discuss: "客户新增的屋顶 RTO 或活性炭箱，你会检查哪些防雷、防火和隔离措施？",
+    tags: ["雷击", "环保设施", "甲苯", "制药", "Natech"],
+    imagePages: [
+      "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml",
+    ],
+    sources: [
+      { name: "新浪财经：一场雨，烧了车间！汛期企业警惕这些风险", url: "https://finance.sina.com.cn/wm/2026-06-02/doc-inhzyhiy3432317.shtml" },
+      { name: "ChemNet化工头条：2026年前五月化工事故盘点", url: "https://news.chemnet.com/toutiao/detail-67853.html" },
+    ],
+  },
+
   /* ============================ 亚洲 ============================ */
   {
     id: "asia-mideast-new-disruption-2026-09",
@@ -196,6 +243,7 @@ window.CURATED_NEWS = [
     country: "中国台湾",
     date: "2026-08-22",
     category: "incident",
+    causes: [{ peril: "fire", cause: "reactive" }, { peril: "natural", cause: "flood" }],
     title: "台南安南区违法堆放铝镁废料起火连环爆炸，15人受伤、数十户民宅受损",
     summary: "8月22日凌晨1时12分，台南市安南区海佃路二段一处空地发生起火爆炸，消防出动109人、53车。业者违法堆放含铝、镁的事业废弃物及废油，连日降雨加上灌救用水，引发连串爆炸并形成蘑菇云。共15人受伤（含3名消防员），均无生命危险；救护车、消防车受波及，受损民宅数随调查上修（各媒体统计口径不一，从数十户到逾百户）。涉案业者无清理证照，市府已启动刑事侦查。",
     fm: "铝镁等活泼金属遇水放氢，常规水灭火反而加剧事态，消防员受伤和消防车受损都说明了这一点。评估废料/回收类场所及其周边客户时关注：活泼金属与可燃废油是否分区隔离、露天堆放的降雨暴露、D类火灾应急预案、与消防部门的事前联动（危险物质清单共享）。对邻近住宅和厂房而言，这是典型的外部暴露风险。",
@@ -220,6 +268,7 @@ window.CURATED_NEWS = [
     country: "印度·特伦甘纳",
     date: "2026-08-21",
     category: "incident",
+    causes: [{ peril: "fire", cause: "runaway" }, { peril: "equipment", cause: "pressure" }],
     title: "印度特伦甘纳 Hazelo Lab 制药厂反应釜爆炸起火，2死约9伤",
     summary: "8月21日（周五）深夜，特伦甘纳邦 Bhoodan Pochampally 区 Dothigudem 的 Hazelo Lab Private Limited 发生反应釜爆炸并引发火灾，造成2名工人死亡、约9人受伤（各报道人数不一），部分伤者伤势危重。初步怀疑反应釜内压力过高或过热，警方已立案调查。据报道，该厂7月16日曾发生反应釜有毒气体释放事故，致1名员工死亡。",
     fm: "同一地区（Dothigudem）2026年已发生多起制药反应釜事故，同一工厂一个多月内两度出事。印度 API/中间体集群（海得拉巴、维沙卡帕特南）以多品种、间歇式、改造频繁为特点，工艺安全信息与反应危害评估常不足。巡检重点：夜班人员配置与操作程序、反应量热数据、釜体泄放与骤冷、溶剂回收区防火分隔，以及前次事故整改是否闭环。",
@@ -297,6 +346,7 @@ window.CURATED_NEWS = [
     country: "韩国·大田",
     date: "2026-03-20",
     category: "incident",
+    causes: [{ peril: "fire", cause: "general" }, { peril: "fire", cause: "reactive" }],
     title: "韩国大田汽车零部件厂大火：14死60伤，现场储存约200公斤金属钠",
     summary: "3月20日13时17分（韩国时间），大田大德区文坪洞安全工业（Anjun Industrial）发动机气门工厂起火，造成14人死亡、60人受伤，火势约10小时30分钟后（23时48分）扑灭。三层厂房内储存约200公斤金属钠，内部覆盖生产油污，火势迅速蔓延至上层，厂房烧毁并局部坍塌。消防出动逾千人、约200台装备。",
     fm:
@@ -322,6 +372,7 @@ window.CURATED_NEWS = [
     country: "印度·特伦甘纳",
     date: "2026-02-20",
     category: "incident",
+    causes: [{ peril: "fire", cause: "liquid" }],
     title: "印度 VJ Sai 化学实验室反应釜区爆炸起火，1名化学师死亡",
     summary: "据报道，2月20日（周五）14时20分左右，特伦甘纳邦 Yadadri Bhuvanagiri 区 Dothigudem 的 VJ Sai Chemical Labs（VJ Sai Pharma）D 区发生爆炸起火，一名化学师在向反应釜加注溶剂时被烧身亡。监控录像显示爆炸发生时他正在处理桶装化学品。各报道对其年龄（35或39岁）说法不一，当局已调查事故原因及安全规程执行情况。",
     fm: "与8月 Hazelo Lab 事故同在 Dothigudem。“向反应釜加注溶剂时起火”是制药厂最常见的场景之一：静电积聚、敞口加料、桶装溶剂就近存放。检查要点：溶剂转移是否密闭并接地跨接、加料口惰化、车间内溶剂存量控制。印度制药集群自2024年 Atchutapuram（17死）、2025年 Sigachi（46死）后事故仍然频发，可作为“区域风险画像”课程案例。",
@@ -391,6 +442,82 @@ window.CURATED_NEWS = [
     ],
   },
 
+  {
+    id: "asia-india-mrpl-2026-09",
+    region: "asia",
+    country: "印度·卡纳塔克",
+    date: "2026-09-30",
+    category: "incident",
+    causes: [{ peril: "equipment", cause: "pressure" }, { peril: "fire", cause: "gas" }],
+    title: "印度 MRPL 炼厂高压冷分离器破裂爆炸起火，1死多伤",
+    summary: "9月30日12时20分左右，印度芒格洛尔炼油石化公司（MRPL）位于芒格洛尔的炼厂，延迟焦化瓦斯油加氢处理装置的高压冷分离器破裂（有报道称操作压力约70 bar），随后发生爆炸和火灾。企业隔离了装置界区并出动应急消防，14时47分火灾完全扑灭。企业向交易所披露1人死亡、1人烧伤，部分媒体报道受伤人数为9人，一名员工烧伤面积约35%。破裂原因尚待详细调查。",
+    fm: "加氢装置高压分离器内是高压氢气与烃类，一旦破裂即为高能物理爆炸叠加可燃气体火灾。检查要点：高压容器的检验计划与壁厚监测（氢腐蚀、湿硫化氢开裂）、高低压串压保护、液位控制失效导致的串压情景、紧急泄压系统、装置间距与周边设备的冲击波暴露。",
+    refs: ["7-43", "7-91", "7-49", "7-42"],
+    discuss: "加氢装置中，高压分离器液位失控为什么会威胁下游低压设备？对应的保护层有哪些？",
+    tags: ["加氢", "高压分离器", "炼油", "印度"],
+    imagePages: [
+      "https://www.thenewsminute.com/amp/story/karnataka/explosion-reported-at-mrpl-refinery-in-mangaluru-rescue-ops-underway",
+      "https://www.deccanherald.com/india/karnataka/explosion-mrpl-kills-1-injures-2449793",
+      "https://www.hazardexonthenet.net/article/224281/India-MRPL-refinery-explosion-kills-one-and-injures-nine-after-separator-rupture.aspx",
+      "https://www.ogj.com/refining-processing/news/55408956/mrpl-refinery-fire-at-coker-adjacent-plant-kills-one-injures-another",
+    ],
+    sources: [
+      { name: "Oil & Gas Journal", url: "https://www.ogj.com/refining-processing/news/55408956/mrpl-refinery-fire-at-coker-adjacent-plant-kills-one-injures-another" },
+      { name: "HazardEx", url: "https://www.hazardexonthenet.net/article/224281/India-MRPL-refinery-explosion-kills-one-and-injures-nine-after-separator-rupture.aspx" },
+      { name: "Deccan Herald", url: "https://www.deccanherald.com/india/karnataka/explosion-mrpl-kills-1-injures-2449793" },
+    ],
+  },
+  {
+    id: "asia-thailand-floods-2026-09",
+    region: "asia",
+    country: "泰国",
+    date: "2026-09",
+    category: "incident",
+    causes: [{ peril: "natural", cause: "flood" }],
+    title: "泰国洪灾冲击工业区：安美德城春武里堤坝溃决，4,600余家企业受灾",
+    summary: "9月起泰国多地洪灾，工业部统计59个府4,635家企业受灾，初步损失182.1亿泰铢，其中工业园区内企业损失约178.5亿泰铢。受灾最重的安美德城春武里（Amata City Chonburi）工业园因土堤溃决，7至10期区域水深30–70厘米，至少34家工厂直接受损。丰田4座工厂一度停产。洪水损坏了机器设备和原材料。",
+    fm: "2011年泰国洪灾后，工业园区普遍加高了围堤，本次溃决说明“园区级防洪”同样可能失效。检查要点：工厂自身的防洪等级（设计洪水位与关键设备标高）、电气室与控制室的位置、可移动挡水板与排水泵的应急方案、原料与成品仓库的离地高度、洪水退去后的设备干燥与复电程序。营业中断往往比直接损失更大。",
+    refs: ["1-40"],
+    discuss: "园区围堤溃决、水深50厘米时，你客户厂内哪些设备会首先失效？恢复生产需要多长时间？",
+    tags: ["洪水", "工业园区", "泰国", "营业中断"],
+    imagePages: [
+      "https://www.nationthailand.com/business/economy/40071775",
+      "https://www.bangkokpost.com/business/general/3332355/floods-have-damaged-4500-factories",
+      "https://www.thestar.com.my/business/business-news/2026/09/30/thai-floods-disrupt-factories-capital-still-at-risk-pm-says",
+      "https://www.thaiexaminer.com/thai-news-foreigners/2026/10/04/thai-industrial-base-hammered-by-flooding-crisis-over-4k-firms-report-a-need-for-financial-assistance/",
+    ],
+    sources: [
+      { name: "The Nation：Floods hit 4,635 businesses", url: "https://www.nationthailand.com/business/economy/40072248" },
+      { name: "The Nation：Severe floods inundate Thai factories", url: "https://www.nationthailand.com/business/economy/40071775" },
+      { name: "Bangkok Post", url: "https://www.bangkokpost.com/business/general/3332355/floods-have-damaged-4500-factories" },
+    ],
+  },
+  {
+    id: "asia-kumamoto-quake-2026-07",
+    region: "asia",
+    country: "日本·熊本",
+    date: "2026-07-28",
+    category: "incident",
+    causes: [{ peril: "natural", cause: "quake" }, { peril: "fire", cause: "gas" }],
+    title: "日本熊本7.1级地震：日本制纸八代工厂烟囱倒塌致9死，半导体与汽车厂停产",
+    summary: "7月28日熊本县发生7.1级地震。日本制纸八代工厂烟囱倒塌，造成9人死亡；该厂9月4日在拆除烟囱时再次起火（无人受伤）。瑞萨电子两座工厂出现墙体开裂、吊顶脱落和漏水后停产，台积电、丰田在当地的生产也受到影响。鹿岛町一处购物中心发生爆炸，经济产业省认为可能由餐饮用液化石油气引起。",
+    fm: "地震损失的三种典型形态在这次事件中都出现了：①高耸结构（烟囱、塔器）倒塌；②非结构构件（吊顶、管道、喷淋支管）损坏导致漏水与停产；③震后燃气泄漏与火灾，以及灾后拆除作业中的二次火灾。化工厂需关注：塔器与球罐支撑的抗震设计、管道柔性连接、地震自动切断阀、喷淋与消防水系统的抗震支吊架。",
+    refs: ["1-2", "7-43"],
+    discuss: "地震后恢复生产前，你会要求客户检查哪些设备和系统？列出优先顺序。",
+    tags: ["地震", "烟囱倒塌", "Natech", "半导体", "营业中断"],
+    imagePages: [
+      "https://www.japantimes.co.jp/news/2026/09/04/japan/society/nippon-paper-fire/",
+      "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
+      "https://asia.nikkei.com/economy/natural-disasters/kumamoto-quake-disrupts-tsmc-toyota-operations-in-southern-japan",
+      "https://en.wikipedia.org/wiki/2026_Kumamoto_earthquake",
+    ],
+    sources: [
+      { name: "Nikkei Asia", url: "https://asia.nikkei.com/economy/natural-disasters/kumamoto-quake-disrupts-tsmc-toyota-operations-in-southern-japan" },
+      { name: "The Japan Times：Nippon Paper 工厂起火", url: "https://www.japantimes.co.jp/news/2026/09/04/japan/society/nippon-paper-fire/" },
+      { name: "CBS News", url: "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/" },
+    ],
+  },
+
   /* ============================ 国际 ============================ */
   {
     id: "intl-csb-shell-monaca-2026-09",
@@ -415,6 +542,7 @@ window.CURATED_NEWS = [
     country: "墨西哥",
     date: "2026-09-14",
     category: "incident",
+    causes: [{ peril: "fire", cause: "liquid" }],
     title: "墨西哥韦拉克鲁斯 Jáltipan 盐矿卤水井爆炸起火，3人死亡",
     summary: "9月14日下午，墨西哥韦拉克鲁斯州 Jáltipan 的 PMV Minera 盐厂一口含柴油的卤水井发生爆炸并起火，造成3人死亡、1人受伤（初期报道为2死）。企业称事发时正在进行维修作业。州民防部门表示尚不能将起因归于泄漏、管道或特定技术故障，事故原因在调查中；部分媒体报道周边社区曾预防性疏散。该盐矿为氯碱/氯乙烯产业链提供原料。",
     fm: "上游原料设施（盐井、卤水）往往不在主装置的风险评估范围内，却可能成为氯碱—VCM—PVC 链条的单点故障。“维修作业中爆炸”再次指向作业许可与隔离管理。开展营业中断评估时，应把关键原料供应设施纳入依赖关系图。",
@@ -491,6 +619,7 @@ window.CURATED_NEWS = [
     country: "美国·西弗吉尼亚",
     date: "2026-04-22",
     category: "incident",
+    causes: [{ peril: "fire", cause: "reactive" }],
     title: "美国西弗吉尼亚 Institute 催化剂工厂退役作业中化学品反应释放硫化氢，2人死亡",
     summary: "4月22日，Ames Goldsmith 公司位于西弗吉尼亚 Institute 的催化剂精炼厂在退役作业中，员工先将化学溶液泵入一个敞口废水接收罐（高约1.8米、直径约2.7米、容积约2,227加仑），再向同一罐中加入稀硝酸，发生剧烈反应并释放硫化氢，造成2人死亡，数十人送医（各报道数字不一，CSB统计重伤4人）。CSB 8月13日发布调查进展：公司没有通过废水系统处置化学品的书面程序，员工未佩戴呼吸器或气体检测仪，现场呼吸器滤罐也无法防护硫化氢。",
     fm: "“退役/清罐”属于非常规作业，是化学品不相容混合的高发场景。检查重点：退役作业的变更管理与作业许可、系统隔离与清洗确认、不相容化学品矩阵、共用罐/泵/管线的切换管理，以及有毒气体检测与个体防护。CSB 调查进展中的储罐照片可直接用作培训素材。",
@@ -544,6 +673,31 @@ window.CURATED_NEWS = [
     sources: [
       { name: "Inspectioneering", url: "https://inspectioneering.com/news/2026-02-18/11940/us-chemical-safety-board-releases-volume-4-of-chemical-incident-reports" },
       { name: "CSB 已完成调查", url: "https://www.csb.gov/investigations/completed-investigations/" },
+    ],
+  },
+  {
+    id: "intl-geelong-refinery-2026-04",
+    region: "intl",
+    country: "澳大利亚",
+    date: "2026-04-15",
+    category: "incident",
+    causes: [{ peril: "equipment", cause: "integrity" }, { peril: "fire", cause: "gas" }],
+    title: "澳大利亚 Geelong 炼厂烷基化装置设备故障泄漏起火，燃烧13小时",
+    summary: "4月15日23时后，Viva Energy 位于维多利亚州 Geelong 的炼厂发生火灾。官方称设备故障导致大量烃类和气体泄漏并引发连串爆炸，火点位于汽油联合装置的烷基化单元，约50名员工全部安全撤离，消防用约13小时扑灭。火灾后汽油产量降至约60%，航煤与柴油约80%。企业承认3月曾推迟部分维护，但称与事故无关。该厂供应澳大利亚约10%、维多利亚州一半以上的燃料。",
+    fm: "烷基化装置涉及氢氟酸或硫酸及轻烃，泄漏同时带来火灾和毒性风险。这起事故的价值在于营业中断：一套单元起火即导致全厂汽油产量降至六成。检查要点：维护推迟的审批与风险评估、关键设备的检验逾期情况、装置间防火间距与水喷雾覆盖、单元级隔离能力（能否只停一个单元）。",
+    refs: ["7-43", "7-42", "7-14"],
+    discuss: "客户提出推迟大修一年以节约成本，你需要哪些信息来判断风险是否可接受？",
+    tags: ["炼油", "烷基化", "维护推迟", "营业中断"],
+    imagePages: [
+      "https://www.abc.net.au/news/2026-04-17/geelong-refinery-fire-visual-explainer/106571216",
+      "https://www.abc.net.au/news/2026-04-16/viva-energy-geelong-oil-refinery-fire-cause-petrol-prices/106570810",
+      "https://www.sbs.com.au/news/article/viva-energy-oil-refinery-fire-geelong-production-resumes/gm4qo3flw",
+      "https://en.wikipedia.org/wiki/Geelong_Oil_Refinery",
+    ],
+    sources: [
+      { name: "ABC News：事故经过图解", url: "https://www.abc.net.au/news/2026-04-17/geelong-refinery-fire-visual-explainer/106571216" },
+      { name: "ABC News", url: "https://www.abc.net.au/news/2026-04-16/viva-energy-geelong-oil-refinery-fire-cause-petrol-prices/106570810" },
+      { name: "SBS News", url: "https://www.sbs.com.au/news/article/viva-energy-oil-refinery-fire-geelong-production-resumes/gm4qo3flw" },
     ],
   },
 ];

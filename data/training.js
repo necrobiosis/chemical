@@ -114,6 +114,7 @@ window.TRAINING = {
     { no: "7-91", title: "Hydrogen（氢气）", use: "加氢、制氢、氢能" },
     { no: "7-99", title: "Heat Transfer by Organic and Synthetic Fluids（有机热载体）", use: "导热油系统" },
     { no: "7-110", title: "Industrial Control Systems（工业控制系统）", use: "DCS/SIS 可靠性与网络安全" },
+    { no: "5-4", title: "Transformers（变压器）", use: "变电站、配电" },
     { no: "1-40", title: "Flood（洪水）", use: "沿江沿海园区" },
     { no: "1-2", title: "Earthquakes（地震）", use: "日本、台湾、印尼等" },
     { no: "1-28", title: "Wind Design（风荷载设计）", use: "台风区域" },

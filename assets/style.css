@@ -14,6 +14,12 @@
   --intl: #1d4ed8;
   --intl-soft: #e1e9fd;
   --fm-bg: #fff8e6;
+  --p-fire: #c2410c;
+  --p-fire-soft: #ffedd5;
+  --p-equipment: #4338ca;
+  --p-equipment-soft: #e0e7ff;
+  --p-natural: #047857;
+  --p-natural-soft: #d1fae5;
   --fm-border: #e8c46a;
   --shadow: 0 1px 2px rgba(16, 24, 20, 0.06), 0 2px 8px rgba(16, 24, 20, 0.04);
   --radius: 10px;
@@ -37,6 +43,12 @@
     --intl: #84adff;
     --intl-soft: #1b2645;
     --fm-bg: #2a2413;
+    --p-fire: #fb923c;
+    --p-fire-soft: #3b2312;
+    --p-equipment: #a5b4fc;
+    --p-equipment-soft: #22254a;
+    --p-natural: #34d399;
+    --p-natural-soft: #10322a;
     --fm-border: #7a6528;
     --shadow: none;
     color-scheme: dark;
@@ -58,6 +70,12 @@
   --intl: #84adff;
   --intl-soft: #1b2645;
   --fm-bg: #2a2413;
+  --p-fire: #fb923c;
+  --p-fire-soft: #3b2312;
+  --p-equipment: #a5b4fc;
+  --p-equipment-soft: #22254a;
+  --p-natural: #34d399;
+  --p-natural-soft: #10322a;
   --fm-border: #7a6528;
   --shadow: none;
   color-scheme: dark;
@@ -236,3 +254,31 @@ td.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   .card > summary.has-thumb { grid-template-columns: minmax(0, 1fr) 96px; gap: 10px; }
   .card .thumb { width: 96px; }
 }
+
+/* Perils (FM risk categories) */
+.p-fire { --pc: var(--p-fire); --pcs: var(--p-fire-soft); }
+.p-equipment { --pc: var(--p-equipment); --pcs: var(--p-equipment-soft); }
+.p-natural { --pc: var(--p-natural); --pcs: var(--p-natural-soft); }
+.peril-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 900px) { .peril-grid { grid-template-columns: 1fr; } }
+.peril-tile { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+.peril-head { display: grid; gap: 2px; padding: 14px 16px 12px; background: var(--pcs); color: var(--text); text-decoration: none; }
+.peril-head:hover .peril-name, .peril-head:focus-visible .peril-name { text-decoration: underline; }
+.peril-en { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pc); font-weight: 600; }
+.peril-name { font-size: 20px; font-weight: 700; color: var(--pc); }
+.peril-count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.peril-count b { color: var(--text); font-size: 15px; }
+.subs { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 16px 14px; }
+.sub { font-size: 13px; padding: 3px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--text); text-decoration: none; background: var(--surface); }
+.sub:hover { border-color: var(--pc); color: var(--pc); }
+.sub .n { color: var(--muted); margin-left: 4px; font-variant-numeric: tabular-nums; }
+.causes { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+a.peril { font-size: 12px; padding: 1px 8px; border-radius: 4px; text-decoration: none; color: var(--pc); background: var(--surface); border: 1px solid var(--pcs); white-space: nowrap; }
+a.peril.primary { background: var(--pcs); border-color: var(--pc); font-weight: 600; }
+a.peril:hover { border-color: var(--pc); }
+.peril-page { border-left: 4px solid var(--pc); padding-left: 14px; }
+.peril-page h1 { color: var(--pc); }
+.peril-page .row { margin-top: 6px; }
+.peril-role { font-size: 12px; color: var(--muted); margin: 6px 0 -6px 2px; }
+a.chip { text-decoration: none; display: inline-block; }
+.sub.zero { opacity: 0.55; }
