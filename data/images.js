@@ -4,7 +4,7 @@ window.NEWS_IMAGES = {
   "none": true
  },
  "cn-inner-mongolia-nitration-2026-03": {
-  "file": "assets/news-img/cn-inner-mongolia-nitration-2026-03.jpg",
+  "file": "assets/news-img/cn-inner-mongolia-nitration-2026-03.webp",
   "src": "https://n.sinaimg.cn/front20260319ac/740/w1080h460/20260319/17cd-877ad57dea375a8ee27d4e1c82e9c0d7.jpg",
   "page": "https://finance.sina.com.cn/jjxw/2026-03-19/doc-inhrpfxw4770620.shtml",
   "credit": "新浪财经",
@@ -48,10 +48,11 @@ window.NEWS_IMAGES = {
     "alt": "",
     "size": "788x283"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/cn-inner-mongolia-nitration-2026-03.webp"
  },
  "cn-shanxi-jiapeng-2026-02": {
-  "file": "assets/news-img/cn-shanxi-jiapeng-2026-02.jpg",
+  "file": "assets/news-img/cn-shanxi-jiapeng-2026-02.webp",
   "src": "https://img.jiemian.com/101/original/20260208/177051897147690500_a700x398.png",
   "page": "https://www.jiemian.com/article/13991622.html",
   "credit": "界面新闻",
@@ -95,10 +96,11 @@ window.NEWS_IMAGES = {
     "alt": "郑秀文三位姐姐到场力挺许志安！饼印家姐罕见出镜，网友赞满分好太太",
     "size": "1080x1081"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/cn-shanxi-jiapeng-2026-02.webp"
  },
  "asia-taiwan-tainan-waste-2026-08": {
-  "file": "assets/news-img/asia-taiwan-tainan-waste-2026-08.jpg",
+  "file": "assets/news-img/asia-taiwan-tainan-waste-2026-08.webp",
   "src": "https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/t3/2026/08/23/35255094.jpg&M=1&s=Y&x=0&y=0&sw=1279&sh=853&exp=3600",
   "page": "https://udn.com/news/story/124990/9708445",
   "credit": "联合新闻网",
@@ -142,10 +144,11 @@ window.NEWS_IMAGES = {
     "alt": "埋有鋁鎂合金的空地遇水爆炸，附近民宅也遭受波及。翻攝畫面  埋有鋁鎂合金的空地遇水爆炸，附近民宅也遭受波及。翻攝畫面",
     "size": "750x750"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-taiwan-tainan-waste-2026-08.webp"
  },
  "asia-india-hazelo-labs-2026-08": {
-  "file": "assets/news-img/asia-india-hazelo-labs-2026-08.jpg",
+  "file": "assets/news-img/asia-india-hazelo-labs-2026-08.webp",
   "src": "https://www.deccanchronicle.com/h-upload/2026/08/22/2079621-fire24.jpg",
   "page": "https://www.deccanchronicle.com/southern-states/telangana/reactor-blast-in-hazelo-pharma-in-bhongir-two-workers-dead-1981234",
   "credit": "Deccan Chronicle",
@@ -189,10 +192,11 @@ window.NEWS_IMAGES = {
     "alt": "Two Killed, 10 Injured In Reactor Explosion At Telangana Pharma Company",
     "size": "1200x675"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-india-hazelo-labs-2026-08.webp"
  },
  "asia-daejeon-fire-2026-03": {
-  "file": "assets/news-img/asia-daejeon-fire-2026-03.jpg",
+  "file": "assets/news-img/asia-daejeon-fire-2026-03.webp",
   "src": "https://img.khan.co.kr/news/2026/03/28/news-p.v1.20260327.381e0a1bfd4a4e79a0f5c58c7433b044_P1.jpeg",
   "page": "https://www.khan.co.kr/article/202603280730001",
   "credit": "京乡新闻",
@@ -236,10 +240,11 @@ window.NEWS_IMAGES = {
     "alt": "[대전=뉴시스] 정병혁 기자 = 23일 대전 대덕구 안전공업 공장 화재 현장에서 유가족 대표를 비롯한 국과수, 소방, 경찰 등 유관기관 관계자들이 합동감식을 위해 이동하고 있다. 2026.03.23. jhope@newsis.com",
     "size": "720x480"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-daejeon-fire-2026-03.webp"
  },
  "asia-india-vj-sai-2026-02": {
-  "file": "assets/news-img/asia-india-vj-sai-2026-02.jpg",
+  "file": "assets/news-img/asia-india-vj-sai-2026-02.webp",
   "src": "https://www.deccanchronicle.com/h-upload/2026/02/20/2013450-20nlg-5a2.jpg",
   "page": "https://www.deccanchronicle.com/southern-states/telangana/chemist-killed-in-reactor-blast-at-yadadri-bhongir-pharma-unit-1938728",
   "credit": "Deccan Chronicle",
@@ -253,10 +258,11 @@ window.NEWS_IMAGES = {
     "alt": "",
     "size": "1599x1066"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-india-vj-sai-2026-02.webp"
  },
  "intl-mexico-jaltipan-2026-09": {
-  "file": "assets/news-img/intl-mexico-jaltipan-2026-09.jpg",
+  "file": "assets/news-img/intl-mexico-jaltipan-2026-09.webp",
   "src": "https://imagenes.excelsior.com.mx/files/og_thumbnail/uploads/2026/09/14/6aa8b63037a81.jpeg",
   "page": "https://www.excelsior.com.mx/nacional/explosion-pozo-sal-jaltipan",
   "credit": "Excélsior",
@@ -270,10 +276,11 @@ window.NEWS_IMAGES = {
     "alt": "",
     "size": "1200x675"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/intl-mexico-jaltipan-2026-09.webp"
  },
  "intl-institute-wv-2026-04": {
-  "file": "assets/news-img/intl-institute-wv-2026-04.jpg",
+  "file": "assets/news-img/intl-institute-wv-2026-04.webp",
   "src": "https://s3.us-east-005.backblazeb2.com/wvmn-s3/2026/08/Catalyst-refiners-tank-490x213.jpg",
   "page": "https://wchsnetwork.com/2026/08/13/u-s-chemical-safety-board-releases-investigation-update-in-deadly-chemical-incident-at-institute-plant/",
   "credit": "WCHS",
@@ -317,7 +324,8 @@ window.NEWS_IMAGES = {
     "alt": "Another view of an incident tank inside the Ames Goldsmith facility. Photo courtesy of the CSB.",
     "size": "702x526"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/intl-institute-wv-2026-04.webp"
  },
  "cn-gansu-jinte-hydrogenation-2026-04": {
   "none": true
@@ -330,7 +338,7 @@ window.NEWS_IMAGES = {
   "none": true
  },
  "asia-india-mrpl-2026-09": {
-  "file": "assets/news-img/asia-india-mrpl-2026-09.jpg",
+  "file": "assets/news-img/asia-india-mrpl-2026-09.webp",
   "src": "https://cf-images.assettype.com/thenewsminute%2F2026-09-30%2Fvc9oqybx%2Fb9de4d12-5a4a-4cce-8bb2-36d1254f6d52.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
   "page": "https://www.thenewsminute.com/amp/story/karnataka/explosion-reported-at-mrpl-refinery-in-mangaluru-rescue-ops-underway",
   "credit": "The News Minute",
@@ -356,10 +364,11 @@ window.NEWS_IMAGES = {
     "alt": "MRPL refinery fire at coker-adjacent plant kills one, injures another | Oil & Gas Journal",
     "size": "1200x630"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-india-mrpl-2026-09.webp"
  },
  "asia-thailand-floods-2026-09": {
-  "file": "assets/news-img/asia-thailand-floods-2026-09.jpg",
+  "file": "assets/news-img/asia-thailand-floods-2026-09.webp",
   "src": "https://media.nationthailand.com/uploads/images/md/2026/10/SVLa2ubkwKHPnxZS2nK6.webp",
   "page": "https://www.nationthailand.com/business/economy/40071775",
   "credit": "The Nation",
@@ -373,10 +382,11 @@ window.NEWS_IMAGES = {
     "alt": "Severe Floods Inundate Thai Factories, Causing Over $30m in Direct Losses",
     "size": "1300x731"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-thailand-floods-2026-09.webp"
  },
  "asia-kumamoto-quake-2026-07": {
-  "file": "assets/news-img/asia-kumamoto-quake-2026-07.jpg",
+  "file": "assets/news-img/asia-kumamoto-quake-2026-07.webp",
   "src": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/07/28/d8f1c30c-5af0-408b-9e54-05283cc91c5b/thumbnail/1200x630/2d07f20b4e7883345d710f74c4f96225/japan-mall-earthquake-kumamoto.jpg",
   "page": "https://www.cbsnews.com/news/strong-earthquake-with-7-1-magnitude-strikes-southern-japan-tsunami-alert-issued/",
   "credit": "CBS News",
@@ -390,10 +400,11 @@ window.NEWS_IMAGES = {
     "alt": "Japan earthquake kills at least 13 as rescuers search for people trapped in damaged mall and factory - CBS News",
     "size": "1200x630"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/asia-kumamoto-quake-2026-07.webp"
  },
  "intl-geelong-refinery-2026-04": {
-  "file": "assets/news-img/intl-geelong-refinery-2026-04.jpg",
+  "file": "assets/news-img/intl-geelong-refinery-2026-04.webp",
   "src": "https://live-production.wcms.abc-cdn.net.au/b3438e06f68eb25df55389c6867ad213?impolicy=wcms_watermark_news&cropH=949&cropW=1688&xPos=77&yPos=145&width=862&height=485&imformat=generic",
   "page": "https://www.abc.net.au/news/2026-04-17/geelong-refinery-fire-visual-explainer/106571216",
   "credit": "ABC News",
@@ -437,6 +448,7 @@ window.NEWS_IMAGES = {
     "alt": "a phone photo of smoke lit up on the skyline behind a Viva Energy sign  A witness described the Geelong refinery fire as sounding like loud, kind of sucking noise. ( Supplied: Ben Young )",
     "size": "862x575"
    }
-  ]
+  ],
+  "thumb": "assets/news-img/thumb/intl-geelong-refinery-2026-04.webp"
  }
 };

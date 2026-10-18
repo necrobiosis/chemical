@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 为精选新闻中的事故从原始新闻报道中提取配图（只用报道里的真实照片，不生成图片）。
 // 依次抓取每条事故的 imagePages / sources 网页，收集 og:image 与正文图片，
-// 按“是否像现场照片”打分，下载最佳一张并压缩到 assets/news-img/<id>.jpg，
+// 按“是否像现场照片”打分，下载最佳一张，保存为 WebP 大图 assets/news-img/<id>.webp 与缩略图 assets/news-img/thumb/<id>.webp，
 // 记录来源与候选列表到 data/images.js。
 //
 // 用法：node scripts/fetch-images.mjs [--force] [--candidates] [--only <id>]
@@ -101,8 +101,9 @@ async function download(c) {
   if (ratio > 3.2 || ratio < 0.5) throw new Error(`比例异常 ${meta.width}x${meta.height}`);
   return { buf, meta };
 }
-const save = (buf, file, width) =>
-  sharp(buf).rotate().resize({ width, withoutEnlargement: true }).jpeg({ quality: 78, mozjpeg: true }).toFile(file);
+// WebP 比 JPEG 小约 20–40%；列表中的缩略图单独生成小尺寸文件，避免为 168px 的显示下载整张大图
+const save = (buf, file, width, quality = 74) =>
+  sharp(buf).rotate().resize({ width, withoutEnlargement: true }).webp({ quality }).toFile(file);
 
 const OUTLETS = { "khan.co.kr": "京乡新闻", "newsis.com": "纽西斯通讯社", "excelsior.com.mx": "Excélsior", "unotv.com": "UnoTV", "proceso.com.mx": "Proceso", "ifeng.com": "凤凰网", "jiemian.com": "界面新闻", "deccanchronicle.com": "Deccan Chronicle", "siasat.com": "Siasat", "udn.com": "联合新闻网", "qq.com": "腾讯新闻", "inews.qq.com": "腾讯新闻", "thepaper.cn": "澎湃新闻", "wchsnetwork.com": "WCHS", "thenewsminute.com": "The News Minute", "abc.net.au": "ABC News", "japantimes.co.jp": "The Japan Times", "bangkokpost.com": "Bangkok Post", "nationthailand.com": "The Nation", "sina.com.cn": "新浪财经" };
 const creditOf = (n, page) => {
@@ -119,21 +120,23 @@ const creditOf = (n, page) => {
 };
 
 /* ---------- 主流程 ---------- */
-await mkdir(IMG_DIR, { recursive: true });
+await mkdir(path.join(IMG_DIR, "thumb"), { recursive: true });
 if (CANDIDATES) await mkdir(CAND_DIR, { recursive: true });
 const result = { ...previous };
 const targets = NEWS.filter((n) => n.category === "incident" && (!ONLY || n.id === ONLY));
 
 for (const n of targets) {
   const prev = previous[n.id];
-  const file = `assets/news-img/${n.id}.jpg`;
+  const file = `assets/news-img/${n.id}.webp`;
+  const thumbFile = `assets/news-img/thumb/${n.id}.webp`;
   if (n.imageNone) {
     result[n.id] = { none: true };
     await rm(path.join(root, file), { force: true });
+    await rm(path.join(root, thumbFile), { force: true });
     console.log(`- ${n.id}: 标记为无现场图`);
     continue;
   }
-  const settled = prev && prev.file && existsSync(path.join(root, prev.file)) && prev.pick === (n.imagePick ?? null) && prev.override === (n.image || null);
+  const settled = prev && prev.file === file && existsSync(path.join(root, file)) && existsSync(path.join(root, thumbFile)) && prev.pick === (n.imagePick ?? null) && prev.override === (n.image || null);
   if (settled && !FORCE && !CANDIDATES) {
     console.log(`= ${n.id}: 已有配图`);
     continue;
@@ -188,11 +191,13 @@ for (const n of targets) {
   const pick = Math.min(n.imagePick ?? 0, usable.length - 1);
   const chosen = usable[pick];
   await save(chosen.buf, path.join(root, file), 960);
+  await save(chosen.buf, path.join(root, thumbFile), 360, 70);
   if (CANDIDATES) {
-    for (const [k, c] of usable.entries()) await save(c.buf, path.join(CAND_DIR, `${n.id}-${k}.jpg`), 360);
+    for (const [k, c] of usable.entries()) await save(c.buf, path.join(CAND_DIR, `${n.id}-${k}.webp`), 360);
   }
   result[n.id] = {
     file,
+    thumb: thumbFile,
     src: chosen.src,
     page: chosen.page,
     credit: creditOf(n, chosen.page),

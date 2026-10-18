@@ -90,7 +90,7 @@
   };
   const thumb = (n, cls) => {
     const im = imgOf(n);
-    return im ? `<img class="${cls}" src="${esc(im.file)}" alt="${esc(n.title)}（${esc(im.credit)}报道图片）" loading="lazy" onerror="this.remove()">` : "";
+    return im ? `<img class="${cls}" src="${esc(im.thumb || im.file)}" alt="${esc(n.title)}（${esc(im.credit)}报道图片）" loading="lazy" onerror="this.remove()">` : "";
   };
   function figure(n) {
     const im = IMAGES[n.id];
@@ -159,20 +159,17 @@
     )} · ${updatedText()}</p>${toggle}${list}</aside>`;
   }
 
+  // 一排筛选按钮：options 为 [值, 显示名, 数量]，首个固定为“全部”
+  function chipRow(key, total, options) {
+    const btn = (value, label, n) =>
+      `<button class="chip ${filters[key] === value ? "active" : ""}" data-filter="${key}" data-value="${value}">${label}<span class="n">${n}</span></button>`;
+    return btn("all", "全部", total) + options.filter((o) => o[2]).map((o) => btn(...o)).join("");
+  }
+
   function chips(key, list) {
     const counts = {};
     list.forEach((n) => (counts[n.category] = (counts[n.category] || 0) + 1));
-    const all = `<button class="chip ${filters[key] === "all" ? "active" : ""}" data-filter="${key}" data-value="all">全部<span class="n">${list.length}</span></button>`;
-    return (
-      all +
-      Object.keys(CATS)
-        .filter((c) => counts[c])
-        .map(
-          (c) =>
-            `<button class="chip ${filters[key] === c ? "active" : ""}" data-filter="${key}" data-value="${c}">${CATS[c]}<span class="n">${counts[c]}</span></button>`
-        )
-        .join("")
-    );
+    return chipRow(key, list.length, Object.keys(CATS).map((c) => [c, CATS[c], counts[c]]));
   }
 
   /* ---------- views ---------- */
@@ -203,8 +200,7 @@
     const latestIncident = NEWS.find((n) => n.category === "incident" && n.discuss);
 
     const weekAgo = Date.now() - 7 * 86400000;
-    const majors = Object.keys(REGIONS)
-      .flatMap((r) => ((FEEDS.items && FEEDS.items[r]) || []).map((i) => Object.assign({ region: r }, i)))
+    const majors = FEED_ALL
       .filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo))
       .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.date || "").localeCompare(a.date || ""))
       .slice(0, 10);
@@ -235,15 +231,20 @@
 
   const INCIDENTS = NEWS.filter((n) => n.causes);
   const matches = (causes, peril, cause) => (causes || []).some((c) => c.peril === peril && (!cause || c.cause === cause));
+  // 各起因的事故数只在加载时统计一次：键为 "fire" 或 "fire/runaway"，primary 为主因计数
+  const COUNTS = { primary: {} };
+  INCIDENTS.forEach((n) => {
+    COUNTS.primary[n.causes[0].peril] = (COUNTS.primary[n.causes[0].peril] || 0) + 1;
+    new Set(n.causes.flatMap((c) => [c.peril, `${c.peril}/${c.cause}`])).forEach((k) => (COUNTS[k] = (COUNTS[k] || 0) + 1));
+  });
+  const count = (peril, cause) => COUNTS[cause ? `${peril}/${cause}` : peril] || 0;
 
   function perilSection() {
     const tiles = PERILS.map((p) => {
-      const rel = INCIDENTS.filter((n) => matches(n.causes, p.id));
-      const prim = rel.filter((n) => n.causes[0].peril === p.id).length;
       const auto = FEED_ALL.filter((i) => matches(i.causes, p.id)).length;
       const subs = p.causes
         .map((c) => {
-          const k = INCIDENTS.filter((n) => matches(n.causes, p.id, c.id)).length;
+          const k = count(p.id, c.id);
           return `<a class="sub${k ? "" : " zero"}" href="#/peril/${p.id}?c=${c.id}">${esc(c.name)}<span class="n">${k}</span></a>`;
         })
         .join("");
@@ -251,7 +252,7 @@
           <a class="peril-head" href="#/peril/${p.id}">
             <span class="peril-en">${esc(p.en)}</span>
             <span class="peril-name">${esc(p.name)}</span>
-            <span class="peril-count"><b>${rel.length}</b> 起精选事故（主因 ${prim}）${auto ? ` · 实时动态 ${auto} 条` : ""}</span>
+            <span class="peril-count"><b>${count(p.id)}</b> 起精选事故（主因 ${COUNTS.primary[p.id] || 0}）${auto ? ` · 实时动态 ${auto} 条` : ""}</span>
           </a>
           <div class="subs">${subs}</div>
         </div>`;
@@ -267,14 +268,10 @@
       (a, b) => (b.causes[0].peril === id) - (a.causes[0].peril === id) || b.date.localeCompare(a.date)
     );
     const autos = FEED_ALL.filter((i) => matches(i.causes, id, cause));
-    const allRel = INCIDENTS.filter((n) => matches(n.causes, id));
     const chipsHtml =
-      `<a class="chip ${!cause ? "active" : ""}" href="#/peril/${id}">全部<span class="n">${allRel.length}</span></a>` +
+      `<a class="chip ${!cause ? "active" : ""}" href="#/peril/${id}">全部<span class="n">${count(id)}</span></a>` +
       p.causes
-        .map((c) => {
-          const k = INCIDENTS.filter((n) => matches(n.causes, id, c.id)).length;
-          return `<a class="chip ${cause === c.id ? "active" : ""}" href="#/peril/${id}?c=${c.id}">${esc(c.name)}<span class="n">${k}</span></a>`;
-        })
+        .map((c) => `<a class="chip ${cause === c.id ? "active" : ""}" href="#/peril/${id}?c=${c.id}">${esc(c.name)}<span class="n">${count(id, c.id)}</span></a>`)
         .join("");
     const other = PERILS.filter((x) => x.id !== id)
       .map((x) => `<a class="peril p-${x.id}" href="#/peril/${x.id}">${esc(x.name)} →</a>`)
@@ -325,14 +322,11 @@
   function viewCases() {
     const all = NEWS.filter((n) => n.category === "incident" || n.category === "investigation");
     const byRegion = filters.cases === "all" ? all : all.filter((n) => n.region === filters.cases);
-    const regionChips =
-      `<button class="chip ${filters.cases === "all" ? "active" : ""}" data-filter="cases" data-value="all">全部<span class="n">${all.length}</span></button>` +
-      Object.keys(REGIONS)
-        .map((r) => {
-          const c = all.filter((n) => n.region === r).length;
-          return `<button class="chip ${filters.cases === r ? "active" : ""}" data-filter="cases" data-value="${r}">${REGIONS[r].name}<span class="n">${c}</span></button>`;
-        })
-        .join("");
+    const regionChips = chipRow(
+      "cases",
+      all.length,
+      Object.keys(REGIONS).map((r) => [r, REGIONS[r].name, all.filter((n) => n.region === r).length])
+    );
     const rows = byRegion
       .map(
         (n) =>
@@ -409,12 +403,7 @@
     const counts = {};
     SRC.sources.forEach((s) => (counts[s.type] = (counts[s.type] || 0) + 1));
     const f = filters.sources;
-    const chipsHtml =
-      `<button class="chip ${f === "all" ? "active" : ""}" data-filter="sources" data-value="all">全部<span class="n">${SRC.sources.length}</span></button>` +
-      typeOrder
-        .filter((t) => counts[t])
-        .map((t) => `<button class="chip ${f === t ? "active" : ""}" data-filter="sources" data-value="${t}">${TYPES[t]}<span class="n">${counts[t]}</span></button>`)
-        .join("");
+    const chipsHtml = chipRow("sources", SRC.sources.length, typeOrder.map((t) => [t, TYPES[t], counts[t]]));
     const stateOf = (s) => {
       const x = st[s.id];
       if (x && x.state === "ok") return `<span class="badge ok">已接入 · ${x.count} 条</span>`;
@@ -464,12 +453,7 @@
     const k = q.toLowerCase();
     const hit = (s) => String(s || "").toLowerCase().includes(k);
     const curated = NEWS.filter((n) => [n.title, n.summary, n.fm, n.country, (n.tags || []).join(" ")].some(hit));
-    const auto = [];
-    Object.keys(REGIONS).forEach((r) =>
-      ((FEEDS.items && FEEDS.items[r]) || []).forEach((i) => {
-        if (hit(i.title) || hit(i.source)) auto.push(Object.assign({ region: r }, i));
-      })
-    );
+    const auto = FEED_ALL.filter((i) => hit(i.title) || hit(i.source));
     return `
       <div class="page-head"><h1>搜索：“${esc(q)}”</h1><p>精选 ${curated.length} 条 · 实时动态 ${auto.length} 条</p></div>
       <div class="cards">${curated.map((n) => card(n)).join("") || `<div class="empty">精选新闻中无匹配结果</div>`}</div>
@@ -530,8 +514,7 @@
       const el = document.getElementById(focus);
       if (el) {
         if (el.tagName === "DETAILS") el.open = true;
-        el.scrollIntoView({ block: "start" });
-        window.scrollBy(0, -130);
+        el.scrollIntoView({ block: "start" }); // 顶部留白由 CSS scroll-margin-top 控制，避开吸顶导航
       }
     } else {
       window.scrollTo(0, 0);
@@ -583,10 +566,6 @@
   });
 
   const themeBtn = document.getElementById("theme");
-  try {
-    const saved = localStorage.getItem("theme");
-    if (saved) document.documentElement.dataset.theme = saved;
-  } catch (e) {}
   themeBtn.addEventListener("click", () => {
     const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     const next = cur === "dark" ? "light" : "dark";

@@ -161,6 +161,6 @@ const prevItems = Object.values(previous.items || {}).flat();
 for (const r of Object.keys(items)) items[r] = items[r].slice(0, config.maxPerRegion);
 
 const payload = { updated: new Date().toISOString(), status, items };
-await writeFile(outFile, `// 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑\nwindow.AUTO_FEEDS = ${JSON.stringify(payload, null, 1)};\n`);
+await writeFile(outFile, `// 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑\nwindow.AUTO_FEEDS = ${JSON.stringify(payload)};\n`);
 const majors = Object.values(items).flat().filter((i) => i.major).length;
 console.log(`成功 ${okCount}/${config.sources.length} 个信息源；重大 ${majors} 条；已写入 data/feeds.js`);

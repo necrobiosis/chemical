@@ -282,3 +282,6 @@ a.peril:hover { border-color: var(--pc); }
 .peril-role { font-size: 12px; color: var(--muted); margin: 6px 0 -6px 2px; }
 a.chip { text-decoration: none; display: inline-block; }
 .sub.zero { opacity: 0.55; }
+
+/* 定位到某条新闻或 Data Sheet 时，为吸顶导航留出空间 */
+.card, #ds-hl { scroll-margin-top: 140px; }
