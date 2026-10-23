@@ -77,6 +77,10 @@ python3 -m http.server 8000
 
 仓库 Settings → Pages → Source 选择 “Deploy from a branch”，分支选 `main`（或当前分支）根目录即可。
 
+## 部署到 Lovable
+
+`deploy/lovable-index.html` 是 Lovable 项目使用的外壳页面：打开时通过 GitHub API 取本分支最新提交，再经 jsDelivr CDN 加载该提交的页面、样式、脚本、数据和图片。因此仓库的任何更新（包括每 4 小时的自动新闻）都会直接出现在 Lovable 网站上，无需在 Lovable 重新发布。GitHub API 不可用时回退到文件中写死的 `FALLBACK_SHA`。
+
 ## 说明
 
 “FM 风险视角”为培训用途的工程解读，不代表任何机构的正式立场；Data Sheet 编号仅供索引，请以 FM 官方最新版为准。

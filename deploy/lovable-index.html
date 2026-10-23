@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>化工行业新闻中心</title>
+  <meta name="description" content="面向 FM 亚洲化工专家的行业资讯与培训基地：国内、亚洲、国际三大板块。" />
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <style>#boot{font:15px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#5d6a65;padding:48px 16px;text-align:center}</style>
+</head>
+<body>
+  <div id="boot">化工行业新闻中心加载中…</div>
+  <script>
+  /*
+   * Lovable 外壳：页面内容全部来自 GitHub 仓库 necrobiosis/chemical（经 jsDelivr CDN），
+   * 每次打开取该分支最新提交，因此仓库每 4 小时的自动更新无需在 Lovable 重新发布。
+   */
+  (function () {
+    var REPO = "necrobiosis/chemical";
+    var BRANCH = "claude/chemical-industry-news-hub-wpb91d";
+    var FALLBACK_SHA = "22e0f1c3b12baa203c363d68566a214d41121399"; // GitHub API 不可用时使用的版本
+    var boot = document.getElementById("boot");
+
+    function latestSha() {
+      try {
+        var c = JSON.parse(sessionStorage.getItem("chem-sha") || "null");
+        if (c && Date.now() - c.t < 10 * 60 * 1000) return Promise.resolve(c.sha); // 10 分钟内复用
+      } catch (e) {}
+      return fetch("https://api.github.com/repos/" + REPO + "/commits?sha=" + encodeURIComponent(BRANCH) + "&per_page=1")
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (j) {
+          try { sessionStorage.setItem("chem-sha", JSON.stringify({ sha: j[0].sha, t: Date.now() })); } catch (e) {}
+          return j[0].sha;
+        })
+        .catch(function () { return FALLBACK_SHA; });
+    }
+
+    // 网络偶有抖动：失败时最多重试 2 次
+    function fetchText(url, tries) {
+      tries = tries == null ? 2 : tries;
+      return fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+        .catch(function (e) { if (tries <= 0) throw e; return new Promise(function (ok) { setTimeout(ok, 800); }).then(function () { return fetchText(url, tries - 1); }); });
+    }
+
+    // 一次插入全部脚本：并行下载，async=false 保证按顺序执行；最后一个脚本加载完即完成
+    function loadScripts(srcs) {
+      return Promise.all(srcs.map(function (src) {
+        return new Promise(function (ok, fail) {
+          var s = document.createElement("script");
+          s.src = src; s.async = false; s.onload = ok;
+          s.onerror = function () { // 失败重试一次
+            var r = document.createElement("script");
+            r.src = src + "?retry=1"; r.async = false; r.onload = ok; r.onerror = fail;
+            document.body.appendChild(r);
+          };
+          document.body.appendChild(s);
+        });
+      }));
+    }
+
+    latestSha().then(function (sha) {
+      var base = "https://cdn.jsdelivr.net/gh/" + REPO + "@" + sha + "/";
+      window.SITE_BASE = base;
+      return fetchText(base + "index.html").then(function (html) {
+        var doc = new DOMParser().parseFromString(html, "text/html");
+        var icon = doc.querySelector('link[rel="icon"]');
+        if (icon) document.head.appendChild(document.importNode(icon, true));
+        // 样式以文本方式取回并内联，确保在显示内容前已就绪（样式中没有相对路径资源）
+        return fetchText(base + doc.querySelector('link[rel="stylesheet"]').getAttribute("href")).then(function (cssText) {
+          var style = document.createElement("style");
+          style.textContent = cssText;
+          document.head.appendChild(style);
+          document.body.innerHTML = doc.body.innerHTML;
+          var srcs = [].map.call(doc.querySelectorAll("script[src]"), function (s) { return base + s.getAttribute("src"); });
+          return loadScripts(srcs);
+        });
+      });
+    }).catch(function () {
+      boot.textContent = "内容加载失败，请检查网络后刷新页面。";
+    });
+  })();
+  </script>
+</body>
+</html>
