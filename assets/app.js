@@ -84,19 +84,21 @@
     (refs || []).map((n) => `<a class="ds" href="#/training?ds=${esc(n)}" title="在 Data Sheet 速查中查看">DS ${esc(n)}</a>`).join("");
 
   const IMAGES = window.NEWS_IMAGES || {};
+  // 托管在其他域名（如 Lovable 外壳从 jsDelivr 加载本仓库）时，由外壳设置图片等静态文件的根地址
+  const BASE = window.SITE_BASE || "";
   const imgOf = (n) => {
     const im = IMAGES[n.id];
     return im && im.file ? im : null;
   };
   const thumb = (n, cls) => {
     const im = imgOf(n);
-    return im ? `<img class="${cls}" src="${esc(im.thumb || im.file)}" alt="${esc(n.title)}（${esc(im.credit)}报道图片）" loading="lazy" onerror="this.remove()">` : "";
+    return im ? `<img class="${cls}" src="${esc(BASE + (im.thumb || im.file))}" alt="${esc(n.title)}（${esc(im.credit)}报道图片）" loading="lazy" onerror="this.remove()">` : "";
   };
   function figure(n) {
     const im = IMAGES[n.id];
     if (!im) return "";
     if (!im.file) return `<p class="no-photo">原报道未附现场图片。</p>`;
-    return `<figure class="photo"><img src="${esc(im.file)}" alt="${esc(n.title)}" loading="lazy" onerror="this.parentNode.remove()"><figcaption>图片来源：<a href="${safeUrl(
+    return `<figure class="photo"><img src="${esc(BASE + im.file)}" alt="${esc(n.title)}" loading="lazy" onerror="this.parentNode.remove()"><figcaption>图片来源：<a href="${safeUrl(
       im.page
     )}" target="_blank" rel="noopener">${esc(im.credit)} 报道 ↗</a>，版权归原媒体所有</figcaption></figure>`;
   }
