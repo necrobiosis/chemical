@@ -42,7 +42,7 @@
         .catch(function (e) { if (tries <= 0) throw e; return new Promise(function (ok) { setTimeout(ok, 800); }).then(function () { return fetchText(url, tries - 1); }); });
     }
 
-    // 一次插入全部脚本：并行下载，async=false 保证按顺序执行；最后一个脚本加载完即完成
+    // 插入一组脚本并行下载，全部加载完成后 resolve；单个失败会重试一次
     function loadScripts(srcs) {
       return Promise.all(srcs.map(function (src) {
         return new Promise(function (ok, fail) {
@@ -72,7 +72,8 @@
           document.head.appendChild(style);
           document.body.innerHTML = doc.body.innerHTML;
           var srcs = [].map.call(doc.querySelectorAll("script[src]"), function (s) { return base + s.getAttribute("src"); });
-          return loadScripts(srcs);
+          // 数据文件互不依赖，先并行加载（含重试）；全部就绪后再运行最后的 app.js，避免重试导致执行顺序错乱
+          return loadScripts(srcs.slice(0, -1)).then(function () { return loadScripts(srcs.slice(-1)); });
         });
       });
     }).catch(function () {
