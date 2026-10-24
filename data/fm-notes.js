@@ -1,0 +1,97 @@
+/*
+ * 重大动态的 FM 防损速报（不需要 API 密钥）
+ * ------------------------------------------------------------
+ * 由 Claude Code 会话或每日定时任务（Routine）根据报道撰写，键为原文链接（feeds.js 中条目的 link）。
+ * 字段：
+ *   summary  事故概况（中文 2–3 句，只写报道中的事实，未说明的写“报道未说明”）
+ *   points   FM 防损视角要点（3 条）
+ *   refs     相关 FM Data Sheet 编号（仅限培训基地速查表中的编号）
+ *   event    同一事件的标识：多家媒体报道同一事故时首页只显示一张卡片
+ *   caseId   若案例库已收录该事故，填精选新闻 id，弹窗中提供“查看案例详情”
+ *   notLoss  true 表示不是财产损失事件（会议、网站通报、纯人身伤害等），不再显示为重大
+ *   reason   notLoss 的简短说明
+ *   by / at  撰写者与日期
+ */
+window.FM_NOTES = {
+  "https://www.mem.gov.cn/xw/gdyj/202610/t20261023_736739.shtml": {
+    notLoss: true,
+    reason: "地方应急管理局召开的事故警示教育会议，不是事故报道",
+    by: "Claude Code", at: "2026-10-24",
+  },
+  "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202610/t20261021_736480.shtml": {
+    notLoss: true,
+    reason: "政府网站季度检查情况通报，与事故无关",
+    by: "Claude Code", at: "2026-10-24",
+  },
+  "https://www.safehoo.com/News/News/China/202610/5819365.shtml": {
+    notLoss: true,
+    reason: "台积电高雄厂区施工人员高处坠落（4人死亡），属人身安全事故，报道未涉及财产损失",
+    by: "Claude Code", at: "2026-10-24",
+  },
+
+  // 美国托莱多 GMA 储罐泄漏（多家媒体报道同一事件）
+  "https://info.vanpeople.com/1912862.html": { event: "toledo-gma-2026-10", ref: "toledo" },
+  "https://www.wsws.org/en/articles/2026/10/23/rzsr-o23.html": { event: "toledo-gma-2026-10", ref: "toledo" },
+  "https://economictimes.indiatimes.com/news/international/world-news/toledo-chemical-leak-evacuation-order-expanded-to-3-miles-heres-what-happened-and-latest-updates/articleshow/135093068.cms": { event: "toledo-gma-2026-10", ref: "toledo" },
+  "https://sg.news.yahoo.com/chemical-tank-explodes-ohio-forcing-135614269.html": { event: "toledo-gma-2026-10", ref: "toledo" },
+  "https://www.hindustantimes.com/world-news/us-news/toledo-chemical-leak-forces-evacuations-and-shelter-in-place-order-all-on-emergency-number-road-closures-and-temporary-refuge-facility-101792575961997.html": { event: "toledo-gma-2026-10", ref: "toledo" },
+
+  "https://timesofindia.indiatimes.com/city/hyderabad/2-workers-killed-in-gas-leak-at-chemical-plant-in-telangana/articleshow/135139247.cms": {
+    event: "saraka-gas-leak-2026-10",
+    summary: "10月23日凌晨约3时，印度特伦甘纳邦桑加雷迪县 Gaddapotharam 工业区 Saraka Industries 化工厂 Glaba 车间发生气体泄漏，2名夜班工人吸入后窒息死亡，另有人员受伤。泄漏气体种类和原因报道未说明，警方正在核查安全措施是否到位。",
+    points: [
+      "海得拉巴周边（Gaddapotharam、Pashamylaram 等）是制药与化工中间体集群，夜班人员少、泄漏发现和处置不及时是共性问题，同一区域客户可提高关注。",
+      "检查有毒气体探测与报警联动、受限空间和泄漏区域的进入许可与呼吸防护。",
+      "追查泄漏源的常见环节：反应釜与储罐密封、管线腐蚀，以及尾气吸收系统失效。",
+    ],
+    refs: ["7-43", "7-36"],
+    by: "Claude Code", at: "2026-10-24",
+  },
+  "https://economictimes.indiatimes.com/news/india/bengaluru-building-blast-injures-two-battery-explosion-suspected/articleshow/135086171.cms": {
+    event: "bengaluru-battery-2026-10",
+    summary: "10月21日清晨，印度班加罗尔 Jarmia Road 一栋在建建筑发生爆炸，2人受伤（其中1人失去一根手指）。警方初步怀疑为电池爆炸，具体原因仍在调查，财产损失情况报道未说明。",
+    points: [
+      "锂电池与储能电池在工地、仓库和厂房中越来越常见，热失控可引发火灾和爆炸，且难以用水快速扑灭。",
+      "检查电池储存和充电区域：独立防火分隔、远离可燃物、温度监控与充电管理。",
+      "建设期是防火管理的薄弱阶段：临时用电、可燃物堆放多，而消防设施往往尚未投用。",
+    ],
+    refs: ["10-1"],
+    by: "Claude Code", at: "2026-10-24",
+  },
+  "https://www.csb.gov/final-investigation-report---chevron-refinery-and-fire-/?theme=%2Fetc%2Fpasswd&F_All=y&print=y": {
+    event: "csb-chevron-richmond",
+    summary: "这是美国化学品安全委员会（CSB）关于 2012 年 8 月 6 日雪佛龙里士满炼厂火灾的调查报告页面，并非新发生的事故。原油装置一段侧线管道因硫化腐蚀减薄破裂，泄漏的可燃烃类形成蒸气云并起火。CSB 认为企业未识别该管道的损伤机理和破裂可能，也缺乏泄漏应对指引；其中一项相关建议于 2026 年 3 月结案。",
+    points: [
+      "高温含硫工况下碳钢管道的硫化腐蚀是炼厂的典型损伤机理：检查是否按管段逐一测厚，而不是只测代表性测点。",
+      "泄漏发生后不应在未隔离的情况下带压处置：确认有远程切断阀和书面的泄漏应对程序。",
+      "适合作为“机械完整性 → 管道破裂 → 蒸气云火灾”链条的培训案例。",
+    ],
+    refs: ["7-43", "7-42"],
+    by: "Claude Code", at: "2026-10-24",
+  },
+  "https://scanx.trade/stock-market-news/companies/mangalore-refinery-reports-fire-coker-hydrotreater-unit-one-minor/52306769": {
+    event: "mrpl-2026-09",
+    caseId: "asia-india-mrpl-2026-09",
+    summary: "芒格洛尔炼油石化公司（MRPL）宣布向 9 月 30 日炼厂火灾中遇难工人的家属提供 1.2 千万卢比补偿。事故发生在延迟焦化瓦斯油加氢处理装置：高压冷分离器（报道称约 70 bar）破裂后爆炸起火，约 2.5 小时后扑灭，破裂原因仍在调查。",
+    points: [
+      "加氢装置高压分离器内是高压氢气与烃类，破裂即为物理爆炸叠加火灾：检查高压容器检验计划，以及氢腐蚀、湿硫化氢开裂的监测。",
+      "关注液位控制失效导致的高低压串压，以及紧急泄压系统的能力。",
+      "本站案例库已收录这起事故的详细分析，可结合培训讨论题使用。",
+    ],
+    refs: ["7-43", "7-91", "7-49"],
+    by: "Claude Code", at: "2026-10-24",
+  },
+
+  // 同一事件共用的速报内容
+  _shared: {
+    toledo: {
+      summary: "10月20日（周二）约21时30分，美国俄亥俄州托莱多北部 Progress Avenue 的 MC Tank Transport（Kenan Advantage 集团子公司）一台 5,500 加仑储罐在物料转运过程中出错，罐体破裂并持续向外排放甲基丙烯酸缩水甘油酯（GMA）。当局下令 1 英里内疏散、3 英里内就地避险，约 60 人因眼睛和喉咙灼痛就医；消防未派人进入堵漏，而是任其排放，市长曾警告可能再次爆炸。俄亥俄州环保局称原因是转运操作失误，详细调查尚未公布。",
+      points: [
+        "GMA 是可自聚合的活性单体，受热或混入杂质会放热聚合导致超压：转运和储存时确认阻聚剂含量、温度监控与冷却手段。",
+        "罐车清洗、转运场站常被当作低风险物流设施，但同时存有多种化学品残液：检查不相容物料混合、转运程序与作业许可。",
+        "失控后只能“任其排放”，说明缺少紧急泄压处置与远程隔离手段；同时评估对周边客户的外部暴露和营业中断（疏散区内停工停课）。",
+      ],
+      refs: ["7-49", "7-88", "7-43"],
+    },
+  },
+};

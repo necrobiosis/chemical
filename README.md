@@ -63,7 +63,8 @@ python3 -m http.server 8000
 
 - **事故概况**：优先用 Claude 根据原文整理的中文概况；否则显示报道自带的摘要（og:description）。
 - **FM 防损视角**：有 Claude 速报时为针对该事故的要点；否则按标题判断的起因，显示 `data/perils.js` 中该起因的通用检查要点（弹窗中会注明“非针对本事故的专门分析”）。
-- **启用 Claude 速报**：在仓库 Settings → Secrets and variables → Actions 中添加 `ANTHROPIC_API_KEY`。之后每次抓取会为新出现的重大动态调用 Claude（`scripts/lib/fm-summary.mjs`，每条只调用一次，约 2–3 美分）。Claude 还会判断报道是否真的是事故/损失事件，非事故（如会议、网站检查通报）不再显示为重大。
+- **不用密钥的方式（当前使用）**：`data/fm-notes.js` 保存按原文链接撰写的 FM 速报，由 Claude Code 每日定时任务（Routine，使用 Claude 订阅额度）为新出现的重大动态补写并推送。同一事件的多篇报道用 `event` 合并为首页一张卡片；`notLoss` 标记的非财产损失条目不再显示为重大；`caseId` 指向案例库中已收录的同一事故。
+- **启用 Claude 速报（API 方式，可选）**：在仓库 Settings → Secrets and variables → Actions 中添加 `ANTHROPIC_API_KEY`。之后每次抓取会为新出现的重大动态调用 Claude（`scripts/lib/fm-summary.mjs`，每条只调用一次，约 2–3 美分）。Claude 还会判断报道是否真的是事故/损失事件，非事故（如会议、网站检查通报）不再显示为重大。
 
 ## 事故起因分类
 

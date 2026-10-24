@@ -79,8 +79,20 @@
     });
     return out;
   }
-  // Claude 判定为非事故（如会议、网站检查通报）的条目，不再标记为重大
-  Object.values(FEEDS.items || {}).forEach((list) => list.forEach((i) => i.notLoss && (i.major = false)));
+  // FM 速报（data/fm-notes.js，键为原文链接）；同一事件的多篇报道可共用 _shared 中的内容
+  const NOTES = window.FM_NOTES || {};
+  const noteOf = (i) => {
+    const n = i.link && NOTES[i.link];
+    if (!n) return null;
+    return n.ref && NOTES._shared && NOTES._shared[n.ref] ? Object.assign({}, NOTES._shared[n.ref], n) : n;
+  };
+  // 判定为非财产损失事件（会议、网站通报、纯人身伤害等）的条目，不再标记为重大
+  Object.values(FEEDS.items || {}).forEach((list) =>
+    list.forEach((i) => {
+      const n = noteOf(i);
+      if (i.notLoss || (n && n.notLoss)) i.major = false;
+    })
+  );
   const FEED_ALL = Object.keys(FEEDS.items || {}).flatMap((r) => (FEEDS.items[r] || []).map((i) => Object.assign({ region: r, causes: classifyFeed(i.title) }, i)));
   const dsList = (refs) =>
     (refs || []).map((n) => `<a class="ds" href="#/training?ds=${esc(n)}" title="在 Data Sheet 速查中查看">DS ${esc(n)}</a>`).join("");
@@ -175,29 +187,30 @@
     const c = (i.causes || []).find((x) => PERIL[x.peril]);
     const p = c && PERIL[c.peril];
     const sub = p && p.causeMap[c.cause];
-    const fm = i.fm;
+    const note = noteOf(i);
+    const fm = i.fm || (note && note.summary ? note : null);
     const overview = fm
-      ? `<p>${esc(fm.summary)}</p><p class="nd-note">由 Claude 根据报道原文整理，仅供培训参考</p>`
+      ? `<p>${esc(fm.summary)}</p><p class="nd-note">由 Claude 根据报道整理${fm.at ? `（${esc(fm.at)}）` : ""}，仅供培训参考</p>`
       : i.desc
       ? `<p>${esc(i.desc)}</p><p class="nd-note">报道原文摘要</p>`
       : `<p class="nd-empty">原文未提供摘要，请阅读原文了解详情。</p>`;
-    let points, note, ds;
+    let points, basis, ds;
     if (fm && fm.points && fm.points.length) {
       points = fm.points;
       ds = fm.refs || [];
-      note = "针对本事故的分析";
+      basis = "针对本事故的分析";
     } else if (sub) {
       points = sub.guide || [];
       ds = sub.ds || [];
-      note = `按起因“${sub.name}”匹配的通用检查要点，非针对本事故的专门分析`;
+      basis = `按起因“${sub.name}”匹配的通用检查要点，非针对本事故的专门分析`;
     } else if (p) {
       points = [p.desc];
       ds = p.ds || [];
-      note = `按起因“${p.name}”匹配`;
+      basis = `按起因“${p.name}”匹配`;
     } else {
       points = ["未能从标题自动判断起因。建议阅读原文，确认事故装置、物料与起因后，对照案例库中的同类事故。"];
       ds = [];
-      note = "";
+      basis = "";
     }
     const img = i.img ? `<img src="${esc(BASE + i.img)}" alt="" onerror="this.parentNode.classList.add('noimg');this.remove()">` : "";
     dialog.className = "news-dialog" + (p ? " p-" + p.id : "");
@@ -213,11 +226,12 @@
           ${overview}
           <div class="fm-box"><h4>FM 防损视角</h4>
             <ul>${points.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
-            ${note ? `<p class="nd-note">${esc(note)}</p>` : ""}
+            ${basis ? `<p class="nd-note">${esc(basis)}</p>` : ""}
             ${ds.length ? `<div class="row"><span class="k">参考 Data Sheet：</span>${dsList(ds)}</div>` : ""}
           </div>
           <div class="nd-actions">
             <a class="btn" href="${safeUrl(i.link || i.url)}" target="_blank" rel="noopener">阅读原文 ↗</a>
+            ${note && note.caseId ? `<a class="btn ghost" href="#/news/${esc(note.caseId)}">查看案例详情</a>` : ""}
             ${p ? `<a class="btn ghost" href="#/peril/${p.id}${sub ? "?c=" + c.cause : ""}">查看同类事故</a>` : ""}
           </div>
         </div>
@@ -286,8 +300,19 @@
     const latestIncident = NEWS.find((n) => n.category === "incident" && n.discuss);
 
     const weekAgo = Date.now() - 7 * 86400000;
-    const majors = FEED_ALL
-      .filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo))
+    const recent = FEED_ALL.filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo));
+    // 多家媒体报道同一事件时只保留一张卡片：优先有配图的，其次分数高、日期新的
+    const bestOfEvent = {};
+    recent.forEach((i) => {
+      const ev = (noteOf(i) || {}).event;
+      const cur = ev && bestOfEvent[ev];
+      if (ev && (!cur || (!cur.img && i.img) || (!!cur.img === !!i.img && (i.score || 0) > (cur.score || 0)))) bestOfEvent[ev] = i;
+    });
+    const majors = recent
+      .filter((i) => {
+        const ev = (noteOf(i) || {}).event;
+        return !ev || bestOfEvent[ev] === i;
+      })
       .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.date || "").localeCompare(a.date || ""))
       .slice(0, 9);
     const majorSection = `<div class="section"><h2>近 7 天重大动态 <small>自动识别 · ${esc(SRC.schedule || "")} · ${updatedText()}</small></h2>${
