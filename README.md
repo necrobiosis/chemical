@@ -66,6 +66,14 @@ python3 -m http.server 8000
 - **不用密钥的方式（当前使用）**：`data/fm-notes.js` 保存按原文链接撰写的 FM 速报，由 Claude Code 每日定时任务（Routine，使用 Claude 订阅额度）为新出现的重大动态补写并推送。同一事件的多篇报道用 `event` 合并为首页一张卡片；`notLoss` 标记的非财产损失条目不再显示为重大；`caseId` 指向案例库中已收录的同一事故。
 - **启用 Claude 速报（API 方式，可选）**：在仓库 Settings → Secrets and variables → Actions 中添加 `ANTHROPIC_API_KEY`。之后每次抓取会为新出现的重大动态调用 Claude（`scripts/lib/fm-summary.mjs`，每条只调用一次，约 2–3 美分）。Claude 还会判断报道是否真的是事故/损失事件，非事故（如会议、网站检查通报）不再显示为重大。
 
+## 报告类新闻
+
+关于调查报告、事故报告、调查进展或统计通报发布/更新的新闻（如 CSB 最终报告），带有 `report` 字段：发布机构、报告类型、日期、针对的事故、损失、主要发现、建议、报告原文链接。卡片显示“报告”标签，展开或弹窗中显示“报告要点”面板。
+
+- 精选新闻：在 `data/news.js` 的条目中添加 `report`（参照壳牌 Monaca 条目）。
+- 重大动态：定时任务按 `docs/routine-fm-notes.md` 在 `data/fm-notes.js` 中补写；API 方式由 Claude 在结构化输出中一并生成。
+- 定时任务的具体做法写在 `docs/routine-fm-notes.md`，修改任务行为时编辑该文件即可。
+
 ## 事故起因分类
 
 分类定义在 `data/perils.js`：火灾与爆炸（反应失控、可燃气体爆炸、易燃液体、不相容反应、粉尘、一般可燃物）、设备风险（压力容器/储罐、控制与辅助系统、腐蚀与完整性、转动设备、电气）、自然灾害（洪水暴雨、台风、地震、雷击）。

@@ -117,6 +117,21 @@
     )}" target="_blank" rel="noopener">${esc(im.credit)} 报道 ↗</a>，版权归原媒体所有</figcaption></figure>`;
   }
 
+  // 报告类新闻（调查报告发布/更新）：概括报告本身的内容——发布机构、类型、主要发现、建议
+  function reportBox(r) {
+    if (!r) return "";
+    const list = (title, arr) => (arr && arr.length ? `<h5>${title}</h5><ul>${arr.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : "");
+    return `<div class="report-box">
+        <h4>报告要点 <span class="rb-type">${esc(r.type || "")}</span></h4>
+        <div class="rb-meta">${esc(r.issuer || "")}${r.date ? " · " + esc(r.date) : ""}${r.about ? `<br>针对：${esc(r.about)}` : ""}</div>
+        ${r.impact ? `<p class="rb-impact"><strong>损失：</strong>${esc(r.impact)}</p>` : ""}
+        ${list("主要发现", r.findings)}
+        ${list("建议", r.recommendations)}
+        ${r.url ? `<a class="rb-link" href="${safeUrl(r.url)}" target="_blank" rel="noopener">查看报告原文 ↗</a>` : ""}
+      </div>`;
+  }
+  const reportBadge = `<span class="badge report">报告</span>`;
+
   function card(n, open) {
     const refs = n.refs && n.refs.length ? `<div class="row"><span class="k">参考 Data Sheet：</span>${dsList(n.refs)}</div>` : "";
     const tags = n.tags && n.tags.length ? `<div class="row"><span class="k">标签：</span>${n.tags.map((t) => `<span class="badge">${esc(t)}</span>`).join("")}</div>` : "";
@@ -126,7 +141,7 @@
       <details class="card" id="n-${esc(n.id)}" ${open ? "open" : ""}>
         <summary class="${imgOf(n) ? "has-thumb" : ""}">
           <div class="sum-text">
-            <div class="top">${regionBadge(n.region)}${catBadge(n.category)}<span>${esc(n.country)}</span><span>·</span><time>${fmtDate(n.date)}</time></div>
+            <div class="top">${regionBadge(n.region)}${catBadge(n.category)}${n.report ? reportBadge : ""}<span>${esc(n.country)}</span><span>·</span><time>${fmtDate(n.date)}</time></div>
             ${n.causes ? `<div class="causes">${causeBadges(n)}</div>` : ""}
             <h3>${esc(n.title)}</h3>
             <p class="lead">${esc(n.summary)}</p>
@@ -136,6 +151,7 @@
         <div class="body">
           ${figure(n)}
           <p>${esc(n.summary)}</p>
+          ${reportBox(n.report)}
           <div class="fm-box"><h4>FM 风险视角</h4><p>${esc(n.fm)}</p></div>
           ${discuss}${refs}${tags}
           <div class="row sources"><span class="k">来源：</span>${sources}</div>
@@ -167,7 +183,7 @@
     return `<button type="button" class="major-card${p ? " p-" + p.id : ""}" data-fi="${FEED_ALL.indexOf(i)}">
         <div class="mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
         <div class="mc-body">
-          <div class="mc-top"><span class="badge major">重大</span>${REGIONS[i.region] ? regionBadge(i.region) : ""}${cause ? `<span class="mc-cause">${esc(cause)}</span>` : ""}</div>
+          <div class="mc-top"><span class="badge major">重大</span>${(noteOf(i) || {}).report || (i.fm && i.fm.report) ? reportBadge : ""}${REGIONS[i.region] ? regionBadge(i.region) : ""}${cause ? `<span class="mc-cause">${esc(cause)}</span>` : ""}</div>
           <h3>${esc(i.title)}</h3>
           <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
         </div>
@@ -219,11 +235,12 @@
         <button type="button" class="nd-close" data-close aria-label="关闭">×</button>
         <div class="nd-media mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
         <div class="nd-body">
-          <div class="mc-top"><span class="badge major">重大</span>${REGIONS[i.region] ? regionBadge(i.region) : ""}${sub ? `<span class="mc-cause">${esc(sub.name)}</span>` : ""}</div>
+          <div class="mc-top"><span class="badge major">重大</span>${(fm && fm.report) || (note && note.report) ? reportBadge : ""}${REGIONS[i.region] ? regionBadge(i.region) : ""}${sub ? `<span class="mc-cause">${esc(sub.name)}</span>` : ""}</div>
           <h2>${esc(i.title)}</h2>
           <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
-          <h3>事故概况</h3>
+          <h3>${(fm && fm.report) || (note && note.report) ? "概况" : "事故概况"}</h3>
           ${overview}
+          ${reportBox((fm && fm.report) || (note && note.report))}
           <div class="fm-box"><h4>FM 防损视角</h4>
             <ul>${points.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
             ${basis ? `<p class="nd-note">${esc(basis)}</p>` : ""}

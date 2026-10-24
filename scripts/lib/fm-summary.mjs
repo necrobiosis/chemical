@@ -13,7 +13,7 @@ const SCHEMA = {
   properties: {
     is_loss_event: {
       type: "boolean",
-      description: "报道是否描述一起具体的事故、火灾、爆炸、泄漏、自然灾害损失或其调查结果；政策会议、网站检查、股价、赔偿公告等为 false",
+      description: "报道是否描述一起具体的事故、火灾、爆炸、泄漏、自然灾害损失，或事故调查报告的发布/更新；政策会议、网站检查、股价、赔偿公告等为 false",
     },
     summary: { type: "string", description: "事故概况，中文 2–3 句：时间、地点、企业/装置、经过、伤亡与损失" },
     points: {
@@ -22,8 +22,28 @@ const SCHEMA = {
       description: "FM 防损视角要点，中文 3 条，每条一句：可能的起因与损失扩大因素，以及检查类似客户时应关注什么",
     },
     refs: { type: "array", items: { type: "string", enum: DS }, description: "相关的 FM Data Sheet 编号，0–3 个" },
+    report: {
+      description: "仅当报道是关于调查报告、事故报告、调查进展或统计通报的发布或更新时填写，总结报告本身的内容；否则为 null",
+      anyOf: [
+        {
+          type: "object",
+          properties: {
+            issuer: { type: "string", description: "发布机构" },
+            type: { type: "string", description: "报告类型，如 最终调查报告、调查进展、事件报告汇编、统计通报" },
+            date: { type: "string", description: "发布日期" },
+            about: { type: "string", description: "针对的事故（日期、企业、装置）" },
+            impact: { type: "string", description: "伤亡与财产损失，原文未说明则为空字符串" },
+            findings: { type: "array", items: { type: "string" }, description: "主要发现与原因，3–5 条中文" },
+            recommendations: { type: "array", items: { type: "string" }, description: "报告提出的建议；尚未提出时说明" },
+          },
+          required: ["issuer", "type", "date", "about", "impact", "findings", "recommendations"],
+          additionalProperties: false,
+        },
+        { type: "null" },
+      ],
+    },
   },
-  required: ["is_loss_event", "summary", "points", "refs"],
+  required: ["is_loss_event", "summary", "points", "refs", "report"],
   additionalProperties: false,
 };
 

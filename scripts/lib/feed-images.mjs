@@ -201,6 +201,7 @@ export async function enrichMajors(items, root, { summarize = null, limit = 25 }
       try {
         const r = await summarize(i, text);
         i.fm = { summary: r.summary, points: r.points.slice(0, 4), refs: r.refs.slice(0, 3) };
+        if (r.report) i.fm.report = Object.assign({ url: i.link }, r.report);
         if (!r.is_loss_event) (i.notLoss = true), stats.notLoss++;
         stats.fm++;
       } catch (e) {
