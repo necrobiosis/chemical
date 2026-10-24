@@ -1,7 +1,7 @@
 // 为“重大”实时动态配图：
 // 1. 把 Google News 跳转链接解析为原始报道地址（同时让点击直达原文，国内无需访问 news.google.com）
 // 2. 取原文页的 og:image（报道自带的头图，不生成图片），压缩为小尺寸 WebP 缩略图存到 assets/feed-img/
-// 每条只处理一次（imgTried），失败不影响新闻本身。需要 sharp；未安装时只解析链接、不配图。
+// 每条按规则版本只处理一次（imgV），失败不影响新闻本身。需要 sharp；未安装时只解析链接、不配图。
 import { mkdir, readdir, rm } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
@@ -76,6 +76,9 @@ export async function resolveLinks(items) {
 }
 
 /* ---------- 原文头图 ---------- */
+// 配图规则版本：规则改进后提高版本号，之前没取到图的条目会按新规则再试一次
+const IMG_V = 2;
+
 function ogImage(html, pageUrl) {
   for (const m of html.matchAll(/<meta\b[^>]*>/gi)) {
     const t = m[0];
@@ -91,6 +94,22 @@ function ogImage(html, pageUrl) {
   return null;
 }
 
+// 没有 og:image 时（如政府网站），取正文中的前几张图片作为候选，后续再按尺寸、比例、体积筛选
+function bodyImages(html, pageUrl) {
+  const body = html.replace(/<(header|nav|footer|aside)\b[\s\S]*?<\/\1>/gi, "");
+  const out = [];
+  for (const m of body.matchAll(/<img\b[^>]*>/gi)) {
+    const src = (m[0].match(/\b(?:data-original|data-src|src)\s*=\s*["']([^"']+)/i) || [])[1];
+    if (!src || src.startsWith("data:")) continue;
+    try {
+      const u = new URL(src.replace(/&amp;/g, "&"), pageUrl).href;
+      if (!JUNK.test(u + " " + m[0]) && !/\.(svg|gif)(\?|$)/i.test(u) && !out.includes(u)) out.push(u);
+    } catch {}
+    if (out.length >= 4) break;
+  }
+  return out;
+}
+
 export async function attachImages(items, root, { limit = 25 } = {}) {
   let sharp;
   try {
@@ -102,21 +121,32 @@ export async function attachImages(items, root, { limit = 25 } = {}) {
   const dir = path.join(root, "assets/feed-img");
   await mkdir(dir, { recursive: true });
   let done = 0;
-  for (const i of items.filter((x) => !x.imgTried && x.link).slice(0, limit)) {
-    i.imgTried = true;
+  for (const i of items.filter((x) => x.link && !x.img && (x.imgV || 0) < IMG_V).slice(0, limit)) {
+    i.imgV = IMG_V;
+    delete i.imgTried;
     try {
       const page = await get(i.link, { headers: { "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8" }, redirect: "follow" });
-      const src = ogImage(await page.text(), page.url || i.link);
-      if (!src) continue;
-      const res = await get(src, { headers: { Referer: i.link, Accept: "image/*" } });
-      if (!res.ok) continue;
-      const buf = Buffer.from(await res.arrayBuffer());
-      const meta = await sharp(buf).metadata();
-      if (!meta.width || meta.width < 300 || meta.width / meta.height > 3.2 || meta.width / meta.height < 0.5) continue;
-      const name = createHash("sha1").update(i.link).digest("hex").slice(0, 16) + ".webp";
-      await sharp(buf).rotate().resize({ width: 360, height: 225, fit: "cover" }).webp({ quality: 66 }).toFile(path.join(dir, name));
-      i.img = `assets/feed-img/${name}`;
-      done++;
+      const html = await page.text();
+      const pageUrl = page.url || i.link;
+      const og = ogImage(html, pageUrl);
+      // og:image 是报道指定的头图，条件放宽；正文图片要求更像照片（尺寸、比例、体积），排除图标和横幅
+      const cands = og ? [{ src: og, strict: false }] : bodyImages(html, pageUrl).map((src) => ({ src, strict: true }));
+      for (const c of cands) {
+        const res = await get(c.src, { headers: { Referer: i.link, Accept: "image/*" } }).catch(() => null);
+        if (!res || !res.ok) continue;
+        const buf = Buffer.from(await res.arrayBuffer());
+        const meta = await sharp(buf).metadata().catch(() => ({}));
+        const ratio = meta.width / meta.height;
+        const ok = c.strict
+          ? meta.width >= 400 && ratio >= 0.6 && ratio <= 2.2 && buf.length >= 12000
+          : meta.width >= 300 && ratio >= 0.5 && ratio <= 3.2;
+        if (!ok) continue;
+        const name = createHash("sha1").update(i.link).digest("hex").slice(0, 16) + ".webp";
+        await sharp(buf).rotate().resize({ width: 360, height: 225, fit: "cover" }).webp({ quality: 66 }).toFile(path.join(dir, name));
+        i.img = `assets/feed-img/${name}`;
+        done++;
+        break;
+      }
     } catch {}
   }
   return done;

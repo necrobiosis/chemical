@@ -154,7 +154,7 @@ const prevItems = Object.values(previous.items || {}).flat();
 const prevByKey = new Map(prevItems.map((i) => [norm(i.title), i]));
 fresh.forEach((i) => {
   const p = prevByKey.get(norm(i.title));
-  if (p) for (const k of ["link", "img", "imgTried"]) if (p[k] !== undefined) i[k] = p[k];
+  if (p) for (const k of ["link", "img", "imgV", "imgTried"]) if (p[k] !== undefined) i[k] = p[k];
 });
 [...fresh, ...prevItems]
   .filter((i) => items[i.region] && relevant(i) && (!i.date || Date.parse(i.date) >= cutoff))
