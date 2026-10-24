@@ -94,7 +94,9 @@ function classify(src, title) {
 }
 // 相关性过滤：综合性网站（路透、经济时报等）的检索结果需命中行业关键词，官方来源（A 级）不过滤
 const REL = new RegExp(config.relevant.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "i");
-const relevant = (item) => item.tier === "A" || REL.test(item.title);
+// 排除词：枪击、恐袭、山火等与工业事故无关的“火”“爆炸”（命中即剔除，官方来源也不例外）
+const EXC = new RegExp((config.exclude || []).map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") || "$^", "i");
+const relevant = (item) => !EXC.test(item.title) && (item.tier === "A" || REL.test(item.title));
 const M = config.major;
 function score(src, title) {
   const t = title.toLowerCase();

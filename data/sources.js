@@ -13,6 +13,7 @@ window.SOURCES = {
   "schedule": "每 4 小时（北京时间 00/04/08/12/16/20 点）",
   "maxPerRegion": 80,
   "maxAgeDays": 30,
+  "exclude": ["gunmen", "gunman", "shooting", "shooter", "open fire", "opened fire", "opens fire", "gunfire", "firing", "ceasefire", "terror", "militant", "airstrike", "missile", "drone strike", "wildfire", "bushfire", "forest fire", "house fire", "apartment fire", "car crash", "枪击", "开枪", "恐袭", "空袭", "山火", "森林火灾", "民宅火灾"],
   "relevant": ["化工", "事故", "化学", "石化", "石油", "炼油", "炼化", "乙烯", "丙烯", "芳烃", "聚", "危化", "危险化学品", "安全生产", "应急管理", "爆炸", "爆燃", "闪爆", "火灾", "起火", "泄漏", "中毒", "装置", "园区", "储罐", "罐区", "反应釜", "制药", "农药", "染料", "氯碱", "化肥", "煤化工", "天然气", "LNG", "氢",
     "chemical", "petrochem", "refin", "cracker", "ethylene", "propylene", "polymer", "plastic", "naphtha", "pharma", "API", "fertili", "chlor", "ammonia", "methanol", "LNG", "LPG", "hydrogen", "gas", "oil", "explosion", "blast", "fire", "leak", "spill", "toxic", "hazard", "safety", "CSB", "OSHA", "plant", "factory", "refinery", "force majeure", "tank", "reactor", "PSM"],
   "major": {
