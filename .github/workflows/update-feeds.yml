@@ -22,6 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: npm i --no-save sharp@0.33.5
       - name: 抓取信息源
         env:
           # 可选：带 X(推特) 认证的 RSSHub 实例地址，例如 https://rsshub.example.com
@@ -33,7 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
-          git add data/feeds.js
+          git add -A data/feeds.js assets/feed-img
           git diff --cached --quiet && exit 0
           git commit -m "chore: 更新自动新闻源"
           git pull --rebase origin "${GITHUB_REF_NAME}"

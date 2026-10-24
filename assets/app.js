@@ -137,9 +137,27 @@
     const type = i.type ? `<span class="badge">${TYPES[i.type] || ""}</span> ` : "";
     return `<li class="${i.major ? "is-major" : ""}">${i.major ? `<span class="badge major">重大</span> ` : ""}${
       showRegion && REGIONS[i.region] ? regionBadge(i.region) + " " : ""
-    }<a href="${safeUrl(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a><div class="meta">${type}${esc(i.source || (src && src.name))}${
+    }<a href="${safeUrl(i.link || i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a><div class="meta">${type}${esc(i.source || (src && src.name))}${
       i.date ? " · " + fmtIso(i.date) : ""
     }</div></li>`;
+  }
+
+  // 重大动态卡片：配原文报道的头图；没有头图时显示起因色块，不使用生成图片
+  function majorCard(i) {
+    const c = (i.causes || []).find((x) => PERIL[x.peril]);
+    const p = c && PERIL[c.peril];
+    const cause = p ? (p.causeMap[c.cause] ? p.causeMap[c.cause].name : p.name) : "";
+    const img = i.img
+      ? `<img src="${esc(BASE + i.img)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('noimg');this.remove()">`
+      : "";
+    return `<a class="major-card${p ? " p-" + p.id : ""}" href="${safeUrl(i.link || i.url)}" target="_blank" rel="noopener">
+        <div class="mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
+        <div class="mc-body">
+          <div class="mc-top"><span class="badge major">重大</span>${REGIONS[i.region] ? regionBadge(i.region) : ""}${cause ? `<span class="mc-cause">${esc(cause)}</span>` : ""}</div>
+          <h3>${esc(i.title)}</h3>
+          <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
+        </div>
+      </a>`;
   }
 
   function feedPanel(region) {
@@ -205,30 +223,32 @@
     const majors = FEED_ALL
       .filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo))
       .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.date || "").localeCompare(a.date || ""))
-      .slice(0, 10);
+      .slice(0, 9);
     const majorSection = `<div class="section"><h2>近 7 天重大动态 <small>自动识别 · ${esc(SRC.schedule || "")} · ${updatedText()}</small></h2>${
       majors.length
-        ? `<div class="panel"><ul class="feed">${majors.map((i) => feedItem(i, true)).join("")}</ul></div>`
+        ? `<div class="major-grid">${majors.map(majorCard).join("")}</div>`
         : `<div class="empty">暂无自动抓取数据。信息源每 4 小时由 GitHub Actions 自动抓取，首次运行后这里会显示来自官方、专业媒体、公众号与 X 博主的重大动态。</div>`
     }</div>`;
 
-    return `
-      <div class="page-head">
+    // 各区块带 h-* 类名：桌面按书写顺序显示，手机上由 CSS 调整为“重大动态在前、分类在后”
+    return `<div class="home">
+      <div class="page-head h-head">
         <h1>行业实况总览</h1>
         <p>面向 FM 亚洲化工专家的资讯与培训中心。每条精选新闻都附有“FM 风险视角”解读与培训讨论题，把行业实况转化为损失预防能力。</p>
       </div>
-      <div class="stats">
+      <div class="stats h-stats">
         ${stats}
         <a class="stat" href="#/cases"><div class="label">案例库</div><div class="num">${incidents}</div><div class="sub">事故案例 · ${withDiscuss} 个讨论题</div></a>
       </div>
-      ${perilSection()}
-      ${majorSection}
-      <div class="section"><h2>三大板块 <small>精选 · 按日期倒序</small></h2><div class="columns">${cols}</div></div>
+      <div class="h-perils">${perilSection()}</div>
+      <div class="h-major">${majorSection}</div>
+      <div class="section h-boards"><h2>三大板块 <small>精选 · 按日期倒序</small></h2><div class="columns">${cols}</div></div>
       ${
         latestIncident
-          ? `<div class="section"><h2>本期案例研讨 <small>从最新事故中学习</small></h2>${card(latestIncident, true)}</div>`
+          ? `<div class="section h-case"><h2>本期案例研讨 <small>从最新事故中学习</small></h2>${card(latestIncident, true)}</div>`
           : ""
-      }`;
+      }
+    </div>`;
   }
 
   const INCIDENTS = NEWS.filter((n) => n.causes);

@@ -285,3 +285,42 @@ a.chip { text-decoration: none; display: inline-block; }
 
 /* 定位到某条新闻或 Data Sheet 时，为吸顶导航留出空间 */
 .card, #ds-hl { scroll-margin-top: 140px; }
+
+/* 重大动态卡片 */
+.major-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 900px) { .major-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.major-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; color: var(--text); text-decoration: none; box-shadow: var(--shadow); }
+.major-card:hover h3, .major-card:focus-visible h3 { color: var(--accent); }
+.mc-media { position: relative; aspect-ratio: 16 / 10; background: var(--surface-2); overflow: hidden; }
+.mc-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mc-media .ph-label { display: none; }
+.mc-media.noimg { display: grid; place-items: center; background: var(--pcs, var(--surface-2)); }
+.mc-media.noimg .ph-label { display: block; font-weight: 700; font-size: 15px; color: var(--pc, var(--muted)); letter-spacing: 0.04em; }
+.mc-body { padding: 10px 12px 12px; display: grid; gap: 4px; min-width: 0; }
+.mc-top { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.mc-cause { font-size: 12px; color: var(--pc, var(--muted)); }
+.major-card h3 { font-size: 15px; margin: 0; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.major-card .meta { font-size: 12px; color: var(--muted); }
+
+/* 手机：重大动态放最前，分类与统计后移；重大动态改为左图右文的紧凑列表 */
+@media (max-width: 700px) {
+  .home { display: flex; flex-direction: column; }
+  .home > .h-head { display: none; }
+  .home > .h-major { order: 1; }
+  .home > .h-boards { order: 2; }
+  .home > .h-case { order: 3; }
+  .home > .h-perils { order: 4; }
+  .home > .h-stats { order: 5; margin-top: 32px; }
+  .home > .h-major > .section { margin-top: 0; }
+  .major-grid { grid-template-columns: 1fr; gap: 8px; }
+  .major-card { flex-direction: row; }
+  .mc-media { width: 112px; height: 84px; flex: none; aspect-ratio: auto; margin: 10px 0 10px 10px; border-radius: 6px; align-self: flex-start; }
+  .mc-body { padding: 8px 10px; }
+  .section > h2 { flex-wrap: wrap; row-gap: 2px; }
+  .section > h2 small { flex-basis: 100%; }
+  .mc-media.noimg .ph-label { font-size: 12px; padding: 0 6px; text-align: center; }
+  .major-card h3 { font-size: 14px; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .stat { padding: 10px 12px; }
+  .stat .num { font-size: 22px; }
+}

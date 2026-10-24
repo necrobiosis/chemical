@@ -6,6 +6,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { resolveLinks, attachImages, pruneImages } from "./lib/feed-images.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outFile = path.join(root, "data/feeds.js");
@@ -149,6 +150,12 @@ const norm = (t) => t.toLowerCase().replace(/[\s\p{P}\p{S}]/gu, "").slice(0, 60)
 const items = { cn: [], asia: [], intl: [] };
 const seen = new Set();
 const prevItems = Object.values(previous.items || {}).flat();
+// 新抓到的条目沿用上次已解析的原文链接与配图，避免重复处理
+const prevByKey = new Map(prevItems.map((i) => [norm(i.title), i]));
+fresh.forEach((i) => {
+  const p = prevByKey.get(norm(i.title));
+  if (p) for (const k of ["link", "img", "imgTried"]) if (p[k] !== undefined) i[k] = p[k];
+});
 [...fresh, ...prevItems]
   .filter((i) => items[i.region] && relevant(i) && (!i.date || Date.parse(i.date) >= cutoff))
   .sort((a, b) => (b.date || "").localeCompare(a.date || ""))
@@ -159,6 +166,13 @@ const prevItems = Object.values(previous.items || {}).flat();
     items[i.region].push(i);
   });
 for (const r of Object.keys(items)) items[r] = items[r].slice(0, config.maxPerRegion);
+
+// 重大动态：解析原文链接并取报道头图作缩略图
+const majorsList = Object.values(items).flat().filter((i) => i.major);
+const linked = await resolveLinks(majorsList).catch((e) => (console.warn("链接解析失败：", e.message), 0));
+const pictured = await attachImages(majorsList, root).catch((e) => (console.warn("配图失败：", e.message), 0));
+const pruned = await pruneImages(Object.values(items).flat(), root);
+console.log(`重大动态：新解析原文链接 ${linked} 条，新配图 ${pictured} 张，清理旧图 ${pruned} 张`);
 
 const payload = { updated: new Date().toISOString(), status, items };
 await writeFile(outFile, `// 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑\nwindow.AUTO_FEEDS = ${JSON.stringify(payload)};\n`);
