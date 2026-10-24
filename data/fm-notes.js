@@ -36,17 +36,6 @@ window.FM_NOTES = {
   "https://sg.news.yahoo.com/chemical-tank-explodes-ohio-forcing-135614269.html": { event: "toledo-gma-2026-10", ref: "toledo" },
   "https://www.hindustantimes.com/world-news/us-news/toledo-chemical-leak-forces-evacuations-and-shelter-in-place-order-all-on-emergency-number-road-closures-and-temporary-refuge-facility-101792575961997.html": { event: "toledo-gma-2026-10", ref: "toledo" },
 
-  "https://timesofindia.indiatimes.com/city/hyderabad/2-workers-killed-in-gas-leak-at-chemical-plant-in-telangana/articleshow/135139247.cms": {
-    event: "saraka-gas-leak-2026-10",
-    summary: "10月23日凌晨约3时，印度特伦甘纳邦桑加雷迪县 Gaddapotharam 工业区 Saraka Industries 化工厂 Glaba 车间发生气体泄漏，2名夜班工人吸入后窒息死亡，另有人员受伤。泄漏气体种类和原因报道未说明，警方正在核查安全措施是否到位。",
-    points: [
-      "海得拉巴周边（Gaddapotharam、Pashamylaram 等）是制药与化工中间体集群，夜班人员少、泄漏发现和处置不及时是共性问题，同一区域客户可提高关注。",
-      "检查有毒气体探测与报警联动、受限空间和泄漏区域的进入许可与呼吸防护。",
-      "追查泄漏源的常见环节：反应釜与储罐密封、管线腐蚀，以及尾气吸收系统失效。",
-    ],
-    refs: ["7-43", "7-36"],
-    by: "Claude Code", at: "2026-10-24",
-  },
   "https://economictimes.indiatimes.com/news/india/bengaluru-building-blast-injures-two-battery-explosion-suspected/articleshow/135086171.cms": {
     event: "bengaluru-battery-2026-10",
     summary: "10月21日清晨，印度班加罗尔 Jarmia Road 一栋在建建筑发生爆炸，2人受伤（其中1人失去一根手指）。警方初步怀疑为电池爆炸，具体原因仍在调查，财产损失情况报道未说明。",
