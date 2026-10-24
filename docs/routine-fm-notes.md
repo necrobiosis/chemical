@@ -20,7 +20,7 @@ git checkout -B claude/chemical-industry-news-hub-wpb91d origin/claude/chemical-
 
 待补写条目：`major` 为 true、有 `link` 字段、日期在最近 7 天内、且 `link` 不在 `FM_NOTES` 中。
 
-没有待补写条目时，回复“无需补写”后结束，不提交。
+没有待补写条目时，跳过第 2 步，但仍要做第 2.5 步的配图检查；两者都无改动时回复“无需补写”后结束，不提交。
 
 ## 2. 撰写速报
 
@@ -63,6 +63,22 @@ report: {
 
 保持文件格式与已有条目一致，不要删除或改写已有条目。
 
+## 2.5 检查配图（每次运行都做）
+
+首页只展示现场远景类照片（火场、烟柱、厂区、装置、救援场面的远景）。用 Read 工具逐张查看最近 7 天重大动态使用的配图（`data/feeds.js` 中 `major` 为 true 且有 `img` 的条目，图片在 `assets/feed-img/`）。
+
+出现以下任一情况的图片必须移除：
+- 遗体、停尸间、脚趾挂牌、白布覆盖的人形等与死亡相关的画面（包括媒体常用的“示意图”）
+- 伤者、血迹、担架、救护车抬人等人员近景
+- 与事故无关的通用图片（人物头像、标志、文字截图、地图以外的图表）
+
+移除方法（会删除图片、标记该条目不再取图，并把图片指纹加入 `data/img-blocklist.json`，今后相似图片自动拦截）：
+
+```bash
+npm i --no-save sharp@0.33.5   # 首次需要
+node scripts/block-image.mjs assets/feed-img/<文件名>.webp "原因"
+```
+
 ## 3. 检查
 
 ```bash
@@ -74,8 +90,8 @@ node -e 'global.window={};require("./data/fm-notes.js");console.log(Object.keys(
 ## 4. 提交推送
 
 ```bash
-git add data/fm-notes.js
-git commit -m "chore: 补写重大动态 FM 速报（N 条）"   # 末尾加上会话要求的署名行
+git add data/fm-notes.js data/feeds.js data/img-blocklist.json assets/feed-img
+git commit -m "chore: 补写重大动态 FM 速报（N 条）"   # 末尾加上会话要求的署名行；如移除了配图，在提交信息中说明
 git pull --rebase origin claude/chemical-industry-news-hub-wpb91d
 git push origin claude/chemical-industry-news-hub-wpb91d
 ```

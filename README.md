@@ -74,6 +74,14 @@ python3 -m http.server 8000
 - 重大动态：定时任务按 `docs/routine-fm-notes.md` 在 `data/fm-notes.js` 中补写；API 方式由 Claude 在结构化输出中一并生成。
 - 定时任务的具体做法写在 `docs/routine-fm-notes.md`，修改任务行为时编辑该文件即可。
 
+## 配图规范：只用现场远景
+
+首页和弹窗只展示现场远景类照片，不用遗体、停尸间、伤者、担架等令人不适的画面。三道把关：
+
+1. 图片地址关键词过滤（`scripts/lib/img-guard.mjs` 中的 `BAD_URL`）。
+2. 感知指纹黑名单 `data/img-blocklist.json`：媒体反复使用的“示意图”换了地址也会被识别。发现不合适的图片时运行 `node scripts/block-image.mjs assets/feed-img/<文件>.webp "原因"`，即可移除并加入黑名单。
+3. 定时任务每次运行时逐张查看配图，按 `docs/routine-fm-notes.md` 第 2.5 步移除不合适的图片。
+
 ## 事故起因分类
 
 分类定义在 `data/perils.js`：火灾与爆炸（反应失控、可燃气体爆炸、易燃液体、不相容反应、粉尘、一般可燃物）、设备风险（压力容器/储罐、控制与辅助系统、腐蚀与完整性、转动设备、电气）、自然灾害（洪水暴雨、台风、地震、雷击）。

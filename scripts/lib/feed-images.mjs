@@ -5,6 +5,7 @@
 import { mkdir, readdir, rm } from "node:fs/promises";
 import { createHash } from "node:crypto";
 import path from "node:path";
+import { BAD_URL, dhash, loadBlocklist, isBlocked } from "./img-guard.mjs";
 
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 const JUNK = /logo|icon|avatar|sprite|placeholder|default|blank|qrcode|二维码|favicon|apple-touch|1x1|pixel|google\.com|gstatic/i;
@@ -148,9 +149,10 @@ export async function enrichMajors(items, root, { summarize = null, limit = 25 }
   }
   const dir = path.join(root, "assets/feed-img");
   await mkdir(dir, { recursive: true });
-  const stats = { img: 0, desc: 0, fm: 0, notLoss: 0 };
+  const stats = { img: 0, desc: 0, fm: 0, notLoss: 0, rejected: 0 };
+  const blocklist = await loadBlocklist(root);
   const todo = items.filter(
-    (x) => x.link && ((sharp && !x.img && (x.imgV || 0) < IMG_V) || (x.descV || 0) < DESC_V || (summarize && !x.fm && !x.fmTried))
+    (x) => x.link && ((sharp && !x.img && !x.imgBlocked && (x.imgV || 0) < IMG_V) || (x.descV || 0) < DESC_V || (summarize && !x.fm && !x.fmTried))
   );
   for (const i of todo.slice(0, limit)) {
     let html, pageUrl;
@@ -170,13 +172,18 @@ export async function enrichMajors(items, root, { summarize = null, limit = 25 }
       if (d) (i.desc = d), stats.desc++;
     }
 
-    if (sharp && !i.img && (i.imgV || 0) < IMG_V) {
+    if (sharp && !i.img && !i.imgBlocked && (i.imgV || 0) < IMG_V) {
       i.imgV = IMG_V;
       delete i.imgTried;
       const og = ogImage(html, pageUrl);
       // og:image 是报道指定的头图，条件放宽；正文图片要求更像照片（尺寸、比例、体积），排除图标和横幅
       const cands = og ? [{ src: og, strict: false }] : bodyImages(html, pageUrl).map((src) => ({ src, strict: true }));
       for (const c of cands) {
+        // 图片地址含遗体、停尸间、救护车、示意图等字样的直接跳过
+        if (BAD_URL.test(c.src)) {
+          stats.rejected++;
+          continue;
+        }
         const res = await get(c.src, { headers: { Referer: i.link, Accept: "image/*" } }).catch(() => null);
         if (!res || !res.ok) continue;
         const buf = Buffer.from(await res.arrayBuffer());
@@ -186,6 +193,11 @@ export async function enrichMajors(items, root, { summarize = null, limit = 25 }
           ? meta.width >= 400 && ratio >= 0.6 && ratio <= 2.2 && buf.length >= 12000
           : meta.width >= 300 && ratio >= 0.5 && ratio <= 3.2;
         if (!ok) continue;
+        // 与黑名单中的图片相同或相似（媒体反复使用的示意图）则跳过
+        if (isBlocked(blocklist, await dhash(sharp, buf))) {
+          stats.rejected++;
+          continue;
+        }
         const name = createHash("sha1").update(i.link).digest("hex").slice(0, 16) + ".webp";
         await sharp(buf).rotate().resize({ width: 360, height: 225, fit: "cover" }).webp({ quality: 66 }).toFile(path.join(dir, name));
         i.img = `assets/feed-img/${name}`;

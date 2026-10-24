@@ -155,7 +155,7 @@ const prevItems = Object.values(previous.items || {}).flat();
 const prevByKey = new Map(prevItems.map((i) => [norm(i.title), i]));
 fresh.forEach((i) => {
   const p = prevByKey.get(norm(i.title));
-  if (p) for (const k of ["link", "img", "imgV", "imgTried", "desc", "descV", "fm", "fmTried", "notLoss"]) if (p[k] !== undefined) i[k] = p[k];
+  if (p) for (const k of ["link", "img", "imgV", "imgTried", "imgBlocked", "desc", "descV", "fm", "fmTried", "notLoss"]) if (p[k] !== undefined) i[k] = p[k];
 });
 [...fresh, ...prevItems]
   .filter((i) => items[i.region] && relevant(i) && (!i.date || Date.parse(i.date) >= cutoff))
@@ -176,7 +176,7 @@ const st = await enrichMajors(majorsList, root, { summarize: fmSummary.enabled()
 );
 const pruned = await pruneImages(Object.values(items).flat(), root);
 console.log(
-  `重大动态：新解析原文链接 ${linked} 条，新配图 ${st.img || 0} 张，摘要 ${st.desc || 0} 条，` +
+  `重大动态：新解析原文链接 ${linked} 条，新配图 ${st.img || 0} 张（拦截不合适图片 ${st.rejected || 0} 张），摘要 ${st.desc || 0} 条，` +
     `FM 速报 ${fmSummary.enabled() ? (st.fm || 0) + " 条（其中非事故 " + (st.notLoss || 0) + " 条）" : "未启用（未配置 ANTHROPIC_API_KEY）"}，清理旧图 ${pruned} 张`
 );
 
