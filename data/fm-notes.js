@@ -71,6 +71,18 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-24",
   },
 
+  "https://timesofindia.indiatimes.com/city/hyderabad/2-workers-killed-in-gas-leak-at-chemical-plant-in-telangana/articleshow/135139247.cms": {
+    event: "saraca-gaddapotharam-2026-10",
+    summary: "10月23日（周五）凌晨，印度特伦甘纳邦桑加雷迪县 Jinnaram 区 Gaddapotharam 工业区 Saraca Laboratories（报道亦拼作 Saraka）的“Glaba”车间发生有害气体泄漏，2名夜班工人死亡。泄漏气体种类、涉及的工序与设备、其他人员受伤情况均报道未说明；报道未提及起火、爆炸或财产损失，警方正在调查原因。",
+    points: [
+      "有毒气体泄漏本身属于“失去包容”的过程安全事件，同样的泄漏源若遇点火源或不相容物料，可能演变为火灾、爆炸或反应失控。",
+      "原料药/化工车间的反应釜投料、气体通入和尾气吸收是常见泄漏环节：检查气体探测报警与紧急切断联锁的覆盖范围和测试记录。",
+      "夜班人员少、响应慢，泄漏发现晚会扩大后果：关注夜班的操作程序、人员配置与应急处置能力。",
+    ],
+    refs: ["7-43", "7-36", "7-45"],
+    by: "Claude Code", at: "2026-10-24",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
