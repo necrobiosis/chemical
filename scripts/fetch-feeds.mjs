@@ -6,7 +6,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { resolveLinks, attachImages, pruneImages } from "./lib/feed-images.mjs";
+import { resolveLinks, enrichMajors, pruneImages } from "./lib/feed-images.mjs";
+import * as fmSummary from "./lib/fm-summary.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outFile = path.join(root, "data/feeds.js");
@@ -154,7 +155,7 @@ const prevItems = Object.values(previous.items || {}).flat();
 const prevByKey = new Map(prevItems.map((i) => [norm(i.title), i]));
 fresh.forEach((i) => {
   const p = prevByKey.get(norm(i.title));
-  if (p) for (const k of ["link", "img", "imgV", "imgTried"]) if (p[k] !== undefined) i[k] = p[k];
+  if (p) for (const k of ["link", "img", "imgV", "imgTried", "desc", "descV", "fm", "fmTried", "notLoss"]) if (p[k] !== undefined) i[k] = p[k];
 });
 [...fresh, ...prevItems]
   .filter((i) => items[i.region] && relevant(i) && (!i.date || Date.parse(i.date) >= cutoff))
@@ -170,9 +171,14 @@ for (const r of Object.keys(items)) items[r] = items[r].slice(0, config.maxPerRe
 // 重大动态：解析原文链接并取报道头图作缩略图
 const majorsList = Object.values(items).flat().filter((i) => i.major);
 const linked = await resolveLinks(majorsList).catch((e) => (console.warn("链接解析失败：", e.message), 0));
-const pictured = await attachImages(majorsList, root).catch((e) => (console.warn("配图失败：", e.message), 0));
+const st = await enrichMajors(majorsList, root, { summarize: fmSummary.enabled() ? fmSummary.summarize : null }).catch(
+  (e) => (console.warn("补充信息失败：", e.message), {})
+);
 const pruned = await pruneImages(Object.values(items).flat(), root);
-console.log(`重大动态：新解析原文链接 ${linked} 条，新配图 ${pictured} 张，清理旧图 ${pruned} 张`);
+console.log(
+  `重大动态：新解析原文链接 ${linked} 条，新配图 ${st.img || 0} 张，摘要 ${st.desc || 0} 条，` +
+    `FM 速报 ${fmSummary.enabled() ? (st.fm || 0) + " 条（其中非事故 " + (st.notLoss || 0) + " 条）" : "未启用（未配置 ANTHROPIC_API_KEY）"}，清理旧图 ${pruned} 张`
+);
 
 const payload = { updated: new Date().toISOString(), status, items };
 await writeFile(outFile, `// 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑\nwindow.AUTO_FEEDS = ${JSON.stringify(payload)};\n`);

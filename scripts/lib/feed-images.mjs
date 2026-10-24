@@ -1,4 +1,4 @@
-// 为“重大”实时动态配图：
+// 为“重大”实时动态补充信息（配图、报道摘要、可选的 Claude FM 速报）：
 // 1. 把 Google News 跳转链接解析为原始报道地址（同时让点击直达原文，国内无需访问 news.google.com）
 // 2. 取原文页的 og:image（报道自带的头图，不生成图片），压缩为小尺寸 WebP 缩略图存到 assets/feed-img/
 // 每条按规则版本只处理一次（imgV），失败不影响新闻本身。需要 sharp；未安装时只解析链接、不配图。
@@ -110,24 +110,69 @@ function bodyImages(html, pageUrl) {
   return out;
 }
 
-export async function attachImages(items, root, { limit = 25 } = {}) {
-  let sharp;
+const decodeEntities = (t) =>
+  t.replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&amp;/g, "&");
+
+// 报道自带的摘要（og:description / description）
+function metaDescription(html) {
+  for (const m of html.matchAll(/<meta\b[^>]*>/gi)) {
+    const key = (m[0].match(/\b(?:property|name)\s*=\s*["']([^"']+)/i) || [])[1] || "";
+    if (!/^(og:description|description|twitter:description)$/i.test(key)) continue;
+    const c = (m[0].match(/\bcontent\s*=\s*"([^"]*)"/i) || m[0].match(/\bcontent\s*=\s*'([^']*)'/i) || [])[1];
+    if (c && c.trim().length > 20) return decodeEntities(c).replace(/\s+/g, " ").trim().slice(0, 400);
+  }
+  return "";
+}
+
+// 正文文字：取 <p> 段落，供 Claude 总结使用（不保存到仓库）
+function articleText(html) {
+  const body = html.replace(/<(script|style|noscript|header|nav|footer|aside)\b[\s\S]*?<\/\1>/gi, "");
+  const paras = [...body.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi)]
+    .map((m) => decodeEntities(m[1].replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim())
+    .filter((t) => t.length > 15);
+  return paras.join("\n").slice(0, 8000);
+}
+
+// 摘要规则版本：提高后会对已处理条目重新提取一次
+const DESC_V = 1;
+
+// 重大动态补充信息：原文头图、报道摘要，以及（配置了密钥时）Claude 撰写的 FM 防损速报。
+// 每篇原文只抓取一次，三项各自按版本号只做一次。
+export async function enrichMajors(items, root, { summarize = null, limit = 25 } = {}) {
+  let sharp = null;
   try {
     sharp = (await import("sharp")).default;
   } catch {
     console.warn("未安装 sharp，跳过实时动态配图");
-    return 0;
   }
   const dir = path.join(root, "assets/feed-img");
   await mkdir(dir, { recursive: true });
-  let done = 0;
-  for (const i of items.filter((x) => x.link && !x.img && (x.imgV || 0) < IMG_V).slice(0, limit)) {
-    i.imgV = IMG_V;
-    delete i.imgTried;
+  const stats = { img: 0, desc: 0, fm: 0, notLoss: 0 };
+  const todo = items.filter(
+    (x) => x.link && ((sharp && !x.img && (x.imgV || 0) < IMG_V) || (x.descV || 0) < DESC_V || (summarize && !x.fm && !x.fmTried))
+  );
+  for (const i of todo.slice(0, limit)) {
+    let html, pageUrl;
     try {
       const page = await get(i.link, { headers: { "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8" }, redirect: "follow" });
-      const html = await page.text();
-      const pageUrl = page.url || i.link;
+      html = await page.text();
+      pageUrl = page.url || i.link;
+    } catch {
+      i.imgV = IMG_V;
+      i.descV = DESC_V;
+      continue;
+    }
+
+    if ((i.descV || 0) < DESC_V) {
+      i.descV = DESC_V;
+      const d = metaDescription(html);
+      if (d) (i.desc = d), stats.desc++;
+    }
+
+    if (sharp && !i.img && (i.imgV || 0) < IMG_V) {
+      i.imgV = IMG_V;
+      delete i.imgTried;
       const og = ogImage(html, pageUrl);
       // og:image 是报道指定的头图，条件放宽；正文图片要求更像照片（尺寸、比例、体积），排除图标和横幅
       const cands = og ? [{ src: og, strict: false }] : bodyImages(html, pageUrl).map((src) => ({ src, strict: true }));
@@ -144,12 +189,26 @@ export async function attachImages(items, root, { limit = 25 } = {}) {
         const name = createHash("sha1").update(i.link).digest("hex").slice(0, 16) + ".webp";
         await sharp(buf).rotate().resize({ width: 360, height: 225, fit: "cover" }).webp({ quality: 66 }).toFile(path.join(dir, name));
         i.img = `assets/feed-img/${name}`;
-        done++;
+        stats.img++;
         break;
       }
-    } catch {}
+    }
+
+    if (summarize && !i.fm && !i.fmTried) {
+      i.fmTried = true;
+      const text = articleText(html) || i.desc || "";
+      if (text.length < 80) continue; // 正文太短（可能被拦截或只有图片），不做总结
+      try {
+        const r = await summarize(i, text);
+        i.fm = { summary: r.summary, points: r.points.slice(0, 4), refs: r.refs.slice(0, 3) };
+        if (!r.is_loss_event) (i.notLoss = true), stats.notLoss++;
+        stats.fm++;
+      } catch (e) {
+        console.warn(`  FM 速报失败（${i.title.slice(0, 30)}）：${e.message}`);
+      }
+    }
   }
-  return done;
+  return stats;
 }
 
 // 删除不再被任何条目引用的缩略图，避免仓库膨胀

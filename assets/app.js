@@ -79,6 +79,8 @@
     });
     return out;
   }
+  // Claude 判定为非事故（如会议、网站检查通报）的条目，不再标记为重大
+  Object.values(FEEDS.items || {}).forEach((list) => list.forEach((i) => i.notLoss && (i.major = false)));
   const FEED_ALL = Object.keys(FEEDS.items || {}).flatMap((r) => (FEEDS.items[r] || []).map((i) => Object.assign({ region: r, causes: classifyFeed(i.title) }, i)));
   const dsList = (refs) =>
     (refs || []).map((n) => `<a class="ds" href="#/training?ds=${esc(n)}" title="在 Data Sheet 速查中查看">DS ${esc(n)}</a>`).join("");
@@ -150,14 +152,78 @@
     const img = i.img
       ? `<img src="${esc(BASE + i.img)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('noimg');this.remove()">`
       : "";
-    return `<a class="major-card${p ? " p-" + p.id : ""}" href="${safeUrl(i.link || i.url)}" target="_blank" rel="noopener">
+    return `<button type="button" class="major-card${p ? " p-" + p.id : ""}" data-fi="${FEED_ALL.indexOf(i)}">
         <div class="mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
         <div class="mc-body">
           <div class="mc-top"><span class="badge major">重大</span>${REGIONS[i.region] ? regionBadge(i.region) : ""}${cause ? `<span class="mc-cause">${esc(cause)}</span>` : ""}</div>
           <h3>${esc(i.title)}</h3>
           <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
         </div>
-      </a>`;
+      </button>`;
+  }
+
+  /* ---------- 重大动态弹窗：FM 防损角度的事故速报 + 原文链接 ---------- */
+  const dialog = document.createElement("dialog");
+  dialog.className = "news-dialog";
+  document.body.appendChild(dialog);
+  dialog.addEventListener("click", (e) => {
+    if (e.target === dialog || e.target.closest("[data-close]")) dialog.close();
+  });
+  window.addEventListener("hashchange", () => dialog.open && dialog.close());
+
+  function openMajor(i) {
+    const c = (i.causes || []).find((x) => PERIL[x.peril]);
+    const p = c && PERIL[c.peril];
+    const sub = p && p.causeMap[c.cause];
+    const fm = i.fm;
+    const overview = fm
+      ? `<p>${esc(fm.summary)}</p><p class="nd-note">由 Claude 根据报道原文整理，仅供培训参考</p>`
+      : i.desc
+      ? `<p>${esc(i.desc)}</p><p class="nd-note">报道原文摘要</p>`
+      : `<p class="nd-empty">原文未提供摘要，请阅读原文了解详情。</p>`;
+    let points, note, ds;
+    if (fm && fm.points && fm.points.length) {
+      points = fm.points;
+      ds = fm.refs || [];
+      note = "针对本事故的分析";
+    } else if (sub) {
+      points = sub.guide || [];
+      ds = sub.ds || [];
+      note = `按起因“${sub.name}”匹配的通用检查要点，非针对本事故的专门分析`;
+    } else if (p) {
+      points = [p.desc];
+      ds = p.ds || [];
+      note = `按起因“${p.name}”匹配`;
+    } else {
+      points = ["未能从标题自动判断起因。建议阅读原文，确认事故装置、物料与起因后，对照案例库中的同类事故。"];
+      ds = [];
+      note = "";
+    }
+    const img = i.img ? `<img src="${esc(BASE + i.img)}" alt="" onerror="this.parentNode.classList.add('noimg');this.remove()">` : "";
+    dialog.className = "news-dialog" + (p ? " p-" + p.id : "");
+    dialog.innerHTML = `
+      <div class="nd-inner">
+        <button type="button" class="nd-close" data-close aria-label="关闭">×</button>
+        <div class="nd-media mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
+        <div class="nd-body">
+          <div class="mc-top"><span class="badge major">重大</span>${REGIONS[i.region] ? regionBadge(i.region) : ""}${sub ? `<span class="mc-cause">${esc(sub.name)}</span>` : ""}</div>
+          <h2>${esc(i.title)}</h2>
+          <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
+          <h3>事故概况</h3>
+          ${overview}
+          <div class="fm-box"><h4>FM 防损视角</h4>
+            <ul>${points.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
+            ${note ? `<p class="nd-note">${esc(note)}</p>` : ""}
+            ${ds.length ? `<div class="row"><span class="k">参考 Data Sheet：</span>${dsList(ds)}</div>` : ""}
+          </div>
+          <div class="nd-actions">
+            <a class="btn" href="${safeUrl(i.link || i.url)}" target="_blank" rel="noopener">阅读原文 ↗</a>
+            ${p ? `<a class="btn ghost" href="#/peril/${p.id}${sub ? "?c=" + c.cause : ""}">查看同类事故</a>` : ""}
+          </div>
+        </div>
+      </div>`;
+    dialog.showModal();
+    dialog.querySelector(".nd-close").focus();
   }
 
   function feedPanel(region) {
@@ -545,6 +611,12 @@
 
   /* ---------- events ---------- */
   app.addEventListener("click", (e) => {
+    const mc = e.target.closest(".major-card[data-fi]");
+    if (mc) {
+      const item = FEED_ALL[+mc.dataset.fi];
+      if (item) openMajor(item);
+      return;
+    }
     const mj = e.target.closest(".chip[data-major]");
     if (mj) {
       majorOnly = mj.dataset.major === "1";
