@@ -122,6 +122,12 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-24",
   },
 
+  "https://www.safehoo.com/Case/Case/Machine/202610/5819745.shtml": {
+    notLoss: true,
+    reason: "2014年珠海粤裕丰钢铁皮带机机械伤害事故（1人死亡）的旧调查报告，属人身伤害事故，不涉及财产损失",
+    by: "Claude Code", at: "2026-10-26",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
