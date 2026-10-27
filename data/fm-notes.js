@@ -128,6 +128,18 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-26",
   },
 
+  "https://www.thehindu.com/news/national/telangana/two-workers-killed-in-chloroform-vapour-leak-at-pharma-unit-tgpcb-orders-closure/article71617455.ece": {
+    event: "saraca-gaddapotharam-2026-10",
+    summary: "10月22日夜间，特伦甘纳邦 Gaddapotharam 工业区 Saraca Laboratories 二号生产车间在分层操作中，把氯仿从一楼反应釜转移到底楼接收罐时发生蒸气泄漏，2名工人死亡，另有操作工、主管等数人送医。特伦甘纳邦污染控制委员会（TGPCB）随后下令工厂立即停产，并要求电力公司切断供电；起火、爆炸或设备损失情况报道未说明。",
+    points: [
+      "跨楼层的反应釜→接收罐重力转料是溶剂泄漏的高发环节：检查转料管线、软管与视镜的完好性，以及转料时的密闭和排气回收。",
+      "监管部门勒令停产并断电，意味着即使设备本身损失不大，营业中断也可能持续较长时间：评估类似客户在事故后的复产审批周期。",
+      "同一车间若使用易燃溶剂，同样的泄漏可能演变为火灾或爆炸：关注生产车间的通风换气、气体探测报警与转料作业程序。",
+    ],
+    refs: ["7-43", "7-36", "7-32"],
+    by: "Claude Code", at: "2026-10-27",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
