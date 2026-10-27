@@ -140,6 +140,17 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-27",
   },
 
+  "https://www.hazardexonthenet.net/article/223529/CLOSING-SOON-Awards-Nominations-Deadline-30th-October-Hazardex-Live-2027.aspx": {
+    notLoss: true,
+    reason: "HazardEx 行业奖项提名截止通知，不是事故报道",
+    by: "Claude Code", at: "2026-10-27",
+  },
+  "https://www.icis.com/explore/resources/news/2026/10/26/11238870/podcast-firefighting-restructuring-and-tug-of-war-icis-editors-sum-up-fakuma-fair": {
+    notLoss: true,
+    reason: "ICIS 编辑点评 Fakuma 塑料展会的播客，标题中的“Firefighting”是比喻，与事故无关",
+    by: "Claude Code", at: "2026-10-27",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
