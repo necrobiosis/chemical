@@ -151,6 +151,54 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-27",
   },
 
+  "https://www.mem.gov.cn/xw/gdyj/202610/t20261027_737194.shtml": {
+    notLoss: true,
+    reason: "山东省出台重大事故隐患调查处理办法的政策新闻，不是事故报道",
+    by: "Claude Code", at: "2026-10-28",
+  },
+  "https://www.mem.gov.cn/xw/gdyj/202610/t20261027_737192.shtml": {
+    notLoss: true,
+    reason: "江西公布事故隐患内部报告奖励案例的通报，不是事故报道",
+    by: "Claude Code", at: "2026-10-28",
+  },
+  "https://www.mem.gov.cn/xw/gdyj/202610/t20261027_737193.shtml": {
+    notLoss: true,
+    reason: "天津市危化领域典型事故警示教育会议，不是事故报道",
+    by: "Claude Code", at: "2026-10-28",
+  },
+  "https://news.chemnet.com/toutiao/detail-92256.html": {
+    notLoss: true,
+    reason: "韩国南海化学丽水硫酸钾厂区叉车侧翻致1人死亡，报道称未引发物料泄漏、火灾或爆炸，属人身伤害事故",
+    by: "Claude Code", at: "2026-10-28",
+  },
+  "https://economictimes.indiatimes.com/topic/Paramjeet-Singh-Pamma": {
+    notLoss: true,
+    reason: "德里红堡爆炸后市场停业的商业报道，并非工业事故，且链接指向人物话题页",
+    by: "Claude Code", at: "2026-10-28",
+  },
+  "https://www.hazardexonthenet.net/article/224676/Dutch-Safety-Board-investigates-fatal-pipeline-accident.aspx": {
+    event: "gunvor-rotterdam-2026-08",
+    summary: "2026年8月13日约11时30分，荷兰鹿特丹 Europoort 区 Gunvor Energy 储罐库区（属 Seveso 管控设施）在一套装置退役拆除过程中断开管线时发生爆炸，1人死亡、5人受伤，现场作业的6人为 Gunvor 员工和承包商。涉及物料、财产损失和原因报道未说明；荷兰安全委员会已立案调查，重点是如何判断管线可以安全打开，以及这一状态如何在人员之间传达。",
+    points: [
+      "退役拆除时打开管线是典型的非常规作业：管线内残留的可燃物料或蒸气未彻底清除，遇点火源即可爆炸。",
+      "检查隔离、排空、吹扫/惰化与气体检测的确认程序，以及“可安全打开”的签字放行和交接记录。",
+      "承包商参与的拆除作业要纳入作业许可和变更管理，并评估邻近在役储罐和管线受波及的风险。",
+    ],
+    refs: ["7-59", "7-43", "7-88"],
+    by: "Claude Code", at: "2026-10-28",
+  },
+  "https://www.hazardexonthenet.net/article/224681/Turkey-methane-explosion-at-coal-mine-kills-three-workers.aspx": {
+    event: "zonguldak-mine-2026-10",
+    summary: "10月23日，土耳其宗古尔达克省 Kilimli 区 Gelik 一处由 Demir Madencilik 公司运营的煤矿发生瓦斯（甲烷）爆炸，当时井下有8名工人，3人死亡、5人受伤（其中2人重伤）。设备和井巷损失报道未说明；甲烷积聚原因和点火源仍在调查，检方已对矿方经营者和职业安全专员发出拘留令。",
+    points: [
+      "甲烷积聚通常源于通风不足或局部通风中断，再遇到电气火花、摩擦或爆破等点火源就会爆炸。",
+      "检查可燃气体连续监测与超限自动断电的联锁，以及通风系统的可靠性和备用能力。",
+      "煤矿不是化工客户，但同样的“可燃气体积聚 + 点火源”机理适用于有沼气或可燃气体的地下及半封闭空间（如污水池、地下管廊）。",
+    ],
+    refs: [],
+    by: "Claude Code", at: "2026-10-28",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
