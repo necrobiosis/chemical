@@ -199,6 +199,33 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-28",
   },
 
+  "https://news.chemnet.com/toutiao/detail-92552.html": {
+    notLoss: true,
+    reason: "10月27日沙特拉斯塔努拉炼厂附近起火，胡塞武装宣称发动导弹袭击；属战争/袭击事件，不是工业事故，起火原因与损失官方均未确认",
+    by: "Claude Code", at: "2026-10-29",
+  },
+  "https://inkorr.com/en/masovana-ataka-bezpilotnikiv-na-himzavod-azot-u-novomoskovsku-pozeza-ta-vibuhi-v-lipecku-352467": {
+    notLoss: true,
+    reason: "10月28日俄罗斯新莫斯科夫斯克 Azot 化工厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-10-29",
+  },
+  "https://ua.news/cn/war-vs-rf/video-u-rosiyi-vnochi-lunali-vibukhi-ta-gorili-zavodi-aeroporti-moskvi-obmezhili-robotu": {
+    notLoss: true,
+    reason: "10月28日俄罗斯多地遭无人机袭击（含图拉州 Azot 化工厂起火）的战事报道，不是工业事故",
+    by: "Claude Code", at: "2026-10-29",
+  },
+  "https://news.chemnet.com/toutiao/detail-92518.html": {
+    event: "ineos-bayport-eo-2026-10",
+    summary: "英力士氧化物公司（INEOS Oxide）在2026年10月16日的客户通知中宣布，美国得克萨斯州 Bayport 基地的环氧乙烷及其衍生物供应进入不可抗力，原因是“意外的设备故障和机械失灵”影响生产。具体故障设备、产能影响、恢复时间，以及是否有起火、爆炸或人员伤亡，报道均未说明。",
+    points: [
+      "环氧乙烷装置的关键设备（循环气压缩机、反应器、换热器）一旦意外故障，往往需要长时间检修，营业中断损失可能远超设备本身的修复费用。",
+      "环氧乙烷易燃易爆，还可能自聚或分解，停车、检修和再开车阶段风险较高：检查惰化置换和开停车程序。",
+      "检查类似客户关键转动设备的状态监测、备件储备和修复周期，以及下游衍生物装置对单一环氧乙烷来源的依赖。",
+    ],
+    refs: ["7-43", "7-59", "7-45"],
+    by: "Claude Code", at: "2026-10-29",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
