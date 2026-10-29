@@ -226,6 +226,23 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-29",
   },
 
+  "https://www.koreaherald.com/article/10914240": {
+    notLoss: true,
+    reason: "朝鲜就非军事区地雷爆炸致函联合国安理会的外交新闻，不是工业事故",
+    by: "Claude Code", at: "2026-10-29",
+  },
+  "https://timesofindia.indiatimes.com/city/madurai/blast-at-firecracker-unit-near-sivakasi-none-injured/articleshow/135276979.cms": {
+    event: "sivakasi-mamsapuram-2026-10",
+    summary: "10月28日中午前后，印度泰米尔纳德邦维鲁杜纳加尔县西瓦卡西附近 Mamsapuram 一家持证烟花厂（当地泰米尔语报道称为 Vari 烟花厂，雇员200余人）发生爆炸。工人当时正在休息、不在室内，因此无人受伤；各报道说法不一，《印度时报》称3间生产间受损，泰米尔语报道称1间存放烟花的房间被夷平。起火原因报道未说明，警方正在调查。",
+    points: [
+      "排灯节前赶工，生产间和暂存间的药剂、成品存量往往超出限额：一间爆炸很容易殉爆到相邻房间。",
+      "检查各工房的存药限量、工房之间的安全间距和防爆土堤，以及成品及时转运出厂的制度。",
+      "摩擦、撞击和静电是烟花药剂的主要点火源：关注工具材质、防静电措施、地面材料，以及高温天气下的温湿度控制。",
+    ],
+    refs: ["7-43", "10-1"],
+    by: "Claude Code", at: "2026-10-29",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
