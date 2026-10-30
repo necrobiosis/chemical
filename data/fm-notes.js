@@ -254,6 +254,22 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-30",
   },
 
+  "https://www.mem.gov.cn/xw/gdyj/202610/t20261030_737470.shtml": {
+    notLoss: true,
+    reason: "应急管理部“历史上十一月发生的危险化学品事故”回顾汇编，不是新发生的事故",
+    by: "Claude Code", at: "2026-10-30",
+  },
+  "https://www.mem.gov.cn/fw/jsxx/202610/t20261030_737484.shtml": {
+    notLoss: true,
+    reason: "山东省事故隐患内部报告奖励机制宣传活动，不是事故报道",
+    by: "Claude Code", at: "2026-10-30",
+  },
+  "https://www.reuters.com/world/asia-pacific/who-is-blame-hong-kongs-deadly-2025-fire-2026-10-29/": {
+    notLoss: true,
+    reason: "路透社回顾2025年香港致命火灾追责问题的报道，属住宅建筑火灾的旧事件，非化工/工业事故",
+    by: "Claude Code", at: "2026-10-30",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
