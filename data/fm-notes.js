@@ -243,6 +243,17 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-29",
   },
 
+  "https://www.asiae.co.kr/en/article/social-general/2026102922065321652": {
+    notLoss: true,
+    reason: "韩国乌山市模拟火灾、爆炸和氨泄漏的综合灾害应急演练，不是真实事故",
+    by: "Claude Code", at: "2026-10-30",
+  },
+  "https://www.koreaherald.com/article/10919421": {
+    notLoss: true,
+    reason: "仁川一家餐馆燃气爆炸后演员关闭气瓶阀门的社会新闻，属商业餐饮场所事故，非化工/工业设施",
+    by: "Claude Code", at: "2026-10-30",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
