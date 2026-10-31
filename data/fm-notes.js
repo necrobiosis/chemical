@@ -292,6 +292,55 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-31",
   },
 
+  // 安全管理网批量转载的旧事故调查报告（标题与摘要在新闻源中错位，均为人身伤害类）
+  "https://www.safehoo.com/Case/Case/Drop/202610/5820148.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Electric/202610/5820146.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Drowned/202610/5820147.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Machine/202610/5820145.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Crane/202610/5820142.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Machine/202610/5820144.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Drop/202610/5820140.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（高处坠落等人身伤害类），不是新发生的财产损失事件",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.safehoo.com/Case/Case/Collapse/202610/5820138.shtml": {
+    notLoss: true, reason: "2025年银川热电老厂区锅炉房拆除作业坍塌的调查报告，属拆除施工人身伤害事故，不涉及在役生产设施的财产损失",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://www.hazardexonthenet.net/article/223529/CLOSING-SOON-Awards-Nominations-Deadline-6th-November-Hazardex-Live-2027.aspx": {
+    notLoss: true, reason: "HazardEx 行业奖项提名截止通知，不是事故报道",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://mnewstv.com/view.php?id=24748": {
+    event: "shanyin-jiapeng-2026-02",
+    summary: "这是2026年2月7日旧事故的报道：当天凌晨，山西省朔州市山阴县佳鹏生物科技有限公司一处车间发生爆炸并起火，附近建筑被震塌；当地最初通报5人遇难，次日更新为8人遇难。企业2025年6月才成立，经营范围为涂料制造（注明不含危险化学品）。爆炸原因官方尚未公布，媒体关于反应失控等说法均属推测，财产损失报道未说明。",
+    points: [
+      "新成立的小型企业实际工艺与登记的经营范围不一致，是“小化工”事故的典型特征：检查类似客户时，要核实现场实际使用的物料和工艺，而不只看营业执照。",
+      "媒体报道有夜间赶工和异味，说明可能存在超负荷生产和泄漏迹象：关注反应设备的量热评估、冷却与联锁，以及变更管理。",
+      "爆炸震塌附近建筑，说明车间与其他建筑的间距和防爆设计不足：评估对邻近建筑的外部暴露。",
+    ],
+    refs: ["7-43", "7-46", "7-17"],
+    by: "Claude Code", at: "2026-10-31",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
