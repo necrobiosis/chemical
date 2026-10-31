@@ -270,6 +270,28 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-30",
   },
 
+  "https://georgiatoday.ge/drone-attack-sparks-fire-at-oil-refinery-in-russias-samara-oblast/": {
+    notLoss: true,
+    reason: "俄罗斯萨马拉州新古比雪夫斯克炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://censor.net/en/news/4031154/drone-attack-on-the-novokuybyshevsk-oil-refinery-in-russia-explosions-fire-and-reaction-of-locals": {
+    notLoss: true,
+    reason: "10月30日新古比雪夫斯克炼厂遭无人机袭击起火的战事报道，不是工业事故",
+    by: "Claude Code", at: "2026-10-31",
+  },
+  "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwwpnz5282435.shtml?froms=ggmp": {
+    event: "haoyuan-fuyang-urea-2026-06",
+    summary: "这是阜阳市应急管理局9月公布的事故调查报告：2026年6月14日，安徽昊源化工集团阜阳新材料分公司尿素装置主框架上的常压放空管出现异常振动和异响（约8时40分发现），排查过程中于9时32分发生管道爆裂，2人死亡、4人受伤。二手报道转述的直接原因是：高压二氧化碳经阀门内漏进入常压放空管，节流降温后凝华成干冰并在管内积聚，导致超压和低温，管道脆性破裂。直接经济损失报道未说明。",
+    points: [
+      "高低压系统之间只靠单个阀门隔离，阀门一旦内漏，高压介质就会窜入设计压力很低的放空或排放系统：检查高低压交界处的双阀隔离、盲板与超压保护。",
+      "二氧化碳节流后可能生成干冰并堵塞管道，同时造成低温脆断：检查放空管的材质低温适用性和防冰堵措施（伴热、流量监测）。",
+      "从发现异常到爆裂相隔约52分钟：检查异常工况的处置程序是否要求先隔离、泄压并撤离无关人员，而不是带压排查。",
+    ],
+    refs: ["7-43", "7-49", "7-45"],
+    by: "Claude Code", at: "2026-10-31",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
