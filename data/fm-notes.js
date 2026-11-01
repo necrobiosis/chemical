@@ -358,6 +358,11 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-01",
   },
 
+  "https://www.safehoo.com/News/News/China/202611/5820224.shtml": {
+    notLoss: true, reason: "四川康定勒多曼因峰违规登山滑坠事故（2死1伤），属户外人身伤害事故，与工业设施无关",
+    by: "Claude Code", at: "2026-11-01",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
