@@ -341,6 +341,23 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-10-31",
   },
 
+  "https://www.safehoo.com/Case/Case/Blaze/202610/5820154.shtml": {
+    notLoss: true, reason: "安全管理网转载的汕头市龙湖区阳光花园旧火灾调查报告，属住宅小区火灾，非化工/工业设施",
+    by: "Claude Code", at: "2026-11-01",
+  },
+  "https://www.safehoo.com/Case/Case/Poison/202610/5820143.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海诚科环保“3.6”中毒和窒息旧事故评估报告，属人身伤害事故",
+    by: "Claude Code", at: "2026-11-01",
+  },
+  "http://www.safehoo.com/Case/Case/Drop/202610/5820150.shtml": {
+    notLoss: true, reason: "安全管理网转载的珠海胜航公寓“4·1”高处坠落旧事故调查报告，属人身伤害事故（新闻源中标题错配为仁川燃气爆炸）",
+    by: "Claude Code", at: "2026-11-01",
+  },
+  "https://menafn.com/1111895472/Explosions-Reported-In-Russias-Ufa-Oil-Refinery-Unit-On-Fire-Media": {
+    notLoss: true, reason: "10月31日俄罗斯乌法 Bashneft-Novoil 炼厂遭袭后催化重整装置起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-01",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
