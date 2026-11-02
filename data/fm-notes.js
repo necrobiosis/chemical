@@ -380,6 +380,24 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-02",
   },
 
+  // 以下 4 条在新闻源中标题与链接错位，所涉内容（应急演习、压路机致死、道路交通事故、物体打击）均非财产损失事件
+  "https://www.safehoo.com/News/News/China/202611/5820240.shtml": {
+    notLoss: true, reason: "应急演习或人身伤害类新闻（新闻源标题与链接错位），不是财产损失事件",
+    by: "Claude Code", at: "2026-11-02",
+  },
+  "https://www.safehoo.com/ShowComment.aspx?id=5812592": {
+    notLoss: true, reason: "安全管理网事故报告评论页（交通或人身伤害类事故），不是财产损失事件",
+    by: "Claude Code", at: "2026-11-02",
+  },
+  "https://www.mem.gov.cn/xw/yjglbgzdt/202611/t20261102_737705.shtml": {
+    notLoss: true, reason: "应急管理部工作动态（大湾区超高层建筑火灾扑救演习等），不是事故报道",
+    by: "Claude Code", at: "2026-11-02",
+  },
+  "https://www.safehoo.com/ShowComment.aspx?id=5810209": {
+    notLoss: true, reason: "安全管理网事故报告评论页（物体打击等人身伤害类事故），不是财产损失事件",
+    by: "Claude Code", at: "2026-11-02",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
