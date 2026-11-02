@@ -363,6 +363,23 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-01",
   },
 
+  "https://www.vietnam.vn/en/dien-tap-ung-pho-su-co-chay-no-va-tran-hoa-chat-quy-mo-lon-tai-tphcm": {
+    notLoss: true, reason: "10月31日越南胡志明市龙山一家石化企业的大型火灾、爆炸和化学品泄漏应急演练，不是真实事故",
+    by: "Claude Code", at: "2026-11-02",
+  },
+  "https://aroundprague.cz/en/news/war-in-ukraine/ukrainian-drones-attack-one-of-russias-largest-oil-refineries-in-kstovo": {
+    notLoss: true, reason: "俄罗斯克斯托沃卢克石油炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-02",
+  },
+  "https://112.ua/en/sili-oboroni-vdarili-po-npz-u-rosii-vibuhi-i-pozeza-na-zavodi-lukojl-nizegorodnaftoorgsintez-195205": {
+    notLoss: true, reason: "11月1日克斯托沃卢克石油下诺夫哥罗德炼厂遭无人机袭击爆炸起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-02",
+  },
+  "https://middleeast.economictimes.indiatimes.com/news/industry-logistics/hormuz-tanker-blast-revives-a-familiar-iranian-playbook/135423117": {
+    notLoss: true, reason: "霍尔木兹海峡油轮疑遭水雷袭击的地缘政治评论，属袭击事件，不是工业事故",
+    by: "Claude Code", at: "2026-11-02",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
