@@ -442,6 +442,32 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-03",
   },
 
+  // HPCL 维沙卡帕特南炼厂火灾的后续报道（11月3日新闻源，标题与链接仍错位，按链接实际内容归类）
+  "https://ua.news/en/energetika/pislia-vibukhu-na-npz-v-indiyi-spalakhnula-masshtabna-pozhezha-anadolu-agency": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.deccanherald.com/amp/story/india%2Fandhra-pradesh%2Fandhra-hpcl-fire-accident-occurred-in-storage-tank-controlled-no-deaths-injuries-4205515": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://news.chemnet.com/toutiao/detail-93570.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://newsable.asianetnews.com/india/fire-breaks-out-at-hpcl-refinery-in-visakhapatnam-after-small-blast-articleshow-kpln1rv": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.timesnownews.com/india/massive-explosion-at-visakhapatnam-oil-refinery-triggers-fire-thick-smoke-engulfs-area-article-156454480": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.arabtimesonline.com/news/massive-fire-erupts-at-indias-visakhapatnam-oil-refinery-after-explosion/": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.republicworld.com/india/massive-fire-erupts-at-hpcl-refinery-in-visakhapatnam-after-explosion-thick-smoke-covers-city-2026-11-02-140277": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.livemint.com/news/india/blast-at-visakhapatnams-hpcl-oil-refinery-what-led-to-blaze-cause-of-fire-casualties-what-we-know-11793642457780.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://hyderabadmail.com/hpcl-refinery-fire-visakhapatnam-explosion-suspected/": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.dnaindia.com/india/report-major-fire-at-hpcl-refinery-in-visakhapatnam-after-explosion-sounds-what-we-know-so-far-3223500": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://x.com/MarioNawfal/status/2117336708438176042/video/1": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+
+  "https://www.safehoo.com/News/News/China/202611/5820300.shtml": {
+    notLoss: true, reason: "11月2日武汉武昌区一住宅小区爆燃（2死1伤），属居民住宅事故，非化工/工业设施",
+    by: "Claude Code", at: "2026-11-03",
+  },
+  "https://www.safehoo.com/ShowComment.aspx?id=5815475": {
+    notLoss: true, reason: "安全管理网渔船自沉事故调查报告的评论页，属渔业船舶事故，非化工/工业设施",
+    by: "Claude Code", at: "2026-11-03",
+  },
+  "https://www.hydrocarbonprocessing.com/news/2026/11/sasol-restarts-idled-isosiv-normal-paraffin-unit-at-augusta-lifts-lab-force-majeure/": {
+    notLoss: true, reason: "沙索意大利奥古斯塔正构烷烃装置重启、解除 LAB 不可抗力的经营新闻，不是事故报道",
+    by: "Claude Code", at: "2026-11-03",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
