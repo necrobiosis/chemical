@@ -398,6 +398,50 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-02",
   },
 
+  // 印度维沙卡帕特南 HPCL 炼厂火灾（多家媒体报道同一事件；新闻源中标题与链接错位，按链接实际内容归类）
+  "https://cedarnews.net/newstasks/1113737/fire-at-hpcl-oil-refinery-in-visakhapatnam-india-after-reported-explosion-video/": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.indiatvnews.com/news/india/andhra-pradesh-visakhapatnam-hpcl-oil-refinery-explosion-fire-live-updates-2026-11-02-1058528": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.thedailyjagran.com/india/news/andhra-pradesh-visakhapatnam-oil-refinery-massive-fire-after-explosion-firefighting-operations-underway-latest-updates-10334917": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.oneindia.com/india/massive-fire-at-hpcls-visakhapatnam-oil-refinery-after-explosion-flames-and-thick-smoke-trigger-pa-8249253.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.ndtv.com/india-news/massive-fire-at-andhra-pradesh-oil-refinery-after-explosion-12273295": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.hindustantimes.com/india-news/explosion-at-hindustan-petroleum-refinery-in-vishakhapatnam-dead-injured-casualties-fire-smoke-police-101793640365382.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://timesofindia.indiatimes.com/city/visakhapatnam/hpcls-visakhapatnam-refinery-hit-by-major-fire-near-oil-tank-explosion-reports-under-scrutiny/articleshow/135469343.cms": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+
+  "https://www.hazardexonthenet.net/article/224830/Fire-at-oil-refinery-in-Syria-contained-after-reported-flammable-material-leak.aspx": {
+    event: "syria-jabsa-refinery-2026-10",
+    summary: "10月21日，叙利亚东北部哈塞克省沙达迪以东 al-Jabsa 油田内一座炼油厂的电加热炉内起火，油气设施消防队、民防和省应急人员在火势蔓延前将其控制，无平民受伤。省应急与灾害管理局称起因是停电后可燃物料泄漏，具体泄漏物料、点火方式和损失程度报道未说明；这座炼厂此前曾受损，当时正在修复，准备恢复运行。",
+    points: [
+      "停电后加热炉和泵组突然停运，可能导致物料倒流、超温或密封失效而泄漏：检查断电时的安全停车逻辑和关键设备的备用电源。",
+      "修复后准备重新开车的装置风险较高：检查开车前的安全审查、设备完整性确认和临时变更的管理。",
+      "检查加热炉的燃料和物料切断阀、炉膛灭火手段，以及与周边装置的防火间距。",
+    ],
+    refs: ["7-45", "7-43"],
+    by: "Claude Code", at: "2026-11-03",
+  },
+  "https://www.hazardexonthenet.net/article/224824/Gas-cylinder-explosion-at-bakery-production-site-in-Pakistan-kills-worker-and-injures-eight.aspx": {
+    event: "lahore-bakery-2026-11",
+    summary: "11月1日，巴基斯坦拉合尔 Gulberg 一处面包生产厂二楼的烘焙区发生气瓶爆炸，据救援人员说爆炸前气瓶有燃气泄漏；爆炸使部分建筑坍塌并引发火灾，当时现场有40多名员工，1人死亡、8人受伤（3人危重）。企业名称、气瓶类型和状况、泄漏原因均报道未说明，警方已立案调查。",
+    points: [
+      "生产区内使用和存放燃气钢瓶，一旦泄漏，在室内积聚后遇明火即可爆燃，甚至导致建筑结构坍塌。",
+      "检查燃气钢瓶是否集中存放在室外通风处、使用区有无可燃气体探测和自动切断，以及连接软管和减压阀的定期检查。",
+      "食品加工类客户常被低估风险：同时关注烘焙炉的燃气安全联锁和建筑的防火分隔。",
+    ],
+    refs: ["10-1"],
+    by: "Claude Code", at: "2026-11-03",
+  },
+  "https://economictimes.indiatimes.com/news/india/bihar-gas-pipeline-leak-one-dead-six-injured-as-png-leak-triggers-blast-in-muzaffarpur/articleshow/135461393.cms": {
+    notLoss: true, reason: "比哈尔邦穆扎法尔普尔城市燃气（PNG）管道泄漏引发爆炸（1死6伤），属城市燃气配送事故，非化工/工业设施；原文无法访问，细节未能核实",
+    by: "Claude Code", at: "2026-11-03",
+  },
+  "https://www.safehoo.com/ShowComment.aspx?id=5723132": {
+    notLoss: true, reason: "安全管理网叉车事故调查报告的评论页，属人身伤害事故",
+    by: "Claude Code", at: "2026-11-03",
+  },
+  "https://www.safehoo.com/ShowComment.aspx?id=5766567": {
+    notLoss: true, reason: "安全管理网叉车事故调查报告的评论页，属人身伤害事故",
+    by: "Claude Code", at: "2026-11-03",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
@@ -408,6 +452,15 @@ window.FM_NOTES = {
         "失控后只能“任其排放”，说明缺少紧急泄压处置与远程隔离手段；同时评估对周边客户的外部暴露和营业中断（疏散区内停工停课）。",
       ],
       refs: ["7-49", "7-88", "7-43"],
+    },
+    vizag: {
+      summary: "11月2日（周一）约22时，印度安得拉邦维沙卡帕特南 Gajuwaka 工业区的印度斯坦石油公司（HPCL）炼厂发生火灾。HPCL 称火势局限在渣油改质装置（Residue Upgradation Facility）的沥青罐区，很快被控制，无人员伤亡；当地官员说起火前有一声小规模爆炸，附近人员被转移到安全地点，但“油罐爆炸”的说法尚未证实。起火原因和损失程度报道未说明。",
+      points: [
+        "沥青/渣油罐通常在高温下储存：罐内积水被加热后突然汽化，或罐顶空间积聚可燃蒸气，都可能引发罐内超压和火灾。",
+        "检查高温储罐的进料温度控制、脱水管理、呼吸阀和泄压能力，以及罐顶空间可燃蒸气的监测。",
+        "这座炼厂此前多次发生火灾：检查类似客户时，应关注储罐区与工艺装置之间的间距、固定消防设施，以及历次事故整改的落实情况。",
+      ],
+      refs: ["7-88", "7-49", "7-43"],
     },
   },
 };
