@@ -468,6 +468,23 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-03",
   },
 
+  "https://www.freepressjournal.in/india/hpcl-visakhapatnam-refinery-fire-massive-blaze-erupts-at-malkapuram-pitch-storage-tank-after-reported-blast-no-casualties-reported-video": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202610/W020261012562665297499.wps": {
+    notLoss: true, reason: "应急管理部《危险化学品事故应急救援规程（征求意见稿）》文件附件，不是事故报道",
+    by: "Claude Code", at: "2026-11-04",
+  },
+  "https://www.hazardexonthenet.net/article/224856/Explosion-at-steel-plant-in-Cameroon-kills-four-and-seriously-injures-16.aspx": {
+    event: "douala-metafrique-2026-11",
+    summary: "11月2日，喀麦隆杜阿拉一家炼铁厂（图片署名为 Metafrique Steel SA）发生爆炸并起火，4人死亡、16人严重烧伤。企业称原因尚未查明，涉及的设备和损失程度报道未说明；地方当局已责令停产调查，州长称该厂2026年4月曾发生火灾，之后规定的整改措施并未落实。",
+    points: [
+      "冶炼厂爆炸常见的起因是高温熔融金属遇水（冷却水泄漏、潮湿炉料或模具）瞬间汽化：检查冷却水系统的泄漏监测，以及炉料和工具的干燥管理。",
+      "同一工厂半年内再次发生事故，且此前的整改没有落实：检查类似客户时，应核实历次事故建议的关闭情况，而不只是看有没有书面整改计划。",
+      "熔炼区附近人员密集会放大伤亡：关注熔炼区的人员限制、防爆隔离墙，以及液压油等可燃物与高温区的距离。",
+    ],
+    refs: ["10-1"],
+    by: "Claude Code", at: "2026-11-04",
+  },
+
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
