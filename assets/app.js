@@ -94,6 +94,43 @@
     })
   );
   const FEED_ALL = Object.keys(FEEDS.items || {}).flatMap((r) => (FEEDS.items[r] || []).map((i) => Object.assign({ region: r, causes: classifyFeed(i.title) }, i)));
+
+  // 一句话总结与事故经过流程图（FM 速报或精选新闻中的 brief / flow）
+  const briefOf = (i) => {
+    const n = noteOf(i);
+    return (n && n.brief) || (i.fm && i.fm.brief) || "";
+  };
+  const flowOf = (i) => {
+    const n = noteOf(i);
+    return (n && n.flow) || (i.fm && i.fm.flow) || null;
+  };
+  const flowHtml = (steps, cls) =>
+    steps && steps.length
+      ? `<ol class="flow${cls ? " " + cls : ""}" aria-label="事故经过">${steps
+          .map((t, k) => `<li class="${k === steps.length - 1 ? "end" : ""}"><span>${esc(t)}</span></li>`)
+          .join("")}</ol>`
+      : "";
+  // 报道摘要中常见的无意义文字（网站口号、评论页提示等）不显示
+  const junkDesc = (d, title) => !d || d.length < 30 || /for safety, health and hazardous|^网友对有关|版权所有|all rights reserved/i.test(d) || d === title;
+
+  // 没有现场照片时的示意图：按起因选用 assets/art 中的插图，页面上注明“示意图”
+  const ART = {
+    "fire/runaway": "fire-runaway", "fire/gas": "fire-gas", "fire/liquid": "fire-liquid", "fire/reactive": "fire-reactive",
+    "fire/dust": "fire-dust", "fire/general": "fire-general", fire: "fire-general",
+    "equipment/electrical": "equipment-electrical", equipment: "equipment",
+    "natural/flood": "natural-flood", "natural/wind": "natural-wind", "natural/quake": "natural-quake", "natural/lightning": "natural-lightning", natural: "natural-flood",
+  };
+  const artOf = (causes) => {
+    // 优先用有具体起因的分类（如“管道爆炸”同时命中泛化的火灾与具体的管道破裂时，用后者）
+    const c = (causes || []).find((x) => PERIL[x.peril] && x.cause) || (causes || []).find((x) => PERIL[x.peril]);
+    const name = c ? ART[c.peril + "/" + c.cause] || ART[c.peril] : "default";
+    return `${BASE}assets/art/${name || "default"}.svg`;
+  };
+  // 配图：有报道照片用照片，否则用示意图
+  const mediaHtml = (src, causes, alt) =>
+    src
+      ? `<img src="${esc(BASE + src)}" alt="${esc(alt || "")}" loading="lazy" onerror="this.onerror=null;this.src='${esc(artOf(causes))}';this.nextElementSibling.hidden=false"><span class="art-tag" hidden>示意图</span>`
+      : `<img src="${esc(artOf(causes))}" alt="${esc(alt ? alt + "（示意图）" : "示意图")}" loading="lazy"><span class="art-tag">示意图</span>`;
   const dsList = (refs) =>
     (refs || []).map((n) => `<a class="ds" href="#/training?ds=${esc(n)}" title="在 Data Sheet 速查中查看">DS ${esc(n)}</a>`).join("");
 
@@ -104,12 +141,16 @@
     const im = IMAGES[n.id];
     return im && im.file ? im : null;
   };
+  // 事故类精选新闻没有现场照片时，用起因示意图
+  const useArt = (n) => !imgOf(n) && n.causes && n.causes.length;
   const thumb = (n, cls) => {
     const im = imgOf(n);
+    if (!im && useArt(n)) return `<img class="${cls}" src="${esc(artOf(n.causes))}" alt="示意图" loading="lazy">`;
     return im ? `<img class="${cls}" src="${esc(BASE + (im.thumb || im.file))}" alt="${esc(n.title)}（${esc(im.credit)}报道图片）" loading="lazy" onerror="this.remove()">` : "";
   };
   function figure(n) {
     const im = IMAGES[n.id];
+    if (useArt(n)) return `<figure class="photo art"><div class="mc-media">${mediaHtml(null, n.causes, n.title)}</div><figcaption>原报道未附现场图片，此为示意图</figcaption></figure>`;
     if (!im) return "";
     if (!im.file) return `<p class="no-photo">原报道未附现场图片。</p>`;
     return `<figure class="photo"><img src="${esc(BASE + im.file)}" alt="${esc(n.title)}" loading="lazy" onerror="this.parentNode.remove()"><figcaption>图片来源：<a href="${safeUrl(
@@ -139,18 +180,20 @@
     const sources = (n.sources || []).map((s) => `<a href="${safeUrl(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ↗</a>`).join("");
     return `
       <details class="card" id="n-${esc(n.id)}" ${open ? "open" : ""}>
-        <summary class="${imgOf(n) ? "has-thumb" : ""}">
+        <summary class="${imgOf(n) || useArt(n) ? "has-thumb" : ""}">
           <div class="sum-text">
             <div class="top">${regionBadge(n.region)}${catBadge(n.category)}${n.report ? reportBadge : ""}<span>${esc(n.country)}</span><span>·</span><time>${fmtDate(n.date)}</time></div>
             ${n.causes ? `<div class="causes">${causeBadges(n)}</div>` : ""}
             <h3>${esc(n.title)}</h3>
-            <p class="lead">${esc(n.summary)}</p>
+            <p class="lead">${esc(n.brief || n.summary)}</p>
           </div>
           ${thumb(n, "thumb")}
         </summary>
         <div class="body">
           ${figure(n)}
-          <p>${esc(n.summary)}</p>
+          ${n.brief ? `<p class="nd-brief">${esc(n.brief)}</p>` : ""}
+          ${flowHtml(n.flow)}
+          ${n.brief ? `<details class="nd-detail"${n.flow ? "" : " open"}><summary>详细经过</summary><p>${esc(n.summary)}</p></details>` : `<p>${esc(n.summary)}</p>`}
           ${reportBox(n.report)}
           <div class="fm-box"><h4>FM 风险视角</h4><p>${esc(n.fm)}</p></div>
           ${discuss}${refs}${tags}
@@ -172,20 +215,18 @@
     }</div></li>`;
   }
 
-  // 重大动态卡片：配原文报道的头图；没有头图时显示起因色块，不使用生成图片
+  // 重大动态卡片：配原文报道的头图，没有头图时用起因示意图；有速报时先显示一句话总结
   function majorCard(i) {
     const c = (i.causes || []).find((x) => PERIL[x.peril]);
     const p = c && PERIL[c.peril];
     const cause = p ? (p.causeMap[c.cause] ? p.causeMap[c.cause].name : p.name) : "";
-    const img = i.img
-      ? `<img src="${esc(BASE + i.img)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('noimg');this.remove()">`
-      : "";
+    const brief = briefOf(i);
     return `<button type="button" class="major-card${p ? " p-" + p.id : ""}" data-fi="${FEED_ALL.indexOf(i)}">
-        <div class="mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
+        <div class="mc-media">${mediaHtml(i.img, i.causes)}</div>
         <div class="mc-body">
           <div class="mc-top"><span class="badge major">重大</span>${(noteOf(i) || {}).report || (i.fm && i.fm.report) ? reportBadge : ""}${REGIONS[i.region] ? regionBadge(i.region) : ""}${cause ? `<span class="mc-cause">${esc(cause)}</span>` : ""}</div>
-          <h3>${esc(i.title)}</h3>
-          <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
+          <h3>${esc(brief || i.title)}</h3>
+          <div class="meta">${brief ? `<span class="orig">${esc(i.title)}</span>` : ""}${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
         </div>
       </button>`;
   }
@@ -204,12 +245,23 @@
     const p = c && PERIL[c.peril];
     const sub = p && p.causeMap[c.cause];
     const note = noteOf(i);
-    const fm = i.fm || (note && note.summary ? note : null);
-    const overview = fm
-      ? `<p>${esc(fm.summary)}</p><p class="nd-note">由 Claude 根据报道整理${fm.at ? `（${esc(fm.at)}）` : ""}，仅供培训参考</p>`
-      : i.desc
-      ? `<p>${esc(i.desc)}</p><p class="nd-note">报道原文摘要</p>`
-      : `<p class="nd-empty">原文未提供摘要，请阅读原文了解详情。</p>`;
+    const fm = (note && note.summary ? note : null) || i.fm;
+    const brief = briefOf(i);
+    const flow = flowOf(i);
+    // 先一句话、再流程图；详细经过折叠起来
+    const lead = brief
+      ? `<p class="nd-brief">${esc(brief)}</p>${flowHtml(flow, "v")}`
+      : fm
+      ? `<p class="nd-brief">${esc(fm.summary)}</p>`
+      : !junkDesc(i.desc, i.title)
+      ? `<p class="nd-brief">${esc(i.desc)}</p><p class="nd-note">报道原文摘要，尚无 FM 速报</p>`
+      : `<p class="nd-empty">尚无速报，原文也未提供摘要，请阅读原文了解详情。</p>`;
+    const detail =
+      fm && brief
+        ? `<details class="nd-detail"><summary>详细经过</summary><p>${esc(fm.summary)}</p><p class="nd-note">由 Claude 根据报道整理${fm.at ? `（${esc(fm.at)}）` : ""}，仅供培训参考</p></details>`
+        : fm
+        ? `<p class="nd-note">由 Claude 根据报道整理${fm.at ? `（${esc(fm.at)}）` : ""}，仅供培训参考</p>`
+        : "";
     let points, basis, ds;
     if (fm && fm.points && fm.points.length) {
       points = fm.points;
@@ -228,18 +280,17 @@
       ds = [];
       basis = "";
     }
-    const img = i.img ? `<img src="${esc(BASE + i.img)}" alt="" onerror="this.parentNode.classList.add('noimg');this.remove()">` : "";
     dialog.className = "news-dialog" + (p ? " p-" + p.id : "");
     dialog.innerHTML = `
       <div class="nd-inner">
         <button type="button" class="nd-close" data-close aria-label="关闭">×</button>
-        <div class="nd-media mc-media${i.img ? "" : " noimg"}">${img}<span class="ph-label">${esc(p ? p.name : "重大动态")}</span></div>
+        <div class="nd-media mc-media">${mediaHtml(i.img, i.causes)}</div>
         <div class="nd-body">
           <div class="mc-top"><span class="badge major">重大</span>${(fm && fm.report) || (note && note.report) ? reportBadge : ""}${REGIONS[i.region] ? regionBadge(i.region) : ""}${sub ? `<span class="mc-cause">${esc(sub.name)}</span>` : ""}</div>
-          <h2>${esc(i.title)}</h2>
-          <div class="meta">${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
-          <h3>${(fm && fm.report) || (note && note.report) ? "概况" : "事故概况"}</h3>
-          ${overview}
+          <h2>${esc(brief || i.title)}</h2>
+          <div class="meta">${brief ? `原标题：${esc(i.title)} · ` : ""}${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
+          ${brief ? flowHtml(flow, "v") : lead}
+          ${detail}
           ${reportBox((fm && fm.report) || (note && note.report))}
           <div class="fm-box"><h4>FM 防损视角</h4>
             <ul>${points.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
@@ -290,7 +341,79 @@
   }
 
   /* ---------- views ---------- */
+  // 近 7 天重大动态，同一事件（多家媒体报道）只保留一条：优先有配图的，其次分数高
+  function recentMajors() {
+    const weekAgo = Date.now() - 7 * 86400000;
+    const recent = FEED_ALL.filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo));
+    const bestOfEvent = {};
+    recent.forEach((i) => {
+      const ev = (noteOf(i) || {}).event;
+      const cur = ev && bestOfEvent[ev];
+      if (ev && (!cur || (!cur.img && i.img) || (!!cur.img === !!i.img && (i.score || 0) > (cur.score || 0)))) bestOfEvent[ev] = i;
+    });
+    // 同一事件的报道篇数，用于衡量关注度
+    const reports = {};
+    recent.forEach((i) => {
+      const ev = (noteOf(i) || {}).event;
+      if (ev) reports[ev] = (reports[ev] || 0) + 1;
+    });
+    return recent
+      .filter((i) => {
+        const ev = (noteOf(i) || {}).event;
+        return !ev || bestOfEvent[ev] === i;
+      })
+      .map((i) => Object.assign(i, { reports: reports[(noteOf(i) || {}).event] || 1 }));
+  }
+
+  // 首页头条：人工指定（headline）优先；其次是已有 FM 速报的事故，按关注度（报道篇数）、重大分和时效排序
+  function headlineRank(i) {
+    const n = noteOf(i) || {};
+    const ageDays = i.date ? (Date.now() - Date.parse(i.date)) / 86400000 : 7;
+    // past：回顾旧事故的报道（如 CSB 旧视频、教育视频），不作为头条
+    return (n.headline ? 100 : 0) - (n.past ? 100 : 0) + (briefOf(i) ? 10 : 0) + Math.min(i.reports || 1, 8) + (i.score || 0) + (i.img ? 1 : 0) - ageDays;
+  }
+
+  function headlineCard(i, big) {
+    const c = (i.causes || []).find((x) => PERIL[x.peril]);
+    const p = c && PERIL[c.peril];
+    const cause = p ? (p.causeMap[c.cause] ? p.causeMap[c.cause].name : p.name) : "";
+    const n = noteOf(i) || {};
+    const brief = briefOf(i);
+    const point = (n.points || (i.fm && i.fm.points) || [])[0];
+    return `<article class="headline${big ? " big" : ""}${p ? " p-" + p.id : ""}">
+        <button type="button" class="hl-media mc-media" data-fi="${FEED_ALL.indexOf(i)}" aria-label="查看速报">${mediaHtml(i.img, i.causes)}</button>
+        <div class="hl-body">
+          <div class="mc-top"><span class="badge major">头条</span>${REGIONS[i.region] ? regionBadge(i.region) : ""}${cause ? `<span class="mc-cause">${esc(cause)}</span>` : ""}${
+      i.reports > 1 ? `<span class="hl-count">${i.reports} 家媒体报道</span>` : ""
+    }</div>
+          <h2>${esc(brief || i.title)}</h2>
+          ${flowHtml(flowOf(i), big ? "" : "v")}
+          ${point ? `<p class="hl-point"><strong>FM 关注：</strong>${esc(point)}</p>` : ""}
+          <div class="meta">${brief ? `原标题：${esc(i.title)} · ` : ""}${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
+          <div class="nd-actions">
+            <button type="button" class="btn" data-fi="${FEED_ALL.indexOf(i)}">查看速报</button>
+            <a class="btn ghost" href="${safeUrl(i.link || i.url)}" target="_blank" rel="noopener">阅读原文 ↗</a>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  // 首页：只放最关键的 1–3 条头条
   function viewHome() {
+    const top = recentMajors()
+      .sort((a, b) => headlineRank(b) - headlineRank(a))
+      .slice(0, 3);
+    const body = top.length
+      ? top.map((i, k) => headlineCard(i, k === 0)).join("")
+      : `<div class="empty">近 7 天没有重大事故。可以到 <a href="#/overview">总览</a> 查看行业动态，或到 <a href="#/cases">案例库</a> 复习典型事故。</div>`;
+    return `<div class="front">
+      <div class="page-head"><h1>今日头条</h1><p>近 7 天最值得关注的工商业事故，每条先给一句话结论和事故经过。${updatedText()}</p></div>
+      <div class="headlines">${body}</div>
+      <p class="front-more"><a href="#/overview">查看全部重大动态和三大板块 →</a></p>
+    </div>`;
+  }
+
+  function viewOverview() {
     const stats = Object.keys(REGIONS)
       .map((r) => {
         const list = NEWS.filter((n) => n.region === r);
@@ -308,7 +431,7 @@
         return `<div class="col"><h3>${REGIONS[r].name}<a href="#/${r}">查看全部 →</a></h3><ul class="mini">${list
           .map(
             (n) =>
-              `<li class="${imgOf(n) ? "has-thumb" : ""}">${thumb(n, "mini-thumb")}<div><a href="#/news/${esc(n.id)}">${esc(n.title)}</a><div class="meta">${catBadge(n.category)} ${esc(n.country)} · ${fmtDate(n.date)}</div></div></li>`
+              `<li class="${imgOf(n) || useArt(n) ? "has-thumb" : ""}">${thumb(n, "mini-thumb")}<div><a href="#/news/${esc(n.id)}">${esc(n.title)}</a><div class="meta">${catBadge(n.category)} ${esc(n.country)} · ${fmtDate(n.date)}</div></div></li>`
           )
           .join("")}</ul></div>`;
       })
@@ -316,20 +439,7 @@
 
     const latestIncident = NEWS.find((n) => n.category === "incident" && n.discuss);
 
-    const weekAgo = Date.now() - 7 * 86400000;
-    const recent = FEED_ALL.filter((i) => i.major && (!i.date || Date.parse(i.date) >= weekAgo));
-    // 多家媒体报道同一事件时只保留一张卡片：优先有配图的，其次分数高、日期新的
-    const bestOfEvent = {};
-    recent.forEach((i) => {
-      const ev = (noteOf(i) || {}).event;
-      const cur = ev && bestOfEvent[ev];
-      if (ev && (!cur || (!cur.img && i.img) || (!!cur.img === !!i.img && (i.score || 0) > (cur.score || 0)))) bestOfEvent[ev] = i;
-    });
-    const majors = recent
-      .filter((i) => {
-        const ev = (noteOf(i) || {}).event;
-        return !ev || bestOfEvent[ev] === i;
-      })
+    const majors = recentMajors()
       .sort((a, b) => (b.score || 0) - (a.score || 0) || (b.date || "").localeCompare(a.date || ""))
       .slice(0, 9);
     const majorSection = `<div class="section"><h2>近 7 天重大动态 <small>自动识别 · ${esc(SRC.schedule || "")} · ${updatedText()}</small></h2>${
@@ -606,7 +716,9 @@
     let html;
     let focus = null;
 
-    if (view === "search") {
+    if (view === "overview") {
+      html = viewOverview();
+    } else if (view === "search") {
       html = viewSearch(params.get("q") || "");
     } else if (view === "news" && parts[1]) {
       const n = NEWS.find((x) => x.id === parts[1]);
@@ -653,7 +765,7 @@
 
   /* ---------- events ---------- */
   app.addEventListener("click", (e) => {
-    const mc = e.target.closest(".major-card[data-fi]");
+    const mc = e.target.closest(".major-card[data-fi], .headline [data-fi]");
     if (mc) {
       const item = FEED_ALL[+mc.dataset.fi];
       if (item) openMajor(item);

@@ -13,7 +13,13 @@ const SCHEMA = {
   properties: {
     is_loss_event: {
       type: "boolean",
-      description: "报道是否描述一起具体的事故、火灾、爆炸、泄漏、自然灾害损失，或事故调查报告的发布/更新；政策会议、网站检查、股价、赔偿公告等为 false",
+      description: "报道是否描述一起具体的事故、火灾、爆炸、泄漏、自然灾害损失，或事故调查报告的发布/更新；政策会议、网站检查、演练、股价、赔偿公告，以及交通事故、高处坠落等纯人身伤害和住宅、餐馆等非工商业场所的事故为 false",
+    },
+    brief: { type: "string", description: "一句话总结，中文不超过 40 字，先说结果：什么企业、什么事故、伤亡与损失" },
+    flow: {
+      type: "array",
+      items: { type: "string" },
+      description: "事故经过流程图，3–6 个中文短步骤（每步不超过 16 字），按“起因 → 经过 → 后果”排列，最后一步写伤亡与损失；原因不明的写“（原因待查）”",
     },
     summary: { type: "string", description: "事故概况，中文 2–3 句：时间、地点、企业/装置、经过、伤亡与损失" },
     points: {
@@ -43,7 +49,7 @@ const SCHEMA = {
       ],
     },
   },
-  required: ["is_loss_event", "summary", "points", "refs", "report"],
+  required: ["is_loss_event", "brief", "flow", "summary", "points", "refs", "report"],
   additionalProperties: false,
 };
 

@@ -6,7 +6,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { resolveLinks, enrichMajors, pruneImages } from "./lib/feed-images.mjs";
+import { resolveLinks, resetStaleLinks, enrichMajors, pruneImages } from "./lib/feed-images.mjs";
 import * as fmSummary from "./lib/fm-summary.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -96,7 +96,9 @@ function classify(src, title) {
 const REL = new RegExp(config.relevant.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "i");
 // 排除词：枪击、恐袭、山火等与工业事故无关的“火”“爆炸”（命中即剔除，官方来源也不例外）
 const EXC = new RegExp((config.exclude || []).map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") || "$^", "i");
-const relevant = (item) => !EXC.test(item.title) && (item.tier === "A" || REL.test(item.title));
+// 排除规则（正则）：一般级别的人身伤害、交通、住宅等事故，以及评论页、演练、征求意见稿——网站只关注工商业企业的财产损失
+const EXC_RE = (config.excludePatterns || []).map((p) => new RegExp(p, "i"));
+const relevant = (item) => !EXC.test(item.title) && !EXC_RE.some((re) => re.test(item.title)) && (item.tier === "A" || REL.test(item.title));
 const M = config.major;
 function score(src, title) {
   const t = title.toLowerCase();
@@ -157,7 +159,7 @@ const prevItems = Object.values(previous.items || {}).flat();
 const prevByKey = new Map(prevItems.map((i) => [norm(i.title), i]));
 fresh.forEach((i) => {
   const p = prevByKey.get(norm(i.title));
-  if (p) for (const k of ["link", "img", "imgV", "imgTried", "imgBlocked", "desc", "descV", "fm", "fmTried", "notLoss"]) if (p[k] !== undefined) i[k] = p[k];
+  if (p) for (const k of ["link", "linkV", "img", "imgV", "imgTried", "imgBlocked", "desc", "descV", "fm", "fmTried", "notLoss"]) if (p[k] !== undefined) i[k] = p[k];
 });
 [...fresh, ...prevItems]
   .filter((i) => items[i.region] && relevant(i) && (!i.date || Date.parse(i.date) >= cutoff))
@@ -170,6 +172,9 @@ fresh.forEach((i) => {
   });
 for (const r of Object.keys(items)) items[r] = items[r].slice(0, config.maxPerRegion);
 
+// 旧版本错配的原文链接（及其配图、摘要）全部清空，重新解析
+const stale = resetStaleLinks(Object.values(items).flat());
+if (stale) console.log(`清空旧版本解析的原文链接 ${stale} 条，重新解析`);
 // 重大动态：解析原文链接并取报道头图作缩略图
 const majorsList = Object.values(items).flat().filter((i) => i.major);
 const linked = await resolveLinks(majorsList).catch((e) => (console.warn("链接解析失败：", e.message), 0));

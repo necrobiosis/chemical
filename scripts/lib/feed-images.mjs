@@ -26,52 +26,46 @@ function decodeOld(id) {
     return null;
   }
 }
-// 新格式需要先取签名与时间戳，再调用 batchexecute 接口
-async function decodeNew(ids) {
-  const params = [];
-  for (const id of ids) {
-    try {
-      const html = await (await get(`https://news.google.com/articles/${id}`)).text();
-      const sg = html.match(/data-n-a-sg="([^"]+)"/);
-      const ts = html.match(/data-n-a-ts="([^"]+)"/);
-      if (sg && ts) params.push({ id, sg: sg[1], ts: ts[1] });
-    } catch {}
-  }
-  if (!params.length) return {};
-  const reqs = params.map((p) => [
+// 新格式需要先取签名与时间戳，再调用 batchexecute 接口。
+// 每次只解析一条：同一请求里放多条时，接口返回的顺序与请求顺序不一致，按位置对应会把链接错配到别的标题上。
+async function decodeNew(id) {
+  const html = await (await get(`https://news.google.com/articles/${id}`)).text();
+  const sg = html.match(/data-n-a-sg="([^"]+)"/);
+  const ts = html.match(/data-n-a-ts="([^"]+)"/);
+  if (!sg || !ts) return null;
+  const req = [
     "Fbv4je",
-    `["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"${p.id}",${p.ts},"${p.sg}"]`,
-  ]);
+    `["garturlreq",[["X","X",["X","X"],null,null,1,1,"US:en",null,1,null,null,null,null,null,0,1],"X","X",1,[1,1,1],1,1,null,0,0,null,0],"${id}",${ts[1]},"${sg[1]}"]`,
+  ];
   const res = await get("https://news.google.com/_/DotsSplashUi/data/batchexecute", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
-    body: "f.req=" + encodeURIComponent(JSON.stringify([reqs])),
+    body: "f.req=" + encodeURIComponent(JSON.stringify([[req]])),
   });
-  const text = await res.text();
-  const out = {};
-  try {
-    const rows = JSON.parse(text.split("\n\n")[1]).filter((r) => r[0] === "wrb.fr");
-    rows.forEach((r, k) => {
-      const url = JSON.parse(r[2])[1];
-      if (params[k] && /^https?:\/\//.test(url)) out[params[k].id] = url;
-    });
-  } catch {}
-  return out;
+  const rows = JSON.parse((await res.text()).split("\n\n")[1]).filter((r) => r[0] === "wrb.fr");
+  const url = rows.length === 1 ? JSON.parse(rows[0][2])[1] : null;
+  return /^https?:\/\//.test(url || "") ? url : null;
+}
+
+// 链接解析规则版本：旧版本批量解析时会错配链接，低于此版本的条目重新解析，
+// 并清空依赖原文的配图、摘要和速报（它们来自错配的报道）
+export const LINK_V = 2;
+const FROM_LINK = ["link", "img", "imgV", "imgTried", "imgBlocked", "desc", "descV", "fm", "fmTried", "notLoss"];
+
+export function resetStaleLinks(items) {
+  let n = 0;
+  for (const i of items) {
+    if (i.link && (i.linkV || 0) < LINK_V && gnId(i.url)) FROM_LINK.forEach((k) => delete i[k]), n++;
+  }
+  return n;
 }
 
 export async function resolveLinks(items) {
   const pending = items.filter((i) => !i.link && gnId(i.url));
-  const needNew = [];
   for (const i of pending) {
     const id = gnId(i.url);
-    const old = decodeOld(id);
-    if (old) i.link = old;
-    else needNew.push(i);
-  }
-  for (let k = 0; k < needNew.length; k += 10) {
-    const batch = needNew.slice(k, k + 10);
-    const map = await decodeNew(batch.map((i) => gnId(i.url))).catch(() => ({}));
-    batch.forEach((i) => map[gnId(i.url)] && (i.link = map[gnId(i.url)]));
+    const link = decodeOld(id) || (await decodeNew(id).catch(() => null));
+    if (link) (i.link = link), (i.linkV = LINK_V);
   }
   return pending.filter((i) => i.link).length;
 }
@@ -186,23 +180,33 @@ export async function enrichMajors(items, root, { summarize = null, limit = 25 }
         }
         const res = await get(c.src, { headers: { Referer: i.link, Accept: "image/*" } }).catch(() => null);
         if (!res || !res.ok) continue;
-        const buf = Buffer.from(await res.arrayBuffer());
-        const meta = await sharp(buf).metadata().catch(() => ({}));
+        const buf = Buffer.from(await res.arrayBuffer().catch(() => new ArrayBuffer(0)));
+        if (buf.length < 1000) continue; // 空响应或占位小图（sharp 遇到空数据会同步抛错）
+        let meta;
+        try {
+          meta = await sharp(buf).metadata();
+        } catch {
+          continue;
+        }
         const ratio = meta.width / meta.height;
         const ok = c.strict
           ? meta.width >= 400 && ratio >= 0.6 && ratio <= 2.2 && buf.length >= 12000
           : meta.width >= 300 && ratio >= 0.5 && ratio <= 3.2;
         if (!ok) continue;
         // 与黑名单中的图片相同或相似（媒体反复使用的示意图）则跳过
-        if (isBlocked(blocklist, await dhash(sharp, buf))) {
-          stats.rejected++;
-          continue;
+        try {
+          if (isBlocked(blocklist, await dhash(sharp, buf))) {
+            stats.rejected++;
+            continue;
+          }
+          const name = createHash("sha1").update(i.link).digest("hex").slice(0, 16) + ".webp";
+          await sharp(buf).rotate().resize({ width: 360, height: 225, fit: "cover" }).webp({ quality: 66 }).toFile(path.join(dir, name));
+          i.img = `assets/feed-img/${name}`;
+          stats.img++;
+          break;
+        } catch {
+          continue; // 图片数据损坏，换下一张候选
         }
-        const name = createHash("sha1").update(i.link).digest("hex").slice(0, 16) + ".webp";
-        await sharp(buf).rotate().resize({ width: 360, height: 225, fit: "cover" }).webp({ quality: 66 }).toFile(path.join(dir, name));
-        i.img = `assets/feed-img/${name}`;
-        stats.img++;
-        break;
       }
     }
 
@@ -212,7 +216,7 @@ export async function enrichMajors(items, root, { summarize = null, limit = 25 }
       if (text.length < 80) continue; // 正文太短（可能被拦截或只有图片），不做总结
       try {
         const r = await summarize(i, text);
-        i.fm = { summary: r.summary, points: r.points.slice(0, 4), refs: r.refs.slice(0, 3) };
+        i.fm = { brief: r.brief, flow: (r.flow || []).slice(0, 6), summary: r.summary, points: r.points.slice(0, 4), refs: r.refs.slice(0, 3) };
         if (r.report) i.fm.report = Object.assign({ url: i.link }, r.report);
         if (!r.is_loss_event) (i.notLoss = true), stats.notLoss++;
         stats.fm++;

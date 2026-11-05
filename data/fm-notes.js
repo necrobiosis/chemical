@@ -2,13 +2,19 @@
  * 重大动态的 FM 防损速报（不需要 API 密钥）
  * ------------------------------------------------------------
  * 由 Claude Code 会话或每日定时任务（Routine）根据报道撰写，键为原文链接（feeds.js 中条目的 link）。
- * 字段：
- *   summary  事故概况（中文 2–3 句，只写报道中的事实，未说明的写“报道未说明”）
+ * 写法见 docs/routine-fm-notes.md。字段：
+ *   brief    一句话总结（≤ 40 字，先说结果：什么企业、什么事故、伤亡/损失）
+ *   flow     事故经过流程图：3–6 个短步骤（每步 ≤ 16 字），按“起因 → 经过 → 后果”排列，最后一步写伤亡与损失
+ *   summary  详细概况（中文 2–3 句，只写报道中的事实，未说明的写“报道未说明”）
  *   points   FM 防损视角要点（3 条）
  *   refs     相关 FM Data Sheet 编号（仅限培训基地速查表中的编号）
  *   event    同一事件的标识：多家媒体报道同一事故时首页只显示一张卡片
+ *   ref      引用 _shared 中的共享内容（同一事件的多篇报道共用一份速报）
+ *   headline true 表示人工指定为首页头条
+ *   past     true 表示回顾旧事故的报道（旧调查报告页面、教育视频等），不作为首页头条
  *   caseId   若案例库已收录该事故，填精选新闻 id，弹窗中提供“查看案例详情”
- *   notLoss  true 表示不是财产损失事件（会议、网站通报、纯人身伤害等），不再显示为重大
+ *   report   报告类新闻的报告要点（见 docs/routine-fm-notes.md）
+ *   notLoss  true 表示不是工商业财产损失事件（会议、演练、交通事故、纯人身伤害、战争袭击等），不显示为重大
  *   reason   notLoss 的简短说明
  *   by / at  撰写者与日期
  */
@@ -28,16 +34,15 @@ window.FM_NOTES = {
     reason: "台积电高雄厂区施工人员高处坠落（4人死亡），属人身安全事故，报道未涉及财产损失",
     by: "Claude Code", at: "2026-10-24",
   },
-
-  // 美国托莱多 GMA 储罐泄漏（多家媒体报道同一事件）
   "https://info.vanpeople.com/1912862.html": { event: "toledo-gma-2026-10", ref: "toledo" },
   "https://www.wsws.org/en/articles/2026/10/23/rzsr-o23.html": { event: "toledo-gma-2026-10", ref: "toledo" },
   "https://economictimes.indiatimes.com/news/international/world-news/toledo-chemical-leak-evacuation-order-expanded-to-3-miles-heres-what-happened-and-latest-updates/articleshow/135093068.cms": { event: "toledo-gma-2026-10", ref: "toledo" },
   "https://sg.news.yahoo.com/chemical-tank-explodes-ohio-forcing-135614269.html": { event: "toledo-gma-2026-10", ref: "toledo" },
   "https://www.hindustantimes.com/world-news/us-news/toledo-chemical-leak-forces-evacuations-and-shelter-in-place-order-all-on-emergency-number-road-closures-and-temporary-refuge-facility-101792575961997.html": { event: "toledo-gma-2026-10", ref: "toledo" },
-
   "https://economictimes.indiatimes.com/news/india/bengaluru-building-blast-injures-two-battery-explosion-suspected/articleshow/135086171.cms": {
     event: "bengaluru-battery-2026-10",
+    brief: "班加罗尔一栋在建建筑疑似电池爆炸，2人受伤。",
+    flow: ["在建建筑内存放电池", "疑似电池热失控", "发生爆炸", "2人受伤，原因调查中"],
     summary: "10月21日清晨，印度班加罗尔 Jarmia Road 一栋在建建筑发生爆炸，2人受伤（其中1人失去一根手指）。警方初步怀疑为电池爆炸，具体原因仍在调查，财产损失情况报道未说明。",
     points: [
       "锂电池与储能电池在工地、仓库和厂房中越来越常见，热失控可引发火灾和爆炸，且难以用水快速扑灭。",
@@ -49,12 +54,16 @@ window.FM_NOTES = {
   },
   "https://www.csb.gov/final-investigation-report---chevron-refinery-and-fire-/?theme=%2Fetc%2Fpasswd&F_All=y&print=y": {
     event: "csb-chevron-richmond",
+    past: true,
+    brief: "CSB 雪佛龙里士满炼厂 2012 年火灾报告：管道硫化腐蚀减薄后破裂，泄漏形成蒸气云起火。",
+    flow: ["高温含硫原油侧线", "硫化腐蚀使管壁减薄", "管道破裂泄漏", "带压处置中形成蒸气云", "起火，大面积火灾"],
     summary: "这是美国化学品安全委员会（CSB）关于 2012 年 8 月 6 日雪佛龙里士满炼厂火灾的调查报告页面，并非新发生的事故。原油装置一段侧线管道因硫化腐蚀减薄破裂，泄漏的可燃烃类形成蒸气云并起火。CSB 认为企业未识别该管道的损伤机理和破裂可能，也缺乏泄漏应对指引；其中一项相关建议于 2026 年 3 月结案。",
     points: [
       "高温含硫工况下碳钢管道的硫化腐蚀是炼厂的典型损伤机理：检查是否按管段逐一测厚，而不是只测代表性测点。",
       "泄漏发生后不应在未隔离的情况下带压处置：确认有远程切断阀和书面的泄漏应对程序。",
       "适合作为“机械完整性 → 管道破裂 → 蒸气云火灾”链条的培训案例。",
     ],
+    refs: ["7-43", "7-42"],
     report: {
       issuer: "美国化学品安全委员会（CSB）",
       type: "最终调查报告（报告页面，近期有更新）",
@@ -71,12 +80,12 @@ window.FM_NOTES = {
       ],
       url: "https://www.csb.gov/chevron-richmond-refinery-fire/",
     },
-    refs: ["7-43", "7-42"],
     by: "Claude Code", at: "2026-10-24",
   },
   "https://scanx.trade/stock-market-news/companies/mangalore-refinery-reports-fire-coker-hydrotreater-unit-one-minor/52306769": {
     event: "mrpl-2026-09",
-    caseId: "asia-india-mrpl-2026-09",
+    brief: "MRPL 炼厂加氢装置高压分离器破裂爆炸起火，企业向遇难者家属赔偿。",
+    flow: ["加氢装置高压冷分离器（约70 bar）", "容器破裂", "氢气和烃类泄漏", "爆炸起火，约2.5小时扑灭", "1死多伤，原因调查中"],
     summary: "芒格洛尔炼油石化公司（MRPL）宣布向 9 月 30 日炼厂火灾中遇难工人的家属提供 1.2 千万卢比补偿。事故发生在延迟焦化瓦斯油加氢处理装置：高压冷分离器（报道称约 70 bar）破裂后爆炸起火，约 2.5 小时后扑灭，破裂原因仍在调查。",
     points: [
       "加氢装置高压分离器内是高压氢气与烃类，破裂即为物理爆炸叠加火灾：检查高压容器检验计划，以及氢腐蚀、湿硫化氢开裂的监测。",
@@ -84,34 +93,15 @@ window.FM_NOTES = {
       "本站案例库已收录这起事故的详细分析，可结合培训讨论题使用。",
     ],
     refs: ["7-43", "7-91", "7-49"],
+    caseId: "asia-india-mrpl-2026-09",
     by: "Claude Code", at: "2026-10-24",
   },
-
-  "https://timesofindia.indiatimes.com/city/hyderabad/2-workers-killed-in-gas-leak-at-chemical-plant-in-telangana/articleshow/135139247.cms": {
-    event: "saraca-gaddapotharam-2026-10",
-    summary: "10月23日（周五）凌晨，印度特伦甘纳邦桑加雷迪县 Jinnaram 区 Gaddapotharam 工业区 Saraca Laboratories（报道亦拼作 Saraka）的“Glaba”车间发生有害气体泄漏，2名夜班工人死亡。泄漏气体种类、涉及的工序与设备、其他人员受伤情况均报道未说明；报道未提及起火、爆炸或财产损失，警方正在调查原因。",
-    points: [
-      "有毒气体泄漏本身属于“失去包容”的过程安全事件，同样的泄漏源若遇点火源或不相容物料，可能演变为火灾、爆炸或反应失控。",
-      "原料药/化工车间的反应釜投料、气体通入和尾气吸收是常见泄漏环节：检查气体探测报警与紧急切断联锁的覆盖范围和测试记录。",
-      "夜班人员少、响应慢，泄漏发现晚会扩大后果：关注夜班的操作程序、人员配置与应急处置能力。",
-    ],
-    refs: ["7-43", "7-36", "7-45"],
-    by: "Claude Code", at: "2026-10-24",
-  },
-
-  "https://www.siasat.com/2-dead-4-hospitalised-after-chloroform-leak-at-telangana-plant-3563236/": {
-    event: "saraca-gaddapotharam-2026-10",
-    summary: "据警方初步调查，10月22日（周四）约23时30分，特伦甘纳邦桑加雷迪县 Jinnaram 区一家制药企业（该报道未点名，其他报道称为 Saraca Laboratories）的一条输送氯仿的管道发生泄漏，员工疑因吸入氯仿昏迷，一名29岁化学师和一名44岁主管送医后不治，另有4人住院。报道未提及起火、爆炸或财产损失，进一步调查仍在进行。",
-    points: [
-      "管道输送溶剂发生泄漏说明法兰、阀门或管道本体存在完整性问题：检查溶剂管线的检验记录、垫片与密封管理和泄漏修复程序。",
-      "氯仿本身不易燃，但同一车间往往还有大量易燃溶剂，同样的泄漏一旦遇上易燃介质就可能演变为火灾：关注溶剂区的通风、气体探测与远程切断。",
-      "夜间多人相继昏迷，说明泄漏发现和报警滞后：检查有毒/可燃气体报警是否覆盖管廊与作业区，以及夜班的应急响应能力。",
-    ],
-    refs: ["7-43", "7-36", "7-32"],
-    by: "Claude Code", at: "2026-10-24",
-  },
+  "https://timesofindia.indiatimes.com/city/hyderabad/2-workers-killed-in-gas-leak-at-chemical-plant-in-telangana/articleshow/135139247.cms": { event: "saraca-gaddapotharam-2026-10", ref: "saraca" },
+  "https://www.siasat.com/2-dead-4-hospitalised-after-chloroform-leak-at-telangana-plant-3563236/": { event: "saraca-gaddapotharam-2026-10", ref: "saraca" },
   "https://www.wionews.com/world/several-injured-in-massive-explosion-and-fire-at-chemical-warehouse-in-mexico-s-le-n-san-nicol-s-1792809823352/amp": {
     event: "leon-solvent-warehouse-2026-10",
+    brief: "墨西哥莱昂一处制鞋业溶剂仓库起火，桶装溶剂接连爆炸，周边疏散。",
+    flow: ["溶剂与化学品仓库", "起火（原因不明）", "桶装溶剂受热超压", "容器每隔几分钟爆炸一次", "1–2人重伤，周边疏散"],
     summary: "10月23日（周五）下午，墨西哥瓜纳华托州莱昂市 San Nicolás 区一处溶剂与化学品仓库（当地报道称是为制鞋业供应溶剂和原料的工厂）起火，随后几个容器接连爆炸，每隔三到五分钟就有一声，周边企业和居民被疏散。各报道的伤亡数字不一（1至2人重伤，另有人轻伤），起火原因和涉及的具体物料报道未说明，建筑损失程度也未说明。",
     points: [
       "反复爆炸很可能是桶装或罐装易燃溶剂受热超压破裂，每次破裂都会让火势进一步扩大：检查仓库内溶剂存量、容器类型，以及储存区是否有泄压和防火分隔。",
@@ -121,25 +111,12 @@ window.FM_NOTES = {
     refs: ["7-32", "7-88", "10-1"],
     by: "Claude Code", at: "2026-10-24",
   },
-
   "https://www.safehoo.com/Case/Case/Machine/202610/5819745.shtml": {
     notLoss: true,
     reason: "2014年珠海粤裕丰钢铁皮带机机械伤害事故（1人死亡）的旧调查报告，属人身伤害事故，不涉及财产损失",
     by: "Claude Code", at: "2026-10-26",
   },
-
-  "https://www.thehindu.com/news/national/telangana/two-workers-killed-in-chloroform-vapour-leak-at-pharma-unit-tgpcb-orders-closure/article71617455.ece": {
-    event: "saraca-gaddapotharam-2026-10",
-    summary: "10月22日夜间，特伦甘纳邦 Gaddapotharam 工业区 Saraca Laboratories 二号生产车间在分层操作中，把氯仿从一楼反应釜转移到底楼接收罐时发生蒸气泄漏，2名工人死亡，另有操作工、主管等数人送医。特伦甘纳邦污染控制委员会（TGPCB）随后下令工厂立即停产，并要求电力公司切断供电；起火、爆炸或设备损失情况报道未说明。",
-    points: [
-      "跨楼层的反应釜→接收罐重力转料是溶剂泄漏的高发环节：检查转料管线、软管与视镜的完好性，以及转料时的密闭和排气回收。",
-      "监管部门勒令停产并断电，意味着即使设备本身损失不大，营业中断也可能持续较长时间：评估类似客户在事故后的复产审批周期。",
-      "同一车间若使用易燃溶剂，同样的泄漏可能演变为火灾或爆炸：关注生产车间的通风换气、气体探测报警与转料作业程序。",
-    ],
-    refs: ["7-43", "7-36", "7-32"],
-    by: "Claude Code", at: "2026-10-27",
-  },
-
+  "https://www.thehindu.com/news/national/telangana/two-workers-killed-in-chloroform-vapour-leak-at-pharma-unit-tgpcb-orders-closure/article71617455.ece": { event: "saraca-gaddapotharam-2026-10", ref: "saraca" },
   "https://www.hazardexonthenet.net/article/223529/CLOSING-SOON-Awards-Nominations-Deadline-30th-October-Hazardex-Live-2027.aspx": {
     notLoss: true,
     reason: "HazardEx 行业奖项提名截止通知，不是事故报道",
@@ -150,7 +127,6 @@ window.FM_NOTES = {
     reason: "ICIS 编辑点评 Fakuma 塑料展会的播客，标题中的“Firefighting”是比喻，与事故无关",
     by: "Claude Code", at: "2026-10-27",
   },
-
   "https://www.mem.gov.cn/xw/gdyj/202610/t20261027_737194.shtml": {
     notLoss: true,
     reason: "山东省出台重大事故隐患调查处理办法的政策新闻，不是事故报道",
@@ -178,6 +154,8 @@ window.FM_NOTES = {
   },
   "https://www.hazardexonthenet.net/article/224676/Dutch-Safety-Board-investigates-fatal-pipeline-accident.aspx": {
     event: "gunvor-rotterdam-2026-08",
+    brief: "鹿特丹 Gunvor 储罐区拆除装置、断开管线时爆炸，1死5伤。",
+    flow: ["装置退役拆除", "断开管线", "管内可能残留可燃物（待查）", "爆炸", "1死5伤，荷兰安全委员会调查"],
     summary: "2026年8月13日约11时30分，荷兰鹿特丹 Europoort 区 Gunvor Energy 储罐库区（属 Seveso 管控设施）在一套装置退役拆除过程中断开管线时发生爆炸，1人死亡、5人受伤，现场作业的6人为 Gunvor 员工和承包商。涉及物料、财产损失和原因报道未说明；荷兰安全委员会已立案调查，重点是如何判断管线可以安全打开，以及这一状态如何在人员之间传达。",
     points: [
       "退役拆除时打开管线是典型的非常规作业：管线内残留的可燃物料或蒸气未彻底清除，遇点火源即可爆炸。",
@@ -189,6 +167,8 @@ window.FM_NOTES = {
   },
   "https://www.hazardexonthenet.net/article/224681/Turkey-methane-explosion-at-coal-mine-kills-three-workers.aspx": {
     event: "zonguldak-mine-2026-10",
+    brief: "土耳其宗古尔达克煤矿瓦斯爆炸，3死5伤。",
+    flow: ["井下甲烷积聚", "遇点火源（待查）", "瓦斯爆炸", "3死5伤，检方拘留矿方"],
     summary: "10月23日，土耳其宗古尔达克省 Kilimli 区 Gelik 一处由 Demir Madencilik 公司运营的煤矿发生瓦斯（甲烷）爆炸，当时井下有8名工人，3人死亡、5人受伤（其中2人重伤）。设备和井巷损失报道未说明；甲烷积聚原因和点火源仍在调查，检方已对矿方经营者和职业安全专员发出拘留令。",
     points: [
       "甲烷积聚通常源于通风不足或局部通风中断，再遇到电气火花、摩擦或爆破等点火源就会爆炸。",
@@ -198,7 +178,6 @@ window.FM_NOTES = {
     refs: [],
     by: "Claude Code", at: "2026-10-28",
   },
-
   "https://news.chemnet.com/toutiao/detail-92552.html": {
     notLoss: true,
     reason: "10月27日沙特拉斯塔努拉炼厂附近起火，胡塞武装宣称发动导弹袭击；属战争/袭击事件，不是工业事故，起火原因与损失官方均未确认",
@@ -216,6 +195,8 @@ window.FM_NOTES = {
   },
   "https://news.chemnet.com/toutiao/detail-92518.html": {
     event: "ineos-bayport-eo-2026-10",
+    brief: "英力士 Bayport 环氧乙烷装置设备意外故障，宣布不可抗力。",
+    flow: ["关键设备意外故障", "环氧乙烷装置停产", "EO 及衍生物断供", "宣布不可抗力，恢复时间未知"],
     summary: "英力士氧化物公司（INEOS Oxide）在2026年10月16日的客户通知中宣布，美国得克萨斯州 Bayport 基地的环氧乙烷及其衍生物供应进入不可抗力，原因是“意外的设备故障和机械失灵”影响生产。具体故障设备、产能影响、恢复时间，以及是否有起火、爆炸或人员伤亡，报道均未说明。",
     points: [
       "环氧乙烷装置的关键设备（循环气压缩机、反应器、换热器）一旦意外故障，往往需要长时间检修，营业中断损失可能远超设备本身的修复费用。",
@@ -225,7 +206,6 @@ window.FM_NOTES = {
     refs: ["7-43", "7-59", "7-45"],
     by: "Claude Code", at: "2026-10-29",
   },
-
   "https://www.koreaherald.com/article/10914240": {
     notLoss: true,
     reason: "朝鲜就非军事区地雷爆炸致函联合国安理会的外交新闻，不是工业事故",
@@ -233,6 +213,8 @@ window.FM_NOTES = {
   },
   "https://timesofindia.indiatimes.com/city/madurai/blast-at-firecracker-unit-near-sivakasi-none-injured/articleshow/135276979.cms": {
     event: "sivakasi-mamsapuram-2026-10",
+    brief: "西瓦卡西烟花厂工房爆炸，工人恰好在休息，无人受伤。",
+    flow: ["排灯节前赶工", "存放烟花的工房", "突然爆炸（原因待查）", "1–3间工房损毁", "工人休息中，无人受伤"],
     summary: "10月28日中午前后，印度泰米尔纳德邦维鲁杜纳加尔县西瓦卡西附近 Mamsapuram 一家持证烟花厂（当地泰米尔语报道称为 Vari 烟花厂，雇员200余人）发生爆炸。工人当时正在休息、不在室内，因此无人受伤；各报道说法不一，《印度时报》称3间生产间受损，泰米尔语报道称1间存放烟花的房间被夷平。起火原因报道未说明，警方正在调查。",
     points: [
       "排灯节前赶工，生产间和暂存间的药剂、成品存量往往超出限额：一间爆炸很容易殉爆到相邻房间。",
@@ -242,7 +224,6 @@ window.FM_NOTES = {
     refs: ["7-43", "10-1"],
     by: "Claude Code", at: "2026-10-29",
   },
-
   "https://www.asiae.co.kr/en/article/social-general/2026102922065321652": {
     notLoss: true,
     reason: "韩国乌山市模拟火灾、爆炸和氨泄漏的综合灾害应急演练，不是真实事故",
@@ -253,7 +234,6 @@ window.FM_NOTES = {
     reason: "仁川一家餐馆燃气爆炸后演员关闭气瓶阀门的社会新闻，属商业餐饮场所事故，非化工/工业设施",
     by: "Claude Code", at: "2026-10-30",
   },
-
   "https://www.mem.gov.cn/xw/gdyj/202610/t20261030_737470.shtml": {
     notLoss: true,
     reason: "应急管理部“历史上十一月发生的危险化学品事故”回顾汇编，不是新发生的事故",
@@ -269,7 +249,6 @@ window.FM_NOTES = {
     reason: "路透社回顾2025年香港致命火灾追责问题的报道，属住宅建筑火灾的旧事件，非化工/工业事故",
     by: "Claude Code", at: "2026-10-30",
   },
-
   "https://georgiatoday.ge/drone-attack-sparks-fire-at-oil-refinery-in-russias-samara-oblast/": {
     notLoss: true,
     reason: "俄罗斯萨马拉州新古比雪夫斯克炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
@@ -280,125 +259,132 @@ window.FM_NOTES = {
     reason: "10月30日新古比雪夫斯克炼厂遭无人机袭击起火的战事报道，不是工业事故",
     by: "Claude Code", at: "2026-10-31",
   },
-  "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwwpnz5282435.shtml?froms=ggmp": {
-    event: "haoyuan-fuyang-urea-2026-06",
-    summary: "这是阜阳市应急管理局9月公布的事故调查报告：2026年6月14日，安徽昊源化工集团阜阳新材料分公司尿素装置主框架上的常压放空管出现异常振动和异响（约8时40分发现），排查过程中于9时32分发生管道爆裂，2人死亡、4人受伤。二手报道转述的直接原因是：高压二氧化碳经阀门内漏进入常压放空管，节流降温后凝华成干冰并在管内积聚，导致超压和低温，管道脆性破裂。直接经济损失报道未说明。",
-    points: [
-      "高低压系统之间只靠单个阀门隔离，阀门一旦内漏，高压介质就会窜入设计压力很低的放空或排放系统：检查高低压交界处的双阀隔离、盲板与超压保护。",
-      "二氧化碳节流后可能生成干冰并堵塞管道，同时造成低温脆断：检查放空管的材质低温适用性和防冰堵措施（伴热、流量监测）。",
-      "从发现异常到爆裂相隔约52分钟：检查异常工况的处置程序是否要求先隔离、泄压并撤离无关人员，而不是带压排查。",
-    ],
-    refs: ["7-43", "7-49", "7-45"],
-    by: "Claude Code", at: "2026-10-31",
-  },
-
-  // 安全管理网批量转载的旧事故调查报告（标题与摘要在新闻源中错位，均为人身伤害类）
+  "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwwpnz5282435.shtml?froms=ggmp": { event: "haoyuan-fuyang-urea-2026-06", ref: "haoyuan" },
   "https://www.safehoo.com/Case/Case/Drop/202610/5820148.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Electric/202610/5820146.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Drowned/202610/5820147.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Machine/202610/5820145.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Crane/202610/5820142.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Machine/202610/5820144.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（2018–2021年，人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Drop/202610/5820140.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海金湾区旧事故调查报告（高处坠落等人身伤害类），不是新发生的财产损失事件",
+    notLoss: true,
+    reason: "安全管理网转载的珠海金湾区旧事故调查报告（高处坠落等人身伤害类），不是新发生的财产损失事件",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.safehoo.com/Case/Case/Collapse/202610/5820138.shtml": {
-    notLoss: true, reason: "2025年银川热电老厂区锅炉房拆除作业坍塌的调查报告，属拆除施工人身伤害事故，不涉及在役生产设施的财产损失",
+    notLoss: true,
+    reason: "2025年银川热电老厂区锅炉房拆除作业坍塌的调查报告，属拆除施工人身伤害事故，不涉及在役生产设施的财产损失",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://www.hazardexonthenet.net/article/223529/CLOSING-SOON-Awards-Nominations-Deadline-6th-November-Hazardex-Live-2027.aspx": {
-    notLoss: true, reason: "HazardEx 行业奖项提名截止通知，不是事故报道",
+    notLoss: true,
+    reason: "HazardEx 行业奖项提名截止通知，不是事故报道",
     by: "Claude Code", at: "2026-10-31",
   },
   "https://mnewstv.com/view.php?id=24748": {
     event: "shanyin-jiapeng-2026-02",
-    summary: "这是2026年2月7日旧事故的报道：当天凌晨，山西省朔州市山阴县佳鹏生物科技有限公司一处车间发生爆炸并起火，附近建筑被震塌；当地最初通报5人遇难，次日更新为8人遇难。企业2025年6月才成立，经营范围为涂料制造（注明不含危险化学品）。爆炸原因官方尚未公布，媒体关于反应失控等说法均属推测，财产损失报道未说明。",
+    past: true,
+    brief: "山阴县非法“小化工”车间爆炸，8人遇难。",
+    flow: ["名义登记为涂料/饲料企业", "实际非法生产硝基化合物", "夜间赶工", "车间爆炸，邻近建筑震塌", "8死3伤，挂牌督办"],
+    summary: "这是2026年2月7日旧事故的报道：当天凌晨，山西省朔州市山阴县佳鹏生物科技有限公司一处车间爆炸起火，附近建筑被震塌，造成8人死亡、3人受伤。企业2025年6月成立，名义上登记为涂料/饲料生产，应急管理部通报其实为非法生产窝点，在生产2-硝基-3-甲基苯甲酸时发生爆炸；国务院安委办挂牌督办。",
     points: [
       "新成立的小型企业实际工艺与登记的经营范围不一致，是“小化工”事故的典型特征：检查类似客户时，要核实现场实际使用的物料和工艺，而不只看营业执照。",
       "媒体报道有夜间赶工和异味，说明可能存在超负荷生产和泄漏迹象：关注反应设备的量热评估、冷却与联锁，以及变更管理。",
       "爆炸震塌附近建筑，说明车间与其他建筑的间距和防爆设计不足：评估对邻近建筑的外部暴露。",
     ],
     refs: ["7-43", "7-46", "7-17"],
+    caseId: "cn-shanxi-jiapeng-2026-02",
     by: "Claude Code", at: "2026-10-31",
   },
-
   "https://www.safehoo.com/Case/Case/Blaze/202610/5820154.shtml": {
-    notLoss: true, reason: "安全管理网转载的汕头市龙湖区阳光花园旧火灾调查报告，属住宅小区火灾，非化工/工业设施",
+    notLoss: true,
+    reason: "安全管理网转载的汕头市龙湖区阳光花园旧火灾调查报告，属住宅小区火灾，非化工/工业设施",
     by: "Claude Code", at: "2026-11-01",
   },
   "https://www.safehoo.com/Case/Case/Poison/202610/5820143.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海诚科环保“3.6”中毒和窒息旧事故评估报告，属人身伤害事故",
+    notLoss: true,
+    reason: "安全管理网转载的珠海诚科环保“3.6”中毒和窒息旧事故评估报告，属人身伤害事故",
     by: "Claude Code", at: "2026-11-01",
   },
   "http://www.safehoo.com/Case/Case/Drop/202610/5820150.shtml": {
-    notLoss: true, reason: "安全管理网转载的珠海胜航公寓“4·1”高处坠落旧事故调查报告，属人身伤害事故（新闻源中标题错配为仁川燃气爆炸）",
+    notLoss: true,
+    reason: "安全管理网转载的珠海胜航公寓“4·1”高处坠落旧事故调查报告，属人身伤害事故（新闻源中标题错配为仁川燃气爆炸）",
     by: "Claude Code", at: "2026-11-01",
   },
   "https://menafn.com/1111895472/Explosions-Reported-In-Russias-Ufa-Oil-Refinery-Unit-On-Fire-Media": {
-    notLoss: true, reason: "10月31日俄罗斯乌法 Bashneft-Novoil 炼厂遭袭后催化重整装置起火，属战争袭击，不是工业事故",
+    notLoss: true,
+    reason: "10月31日俄罗斯乌法 Bashneft-Novoil 炼厂遭袭后催化重整装置起火，属战争袭击，不是工业事故",
     by: "Claude Code", at: "2026-11-01",
   },
-
   "https://www.safehoo.com/News/News/China/202611/5820224.shtml": {
-    notLoss: true, reason: "四川康定勒多曼因峰违规登山滑坠事故（2死1伤），属户外人身伤害事故，与工业设施无关",
+    notLoss: true,
+    reason: "四川康定勒多曼因峰违规登山滑坠事故（2死1伤），属户外人身伤害事故，与工业设施无关",
     by: "Claude Code", at: "2026-11-01",
   },
-
   "https://www.vietnam.vn/en/dien-tap-ung-pho-su-co-chay-no-va-tran-hoa-chat-quy-mo-lon-tai-tphcm": {
-    notLoss: true, reason: "10月31日越南胡志明市龙山一家石化企业的大型火灾、爆炸和化学品泄漏应急演练，不是真实事故",
+    notLoss: true,
+    reason: "10月31日越南胡志明市龙山一家石化企业的大型火灾、爆炸和化学品泄漏应急演练，不是真实事故",
     by: "Claude Code", at: "2026-11-02",
   },
   "https://aroundprague.cz/en/news/war-in-ukraine/ukrainian-drones-attack-one-of-russias-largest-oil-refineries-in-kstovo": {
-    notLoss: true, reason: "俄罗斯克斯托沃卢克石油炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    notLoss: true,
+    reason: "俄罗斯克斯托沃卢克石油炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
     by: "Claude Code", at: "2026-11-02",
   },
   "https://112.ua/en/sili-oboroni-vdarili-po-npz-u-rosii-vibuhi-i-pozeza-na-zavodi-lukojl-nizegorodnaftoorgsintez-195205": {
-    notLoss: true, reason: "11月1日克斯托沃卢克石油下诺夫哥罗德炼厂遭无人机袭击爆炸起火，属战争袭击，不是工业事故",
+    notLoss: true,
+    reason: "11月1日克斯托沃卢克石油下诺夫哥罗德炼厂遭无人机袭击爆炸起火，属战争袭击，不是工业事故",
     by: "Claude Code", at: "2026-11-02",
   },
   "https://middleeast.economictimes.indiatimes.com/news/industry-logistics/hormuz-tanker-blast-revives-a-familiar-iranian-playbook/135423117": {
-    notLoss: true, reason: "霍尔木兹海峡油轮疑遭水雷袭击的地缘政治评论，属袭击事件，不是工业事故",
+    notLoss: true,
+    reason: "霍尔木兹海峡油轮疑遭水雷袭击的地缘政治评论，属袭击事件，不是工业事故",
     by: "Claude Code", at: "2026-11-02",
   },
-
-  // 以下 4 条在新闻源中标题与链接错位，所涉内容（应急演习、压路机致死、道路交通事故、物体打击）均非财产损失事件
   "https://www.safehoo.com/News/News/China/202611/5820240.shtml": {
-    notLoss: true, reason: "应急演习或人身伤害类新闻（新闻源标题与链接错位），不是财产损失事件",
+    notLoss: true,
+    reason: "应急演习或人身伤害类新闻（新闻源标题与链接错位），不是财产损失事件",
     by: "Claude Code", at: "2026-11-02",
   },
   "https://www.safehoo.com/ShowComment.aspx?id=5812592": {
-    notLoss: true, reason: "安全管理网事故报告评论页（交通或人身伤害类事故），不是财产损失事件",
+    notLoss: true,
+    reason: "安全管理网事故报告评论页（交通或人身伤害类事故），不是财产损失事件",
     by: "Claude Code", at: "2026-11-02",
   },
   "https://www.mem.gov.cn/xw/yjglbgzdt/202611/t20261102_737705.shtml": {
-    notLoss: true, reason: "应急管理部工作动态（大湾区超高层建筑火灾扑救演习等），不是事故报道",
+    notLoss: true,
+    reason: "应急管理部工作动态（大湾区超高层建筑火灾扑救演习等），不是事故报道",
     by: "Claude Code", at: "2026-11-02",
   },
   "https://www.safehoo.com/ShowComment.aspx?id=5810209": {
-    notLoss: true, reason: "安全管理网事故报告评论页（物体打击等人身伤害类事故），不是财产损失事件",
+    notLoss: true,
+    reason: "安全管理网事故报告评论页（物体打击等人身伤害类事故），不是财产损失事件",
     by: "Claude Code", at: "2026-11-02",
   },
-
-  // 印度维沙卡帕特南 HPCL 炼厂火灾（多家媒体报道同一事件；新闻源中标题与链接错位，按链接实际内容归类）
   "https://cedarnews.net/newstasks/1113737/fire-at-hpcl-oil-refinery-in-visakhapatnam-india-after-reported-explosion-video/": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://www.indiatvnews.com/news/india/andhra-pradesh-visakhapatnam-hpcl-oil-refinery-explosion-fire-live-updates-2026-11-02-1058528": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://www.thedailyjagran.com/india/news/andhra-pradesh-visakhapatnam-oil-refinery-massive-fire-after-explosion-firefighting-operations-underway-latest-updates-10334917": { event: "hpcl-vizag-2026-11", ref: "vizag" },
@@ -406,9 +392,10 @@ window.FM_NOTES = {
   "https://www.ndtv.com/india-news/massive-fire-at-andhra-pradesh-oil-refinery-after-explosion-12273295": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://www.hindustantimes.com/india-news/explosion-at-hindustan-petroleum-refinery-in-vishakhapatnam-dead-injured-casualties-fire-smoke-police-101793640365382.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://timesofindia.indiatimes.com/city/visakhapatnam/hpcls-visakhapatnam-refinery-hit-by-major-fire-near-oil-tank-explosion-reports-under-scrutiny/articleshow/135469343.cms": { event: "hpcl-vizag-2026-11", ref: "vizag" },
-
   "https://www.hazardexonthenet.net/article/224830/Fire-at-oil-refinery-in-Syria-contained-after-reported-flammable-material-leak.aspx": {
     event: "syria-jabsa-refinery-2026-10",
+    brief: "叙利亚 al-Jabsa 油田炼厂停电后物料泄漏，电加热炉内起火，及时扑灭。",
+    flow: ["停电", "可燃物料泄漏", "电加热炉内起火", "火势蔓延前被控制", "无人受伤"],
     summary: "10月21日，叙利亚东北部哈塞克省沙达迪以东 al-Jabsa 油田内一座炼油厂的电加热炉内起火，油气设施消防队、民防和省应急人员在火势蔓延前将其控制，无平民受伤。省应急与灾害管理局称起因是停电后可燃物料泄漏，具体泄漏物料、点火方式和损失程度报道未说明；这座炼厂此前曾受损，当时正在修复，准备恢复运行。",
     points: [
       "停电后加热炉和泵组突然停运，可能导致物料倒流、超温或密封失效而泄漏：检查断电时的安全停车逻辑和关键设备的备用电源。",
@@ -420,6 +407,8 @@ window.FM_NOTES = {
   },
   "https://www.hazardexonthenet.net/article/224824/Gas-cylinder-explosion-at-bakery-production-site-in-Pakistan-kills-worker-and-injures-eight.aspx": {
     event: "lahore-bakery-2026-11",
+    brief: "拉合尔面包厂燃气钢瓶泄漏爆炸，建筑部分坍塌，1死8伤。",
+    flow: ["烘焙区燃气钢瓶", "燃气泄漏", "遇火源爆炸", "部分建筑坍塌并起火", "1死8伤"],
     summary: "11月1日，巴基斯坦拉合尔 Gulberg 一处面包生产厂二楼的烘焙区发生气瓶爆炸，据救援人员说爆炸前气瓶有燃气泄漏；爆炸使部分建筑坍塌并引发火灾，当时现场有40多名员工，1人死亡、8人受伤（3人危重）。企业名称、气瓶类型和状况、泄漏原因均报道未说明，警方已立案调查。",
     points: [
       "生产区内使用和存放燃气钢瓶，一旦泄漏，在室内积聚后遇明火即可爆燃，甚至导致建筑结构坍塌。",
@@ -430,19 +419,20 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-03",
   },
   "https://economictimes.indiatimes.com/news/india/bihar-gas-pipeline-leak-one-dead-six-injured-as-png-leak-triggers-blast-in-muzaffarpur/articleshow/135461393.cms": {
-    notLoss: true, reason: "比哈尔邦穆扎法尔普尔城市燃气（PNG）管道泄漏引发爆炸（1死6伤），属城市燃气配送事故，非化工/工业设施；原文无法访问，细节未能核实",
+    notLoss: true,
+    reason: "比哈尔邦穆扎法尔普尔城市燃气（PNG）管道泄漏引发爆炸（1死6伤），属城市燃气配送事故，非化工/工业设施；原文无法访问，细节未能核实",
     by: "Claude Code", at: "2026-11-03",
   },
   "https://www.safehoo.com/ShowComment.aspx?id=5723132": {
-    notLoss: true, reason: "安全管理网叉车事故调查报告的评论页，属人身伤害事故",
+    notLoss: true,
+    reason: "安全管理网叉车事故调查报告的评论页，属人身伤害事故",
     by: "Claude Code", at: "2026-11-03",
   },
   "https://www.safehoo.com/ShowComment.aspx?id=5766567": {
-    notLoss: true, reason: "安全管理网叉车事故调查报告的评论页，属人身伤害事故",
+    notLoss: true,
+    reason: "安全管理网叉车事故调查报告的评论页，属人身伤害事故",
     by: "Claude Code", at: "2026-11-03",
   },
-
-  // HPCL 维沙卡帕特南炼厂火灾的后续报道（11月3日新闻源，标题与链接仍错位，按链接实际内容归类）
   "https://ua.news/en/energetika/pislia-vibukhu-na-npz-v-indiyi-spalakhnula-masshtabna-pozhezha-anadolu-agency": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://www.deccanherald.com/amp/story/india%2Fandhra-pradesh%2Fandhra-hpcl-fire-accident-occurred-in-storage-tank-controlled-no-deaths-injuries-4205515": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://news.chemnet.com/toutiao/detail-93570.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
@@ -454,27 +444,31 @@ window.FM_NOTES = {
   "https://hyderabadmail.com/hpcl-refinery-fire-visakhapatnam-explosion-suspected/": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://www.dnaindia.com/india/report-major-fire-at-hpcl-refinery-in-visakhapatnam-after-explosion-sounds-what-we-know-so-far-3223500": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://x.com/MarioNawfal/status/2117336708438176042/video/1": { event: "hpcl-vizag-2026-11", ref: "vizag" },
-
   "https://www.safehoo.com/News/News/China/202611/5820300.shtml": {
-    notLoss: true, reason: "11月2日武汉武昌区一住宅小区爆燃（2死1伤），属居民住宅事故，非化工/工业设施",
+    notLoss: true,
+    reason: "11月2日武汉武昌区一住宅小区爆燃（2死1伤），属居民住宅事故，非化工/工业设施",
     by: "Claude Code", at: "2026-11-03",
   },
   "https://www.safehoo.com/ShowComment.aspx?id=5815475": {
-    notLoss: true, reason: "安全管理网渔船自沉事故调查报告的评论页，属渔业船舶事故，非化工/工业设施",
+    notLoss: true,
+    reason: "安全管理网渔船自沉事故调查报告的评论页，属渔业船舶事故，非化工/工业设施",
     by: "Claude Code", at: "2026-11-03",
   },
   "https://www.hydrocarbonprocessing.com/news/2026/11/sasol-restarts-idled-isosiv-normal-paraffin-unit-at-augusta-lifts-lab-force-majeure/": {
-    notLoss: true, reason: "沙索意大利奥古斯塔正构烷烃装置重启、解除 LAB 不可抗力的经营新闻，不是事故报道",
+    notLoss: true,
+    reason: "沙索意大利奥古斯塔正构烷烃装置重启、解除 LAB 不可抗力的经营新闻，不是事故报道",
     by: "Claude Code", at: "2026-11-03",
   },
-
   "https://www.freepressjournal.in/india/hpcl-visakhapatnam-refinery-fire-massive-blaze-erupts-at-malkapuram-pitch-storage-tank-after-reported-blast-no-casualties-reported-video": { event: "hpcl-vizag-2026-11", ref: "vizag" },
   "https://www.mem.gov.cn/gk/zfxxgkpt/fdzdgknr/202610/W020261012562665297499.wps": {
-    notLoss: true, reason: "应急管理部《危险化学品事故应急救援规程（征求意见稿）》文件附件，不是事故报道",
+    notLoss: true,
+    reason: "应急管理部《危险化学品事故应急救援规程（征求意见稿）》文件附件，不是事故报道",
     by: "Claude Code", at: "2026-11-04",
   },
   "https://www.hazardexonthenet.net/article/224856/Explosion-at-steel-plant-in-Cameroon-kills-four-and-seriously-injures-16.aspx": {
     event: "douala-metafrique-2026-11",
+    brief: "喀麦隆炼铁厂爆炸起火，4死16伤；4月火灾后的整改一直没落实。",
+    flow: ["4月曾发生火灾", "整改措施未落实", "炼铁区爆炸（原因待查）", "起火", "4死16伤，责令停产"],
     summary: "11月2日，喀麦隆杜阿拉一家炼铁厂（图片署名为 Metafrique Steel SA）发生爆炸并起火，4人死亡、16人严重烧伤。企业称原因尚未查明，涉及的设备和损失程度报道未说明；地方当局已责令停产调查，州长称该厂2026年4月曾发生火灾，之后规定的整改措施并未落实。",
     points: [
       "冶炼厂爆炸常见的起因是高温熔融金属遇水（冷却水泄漏、潮湿炉料或模具）瞬间汽化：检查冷却水系统的泄漏监测，以及炉料和工具的干燥管理。",
@@ -484,53 +478,59 @@ window.FM_NOTES = {
     refs: ["10-1"],
     by: "Claude Code", at: "2026-11-04",
   },
-
   "https://www.safehoo.com/video/xfjy/202611/5820399.shtml": {
-    notLoss: true, reason: "安全管理网消防教育视频，介绍河南柘城“6·25”旧火灾（武术学校宿舍火灾），非化工/工业设施",
+    notLoss: true,
+    reason: "安全管理网消防教育视频，介绍河南柘城“6·25”旧火灾（武术学校宿舍火灾），非化工/工业设施",
     by: "Claude Code", at: "2026-11-04",
   },
   "https://www.safehoo.com/Case/Case/Vehicle/202611/5820394.shtml": {
-    notLoss: true, reason: "梁平“5.2”道路交通事故调查报告，属交通事故（新闻源中标题与链接错位）",
+    notLoss: true,
+    reason: "梁平“5.2”道路交通事故调查报告，属交通事故（新闻源中标题与链接错位）",
     by: "Claude Code", at: "2026-11-04",
   },
-  "https://www.safehoo.com/Case/Case/Blow/202611/5820388.shtml": {
-    event: "fuling-penstock-2026-04",
-    summary: "这是重庆市11月初公布的事故调查报告：2026年4月12日8时46分许，重庆兴涪电力开发有限公司发电分公司管理的青烟洞四级水电站，1号引水压力钢管在 VI 号镇墩下方第3至第4支承环之间突然迸裂，高压水流冲击下方正在给钢管做防腐涂漆的作业人员，4人死亡，直接经济损失约698.7万元。调查认定，企业没有消除钢管管壁腐蚀减薄的隐患，没有按规定对钢管进行焊接处理；此前增效扩容改造时也没有按设计要求更换压力钢管；4月11日已向这根钢管注水，却没有撤离或阻止作业人员进入。",
-    points: [
-      "压力钢管管壁腐蚀减薄是典型的机械完整性问题：检查类似客户的压力管道是否按计划测厚、做剩余强度评估，以及发现减薄后是否限期修复或降压运行。",
-      "改造扩容时没有按设计更换老旧管道，等于让设备在超出设计条件下运行：关注变更管理是否覆盖了改造带来的工况变化。",
-      "带压管道与检修防腐交叉作业，又未隔离、未撤人：检查作业许可中的隔离确认，以及管道注水、充压前的现场清场程序。",
-    ],
-    refs: ["7-43"],
-    by: "Claude Code", at: "2026-11-04",
-  },
-
-  "https://wreg.com/news/fire-crews-respond-to-greenville-chemical-plant-explosion/": {
-    event: "greenville-loveland-2026-11",
-    summary: "11月4日约7时10分，美国密西西比州格林维尔的 Loveland Products 工厂（原 Platte Chemical，母公司 Nutrien）发生爆炸起火。工厂管理层初步说明，起火涉及一个热箱（hot box）里的除草剂；多个消防部门参与扑救，机场消防队提供了专用泡沫，火势已被控制，县应急中心曾发布就地避险通知。人员伤亡、损失程度和确切原因报道未说明。",
-    points: [
-      "农药原药和中间体用“热箱”加热融化或保温时，局部过热可能引发热分解甚至失控：检查加热温度的控制和高温联锁，以及物料的热稳定性数据。",
-      "农药复配厂同时储存多种易燃溶剂和有毒原料，起火后产生有毒烟气、需要疏散周边：评估对邻近客户的外部暴露和营业中断。",
-      "需要外援提供专用泡沫，说明厂内固定消防能力可能不足：检查易燃液体区的泡沫系统设计，以及与当地消防的预案协调。",
-    ],
-    refs: ["7-46", "7-32", "10-1"],
+  "https://www.safehoo.com/Case/Case/Blow/202611/5820388.shtml": { event: "fuling-penstock-2026-04", ref: "penstock" },
+  "https://wreg.com/news/fire-crews-respond-to-greenville-chemical-plant-explosion/": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.safehoo.com/video/xfjy/202611/5820396.shtml": { event: "anyang-kaixinda-2022-11", ref: "anyang" },
+  "https://c.safehoo.com/item/5816668.aspx": { event: "haoyuan-fuyang-urea-2026-06", ref: "haoyuan" },
+  "http://www.safehoo.com/Case/Case/Blow/202611/5820388.shtml": { event: "fuling-penstock-2026-04", ref: "penstock" },
+  "http://www.safehoo.com/video/xfjy/202611/5820396.shtml": { event: "anyang-kaixinda-2022-11", ref: "anyang" },
+  "https://www.indiatvnews.com/amp/news/india/andhra-pradesh-visakhapatnam-hpcl-oil-refinery-explosion-fire-live-updates-2026-11-02-1058528": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.ndtv.com/india-news/massive-fire-at-andhra-pradesh-oil-refinery-after-explosion-12273295?pfrom=top_widget_trending": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://www.hindustantimes.com/india-news/explosion-at-hindustan-petroleum-refinery-in-vishakhapatnam-dead-injured-casualties-fire-smoke-police-101793640365382-amp.html": { event: "hpcl-vizag-2026-11", ref: "vizag" },
+  "https://darkhorsepressnow.com/news/2026-11-04/greenville-firefighters-thank-agencies-after-loveland-chemical-plant-explosion/": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.wjtv.com/video/fire-crews-respond-to-greenville-chemical-plant-explosion/12337483/": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://ca.news.yahoo.com/fire-smoke-emergency-crews-respond-175000835.html": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.actionnews5.com/2026/11/04/shelter-in-place-issued-following-chemical-plant-explosion-mississippi-delta/": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://112.ua/en/u-razani-ogolosili-bezpilotnu-nebezpeku-cerez-vibuhi-ta-pozezu-na-naftopererobnomu-zavodi-196064": {
+    notLoss: true,
+    reason: "俄罗斯梁赞炼厂遭无人机袭击后爆炸起火，属战争袭击，不是工业事故",
     by: "Claude Code", at: "2026-11-05",
   },
-  "https://www.safehoo.com/video/xfjy/202611/5820396.shtml": {
-    event: "anyang-kaixinda-2022-11",
-    summary: "这是安全管理网的消防教育视频，回顾2022年11月21日河南安阳市凯信达商贸有限公司特别重大火灾：企业负责人在厂房一层仓库内违规电焊，高温焊渣引燃包装纸箱，箱内瓶装聚氨酯泡沫填缝剂受热爆炸起火，又引燃大量黄油、自喷漆、除锈剂等物品，共造成42人死亡、2人受伤，直接经济损失约1.23亿元（据2023年公布的国务院事故调查报告）。",
+  "https://www.fireengineering.com/news/id-firefighter-killed-another-injured-in-fire-truck-crash/": {
+    notLoss: true,
+    reason: "美国爱达荷州消防车交通事故（1死1伤），属交通事故",
+    by: "Claude Code", at: "2026-11-05",
+  },
+  "https://www.csb.gov/one-year-after-catastrophic-accident-at-the-tesoro-refinery-csb-releases-video-safety-message-calls-on-industry-to-invest-in-preventive-maintenance/?id=3731&F_All=y&print=y": {
+    event: "csb-tesoro-anacortes",
+    past: true,
+    brief: "CSB 特索罗炼厂事故视频：换热器高温氢腐蚀开裂，开车时破裂起火，7人遇难。",
+    flow: ["碳钢换热器长期接触高温氢气", "高温氢腐蚀（HTHA）产生裂纹", "开车过程中换热器破裂", "氢气和石脑油泄漏起火", "7死"],
+    summary: "这是美国化学品安全委员会（CSB）的旧页面，并非新发生的事故：2010年4月2日，美国华盛顿州阿纳科特斯的特索罗（Tesoro）炼厂石脑油加氢装置一台换热器在清洗后重新投用时破裂，泄漏的氢气和石脑油起火，7名工人遇难。CSB 在事故一周年发布安全视频，呼吁行业加大预防性维护投入；其2014年最终报告认定，碳钢换热器长期处于高温氢气环境，发生了高温氢腐蚀（HTHA）。",
     points: [
-      "动火作业是仓库火灾的首要起因之一：检查类似客户的动火许可制度，是否要求清理周边可燃物、设监火人并做火后巡查。",
-      "气雾罐、泡沫填缝剂等压力容器类商品受热会爆裂，助长火势快速蔓延：关注这类物品的分区储存和对应的喷淋保护设计。",
-      "同一建筑内混合仓储、生产和人员聚集，火灾蔓延和疏散都困难：检查防火分隔、疏散通道和自动喷水系统的完好性。",
+      "高温临氢的碳钢设备可能发生高温氢腐蚀，裂纹在内部发展、常规检测难以发现：检查是否按 API 941 校核材质，以及是否采用了能检出 HTHA 的检测方法。",
+      "换热器清洗后重新投用是高风险时段：检查开车程序、投用时的人员限制，以及是否有远程隔离手段。",
+      "长期“边漏边修”、带病运行会让人习以为常：关注维护推迟的审批和风险评估，以及泄漏频发设备的根因分析。",
     ],
-    refs: ["10-1", "7-32"],
+    refs: ["7-91", "7-43"],
     by: "Claude Code", at: "2026-11-05",
   },
 
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
+      brief: "托莱多罐车场站转运 GMA 出错，储罐破裂持续排放，周边大范围疏散。",
+      flow: ["5,500加仑储罐转运 GMA", "转运操作失误", "罐体破裂、持续排放", "无法堵漏，任其排放", "1英里疏散，约60人就医"],
       summary: "10月20日（周二）约21时30分，美国俄亥俄州托莱多北部 Progress Avenue 的 MC Tank Transport（Kenan Advantage 集团子公司）一台 5,500 加仑储罐在物料转运过程中出错，罐体破裂并持续向外排放甲基丙烯酸缩水甘油酯（GMA）。当局下令 1 英里内疏散、3 英里内就地避险，约 60 人因眼睛和喉咙灼痛就医；消防未派人进入堵漏，而是任其排放，市长曾警告可能再次爆炸。俄亥俄州环保局称原因是转运操作失误，详细调查尚未公布。",
       points: [
         "GMA 是可自聚合的活性单体，受热或混入杂质会放热聚合导致超压：转运和储存时确认阻聚剂含量、温度监控与冷却手段。",
@@ -538,8 +538,11 @@ window.FM_NOTES = {
         "失控后只能“任其排放”，说明缺少紧急泄压处置与远程隔离手段；同时评估对周边客户的外部暴露和营业中断（疏散区内停工停课）。",
       ],
       refs: ["7-49", "7-88", "7-43"],
+      by: "Claude Code", at: "2026-11-05",
     },
     vizag: {
+      brief: "HPCL 维沙卡帕特南炼厂沥青罐小爆炸后起火，很快控制，无人伤亡。",
+      flow: ["渣油改质装置沥青罐", "小规模爆炸（原因待查）", "罐区起火", "约22时起火，很快控制", "无伤亡，官方将做安全调查"],
       summary: "11月2日（周一）约22时，印度安得拉邦维沙卡帕特南 Gajuwaka 工业区的印度斯坦石油公司（HPCL）炼厂发生火灾。HPCL 称火势局限在渣油改质装置（Residue Upgradation Facility）的沥青罐区，很快被控制，无人员伤亡；当地官员说起火前有一声小规模爆炸，附近人员被转移到安全地点，但“油罐爆炸”的说法尚未证实。起火原因和损失程度报道未说明。",
       points: [
         "沥青/渣油罐通常在高温下储存：罐内积水被加热后突然汽化，或罐顶空间积聚可燃蒸气，都可能引发罐内超压和火灾。",
@@ -547,6 +550,68 @@ window.FM_NOTES = {
         "这座炼厂此前多次发生火灾：检查类似客户时，应关注储罐区与工艺装置之间的间距、固定消防设施，以及历次事故整改的落实情况。",
       ],
       refs: ["7-88", "7-49", "7-43"],
+      by: "Claude Code", at: "2026-11-05",
+    },
+    saraca: {
+      brief: "制药厂跨楼层转料时氯仿蒸气泄漏，2死4伤，工厂被勒令停产断电。",
+      flow: ["二号车间分层操作", "反应釜→接收罐跨楼层转料", "氯仿蒸气泄漏", "夜班工人吸入昏迷", "2死4伤，停产断电"],
+      summary: "10月22日夜间（约23时，另有报道称23日凌晨），印度特伦甘纳邦桑加雷迪县 Gaddapotharam 工业区 Saraca Laboratories 二号生产车间在分层操作中，把氯仿从一楼反应釜转移到底楼接收罐时发生蒸气泄漏，2名工人（化学师和主管）死亡，另有4人住院。特伦甘纳邦污染控制委员会随后下令工厂立即停产并切断供电；报道未提及起火、爆炸或设备损失。",
+      points: [
+        "跨楼层的反应釜→接收罐转料是溶剂泄漏的高发环节：检查转料管线、软管、视镜的完好性，以及转料时的密闭和排气回收。",
+        "夜间多人相继昏迷，说明泄漏发现和报警滞后：检查有毒/可燃气体报警是否覆盖转料区，以及夜班的应急响应能力。",
+        "监管部门勒令停产断电，即使设备损失不大，营业中断也可能很长；同一车间若有易燃溶剂，同样的泄漏可能演变为火灾。",
+      ],
+      refs: ["7-43", "7-36", "7-32"],
+      by: "Claude Code", at: "2026-11-05",
+    },
+    haoyuan: {
+      brief: "昊源化工尿素装置阀门内漏，高压 CO₂ 窜入放空管结成干冰，管道脆裂，2死4伤。",
+      flow: ["工艺管道与放空管间阀门内漏", "高压 CO₂ 窜入常压放空管", "节流降温结成干冰并积聚", "超压 + 低温，管道脆性爆裂", "2死4伤"],
+      summary: "这是阜阳市应急管理局9月公布的事故调查报告：2026年6月14日，安徽昊源化工集团阜阳新材料分公司尿素装置主框架上的常压放空管出现异常振动和异响（约8时40分发现），排查过程中于9时32分发生管道爆裂，2人死亡、4人受伤。二手报道转述的直接原因是：高压二氧化碳经阀门内漏进入常压放空管，节流降温后凝华成干冰并在管内积聚，导致超压和低温，管道脆性破裂。直接经济损失报道未说明。",
+      points: [
+        "高低压系统之间只靠单个阀门隔离，阀门一旦内漏，高压介质就会窜入设计压力很低的放空或排放系统：检查高低压交界处的双阀隔离、盲板与超压保护。",
+        "二氧化碳节流后可能生成干冰并堵塞管道，同时造成低温脆断：检查放空管的材质低温适用性和防冰堵措施（伴热、流量监测）。",
+        "从发现异常到爆裂相隔约52分钟：检查异常工况的处置程序是否要求先隔离、泄压并撤离无关人员，而不是带压排查。",
+      ],
+      refs: ["7-43", "7-49", "7-45"],
+      by: "Claude Code", at: "2026-11-05",
+    },
+    penstock: {
+      brief: "水电站压力钢管腐蚀减薄一直未处理，注水后迸裂冲击下方作业人员，4死。",
+      flow: ["钢管管壁腐蚀减薄", "改造时未按设计更换", "向钢管注水但未撤人", "钢管迸裂，高压水下泄", "4死，损失约699万元"],
+      summary: "这是重庆市11月初公布的事故调查报告：2026年4月12日8时46分许，重庆兴涪电力开发有限公司发电分公司管理的青烟洞四级水电站，1号引水压力钢管在 VI 号镇墩下方第3至第4支承环之间突然迸裂，高压水流冲击下方正在给钢管做防腐涂漆的作业人员，4人死亡，直接经济损失约698.7万元。调查认定，企业没有消除钢管管壁腐蚀减薄的隐患，没有按规定对钢管进行焊接处理；此前增效扩容改造时也没有按设计要求更换压力钢管；4月11日已向这根钢管注水，却没有撤离或阻止作业人员进入。",
+      points: [
+        "压力钢管管壁腐蚀减薄是典型的机械完整性问题：检查类似客户的压力管道是否按计划测厚、做剩余强度评估，以及发现减薄后是否限期修复或降压运行。",
+        "改造扩容时没有按设计更换老旧管道，等于让设备在超出设计条件下运行：关注变更管理是否覆盖了改造带来的工况变化。",
+        "带压管道与检修防腐交叉作业，又未隔离、未撤人：检查作业许可中的隔离确认，以及管道注水、充压前的现场清场程序。",
+      ],
+      refs: ["7-43"],
+      by: "Claude Code", at: "2026-11-05",
+    },
+    anyang: {
+      past: true,
+      brief: "安阳凯信达仓库违规电焊引燃纸箱和填缝剂，火势迅速蔓延，42人遇难。",
+      flow: ["一层仓库违规电焊", "焊渣引燃包装纸箱", "泡沫填缝剂受热爆炸", "黄油、自喷漆等相继燃烧", "42死2伤，损失1.23亿元"],
+      summary: "这是安全管理网的消防教育视频，回顾2022年11月21日河南安阳市凯信达商贸有限公司特别重大火灾：企业负责人在厂房一层仓库内违规电焊，高温焊渣引燃包装纸箱，箱内瓶装聚氨酯泡沫填缝剂受热爆炸起火，又引燃大量黄油、自喷漆、除锈剂等物品，共造成42人死亡、2人受伤，直接经济损失约1.23亿元（据2023年公布的国务院事故调查报告）。",
+      points: [
+        "动火作业是仓库火灾的首要起因之一：检查类似客户的动火许可制度，是否要求清理周边可燃物、设监火人并做火后巡查。",
+        "气雾罐、泡沫填缝剂等压力容器类商品受热会爆裂，助长火势快速蔓延：关注这类物品的分区储存和对应的喷淋保护设计。",
+        "同一建筑内混合仓储、生产和人员聚集，火灾蔓延和疏散都困难：检查防火分隔、疏散通道和自动喷水系统的完好性。",
+      ],
+      refs: ["10-1", "7-32"],
+      by: "Claude Code", at: "2026-11-05",
+    },
+    greenville: {
+      brief: "密西西比州农药厂热箱内除草剂起火爆炸，周边一度就地避险。",
+      flow: ["热箱加热除草剂", "起火（原因待查）", "爆炸", "多部门扑救，外援泡沫", "就地避险后解除，伤亡未报道"],
+      summary: "11月4日约7时10分，美国密西西比州格林维尔的 Loveland Products 工厂（原 Platte Chemical，母公司 Nutrien）发生爆炸起火。工厂管理层初步说明，起火涉及一个热箱（hot box）里的除草剂；多个消防部门参与扑救，机场消防队提供了专用泡沫，火势已被控制，县应急中心曾发布就地避险通知。人员伤亡、损失程度和确切原因报道未说明。",
+      points: [
+        "农药原药和中间体用“热箱”加热融化或保温时，局部过热可能引发热分解甚至失控：检查加热温度的控制和高温联锁，以及物料的热稳定性数据。",
+        "农药复配厂同时储存多种易燃溶剂和有毒原料，起火后产生有毒烟气、需要疏散周边：评估对邻近客户的外部暴露和营业中断。",
+        "需要外援提供专用泡沫，说明厂内固定消防能力可能不足：检查易燃液体区的泡沫系统设计，以及与当地消防的预案协调。",
+      ],
+      refs: ["7-46", "7-32", "10-1"],
+      by: "Claude Code", at: "2026-11-05",
     },
   },
 };

@@ -363,3 +363,65 @@ button.major-card:focus-visible { outline: 2px solid var(--accent); outline-offs
 .report-box ul { margin: 0; padding-left: 18px; font-size: 14px; }
 .report-box li { margin-bottom: 4px; }
 .report-box .rb-link { display: inline-block; margin-top: 8px; font-size: 13px; }
+
+/* 示意图标注：没有现场照片时显示的起因插图 */
+.art-tag { position: absolute; left: 6px; bottom: 6px; font-size: 11px; line-height: 1; padding: 3px 6px; border-radius: 4px; background: rgba(0, 0, 0, 0.5); color: #fff; }
+.major-card .meta .orig { display: block; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 一句话总结与事故经过流程图 */
+.nd-brief { font-size: 16px; font-weight: 600; line-height: 1.55; margin: 6px 0 2px !important; }
+.flow { list-style: none; margin: 8px 0; padding: 0; display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px 0; counter-reset: step; }
+.flow li { display: flex; align-items: center; font-size: 13px; line-height: 1.4; }
+.flow li span { background: var(--pcs, var(--surface-2)); border: 1px solid var(--border); border-radius: 8px; padding: 6px 10px; }
+.flow li:not(:last-child)::after { content: "→"; color: var(--pc, var(--muted)); font-weight: 700; padding: 0 6px; }
+.flow li.end span { background: var(--cn-soft); border-color: var(--cn); color: var(--cn); font-weight: 600; }
+/* 竖排：弹窗、手机和窄卡片 */
+.flow.v { flex-direction: column; align-items: flex-start; gap: 0; }
+.flow.v li { flex-direction: column; align-items: flex-start; }
+.flow.v li span { position: relative; padding-left: 30px; counter-increment: step; }
+.flow.v li span::before { content: counter(step); position: absolute; left: 8px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; border-radius: 50%; background: var(--pc, var(--muted)); color: var(--surface); font-size: 11px; line-height: 16px; text-align: center; font-weight: 700; }
+.flow.v li.end span::before { background: var(--cn); }
+.flow.v li:not(:last-child)::after { content: "↓"; padding: 1px 0 1px 12px; }
+@media (max-width: 700px) {
+  .flow:not(.v) { flex-direction: column; align-items: flex-start; gap: 0; }
+  .flow:not(.v) li { flex-direction: column; align-items: flex-start; }
+  .flow:not(.v) li:not(:last-child)::after { content: "↓"; padding: 1px 0 1px 12px; }
+  .flow:not(.v) li span { position: relative; padding-left: 30px; counter-increment: step; }
+  .flow:not(.v) li span::before { content: counter(step); position: absolute; left: 8px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; border-radius: 50%; background: var(--pc, var(--muted)); color: var(--surface); font-size: 11px; line-height: 16px; text-align: center; font-weight: 700; }
+  .flow:not(.v) li.end span::before { background: var(--cn); }
+}
+.nd-detail { border-top: 1px solid var(--border); padding-top: 6px; margin-top: 4px; }
+.nd-detail > summary { cursor: pointer; font-size: 13px; color: var(--muted); list-style-position: inside; }
+.nd-detail > p { margin: 6px 0 0; }
+.card .body .nd-brief { margin-top: 0 !important; }
+
+/* 首页头条 */
+.front .page-head h1 { font-size: 26px; }
+.headlines { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.headline { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; }
+.headline.big { grid-column: 1 / -1; flex-direction: row; }
+.headline .hl-media { border: 0; padding: 0; cursor: pointer; display: block; width: 100%; aspect-ratio: 16 / 9; }
+.headline.big .hl-media { width: 46%; flex: none; aspect-ratio: auto; min-height: 280px; }
+.hl-body { padding: 14px 16px 16px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.headline h2 { font-size: 18px; line-height: 1.45; margin: 0; text-wrap: balance; }
+.headline.big h2 { font-size: 22px; }
+.headline .flow { margin: 2px 0; }
+.hl-point { margin: 0; font-size: 14px; background: var(--fm-bg); border-left: 3px solid var(--fm-border); border-radius: 6px; padding: 8px 10px; }
+.headline .meta { font-size: 12px; color: var(--muted); }
+.hl-count { font-size: 12px; color: var(--muted); }
+.headline .nd-actions { margin-top: 0; }
+.front-more { margin: 20px 0 0; text-align: center; }
+@media (max-width: 800px) {
+  .headlines { grid-template-columns: 1fr; }
+  .headline.big { flex-direction: column; }
+  .headline.big .hl-media { width: 100%; min-height: 0; aspect-ratio: 16 / 9; }
+  .headline.big h2 { font-size: 19px; }
+}
+@media (max-width: 700px) {
+  .headline .hl-media.mc-media { width: 100%; height: auto; margin: 0; border-radius: 0; aspect-ratio: 16 / 9; align-self: auto; }
+}
+/* 不换行的原标题不能撑宽卡片 */
+.mc-body, .hl-body { grid-template-columns: minmax(0, 1fr); }
+.mc-body { flex: 1; }
+.nd-body > .meta { font-size: 13px; color: var(--muted); }
+.photo.art .mc-media { width: 100%; height: auto; margin: 0; aspect-ratio: 16 / 9; border-radius: 8px; align-self: auto; }
