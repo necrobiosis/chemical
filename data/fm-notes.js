@@ -526,6 +526,7 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-05",
   },
 
+  "https://news.chemnet.com/toutiao/detail-94063.html": { event: "greenville-loveland-2026-11", ref: "greenville" },
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
