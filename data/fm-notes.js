@@ -527,6 +527,21 @@ window.FM_NOTES = {
   },
 
   "https://news.chemnet.com/toutiao/detail-94063.html": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.insurancejournal.com/news/southeast/2026/11/05/891719.htm": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.hazardexonthenet.net/article/224930/Explosion-and-fire-at-chemical-plant-in-US.aspx": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.hazardexonthenet.net/article/224927/Explosion-and-fire-at-materials-plant-in-Taiwan-kills-two.aspx": {
+    event: "hsinchu-hukou-2026-11",
+    brief: "新竹湖口一家 PCB/封装材料厂爆炸起火，五层厂房局部坍塌，2死5伤。",
+    flow: ["五层厂房内生产线", "4楼 MEK 储罐泄漏（关联待查）", "凌晨爆炸（原因待查）", "火势蔓延全楼，局部坍塌", "2死5伤"],
+    summary: "11月4日凌晨约1时58分，台湾新竹县湖口乡一家生产印刷电路板和半导体封装材料的工厂（企业名称报道未说明）发生爆炸，火势蔓延整栋五层厂房，部分结构坍塌，2名员工死亡、5人受伤。厂房一楼和四楼设有生产线，四楼一个丁酮（MEK）储罐发生泄漏，与爆炸是否有关仍在调查；火势至近中午才被控制，起火原因报道未说明。",
+    points: [
+      "电子材料厂常在多层厂房的楼上使用和储存 MEK 等易燃溶剂，一旦泄漏起火，火势会沿楼层蔓延并威胁建筑结构：检查楼上溶剂存量、防火分隔和防溢流措施。",
+      "检查溶剂储罐和配料区的可燃气体探测、通风、静电接地，以及夜间无人或少人时的自动报警和切断能力。",
+      "多层厂房火灾扑救时间长、易坍塌，营业中断严重：关注自动喷水或泡沫保护是否覆盖溶剂区，以及关键产线的替代产能。",
+    ],
+    refs: ["7-32", "7-88", "10-1"],
+    by: "Claude Code", at: "2026-11-06",
+  },
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
