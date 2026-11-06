@@ -542,6 +542,11 @@ window.FM_NOTES = {
     refs: ["7-32", "7-88", "10-1"],
     by: "Claude Code", at: "2026-11-06",
   },
+  "https://mezha.net/eng/news/mezha-a24c22dd3e4c413d5e2f4b08_explosions_and_a/": {
+    notLoss: true,
+    reason: "俄罗斯克拉斯诺达尔边疆区阿菲普斯基炼厂夜间爆炸起火的战事报道；该厂多次遭无人机袭击，原文无法访问，本次细节未能核实，按战争袭击处理",
+    by: "Claude Code", at: "2026-11-06",
+  },
   // 同一事件共用的速报内容
   _shared: {
     toledo: {
