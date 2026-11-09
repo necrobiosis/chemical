@@ -547,8 +547,63 @@ window.FM_NOTES = {
     reason: "俄罗斯克拉斯诺达尔边疆区阿菲普斯基炼厂夜间爆炸起火的战事报道；该厂多次遭无人机袭击，原文无法访问，本次细节未能核实，按战争袭击处理",
     by: "Claude Code", at: "2026-11-06",
   },
+  "https://www.safehoo.com/Case/Case/Poison/202611/5820783.shtml": {
+    notLoss: true,
+    reason: "北京东直门一家涮肉店一氧化碳中毒事故调查报告，属餐饮场所人身伤害事故，非工商业财产损失",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://www.safehoo.com/Case/Case/Electric/202611/5820740.shtml": {
+    notLoss: true,
+    reason: "北京西城区居民楼内拆除空调时触电死亡（非生产安全事故），属住宅场所人身伤害",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "http://www.safehoo.com/Manage/hazard/202611/5820559.shtml": {
+    notLoss: true,
+    reason: "应急管理部发布的粉尘涉爆典型重大事故隐患警示信息，不是事故报道",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://www.safehoo.com/Manage/hazard/202611/5820561.shtml": {
+    notLoss: true,
+    reason: "应急管理部发布的钢铁行业典型重大事故隐患警示信息，不是事故报道",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://www.safehoo.com/Manage/hazard/202611/5820560.shtml": {
+    notLoss: true,
+    reason: "应急管理部发布的铝加工行业典型重大事故隐患警示信息，不是事故报道",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://economictimes.indiatimes.com/news/india/no-explosive-material-found-at-vasundhara-police-outpost-blast-site-dcp-rizul-kumar/articleshow/135627826.cms": {
+    notLoss: true,
+    reason: "印度加济阿巴德一处警察岗亭爆炸的调查进展，非工商业设施事故",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://newsukraine.rbc.ua/news/explosions-rock-russia-s-saratov-as-drone-1794036302.html": {
+    notLoss: true,
+    reason: "11月7日俄罗斯萨拉托夫炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://english.nv.ua/nation/drone-strike-sparks-blaze-at-russian-afipsky-oil-plant-50656815.html": {
+    notLoss: true,
+    reason: "11月6日俄罗斯阿菲普斯基炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://www.wjtv.com/video/fire-crews-respond-to-greenville-chemical-plant-explosion/12339375/": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.newindianexpress.com/states/assam/2026/Nov/06/one-killed-six-injured-in-fire-at-oil-indias-assam-facility": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
+  "https://www.democrata.es/en/international/three-dead-and-four-seriously-injured-due-to-an-explosion-at-an-oil-plant-in-northeast-india/": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
   // 同一事件共用的速报内容
   _shared: {
+    tengakhat: {
+      brief: "Oil India 阿萨姆邦 Tengakhat 中间罐区维修间接加热炉时爆炸起火，4人死亡。",
+      flow: ["中间罐区间接加热炉维修作业", "爆炸（原因待查）", "引发火灾", "11辆消防车，约3.5小时扑灭", "4死多伤，4名员工停职"],
+      summary: "11月6日约9时05分，印度阿萨姆邦迪布鲁格尔县 Tengakhat 的印度石油公司（Oil India Limited）中间罐区，在间接加热炉（Indirect Bath Heater）维修作业期间发生爆炸并引发火灾，伤者多为运维承包商员工。公司出动11辆消防车，约12时30分扑灭；死亡人数由最初的1人升至4人，另有数人烧伤。爆炸原因报道未说明，公司已停职4名员工（含3名管理人员），并向遇难者家属各赔偿100万卢比。",
+      points: [
+        "油田罐区的间接加热炉在维修时，若燃料气或工艺侧没有可靠隔离、炉膛没有吹扫和气体检测，重新点火或动火时容易发生炉膛爆炸。",
+        "检查加热炉维修的作业许可：燃料气双阀隔离和盲板、吹扫与气体检测记录、点火程序，以及承包商的培训和监护。",
+        "罐区内加热炉紧邻储罐，一旦起火可能波及原油储罐：关注加热炉与储罐的防火间距、罐区固定消防和远程切断能力。",
+      ],
+      refs: ["7-43", "7-59", "7-88"],
+      by: "Claude Code", at: "2026-11-09",
+    },
     toledo: {
       brief: "托莱多罐车场站转运 GMA 出错，储罐破裂持续排放，周边大范围疏散。",
       flow: ["5,500加仑储罐转运 GMA", "转运操作失误", "罐体破裂、持续排放", "无法堵漏，任其排放", "1英里疏散，约60人就医"],
