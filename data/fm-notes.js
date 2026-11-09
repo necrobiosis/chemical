@@ -590,6 +590,24 @@ window.FM_NOTES = {
   "https://www.wjtv.com/video/fire-crews-respond-to-greenville-chemical-plant-explosion/12339375/": { event: "greenville-loveland-2026-11", ref: "greenville" },
   "https://www.newindianexpress.com/states/assam/2026/Nov/06/one-killed-six-injured-in-fire-at-oil-indias-assam-facility": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
   "https://www.democrata.es/en/international/three-dead-and-four-seriously-injured-due-to-an-explosion-at-an-oil-plant-in-northeast-india/": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
+  "https://www.koreaherald.com/article/10930814": {
+    notLoss: true,
+    reason: "韩国总统就消防员殉职问题表态、承诺保障消防经费的政策新闻，不是事故报道",
+    by: "Claude Code", at: "2026-11-09",
+  },
+  "https://www.safehoo.com/News/News/China/202611/5820886.shtml": {
+    event: "taiyuan-howard-johnson-2026-11",
+    brief: "太原40层商住综合楼闲置楼层起火，烟火沿竖井蔓延，5死33伤。",
+    flow: ["闲置的5–6层起火（原因待查）", "火势和烟气沿竖向烟道上窜", "楼上反复复燃", "约2小时扑灭明火", "送医38人，其中5人死亡"],
+    summary: "11月8日16时59分，山西太原迎泽区柳巷街道豪生国际公寓（原唐槐商厦，40层、高约147.6米的超高层综合建筑，楼内有酒店和培训机构）发生火灾。起火点位于闲置的5至6层，火势和烟气沿竖向烟道迅速向上蔓延，扑救中出现楼下扑灭、楼上复燃的情况；19时明火扑灭，20时30分搜救结束，共送医38人，其中5人死亡。起火原因和财产损失报道未说明。",
+    points: [
+      "闲置楼层往往无人值守、消防设施停用或维护不到位，又堆放杂物，起火后发现晚：检查类似客户的闲置区域是否保持喷淋、报警有效，并纳入巡查。",
+      "竖向烟道、管井的防火封堵缺失，会让火灾和烟气迅速蔓延到上层：关注竖井每层的防火封堵和防火门的完好性。",
+      "酒店、培训机构等多业态混用的老旧高层，火灾荷载和人员都多，扑救困难：评估自动喷水系统覆盖和消防水压能否满足高层灭火。",
+    ],
+    refs: ["10-1"],
+    by: "Claude Code", at: "2026-11-09",
+  },
   // 同一事件共用的速报内容
   _shared: {
     tengakhat: {
