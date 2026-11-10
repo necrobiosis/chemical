@@ -630,6 +630,40 @@ window.FM_NOTES = {
     reason: "11月9日俄罗斯基里希炼厂遭无人机袭击起火的战事报道，不是工业事故",
     by: "Claude Code", at: "2026-11-10",
   },
+  "https://www.psuconnect.in/psu-news/oil-india-reports-fire-at-tengakhat-tank-farm-1-fatality": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
+  "https://economictimes.indiatimes.com/world/us/watch-aircraft-flips-upside-down-at-california-airport-after-possible-jet-blast-from-boeing-737-with-two-onboard/articleshow/135697314.cms": {
+    notLoss: true,
+    reason: "美国加州机场小型飞机被喷气尾流掀翻，属航空意外，非工商业设施事故",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://dailydispatch.com/fire-news/california/fresno-pom-wonderful-factory-safely-evacuated-after-chemical-leak-firefighters-say/": {
+    notLoss: true,
+    reason: "POM Wonderful 弗雷斯诺工厂少量清洁剂泄漏、约30人头晕，报道称为孤立事件，无财产损失",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://thethaiger.com/news/national/thai-rider-suffers-facial-burns-in-jet-ski-engine-explosion": {
+    notLoss: true,
+    reason: "泰国摩托艇比赛中发动机起火爆炸，属个人人身伤害，非工商业设施",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://www.reuters.com/world/spanish-police-officer-killed-another-injured-explosion-after-neighbourhood-2026-11-10/": {
+    notLoss: true,
+    reason: "西班牙邻里纠纷引发爆炸致警察死伤，属治安事件，非工业事故",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://www.hazardexonthenet.net/article/225005/Explosion-at-steel-plant-in-Turkey-kills-17.aspx": {
+    event: "habas-aliaga-2026-11",
+    brief: "土耳其 HABAS 阿利亚加钢厂停产检修时爆炸起火，17死15伤。",
+    flow: ["炼钢区停产检修、更换设备", "物料坠落或天车坠入电弧炉（说法不一）", "砸坏天然气和氧气管道", "爆炸起火", "17死15伤，6人被拘留"],
+    summary: "11月9日约11时46分，土耳其伊兹密尔省阿利亚加的 HABAS 钢铁厂炼钢区在停产检修、更换设备时发生爆炸并起火，17名工人死亡、15人受伤。劳动部长称作业中有物料坠落，砸坏了天然气和氧气管道引发爆炸；省长早先的说法是一台天车坠入电弧炉。确切原因仍在调查，已有6人被拘留，财产损失报道未说明。",
+    points: [
+      "检修期间燃气和氧气管道仍在带压，一旦被坠物砸坏，泄漏的天然气与富氧环境会让爆炸和火势猛烈得多：检查检修前是否隔离、泄压并置换这些管线。",
+      "天车、吊装作业从电弧炉和管廊上方经过，坠物风险高：关注吊装作业许可、天车的定期检验，以及关键管线的防护和走向。",
+      "停产检修时现场人员集中，伤亡会被放大：检查检修期间的人员限制、作业交叉管理和应急撤离安排。",
+    ],
+    refs: ["7-43", "10-1"],
+    by: "Claude Code", at: "2026-11-10",
+  },
   // 同一事件共用的速报内容
   _shared: {
     tengakhat: {
