@@ -608,6 +608,28 @@ window.FM_NOTES = {
     refs: ["10-1"],
     by: "Claude Code", at: "2026-11-09",
   },
+  "https://news.chemnet.com/toutiao/detail-94600.html": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
+  "https://www.ndtv.com/india-news/oil-india-limited-in-assam-suspends-4-officials-after-3-killed-in-fire-12299750": { event: "oil-india-tengakhat-2026-11", ref: "tengakhat" },
+  "https://www.mem.gov.cn/xw/jyll/202611/t20261109_738696.shtml": {
+    notLoss: true,
+    reason: "西双版纳消防救援支队开展火灾现场警示教育活动，不是事故报道",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://www.safehoo.com/News/News/China/202611/5820755.shtml": {
+    notLoss: true,
+    reason: "沪武高速驼岭隧道附近多车追尾、货车起火（1死4伤），属交通事故",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://ukranews.com/en/news/1186316-in-the-leningrad-region-of-the-russian-federation-drones-attacked-the-kinef-oil-refinery-causing-a": {
+    notLoss: true,
+    reason: "11月9日俄罗斯列宁格勒州基里希 KINEF 炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-10",
+  },
+  "https://nashaniva.com/en/408822": {
+    notLoss: true,
+    reason: "11月9日俄罗斯基里希炼厂遭无人机袭击起火的战事报道，不是工业事故",
+    by: "Claude Code", at: "2026-11-10",
+  },
   // 同一事件共用的速报内容
   _shared: {
     tengakhat: {
