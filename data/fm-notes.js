@@ -664,6 +664,8 @@ window.FM_NOTES = {
     refs: ["7-43", "10-1"],
     by: "Claude Code", at: "2026-11-10",
   },
+  "https://dailydispatch.com/fire-news/mississippi/fire-crews-respond-to-greenville-chemical-plant-explosion/": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://apnews.com/video/fire-smoke-as-emergency-crews-respond-to-explosion-at-mississippi-chemical-plant-451199efa4c8476295158f8a5dfb5e07": { event: "greenville-loveland-2026-11", ref: "greenville" },
   // 同一事件共用的速报内容
   _shared: {
     tengakhat: {
