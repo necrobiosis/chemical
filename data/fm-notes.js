@@ -666,6 +666,25 @@ window.FM_NOTES = {
   },
   "https://dailydispatch.com/fire-news/mississippi/fire-crews-respond-to-greenville-chemical-plant-explosion/": { event: "greenville-loveland-2026-11", ref: "greenville" },
   "https://apnews.com/video/fire-smoke-as-emergency-crews-respond-to-explosion-at-mississippi-chemical-plant-451199efa4c8476295158f8a5dfb5e07": { event: "greenville-loveland-2026-11", ref: "greenville" },
+  "https://www.mem.gov.cn/xw/gdyj/202611/t20261112_739107.shtml": {
+    notLoss: true,
+    reason: "安徽省生产安全事故警示教育专题培训，属会议培训，不是事故",
+    by: "Claude Code", at: "2026-11-12",
+  },
+  "https://doc.safehoo.com/print.aspx?id=5821018": {
+    event: "yangzi-ethylene-2026-05",
+    past: true,
+    brief: "扬子石化乙烯装置检修动火引燃残留物料，4人死亡、损失约800万元。",
+    flow: ["1#乙烯装置大检修", "倒空置换不彻底，管线残留可燃介质", "角磨机切割阀体螺栓，火花引燃泄漏介质", "平台油水混合物燃烧下流，形成立体火灾", "4人死亡，直接损失约800万元"],
+    summary: "这是2026年5月29日旧事故的调查报告：当天13时58分许，中国石化扬子石油化工有限公司（南京）1#乙烯装置大检修期间，在拆卸裂解气阀和烧焦阀时，检修人员用角磨机切割阀体螺栓产生火花，引燃管线内残留并泄漏的可燃介质；作业平台上存放的油水混合物随之燃烧并向下流淌，引燃下层平台积存的油水混合物，形成立体燃烧，造成4人死亡，直接经济损失约800万元。调查认定为较大生产安全责任事故，直接原因是装置倒空置换不彻底；间接原因包括风险辨识不足、设备未按要求交接、动火作业违规审批、现场施工安全管理失控及属地和园区监管不到位。19人被建议行政处罚，7人被采取刑事强制措施。",
+    points: [
+      "检修前倒空置换不彻底、管线残留可燃介质是这起事故的根源：检查类似客户检修时的隔离、吹扫置换、气体检测和设备交接确认是否落实到每一段管线和每一个阀门。",
+      "在可能残留可燃物的设备上用角磨机切割属高风险动火：核实动火许可是否经现场确认后审批，优先采用冷切割等不产生火花的方法，并设监火人。",
+      "作业平台上存放的油水混合物让火势向下层蔓延、扩大成立体火灾：检修期间要及时清走平台上的含油废液和可燃物，避免在格栅平台上积存。",
+    ],
+    refs: ["10-1", "7-32", "7-43"],
+    by: "Claude Code", at: "2026-11-12",
+  },
   // 同一事件共用的速报内容
   _shared: {
     tengakhat: {
