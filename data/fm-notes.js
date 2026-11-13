@@ -674,6 +674,21 @@ window.FM_NOTES = {
   "https://doc.safehoo.com/print.aspx?id=5821018": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
   "https://js.ifeng.com/c/8xzfw75ojRn": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
 
+  "https://economictimes.indiatimes.com/news/videos/russian-soldier-killed-in-car-blast-near-st-petersburg/videoshow/135792885.cms": {
+    notLoss: true,
+    reason: "圣彼得堡附近汽车爆炸致一名俄军士兵死亡，属安全袭击事件，不是工商业事故",
+    by: "Claude Code", at: "2026-11-13",
+  },
+  "https://www.reuters.com/world/middle-east/two-oil-tankers-disabled-by-explosions-strait-hormuz-irgc-says-2026-11-12/": {
+    notLoss: true,
+    reason: "霍尔木兹海峡油轮遭爆炸袭击，属地区冲突中的袭击事件，不是工业事故",
+    by: "Claude Code", at: "2026-11-13",
+  },
+  "https://112.ua/en/11-listopada-atakuvali-omskij-naftopererobnij-zavod-u-rosii-vibuhi-ta-pozeza-za-25-tis-km-vid-ukraini-197511": {
+    notLoss: true,
+    reason: "11月11日鄂木斯克炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-13",
+  },
   // 同一事件共用的速报内容
   _shared: {
     yangzi: {
