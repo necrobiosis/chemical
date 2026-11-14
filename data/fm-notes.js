@@ -689,6 +689,11 @@ window.FM_NOTES = {
     reason: "11月11日鄂木斯克炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
     by: "Claude Code", at: "2026-11-13",
   },
+  "https://www.outlookindia.com/international/russia-claims-1198-ukrainian-drones-downed-volgograd": {
+    notLoss: true,
+    reason: "伏尔加格勒工业区遭无人机袭击起火、4人死亡，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-14",
+  },
   // 同一事件共用的速报内容
   _shared: {
     yangzi: {
