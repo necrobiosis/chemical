@@ -713,6 +713,11 @@ window.FM_NOTES = {
     reason: "俄罗斯炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
     by: "Claude Code", at: "2026-11-15",
   },
+  "https://timesofindia.indiatimes.com/videos/international/massive-explosion-fear-in-us-bomb-found-near-chemical-facility-urgent-evacuation-warning-issued/videoshow/135846450.cms": {
+    notLoss: true,
+    reason: "皮奥里亚 BioUrja 乙醇厂附近发现爆炸装置并疏散，属治安威胁事件，报道未提及工厂发生事故或损失",
+    by: "Claude Code", at: "2026-11-15",
+  },
   // 同一事件共用的速报内容
   _shared: {
     yangzi: {
