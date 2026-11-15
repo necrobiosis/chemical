@@ -708,6 +708,11 @@ window.FM_NOTES = {
     refs: ["7-29", "7-32", "7-88"],
     by: "Claude Code", at: "2026-11-14",
   },
+  "https://www.thedailybeast.com/russians-panic-as-putin-is-dealt-deadly-fireball-humiliation": {
+    notLoss: true,
+    reason: "俄罗斯炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
+    by: "Claude Code", at: "2026-11-15",
+  },
   // 同一事件共用的速报内容
   _shared: {
     yangzi: {
