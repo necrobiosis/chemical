@@ -718,6 +718,25 @@ window.FM_NOTES = {
     reason: "皮奥里亚 BioUrja 乙醇厂附近发现爆炸装置并疏散，属治安威胁事件，报道未提及工厂发生事故或损失",
     by: "Claude Code", at: "2026-11-15",
   },
+  "https://cj.sina.cn/articles/view/1043320390/3e2fce4600102ifps?froms=ggmp": {
+    notLoss: true,
+    reason: "长兴岛经济技术开发区消防宣传月启动仪式暨石油化工灭火实战演练，属演练，不是事故",
+    by: "Claude Code", at: "2026-11-16",
+  },
+  "https://feng.ifeng.com/c/8y1O8hTc5Pq": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
+  "https://www.freepressjournal.in/mumbai/massive-explosion-rocks-kalamboli-steel-market-in-navi-mumbai-after-fire-engulfs-warehouse-firefighter-suffers-burns-video": {
+    event: "kalamboli-warehouse-2026-11",
+    brief: "新孟买 Kalamboli 一处车库兼仓库起火后稀释剂桶爆炸，1名消防员烧伤。",
+    flow: ["车库兼仓库内存放多桶稀释剂", "仓库起火（原因待查）", "消防到场扑救", "稀释剂桶剧烈爆炸", "1名消防员5–6%烧伤，仓库业主下落不明；损失报道未说明"],
+    summary: "11月14日（周六）约22时30分，印度马哈拉施特拉邦新孟买 Kalamboli 钢材市场内一处车库兼仓库起火，消防接报时以为是商铺着火。扑救过程中仓库内突然发生剧烈爆炸，消防官员称原因是库内存放的多桶稀释剂。一名消防员在灭火时被烧伤（5–6%），已送医；仓库业主下落不明，警方已立案。官员称不掌握库内存放了哪些化学品，另有报道称该处为油漆仓库，存有油漆罐和油桶。起火原因仍在调查，财产损失报道未说明。",
+    points: [
+      "车库、仓库混存稀释剂等易燃液体桶，受热后会破裂、爆燃，使普通火灾突然升级：检查类似客户的易燃液体存放量、存放位置和专用易燃品柜或隔间。",
+      "消防部门不掌握库内存放的化学品，增加了扑救人员的风险：危险品仓库应向当地消防报备危险品清单，并在门口标识。",
+      "钢材市场内商铺、仓库密集，火灾和爆炸容易波及相邻单位：评估这类市场内客户的外部暴露。",
+    ],
+    refs: ["7-29", "8-9"],
+    by: "Claude Code", at: "2026-11-16",
+  },
   // 同一事件共用的速报内容
   _shared: {
     yangzi: {
