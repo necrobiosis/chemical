@@ -737,6 +737,7 @@ window.FM_NOTES = {
     refs: ["7-29", "8-9"],
     by: "Claude Code", at: "2026-11-16",
   },
+  "https://feng.ifeng.com/c/8y19nuHlfrp": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
   // 同一事件共用的速报内容
   _shared: {
     yangzi: {
