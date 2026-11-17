@@ -724,22 +724,47 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-16",
   },
   "https://feng.ifeng.com/c/8y1O8hTc5Pq": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
-  "https://www.freepressjournal.in/mumbai/massive-explosion-rocks-kalamboli-steel-market-in-navi-mumbai-after-fire-engulfs-warehouse-firefighter-suffers-burns-video": {
-    event: "kalamboli-warehouse-2026-11",
-    brief: "新孟买 Kalamboli 一处车库兼仓库起火后稀释剂桶爆炸，1名消防员烧伤。",
-    flow: ["车库兼仓库内存放多桶稀释剂", "仓库起火（原因待查）", "消防到场扑救", "稀释剂桶剧烈爆炸", "1名消防员5–6%烧伤，仓库业主下落不明；损失报道未说明"],
-    summary: "11月14日（周六）约22时30分，印度马哈拉施特拉邦新孟买 Kalamboli 钢材市场内一处车库兼仓库起火，消防接报时以为是商铺着火。扑救过程中仓库内突然发生剧烈爆炸，消防官员称原因是库内存放的多桶稀释剂。一名消防员在灭火时被烧伤（5–6%），已送医；仓库业主下落不明，警方已立案。官员称不掌握库内存放了哪些化学品，另有报道称该处为油漆仓库，存有油漆罐和油桶。起火原因仍在调查，财产损失报道未说明。",
-    points: [
-      "车库、仓库混存稀释剂等易燃液体桶，受热后会破裂、爆燃，使普通火灾突然升级：检查类似客户的易燃液体存放量、存放位置和专用易燃品柜或隔间。",
-      "消防部门不掌握库内存放的化学品，增加了扑救人员的风险：危险品仓库应向当地消防报备危险品清单，并在门口标识。",
-      "钢材市场内商铺、仓库密集，火灾和爆炸容易波及相邻单位：评估这类市场内客户的外部暴露。",
-    ],
-    refs: ["7-29", "8-9"],
-    by: "Claude Code", at: "2026-11-16",
-  },
+  "https://www.freepressjournal.in/mumbai/massive-explosion-rocks-kalamboli-steel-market-in-navi-mumbai-after-fire-engulfs-warehouse-firefighter-suffers-burns-video": { event: "kalamboli-warehouse-2026-11", ref: "kalamboli" },
+
   "https://feng.ifeng.com/c/8y19nuHlfrp": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
+  "https://newsable.asianetnews.com/amp/india/firefighter-injured-in-massive-blast-at-kalamboli-steel-market-unit-articleshow-81t2l7i": { event: "kalamboli-warehouse-2026-11", ref: "kalamboli" },
+  "https://www.mem.gov.cn/xw/gdyj/202611/t20261117_739660.shtml": {
+    notLoss: true,
+    reason: "广东省应急管理厅公布事故隐患内部报告奖励案例，属通报，不是事故",
+    by: "Claude Code", at: "2026-11-17",
+  },
+  "https://www.facebook.com/deutschewellenews/posts/eleven-people-were-killed-and-17-others-injured-after-a-fire-tore-through-a-buil/1607913241363984/": {
+    notLoss: true,
+    reason: "普吉岛芭东海滩附近居民楼火灾，11死17伤，属住宅/旅游住宿场所火灾，非工商业设施",
+    by: "Claude Code", at: "2026-11-17",
+  },
+  "https://news.chemnet.com/toutiao/detail-95841.html": {
+    event: "xinghua-oil-truck-2026-11",
+    brief: "江苏兴化一油脂厂内油品罐车爆燃，1人轻伤，周边民宅门窗被震坏。",
+    flow: ["油脂企业厂区内一辆油品运输罐车", "罐车发生爆燃（原因待查）", "冲击波震坏周边民宅门窗，可见火光", "消防扑灭火势", "1人轻伤，无死亡；企业损失报道未说明"],
+    summary: "11月14日晚，江苏省泰州市兴化市昌荣镇一家油脂企业厂区内，一辆油品运输罐车发生爆燃，产生明显冲击波，附近居民看到火光，多户民宅门窗玻璃被震碎。一名工人在应急断电时轻伤，生命体征平稳，无人死亡；火势已被扑灭。企业全称未公布，爆燃原因仍在官方调查阶段，当地将检查油脂加工和危化品储运企业。企业财产损失报道未说明。",
+    points: [
+      "罐车在厂区装卸、转运油品时发生爆燃，说明装卸区同样存在可燃蒸气和静电、动火等引火源：检查类似客户的装卸区防静电接地、防爆电气和装卸前后的气体检测。",
+      "冲击波震坏周边民宅门窗，说明装卸区与厂外居民区的距离不足或缺少泄压防护：评估对周边的外部暴露以及第三方责任。",
+      "油脂企业常用溶剂浸出或加工，厂内可能同时有溶剂和油品罐车：确认溶剂与油品的区域分隔、罐车进出管理和应急断电程序。",
+    ],
+    refs: ["7-43", "7-49", "7-32"],
+    by: "Claude Code", at: "2026-11-17",
+  },
   // 同一事件共用的速报内容
   _shared: {
+    kalamboli: {
+      brief: "新孟买 Kalamboli 一处车库兼仓库起火后稀释剂桶爆炸，1名消防员烧伤。",
+      flow: ["车库兼仓库内存放多桶稀释剂", "仓库起火（原因待查）", "消防到场扑救", "稀释剂桶剧烈爆炸", "1名消防员5–6%烧伤，仓库业主下落不明；损失报道未说明"],
+      summary: "11月14日（周六）约22时30分，印度马哈拉施特拉邦新孟买 Kalamboli 钢材市场内一处车库兼仓库起火，消防接报时以为是商铺着火。扑救过程中仓库内突然发生剧烈爆炸，消防官员称原因是库内存放的多桶稀释剂。一名消防员在灭火时被烧伤（5–6%），已送医；仓库业主下落不明，警方已立案。官员称不掌握库内存放了哪些化学品，另有报道称该处为油漆仓库，存有油漆罐和油桶。起火原因仍在调查，财产损失报道未说明。",
+      points: [
+        "车库、仓库混存稀释剂等易燃液体桶，受热后会破裂、爆燃，使普通火灾突然升级：检查类似客户的易燃液体存放量、存放位置和专用易燃品柜或隔间。",
+        "消防部门不掌握库内存放的化学品，增加了扑救人员的风险：危险品仓库应向当地消防报备危险品清单，并在门口标识。",
+        "钢材市场内商铺、仓库密集，火灾和爆炸容易波及相邻单位：评估这类市场内客户的外部暴露。",
+      ],
+      refs: ["7-29", "8-9"],
+      by: "Claude Code", at: "2026-11-16",
+    },
     yangzi: {
       brief: "扬子石化乙烯装置检修动火引燃残留物料，4人死亡、损失约800万元。",
       flow: ["1#乙烯装置大检修", "倒空置换不彻底，管线残留可燃介质", "角磨机切割阀体螺栓，火花引燃泄漏介质", "平台油水混合物燃烧下流，形成立体火灾", "4人死亡，直接损失约800万元"],
