@@ -751,19 +751,8 @@ window.FM_NOTES = {
     reason: "赣州龙南临胜洗车店“3·29”中毒窒息事故调查报告，洗车店属小型服务场所，且为纯人身伤害事故",
     by: "Claude Code", at: "2026-11-18",
   },
-  "https://timesofindia.indiatimes.com/city/kanpur/massive-fire-at-kanpur-chemical-factory-triggers-explosions-multiple-fire-engines-rushed-to-spot/articleshow/135934177.cms": {
-    event: "kanpur-nicholas-pigments-2026-11",
-    brief: "坎普尔 Nicholas Pigments and Inks 化工厂夜间起火并连环爆炸，疏散邻厂和居民，未报伤亡。",
-    flow: ["UPSIDC 工业区颜料油墨化工厂（有化学品转运的未证实说法）", "夜间起火（原因待查）", "多个化学品桶连续爆炸，火焰高约100英尺", "邻厂工人和附近居民疏散，扑救约4小时", "暂无伤亡报道，财产损失报道未说明"],
-    summary: "11月17日（周二）晚约20时30分至21时，印度北方邦坎普尔鲁玛（Ruma）UPSIDC 工业区、KIT 学院后方的 Nicholas Pigments and Inks 颜料油墨厂起火，现场连续发生爆炸，一说有20多个化学品桶破裂，火焰高约100英尺，数公里外可见。全区消防车赶到，邻近工厂的工人和居民被疏散，Ramadevi 路口被清空，扑救持续约4小时。截至报道暂无伤亡；起火原因仍在调查，警方消息称当时可能正在转移化学品，但未证实；财产损失报道未说明。（媒体对起火时间说法略有出入。）",
-    points: [
-      "颜料油墨厂常存放大量溶剂和化学品桶，一旦起火，桶受热破裂导致连环爆炸，火势迅速升级：检查类似客户的化学品桶存量、堆放方式、与生产区的分隔和围堰。",
-      "有说法称起火时正在转移化学品，转移作业若缺少接地、防爆电气和通风，容易产生引火源：关注装卸转移作业的许可和监护。",
-      "工业区内工厂紧邻，爆炸迫使邻厂停工疏散：评估相邻企业的外部暴露和营业中断，以及消防水源和车辆到场能力。",
-    ],
-    refs: ["7-29", "7-32", "7-88"],
-    by: "Claude Code", at: "2026-11-18",
-  },
+  "https://timesofindia.indiatimes.com/city/kanpur/massive-fire-at-kanpur-chemical-factory-triggers-explosions-multiple-fire-engines-rushed-to-spot/articleshow/135934177.cms": { event: "kanpur-nicholas-pigments-2026-11", ref: "kanpur" },
+
   "https://www.hazardexonthenet.net/article/225122/Explosion-and-fire-at-asphalt-plant-in-Mexico-injure-two-workers.aspx": {
     event: "hoval-nautla-2026-11",
     brief: "墨西哥韦拉克鲁斯 Hoval 沥青厂爆炸起火，2名工人轻伤，设备受损。",
@@ -777,8 +766,22 @@ window.FM_NOTES = {
     refs: ["7-43", "7-59", "7-88"],
     by: "Claude Code", at: "2026-11-18",
   },
+  "https://theopenpress.in/article/massive-fire-kanpur-chemical-factory-ruma-explosions-17-november": { event: "kanpur-nicholas-pigments-2026-11", ref: "kanpur" },
+  "https://apnlive.com/india-news/kanpur-chemical-factory-fire-explosions/": { event: "kanpur-nicholas-pigments-2026-11", ref: "kanpur" },
   // 同一事件共用的速报内容
   _shared: {
+    kanpur: {
+      brief: "坎普尔 Nicholas Pigments and Inks 化工厂夜间起火并连环爆炸，疏散邻厂和居民，未报伤亡。",
+      flow: ["UPSIDC 工业区颜料油墨化工厂（有化学品转运的未证实说法）", "夜间起火（原因待查）", "多个化学品桶连续爆炸，火焰高约100英尺", "邻厂工人和附近居民疏散，扑救约4小时", "暂无伤亡报道，财产损失报道未说明"],
+      summary: "11月17日（周二）晚约20时30分至21时，印度北方邦坎普尔鲁玛（Ruma）UPSIDC 工业区、KIT 学院后方的 Nicholas Pigments and Inks 颜料油墨厂起火，现场连续发生爆炸，一说有20多个化学品桶破裂，火焰高约100英尺，数公里外可见。全区消防车赶到，邻近工厂的工人和居民被疏散，Ramadevi 路口被清空，扑救持续约4小时。截至报道暂无伤亡；起火原因仍在调查，警方消息称当时可能正在转移化学品，但未证实；财产损失报道未说明。（媒体对起火时间说法略有出入。）",
+      points: [
+        "颜料油墨厂常存放大量溶剂和化学品桶，一旦起火，桶受热破裂导致连环爆炸，火势迅速升级：检查类似客户的化学品桶存量、堆放方式、与生产区的分隔和围堰。",
+        "有说法称起火时正在转移化学品，转移作业若缺少接地、防爆电气和通风，容易产生引火源：关注装卸转移作业的许可和监护。",
+        "工业区内工厂紧邻，爆炸迫使邻厂停工疏散：评估相邻企业的外部暴露和营业中断，以及消防水源和车辆到场能力。",
+      ],
+      refs: ["7-29", "7-32", "7-88"],
+      by: "Claude Code", at: "2026-11-18",
+    },
     pyrozzar: {
       brief: "巴西萨尔图涂料溶剂回收厂火灾后爆炸，十余人受伤，邻厂停工疏散。",
       flow: ["涂料、溶剂回收厂（存溶剂约10万升）", "厂区起火（原因待查）", "火灾中发生剧烈爆炸、形成火球", "周边居民和邻厂 Ypê 疏散", "约12–15人受伤（含消防员1人重伤），财产损失报道未说明"],
