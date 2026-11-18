@@ -695,19 +695,8 @@ window.FM_NOTES = {
     by: "Claude Code", at: "2026-11-14",
   },
   "https://feng.ifeng.com/c/8xyPA5NDX8A": { event: "yangzi-ethylene-2026-05", past: true, ref: "yangzi" },
-  "https://www.thesun.co.uk/news/41021363/workers-flee-chemical-blast-explosion-inferno/": {
-    event: "pyrozzar-salto-2026-11",
-    brief: "巴西萨尔图涂料溶剂回收厂火灾后爆炸，十余人受伤，邻厂停工疏散。",
-    flow: ["涂料、溶剂回收厂（存溶剂约10万升）", "厂区起火（原因待查）", "火灾中发生剧烈爆炸、形成火球", "周边居民和邻厂 Ypê 疏散", "约12–15人受伤（含消防员1人重伤），财产损失报道未说明"],
-    summary: "11月13日（周五）上午，巴西圣保罗州萨尔图市 Prefeito Hélio Steffen 公路附近的 Pyrozzar Indústria Química e Comércio 工厂起火，随后发生剧烈爆炸并形成大火球。该厂生产工业涂料、清漆和溶剂，并回收涂料污泥等化学废物，厂内存放约10万升溶剂。受伤人数说法不一：市政府称市立医院收治12人，消防称15人，伤者包括一名企业主、军警、消防员和平民，其中一名消防员呼吸道烧伤、插管、伤势严重。约60名消防员、22辆消防车到场，附近居民被疏散，相邻的日化企业 Ypê 也撤空了工厂和配送中心。起火原因待查，该厂消防验收证明（AVCB）有效期至2027年；财产损失报道未说明。",
-    points: [
-      "溶剂回收和涂料废料处理厂大量存放易燃液体（本案约10万升），一旦起火极易升级为爆炸：检查类似客户的易燃液体储量、容器类型、分区隔离和泄漏收集。",
-      "爆炸发生在灭火过程中，造成消防员和围观人员受伤：关注易燃液体仓库的自动灭火（泡沫/喷淋）配置，以及火灾时的安全距离和外部救援预案。",
-      "邻厂 Ypê 被迫撤空工厂和配送中心：评估客户对周边高危企业的外部暴露和由此引起的营业中断；持有有效消防证明不代表风险已受控。",
-    ],
-    refs: ["7-29", "7-32", "7-88"],
-    by: "Claude Code", at: "2026-11-14",
-  },
+  "https://www.thesun.co.uk/news/41021363/workers-flee-chemical-blast-explosion-inferno/": { event: "pyrozzar-salto-2026-11", ref: "pyrozzar" },
+
   "https://www.thedailybeast.com/russians-panic-as-putin-is-dealt-deadly-fireball-humiliation": {
     notLoss: true,
     reason: "俄罗斯炼厂遭无人机袭击起火，属战争袭击，不是工业事故",
@@ -751,8 +740,57 @@ window.FM_NOTES = {
     refs: ["7-43", "7-49", "7-32"],
     by: "Claude Code", at: "2026-11-17",
   },
+  "https://www.hazardexonthenet.net/article/225120/Explosion-and-fire-at-chemical-plant-in-Brazil-injure-12.aspx": { event: "pyrozzar-salto-2026-11", ref: "pyrozzar" },
+  "https://www.safehoo.com/Material/JCBG/202611/5821471.shtml": {
+    notLoss: true,
+    reason: "危险化学品领域重大事故隐患清单，属规章/资料文件，不是事故",
+    by: "Claude Code", at: "2026-11-18",
+  },
+  "https://www.safehoo.com/Case/Case/suffocate/202611/5821484.shtml": {
+    notLoss: true,
+    reason: "赣州龙南临胜洗车店“3·29”中毒窒息事故调查报告，洗车店属小型服务场所，且为纯人身伤害事故",
+    by: "Claude Code", at: "2026-11-18",
+  },
+  "https://timesofindia.indiatimes.com/city/kanpur/massive-fire-at-kanpur-chemical-factory-triggers-explosions-multiple-fire-engines-rushed-to-spot/articleshow/135934177.cms": {
+    event: "kanpur-nicholas-pigments-2026-11",
+    brief: "坎普尔 Nicholas Pigments and Inks 化工厂夜间起火并连环爆炸，疏散邻厂和居民，未报伤亡。",
+    flow: ["UPSIDC 工业区颜料油墨化工厂（有化学品转运的未证实说法）", "夜间起火（原因待查）", "多个化学品桶连续爆炸，火焰高约100英尺", "邻厂工人和附近居民疏散，扑救约4小时", "暂无伤亡报道，财产损失报道未说明"],
+    summary: "11月17日（周二）晚约20时30分至21时，印度北方邦坎普尔鲁玛（Ruma）UPSIDC 工业区、KIT 学院后方的 Nicholas Pigments and Inks 颜料油墨厂起火，现场连续发生爆炸，一说有20多个化学品桶破裂，火焰高约100英尺，数公里外可见。全区消防车赶到，邻近工厂的工人和居民被疏散，Ramadevi 路口被清空，扑救持续约4小时。截至报道暂无伤亡；起火原因仍在调查，警方消息称当时可能正在转移化学品，但未证实；财产损失报道未说明。（媒体对起火时间说法略有出入。）",
+    points: [
+      "颜料油墨厂常存放大量溶剂和化学品桶，一旦起火，桶受热破裂导致连环爆炸，火势迅速升级：检查类似客户的化学品桶存量、堆放方式、与生产区的分隔和围堰。",
+      "有说法称起火时正在转移化学品，转移作业若缺少接地、防爆电气和通风，容易产生引火源：关注装卸转移作业的许可和监护。",
+      "工业区内工厂紧邻，爆炸迫使邻厂停工疏散：评估相邻企业的外部暴露和营业中断，以及消防水源和车辆到场能力。",
+    ],
+    refs: ["7-29", "7-32", "7-88"],
+    by: "Claude Code", at: "2026-11-18",
+  },
+  "https://www.hazardexonthenet.net/article/225122/Explosion-and-fire-at-asphalt-plant-in-Mexico-injure-two-workers.aspx": {
+    event: "hoval-nautla-2026-11",
+    brief: "墨西哥韦拉克鲁斯 Hoval 沥青厂爆炸起火，2名工人轻伤，设备受损。",
+    flow: ["El Raudal 沥青厂（Hoval）生产设备区", "爆炸（涉及设备未确认，原因待查）", "引发火灾，邻近储罐被冷却防止蔓延", "约2小时控制火势", "2人轻伤（手部烧伤、吸入烟雾），设备受损，金额报道未说明"],
+    summary: "11月11日，墨西哥韦拉克鲁斯州瑙特拉市 El Raudal 的 Hoval（HOVAL Advance Asfaltos y Emulsiones）沥青厂发生爆炸并起火。当地报道称爆炸涉及沥青生产设备，但尚无技术结论确认具体设备。两名工人受伤，一人手部烧伤、一人吸入烟雾，均在现场处理。消防冷却了邻近储罐以防止再次着火或蔓延，约两小时后控制火势；火灾损坏了机械设备，损失金额和起火原因报道未说明。",
+    points: [
+      "沥青和乳化沥青厂有加热的沥青罐和导热油系统，爆炸多与热油、蒸气或溶剂有关：检查类似客户的加热系统温控、超温联锁、导热油泄漏监测。",
+      "消防重点是冷却邻近储罐防止火势扩大：关注罐区的固定冷却水、罐间距和防火堤。",
+      "生产设备损坏会带来营业中断：评估关键设备的备件和替代产能。",
+    ],
+    refs: ["7-43", "7-59", "7-88"],
+    by: "Claude Code", at: "2026-11-18",
+  },
   // 同一事件共用的速报内容
   _shared: {
+    pyrozzar: {
+      brief: "巴西萨尔图涂料溶剂回收厂火灾后爆炸，十余人受伤，邻厂停工疏散。",
+      flow: ["涂料、溶剂回收厂（存溶剂约10万升）", "厂区起火（原因待查）", "火灾中发生剧烈爆炸、形成火球", "周边居民和邻厂 Ypê 疏散", "约12–15人受伤（含消防员1人重伤），财产损失报道未说明"],
+      summary: "11月13日（周五）上午，巴西圣保罗州萨尔图市 Prefeito Hélio Steffen 公路附近的 Pyrozzar Indústria Química e Comércio 工厂起火，随后发生剧烈爆炸并形成大火球。该厂生产工业涂料、清漆和溶剂，并回收涂料污泥等化学废物，厂内存放约10万升溶剂。受伤人数说法不一：市政府称市立医院收治12人，消防称15人，伤者包括一名企业主、军警、消防员和平民，其中一名消防员呼吸道烧伤、插管、伤势严重。约60名消防员、22辆消防车到场，附近居民被疏散，相邻的日化企业 Ypê 也撤空了工厂和配送中心。起火原因待查，该厂消防验收证明（AVCB）有效期至2027年；财产损失报道未说明。",
+      points: [
+        "溶剂回收和涂料废料处理厂大量存放易燃液体（本案约10万升），一旦起火极易升级为爆炸：检查类似客户的易燃液体储量、容器类型、分区隔离和泄漏收集。",
+        "爆炸发生在灭火过程中，造成消防员和围观人员受伤：关注易燃液体仓库的自动灭火（泡沫/喷淋）配置，以及火灾时的安全距离和外部救援预案。",
+        "邻厂 Ypê 被迫撤空工厂和配送中心：评估客户对周边高危企业的外部暴露和由此引起的营业中断；持有有效消防证明不代表风险已受控。",
+      ],
+      refs: ["7-29", "7-32", "7-88"],
+      by: "Claude Code", at: "2026-11-14",
+    },
     kalamboli: {
       brief: "新孟买 Kalamboli 一处车库兼仓库起火后稀释剂桶爆炸，1名消防员烧伤。",
       flow: ["车库兼仓库内存放多桶稀释剂", "仓库起火（原因待查）", "消防到场扑救", "稀释剂桶剧烈爆炸", "1名消防员5–6%烧伤，仓库业主下落不明；损失报道未说明"],
