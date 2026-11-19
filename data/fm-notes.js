@@ -768,6 +768,19 @@ window.FM_NOTES = {
   },
   "https://theopenpress.in/article/massive-fire-kanpur-chemical-factory-ruma-explosions-17-november": { event: "kanpur-nicholas-pigments-2026-11", ref: "kanpur" },
   "https://apnlive.com/india-news/kanpur-chemical-factory-fire-explosions/": { event: "kanpur-nicholas-pigments-2026-11", ref: "kanpur" },
+  "https://news.chemnet.com/toutiao/detail-96293.html": {
+    event: "valle-de-mexico-steam-2026-11",
+    brief: "墨西哥 Valle de México 热电厂蒸汽管线破裂爆炸，11人烫伤，无人死亡。",
+    flow: ["联合循环热电厂（CFE 运营）蒸汽管线", "管线破裂泄漏（原因待查）", "高温蒸汽外泄，发生爆炸", "现场作业人员烫伤，泄漏被控制", "11人受伤（7人已出院），设备损失报道未说明"],
+    summary: "11月17日（周二）下午约15时，墨西哥墨西哥州 Acolman 的 Valle de México 联合循环热电厂（由联邦电力委员会 CFE 运营）蒸汽管线破裂，高温蒸汽外泄并发生爆炸，现场工人烫伤。民防部门最初通报8人下肢烫伤，CFE 后续更新为11人受影响，其中7人已出院、4人留院观察，无人死亡。蒸汽泄漏已被控制，未疏散周边居民；官方尚未明确管线破裂的原因，电厂正在进行安全核查。设备损坏和经济损失报道未说明，对供电的影响也未说明。",
+    points: [
+      "高压蒸汽管线破裂能量巨大，会损坏周边设备、电气和保温层，并长时间停机：检查类似客户蒸汽管线的壁厚检测、疲劳和腐蚀（含流动加速腐蚀）、支吊架和疏水系统的维护记录。",
+      "热电厂关键设备停机会带来较长的营业中断：评估备件储备、抢修能力和对下游用电客户的影响。",
+      "开停机和负荷变化时的水击、热应力是蒸汽系统的常见诱因：关注暖管程序、疏水和联锁、运行人员培训。",
+    ],
+    refs: ["7-43", "7-88", "10-1"],
+    by: "Claude Code", at: "2026-11-19",
+  },
   // 同一事件共用的速报内容
   _shared: {
     kanpur: {
