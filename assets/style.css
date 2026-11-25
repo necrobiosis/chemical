@@ -113,6 +113,37 @@ h1, h2, h3, h4 { line-height: 1.3; margin: 0 0 0.5em; }
 main { padding-top: 24px; padding-bottom: 40px; outline: none; }
 .site-footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 16px; padding-bottom: 32px; }
 
+/* Free online forums and webinar recordings */
+.events-teaser { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px; margin-top: 28px; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius); background: var(--surface); }
+.events-teaser strong { font-size: 18px; }
+.events-teaser p { color: var(--muted); margin: 6px 0 0; }
+.events-teaser .btn { flex-shrink: 0; }
+.events-note { background: var(--accent-soft); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 20px; }
+.events-note p { margin: 5px 0 0; font-size: 13px; }
+.events-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.event-card { min-width: 0; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; display: flex; flex-direction: column; overflow-wrap: anywhere; }
+.event-card.event-featured { grid-column: 1 / -1; border-top: 3px solid var(--accent); }
+.event-top { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.event-free { background: var(--accent-soft); color: var(--accent); }
+.event-card h2 { font-size: 20px; margin-bottom: 6px; }
+.event-original, .event-organizer { color: var(--muted); font-size: 13px; margin: 0 0 8px; }
+.event-summary { margin: 6px 0 16px; }
+.event-details { margin: 0 0 12px; font-size: 14px; }
+.event-details > div { display: grid; grid-template-columns: 68px minmax(0, 1fr); gap: 8px; padding: 6px 0; border-top: 1px solid var(--border); }
+.event-details dt { color: var(--muted); }
+.event-details dd { margin: 0; }
+.event-card .hint { margin: 0 0 14px; }
+.event-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: auto; font-size: 13px; padding-top: 8px; }
+.event-checked { color: var(--muted); font-size: 12px; margin: 14px 0 0; }
+.event-help { margin-top: 24px; }
+@media (max-width: 700px) {
+  .events-grid { grid-template-columns: 1fr; }
+  .events-teaser { align-items: flex-start; flex-direction: column; }
+  .event-card { padding: 18px; }
+  .event-card h2 { font-size: 18px; }
+  .event-details > div { grid-template-columns: 58px minmax(0, 1fr); }
+}
+
 /* Sections */
 .page-head { margin-bottom: 20px; }
 .page-head h1 { font-size: 24px; }

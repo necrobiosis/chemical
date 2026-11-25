@@ -10,7 +10,7 @@
 // region: cn | asia | intl | auto（按标题中的国家/地区关键词自动归类）
 // rss 字段支持 ${ENV_NAME} 占位符，从环境变量（GitHub Secrets）读取，避免公开私有服务地址。
 window.SOURCES = {
-  "schedule": "每 4 小时（北京时间 00/04/08/12/16/20 点）",
+  "schedule": "每天一次（北京时间 08:17）",
   "maxPerRegion": 80,
   "maxAgeDays": 30,
   "exclude": ["gunmen", "gunman", "shooting", "shooter", "open fire", "opened fire", "opens fire", "gunfire", "firing", "ceasefire", "terror", "militant", "airstrike", "missile", "drone strike", "wildfire", "bushfire", "forest fire", "house fire", "apartment fire", "car crash", "枪击", "开枪", "恐袭", "空袭", "山火", "森林火灾", "民宅火灾"],

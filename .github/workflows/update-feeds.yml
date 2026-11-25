@@ -2,7 +2,7 @@ name: 更新自动新闻源
 
 on:
   schedule:
-    - cron: "17 */4 * * *" # 每 4 小时（UTC 00/04/08/12/16/20 点 = 北京时间 08/12/16/20/00/04 点）
+    - cron: "17 0 * * *" # 每天一次：UTC 00:17 = 北京时间 08:17（实际启动可能稍有延迟）
   workflow_dispatch:
 
 permissions:
@@ -32,11 +32,15 @@ jobs:
           # 可选：配置后用 Claude 为重大动态撰写 FM 防损速报
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/fetch-feeds.mjs
+      - name: 同步免费在线讲座回放
+        if: ${{ !cancelled() }}
+        run: node scripts/fetch-events.mjs
       - name: 提交更新
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
-          git add -A data/feeds.js assets/feed-img
+          git add -A data/feeds.js data/events-auto.js assets/feed-img
           git diff --cached --quiet && exit 0
           git commit -m "chore: 更新自动新闻源"
           git pull --rebase origin "${GITHUB_REF_NAME}"

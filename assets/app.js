@@ -5,6 +5,8 @@
   const FEEDS = window.AUTO_FEEDS || { updated: null, items: {} };
   const T = window.TRAINING || {};
   const SRC = window.SOURCES || { sources: [] };
+  const AUTO_EVENTS = window.AUTO_EVENTS || { items: [], checks: {} };
+  const EVENTS = [...(window.FREE_EVENTS || []), ...(AUTO_EVENTS.items || [])];
   const SRC_BY_ID = {};
   SRC.sources.forEach((s) => (SRC_BY_ID[s.id] = s));
   const TYPES = { wechat: "公众号", x: "X 博主", site: "网站", rss: "网站", query: "关键词检索" };
@@ -25,7 +27,7 @@
 
   const app = document.getElementById("app");
   const searchInput = document.getElementById("search");
-  const filters = { cn: "all", asia: "all", intl: "all", cases: "all", sources: "all" };
+  const filters = { cn: "all", asia: "all", intl: "all", cases: "all", sources: "all", events: "all" };
   let majorOnly = false;
 
   /* ---------- helpers ---------- */
@@ -410,6 +412,7 @@
       <div class="page-head"><h1>今日头条</h1><p>近 7 天最值得关注的工商业事故，每条先给一句话结论和事故经过。${updatedText()}</p></div>
       <div class="headlines">${body}</div>
       <p class="front-more"><a href="#/overview">查看全部重大动态和三大板块 →</a></p>
+      ${eventsTeaser()}
     </div>`;
   }
 
@@ -445,7 +448,7 @@
     const majorSection = `<div class="section"><h2>近 7 天重大动态 <small>自动识别 · ${esc(SRC.schedule || "")} · ${updatedText()}</small></h2>${
       majors.length
         ? `<div class="major-grid">${majors.map(majorCard).join("")}</div>`
-        : `<div class="empty">暂无自动抓取数据。信息源每 4 小时由 GitHub Actions 自动抓取，首次运行后这里会显示来自官方、专业媒体、公众号与 X 博主的重大动态。</div>`
+        : `<div class="empty">暂无自动抓取数据。信息源每天自动抓取一次，首次运行后这里会显示来自官方、专业媒体、公众号与 X 博主的重大动态。</div>`
     }</div>`;
 
     // 各区块带 h-* 类名：桌面按书写顺序显示，手机上由 CSS 调整为“重大动态在前、分类在后”
@@ -637,6 +640,74 @@
       </div>`;
   }
 
+  /* ---------- 免费线上活动 ---------- */
+  function eventState(e) {
+    const now = Date.now();
+    if ((AUTO_EVENTS.checks || {})[e.url]?.state === "unavailable") return "ended";
+    if (e.replayUntil && now >= Date.parse(e.replayUntil)) return "ended";
+    if (e.kind === "replay") return "replay";
+    if (now < Date.parse(e.replayFrom || e.end)) return "live";
+    return e.replayUrl ? "replay" : "ended";
+  }
+  const availableEvents = () => EVENTS.filter(e => eventState(e) !== "ended").sort((a, b) => {
+    const aLive = eventState(a) === "live", bLive = eventState(b) === "live";
+    return bLive - aLive || (aLive ? Date.parse(a.start) - Date.parse(b.start) : 0);
+  });
+  const eventTime = (iso) => new Intl.DateTimeFormat("zh-CN", {
+    timeZone: "Asia/Shanghai", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit", hourCycle: "h23"
+  }).format(new Date(iso));
+  const eventStatusLabel = (e) => eventState(e) === "replay" ? "随时回看" : Date.now() < Date.parse(e.start) ? "即将开始" : "直播 / 轮播中";
+
+  function eventCard(e) {
+    const replay = eventState(e) === "replay";
+    const check = (AUTO_EVENTS.checks || {})[e.url];
+    const checkedAt = check?.checkedAt || e.checkedAt;
+    const url = replay ? e.replayUrl || e.url : e.url;
+    return `<article class="event-card${replay ? "" : " event-featured"}" id="event-${esc(e.id)}">
+      <div class="event-top"><span class="badge event-free">免费 · 在线</span><span class="badge">${eventStatusLabel(e)}</span></div>
+      <h2>${esc(e.title)}</h2>
+      ${e.originalTitle ? `<p class="event-original" lang="en">${esc(e.originalTitle)}</p>` : ""}
+      <p class="event-organizer">${esc(e.organizer)}</p>
+      <p class="event-summary">${esc(e.summary)}</p>
+      <div class="event-top">${(e.topics || []).map(t => `<span class="badge">${esc(t)}</span>`).join("")}</div>
+      <dl class="event-details">
+        <div><dt>时间</dt><dd>${replay ? "点播回放，按自己的时间收听" : `${esc(eventTime(e.start))} — ${esc(eventTime(e.end))}（北京时间）`}</dd></div>
+        <div><dt>语言</dt><dd>${esc(e.language || "以主办方说明为准")}</dd></div>
+        <div><dt>参加方式</dt><dd>${esc(e.access)}</dd></div>
+      </dl>
+      ${!replay && e.timeNote ? `<p class="hint">${esc(e.timeNote)}</p>` : ""}
+      ${e.replayNote ? `<p class="hint">${esc(e.replayNote)}${e.replaySourceUrl ? ` <a href="${safeUrl(e.replaySourceUrl)}" target="_blank" rel="noopener">回放说明 ↗</a>` : ""}</p>` : ""}
+      <div class="event-actions"><a class="btn" href="${safeUrl(url)}" target="_blank" rel="noopener">${replay ? "免费听回放" : "免费报名 / 进入活动"} ↗</a>
+        <a href="${safeUrl(e.sourceUrl)}" target="_blank" rel="noopener">官方说明 ↗</a>
+        ${e.feeSourceUrl ? `<a href="${safeUrl(e.feeSourceUrl)}" target="_blank" rel="noopener">免费资格说明 ↗</a>` : ""}
+      </div>
+      <p class="event-checked">核验于 ${esc(checkedAt)}${check?.state === "error" ? " · 本次连接未成功，保留上次核验记录" : ""}</p>
+    </article>`;
+  }
+
+  function eventsTeaser() {
+    const all = availableEvents();
+    if (!all.length) return "";
+    const next = all.find(e => eventState(e) === "live");
+    return `<aside class="events-teaser"><div><strong>免费论坛与讲座</strong>
+      <p>${next ? `${esc(next.title)} · ${esc(eventTime(next.start))}（北京时间）` : `${all.length} 场行业讲座回放，随时在线听。`}</p></div>
+      <a class="btn" href="#/events">${next ? "查看活动与免费报名" : "去听免费讲座"} →</a></aside>`;
+  }
+
+  function viewEvents() {
+    const all = availableEvents();
+    const live = all.filter(e => eventState(e) === "live");
+    const replays = all.filter(e => eventState(e) === "replay");
+    const section = (title, list, empty) => `<section class="section"><h2>${title}<small>${list.length} 场</small></h2>${list.length ? `<div class="events-grid">${list.map(eventCard).join("")}</div>` : `<div class="empty">${empty}</div>`}</section>`;
+    return `<div class="page-head"><h1>免费论坛与讲座</h1><p>精选化工、过程安全与工业防损的线上论坛和讲座。先看即将举行的活动，也可以马上听免费回放。</p></div>
+      <div class="events-note"><strong>免费在线听，无需付费会员</strong><p>部分活动需要免费注册。时间统一显示北京时间；语言和收听要求见每张卡片。免费回放目录每天同步一次，直播活动经官方信息核实后收录。</p></div>
+      <div class="toolbar" aria-label="活动类型筛选">${chipRow("events", all.length, [["live", "近期直播 / 论坛", live.length], ["replay", "随时回看", replays.length]])}</div>
+      ${filters.events !== "replay" ? section("近期直播与论坛", live, "暂无已核实的免费线上直播，先听下方回放。") : ""}
+      ${filters.events !== "live" ? section("现在就能听 · 免费回放", replays, "暂无可用回放，请稍后再来。") : ""}
+      <p class="hint event-help">IChemE 页面的视频若未显示，可按主办方提示在其 Cookie 设置中启用 Analytics 后刷新；部分境外视频平台的可用性取决于你的网络。</p>
+      ${AUTO_EVENTS.syncError ? `<p class="hint">回放目录本次同步未完成，当前保留上次核验的内容。</p>` : ""}`;
+  }
+
   function viewSources() {
     const st = FEEDS.status || {};
     const typeOrder = ["wechat", "x", "site", "query"];
@@ -694,8 +765,10 @@
     const hit = (s) => String(s || "").toLowerCase().includes(k);
     const curated = NEWS.filter((n) => [n.title, n.summary, n.fm, n.country, (n.tags || []).join(" ")].some(hit));
     const auto = FEED_ALL.filter((i) => hit(i.title) || hit(i.source));
+    const events = availableEvents().filter(e => [e.title, e.originalTitle, e.organizer, e.summary, ...(e.topics || [])].some(hit));
     return `
-      <div class="page-head"><h1>搜索：“${esc(q)}”</h1><p>精选 ${curated.length} 条 · 实时动态 ${auto.length} 条</p></div>
+      <div class="page-head"><h1>搜索：“${esc(q)}”</h1><p>精选 ${curated.length} 条 · 实时动态 ${auto.length} 条 · 免费活动 ${events.length} 场</p></div>
+      ${events.length ? `<section class="section"><h2>免费论坛与讲座</h2><div class="events-grid">${events.map(eventCard).join("")}</div></section>` : ""}
       <div class="cards">${curated.map((n) => card(n)).join("") || `<div class="empty">精选新闻中无匹配结果</div>`}</div>
       ${
         auto.length
@@ -731,6 +804,8 @@
       html = viewRegion(view);
     } else if (view === "sources") {
       html = viewSources();
+    } else if (view === "events") {
+      html = viewEvents();
     } else if (view === "peril" && parts[1]) {
       html = viewPeril(parts[1], params.get("c"));
       view = "cases";
@@ -747,6 +822,7 @@
 
     app.innerHTML = html;
     document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("active", a.dataset.view === view));
+    document.querySelector("#tabs a.active")?.scrollIntoView({ block: "nearest", inline: "nearest" });
 
     if (focus) {
       if (filters[view] && filters[view] !== "all" && !document.getElementById(focus)) {
