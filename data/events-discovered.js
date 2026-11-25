@@ -1,7 +1,7 @@
 // 自动发现并核验的免费线上直播，失败时保留上次已核实记录。
 window.DISCOVERED_EVENTS = {
-  "updated": "2026-11-25T14:30:32.365Z",
-  "attemptedAt": "2026-11-25T14:30:29.916Z",
+  "updated": "2026-11-25T14:34:52.915Z",
+  "attemptedAt": "2026-11-25T14:34:50.076Z",
   "source": "https://www.icheme.org/training-events/whats-on-events-directory/",
   "scanned": 5,
   "error": null,
@@ -12,17 +12,12 @@ window.DISCOVERED_EVENTS = {
       "reason": null
     },
     {
-      "url": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
-      "state": "verified",
-      "reason": null
-    },
-    {
       "url": "https://www.icheme.org/knowledge-networks/communities/member-groups/milton-keynes/events/25-11-2026-is-ai-in-chemical-engineering-a-good-thing-or-a-bad-thing/",
       "state": "rejected",
       "reason": "费用并非明确免费"
     },
     {
-      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+      "url": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
       "state": "verified",
       "reason": null
     },
@@ -30,6 +25,11 @@ window.DISCOVERED_EVENTS = {
       "url": "https://www.icheme.org/training-events/whats-on-events-directory/24-2-2027-webinar-icheme-professional-process-safety-engineer-information-session/",
       "state": "rejected",
       "reason": "不是明确的线上活动"
+    },
+    {
+      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+      "state": "verified",
+      "reason": null
     }
   ],
   "items": [
