@@ -177,6 +177,7 @@ const stale = resetStaleLinks(Object.values(items).flat());
 if (stale) console.log(`清空旧版本解析的原文链接 ${stale} 条，重新解析`);
 // 重大动态：解析原文链接并取报道头图作缩略图
 const majorsList = Object.values(items).flat().filter((i) => i.major);
+if (process.env.AUTOMATION_TEXT_ONLY !== "1") {
 const linked = await resolveLinks(majorsList).catch((e) => (console.warn("链接解析失败：", e.message), 0));
 const st = await enrichMajors(majorsList, root, { summarize: fmSummary.enabled() ? fmSummary.summarize : null }).catch(
   (e) => (console.warn("补充信息失败：", e.message), {})
@@ -186,6 +187,7 @@ console.log(
   `重大动态：新解析原文链接 ${linked} 条，新配图 ${st.img || 0} 张（拦截不合适图片 ${st.rejected || 0} 张），摘要 ${st.desc || 0} 条，` +
     `FM 速报 ${fmSummary.enabled() ? (st.fm || 0) + " 条（其中非事故 " + (st.notLoss || 0) + " 条）" : "未启用（未配置 ANTHROPIC_API_KEY）"}，清理旧图 ${pruned} 张`
 );
+}
 
 const payload = { updated: new Date().toISOString(), status, items };
 await writeFile(outFile, `// 由 scripts/fetch-feeds.mjs 自动生成，请勿手工编辑\nwindow.AUTO_FEEDS = ${JSON.stringify(payload)};\n`);

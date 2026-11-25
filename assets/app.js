@@ -6,7 +6,10 @@
   const T = window.TRAINING || {};
   const SRC = window.SOURCES || { sources: [] };
   const AUTO_EVENTS = window.AUTO_EVENTS || { items: [], checks: {} };
-  const EVENTS = [...(window.FREE_EVENTS || []), ...(AUTO_EVENTS.items || [])];
+  const eventKey = e => e.kind === "live" ? (e.originalTitle || e.title).toLowerCase().replace(/\b20\d{2}\b/g, "").replace(/[^\p{L}\p{N}]/gu, "") + e.start.slice(0,10) : e.url;
+  const eventMap = new Map();
+  for (const event of [...(window.FREE_EVENTS || []), ...(AUTO_EVENTS.items || []), ...(window.DISCOVERED_EVENTS?.items || [])]) if (!eventMap.has(eventKey(event))) eventMap.set(eventKey(event), event);
+  const EVENTS = [...eventMap.values()];
   const SRC_BY_ID = {};
   SRC.sources.forEach((s) => (SRC_BY_ID[s.id] = s));
   const TYPES = { wechat: "公众号", x: "X 博主", site: "网站", rss: "网站", query: "关键词检索" };
@@ -700,12 +703,37 @@
     const replays = all.filter(e => eventState(e) === "replay");
     const section = (title, list, empty) => `<section class="section"><h2>${title}<small>${list.length} 场</small></h2>${list.length ? `<div class="events-grid">${list.map(eventCard).join("")}</div>` : `<div class="empty">${empty}</div>`}</section>`;
     return `<div class="page-head"><h1>免费论坛与讲座</h1><p>精选化工、过程安全与工业防损的线上论坛和讲座。先看即将举行的活动，也可以马上听免费回放。</p></div>
-      <div class="events-note"><strong>免费在线听，无需付费会员</strong><p>部分活动需要免费注册。时间统一显示北京时间；语言和收听要求见每张卡片。免费回放目录每天同步一次，直播活动经官方信息核实后收录。</p></div>
+      <div class="events-note"><strong>免费在线听，无需付费会员</strong><p>部分活动需要免费注册。时间统一显示北京时间；语言和收听要求见每张卡片。每天同步回放并从官方目录发现免费线上活动。<a href="#/automation">查看两套自动化的试运行结果 →</a></p></div>
       <div class="toolbar" aria-label="活动类型筛选">${chipRow("events", all.length, [["live", "近期直播 / 论坛", live.length], ["replay", "随时回看", replays.length]])}</div>
       ${filters.events !== "replay" ? section("近期直播与论坛", live, "暂无已核实的免费线上直播，先听下方回放。") : ""}
       ${filters.events !== "live" ? section("现在就能听 · 免费回放", replays, "暂无可用回放，请稍后再来。") : ""}
       <p class="hint event-help">IChemE 页面的视频若未显示，可按主办方提示在其 Cookie 设置中启用 Analytics 后刷新；部分境外视频平台的可用性取决于你的网络。</p>
       ${AUTO_EVENTS.syncError ? `<p class="hint">回放目录本次同步未完成，当前保留上次核验的内容。</p>` : ""}`;
+  }
+
+  function viewAutomation() {
+    const labels = { success: "成功", partial: "部分完成", failure: "失败", not_run: "尚未运行", skipped: "未执行" };
+    const time = d => d ? eventTime(d) : "尚无记录";
+    const panel = (id, run, history, hour, repo) => {
+      const workflow = window.AUTOMATION_WORKFLOWS?.[id];
+      const scheduled = (history || []).filter(r => r.trigger === "schedule");
+      const succeeded = scheduled.filter(r => r.status === "success").length;
+      const workflowText = !workflow ? "暂未取得运行状态" : workflow.status !== "completed" ? "运行中 / 排队中" : workflow.conclusion === "success" ? "成功" : `未成功（${workflow.conclusion || "未知"}）`;
+      const stale = run?.finishedAt && Date.now() - Date.parse(run.finishedAt) > 36 * 3600000;
+      return `<article class="event-card"><div class="event-top"><span class="badge event-free">方案 ${id}</span><span class="badge">${esc(run ? labels[run.status] || run.status : "尚无结果")}</span>${stale ? '<span class="badge c-incident">超过一天未更新</span>' : ""}</div>
+        <h2>${id === "A" ? "原网站仓库扩展" : "独立自动化仓库"}</h2><p class="event-organizer">每天北京时间 ${hour}:17 · ${esc(repo)}</p>
+        <dl class="event-details"><div><dt>最近执行</dt><dd>${esc(workflowText)}</dd></div><div><dt>完成时间</dt><dd>${esc(time(run?.finishedAt))}</dd></div><div><dt>新闻日期</dt><dd>${esc(time(run?.news?.updated))}</dd></div><div><dt>新闻</dt><dd>${run?.news?.count ?? "—"} 条；来源成功 ${run?.news?.sourcesOk ?? "—"}，失败 ${run?.news?.sourcesError ?? "—"}</dd></div><div><dt>活动</dt><dd>直播 ${run?.events?.live ?? "—"} 场，回放 ${run?.events?.replays ?? "—"} 场；自动发现 ${run?.events?.discovered ?? "—"} 场</dd></div><div><dt>定时记录</dt><dd>${scheduled.length ? `${succeeded}/${scheduled.length} 次完整成功` : "尚无定时运行，手动试跑单独记录"}</dd></div><div><dt>处理范围</dt><dd>${id === "A" ? "新闻、配图、免费回放与新活动" : "新闻文字、免费回放与新活动；不调用付费 AI"}</dd></div></dl>
+        ${run ? `<p class="hint">新闻：${esc(labels[run.stages?.news] || run.stages?.news)} · 回放：${esc(labels[run.stages?.replays] || run.stages?.replays)} · 活动发现：${esc(labels[run.stages?.discovery] || run.stages?.discovery)}</p>` : ""}
+        <div class="event-actions"><a class="btn" href="https://github.com/necrobiosis/${repo}/actions" target="_blank" rel="noopener">查看运行日志 ↗</a>${run?.runUrl ? `<a href="${safeUrl(run.runUrl)}" target="_blank" rel="noopener">这次运行 ↗</a>` : ""}<a href="https://github.com/necrobiosis/${repo}/blob/${id === "A" ? "claude/chemical-industry-news-hub-wpb91d" : "main"}/data/trial-summary.md" target="_blank" rel="noopener">结果报告 ↗</a></div>
+      </article>`;
+    };
+    const b = window.AUTOMATION_B;
+    const recent = (b?.eventItems || []).filter(e => e.kind === "replay" || Date.parse(e.end) > Date.now()).slice(0, 8);
+    return `<div class="page-head"><h1>自动化试运行对比</h1><p>保留两套方案，各自每天运行一次，错开 12 小时。主站继续使用方案 A；方案 B 独立保存结果。</p></div>
+      <div class="events-note"><strong>A：08:17 · B：20:17（北京时间）</strong><p>先看任务是否完成，再看实际数据日期和来源覆盖。GitHub 定时任务可能延迟；两次采集时点不同，数量差异不能直接判断内容质量。当前仅展示已有实测记录。</p></div>
+      <div class="events-grid">${panel("A", window.AUTOMATION_RUN, window.AUTOMATION_HISTORY, "08", "chemical")}${panel("B", b, window.AUTOMATION_B_HISTORY, "20", "chemical-automations")}</div>
+      ${window.AUTOMATION_B_READ_ERROR ? `<p class="hint">本次未读取到 B 的最新结果${b ? "，当前显示上次缓存" : "；可通过运行日志查看是否已完成首次试跑"}。</p>` : ""}
+      ${recent.length ? `<section class="section"><h2>B 方案的活动样本</h2><div class="panel"><ul>${recent.map(e => `<li><a href="${safeUrl(e.url)}" target="_blank" rel="noopener">${esc(e.title)} ↗</a> · ${e.kind === "replay" ? "回放" : esc(eventTime(e.start)) + "（北京时间）"}</li>`).join("")}</ul></div></section>` : ""}`;
   }
 
   function viewSources() {
@@ -806,6 +834,8 @@
       html = viewSources();
     } else if (view === "events") {
       html = viewEvents();
+    } else if (view === "automation") {
+      html = viewAutomation();
     } else if (view === "peril" && parts[1]) {
       html = viewPeril(parts[1], params.get("c"));
       view = "cases";

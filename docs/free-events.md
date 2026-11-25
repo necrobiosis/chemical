@@ -14,7 +14,17 @@
 
 自动收录保留官方英文标题，不猜测中文翻译、直播时间或字幕。可在 `data/events.js` 加入中文导读；同一 URL 的人工条目优先，避免重复。
 
-## 新增论坛 / 直播
+## 自动发现近期直播
+
+`node scripts/discover-events.mjs` 读取 IChemE 官方活动目录的公开接口，明确筛选 Open to all 与 Virtual；逐页读取目录，再逐项核实费用、在线方式、日期时区、时长和报名入口。仅对时间明确、仍未结束、无会员专享提示的免费活动生成 `data/events-discovered.js`。不推断会后免费回放；有费用或资格疑问的条目不自动收录。失败保留上次实际核验的记录，不伪造新日期。
+
+## 两套试运行
+
+A 在原仓库每天北京时间 08:17；B 在 `necrobiosis/chemical-automations` 每天 20:17。两套相隔 12 小时，均保留手动触发。B 新闻不取新配图、不调用付费 AI，新闻信息源与免费活动筛选规则保持一致。B 只写自己的仓库，不覆盖 A。源文件更新到 A 时需同时维护 B 的脚本副本。
+
+`scripts/record-run.mjs` 保存 `data/trial-results.json`、`trial-history.json`（最多14轮）及 `trial-summary.md`。记录实际步骤结果、新闻真实更新时间、失败来源数、活动数量和本次 Actions 链接；即使部分抓取失败，也提交诊断记录并让工作流显示失败。网站 `#/automation` 读取两套独立结果，并以 GitHub Actions 的最新状态补充判断。未取得结果时显示未知，不冒充成功；不在客户端保存任何仓库凭据。定时成功率只统计 `schedule`，手动试跑单列。
+
+## 人工补充论坛 / 直播
 
 在 `data/events.js` 添加严格 JSON 对象，并访问主办方公告与报名页核实：
 

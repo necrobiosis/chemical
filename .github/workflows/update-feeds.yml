@@ -15,15 +15,24 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: ${{ github.ref_name }} # 排队结束后取分支最新提交，避免与上一次运行的提交冲突
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22
+      - name: 记录开始时间
+        run: echo "STARTED_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+      - name: 验证免费资格与时间解析
+        run: |
+          node tests/free-events.test.mjs
+          node tests/discover-events.test.mjs
       - run: npm i --no-save sharp@0.33.5 @anthropic-ai/sdk
       - name: 抓取信息源
+        id: news
+        continue-on-error: true
         env:
           # 可选：带 X(推特) 认证的 RSSHub 实例地址，例如 https://rsshub.example.com
           RSSHUB_BASE: ${{ secrets.RSSHUB_BASE }}
@@ -33,8 +42,23 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/fetch-feeds.mjs
       - name: 同步免费在线讲座回放
+        id: replays
+        continue-on-error: true
         if: ${{ !cancelled() }}
         run: node scripts/fetch-events.mjs
+      - name: 发现并核验近期免费线上活动
+        id: discovery
+        continue-on-error: true
+        if: ${{ !cancelled() }}
+        run: node scripts/discover-events.mjs
+      - name: 保存方案 A 运行记录
+        if: ${{ !cancelled() }}
+        env:
+          PIPELINE_ID: A
+          NEWS_OUTCOME: ${{ steps.news.outcome }}
+          REPLAYS_OUTCOME: ${{ steps.replays.outcome }}
+          DISCOVERY_OUTCOME: ${{ steps.discovery.outcome }}
+        run: node scripts/record-run.mjs
       - name: 导出网站每日数据
         if: ${{ !cancelled() }}
         run: node scripts/export-daily-data.mjs
@@ -43,8 +67,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
-          git add -A data/feeds.js data/events-auto.js data/daily.json assets/feed-img
+          git add -A data/feeds.js data/events-auto.js data/events-discovered.js data/daily.json data/trial-results.json data/trial-history.json data/trial-summary.md assets/feed-img
           git diff --cached --quiet && exit 0
           git commit -m "chore: 更新自动新闻源"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+      - name: 核对任务执行结果
+        if: ${{ !cancelled() && (steps.news.outcome != 'success' || steps.replays.outcome != 'success' || steps.discovery.outcome != 'success') }}
+        run: exit 1

@@ -53,6 +53,8 @@ python3 -m http.server 8000
 
 免费活动的入选标准、时间字段和维护方法见 [docs/free-events.md](docs/free-events.md)。
 
+两套自动化试运行：本仓库为 A，每天北京时间 08:17；[chemical-automations](https://github.com/necrobiosis/chemical-automations) 为 B，每天 20:17。两套都抓取新闻、核验回放并自动发现免费线上活动，B 使用轻量新闻文字模式。原方案和数据均保留，网站 `#/automation` 展示各自最近执行、来源覆盖和最近 14 轮记录中的定时成功数。手动试跑与定时运行分开统计，不根据不同采集时点的条数直接判断质量。
+
 正式站会读取本分支最新提交的 `data/daily.json`，新闻与免费回放的每日更新无需重新部署 Vercel。通过 GitHub API 解析确切提交，再读取单个 JSON 快照；失败时使用上次缓存或本站发布数据并显示真实日期。手动修改数据后可运行 `node scripts/export-daily-data.mjs` 更新快照。
 
 **重大动态判定**：来源级别分（A 官方 2 分、B 专业媒体 1 分、C 博主 0 分）+ 标题关键词分（死亡/爆炸/不可抗力/调查报告等 2 分，火灾/泄漏/关停等 1 分），≥ 3 分标记为“重大”，在总览页置顶。规则可在 `data/sources.js` 的 `major` 中调整。
