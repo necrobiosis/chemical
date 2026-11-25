@@ -27,6 +27,7 @@ data/sources.js         信息源配置（公众号 / X 博主 / 网站 / 重大
 data/feeds.js           自动抓取的实时动态（由脚本生成，保留近 30 天）
 data/events.js          人工核实的免费在线活动
 data/events-auto.js     每日同步的免费回放及链接核验结果
+data/daily.json         正式站直接读取的每日数据快照（无需重新部署）
 scripts/fetch-events.mjs 免费回放同步脚本（Node 22+，无第三方依赖）
 scripts/fetch-feeds.mjs 抓取脚本（Node 18+，无依赖）
 .github/workflows/update-feeds.yml 每日自动更新
@@ -51,6 +52,8 @@ python3 -m http.server 8000
 | 近期免费论坛 / 直播 | 按官方公告人工核实后收录；过期后自动转为回放或退出列表 |
 
 免费活动的入选标准、时间字段和维护方法见 [docs/free-events.md](docs/free-events.md)。
+
+正式站会读取本分支最新提交的 `data/daily.json`，新闻与免费回放的每日更新无需重新部署 Vercel。通过 GitHub API 解析确切提交，再读取单个 JSON 快照；失败时使用上次缓存或本站发布数据并显示真实日期。手动修改数据后可运行 `node scripts/export-daily-data.mjs` 更新快照。
 
 **重大动态判定**：来源级别分（A 官方 2 分、B 专业媒体 1 分、C 博主 0 分）+ 标题关键词分（死亡/爆炸/不可抗力/调查报告等 2 分，火灾/泄漏/关停等 1 分），≥ 3 分标记为“重大”，在总览页置顶。规则可在 `data/sources.js` 的 `major` 中调整。
 

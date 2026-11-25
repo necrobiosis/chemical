@@ -138,7 +138,7 @@
 
   const IMAGES = window.NEWS_IMAGES || {};
   // 托管在其他域名（如 Lovable 外壳从 jsDelivr 加载本仓库）时，由外壳设置图片等静态文件的根地址
-  const BASE = window.SITE_BASE || "";
+  const BASE = window.DAILY_ASSET_BASE || window.SITE_BASE || "";
   const imgOf = (n) => {
     const im = IMAGES[n.id];
     return im && im.file ? im : null;
@@ -900,5 +900,10 @@
   });
 
   window.addEventListener("hashchange", route);
+  if (window.DAILY_DATA_FALLBACK) {
+    const message = document.createElement("p");
+    message.textContent = "最新数据暂未读取成功，当前显示上次保存的内容；各板块保留真实更新日期。";
+    document.querySelector(".site-footer").prepend(message);
+  }
   route();
 })();
