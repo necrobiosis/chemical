@@ -450,5 +450,41 @@ window.NEWS_IMAGES = {
    }
   ],
   "thumb": "assets/news-img/thumb/intl-geelong-refinery-2026-04.webp"
+ },
+ "intl-pes-alkylation-2019-06": {
+  "file": "assets/news-img/intl-pes-alkylation-2019-06.webp",
+  "thumb": "assets/news-img/thumb/intl-pes-alkylation-2019-06.webp",
+  "src": "https://www.csb.gov/assets/1/17/before_and_after_incident.png?16840",
+  "page": "https://www.csb.gov/csb-releases-final-report-into-2019-pes-fire-and-explosion-in-philadelphia/",
+  "credit": "CSB",
+  "alt": "before_and_after_incident",
+  "pick": null,
+  "override": null,
+  "candidates": [
+   {
+    "src": "https://www.csb.gov/assets/1/17/before_and_after_incident.png?16840",
+    "page": "https://www.csb.gov/csb-releases-final-report-into-2019-pes-fire-and-explosion-in-philadelphia/",
+    "alt": "before_and_after_incident",
+    "size": "767x887"
+   }
+  ]
+ },
+ "intl-chevron-richmond-2012-08": {
+  "file": "assets/news-img/intl-chevron-richmond-2012-08.webp",
+  "thumb": "assets/news-img/thumb/intl-chevron-richmond-2012-08.webp",
+  "src": "https://www.csb.gov/assets/1/17/P1050400.JPG",
+  "page": "https://www.csb.gov/chevron-richmond-refinery-fire/",
+  "credit": "CSB",
+  "alt": "P1050400",
+  "pick": null,
+  "override": null,
+  "candidates": [
+   {
+    "src": "https://www.csb.gov/assets/1/17/P1050400.JPG",
+    "page": "https://www.csb.gov/chevron-richmond-refinery-fire/",
+    "alt": "P1050400",
+    "size": "4000x3000"
+   }
+  ]
  }
 };
