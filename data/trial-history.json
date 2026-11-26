@@ -13,6 +13,412 @@
       "replays": "success",
       "discovery": "success"
     },
+    "startedAt": "2026-11-26T08:28:43Z",
+    "finishedAt": "2026-11-26T08:28:55.008Z",
+    "trigger": "schedule",
+    "runId": "45783457206",
+    "runUrl": "https://github.com/necrobiosis/chemical/actions/runs/45783457206",
+    "codeSha": "f3733f0b720d64c8bfe407fea28b7803518c3a29",
+    "news": {
+      "updated": "2026-11-26T08:28:51.142Z",
+      "count": 240,
+      "major": 18,
+      "sourcesOk": 27,
+      "sourcesError": 0,
+      "sourcesUnconfigured": 28
+    },
+    "events": {
+      "count": 12,
+      "live": 3,
+      "replays": 9,
+      "discovered": 3,
+      "checked": 4,
+      "checkErrors": 0
+    },
+    "eventItems": [
+      {
+        "id": "ipsd-2026",
+        "title": "2026 国际过程安全日（IPSD）",
+        "originalTitle": "International Process Safety Day 2026",
+        "organizer": "CCPS · IChemE Safety Centre · MKOPSC · FABIG · EPSC",
+        "summary": "全球过程安全专家的线上论坛，讨论人工智能、资产完整性、能源转型风险与人因等议题。已开放免费注册。",
+        "topics": [
+          "过程安全",
+          "资产完整性",
+          "AI",
+          "氢能与电池"
+        ],
+        "kind": "live",
+        "start": "2026-12-02T09:00:00Z",
+        "end": "2026-12-02T17:00:00Z",
+        "timeNote": "首场 09:00–17:00 GMT；完整节目在 24 小时内轮播，其他场次以报名平台为准。",
+        "language": "英语；未见官方中文同传说明",
+        "access": "面向所有人免费；需在 vFairs 注册账号后收听",
+        "url": "https://ipsd26.vfairs.com/",
+        "replayUrl": "https://ipsd26.vfairs.com/",
+        "replayFrom": "2026-12-03T09:00:00Z",
+        "replayUntil": "2027-12-02T00:00:00Z",
+        "replayNote": "官方说明会后可点播，回放开放至 2027 年 12 月 1 日。",
+        "sourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
+        "feeSourceUrl": "https://www.fabig.com/news/international-process-safety-day-ipsd-2026/",
+        "replaySourceUrl": "https://www.aiche.org/sites/default/files/docs/conferences/international_process_safety_day_2026_flyer.pdf",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-battery-hazards",
+        "title": "电池储能的危险与风险建模",
+        "originalTitle": "Modelling Battery Hazards for Safer Operations",
+        "organizer": "IChemE Safety Centre · Gexcon",
+        "summary": "了解电池储能系统的主要电池类型、相关危险，以及后果与风险建模方法。适合关注储能设施防损的工程师。",
+        "topics": [
+          "储能",
+          "锂电池",
+          "风险建模"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；在官方页面播放，无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/modelling-battery-hazards-for-safer-operations-session-4/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-moc",
+        "title": "变更管理（MoC）：避免变更引发事故",
+        "originalTitle": "Management of Change (MoC)",
+        "organizer": "IChemE Safety Centre",
+        "summary": "围绕技术、工艺及组织变更，介绍加强变更管理的实用工具，帮助检查工厂的变更流程。",
+        "topics": [
+          "变更管理",
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；在官方页面播放，无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/management-of-change-moc/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-jonava",
+        "title": "Jonava 液氨储罐破裂：事故教训回顾",
+        "originalTitle": "Revisiting the Jonava Ammonia Tank Rupture 35 Years On",
+        "organizer": "IChemE Safety Centre",
+        "summary": "从液氨储罐破裂案例讨论设计缺陷、热过载与应急管理，适合关注氨储运和储罐风险的工程师。",
+        "topics": [
+          "液氨",
+          "储罐",
+          "事故复盘"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；在官方页面播放，无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/revisiting-the-jonava-ammonia-tank-rupture-35-years-on/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-the-danger-zone",
+        "title": "The Danger Zone",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-danger-zone/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "icheme-what-could-have-gone-right-case-study-on-longford",
+        "title": "What Could Have Gone Right? Case Study On Longford",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/what-could-have-gone-right-case-study-on-longford/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "icheme-risk-based-process-safety-rbps-leadership-and-culture-2",
+        "title": "Risk Based Process Safety (RBPS) - Leadership and Culture",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/risk-based-process-safety-rbps-leadership-and-culture-2/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "icheme-sharing-singapore-s-safety-case-insights",
+        "title": "Sharing Singapore’s Safety Case Insights",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/sharing-singapore-s-safety-case-insights/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "icheme-the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining",
+        "title": "The Risk Existed Before The Label - A Process Safety Lens Across Mining and Refining",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "icheme-how-cybersecurity-threats-influence-control-systems-and-process-safety",
+        "title": "How Cybersecurity Threats Influence Control Systems and Process Safety",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/how-cybersecurity-threats-influence-control-systems-and-process-safety/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "live-01-12-2026-forecasting-bioprocess-batch-data-using-simca-online",
+        "title": "Forecasting Bioprocess Batch Data Using SIMCA®-online",
+        "organizer": "IChemE · Biochemical Engineering",
+        "summary": "官方面向所有人的免费线上讲座。可从活动详情页进入报名；不承诺提供免费回放。",
+        "topics": [
+          "行业讲座"
+        ],
+        "kind": "live",
+        "start": "2026-12-01T12:00:00.000Z",
+        "end": "2026-12-01T13:00:00.000Z",
+        "language": "页面为英文；授课语言以主办方说明为准",
+        "access": "官方目录标注 Open to all，活动页明确免费；需免费报名",
+        "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
+        "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
+        "registrationUrl": "https://events.teams.microsoft.com/event/9f9743cf-c4b4-4ae3-be60-0675ee0f9698@97b66814-ba5e-4ec0-85e7-53bc897bbde6",
+        "checkedAt": "2026-11-26"
+      },
+      {
+        "id": "live-11-12-2026-wastewater-network-anomaly-detection-and-diagnosis",
+        "title": "Wastewater Network Anomaly Detection and Diagnosis",
+        "organizer": "IChemE · Process Management and Control",
+        "summary": "官方面向所有人的免费线上讲座。可从活动详情页进入报名；不承诺提供免费回放。",
+        "topics": [
+          "行业讲座"
+        ],
+        "kind": "live",
+        "start": "2026-12-11T09:00:00.000Z",
+        "end": "2026-12-11T10:00:00.000Z",
+        "language": "页面为英文；授课语言以主办方说明为准",
+        "access": "官方目录标注 Open to all，活动页明确免费；需免费报名",
+        "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+        "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
+        "registrationUrl": "https://events.teams.microsoft.com/event/fcc49800-d687-4b0b-81d3-beb12efb4f55@97b66814-ba5e-4ec0-85e7-53bc897bbde6?source=copyLinkLegacyShareLinkDialog",
+        "checkedAt": "2026-11-26"
+      }
+    ],
+    "latestNews": [
+      {
+        "title": "Huge explosion at oil depot in Bangkok sends fireball into sky",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdHI4TUVod05tcl96RExlZVdaUEd2V3RicmNaZ1d4UWZRQkdjUnYxc1BIdTFXMUZKQXY2SGo4aTlvemFiZHJjVVM2TWNPOGQ3RW4zRDVuRTE0TW8yTW9uNkF5RGlxdU5BXzRjWGtRQkdnNWpKa0Z5T3ZkUnhkQlQ5bkhmNmpkUnFsNHg3dF9PLWQ0am41dEhSekI5VkhpbU50Yi05NzVxaERDNHVjQ0FlZkRR?oc=5",
+        "source": "France 24",
+        "date": "2026-11-26T08:27:20.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 3,
+        "major": true,
+        "link": "https://www.france24.com/en/asia-pacific/20261126-huge-explosion-at-oil-depot-in-bangkok-sends-fireball-into-sky",
+        "linkV": 2,
+        "descV": 1,
+        "desc": "An explosion at an oil depot in Bangkok sent a large fireball and thick black smoke into the sky, journalists said Thursday, as local authorities urged people nearby to evacuate.",
+        "imgV": 2,
+        "img": "assets/feed-img/ee1e34064bcbf431.webp"
+      },
+      {
+        "title": "Huge blast at Bangkok oil depot: authorities",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sNkFyWVZxRExWd1RtLTJIQngwbWpLajRObWRTd3BlWlRXYjluNFNfa2dVUEJMSk9jVVozU2IybzNRQjFpWFZocEVGM2ZQeDhYS3BpWlhsT0tEN2NNeVY3QjBicE5aSmJ5ZGJPb2ZHcEg5cl9qY0UzbHN2SG9UelE?oc=5",
+        "source": "Borneo Bulletin",
+        "date": "2026-11-26T08:09:43.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 2,
+        "major": false
+      },
+      {
+        "title": "Dung Quat Refinery reaches milestone of 60 million safe working hours.",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wRVlZOUVsZkpWOFhKdmxfRGdQYWhmLTFIOGFFdHBGa0ZrLWZ5dV9UTVRlazV4bExPWWE1TURzVEVBV3hDY0d0Y21ITndWTHBaQ1RzTWhyS19xM01ZUWZDUnAzQU95dGxZd2QtRUxTaG42Y2dDQnJXQ1VleDR5NGM?oc=5",
+        "source": "Vietnam.vn",
+        "date": "2026-11-26T06:59:20.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 0,
+        "major": false
+      },
+      {
+        "title": "249万吨乙烯产能关停落地，韩国石化减量冲刺年底",
+        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XZmJnSnZ2bjhWQ0x0Ykx5ZzR6WXlCMmhPZFNYRU5QUU0tb0NjYmtCM0w1QmNzY2txN3pHejgxX2ZzckxfUnEwVk53NUtlUW1Ed3JRb21DTzVpT19JVjJR?oc=5",
+        "source": "ChemNet News",
+        "date": "2026-11-26T06:56:23.000Z",
+        "region": "cn",
+        "sid": "chemnet",
+        "type": "site",
+        "tier": "B",
+        "score": 2,
+        "major": false
+      },
+      {
+        "title": "Fire reported at Samara refinery after drone attack",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdVZSMVVNdVRPblFYQW5PTTFCWTFkOERfa0NEYldUWXQwTGZwcnQybU4wSFBYcnJRMjdtTXdZc0JldXlqYVJJT3plWlNlYktvSjE2TkM2My1tWmRCNW1ZYnZlSGI4dEtnOE1jQ3c5TUpNbHBSeGtpOGliZHRrUS1MWnlXUDVuR1RhNTFxNUFDRV8?oc=5",
+        "source": "Operativ Məlumat Mərkəzi",
+        "date": "2026-11-26T06:53:29.000Z",
+        "region": "intl",
+        "sid": "q-intl-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "JD Vance Drags Obama Into Iowa Toxic Blast Defence, Internet Fires Back With Brutal Trump Question",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQRUhlNjBYTjlOS2c5QzVEUXNFcS1mNlFVRjFoamhLZVpueER4bVVNT0w2aWRjOUlKWDJJMTVuemV5R3I4STVTb3pQRkVJUnJleHFQaXFHQ0ZmeFM0eE9meTJfMWYwb2N3VWJ2b1llMWtvUi1SVVlxVW5TbUZrMmhvOUZkSVkyRm5JVk00bUw5aGVya1dQWTh0YmZ1bGd0SWxSWVh0dmRiM3FBY2NjUjh6YndvTXhmYVhKaFN3Q1BJcXJucHBpX1VHNDRtV2hMc0M4T013dmRYQ2FVcW1idGxXcnpkTFh0ZVV3SmEtTmpyYmZkamVoT2JqR0hQc0xOeVUyT1FGbHVrMkZIZ9IBjwJBVV95cUxNQ085M1Jwbm50d2VZbzRGN0FpRm1YbHZielRaNHB0V0lpZGpoQVVEXzhCeEs0a1VOakk3MjV1dWk5ZEFTZ1lqZGlNa2lpQmtIN2NuclV4NE9neUlEekhMa3Y5Y2tHVlctNGUxeDJWVWJISExKRXMxZ2RDWXZYdkZDOUNLYUZkM3p1djl1am5aRk10YUZzc25JczNDTnIwaDgyVjg1UkVZZVhNMDZac2J0RFFUSWxsbEJLM2hyMDRIMTJlT0hUMHI4ZlZiWGc5cHhJTXBwZGs1R0paT2l0TXpWMF81NDh5RjNyZXJJSEZKQldKU1lxX3VEbkswUDJzbGw2SWFndFN1d1c5ODBxZC1N?oc=5",
+        "source": "The Times of India",
+        "date": "2026-11-26T06:24:18.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 3,
+        "major": true,
+        "link": "https://timesofindia.indiatimes.com/videos/international/jd-vance-drags-obama-into-iowa-toxic-blast-defence-internet-fires-back-with-brutal-trump-question/videoshow/136181165.cms",
+        "linkV": 2,
+        "descV": 1,
+        "desc": "JD Vance is facing fierce backlash after blaming Barack Obama for the dangerous explosives stockpile detonated by the U.S. Army in Iowa. The controlled explosion destroyed five tons of degraded lead azide at an ammunition plant in southeastern Iowa, but concerns over potential lead contamination have triggered a political firestorm. Speaking in Ohio, Vance claimed the Obama administration had stor",
+        "imgV": 2,
+        "img": "assets/feed-img/ff6219e48dcda2f1.webp"
+      },
+      {
+        "title": "- Chemical & Engineering News",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84Z2hTRmdBcnV0aWNHODFnLTJObHhfQnJhNGdLR1ZCX1p0OUJ1a2s1QjlmUTEwTzNnMkdVZnY3amVFWDZsZUJoWW5CUTNzazVzMkVaN1FPc3NITEEwT3R5QkJn?oc=5",
+        "source": "Chemical & Engineering News",
+        "date": "2026-11-26T06:15:34.000Z",
+        "region": "intl",
+        "sid": "cen",
+        "type": "site",
+        "tier": "B",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Turkmenistan's Afghan gas link brings South Asia pipeline dream a little closer",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcnRaU1dqOW1kRDdIRmRsQVhsYkdpa0FtSkJjcklhN3RFZWVadE1jZkJUcDJnaXZYekZzTjZyeWlSN09FUF96MFlhM3hTZ2dLcUU4aVdSdWdDcXBOSDBzNzhIV0ZUdTZMRHlNSVJpYWFfdjg0RG44cU1QZ0FmMmphMlRJZndBZ3BKbmF0X0tOd2VXam9udG5WOFhsNWliUEhUN2wtSm9JUEtZa2J5cmpUTVBiejQydk5BSkRJb2s1WlYtX0hLNVBB?oc=5",
+        "source": "Reuters",
+        "date": "2026-11-26T05:05:00.000Z",
+        "region": "intl",
+        "sid": "reuters",
+        "type": "site",
+        "tier": "B",
+        "score": 2,
+        "major": false
+      },
+      {
+        "title": "Fuel tanker crash ignites a massive fire on a highway surrounding Cairo, killing at least 31 people",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBoNEVzZnI1T3FxODZLYldweUlodXpZejNHTzZQdHpWSTVmdmQ0TVVLX3lTX3JocDJoQUptaTZxSDJjWjFRUDAzWHc5X1ktdkhrZUcwV0VwOA?oc=5",
+        "source": "The Korea Herald",
+        "date": "2026-11-26T04:40:52.000Z",
+        "region": "asia",
+        "sid": "koreaherald",
+        "type": "site",
+        "tier": "B",
+        "score": 2,
+        "major": false
+      },
+      {
+        "title": "'Apocalyptic' Fireball Rocks Arab Nation; Fuel Tanker Crash Caught On Cam; 'Never Seen This Before'",
+        "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOUlZyOFVOMmlzbWlvWWNvaEJVMGFZOXBxTVp5TXFNaGxibVNucEV2Nl9fM2p6R0oxZXRzMkRCUDN0NXNPQXZ6dWVTN0dBMUtXWWdoUnBVU3RkYWhVMzYxWjIzYWlHdTlUUUdfblVESjRyMzBVM0xGOVZ3cDgxY3NNMmpXSkNmSHlndjMxaERibWRCTDhoT1RTbTdZTVZqVC0wZER4d0V4TzUyaHBINmhyZHFjTVNsQkVIZkNvbG13LXhMX2pDUG1nSGRvNU0yVGRIQXZsMXNRNlJtZmRaSzFHRmFpeGJYUW1KdldzcWk2ekYxT3QyOGZ0dTJjNmpRWkJ6aGFUN9IBigJBVV95cUxNOVJQNzVsN0VfbmEwcXczTThQQnZyZmVyOWo1dTRXbERUeGh2djZPR1QtQkUydzQ1OFBZLUlOelV2RVlsUjJwMHJ3bDdSSVRnaE5ZS0NSTnBjYkUzZWl6UDVoa21Hbl9qcWZ4ZFBReGp5SEZzS0drTHdIaHFGSHdFXzR4VW9SLU9VMVB1QTdJVDBmTnVwLUFVQkFtZHhnTXY3UFl0ZEswZEFHNFo4TnFCTHItS0xYOGgwOEwzRG9hSGpxdHl5MWtiWmhXQmlXYUY4clB4dnJTNHlpblNNS3RPNUlWekl4N2xUMkdZbWpqTHlnLVJIOExoMnJCcEp5VVZwX2ZnZWppaWYzQQ?oc=5",
+        "source": "The Times of India",
+        "date": "2026-11-26T04:34:18.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "40 cars burn, LPG cylinders explode in ‘aggressive’ Williamstown blaze",
+        "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPa0V4b191UHp2eXRGT3Y2X1BVOTJmNjdQcVdja1VHUEt1d1NzZm9tbWdRZ1NaMjQ5Z2l4UzFnODNnaWtIOVY5SHdSRGdmMDBfSTlEUzhXczdFbDBXaDZhd3VmcnNlQndsSW9YQ1JQcDRjaUFUdDBBSVM4WlNZZE9pX1BaU1ZKYmZSd3JGdVB0bS10NHlYU3JyLTNsLTJiYndhS3VGR1hYTF9WVkVmNS0wQmZqcUZQZ2kyeGk4TTFjZzdXTnFudUVFZ0xtNkFfYWJ0YnRINTU2XzdJbFVKNkxkS0ZpNGdfLUJBRWxfbUdkX196T3ljQ3QxNTd5NlZ3YV8yWGllanFSTXk4S1Z2cXdzNm1mSUY4eXZ6UzBNdHVWeC0?oc=5",
+        "source": "Herald Sun",
+        "date": "2026-11-26T03:50:00.000Z",
+        "region": "intl",
+        "sid": "q-intl-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 0,
+        "major": false
+      },
+      {
+        "title": "Dung Quat Refinery Achieves 60 Million Safe Working Hours",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY1ZDRDdXc1ZtR1VYV1Yyc3pJdGxzUGo5aXFLcTRsYUQzY05yN2lIeGFPYXd1RG1oUnhEYTNRR0ZoMWdnTlZDMXVORXExRzY2aFNpZVI5Q2JpYWVyaWU0U2hsM2xSVm5EcS1uUHYtNVRlRTRfUDc5cUNDaUtKN1ROM1B2QWZpZkk2QW12WnlKQjJyRklHcUxvV1hn?oc=5",
+        "source": "www.bsr.com.vn",
+        "date": "2026-11-26T03:47:26.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 0,
+        "major": false
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "pipeline": {
+      "id": "A",
+      "repository": "necrobiosis/chemical",
+      "schedule": "每天北京时间 08:17",
+      "mode": "新闻、配图与活动核验"
+    },
+    "status": "success",
+    "stages": {
+      "news": "success",
+      "replays": "success",
+      "discovery": "success"
+    },
     "startedAt": "2026-11-25T14:34:26Z",
     "finishedAt": "2026-11-25T14:34:52.962Z",
     "trigger": "workflow_dispatch",

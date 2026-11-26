@@ -1,20 +1,20 @@
 // 自动发现并核验的免费线上直播，失败时保留上次已核实记录。
 window.DISCOVERED_EVENTS = {
-  "updated": "2026-11-25T14:34:52.915Z",
-  "attemptedAt": "2026-11-25T14:34:50.076Z",
+  "updated": "2026-11-26T08:28:54.960Z",
+  "attemptedAt": "2026-11-26T08:28:53.151Z",
   "source": "https://www.icheme.org/training-events/whats-on-events-directory/",
-  "scanned": 5,
+  "scanned": 4,
   "error": null,
   "checks": [
     {
-      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
+      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
       "state": "verified",
       "reason": null
     },
     {
-      "url": "https://www.icheme.org/knowledge-networks/communities/member-groups/milton-keynes/events/25-11-2026-is-ai-in-chemical-engineering-a-good-thing-or-a-bad-thing/",
-      "state": "rejected",
-      "reason": "费用并非明确免费"
+      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
+      "state": "verified",
+      "reason": null
     },
     {
       "url": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
@@ -25,11 +25,6 @@ window.DISCOVERED_EVENTS = {
       "url": "https://www.icheme.org/training-events/whats-on-events-directory/24-2-2027-webinar-icheme-professional-process-safety-engineer-information-session/",
       "state": "rejected",
       "reason": "不是明确的线上活动"
-    },
-    {
-      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
-      "state": "verified",
-      "reason": null
     }
   ],
   "items": [
@@ -50,7 +45,7 @@ window.DISCOVERED_EVENTS = {
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/9f9743cf-c4b4-4ae3-be60-0675ee0f9698@97b66814-ba5e-4ec0-85e7-53bc897bbde6",
-      "checkedAt": "2026-11-25"
+      "checkedAt": "2026-11-26"
     },
     {
       "id": "live-international-process-safety-day",
@@ -69,7 +64,7 @@ window.DISCOVERED_EVENTS = {
       "sourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://ipsd26.vfairs.com/en/registration-form",
-      "checkedAt": "2026-11-25"
+      "checkedAt": "2026-11-26"
     },
     {
       "id": "live-11-12-2026-wastewater-network-anomaly-detection-and-diagnosis",
@@ -88,7 +83,7 @@ window.DISCOVERED_EVENTS = {
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/fcc49800-d687-4b0b-81d3-beb12efb4f55@97b66814-ba5e-4ec0-85e7-53bc897bbde6?source=copyLinkLegacyShareLinkDialog",
-      "checkedAt": "2026-11-25"
+      "checkedAt": "2026-11-26"
     }
   ]
 };
