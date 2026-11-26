@@ -8,6 +8,13 @@ const SYSTEM = `你是 FM（财产损失预防）亚洲化工领域的资深工�
 只根据提供的报道原文写作，不补充原文没有的事实；原文没写清楚的（原因、伤亡、损失）就说“报道未说明”。
 读者是做化工厂财产风险评估的工程师，关注：发生了什么、在哪套装置/设备、损失规模、可能的起因，以及对类似客户检查有什么启示。`;
 
+const INSIGHT_FIELDS = ["equipment", "failure", "severity", "casualties", "directCause", "rootCause", "human", "damage", "interruption", "recovery", "insurance"];
+const INSIGHT_VALUE = { type: "object", properties: {
+  value: { type: "string" },
+  status: { type: "string", enum: ["confirmed", "reported", "preliminary", "unknown", "analysis"] },
+  sources: { type: "array", items: { type: "string", enum: ["article"] } }
+}, required: ["value", "status", "sources"], additionalProperties: false };
+
 const SCHEMA = {
   type: "object",
   properties: {
@@ -28,6 +35,20 @@ const SCHEMA = {
       description: "FM 防损视角要点，中文 3 条，每条一句：可能的起因与损失扩大因素，以及检查类似客户时应关注什么",
     },
     refs: { type: "array", items: { type: "string", enum: DS }, description: "相关的 FM Data Sheet 编号，0–3 个" },
+    insights: {
+      type: "object",
+      description: "损失洞察。只能依据本次报道正文；未知写unknown且不填金额。根因、人为与组织因素没有调查依据时不能定案。区分资产账面核销、修复成本、直接经济损失、营业中断和赔款；保险限额、市值变化、利润及营业额不是事故损失。严重度不用无依据的数字评分。",
+      properties: {
+        fields: { type: "object", properties: Object.fromEntries(INSIGHT_FIELDS.map(k => [k, INSIGHT_VALUE])), required: INSIGHT_FIELDS, additionalProperties: false },
+        lossAmounts: { type: "array", items: { type: "object", properties: {
+          amount: { type: "number" }, currency: { type: "string" },
+          type: { type: "string", enum: ["asset_writeoff", "repair_cost", "direct_economic_loss", "estimated_property_damage", "business_interruption", "insurance_paid"] },
+          label: { type: "string" }, scope: { type: "string" }, asOf: { type: "string" }, source: { type: "string", enum: ["article"] }
+        }, required: ["amount", "currency", "type", "label", "scope", "asOf", "source"], additionalProperties: false } },
+        timeline: { type: "array", items: { type: "object", properties: { date: { type: "string" }, text: { type: "string" }, sources: { type: "array", items: { type: "string", enum: ["article"] } } }, required: ["date", "text", "sources"], additionalProperties: false } },
+        questions: { type: "array", items: { type: "string" } }
+      }, required: ["fields", "lossAmounts", "timeline", "questions"], additionalProperties: false
+    },
     report: {
       description: "仅当报道是关于调查报告、事故报告、调查进展或统计通报的发布或更新时填写，总结报告本身的内容；否则为 null",
       anyOf: [
@@ -49,7 +70,7 @@ const SCHEMA = {
       ],
     },
   },
-  required: ["is_loss_event", "brief", "flow", "summary", "points", "refs", "report"],
+  required: ["is_loss_event", "brief", "flow", "summary", "points", "refs", "report", "insights"],
   additionalProperties: false,
 };
 
@@ -77,5 +98,12 @@ export async function summarize(item, articleText) {
   });
   if (response.stop_reason === "refusal") throw new Error("模型拒绝处理该报道");
   const text = response.content.filter((b) => b.type === "text").map((b) => b.text).join("");
-  return JSON.parse(text);
+  const parsed = JSON.parse(text);
+  if (parsed.insights) {
+    parsed.insights.lossAmounts = (parsed.insights.lossAmounts || []).filter(a => Number.isFinite(a.amount) && a.amount > 0 && /^[A-Z]{3}$/.test(a.currency || ""));
+    parsed.insights.sources = [{ id: "article", title: item.source || "本次抓取的报道原文", url: item.link || item.url, date: (item.date || "").slice(0, 10) }];
+    parsed.insights.basis = "仅基于该篇报道正文自动整理，未经独立复核；后续进展不超出所引来源。";
+    parsed.insights.brief = parsed.brief;
+  }
+  return parsed;
 }

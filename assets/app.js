@@ -49,6 +49,8 @@
   };
   const regionBadge = (r) => `<span class="badge r-${r}">${REGIONS[r].name}</span>`;
   const catBadge = (c) => `<span class="badge c-${c}">${CATS[c] || c}</span>`;
+  const lossModel = window.LossModel.create(NEWS, window.LOSS_INSIGHTS);
+  const lossUI = window.createLossUI(lossModel, { esc, safeUrl });
 
   /* ---------- 起因分类（FM 风险划分） ---------- */
   const PERILS = window.PERILS || [];
@@ -195,6 +197,7 @@
           ${thumb(n, "thumb")}
         </summary>
         <div class="body">
+          ${lossUI.panel(n)}
           ${figure(n)}
           ${n.brief ? `<p class="nd-brief">${esc(n.brief)}</p>` : ""}
           ${flowHtml(n.flow)}
@@ -253,6 +256,8 @@
     const fm = (note && note.summary ? note : null) || i.fm;
     const brief = briefOf(i);
     const flow = flowOf(i);
+    const linkedCase = note?.caseId && lossModel.get(note.caseId);
+    const lossRecord = linkedCase || { ...i, category: "incident", summary: fm?.summary || i.desc, brief: brief || i.title, sources: [{ name: i.source || "报道原文", url: i.link || i.url }] };
     // 先一句话、再流程图；详细经过折叠起来
     const lead = brief
       ? `<p class="nd-brief">${esc(brief)}</p>${flowHtml(flow, "v")}`
@@ -294,6 +299,7 @@
           <div class="mc-top"><span class="badge major">重大</span>${(fm && fm.report) || (note && note.report) ? reportBadge : ""}${REGIONS[i.region] ? regionBadge(i.region) : ""}${sub ? `<span class="mc-cause">${esc(sub.name)}</span>` : ""}</div>
           <h2>${esc(brief || i.title)}</h2>
           <div class="meta">${brief ? `原标题：${esc(i.title)} · ` : ""}${esc(i.source)}${i.date ? " · " + fmtIso(i.date) : ""}</div>
+          ${lossUI.panel(lossRecord, fm?.insights, { forceLoss: true })}
           ${brief ? flowHtml(flow, "v") : lead}
           ${detail}
           ${reportBox((fm && fm.report) || (note && note.report))}
@@ -819,6 +825,16 @@
 
     if (view === "overview") {
       html = viewOverview();
+    } else if (view === "loss-web") {
+      const n = parts[1] === "feed" ? FEED_ALL.find(i => (i.link || i.url) === params.get("url")) : lossModel.get(parts[1] || "intl-geelong-refinery-2026-04");
+      if (n) {
+        const note = !n.id && noteOf(n);
+        const canonical = note?.caseId && lossModel.get(note.caseId);
+        const item = canonical || (!n.id ? { ...n, category: "incident", summary: note?.summary || n.fm?.summary || n.desc, brief: briefOf(n) || n.title, sources: [{ name: n.source || "报道原文", url: n.link || n.url }] } : n);
+        html = lossUI.network(item, note?.insights || n.fm?.insights, params.get("dimension"));
+      } else {
+        html = `<div class="page-head"><h1>尚未找到该案例</h1><p>新闻可能已过保留期，可返回<a href="#/cases">案例库</a>选择已有案件。</p></div>`;
+      }
     } else if (view === "search") {
       html = viewSearch(params.get("q") || "");
     } else if (view === "news" && parts[1]) {
@@ -930,6 +946,9 @@
   });
 
   window.addEventListener("hashchange", route);
+  matchMedia("(max-width: 600px)").addEventListener("change", () => {
+    if (location.hash.startsWith("#/loss-web")) route();
+  });
   if (window.DAILY_DATA_FALLBACK) {
     const message = document.createElement("p");
     message.textContent = "最新数据暂未读取成功，当前显示上次保存的内容；各板块保留真实更新日期。";

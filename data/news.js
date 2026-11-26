@@ -805,14 +805,14 @@ window.CURATED_NEWS = [
     date: "2026-04-15",
     category: "incident",
     causes: [{ peril: "equipment", cause: "integrity" }, { peril: "fire", cause: "gas" }],
-    title: "澳大利亚 Geelong 炼厂烷基化装置设备故障泄漏起火，燃烧13小时",
-    brief: "Viva Energy Geelong 炼厂烷基化装置设备故障泄漏起火，燃烧13小时，汽油产量降至六成。",
-    flow: ["烷基化单元设备故障", "大量烃类和气体泄漏", "连串爆炸起火", "燃烧约13小时", "无伤亡，汽油产量降至约60%"],
-    summary: "4月15日23时后，Viva Energy 位于维多利亚州 Geelong 的炼厂发生火灾。官方称设备故障导致大量烃类和气体泄漏并引发连串爆炸，火点位于汽油联合装置的烷基化单元，约50名员工全部安全撤离，消防用约13小时扑灭。火灾后汽油产量降至约60%，航煤与柴油约80%。企业承认3月曾推迟部分维护，但称与事故无关。该厂供应澳大利亚约10%、维多利亚州一半以上的燃料。",
-    fm: "烷基化装置涉及氢氟酸或硫酸及轻烃，泄漏同时带来火灾和毒性风险。这起事故的价值在于营业中断：一套单元起火即导致全厂汽油产量降至六成。检查要点：维护推迟的审批与风险评估、关键设备的检验逾期情况、装置间防火间距与水喷雾覆盖、单元级隔离能力（能否只停一个单元）。",
+    title: "Geelong 炼厂烷基化管线初判失效起火：资产账面核销1,940万澳元",
+    brief: "Geelong 烷基化管线初判失效起火，受损资产账面核销1,940万澳元，6月预计单元2027年全年停运。",
+    flow: ["烷基化管线失效（初步）", "燃料泄漏并着火", "应急处置，约13小时扑灭", "主要产出逐步恢复，单元隔离", "资产账面核销1,940万澳元"],
+    summary: "2026年4月15日晚，Viva Energy Geelong炼厂烷基化单元起火，约13小时后扑灭。6月23日公司初步披露一段管线失效释放燃料后着火，尚不能确定腐蚀或人为等根因。早期汽油产能约60%；公司披露RCCU重启带动主要产出恢复至90%以上，但6月预计烷基化单元2027年全年仍不投运。半年报确认受损资产账面净值核销1,940万澳元；10月仍在推进财损与营业中断索赔。账面核销不是事故总损失。",
+    fm: "工程分析：将事故起点（管线失效）、损失扩展（燃料持续释放与火灾暴露）和营业中断尾部（烷基化产能、产品结构、替代调和成本）分开审视。应核查管段级检验及紧急隔离能力，但不能将其他炼厂的腐蚀原因、HF释放或维护争议直接套用本案。资产账面核销、重置修复成本、营业中断及保险赔付分别记录。",
     refs: ["7-43", "7-42", "7-14"],
-    discuss: "客户提出推迟大修一年以节约成本，你需要哪些信息来判断风险是否可接受？",
-    tags: ["炼油", "烷基化", "维护推迟", "营业中断"],
+    discuss: "如何核实失效管段的检验覆盖？为什么主要产量恢复并不意味着营业中断损失结束？",
+    tags: ["炼油", "烷基化", "管线失效（初步）", "营业中断"],
     imagePages: [
       "https://www.abc.net.au/news/2026-04-17/geelong-refinery-fire-visual-explainer/106571216",
       "https://www.abc.net.au/news/2026-04-16/viva-energy-geelong-oil-refinery-fire-cause-petrol-prices/106570810",
@@ -820,9 +820,94 @@ window.CURATED_NEWS = [
       "https://en.wikipedia.org/wiki/Geelong_Oil_Refinery",
     ],
     sources: [
+      {"name": "Viva / ASX：6月23日装置重启及初步原因", "url": "https://announcements.asx.com.au/asxpdf/20260623/pdf/070x821h436k83.pdf"},
+      {"name": "Viva 2026半年报：附注3、6（第24、26页，公告副本）", "url": "https://bulletin.webull.com/qbd/announcement/20260825/499501092/74dd8853014554336d24d70bf9f24595.pdf"},
+      {"name": "Viva 3Q26经营更新：保险索赔进度（公告副本）", "url": "https://newsfile.futunn.com/public/NN-PersistNoticeAttachment/7781/20261022/732_ASX-FTP-3A704665_en-us_0.PDF"},
       { name: "ABC News：事故经过图解", url: "https://www.abc.net.au/news/2026-04-17/geelong-refinery-fire-visual-explainer/106571216" },
       { name: "ABC News", url: "https://www.abc.net.au/news/2026-04-16/viva-energy-geelong-oil-refinery-fire-cause-petrol-prices/106570810" },
       { name: "SBS News", url: "https://www.sbs.com.au/news/article/viva-energy-oil-refinery-fire-geelong-production-resumes/gm4qo3flw" },
     ],
+  },
+  {
+    "id": "intl-pes-alkylation-2019-06",
+    "region": "intl",
+    "country": "美国·费城",
+    "date": "2019-06-21",
+    "category": "incident",
+    "causes": [
+      {
+        "peril": "equipment",
+        "cause": "integrity"
+      },
+      {
+        "peril": "fire",
+        "cause": "gas"
+      }
+    ],
+    "title": "PES 炼厂HF烷基化弯头腐蚀破裂，火灾爆炸估计财损7.5亿美元",
+    "brief": "PES 烷基化单元腐蚀弯头破裂，引发HF释放、火灾和爆炸，CSB引述财产损失估计7.5亿美元。",
+    "summary": "2019年6月21日，PES炼厂HF烷基化单元弯头破裂，可燃介质和HF释放后引发火灾爆炸。CSB最终报告确认局部腐蚀与机械完整性检验缺口，并引述估计财产损失7.5亿美元。",
+    "fm": "工程分析：对关键管件逐件检验，不能只以同一回路其他测点代表薄弱弯头；隔离阀、控制系统及电缆应考虑火灾与飞射物暴露。",
+    "refs": [
+      "7-43",
+      "7-14"
+    ],
+    "tags": [
+      "炼油",
+      "管线失效",
+      "历史对照",
+      "调查已完成"
+    ],
+    "sources": [
+      {
+        "name": "CSB：PES最终调查报告发布",
+        "url": "https://www.csb.gov/csb-releases-final-report-into-2019-pes-fire-and-explosion-in-philadelphia/"
+      },
+      {
+        "name": "CSB：PES最终报告PDF",
+        "url": "https://www.csb.gov/file.aspx?DocumentId=6202"
+      }
+    ]
+  },
+  {
+    "id": "intl-chevron-richmond-2012-08",
+    "region": "intl",
+    "country": "美国·加利福尼亚",
+    "date": "2012-08-06",
+    "category": "incident",
+    "causes": [
+      {
+        "peril": "equipment",
+        "cause": "integrity"
+      },
+      {
+        "peril": "fire",
+        "cause": "gas"
+      }
+    ],
+    "title": "Chevron Richmond 原油装置管线硫化腐蚀破裂起火",
+    "brief": "Chevron Richmond 原油装置管线因硫化腐蚀减薄破裂，释放可燃蒸气并引发火灾。",
+    "summary": "2012年8月6日，Chevron Richmond炼厂4号原油装置管线发生灾难性破裂，可燃蒸气释放后起火。CSB完成调查，确认低硅管段的硫化腐蚀减薄及机械完整性、检验与管理决策缺口。",
+    "fm": "工程分析：以材料和损伤机理为基础确定检验范围，避免用非薄弱件的测厚替代判断；将带泄漏运行、停机隔离决策和检验建议落实纳入机械完整性管理。",
+    "refs": [
+      "7-43",
+      "7-14"
+    ],
+    "tags": [
+      "炼油",
+      "管线失效",
+      "历史对照",
+      "调查已完成"
+    ],
+    "sources": [
+      {
+        "name": "CSB：Chevron Richmond调查与最终报告",
+        "url": "https://www.csb.gov/chevron-richmond-refinery-fire/"
+      },
+      {
+        "name": "CSB：机械完整性调查结论汇总",
+        "url": "https://www.csb.gov/recommendations/csb-investigations-mechanical-integrity/"
+      }
+    ]
   },
 ];

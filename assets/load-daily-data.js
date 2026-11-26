@@ -1,14 +1,15 @@
 (async function () {
   "use strict";
-  const cacheKey = "chemical-daily-v2";
+  const cacheKey = "chemical-daily-v3";
   const branch = "claude/chemical-industry-news-hub-wpb91d";
   let cached;
   const valid = (s) => s?.version === 1 && Array.isArray(s.data?.CURATED_NEWS) && Array.isArray(s.data?.FREE_EVENTS)
     && s.data?.AUTO_FEEDS?.items && Array.isArray(s.data?.AUTO_EVENTS?.items) && s.data?.FM_NOTES && s.data?.SOURCES
-    && Array.isArray(s.data?.PERILS) && s.data?.TRAINING && s.data?.NEWS_IMAGES;
+    && Array.isArray(s.data?.PERILS) && s.data?.TRAINING && s.data?.NEWS_IMAGES
+    && s.data?.LOSS_INSIGHTS?.version === 1 && s.data.LOSS_INSIGHTS.cases;
   const apply = (snapshot, sha) => {
     // 只复制网站已知的数据字段，不执行远端 JavaScript。
-    for (const key of ["CURATED_NEWS", "NEWS_IMAGES", "PERILS", "SOURCES", "AUTO_FEEDS", "TRAINING", "FM_NOTES", "FREE_EVENTS", "AUTO_EVENTS", "DISCOVERED_EVENTS", "AUTOMATION_RUN", "AUTOMATION_HISTORY"]) if (snapshot.data[key] !== undefined) window[key] = snapshot.data[key];
+    for (const key of ["CURATED_NEWS", "NEWS_IMAGES", "PERILS", "SOURCES", "AUTO_FEEDS", "TRAINING", "FM_NOTES", "FREE_EVENTS", "AUTO_EVENTS", "DISCOVERED_EVENTS", "AUTOMATION_RUN", "AUTOMATION_HISTORY", "LOSS_INSIGHTS"]) if (snapshot.data[key] !== undefined) window[key] = snapshot.data[key];
     if (/^[0-9a-f]{40}$/.test(sha || "")) window.DAILY_ASSET_BASE = "https://raw.githubusercontent.com/necrobiosis/chemical/" + sha + "/";
   };
   async function json(url, timeout) {

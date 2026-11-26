@@ -4,7 +4,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 const root = new URL("../data/", import.meta.url);
 const context = vm.createContext({ window: {} });
-for (const name of ["news", "images", "perils", "sources", "feeds", "training", "fm-notes", "events", "events-auto", "events-discovered"]) {
+for (const name of ["news", "images", "perils", "sources", "feeds", "training", "fm-notes", "events", "events-auto", "events-discovered", "loss-insights"]) {
   vm.runInContext(await readFile(new URL(name + ".js", root), "utf8"), context, { timeout: 1000 });
 }
 context.window.AUTOMATION_RUN = await readFile(new URL("trial-results.json", root), "utf8").then(JSON.parse).catch(() => null);

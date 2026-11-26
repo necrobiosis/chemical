@@ -29,6 +29,7 @@ jobs:
         run: |
           node tests/free-events.test.mjs
           node tests/discover-events.test.mjs
+          node tests/loss-model.test.cjs
       - run: npm i --no-save sharp@0.33.5 @anthropic-ai/sdk
       - name: 抓取信息源
         id: news

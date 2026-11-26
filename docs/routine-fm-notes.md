@@ -20,7 +20,7 @@ git checkout -B claude/chemical-industry-news-hub-wpb91d origin/claude/chemical-
 
 待补写条目：`major` 为 true、有 `link` 字段、日期在最近 7 天内、且 `link` 不在 `FM_NOTES` 中。
 
-没有待补写条目时，跳过第 2 步，但仍要做第 2.5 步的配图检查；两者都无改动时回复“无需补写”后结束，不提交。
+没有待补写条目时，跳过第2步的新增速报部分，但仍要按下述洞察要求复核最多3个重点已有事故，并做第2.5步配图检查；所有步骤都无改动时回复“无需补写”后结束，不提交。
 
 ## 2. 撰写速报
 
@@ -39,6 +39,10 @@ git checkout -B claude/chemical-industry-news-hub-wpb91d origin/claude/chemical-
 ```js
 { event, brief, flow, summary, points, refs, by: "Claude Code", at: "YYYY-MM-DD" }
 ```
+
+还必须提供 `insights`，以便每条事故显示设备、故障、严重程度、人员影响、直接原因、根因、人为/组织因素、财损、停产、后续发展和保险。格式见 `data/loss-insights.js` 与 `docs/loss-insights.md`。`confirmed`只用于已确认事实；公司初步意见用`preliminary`，媒体披露用`reported`，工程推论用`analysis`，不知道用`unknown`。每个已知字段引用本次实际读过的来源ID。不能把原文的初步原因写成最终根因，不把无金额写成零，不将保险限额、市值跌幅、收入或利润当作事故损失。
+
+新增或修订速报时必须查后续官方披露；有重要修复、复产、调查报告或索赔进展时补带日期的`timeline`。如已有`caseId`，同时更新`data/loss-insights.js`相应案例。每次最多额外复核3个信息不足或旧进展较久的已有重点案例，不为凑满而编造。没有读到新来源时保留原核验日期。相似案例优先设备、工艺、失效过程和后果，最多3个，注明相似点与关键差异；不能直接套用另一案件的腐蚀或人为根因。
 
 页面上每条新闻先显示 `brief` 和 `flow`，详细经过折叠在后面，所以这两项最重要：
 
@@ -69,7 +73,7 @@ report: {
 
 此时 `summary` 写报告发布这件事和事故概况，`points` 写对 FM 检查的启示。
 
-保持文件格式与已有条目一致，不要删除已有条目；除上面说的移入 `_shared` 外，不要改写已有条目的内容。
+保持文件格式与已有条目一致，不要删除已有条目；允许依据新核实来源修订已有事故洞察和时间线，并保留旧披露的日期与口径。
 
 首页头条会自动从近 7 天、已写速报的事故中挑选（同一事件报道越多越靠前）。确有必要时，可在某个事件的速报中加 `headline: true` 指定为头条。
 
@@ -100,7 +104,8 @@ node -e 'global.window={};require("./data/fm-notes.js");console.log(Object.keys(
 ## 4. 提交推送
 
 ```bash
-git add data/fm-notes.js data/feeds.js data/img-blocklist.json assets/feed-img
+node scripts/export-daily-data.mjs
+git add data/fm-notes.js data/loss-insights.js data/daily.json data/feeds.js data/img-blocklist.json assets/feed-img
 git commit -m "chore: 补写重大动态 FM 速报（N 条）"   # 末尾加上会话要求的署名行；如移除了配图，在提交信息中说明
 git pull --rebase origin claude/chemical-industry-news-hub-wpb91d
 git push origin claude/chemical-industry-news-hub-wpb91d
