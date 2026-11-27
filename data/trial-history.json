@@ -13,6 +13,411 @@
       "replays": "success",
       "discovery": "success"
     },
+    "startedAt": "2026-11-27T08:42:30Z",
+    "finishedAt": "2026-11-27T08:43:12.410Z",
+    "trigger": "schedule",
+    "runId": "45967730803",
+    "runUrl": "https://github.com/necrobiosis/chemical/actions/runs/45967730803",
+    "codeSha": "d5733797eeae11bcb94b230c3ae74cdb597d1ed5",
+    "news": {
+      "updated": "2026-11-27T08:43:08.290Z",
+      "count": 240,
+      "major": 31,
+      "sourcesOk": 27,
+      "sourcesError": 0,
+      "sourcesUnconfigured": 28
+    },
+    "events": {
+      "count": 12,
+      "live": 3,
+      "replays": 9,
+      "discovered": 3,
+      "checked": 4,
+      "checkErrors": 0
+    },
+    "eventItems": [
+      {
+        "id": "ipsd-2026",
+        "title": "2026 国际过程安全日（IPSD）",
+        "originalTitle": "International Process Safety Day 2026",
+        "organizer": "CCPS · IChemE Safety Centre · MKOPSC · FABIG · EPSC",
+        "summary": "全球过程安全专家的线上论坛，讨论人工智能、资产完整性、能源转型风险与人因等议题。已开放免费注册。",
+        "topics": [
+          "过程安全",
+          "资产完整性",
+          "AI",
+          "氢能与电池"
+        ],
+        "kind": "live",
+        "start": "2026-12-02T09:00:00Z",
+        "end": "2026-12-02T17:00:00Z",
+        "timeNote": "首场 09:00–17:00 GMT；完整节目在 24 小时内轮播，其他场次以报名平台为准。",
+        "language": "英语；未见官方中文同传说明",
+        "access": "面向所有人免费；需在 vFairs 注册账号后收听",
+        "url": "https://ipsd26.vfairs.com/",
+        "replayUrl": "https://ipsd26.vfairs.com/",
+        "replayFrom": "2026-12-03T09:00:00Z",
+        "replayUntil": "2027-12-02T00:00:00Z",
+        "replayNote": "官方说明会后可点播，回放开放至 2027 年 12 月 1 日。",
+        "sourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
+        "feeSourceUrl": "https://www.fabig.com/news/international-process-safety-day-ipsd-2026/",
+        "replaySourceUrl": "https://www.aiche.org/sites/default/files/docs/conferences/international_process_safety_day_2026_flyer.pdf",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-battery-hazards",
+        "title": "电池储能的危险与风险建模",
+        "originalTitle": "Modelling Battery Hazards for Safer Operations",
+        "organizer": "IChemE Safety Centre · Gexcon",
+        "summary": "了解电池储能系统的主要电池类型、相关危险，以及后果与风险建模方法。适合关注储能设施防损的工程师。",
+        "topics": [
+          "储能",
+          "锂电池",
+          "风险建模"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；在官方页面播放，无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/modelling-battery-hazards-for-safer-operations-session-4/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-moc",
+        "title": "变更管理（MoC）：避免变更引发事故",
+        "originalTitle": "Management of Change (MoC)",
+        "organizer": "IChemE Safety Centre",
+        "summary": "围绕技术、工艺及组织变更，介绍加强变更管理的实用工具，帮助检查工厂的变更流程。",
+        "topics": [
+          "变更管理",
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；在官方页面播放，无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/management-of-change-moc/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-jonava",
+        "title": "Jonava 液氨储罐破裂：事故教训回顾",
+        "originalTitle": "Revisiting the Jonava Ammonia Tank Rupture 35 Years On",
+        "organizer": "IChemE Safety Centre",
+        "summary": "从液氨储罐破裂案例讨论设计缺陷、热过载与应急管理，适合关注氨储运和储罐风险的工程师。",
+        "topics": [
+          "液氨",
+          "储罐",
+          "事故复盘"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；在官方页面播放，无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/revisiting-the-jonava-ammonia-tank-rupture-35-years-on/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-25"
+      },
+      {
+        "id": "icheme-the-danger-zone",
+        "title": "The Danger Zone",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-danger-zone/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "icheme-what-could-have-gone-right-case-study-on-longford",
+        "title": "What Could Have Gone Right? Case Study On Longford",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/what-could-have-gone-right-case-study-on-longford/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "icheme-risk-based-process-safety-rbps-leadership-and-culture-2",
+        "title": "Risk Based Process Safety (RBPS) - Leadership and Culture",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/risk-based-process-safety-rbps-leadership-and-culture-2/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "icheme-sharing-singapore-s-safety-case-insights",
+        "title": "Sharing Singapore’s Safety Case Insights",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/sharing-singapore-s-safety-case-insights/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "icheme-the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining",
+        "title": "The Risk Existed Before The Label - A Process Safety Lens Across Mining and Refining",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "icheme-how-cybersecurity-threats-influence-control-systems-and-process-safety",
+        "title": "How Cybersecurity Threats Influence Control Systems and Process Safety",
+        "organizer": "IChemE Safety Centre",
+        "summary": "过程安全系列免费回放，可在主办方页面在线收听。",
+        "topics": [
+          "过程安全"
+        ],
+        "kind": "replay",
+        "language": "英语",
+        "access": "免费公开回放；无需付费会员",
+        "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/how-cybersecurity-threats-influence-control-systems-and-process-safety/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "live-01-12-2026-forecasting-bioprocess-batch-data-using-simca-online",
+        "title": "Forecasting Bioprocess Batch Data Using SIMCA®-online",
+        "organizer": "IChemE · Biochemical Engineering",
+        "summary": "官方面向所有人的免费线上讲座。可从活动详情页进入报名；不承诺提供免费回放。",
+        "topics": [
+          "行业讲座"
+        ],
+        "kind": "live",
+        "start": "2026-12-01T12:00:00.000Z",
+        "end": "2026-12-01T13:00:00.000Z",
+        "language": "页面为英文；授课语言以主办方说明为准",
+        "access": "官方目录标注 Open to all，活动页明确免费；需免费报名",
+        "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
+        "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
+        "registrationUrl": "https://events.teams.microsoft.com/event/9f9743cf-c4b4-4ae3-be60-0675ee0f9698@97b66814-ba5e-4ec0-85e7-53bc897bbde6",
+        "checkedAt": "2026-11-27"
+      },
+      {
+        "id": "live-11-12-2026-wastewater-network-anomaly-detection-and-diagnosis",
+        "title": "Wastewater Network Anomaly Detection and Diagnosis",
+        "organizer": "IChemE · Process Management and Control",
+        "summary": "官方面向所有人的免费线上讲座。可从活动详情页进入报名；不承诺提供免费回放。",
+        "topics": [
+          "行业讲座"
+        ],
+        "kind": "live",
+        "start": "2026-12-11T09:00:00.000Z",
+        "end": "2026-12-11T10:00:00.000Z",
+        "language": "页面为英文；授课语言以主办方说明为准",
+        "access": "官方目录标注 Open to all，活动页明确免费；需免费报名",
+        "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+        "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+        "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
+        "registrationUrl": "https://events.teams.microsoft.com/event/fcc49800-d687-4b0b-81d3-beb12efb4f55@97b66814-ba5e-4ec0-85e7-53bc897bbde6?source=copyLinkLegacyShareLinkDialog",
+        "checkedAt": "2026-11-27"
+      }
+    ],
+    "latestNews": [
+      {
+        "title": "Funding Wrap: Matters.AI, Vegapay, Green Aero raise fresh capital",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXhVV3Q1Y2thaldLYWlwd2FibnZFM1lnLW56LXRfRFRxREZyQTZnQnZ6RmxGU0xCb3NLdTluZHZhUm1vTmlpRXljNHZnaU85M29JMVR4d3p5eXBrU2RsV3dLN00tVGxBM2NPc3A0cko4OUpVaVFJQjFtMnVZWGVFTGxLRE1GZWx0NlVkVHNCWVdmR1lWa0p2Uk9xc2w0MFhtTEVBUkxsaU5WWUVuWTJ3SWNwZV9hSHh5T014QWgteUxjNUk4Z0FJZXNsVTdjeFpq0gHWAUFVX3lxTE5jNGhmZF9rVktoNjdNbHN0NHVvQ1F3M25CS0czZGpFQXVvM2NFajlzWC1HcDNkbXp5NVBKbzVmdHB1bnU4aXVOclVCQnRMcV91eUYzSWlrUEl1Y2N0ZGhOT1UyNHJSX2Zxa3JQTjB4RkhDX3d2RFRCSEVwbjZiZThKcjMxbHhtV09tcnhnSm0yV3A4NWtQcmJ5NU9aVXYyTVFkSFhxNkdiQjVUU0xYY1lxX2JLa1o4RTZkMmd3SVBSd3VTZkh2c2RzbnNSUHQ0bUd2dGdjRWc?oc=5",
+        "source": "ET Entrepreneur",
+        "date": "2026-11-27T08:20:50.000Z",
+        "region": "asia",
+        "sid": "et",
+        "type": "site",
+        "tier": "B",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Bangchak finds ruptured heat exchanger in initial refinery fire probe",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wcDB1eUNRRXRKeTUwNTFuLU83cTY4dV9aTVItc29SOHU3WFFzOGVGbGppbVZHVHlQYU1JV0ZHWW5jRVNqS014R3UxUkxicGxveDh0YjlRYndRZUtReWFncXpn?oc=5",
+        "source": "Nation Thailand",
+        "date": "2026-11-27T08:19:00.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Bangchak halts Bangkok refinery output pending fire probe",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aN3ZROXJqeENncm9HQS1vUWlVRTRFbENwbGRSc3duckxLd1UyTjZpc05pUzc0V20tMDdJYkRpX3lkWEM5cmI0TXN1VGNDbXNsWE9BMkZUU2tmaHZuaTM5eQ?oc=5",
+        "source": "Thai PBS World",
+        "date": "2026-11-27T07:02:52.000Z",
+        "region": "intl",
+        "sid": "q-intl-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Australian LNG exporters must reserve some supply to lower domestic prices",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTmYzUUoxck1GbzUtOGM1Y21sWWNRajh6YldtRk5TTUx3MEpONkh0dzNCd3VGZWJTUUtNSEpUZV9EeU9pTG83dHp4TzkyX0NqbkJzRUpJUTQzTkFfSXJKQTNwb3NuZVRKMnpnV2xKd0MtUTk2bzZTUEo5bGdOcjJXanYtRXhsWnFOSkpJVEx4Vmp0dlRkM2NCYWVsNlVDeFdrZXZxaGpqUkM1MkFMS2lDbTdkTXQ?oc=5",
+        "source": "Nikkei Asia",
+        "date": "2026-11-27T05:50:00.000Z",
+        "region": "asia",
+        "sid": "nikkei",
+        "type": "site",
+        "tier": "B",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Thailand's Bangchak buys prompt diesel following Bangkok refinery fire, sources say",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWDFNMlNqZm1UR0tRa1ZpYVJDRGJtYmI4R3FHUEoxRmgzMGtQdmVWVnJmWlRmLS0tTDFydy0xME5ucDNhLXNEQWhHaU80OHpkQzBKaUYzLUw0bVlmZUt1UVpidkRaY3hsdUhYSXUtTVFCaU5La2NvWWlYS2VpTzFXOTRoc0VBbzJzem9HdDI0MFVFM1NuNDRiUWlqN0hpdFMtNzFhNjg4SEJiN1FoV2l3RUxEdmpVVVUyLVBJaUVVZHBwaUxKSDRJMTRiVFpiSmZyc3g4SUJvMnN1dGJ2dTlibEl3WDZoT2c?oc=5",
+        "source": "TradingView",
+        "date": "2026-11-27T05:03:00.000Z",
+        "region": "intl",
+        "sid": "q-intl-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Nepali national killed, several wounded in Houthi attack on Jazan refinery",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTGZMXzdiNmw3UTBFMVphR1dPQ09HNzk3WFN4Q1RELUE4a0ljNFRFa05JS1VPcS1nYWlRNUV2RERvcWxBZkI2RjgyZHZxcll1eHBOellSNm5BRExNVW5HaTd3Q0JsOUNvVnh2bUgzY0VBeEs2YVhwQnFocDI2N2F4Y25QNXpvQ1VVcHlDMXpiV3N4SVhuQWVBUnpNd2FaSGdzSUFUbW1nLXZoOXJIMHpuT3ExNFFWbU41RS0wdGxYSQ?oc=5",
+        "source": "Saudi Gazette",
+        "date": "2026-11-27T04:51:00.000Z",
+        "region": "intl",
+        "sid": "q-intl-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 2,
+        "major": false
+      },
+      {
+        "title": "Christmas, New Year's Day publishing schedules for Platts Asia oil",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxObHVyOXRzUG5UYzlBaDNqU0U5MFZxbW9SQWhWdDBEUVgxQUx6b1NraUlRblBzckQ3UjFlb1VSdVZmU1kxUUF6a2ZqRS05STRoaFZmbVpmcTY2alRNdWRGdjhiSGNmVGZQdHVOQW9JakRPTGtCLXBkTC1NUTRCUnZYOUI0Ykg2U0ZhS3hrY0NlLUZNUjdqV2hIM3E2TzkzZ3JUV1ZqN3JzUjBYUmtiSVREZER0bGh0czhMOWRvb1BzQ0JGMmhIYzVDU0pUZkp2T09CSlBxMC1hR2taUTBlNkZBM0hGYklSY3ZkYmZEZi1aVQ?oc=5",
+        "source": "S&P Global",
+        "date": "2026-11-27T04:21:40.000Z",
+        "region": "intl",
+        "sid": "spglobal",
+        "type": "site",
+        "tier": "B",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "VIDEO: European gas-market highlights, week 48",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVV83T3pnXzBxRU9ZWlBLaTU2UHFQNU9Ra3VFRFNvX2pCXy1WV3dra2lZdDNaX2JTVEtzRGo5SUdQOGZBRWVOVWQxbkZ0LS1RaVdwZk1PaEY5SVFtQXRGTFlyQUNoQ0w0NWNTa2tIR3p0d1I3Z0tLNG83MGFhOF9FdUNoR25oQTNreUhVbENkTXI5cEhJd1lzVkdKbU5xSk5xZm5nc1hld0ZqNTVR?oc=5",
+        "source": "ICIS",
+        "date": "2026-11-27T04:17:37.000Z",
+        "region": "intl",
+        "sid": "icis",
+        "type": "site",
+        "tier": "B",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Bangchak says refinery fire started in its hydrocracking unit, nine hurt",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNelJpTlV6a2tVTmRSMHM2NUxZWm9ralVoOHZDS011aUJoTGdMUjRTUG1ZZkxtbm8xenI5V245SlUtTUdHcHVEX0JmOFphVUM3WERMRFFJLXhTNjVHcDNXZ0N3Y1R6N3hRaG9DZHNneGlydXBaNEhza1FodFNDUWZnTDlnQkp6RE5SWXVxODE1elVPMXBM?oc=5",
+        "source": "Thaiger",
+        "date": "2026-11-27T04:14:11.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "Thailand video news | Explosion at Bangchak refinery prompts evacuation warning, Bangkok to close 95 roads for Amazing Thailand Marathon, Thailand remains Agoda's top destination",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5EZGc4TFFBWkZ2YmpyS0JZSGNpdlRCVGFuT3diWC02T01DWmwxdXVlazFQY3ZHaGZwaWVJUTVhclh2dUZUOFNVSWIwNmR5bDRxM0pLM1FQWEZQRWpRNTdKN1llQUh0MkVVYzZkd1B2eTMzakZyeFNR?oc=5",
+        "source": "Thaiger",
+        "date": "2026-11-27T04:09:11.000Z",
+        "region": "asia",
+        "sid": "q-asia-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 4,
+        "major": true,
+        "link": "https://thethaiger.com/video-podcasts/thailand-video-news-27-11-2026",
+        "linkV": 2,
+        "descV": 1,
+        "desc": "Thailand video news: Bangkok's fire, US tariffs, marathon road closures, Phuket beach threats and Thailand's growing island appeal.",
+        "imgV": 2,
+        "img": "assets/feed-img/46546c5127cb2077.webp"
+      },
+      {
+        "title": "Residents can return after Bangchak refinery fire as Bangkok air checks continue",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNldTemFCVjFmaVc0MEhLUm44YVhqZV9YV0hZeG5FU1dtdHhyWkgtWU55cjB6WXdoNEEyR3dZa1lOVTQyQVNReEVaS3Y5YUtERW5ZTWxjNUxwWjlFWVNDdVhNdDR0VlU1WkEwYi1WRXpsemNQTlZIbHdmZktCYzI4eUs5XzJJbklDVFAwR3I3dENtZElrTzA3WWxrY3VzaVNJT0VvLU1XOU96d0FfOHlzbzFiWGc1TjQ0UkpHS1JpRQ?oc=5",
+        "source": "The Straits Times",
+        "date": "2026-11-27T03:50:00.000Z",
+        "region": "intl",
+        "sid": "q-intl-incident",
+        "type": "query",
+        "tier": "C",
+        "score": 1,
+        "major": false
+      },
+      {
+        "title": "- U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
+        "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOMUsxcVpsMXNMVzlleE1oRGxFRlpDNG1HdTBta3VBME1hQ2JrN1FkSmRQZ1pvMjJDRnVoek9NZXdERF9IRk02U29DOE9CSXNLazc0MEFVR001Z1VwN01kNDU0WF9QNkhWLUNFN3Jta0xyd19JcS1XWG4xN2NOWmlyVFVUdGZ2emFoazAyVmxQdGMwTWFiWUJGeTNVZExpUHA1YnBHb0xZN3QzMWdlT3h3ZDE4TUR2akZEMkdqYVA1cG83VmRSc0puVHF1QjNCYnRsb0Q3cHhnc1NvV3B6RHlRVDdyWldXTlhOSURoTExRYWdka3VFUXJsbDZzMGFNQXJSdTZmRTZQSVRzbTRyX09LcGFGcksxTm9PbzFtNjI1Vk9KMVV6NnBNN05NN3g2MlFFQ1NjTEFsWU1qWkZocDZ1MkhtajN0VkR1N1E?oc=5",
+        "source": "U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
+        "date": "2026-11-27T03:18:55.000Z",
+        "region": "intl",
+        "sid": "csb",
+        "type": "site",
+        "tier": "A",
+        "score": 4,
+        "major": true,
+        "link": "https://www.csb.gov/one-year-after-catastrophic-accident-at-the-tesoro-refinery-csb-releases-video-safety-message-calls-on-industry-to-invest-in-preventive-maintenance/?id=3731&F_All=y&print=y",
+        "linkV": 2,
+        "img": "assets/feed-img/5d3a8d9a86632610.webp",
+        "imgV": 2,
+        "descV": 1
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "pipeline": {
+      "id": "A",
+      "repository": "necrobiosis/chemical",
+      "schedule": "每天北京时间 08:17",
+      "mode": "新闻、配图与活动核验"
+    },
+    "status": "success",
+    "stages": {
+      "news": "success",
+      "replays": "success",
+      "discovery": "success"
+    },
     "startedAt": "2026-11-26T08:28:43Z",
     "finishedAt": "2026-11-26T08:28:55.008Z",
     "trigger": "schedule",

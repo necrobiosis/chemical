@@ -12,16 +12,16 @@
     "replays": "success",
     "discovery": "success"
   },
-  "startedAt": "2026-11-26T08:28:43Z",
-  "finishedAt": "2026-11-26T08:28:55.008Z",
+  "startedAt": "2026-11-27T08:42:30Z",
+  "finishedAt": "2026-11-27T08:43:12.410Z",
   "trigger": "schedule",
-  "runId": "45783457206",
-  "runUrl": "https://github.com/necrobiosis/chemical/actions/runs/45783457206",
-  "codeSha": "f3733f0b720d64c8bfe407fea28b7803518c3a29",
+  "runId": "45967730803",
+  "runUrl": "https://github.com/necrobiosis/chemical/actions/runs/45967730803",
+  "codeSha": "d5733797eeae11bcb94b230c3ae74cdb597d1ed5",
   "news": {
-    "updated": "2026-11-26T08:28:51.142Z",
+    "updated": "2026-11-27T08:43:08.290Z",
     "count": 240,
-    "major": 18,
+    "major": 31,
     "sourcesOk": 27,
     "sourcesError": 0,
     "sourcesUnconfigured": 28
@@ -129,7 +129,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-danger-zone/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "icheme-what-could-have-gone-right-case-study-on-longford",
@@ -144,7 +144,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/what-could-have-gone-right-case-study-on-longford/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "icheme-risk-based-process-safety-rbps-leadership-and-culture-2",
@@ -159,7 +159,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/risk-based-process-safety-rbps-leadership-and-culture-2/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "icheme-sharing-singapore-s-safety-case-insights",
@@ -174,7 +174,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/sharing-singapore-s-safety-case-insights/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "icheme-the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining",
@@ -189,7 +189,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "icheme-how-cybersecurity-threats-influence-control-systems-and-process-safety",
@@ -204,7 +204,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/how-cybersecurity-threats-influence-control-systems-and-process-safety/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "live-01-12-2026-forecasting-bioprocess-batch-data-using-simca-online",
@@ -223,7 +223,7 @@
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/9f9743cf-c4b4-4ae3-be60-0675ee0f9698@97b66814-ba5e-4ec0-85e7-53bc897bbde6",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     },
     {
       "id": "live-11-12-2026-wastewater-network-anomaly-detection-and-diagnosis",
@@ -242,69 +242,39 @@
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/fcc49800-d687-4b0b-81d3-beb12efb4f55@97b66814-ba5e-4ec0-85e7-53bc897bbde6?source=copyLinkLegacyShareLinkDialog",
-      "checkedAt": "2026-11-26"
+      "checkedAt": "2026-11-27"
     }
   ],
   "latestNews": [
     {
-      "title": "Huge explosion at oil depot in Bangkok sends fireball into sky",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdHI4TUVod05tcl96RExlZVdaUEd2V3RicmNaZ1d4UWZRQkdjUnYxc1BIdTFXMUZKQXY2SGo4aTlvemFiZHJjVVM2TWNPOGQ3RW4zRDVuRTE0TW8yTW9uNkF5RGlxdU5BXzRjWGtRQkdnNWpKa0Z5T3ZkUnhkQlQ5bkhmNmpkUnFsNHg3dF9PLWQ0am41dEhSekI5VkhpbU50Yi05NzVxaERDNHVjQ0FlZkRR?oc=5",
-      "source": "France 24",
-      "date": "2026-11-26T08:27:20.000Z",
+      "title": "Funding Wrap: Matters.AI, Vegapay, Green Aero raise fresh capital",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXhVV3Q1Y2thaldLYWlwd2FibnZFM1lnLW56LXRfRFRxREZyQTZnQnZ6RmxGU0xCb3NLdTluZHZhUm1vTmlpRXljNHZnaU85M29JMVR4d3p5eXBrU2RsV3dLN00tVGxBM2NPc3A0cko4OUpVaVFJQjFtMnVZWGVFTGxLRE1GZWx0NlVkVHNCWVdmR1lWa0p2Uk9xc2w0MFhtTEVBUkxsaU5WWUVuWTJ3SWNwZV9hSHh5T014QWgteUxjNUk4Z0FJZXNsVTdjeFpq0gHWAUFVX3lxTE5jNGhmZF9rVktoNjdNbHN0NHVvQ1F3M25CS0czZGpFQXVvM2NFajlzWC1HcDNkbXp5NVBKbzVmdHB1bnU4aXVOclVCQnRMcV91eUYzSWlrUEl1Y2N0ZGhOT1UyNHJSX2Zxa3JQTjB4RkhDX3d2RFRCSEVwbjZiZThKcjMxbHhtV09tcnhnSm0yV3A4NWtQcmJ5NU9aVXYyTVFkSFhxNkdiQjVUU0xYY1lxX2JLa1o4RTZkMmd3SVBSd3VTZkh2c2RzbnNSUHQ0bUd2dGdjRWc?oc=5",
+      "source": "ET Entrepreneur",
+      "date": "2026-11-27T08:20:50.000Z",
       "region": "asia",
-      "sid": "q-asia-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 3,
-      "major": true,
-      "link": "https://www.france24.com/en/asia-pacific/20261126-huge-explosion-at-oil-depot-in-bangkok-sends-fireball-into-sky",
-      "linkV": 2,
-      "descV": 1,
-      "desc": "An explosion at an oil depot in Bangkok sent a large fireball and thick black smoke into the sky, journalists said Thursday, as local authorities urged people nearby to evacuate.",
-      "imgV": 2,
-      "img": "assets/feed-img/ee1e34064bcbf431.webp"
-    },
-    {
-      "title": "Huge blast at Bangkok oil depot: authorities",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9sNkFyWVZxRExWd1RtLTJIQngwbWpLajRObWRTd3BlWlRXYjluNFNfa2dVUEJMSk9jVVozU2IybzNRQjFpWFZocEVGM2ZQeDhYS3BpWlhsT0tEN2NNeVY3QjBicE5aSmJ5ZGJPb2ZHcEg5cl9qY0UzbHN2SG9UelE?oc=5",
-      "source": "Borneo Bulletin",
-      "date": "2026-11-26T08:09:43.000Z",
-      "region": "asia",
-      "sid": "q-asia-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 2,
-      "major": false
-    },
-    {
-      "title": "Dung Quat Refinery reaches milestone of 60 million safe working hours.",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5wRVlZOUVsZkpWOFhKdmxfRGdQYWhmLTFIOGFFdHBGa0ZrLWZ5dV9UTVRlazV4bExPWWE1TURzVEVBV3hDY0d0Y21ITndWTHBaQ1RzTWhyS19xM01ZUWZDUnAzQU95dGxZd2QtRUxTaG42Y2dDQnJXQ1VleDR5NGM?oc=5",
-      "source": "Vietnam.vn",
-      "date": "2026-11-26T06:59:20.000Z",
-      "region": "asia",
-      "sid": "q-asia-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 0,
-      "major": false
-    },
-    {
-      "title": "249万吨乙烯产能关停落地，韩国石化减量冲刺年底",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1XZmJnSnZ2bjhWQ0x0Ykx5ZzR6WXlCMmhPZFNYRU5QUU0tb0NjYmtCM0w1QmNzY2txN3pHejgxX2ZzckxfUnEwVk53NUtlUW1Ed3JRb21DTzVpT19JVjJR?oc=5",
-      "source": "ChemNet News",
-      "date": "2026-11-26T06:56:23.000Z",
-      "region": "cn",
-      "sid": "chemnet",
+      "sid": "et",
       "type": "site",
       "tier": "B",
-      "score": 2,
+      "score": 1,
       "major": false
     },
     {
-      "title": "Fire reported at Samara refinery after drone attack",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdVZSMVVNdVRPblFYQW5PTTFCWTFkOERfa0NEYldUWXQwTGZwcnQybU4wSFBYcnJRMjdtTXdZc0JldXlqYVJJT3plWlNlYktvSjE2TkM2My1tWmRCNW1ZYnZlSGI4dEtnOE1jQ3c5TUpNbHBSeGtpOGliZHRrUS1MWnlXUDVuR1RhNTFxNUFDRV8?oc=5",
-      "source": "Operativ Məlumat Mərkəzi",
-      "date": "2026-11-26T06:53:29.000Z",
+      "title": "Bangchak finds ruptured heat exchanger in initial refinery fire probe",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wcDB1eUNRRXRKeTUwNTFuLU83cTY4dV9aTVItc29SOHU3WFFzOGVGbGppbVZHVHlQYU1JV0ZHWW5jRVNqS014R3UxUkxicGxveDh0YjlRYndRZUtReWFncXpn?oc=5",
+      "source": "Nation Thailand",
+      "date": "2026-11-27T08:19:00.000Z",
+      "region": "asia",
+      "sid": "q-asia-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 1,
+      "major": false
+    },
+    {
+      "title": "Bangchak halts Bangkok refinery output pending fire probe",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aN3ZROXJqeENncm9HQS1vUWlVRTRFbENwbGRSc3duckxLd1UyTjZpc05pUzc0V20tMDdJYkRpX3lkWEM5cmI0TXN1VGNDbXNsWE9BMkZUU2tmaHZuaTM5eQ?oc=5",
+      "source": "Thai PBS World",
+      "date": "2026-11-27T07:02:52.000Z",
       "region": "intl",
       "sid": "q-intl-incident",
       "type": "query",
@@ -313,94 +283,123 @@
       "major": false
     },
     {
-      "title": "JD Vance Drags Obama Into Iowa Toxic Blast Defence, Internet Fires Back With Brutal Trump Question",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQRUhlNjBYTjlOS2c5QzVEUXNFcS1mNlFVRjFoamhLZVpueER4bVVNT0w2aWRjOUlKWDJJMTVuemV5R3I4STVTb3pQRkVJUnJleHFQaXFHQ0ZmeFM0eE9meTJfMWYwb2N3VWJ2b1llMWtvUi1SVVlxVW5TbUZrMmhvOUZkSVkyRm5JVk00bUw5aGVya1dQWTh0YmZ1bGd0SWxSWVh0dmRiM3FBY2NjUjh6YndvTXhmYVhKaFN3Q1BJcXJucHBpX1VHNDRtV2hMc0M4T013dmRYQ2FVcW1idGxXcnpkTFh0ZVV3SmEtTmpyYmZkamVoT2JqR0hQc0xOeVUyT1FGbHVrMkZIZ9IBjwJBVV95cUxNQ085M1Jwbm50d2VZbzRGN0FpRm1YbHZielRaNHB0V0lpZGpoQVVEXzhCeEs0a1VOakk3MjV1dWk5ZEFTZ1lqZGlNa2lpQmtIN2NuclV4NE9neUlEekhMa3Y5Y2tHVlctNGUxeDJWVWJISExKRXMxZ2RDWXZYdkZDOUNLYUZkM3p1djl1am5aRk10YUZzc25JczNDTnIwaDgyVjg1UkVZZVhNMDZac2J0RFFUSWxsbEJLM2hyMDRIMTJlT0hUMHI4ZlZiWGc5cHhJTXBwZGs1R0paT2l0TXpWMF81NDh5RjNyZXJJSEZKQldKU1lxX3VEbkswUDJzbGw2SWFndFN1d1c5ODBxZC1N?oc=5",
-      "source": "The Times of India",
-      "date": "2026-11-26T06:24:18.000Z",
+      "title": "Australian LNG exporters must reserve some supply to lower domestic prices",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTmYzUUoxck1GbzUtOGM1Y21sWWNRajh6YldtRk5TTUx3MEpONkh0dzNCd3VGZWJTUUtNSEpUZV9EeU9pTG83dHp4TzkyX0NqbkJzRUpJUTQzTkFfSXJKQTNwb3NuZVRKMnpnV2xKd0MtUTk2bzZTUEo5bGdOcjJXanYtRXhsWnFOSkpJVEx4Vmp0dlRkM2NCYWVsNlVDeFdrZXZxaGpqUkM1MkFMS2lDbTdkTXQ?oc=5",
+      "source": "Nikkei Asia",
+      "date": "2026-11-27T05:50:00.000Z",
       "region": "asia",
-      "sid": "q-asia-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 3,
-      "major": true,
-      "link": "https://timesofindia.indiatimes.com/videos/international/jd-vance-drags-obama-into-iowa-toxic-blast-defence-internet-fires-back-with-brutal-trump-question/videoshow/136181165.cms",
-      "linkV": 2,
-      "descV": 1,
-      "desc": "JD Vance is facing fierce backlash after blaming Barack Obama for the dangerous explosives stockpile detonated by the U.S. Army in Iowa. The controlled explosion destroyed five tons of degraded lead azide at an ammunition plant in southeastern Iowa, but concerns over potential lead contamination have triggered a political firestorm. Speaking in Ohio, Vance claimed the Obama administration had stor",
-      "imgV": 2,
-      "img": "assets/feed-img/ff6219e48dcda2f1.webp"
-    },
-    {
-      "title": "- Chemical & Engineering News",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE84Z2hTRmdBcnV0aWNHODFnLTJObHhfQnJhNGdLR1ZCX1p0OUJ1a2s1QjlmUTEwTzNnMkdVZnY3amVFWDZsZUJoWW5CUTNzazVzMkVaN1FPc3NITEEwT3R5QkJn?oc=5",
-      "source": "Chemical & Engineering News",
-      "date": "2026-11-26T06:15:34.000Z",
-      "region": "intl",
-      "sid": "cen",
+      "sid": "nikkei",
       "type": "site",
       "tier": "B",
       "score": 1,
       "major": false
     },
     {
-      "title": "Turkmenistan's Afghan gas link brings South Asia pipeline dream a little closer",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcnRaU1dqOW1kRDdIRmRsQVhsYkdpa0FtSkJjcklhN3RFZWVadE1jZkJUcDJnaXZYekZzTjZyeWlSN09FUF96MFlhM3hTZ2dLcUU4aVdSdWdDcXBOSDBzNzhIV0ZUdTZMRHlNSVJpYWFfdjg0RG44cU1QZ0FmMmphMlRJZndBZ3BKbmF0X0tOd2VXam9udG5WOFhsNWliUEhUN2wtSm9JUEtZa2J5cmpUTVBiejQydk5BSkRJb2s1WlYtX0hLNVBB?oc=5",
-      "source": "Reuters",
-      "date": "2026-11-26T05:05:00.000Z",
-      "region": "intl",
-      "sid": "reuters",
-      "type": "site",
-      "tier": "B",
-      "score": 2,
-      "major": false
-    },
-    {
-      "title": "Fuel tanker crash ignites a massive fire on a highway surrounding Cairo, killing at least 31 people",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBoNEVzZnI1T3FxODZLYldweUlodXpZejNHTzZQdHpWSTVmdmQ0TVVLX3lTX3JocDJoQUptaTZxSDJjWjFRUDAzWHc5X1ktdkhrZUcwV0VwOA?oc=5",
-      "source": "The Korea Herald",
-      "date": "2026-11-26T04:40:52.000Z",
-      "region": "asia",
-      "sid": "koreaherald",
-      "type": "site",
-      "tier": "B",
-      "score": 2,
-      "major": false
-    },
-    {
-      "title": "'Apocalyptic' Fireball Rocks Arab Nation; Fuel Tanker Crash Caught On Cam; 'Never Seen This Before'",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOUlZyOFVOMmlzbWlvWWNvaEJVMGFZOXBxTVp5TXFNaGxibVNucEV2Nl9fM2p6R0oxZXRzMkRCUDN0NXNPQXZ6dWVTN0dBMUtXWWdoUnBVU3RkYWhVMzYxWjIzYWlHdTlUUUdfblVESjRyMzBVM0xGOVZ3cDgxY3NNMmpXSkNmSHlndjMxaERibWRCTDhoT1RTbTdZTVZqVC0wZER4d0V4TzUyaHBINmhyZHFjTVNsQkVIZkNvbG13LXhMX2pDUG1nSGRvNU0yVGRIQXZsMXNRNlJtZmRaSzFHRmFpeGJYUW1KdldzcWk2ekYxT3QyOGZ0dTJjNmpRWkJ6aGFUN9IBigJBVV95cUxNOVJQNzVsN0VfbmEwcXczTThQQnZyZmVyOWo1dTRXbERUeGh2djZPR1QtQkUydzQ1OFBZLUlOelV2RVlsUjJwMHJ3bDdSSVRnaE5ZS0NSTnBjYkUzZWl6UDVoa21Hbl9qcWZ4ZFBReGp5SEZzS0drTHdIaHFGSHdFXzR4VW9SLU9VMVB1QTdJVDBmTnVwLUFVQkFtZHhnTXY3UFl0ZEswZEFHNFo4TnFCTHItS0xYOGgwOEwzRG9hSGpxdHl5MWtiWmhXQmlXYUY4clB4dnJTNHlpblNNS3RPNUlWekl4N2xUMkdZbWpqTHlnLVJIOExoMnJCcEp5VVZwX2ZnZWppaWYzQQ?oc=5",
-      "source": "The Times of India",
-      "date": "2026-11-26T04:34:18.000Z",
-      "region": "asia",
-      "sid": "q-asia-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "40 cars burn, LPG cylinders explode in ‘aggressive’ Williamstown blaze",
-      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxPa0V4b191UHp2eXRGT3Y2X1BVOTJmNjdQcVdja1VHUEt1d1NzZm9tbWdRZ1NaMjQ5Z2l4UzFnODNnaWtIOVY5SHdSRGdmMDBfSTlEUzhXczdFbDBXaDZhd3VmcnNlQndsSW9YQ1JQcDRjaUFUdDBBSVM4WlNZZE9pX1BaU1ZKYmZSd3JGdVB0bS10NHlYU3JyLTNsLTJiYndhS3VGR1hYTF9WVkVmNS0wQmZqcUZQZ2kyeGk4TTFjZzdXTnFudUVFZ0xtNkFfYWJ0YnRINTU2XzdJbFVKNkxkS0ZpNGdfLUJBRWxfbUdkX196T3ljQ3QxNTd5NlZ3YV8yWGllanFSTXk4S1Z2cXdzNm1mSUY4eXZ6UzBNdHVWeC0?oc=5",
-      "source": "Herald Sun",
-      "date": "2026-11-26T03:50:00.000Z",
+      "title": "Thailand's Bangchak buys prompt diesel following Bangkok refinery fire, sources say",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWDFNMlNqZm1UR0tRa1ZpYVJDRGJtYmI4R3FHUEoxRmgzMGtQdmVWVnJmWlRmLS0tTDFydy0xME5ucDNhLXNEQWhHaU80OHpkQzBKaUYzLUw0bVlmZUt1UVpidkRaY3hsdUhYSXUtTVFCaU5La2NvWWlYS2VpTzFXOTRoc0VBbzJzem9HdDI0MFVFM1NuNDRiUWlqN0hpdFMtNzFhNjg4SEJiN1FoV2l3RUxEdmpVVVUyLVBJaUVVZHBwaUxKSDRJMTRiVFpiSmZyc3g4SUJvMnN1dGJ2dTlibEl3WDZoT2c?oc=5",
+      "source": "TradingView",
+      "date": "2026-11-27T05:03:00.000Z",
       "region": "intl",
       "sid": "q-intl-incident",
       "type": "query",
       "tier": "C",
-      "score": 0,
+      "score": 1,
       "major": false
     },
     {
-      "title": "Dung Quat Refinery Achieves 60 Million Safe Working Hours",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY1ZDRDdXc1ZtR1VYV1Yyc3pJdGxzUGo5aXFLcTRsYUQzY05yN2lIeGFPYXd1RG1oUnhEYTNRR0ZoMWdnTlZDMXVORXExRzY2aFNpZVI5Q2JpYWVyaWU0U2hsM2xSVm5EcS1uUHYtNVRlRTRfUDc5cUNDaUtKN1ROM1B2QWZpZkk2QW12WnlKQjJyRklHcUxvV1hn?oc=5",
-      "source": "www.bsr.com.vn",
-      "date": "2026-11-26T03:47:26.000Z",
+      "title": "Nepali national killed, several wounded in Houthi attack on Jazan refinery",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTGZMXzdiNmw3UTBFMVphR1dPQ09HNzk3WFN4Q1RELUE4a0ljNFRFa05JS1VPcS1nYWlRNUV2RERvcWxBZkI2RjgyZHZxcll1eHBOellSNm5BRExNVW5HaTd3Q0JsOUNvVnh2bUgzY0VBeEs2YVhwQnFocDI2N2F4Y25QNXpvQ1VVcHlDMXpiV3N4SVhuQWVBUnpNd2FaSGdzSUFUbW1nLXZoOXJIMHpuT3ExNFFWbU41RS0wdGxYSQ?oc=5",
+      "source": "Saudi Gazette",
+      "date": "2026-11-27T04:51:00.000Z",
+      "region": "intl",
+      "sid": "q-intl-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 2,
+      "major": false
+    },
+    {
+      "title": "Christmas, New Year's Day publishing schedules for Platts Asia oil",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxObHVyOXRzUG5UYzlBaDNqU0U5MFZxbW9SQWhWdDBEUVgxQUx6b1NraUlRblBzckQ3UjFlb1VSdVZmU1kxUUF6a2ZqRS05STRoaFZmbVpmcTY2alRNdWRGdjhiSGNmVGZQdHVOQW9JakRPTGtCLXBkTC1NUTRCUnZYOUI0Ykg2U0ZhS3hrY0NlLUZNUjdqV2hIM3E2TzkzZ3JUV1ZqN3JzUjBYUmtiSVREZER0bGh0czhMOWRvb1BzQ0JGMmhIYzVDU0pUZkp2T09CSlBxMC1hR2taUTBlNkZBM0hGYklSY3ZkYmZEZi1aVQ?oc=5",
+      "source": "S&P Global",
+      "date": "2026-11-27T04:21:40.000Z",
+      "region": "intl",
+      "sid": "spglobal",
+      "type": "site",
+      "tier": "B",
+      "score": 1,
+      "major": false
+    },
+    {
+      "title": "VIDEO: European gas-market highlights, week 48",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVV83T3pnXzBxRU9ZWlBLaTU2UHFQNU9Ra3VFRFNvX2pCXy1WV3dra2lZdDNaX2JTVEtzRGo5SUdQOGZBRWVOVWQxbkZ0LS1RaVdwZk1PaEY5SVFtQXRGTFlyQUNoQ0w0NWNTa2tIR3p0d1I3Z0tLNG83MGFhOF9FdUNoR25oQTNreUhVbENkTXI5cEhJd1lzVkdKbU5xSk5xZm5nc1hld0ZqNTVR?oc=5",
+      "source": "ICIS",
+      "date": "2026-11-27T04:17:37.000Z",
+      "region": "intl",
+      "sid": "icis",
+      "type": "site",
+      "tier": "B",
+      "score": 1,
+      "major": false
+    },
+    {
+      "title": "Bangchak says refinery fire started in its hydrocracking unit, nine hurt",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNelJpTlV6a2tVTmRSMHM2NUxZWm9ralVoOHZDS011aUJoTGdMUjRTUG1ZZkxtbm8xenI5V245SlUtTUdHcHVEX0JmOFphVUM3WERMRFFJLXhTNjVHcDNXZ0N3Y1R6N3hRaG9DZHNneGlydXBaNEhza1FodFNDUWZnTDlnQkp6RE5SWXVxODE1elVPMXBM?oc=5",
+      "source": "Thaiger",
+      "date": "2026-11-27T04:14:11.000Z",
       "region": "asia",
       "sid": "q-asia-incident",
       "type": "query",
       "tier": "C",
-      "score": 0,
+      "score": 1,
       "major": false
+    },
+    {
+      "title": "Thailand video news | Explosion at Bangchak refinery prompts evacuation warning, Bangkok to close 95 roads for Amazing Thailand Marathon, Thailand remains Agoda's top destination",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5EZGc4TFFBWkZ2YmpyS0JZSGNpdlRCVGFuT3diWC02T01DWmwxdXVlazFQY3ZHaGZwaWVJUTVhclh2dUZUOFNVSWIwNmR5bDRxM0pLM1FQWEZQRWpRNTdKN1llQUh0MkVVYzZkd1B2eTMzakZyeFNR?oc=5",
+      "source": "Thaiger",
+      "date": "2026-11-27T04:09:11.000Z",
+      "region": "asia",
+      "sid": "q-asia-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 4,
+      "major": true,
+      "link": "https://thethaiger.com/video-podcasts/thailand-video-news-27-11-2026",
+      "linkV": 2,
+      "descV": 1,
+      "desc": "Thailand video news: Bangkok's fire, US tariffs, marathon road closures, Phuket beach threats and Thailand's growing island appeal.",
+      "imgV": 2,
+      "img": "assets/feed-img/46546c5127cb2077.webp"
+    },
+    {
+      "title": "Residents can return after Bangchak refinery fire as Bangkok air checks continue",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNldTemFCVjFmaVc0MEhLUm44YVhqZV9YV0hZeG5FU1dtdHhyWkgtWU55cjB6WXdoNEEyR3dZa1lOVTQyQVNReEVaS3Y5YUtERW5ZTWxjNUxwWjlFWVNDdVhNdDR0VlU1WkEwYi1WRXpsemNQTlZIbHdmZktCYzI4eUs5XzJJbklDVFAwR3I3dENtZElrTzA3WWxrY3VzaVNJT0VvLU1XOU96d0FfOHlzbzFiWGc1TjQ0UkpHS1JpRQ?oc=5",
+      "source": "The Straits Times",
+      "date": "2026-11-27T03:50:00.000Z",
+      "region": "intl",
+      "sid": "q-intl-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 1,
+      "major": false
+    },
+    {
+      "title": "- U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOMUsxcVpsMXNMVzlleE1oRGxFRlpDNG1HdTBta3VBME1hQ2JrN1FkSmRQZ1pvMjJDRnVoek9NZXdERF9IRk02U29DOE9CSXNLazc0MEFVR001Z1VwN01kNDU0WF9QNkhWLUNFN3Jta0xyd19JcS1XWG4xN2NOWmlyVFVUdGZ2emFoazAyVmxQdGMwTWFiWUJGeTNVZExpUHA1YnBHb0xZN3QzMWdlT3h3ZDE4TUR2akZEMkdqYVA1cG83VmRSc0puVHF1QjNCYnRsb0Q3cHhnc1NvV3B6RHlRVDdyWldXTlhOSURoTExRYWdka3VFUXJsbDZzMGFNQXJSdTZmRTZQSVRzbTRyX09LcGFGcksxTm9PbzFtNjI1Vk9KMVV6NnBNN05NN3g2MlFFQ1NjTEFsWU1qWkZocDZ1MkhtajN0VkR1N1E?oc=5",
+      "source": "U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
+      "date": "2026-11-27T03:18:55.000Z",
+      "region": "intl",
+      "sid": "csb",
+      "type": "site",
+      "tier": "A",
+      "score": 4,
+      "major": true,
+      "link": "https://www.csb.gov/one-year-after-catastrophic-accident-at-the-tesoro-refinery-csb-releases-video-safety-message-calls-on-industry-to-invest-in-preventive-maintenance/?id=3731&F_All=y&print=y",
+      "linkV": 2,
+      "img": "assets/feed-img/5d3a8d9a86632610.webp",
+      "imgV": 2,
+      "descV": 1
     }
   ]
 }
