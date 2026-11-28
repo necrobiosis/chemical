@@ -1,7 +1,7 @@
 // 自动发现并核验的免费线上直播，失败时保留上次已核实记录。
 window.DISCOVERED_EVENTS = {
-  "updated": "2026-11-27T08:43:12.367Z",
-  "attemptedAt": "2026-11-27T08:43:10.343Z",
+  "updated": "2026-11-28T07:56:25.812Z",
+  "attemptedAt": "2026-11-28T07:56:23.493Z",
   "source": "https://www.icheme.org/training-events/whats-on-events-directory/",
   "scanned": 4,
   "error": null,
@@ -12,12 +12,12 @@ window.DISCOVERED_EVENTS = {
       "reason": null
     },
     {
-      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
+      "url": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
       "state": "verified",
       "reason": null
     },
     {
-      "url": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
+      "url": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
       "state": "verified",
       "reason": null
     },
@@ -45,7 +45,7 @@ window.DISCOVERED_EVENTS = {
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/9f9743cf-c4b4-4ae3-be60-0675ee0f9698@97b66814-ba5e-4ec0-85e7-53bc897bbde6",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "live-international-process-safety-day",
@@ -64,7 +64,7 @@ window.DISCOVERED_EVENTS = {
       "sourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/international-process-safety-day/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://ipsd26.vfairs.com/en/registration-form",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "live-11-12-2026-wastewater-network-anomaly-detection-and-diagnosis",
@@ -83,7 +83,7 @@ window.DISCOVERED_EVENTS = {
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/fcc49800-d687-4b0b-81d3-beb12efb4f55@97b66814-ba5e-4ec0-85e7-53bc897bbde6?source=copyLinkLegacyShareLinkDialog",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     }
   ]
 };

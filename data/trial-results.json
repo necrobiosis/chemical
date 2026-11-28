@@ -12,16 +12,16 @@
     "replays": "success",
     "discovery": "success"
   },
-  "startedAt": "2026-11-27T08:42:30Z",
-  "finishedAt": "2026-11-27T08:43:12.410Z",
+  "startedAt": "2026-11-28T07:56:01Z",
+  "finishedAt": "2026-11-28T07:56:25.864Z",
   "trigger": "schedule",
-  "runId": "45967730803",
-  "runUrl": "https://github.com/necrobiosis/chemical/actions/runs/45967730803",
-  "codeSha": "d5733797eeae11bcb94b230c3ae74cdb597d1ed5",
+  "runId": "46123439432",
+  "runUrl": "https://github.com/necrobiosis/chemical/actions/runs/46123439432",
+  "codeSha": "1cc8e9c93a02e3acb73129eeda98297551a25708",
   "news": {
-    "updated": "2026-11-27T08:43:08.290Z",
+    "updated": "2026-11-28T07:56:20.934Z",
     "count": 240,
-    "major": 31,
+    "major": 28,
     "sourcesOk": 27,
     "sourcesError": 0,
     "sourcesUnconfigured": 28
@@ -129,7 +129,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-danger-zone/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "icheme-what-could-have-gone-right-case-study-on-longford",
@@ -144,7 +144,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/what-could-have-gone-right-case-study-on-longford/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "icheme-risk-based-process-safety-rbps-leadership-and-culture-2",
@@ -159,7 +159,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/risk-based-process-safety-rbps-leadership-and-culture-2/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "icheme-sharing-singapore-s-safety-case-insights",
@@ -174,7 +174,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/sharing-singapore-s-safety-case-insights/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "icheme-the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining",
@@ -189,7 +189,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/the-risk-existed-before-the-label-a-process-safety-lens-across-mining-and-refining/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "icheme-how-cybersecurity-threats-influence-control-systems-and-process-safety",
@@ -204,7 +204,7 @@
       "access": "免费公开回放；无需付费会员",
       "url": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/how-cybersecurity-threats-influence-control-systems-and-process-safety/",
       "sourceUrl": "https://www.icheme.org/knowledge-networks/knowledge-resources/safety-centre/webinars/",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "live-01-12-2026-forecasting-bioprocess-batch-data-using-simca-online",
@@ -223,7 +223,7 @@
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/biochemical-engineering/events/01-12-2026-forecasting-bioprocess-batch-data-using-simca-online/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/9f9743cf-c4b4-4ae3-be60-0675ee0f9698@97b66814-ba5e-4ec0-85e7-53bc897bbde6",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     },
     {
       "id": "live-11-12-2026-wastewater-network-anomaly-detection-and-diagnosis",
@@ -242,87 +242,15 @@
       "sourceUrl": "https://www.icheme.org/knowledge-networks/communities/special-interest-groups/process-management-and-control/events/11-12-2026-wastewater-network-anomaly-detection-and-diagnosis/",
       "feeSourceUrl": "https://www.icheme.org/training-events/whats-on-events-directory/",
       "registrationUrl": "https://events.teams.microsoft.com/event/fcc49800-d687-4b0b-81d3-beb12efb4f55@97b66814-ba5e-4ec0-85e7-53bc897bbde6?source=copyLinkLegacyShareLinkDialog",
-      "checkedAt": "2026-11-27"
+      "checkedAt": "2026-11-28"
     }
   ],
   "latestNews": [
     {
-      "title": "Funding Wrap: Matters.AI, Vegapay, Green Aero raise fresh capital",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbXhVV3Q1Y2thaldLYWlwd2FibnZFM1lnLW56LXRfRFRxREZyQTZnQnZ6RmxGU0xCb3NLdTluZHZhUm1vTmlpRXljNHZnaU85M29JMVR4d3p5eXBrU2RsV3dLN00tVGxBM2NPc3A0cko4OUpVaVFJQjFtMnVZWGVFTGxLRE1GZWx0NlVkVHNCWVdmR1lWa0p2Uk9xc2w0MFhtTEVBUkxsaU5WWUVuWTJ3SWNwZV9hSHh5T014QWgteUxjNUk4Z0FJZXNsVTdjeFpq0gHWAUFVX3lxTE5jNGhmZF9rVktoNjdNbHN0NHVvQ1F3M25CS0czZGpFQXVvM2NFajlzWC1HcDNkbXp5NVBKbzVmdHB1bnU4aXVOclVCQnRMcV91eUYzSWlrUEl1Y2N0ZGhOT1UyNHJSX2Zxa3JQTjB4RkhDX3d2RFRCSEVwbjZiZThKcjMxbHhtV09tcnhnSm0yV3A4NWtQcmJ5NU9aVXYyTVFkSFhxNkdiQjVUU0xYY1lxX2JLa1o4RTZkMmd3SVBSd3VTZkh2c2RzbnNSUHQ0bUd2dGdjRWc?oc=5",
-      "source": "ET Entrepreneur",
-      "date": "2026-11-27T08:20:50.000Z",
-      "region": "asia",
-      "sid": "et",
-      "type": "site",
-      "tier": "B",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "Bangchak finds ruptured heat exchanger in initial refinery fire probe",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8wcDB1eUNRRXRKeTUwNTFuLU83cTY4dV9aTVItc29SOHU3WFFzOGVGbGppbVZHVHlQYU1JV0ZHWW5jRVNqS014R3UxUkxicGxveDh0YjlRYndRZUtReWFncXpn?oc=5",
-      "source": "Nation Thailand",
-      "date": "2026-11-27T08:19:00.000Z",
-      "region": "asia",
-      "sid": "q-asia-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "Bangchak halts Bangkok refinery output pending fire probe",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aN3ZROXJqeENncm9HQS1vUWlVRTRFbENwbGRSc3duckxLd1UyTjZpc05pUzc0V20tMDdJYkRpX3lkWEM5cmI0TXN1VGNDbXNsWE9BMkZUU2tmaHZuaTM5eQ?oc=5",
-      "source": "Thai PBS World",
-      "date": "2026-11-27T07:02:52.000Z",
-      "region": "intl",
-      "sid": "q-intl-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "Australian LNG exporters must reserve some supply to lower domestic prices",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTmYzUUoxck1GbzUtOGM1Y21sWWNRajh6YldtRk5TTUx3MEpONkh0dzNCd3VGZWJTUUtNSEpUZV9EeU9pTG83dHp4TzkyX0NqbkJzRUpJUTQzTkFfSXJKQTNwb3NuZVRKMnpnV2xKd0MtUTk2bzZTUEo5bGdOcjJXanYtRXhsWnFOSkpJVEx4Vmp0dlRkM2NCYWVsNlVDeFdrZXZxaGpqUkM1MkFMS2lDbTdkTXQ?oc=5",
-      "source": "Nikkei Asia",
-      "date": "2026-11-27T05:50:00.000Z",
-      "region": "asia",
-      "sid": "nikkei",
-      "type": "site",
-      "tier": "B",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "Thailand's Bangchak buys prompt diesel following Bangkok refinery fire, sources say",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWDFNMlNqZm1UR0tRa1ZpYVJDRGJtYmI4R3FHUEoxRmgzMGtQdmVWVnJmWlRmLS0tTDFydy0xME5ucDNhLXNEQWhHaU80OHpkQzBKaUYzLUw0bVlmZUt1UVpidkRaY3hsdUhYSXUtTVFCaU5La2NvWWlYS2VpTzFXOTRoc0VBbzJzem9HdDI0MFVFM1NuNDRiUWlqN0hpdFMtNzFhNjg4SEJiN1FoV2l3RUxEdmpVVVUyLVBJaUVVZHBwaUxKSDRJMTRiVFpiSmZyc3g4SUJvMnN1dGJ2dTlibEl3WDZoT2c?oc=5",
-      "source": "TradingView",
-      "date": "2026-11-27T05:03:00.000Z",
-      "region": "intl",
-      "sid": "q-intl-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "Nepali national killed, several wounded in Houthi attack on Jazan refinery",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTGZMXzdiNmw3UTBFMVphR1dPQ09HNzk3WFN4Q1RELUE4a0ljNFRFa05JS1VPcS1nYWlRNUV2RERvcWxBZkI2RjgyZHZxcll1eHBOellSNm5BRExNVW5HaTd3Q0JsOUNvVnh2bUgzY0VBeEs2YVhwQnFocDI2N2F4Y25QNXpvQ1VVcHlDMXpiV3N4SVhuQWVBUnpNd2FaSGdzSUFUbW1nLXZoOXJIMHpuT3ExNFFWbU41RS0wdGxYSQ?oc=5",
-      "source": "Saudi Gazette",
-      "date": "2026-11-27T04:51:00.000Z",
-      "region": "intl",
-      "sid": "q-intl-incident",
-      "type": "query",
-      "tier": "C",
-      "score": 2,
-      "major": false
-    },
-    {
-      "title": "Christmas, New Year's Day publishing schedules for Platts Asia oil",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxObHVyOXRzUG5UYzlBaDNqU0U5MFZxbW9SQWhWdDBEUVgxQUx6b1NraUlRblBzckQ3UjFlb1VSdVZmU1kxUUF6a2ZqRS05STRoaFZmbVpmcTY2alRNdWRGdjhiSGNmVGZQdHVOQW9JakRPTGtCLXBkTC1NUTRCUnZYOUI0Ykg2U0ZhS3hrY0NlLUZNUjdqV2hIM3E2TzkzZ3JUV1ZqN3JzUjBYUmtiSVREZER0bGh0czhMOWRvb1BzQ0JGMmhIYzVDU0pUZkp2T09CSlBxMC1hR2taUTBlNkZBM0hGYklSY3ZkYmZEZi1aVQ?oc=5",
+      "title": "Danish gas registry joins AIB, securing retroactive system access",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTTVqcFh4WkFqTkpvU1dmdEdfbmc0eWJ3LWhyX0hReUZDSU1QcEU5Y0lHNXppTVBaUEhqZllxUmVUWjV3UFExLTlHRURCT1gzcUljaXI0VmNPMHlpUmZHZnpmaF9OZFpTbXZFX1VVaGhrLUpnbWlyMlliemw3TVZhLWVmQU5JVjR6MlVYbFk4RFRkczBXZmY2bnh5V3NUZ0llWDg1RFRvb0hEU25TOVBNaWFtWFhtUmZLUWZjQXJIbFVmdno2WDVpbWlCeHRwcFc1dmRXTFhZVVRERkRQWDNtLUtBdUg?oc=5",
       "source": "S&P Global",
-      "date": "2026-11-27T04:21:40.000Z",
+      "date": "2026-11-28T07:43:54.000Z",
       "region": "intl",
       "sid": "spglobal",
       "type": "site",
@@ -331,52 +259,46 @@
       "major": false
     },
     {
-      "title": "VIDEO: European gas-market highlights, week 48",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPVV83T3pnXzBxRU9ZWlBLaTU2UHFQNU9Ra3VFRFNvX2pCXy1WV3dra2lZdDNaX2JTVEtzRGo5SUdQOGZBRWVOVWQxbkZ0LS1RaVdwZk1PaEY5SVFtQXRGTFlyQUNoQ0w0NWNTa2tIR3p0d1I3Z0tLNG83MGFhOF9FdUNoR25oQTNreUhVbENkTXI5cEhJd1lzVkdKbU5xSk5xZm5nc1hld0ZqNTVR?oc=5",
-      "source": "ICIS",
-      "date": "2026-11-27T04:17:37.000Z",
+      "title": "Novoshakhtinsk Oil Refinery in Russia’s Rostov regionhas been attacked again; reports indicate fire in storage tanks",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTEpBSmxWUzRnendnNnZOVDJ2WjRZQ3Brc1BrYXJrMm9sbWh6ZTgzSmxUQ0lkT3pjQkJYdnJnUGhCQUJxSTZvYWJaU3RxSGFoVk1KSHZHcEFvZnJPSFhoWmozYjR1T3pRMFlrbWtacTg4V3loX183emRkT3gwNmZmZzMxNXFEVGU3Z3ZDZnJOTnJVMV9IcUV1aHVLS1lRU29QQk43TndQWnR0NzVodnhnRGlLUzlLY1BCVmttTE0tQ2tWZ3JLSEF1eWFiMl9WUQ?oc=5",
+      "source": "Цензор.НЕТ",
+      "date": "2026-11-28T06:57:00.000Z",
       "region": "intl",
-      "sid": "icis",
-      "type": "site",
-      "tier": "B",
-      "score": 1,
-      "major": false
-    },
-    {
-      "title": "Bangchak says refinery fire started in its hydrocracking unit, nine hurt",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNelJpTlV6a2tVTmRSMHM2NUxZWm9ralVoOHZDS011aUJoTGdMUjRTUG1ZZkxtbm8xenI5V245SlUtTUdHcHVEX0JmOFphVUM3WERMRFFJLXhTNjVHcDNXZ0N3Y1R6N3hRaG9DZHNneGlydXBaNEhza1FodFNDUWZnTDlnQkp6RE5SWXVxODE1elVPMXBM?oc=5",
-      "source": "Thaiger",
-      "date": "2026-11-27T04:14:11.000Z",
-      "region": "asia",
-      "sid": "q-asia-incident",
+      "sid": "q-intl-incident",
       "type": "query",
       "tier": "C",
       "score": 1,
       "major": false
     },
     {
-      "title": "Thailand video news | Explosion at Bangchak refinery prompts evacuation warning, Bangkok to close 95 roads for Amazing Thailand Marathon, Thailand remains Agoda's top destination",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5EZGc4TFFBWkZ2YmpyS0JZSGNpdlRCVGFuT3diWC02T01DWmwxdXVlazFQY3ZHaGZwaWVJUTVhclh2dUZUOFNVSWIwNmR5bDRxM0pLM1FQWEZQRWpRNTdKN1llQUh0MkVVYzZkd1B2eTMzakZyeFNR?oc=5",
-      "source": "Thaiger",
-      "date": "2026-11-27T04:09:11.000Z",
-      "region": "asia",
-      "sid": "q-asia-incident",
+      "title": "Drones have attacked the Novoshakhtinsk oil refinery for the second time this week",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMF9lX3lMY1MtbUgzclJTSFhvZ0FCc2dZOVdHcktRWTY5SzM4ODRGcHpVRC0wcWkyNk5Cb29mQk0wUTg5UjRkNXFnYjVCT21nSUZXSUxIcnJQaFRsdUxmVGk1alBWMWJpRzRycnFEVVRnT2VyVzJTcVNkTWxjcTNuemxaNDJPLXA0WFp5cy02bw?oc=5",
+      "source": "UkrMedia News",
+      "date": "2026-11-28T06:47:06.000Z",
+      "region": "intl",
+      "sid": "q-intl-incident",
       "type": "query",
       "tier": "C",
-      "score": 4,
-      "major": true,
-      "link": "https://thethaiger.com/video-podcasts/thailand-video-news-27-11-2026",
-      "linkV": 2,
-      "descV": 1,
-      "desc": "Thailand video news: Bangkok's fire, US tariffs, marathon road closures, Phuket beach threats and Thailand's growing island appeal.",
-      "imgV": 2,
-      "img": "assets/feed-img/46546c5127cb2077.webp"
+      "score": 0,
+      "major": false
     },
     {
-      "title": "Residents can return after Bangchak refinery fire as Bangkok air checks continue",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNldTemFCVjFmaVc0MEhLUm44YVhqZV9YV0hZeG5FU1dtdHhyWkgtWU55cjB6WXdoNEEyR3dZa1lOVTQyQVNReEVaS3Y5YUtERW5ZTWxjNUxwWjlFWVNDdVhNdDR0VlU1WkEwYi1WRXpsemNQTlZIbHdmZktCYzI4eUs5XzJJbklDVFAwR3I3dENtZElrTzA3WWxrY3VzaVNJT0VvLU1XOU96d0FfOHlzbzFiWGc1TjQ0UkpHS1JpRQ?oc=5",
-      "source": "The Straits Times",
-      "date": "2026-11-27T03:50:00.000Z",
+      "title": "Drones strike Russian oil refinery again, sparking fire in Rostov region",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOGZmT1Uxd1g1enBOZkM4UzMzdEIzM3ZVN05SSWlNNGU4TEc0bzRybFlFc2NoVmswcVBHODZVcDNsY1hUWC1vTWVnUW1NLUJUOWd2VS0wUUZMV1RycXpWc0QzTW1sRFZpclR4R2QxeHJST2s1RDRLZ0VRcG1mdmNMZmhSUFNEZ0tXallYaUlUV0pyQQ?oc=5",
+      "source": "RBC-Ukraine",
+      "date": "2026-11-28T06:41:47.000Z",
+      "region": "intl",
+      "sid": "q-intl-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 1,
+      "major": false
+    },
+    {
+      "title": "Drones Attacked Russia: Fire at the Novoshakhtinsk Oil Refinery for the Second Time This Week",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUlBOM0JXdkJERjBvbDZQaEJOSW9GbXdmbW1vUnllYVVZajNBSlh2eE5Ha083QzJ5MUZzRU45cHNWOUVBMWU3MjdjdER6U0V3OGMwM1JxdXg3aUFyaVkyWU9Gcm1jNzlNaVlzSncyalZoZFlvQXRDRHpWZUJteS1GSnZVTEdRRzJwOGVWRVl3Y0xQaFBBMGpYSVEzdE9WNjd5WmhoS3pOdHRxTHdqRXFja0VFZUFER1VvTVA3X3Bnc29hTDEy0gHKAUFVX3lxTE5jem04QkQ4VXcyalZsYkwzLWtSM0pfUU1tVzV2eDVSbnQ4eEpZVjZwdjRiRUdKdWdNekNaSk5hNE8tTmtJUEs1V1dzWHN5MXpieDFLQkFMVnA0RGNZREw3TmptbTRHTnNjRWZuTnJLMHc3b3MyTnVhRnZ6LTMtN0htUWUyWmdZelBJdnlxVDdIUDFFUGdZMmpDb2Q0MXEweER1NmpKMzh0T0FvdDhIUlBBbWhjVENlNndZT2dHZlRjWnFyZVNlNk1wbHc?oc=5",
+      "source": "LIGA.net",
+      "date": "2026-11-28T06:37:00.000Z",
       "region": "intl",
       "sid": "q-intl-incident",
       "type": "query",
@@ -386,9 +308,9 @@
     },
     {
       "title": "- U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
-      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxOMUsxcVpsMXNMVzlleE1oRGxFRlpDNG1HdTBta3VBME1hQ2JrN1FkSmRQZ1pvMjJDRnVoek9NZXdERF9IRk02U29DOE9CSXNLazc0MEFVR001Z1VwN01kNDU0WF9QNkhWLUNFN3Jta0xyd19JcS1XWG4xN2NOWmlyVFVUdGZ2emFoazAyVmxQdGMwTWFiWUJGeTNVZExpUHA1YnBHb0xZN3QzMWdlT3h3ZDE4TUR2akZEMkdqYVA1cG83VmRSc0puVHF1QjNCYnRsb0Q3cHhnc1NvV3B6RHlRVDdyWldXTlhOSURoTExRYWdka3VFUXJsbDZzMGFNQXJSdTZmRTZQSVRzbTRyX09LcGFGcksxTm9PbzFtNjI1Vk9KMVV6NnBNN05NN3g2MlFFQ1NjTEFsWU1qWkZocDZ1MkhtajN0VkR1N1E?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxPMWVEdjlhbEJKOWRaNHNoemkyZmRnU0RDWmJSTEFuYU10S0lWNGE2RUhNdFVMRHlnRkF4TDNmWS1rQmJZWmM4aldhZUFzSHRDYmRhLXFveF9MV0hFQ0puamxhSV8zd3NRM0tUSDRkX2djRmtsdFpMbklmRlFuNTQwMGJ1ZnpYTXJyd3llUEd4ZVNvM2pNcFRCd3BKQi1TRlFOYms3TldlemI0LTNlam9TZXgzQnp1M0JBN0VsZ2ZjMFRrT1pnakVJVXZ3RVdDTGhUNFlOS0tNRnEzOGpFY1NHMU0wLXFJTU9KeXlTWDNoVXZvOExEeXY5Zmd5RXc3VHBtdUhIMk0xR1lwU19aYkhud1Q4WXh1RWh1YS1pbjlqMnFfZVlpeElxLU1tWXdqQkYzSDk1cnRuMjF2MThVQm1LY0FSVQ?oc=5",
       "source": "U.S. Chemical Safety and Hazard Investigation Board | CSB (.gov)",
-      "date": "2026-11-27T03:18:55.000Z",
+      "date": "2026-11-28T05:04:26.000Z",
       "region": "intl",
       "sid": "csb",
       "type": "site",
@@ -400,6 +322,89 @@
       "img": "assets/feed-img/5d3a8d9a86632610.webp",
       "imgV": 2,
       "descV": 1
+    },
+    {
+      "title": "Bangchak refinery in Bangkok ordered shut until January 8 after fire",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4Qm5JTmhTbDh1X0JPSlJodVU1UVB0X1lvSEZEcDBianEyTnBWWEJ0T1lEWVBHZFYzMzlDZHlHQzBiNmQtWHk5NXlKM3daQTVkX3Y2eWlFWExTd0xodXdodFozbW5rX2lPbWpkT0pRTk1YbnA3RGNZN1VrOG5nbkE?oc=5",
+      "source": "Thaiger",
+      "date": "2026-11-28T05:02:35.000Z",
+      "region": "asia",
+      "sid": "q-asia-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 1,
+      "major": false
+    },
+    {
+      "title": "埃及一油罐车爆炸起火，致31死21伤！",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdF9jOU9vdVYwQTdGWDdya0djT3ZiN2d1VnV3U0NrTkVEUEF5QVhWY1hveWZVaDRxT1lucmJmckY2M3M5X2NjalZ6Y3pzWkZQdDh5dktnbGlKdE8wQVE5OWhMWm1pbFB3aDRyamU2NTdJTk9TWFdzaUp4SzVPeXRUck1PWEROajAyYTVDYg?oc=5",
+      "source": "Sohu",
+      "date": "2026-11-28T04:16:54.000Z",
+      "region": "cn",
+      "sid": "q-cn-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 3,
+      "major": true,
+      "link": "https://m.sohu.com/a/1107570306_122014422?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+      "linkV": 2,
+      "descV": 1,
+      "desc": "（来源：兴园化工园区研究院）埃及检察机关11月25日发表声明说，当天一辆运载石油制品的卡车在埃及吉萨省环城公路碰撞起火后引发火灾，烧毁27辆车，造成数十人死亡。检方已就事故展开调查。声明说，检方已派人赴现场调…",
+      "imgV": 2,
+      "img": "assets/feed-img/bd9274c27ac5f4d6.webp"
+    },
+    {
+      "title": "Fire reported near oil refinery in Russia's Rostov Oblast amid Ukrainian drone attack",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPb0wyd3NDQmZYdkxZLTk4azlaNUt3YjQ4OTFPSmNNMi1IVWlqaDZ3UDhZU28tV19nbENrZXRzSWZqWVNkc1p6TGlNeF9BMWh6N1hZLUFRck1XYWY4MG9TYVkwTFFvQ2wyYWk5aFFLUi1IZjNBTlBIcFp0QXY2RzBEYi1FTm1pSndLdDBuVzNMX1JNd3dMbjctdnB6TElzRkNJT0QtWV9qbWFZUjdkUUREV3padw?oc=5",
+      "source": "The Kyiv Independent",
+      "date": "2026-11-28T04:06:01.000Z",
+      "region": "intl",
+      "sid": "q-intl-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 3,
+      "major": true,
+      "link": "https://kyivindependent.com/fire-reported-near-oil-refinery-in-russias-rostov-oblast-amid-ukrainian-drone-attack/",
+      "linkV": 2,
+      "descV": 1,
+      "desc": "Ukraine&#x27;s military launched a drone attack on Russia&#x27;s Rostov Oblast overnight on Nov. 28, reportedly striking the area near the Novoshakhtinsk Oil Refinery, Telegram monitoring channels reported.",
+      "imgV": 2
+    },
+    {
+      "title": "乌军无人机袭击俄导弹燃料供应链，合成橡胶厂和热电厂遭爆炸冲击",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUEVHa0hKMFhyZHI4ZUNhaVdONkxGSmR3ZGFnNEJkUjc0Z01TdDBBSFZlOFZJdHhRc1dvSkFHUF9uYnFYYXRvU3M4Sk9fdE1hZG5mX2tza05WYTlrWWtWR0hLdjhKTGRFZGZfbGxfcnVDcFBzbEp4R0tFOXEwd0EyVWFqU0ZXLWhJSC1FSg?oc=5",
+      "source": "Sohu",
+      "date": "2026-11-28T02:23:30.000Z",
+      "region": "cn",
+      "sid": "q-cn-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 2,
+      "major": false
+    },
+    {
+      "title": "2026年安徽省暨阜阳市“化工园区安全宣传日”活动在太和县举行",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZm5NdE1DN3dsOWEwU003bVdvWUdidlVEVmpMTnRwaGM1SG05R1BqUlVIaXhBSnA3QTF1QkhzWVE4d2FqNnVZUjVDMEs4VktyY1p2QjAzVkNvUzJFZkludkNCYV9MTENkTUQya05GVEdjV0loSzVWVzRRTDItSW5hMHoxblhsNVBNTXRKQVJHUQ?oc=5",
+      "source": "Sohu",
+      "date": "2026-11-28T02:16:01.000Z",
+      "region": "cn",
+      "sid": "q-cn-incident",
+      "type": "query",
+      "tier": "C",
+      "score": 0,
+      "major": false
+    },
+    {
+      "title": "张成中到中国地震应急搜救中心调研",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5wZnlKMDZMS3FSMlNVWUVFLUp3RGdwelh5Tm01RFZvc2RuYXcyd2RoUGJBMkdra1l1SDlKb092dkN2dk9mRWRTTWg5TUozOUJTMkwzSVY0aGpadXVMRzZuZU1NVlM3X0VsLTBOSg?oc=5",
+      "source": "中华人民共和国应急管理部",
+      "date": "2026-11-28T01:53:00.000Z",
+      "region": "cn",
+      "sid": "mem",
+      "type": "site",
+      "tier": "A",
+      "score": 2,
+      "major": false
     }
   ]
 }
